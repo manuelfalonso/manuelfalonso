@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 2.5f;

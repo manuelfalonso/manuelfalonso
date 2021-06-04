@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
+
 public class ColorLerp : MonoBehaviour
 {
     private SpriteRenderer sprite;

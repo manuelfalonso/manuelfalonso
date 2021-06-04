@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
+
 public class RandomSpriteColor : MonoBehaviour
 {
     public Sprite[] sprites;

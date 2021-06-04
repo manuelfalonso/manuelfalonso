@@ -3,6 +3,7 @@
 // A script that plays your chosen song.  The pitch starts at 1.0.
 // You can increase and decrease the pitch and hear the change
 // that is made.
+[RequireComponent(typeof(AudioSource))]
 
 public class SliderModifyPitch : MonoBehaviour
 {
