@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class description here
+/// </summary>
 public class ObjectPooler : MonoBehaviour
 {
     [SerializeField] private bool canGrow = true;
@@ -16,7 +19,6 @@ public class ObjectPooler : MonoBehaviour
         SharedInstance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         // Loop through list of pooled objects,deactivating them and adding them to the list 
