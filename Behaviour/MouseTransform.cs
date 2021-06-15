@@ -1,7 +1,11 @@
 using UnityEngine;
 using System.Collections;
 
-public class MouseTransform : MonoBehaviour
+/// <summary>
+/// Send a position to a coroutine to move an object with lerp
+/// Object require CoroutineLerp.cs script
+/// </summary>
+public class MoveWithMouse : MonoBehaviour
 {
     public CoroutineLerp coroutineScript;
 

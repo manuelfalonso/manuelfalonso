@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
 using UnityEditor;
-#endif
+#endif*/
 
 public class QuitScript : MonoBehaviour {
 	
@@ -10,8 +10,8 @@ public class QuitScript : MonoBehaviour {
 	public void Quit () 
 	{
 		#if UNITY_EDITOR
-		UnityEditor.EditorApplication.isPlaying = false;
-		//EditorApplication.ExitPlaymode();
+		//UnityEditor.EditorApplication.isPlaying = false;
+		UnityEditor.EditorApplication.ExitPlaymode();
 		#else
 		Application.Quit();
 		#endif

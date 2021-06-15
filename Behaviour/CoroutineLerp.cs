@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// When receive a Target move with lerp the gameObject attach to it
+/// </summary>
 public class CoroutineLerp : MonoBehaviour
 {
     public float smoothing = 7f;
