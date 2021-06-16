@@ -36,7 +36,7 @@ public class DelegateEvent : MonoBehaviour
         ms.material.color = newColor;
     }
 
-    private void OnDisable()
+    private void OnDestroy()
     {
         // Unsubscribe from event
         OnClick -= ChangeColor;
