@@ -29,7 +29,10 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        playerRb.AddForce(speed * horizontalInput, 0, speed * verticalInput);
+        Vector3 verticalMovement = transform.forward * verticalInput * speed;
+        Vector3 horizontalMovement = transform.right * horizontalInput * speed;
+
+        playerRb.AddForce(verticalMovement + horizontalMovement);
     }
 
     // Limit player movement in screen
