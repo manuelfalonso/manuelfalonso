@@ -3,9 +3,12 @@ using UnityEngine;
 
 /// <summary>
 /// Singleton Class to manage all events
-/// Create an event Action and method to invoke the event.
-/// In Observers classes Subscribe and Unsubscribe the neccesary methods 
-///     Call the event asociated invoke methods from the place needed.
+/// 1- Create an event Action
+/// 2- Create a method to invoke the event.
+/// 3- In Observers classes create the neceesary methods
+/// 4- In Observers classes Subscribe this methods
+/// 5- In Observers classes Unsubscribe this methods
+/// 6- Call the asociated event invoke method from the place needed.
 /// </summary>
 public class Events : Singleton<Events>
 {
