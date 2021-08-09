@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 /// <summary>
@@ -11,9 +10,10 @@ public class DragThrow : MonoBehaviour
 {
     // Distance from the center of the object and the click.
     private Vector3 mOffset;
-    private Vector3 initialMousePos;
+    private Vector3 lastMousePosition;
     private Vector3 throwDirection;
     private Rigidbody2D rb2d;
+    private Rigidbody2D[] childRb2d;
 
     private float mZCord;
     [SerializeField] float speed = 1;
@@ -22,8 +22,11 @@ public class DragThrow : MonoBehaviour
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-		// Invoke a repeating method to track the position of the mouse
-        InvokeRepeating("LastMousePosition", 0, timeGap);
+
+        // Get if there are Rigidbodies in the children objects
+        childRb2d = gameObject.GetComponentsInChildren<Rigidbody2D>();
+
+        InvokeRepeating("SetLastMousePosition", 0, timeGap);
     }
 
     private void OnMouseDown()
@@ -36,7 +39,20 @@ public class DragThrow : MonoBehaviour
         //initialMousePos = Input.mousePosition;
 
         // Stop physics simulation because it causes weird things after OnMouseUp
-        RestartPhysics(false);
+        StopPhysics();
+    }
+
+    private void OnMouseDrag()
+    {
+        transform.position = GetMouseAsWorldPoint() + mOffset;
+    }
+
+    private void OnMouseUp()
+    {
+        RestartPhysics();
+
+        throwDirection = lastMousePosition - Input.mousePosition;
+        rb2d.AddForce(throwDirection * speed * -1, ForceMode2D.Force);
     }
 
     private Vector3 GetMouseAsWorldPoint()
@@ -51,49 +67,32 @@ public class DragThrow : MonoBehaviour
         return Camera.main.ScreenToWorldPoint(mousePoint);
     }
 
-    private void RestartPhysics(bool RestartIt)
+    private void StopPhysics()
     {
-        // Check if there are Rigidbodies in the children objects
-        var rigidbodies = gameObject.GetComponentsInChildren<Rigidbody2D>();
+        rb2d.simulated = false;
 
-        if (RestartIt)
+        foreach (var rb in childRb2d)
         {
-            rb2d.simulated = true;
-            rb2d.velocity = new Vector3(0f, 0f, 0f);
-            rb2d.angularVelocity = 0f;
-
-            foreach (var rb in rigidbodies)
-            {
-                rb.simulated = true;
-                rb.velocity = new Vector3(0f, 0f, 0f);
-                rb.angularVelocity = 0f;
-            }
-        }
-        else
-        {
-            rb2d.simulated = false;
-
-            foreach (var rb in rigidbodies)
-            {
-                rb.simulated = false;
-            }
+            rb.simulated = false;
         }
     }
 
-    private void OnMouseDrag()
+    private void RestartPhysics()
     {
-        transform.position = GetMouseAsWorldPoint() + mOffset;
+        rb2d.simulated = true;
+        rb2d.velocity = new Vector3(0f, 0f, 0f);
+        rb2d.angularVelocity = 0f;
+
+        foreach (var rb in childRb2d)
+        {
+            rb.simulated = true;
+            rb.velocity = new Vector3(0f, 0f, 0f);
+            rb.angularVelocity = 0f;
+        }
     }
 
-    private void OnMouseUp()
+    void SetLastMousePosition()
     {
-        RestartPhysics(true);
-        throwDirection = initialMousePos - Input.mousePosition;
-        rb2d.AddForce(throwDirection * speed * -1, ForceMode2D.Force);
-    }
-
-    void LastMousePosition()
-    {
-        initialMousePos = Input.mousePosition;
+        lastMousePosition = Input.mousePosition;
     }
 }
