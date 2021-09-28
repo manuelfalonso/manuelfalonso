@@ -68,6 +68,7 @@ public class ThirdPersonController : MonoBehaviour
 
         // Jump or apply gravity
         if (isGrounded && Input.GetButtonDown("Jump"))
+			// Jump Speed = sqrt(2Hg) whre H -> height and g -> gravity
             verticalVelocity.y += Mathf.Sqrt(2 * jumpHeight * GRAVITY_VALUE);
         else
             verticalVelocity.y -= GRAVITY_VALUE * Time.deltaTime;
