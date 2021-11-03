@@ -15,6 +15,6 @@ public class ScriptTemplate : MonoBehaviour
 	/// <param name="string1">Parameter description here</param>
 	public void DoWork(string string1)
 	{
-
+		
 	}
 }
