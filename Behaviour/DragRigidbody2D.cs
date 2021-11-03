@@ -5,7 +5,7 @@ using UnityEngine;
 /// Requiered: any collider or collider2D and rigidbody or rigidbody2D
 /// Note: In case using 3D objects change "Rigidbody2D" for "Rigidbody"
 /// </summary>
-public class DragWithPhysics2D : MonoBehaviour
+public class DragRigidbody2D : MonoBehaviour
 {
     // Distance from the center of the object and the click.
     private Vector3 mOffset;
