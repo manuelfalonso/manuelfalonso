@@ -5,17 +5,16 @@ using UnityEngine;
 /// It freeze and draw a line as a charge shot.
 /// </summary>
 [RequireComponent(typeof(Rigidbody), typeof(Collider), typeof(LineRenderer))]
-public class DragRenderLineThrow : MonoBehaviour
+public class ChargeThrow : MonoBehaviour
 {
-    [SerializeField] float _speed = 3;
+    [SerializeField] float _speed = 100f;
 
+    private Vector3 _lineStart;
+    private Vector3 _lineEnd;
     private Vector3 _throwDirection;
     private Rigidbody _rb;
-    private Rigidbody[] _childRb2d;
-
-    private Vector3 _initialMousePosition;
+    private Rigidbody[] _childRbs;
     private LineRenderer _lr;
-    private Vector3 _lineEnd;
 
     private float mZCord;
 
@@ -24,15 +23,18 @@ public class DragRenderLineThrow : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _lr = GetComponent<LineRenderer>();
 
+        // Initialize in 0 points of the line renderer
+        _lr.positionCount = 0;
+
         // Get if there are Rigidbodies in the children objects
-        _childRb2d = gameObject.GetComponentsInChildren<Rigidbody>();
+        _childRbs = gameObject.GetComponentsInChildren<Rigidbody>();
     }
 
     private void OnMouseDown()
     {
         _lr.positionCount = 1;
-        _lr.SetPosition(0, transform.position);
-        _initialMousePosition = Input.mousePosition;
+        _lineStart = transform.position;
+        _lr.SetPosition(0, _lineStart);
 
         mZCord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
@@ -51,10 +53,8 @@ public class DragRenderLineThrow : MonoBehaviour
     {
         RestartPhysics();
 
-        _throwDirection = Input.mousePosition - _initialMousePosition;
-
-        _rb.AddForce(_throwDirection * _speed * -1, ForceMode.Force);
-
+        _throwDirection = _lineStart - _lineEnd;
+        _rb.AddForce(_throwDirection * _speed, ForceMode.Force);
         _lr.positionCount = 0;
     }
 
@@ -74,7 +74,7 @@ public class DragRenderLineThrow : MonoBehaviour
     {
         _rb.isKinematic = true;
 
-        foreach (var rb in _childRb2d)
+        foreach (var rb in _childRbs)
         {
             rb.isKinematic = true;
         }
@@ -86,7 +86,7 @@ public class DragRenderLineThrow : MonoBehaviour
         _rb.velocity = new Vector3(0f, 0f, 0f);
         _rb.angularVelocity = Vector3.zero;
 
-        foreach (var rb in _childRb2d)
+        foreach (var rb in _childRbs)
         {
             rb.isKinematic = false;
             rb.velocity = new Vector3(0f, 0f, 0f);
