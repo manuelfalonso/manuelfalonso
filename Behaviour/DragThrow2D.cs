@@ -4,29 +4,28 @@ using UnityEngine;
 /// Class to drag and throw and object with the mouse over the Z Camera axis.
 /// It consider the distance of the las time gap to calculate the velocity.
 /// </summary>
-[RequireComponent(typeof(Rigidbody), typeof(Collider))]
-public class DragThrow : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
+public class DragThrow2D : MonoBehaviour
 {
-    [SerializeField] float _speed = 3;
-    [SerializeField] float _timeGap = 0.5f;
-
     // Distance from the center of the object and the click.
-    private Vector3 _mOffset;
-    private Vector3 _lastMousePosition;
-    private Vector3 _throwDirection;
-    private Rigidbody _rb;
-    private Rigidbody[] _childRb2d;
+    private Vector3 mOffset;
+    private Vector3 lastMousePosition;
+    private Vector3 throwDirection;
+    private Rigidbody2D rb2d;
+    private Rigidbody2D[] childRb2d;
 
     private float mZCord;
+    [SerializeField] float speed = 1;
+    [SerializeField] float timeGap = 0.5f;
 
     private void Start()
     {
-        _rb = GetComponent<Rigidbody>();
+        rb2d = GetComponent<Rigidbody2D>();
 
         // Get if there are Rigidbodies in the children objects
-        _childRb2d = gameObject.GetComponentsInChildren<Rigidbody>();
+        childRb2d = gameObject.GetComponentsInChildren<Rigidbody2D>();
 
-        InvokeRepeating("SetLastMousePosition", 0, _timeGap);
+        InvokeRepeating("SetLastMousePosition", 0, timeGap);
     }
 
     private void OnMouseDown()
@@ -34,7 +33,7 @@ public class DragThrow : MonoBehaviour
         mZCord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
         // Store offset = gameobject world pos - mouse world pos
-        _mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
+        mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
 
         // Stop physics simulation because it causes weird things after OnMouseUp
         StopPhysics();
@@ -42,15 +41,15 @@ public class DragThrow : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        transform.position = GetMouseAsWorldPoint() + _mOffset;
+        transform.position = GetMouseAsWorldPoint() + mOffset;
     }
 
     private void OnMouseUp()
     {
         RestartPhysics();
 
-        _throwDirection = _lastMousePosition - Input.mousePosition;
-        _rb.AddForce(_throwDirection * _speed * -1, ForceMode.Force);
+        throwDirection = lastMousePosition - Input.mousePosition;
+        rb2d.AddForce(throwDirection * speed * -1, ForceMode2D.Force);
     }
 
     private Vector3 GetMouseAsWorldPoint()
@@ -67,30 +66,30 @@ public class DragThrow : MonoBehaviour
 
     private void StopPhysics()
     {
-        _rb.isKinematic = true;
+        rb2d.simulated = false;
 
-        foreach (var rb in _childRb2d)
+        foreach (var rb in childRb2d)
         {
-            rb.isKinematic = true;
+            rb.simulated = false;
         }
     }
 
     private void RestartPhysics()
     {
-        _rb.isKinematic = false;
-        _rb.velocity = new Vector3(0f, 0f, 0f);
-        _rb.angularVelocity = Vector3.zero;
+        rb2d.simulated = true;
+        rb2d.velocity = new Vector3(0f, 0f, 0f);
+        rb2d.angularVelocity = 0f;
 
-        foreach (var rb in _childRb2d)
+        foreach (var rb in childRb2d)
         {
-            rb.isKinematic = false;
+            rb.simulated = true;
             rb.velocity = new Vector3(0f, 0f, 0f);
-            rb.angularVelocity = Vector3.zero;
+            rb.angularVelocity = 0f;
         }
     }
 
     void SetLastMousePosition()
     {
-        _lastMousePosition = Input.mousePosition;
+        lastMousePosition = Input.mousePosition;
     }
 }
