@@ -1,18 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Simple Instruction to destroy a GameObject after a delay.
+/// </summary>
 public class DestroyAfterDelay : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, 2);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
