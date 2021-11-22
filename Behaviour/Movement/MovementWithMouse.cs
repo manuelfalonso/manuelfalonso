@@ -1,13 +1,12 @@
 using UnityEngine;
-using System.Collections;
 
 /// <summary>
 /// Send a position to a coroutine to move an object with lerp
-/// Object require CoroutineLerp.cs script
+/// Object require MovementLerpCoroutine.cs script
 /// </summary>
-public class MoveWithMouse : MonoBehaviour
+public class MovementWithMouse : MonoBehaviour
 {
-    public CoroutineLerp coroutineScript;
+    [SerializeField] private MovementLerpCoroutine coroutineScript;
 
     void OnMouseDown()
     {
@@ -16,10 +15,14 @@ public class MoveWithMouse : MonoBehaviour
 
         Physics.Raycast(ray, out hit);
 
+        Debug.Log("Raycast");
+
+
         if (hit.collider.gameObject == gameObject)
         {
-            Vector3 newTarget = hit.point + new Vector3(0, 0.5f, 0);
+            Vector3 newTarget = hit.point;
             coroutineScript.Target = newTarget;
+            Debug.Log("Set target: " + newTarget);
         }
     }
 }
