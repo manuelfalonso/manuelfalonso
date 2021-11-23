@@ -45,25 +45,10 @@ public class MovementRigidbody : MonoBehaviour
     {
         _movementInput = Vector3.zero;
 
-        // Forward and backward movement
-        if (Input.GetKey(KeyCode.W))
-        {
-            _movementInput.z = 1;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            _movementInput.z = -1;
-        }
-
         // Lateral movement
-        if (Input.GetKey(KeyCode.A))
-        {
-            _movementInput.x = -1;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            _movementInput.x = 1;
-        }
+        _movementInput.x = Input.GetAxisRaw("Horizontal");
+        // Forward and backward movement
+        _movementInput.z = Input.GetAxisRaw("Vertical");
 
         // Vertical movement
         if (Input.GetKey(KeyCode.E))

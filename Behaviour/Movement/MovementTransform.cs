@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 public class MovementTransform : MonoBehaviour
 {
-    [SerializeField] private float speed = 5f;
+    [SerializeField] private float _speed = 5f;
 
     // Update is called once per frame
     void Update()
@@ -17,25 +17,10 @@ public class MovementTransform : MonoBehaviour
     {
         Vector3 movementInput = Vector3.zero;
 
-        // Forward and backward movement
-        if (Input.GetKey(KeyCode.W))
-        {
-            movementInput.z = 1;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            movementInput.z = -1;
-        }
-
         // Lateral movement
-        if (Input.GetKey(KeyCode.A))
-        {
-            movementInput.x = -1;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            movementInput.x = 1;
-        }
+        movementInput.x = Input.GetAxisRaw("Horizontal");
+        // Forward and backward movement
+        movementInput.z = Input.GetAxisRaw("Vertical");
 
         // Vertical movement
         if (Input.GetKey(KeyCode.E))
@@ -48,6 +33,6 @@ public class MovementTransform : MonoBehaviour
         }
 
         // Apply movement with Trasnform
-        transform.Translate(movementInput.normalized * speed * Time.deltaTime);
+        transform.Translate(movementInput.normalized * _speed * Time.deltaTime);
     }
 }
