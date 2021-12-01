@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 
-// A script that plays your chosen song.  The pitch starts at 1.0.
-// You can increase and decrease the pitch and hear the change
-// that is made.
+/// <summary>
+/// A script that plays your chosen song. The pitch starts at 1.0.
+/// You can increase and decrease the pitch and hear the change that is made.
+/// </summary>
 [RequireComponent(typeof(AudioSource))]
-
-public class SliderModifyPitch : MonoBehaviour
+public class PitchModifySlider : MonoBehaviour
 {
-    public float pitchValue = 1.0f;
-    public AudioClip mySong;
+    [SerializeField]
+    private AudioClip mySong;
 
     private AudioSource audioSource;
+
+    [SerializeField]
+    private float pitchValue = 1.0f;
+    [SerializeField]
     private float low = 0.75f;
+    [SerializeField]
     private float high = 1.25f;
 
     void Awake()
