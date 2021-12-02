@@ -6,19 +6,19 @@ using UnityEngine;
 public class TiltObject : MonoBehaviour
 {
     [SerializeField]
-    float smooth = 5.0f;
+    private float _smooth = 5.0f;
     [SerializeField]
-    float tiltAngle = 60.0f;
+    private float _tiltAngle = 60.0f;
 
     void FixedUpdate()
     {
         // Smoothly tilts a transform towards a target rotation.
-        float tiltAroundZ = Input.GetAxis("Horizontal") * tiltAngle;
-        float tiltAroundX = Input.GetAxis("Vertical") * tiltAngle;
+        float tiltAroundZ = Input.GetAxis("Horizontal") * _tiltAngle;
+        float tiltAroundX = Input.GetAxis("Vertical") * _tiltAngle;
 
         Quaternion target = Quaternion.Euler(tiltAroundX, 0, tiltAroundZ);
 
         // Dampen towards the target rotation
-        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
+        transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * _smooth);
     }
 }

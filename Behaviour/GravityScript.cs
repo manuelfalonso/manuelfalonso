@@ -5,9 +5,12 @@
 /// </summary>
 public class GravityScript : MonoBehaviour
 {
-    public Transform target;
+    [SerializeField]
+    private Transform target;
 
+    [SerializeField]
     private Vector3 targetOffSet = new Vector3(0, 1.5f, 0);
+    [SerializeField]
     private float speed = 3;
 
     void Update()
