@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
-public class LimitFPS : MonoBehaviour
+/// <summary>
+/// Limit FPS to optimize performance
+/// </summary>
+public class LimitFps : MonoBehaviour
 {
     void Start()
     {

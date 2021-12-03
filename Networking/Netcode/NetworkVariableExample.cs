@@ -6,6 +6,7 @@ using DG.Tweening;
 /// Example Class of a Network Variable of type Vector3 where the server 
 /// directly modify the Variable. In the case of a client it ask through 
 /// Server Rpc to modify the Variable.
+/// Required: DoTween package installed and setup
 /// </summary>
 public class NetworkVariableExample : NetworkBehaviour
 {

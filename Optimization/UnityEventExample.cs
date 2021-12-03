@@ -1,16 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
 /// Example Class using Unity events.
 /// </summary>
-public class UnityEvent : MonoBehaviour {
-
+public class UnityEventExample : MonoBehaviour
+{
     public UnityEvent onSpacebar;
     public UnityEvent onReturn;
-
 
     public void OnTriggerStay()
     {

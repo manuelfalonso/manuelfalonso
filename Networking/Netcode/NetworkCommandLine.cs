@@ -7,7 +7,7 @@ using UnityEngine;
 /// Example to start server: 
 /// Executable.exe -mlapi server
 /// Example to start client and log its activity:
-/// Executable.exe  -logfile log-client.txt -mlapi client
+/// Executable.exe -logfile log-client.txt -mlapi client
 /// All in one Server and Client wit logs:
 /// Executable.exe -logfile log-server.txt -mlapi server & Executable.exe -logfile log-client.txt -mlapi client
 /// </summary>

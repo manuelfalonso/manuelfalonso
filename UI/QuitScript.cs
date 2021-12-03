@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
-using System.Collections;
-/*#if UNITY_EDITOR
-using UnityEditor;
-#endif*/
 
-public class QuitScript : MonoBehaviour {
-	
-
-	public void Quit () 
+/// <summary>
+/// Quit script that works in Unity Editor
+/// </summary>
+public class QuitScript : MonoBehaviour
+{
+	public void Quit()
 	{
-		#if UNITY_EDITOR
+#if UNITY_EDITOR
 		UnityEditor.EditorApplication.ExitPlaymode();
-		#else
+#else
 		Application.Quit();
-		#endif
+#endif
 	}
 }

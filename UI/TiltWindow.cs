@@ -1,20 +1,23 @@
 using UnityEngine;
 
+/// <summary>
+/// Tilt a transform based on the range defined
+/// </summary>
 public class TiltWindow : MonoBehaviour
 {
-	public Vector2 range = new Vector2(5f, 3f);
+	[SerializeField] private Vector2 range = new Vector2(5f, 3f);
 
-	Transform mTrans;
-	Quaternion mStart;
-	Vector2 mRot = Vector2.zero;
+	private Transform mTrans;
+	private Quaternion mStart;
+	private Vector2 mRot = Vector2.zero;
 
-	void Start ()
+	void Start()
 	{
 		mTrans = transform;
 		mStart = mTrans.localRotation;
 	}
 
-	void Update ()
+	void Update()
 	{
 		Vector3 pos = Input.mousePosition;
 

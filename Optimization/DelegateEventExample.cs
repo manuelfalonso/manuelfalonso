@@ -6,7 +6,7 @@ using UnityEngine;
 /// can be on any other script.
 /// Also events support multiple subscriptions
 /// </summary>
-public class DelegateEvent : MonoBehaviour
+public class DelegateEventExample : MonoBehaviour
 {
     public delegate void ChangeRandomColor(Color color);
     // Static event to be accesed from other scripts
@@ -18,6 +18,7 @@ public class DelegateEvent : MonoBehaviour
     {
         // Subscribe to event
         OnClick += ChangeColor;
+		
         ms = GetComponent<MeshRenderer>();
     }
 
