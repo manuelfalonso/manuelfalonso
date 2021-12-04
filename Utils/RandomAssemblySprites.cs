@@ -4,10 +4,6 @@
 /// It could be attach to a NPC or Player to randomly generate characters 
 /// Manually assign sprites to each slot.
 /// </summary>
-
-// RequireComponent if needed
-//[RequireComponent(typeof( ))]
-
 public class RandomAssemblySprites : MonoBehaviour
 {
 	[SerializeField]
