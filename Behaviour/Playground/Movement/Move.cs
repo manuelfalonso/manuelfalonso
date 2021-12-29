@@ -1,6 +1,8 @@
 using UnityEngine;
-using System.Collections;
 
+/// <summary>
+/// Move script with look at option
+/// </summary>
 [AddComponentMenu("Playground/Movement/Move With Arrows")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Move : Physics2DObject
@@ -15,19 +17,18 @@ public class Move : Physics2DObject
 
 	[Header("Orientation")]
 	public bool orientToDirection = false;
-	// The direction that will face the player
+	[Tooltip("The direction that will face the player")]
 	public Enums.Directions lookAxis = Enums.Directions.Up;
 
 	private Vector2 movement, cachedDirection;
 	private float moveHorizontal;
 	private float moveVertical;
 
-
 	// Update gets called every frame
-	void Update ()
-	{	
+	void Update()
+	{
 		// Moving with the arrow keys
-		if(typeOfControl == Enums.KeyGroups.ArrowKeys)
+		if (typeOfControl == Enums.KeyGroups.ArrowKeys)
 		{
 			moveHorizontal = Input.GetAxis("Horizontal");
 			moveVertical = Input.GetAxis("Vertical");
@@ -38,8 +39,8 @@ public class Move : Physics2DObject
 			moveVertical = Input.GetAxis("Vertical2");
 		}
 
-		//zero-out the axes that are not needed, if the movement is constrained
-		switch(movementType)
+		// Zero-out the axes that are not needed, if the movement is constrained
+		switch (movementType)
 		{
 			case Enums.MovementType.OnlyHorizontal:
 				moveVertical = 0f;
@@ -48,15 +49,14 @@ public class Move : Physics2DObject
 				moveHorizontal = 0f;
 				break;
 		}
-			
-		movement = new Vector2(moveHorizontal, moveVertical);
 
+		movement = new Vector2(moveHorizontal, moveVertical);
 
 		//rotate the GameObject towards the direction of movement
 		//the axis to look can be decided with the "axis" variable
-		if(orientToDirection)
+		if (orientToDirection)
 		{
-			if(movement.sqrMagnitude >= 0.01f)
+			if (movement.sqrMagnitude >= 0.01f)
 			{
 				cachedDirection = movement;
 			}
@@ -64,10 +64,8 @@ public class Move : Physics2DObject
 		}
 	}
 
-
-
 	// FixedUpdate is called every frame when the physics are calculated
-	void FixedUpdate ()
+	void FixedUpdate()
 	{
 		// Apply the force to the Rigidbody2d
 		rigidbody2D.AddForce(movement * speed * 10f);
