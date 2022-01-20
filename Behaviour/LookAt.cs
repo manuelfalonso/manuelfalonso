@@ -13,6 +13,7 @@ public class LookAt : MonoBehaviour
     {
         //TransformLookAt();
         //QuaternionLookRotation();
+		//LookAtMouse();
     }
 
     private void TransformLookAt()
@@ -24,5 +25,11 @@ public class LookAt : MonoBehaviour
     {
         Vector3 relativePos = _target.position - transform.position;
         transform.rotation = Quaternion.LookRotation(relativePos);
+    }
+	
+	private void LookAtMouse()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position);
     }
 }
