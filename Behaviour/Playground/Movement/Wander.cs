@@ -4,7 +4,6 @@ using System.Collections;
 /// <summary>
 /// Wander script using forces
 /// </summary>
-[AddComponentMenu("Playground/Movement/Wander")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Wander : Physics2DObject
 {
