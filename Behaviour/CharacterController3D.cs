@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 
 [RequireComponent(typeof(CharacterController))]
-public class ThirdPersonController : MonoBehaviour
+public class CharacterController3D : MonoBehaviour
 {
     [SerializeField] private float playerSpeed = 4.0f;
     [SerializeField] private float jumpHeight = 2.0f;
