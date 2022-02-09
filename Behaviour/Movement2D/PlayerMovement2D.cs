@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Edited: Me
+/// Edited: ManuelFAlonso
 /// Source: Brackeys
 /// </summary>
 [RequireComponent(typeof(CharacterController2D))]
