@@ -1,24 +1,31 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
-/// Supports:
-/// Move, Jump, Crouch, OnLanding, OnCrouching, Flip.
-/// Edited: ManuelFAlonso
-/// Source: Brackeys & CodeMonkey
+/// Supports: Move, Jump, Crouch, OnLanding, OnCrouching and Flip.
+/// Features: Coyote Time and Input Buffer.
+/// Edited: Manuel F. Alonso
+/// Source: Brackeys, CodeMonkey & Alva Majo + DEValen
+/// Require: A layer defined for the ground
 /// </summary>
+[RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
 	[Tooltip("Amount of force added when the player jumps")]
-	[SerializeField] private float m_JumpForce = 400f;         
+	[SerializeField] private float m_JumpForce = 600f;         
 	[Tooltip("Amount of maxSpeed applied to crouching movement. 1 = 100%")]
 	[Range(0, 1)] 
 	[SerializeField] private float m_CrouchSpeed = .36f;
 	[Tooltip("How much to smooth out the movement")]
 	[Range(0, .3f)] 
 	[SerializeField] private float m_MovementSmoothing = .05f;
-	[Tooltip("Whether or not a player can steer while jumping;")]
+	[Tooltip("Whether or not a player can steer while jumping")]
 	[SerializeField] private bool m_AirControl = false;
+	[Tooltip("Air time limit for jumping")]
+	[SerializeField] private float m_CoyoteTime = 0.1f;
+	[Tooltip("Max number of Input stored")]
+	[SerializeField] private int m_InputBufferLimit = 1;
 
 	[Tooltip("A mask determining what is ground to the character")]
 	[SerializeField] private LayerMask m_WhatIsGround;
@@ -39,19 +46,21 @@ public class CharacterController2D : MonoBehaviour
 	// For determining which way the player is currently facing.
 	private bool m_FacingRight = true;
 	private bool m_WasCrouching = false;
+	private float m_AirTime = 0f;
 
 	private Vector3 m_Velocity = Vector3.zero;
 	private Rigidbody2D m_Rigidbody2D;
-
-    [Header("Events")]
-	[Space]
-
-	public UnityEvent OnLandEvent;
+	// KeyCode instead of bool for combos.
+	private Queue<bool> m_InputBuffer = new Queue<bool>();
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
 
+	[Header("Events")]
+	[Space]
+
 	public BoolEvent OnCrouchEvent;
+	public BoolEvent OnJumpingEvent;
 
 	[Header("Debug")]
 	[Space]
@@ -62,11 +71,11 @@ public class CharacterController2D : MonoBehaviour
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
-		if (OnLandEvent == null)
-			OnLandEvent = new UnityEvent();
-
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+		if (OnJumpingEvent == null)
+			OnJumpingEvent = new BoolEvent();
 	}
 
 	private void FixedUpdate()
@@ -88,50 +97,60 @@ public class CharacterController2D : MonoBehaviour
 
         if (raycastHit.collider != null)
         {
+			// Reset time counter
+			m_AirTime = 0f;
 			m_Grounded = true;
 			if (!wasGrounded)
-				OnLandEvent.Invoke();
+				OnJumpingEvent.Invoke(false);
         }
         else
         {
 			m_Grounded = false;
+			// Add time to counter
+			m_AirTime += Time.fixedDeltaTime;
 		}
 
 		// Draw a box with Debug.Ray
         if (m_DebugGroundCheck)
         {
-			Color rayColor;
-			if (raycastHit.collider != null)
-			{
-				rayColor = Color.green;
-			}
-			else
-			{
-				rayColor = Color.red;
-			}
-
-			Debug.DrawRay(
-				m_MainCollider.bounds.center + new Vector3(m_MainCollider.bounds.extents.x, 0f, 0f),
-				Vector2.down * (m_MainCollider.bounds.extents.y + k_GroundedExtraHeight),
-				rayColor);
-			Debug.DrawRay(
-				m_MainCollider.bounds.center - new Vector3(m_MainCollider.bounds.extents.x, 0f, 0f),
-				Vector2.down * (m_MainCollider.bounds.extents.y + k_GroundedExtraHeight),
-				rayColor);
-			Debug.DrawRay(
-				m_MainCollider.bounds.center - new Vector3(
-					m_MainCollider.bounds.extents.x,
-					m_MainCollider.bounds.extents.y + k_GroundedExtraHeight,
-					0f),
-				Vector2.right * (m_MainCollider.bounds.extents.y * 2),
-				rayColor);
+			DrawDebugRay(raycastHit);
 		}
+	}
+
+    private void DrawDebugRay(RaycastHit2D rayCastToCheck)
+    {
+		Color rayColor;
+		// Change ray color depending if its colliding
+		if (rayCastToCheck.collider != null)
+		{
+			rayColor = Color.green;
+		}
+		else
+		{
+			rayColor = Color.red;
+		}
+
+		Debug.DrawRay(
+			m_MainCollider.bounds.center + new Vector3(m_MainCollider.bounds.extents.x, 0f, 0f),
+			Vector2.down * (m_MainCollider.bounds.extents.y + k_GroundedExtraHeight),
+			rayColor);
+		Debug.DrawRay(
+			m_MainCollider.bounds.center - new Vector3(m_MainCollider.bounds.extents.x, 0f, 0f),
+			Vector2.down * (m_MainCollider.bounds.extents.y + k_GroundedExtraHeight),
+			rayColor);
+		Debug.DrawRay(
+			m_MainCollider.bounds.center - new Vector3(
+				m_MainCollider.bounds.extents.x,
+				m_MainCollider.bounds.extents.y + k_GroundedExtraHeight,
+				0f),
+			Vector2.right * (m_MainCollider.bounds.extents.y * 2),
+			rayColor);
 	}
 
     public void Move(float move, bool crouch, bool jump)
 	{
 		// If crouching, check to see if the character can stand up
-		if (!crouch)
+		if (m_WasCrouching && !crouch)
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
 			if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
@@ -140,7 +159,7 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 
-		//only control the player if grounded or airControl is turned on
+		// Only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
 
@@ -195,12 +214,54 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
-		// If the player should jump...
-		if (m_Grounded && jump)
-		{
-			// Add a vertical force to the player.
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-		}
+
+        if (jump)
+        {
+            if (m_InputBuffer.Count < m_InputBufferLimit)
+            {
+				m_InputBuffer.Enqueue(jump);
+				Invoke("InputDequeue", 0.5f);
+            }
+        }
+		
+		// Clamp velocity to avoid accumulate Jump forces
+		m_Rigidbody2D.velocity = Vector2.ClampMagnitude(m_Rigidbody2D.velocity, 12f);
+
+		if (m_InputBuffer.Count > 0)
+        {
+			if (m_Grounded)
+			{
+				// Compare with the expected KeyCode in the case of a combo.
+				if (m_InputBuffer.Peek() == true)
+				{
+					// Add a vertical force to the player.
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+					m_InputBuffer.Dequeue();
+					OnJumpingEvent.Invoke(true);
+					return;
+				}
+			}
+
+			if (m_AirTime < m_CoyoteTime && m_Rigidbody2D.velocity.y <= 0f)
+			{
+				// Check expected value.
+				if (m_InputBuffer.Peek() == true)
+				{
+					// Add a vertical force to the player.
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+                    m_InputBuffer.Dequeue();
+					OnJumpingEvent.Invoke(true);
+				}
+			}
+        }
+	}
+
+	private void InputDequeue()
+    {
+        if (m_InputBuffer.Count > 0)
+        {
+			m_InputBuffer.Dequeue();
+        }
 	}
 
 	private void Flip()
