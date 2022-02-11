@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 /// <summary>
 /// Supports: Move, Jump, Crouch, OnLanding, OnCrouching and Flip.
-/// Features: Coyote Time and Input Buffer.
+/// Features: Coyote Time, Input Buffer and Corner Correction.
 /// Edited: Manuel F. Alonso
 /// Source: Brackeys, CodeMonkey & Alva Majo + DEValen
 /// Require: A layer defined for the ground
@@ -26,6 +26,8 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private float m_CoyoteTime = 0.1f;
 	[Tooltip("Max number of Input stored")]
 	[SerializeField] private int m_InputBufferLimit = 1;
+	[Tooltip("Corner correction height")]
+	[SerializeField] private float m_CornerCorrectionHeight = 0.5f;
 
 	[Tooltip("A mask determining what is ground to the character")]
 	[SerializeField] private LayerMask m_WhatIsGround;
@@ -66,6 +68,7 @@ public class CharacterController2D : MonoBehaviour
 	[Space]
 
 	[SerializeField] private bool m_DebugGroundCheck = false;
+	[SerializeField] private bool m_DebugCornerCorrection = false;
 
 	private void Awake()
 	{
@@ -81,6 +84,7 @@ public class CharacterController2D : MonoBehaviour
 	private void FixedUpdate()
 	{
 		GroundedCheck();
+		CornerCorrection();
 	}
 
     private void GroundedCheck()
@@ -113,11 +117,11 @@ public class CharacterController2D : MonoBehaviour
 		// Draw a box with Debug.Ray
         if (m_DebugGroundCheck)
         {
-			DrawDebugRay(raycastHit);
+			DrawDebugGroundCheckRays(raycastHit);
 		}
 	}
 
-    private void DrawDebugRay(RaycastHit2D rayCastToCheck)
+    private void DrawDebugGroundCheckRays(RaycastHit2D rayCastToCheck)
     {
 		Color rayColor;
 		// Change ray color depending if its colliding
@@ -227,34 +231,108 @@ public class CharacterController2D : MonoBehaviour
 		// Clamp velocity to avoid accumulate Jump forces
 		m_Rigidbody2D.velocity = Vector2.ClampMagnitude(m_Rigidbody2D.velocity, 12f);
 
-		if (m_InputBuffer.Count > 0)
-        {
-			if (m_Grounded)
-			{
-				// Compare with the expected KeyCode in the case of a combo.
-				if (m_InputBuffer.Peek() == true)
-				{
-					// Add a vertical force to the player.
-					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-					m_InputBuffer.Dequeue();
-					OnJumpingEvent.Invoke(true);
-					return;
-				}
-			}
+		if (m_InputBuffer.Count <= 0)
+			return;
 
-			if (m_AirTime < m_CoyoteTime && m_Rigidbody2D.velocity.y <= 0f)
-			{
-				// Check expected value.
-				if (m_InputBuffer.Peek() == true)
-				{
-					// Add a vertical force to the player.
-					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-                    m_InputBuffer.Dequeue();
-					OnJumpingEvent.Invoke(true);
-				}
-			}
-        }
+		if (m_InputBuffer.Peek() != true)
+			return;
+
+		if (m_Grounded)
+		{
+			// Add a vertical force to the player.
+			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			m_InputBuffer.Dequeue();
+			OnJumpingEvent.Invoke(true);
+			return;
+		}
+
+		if (m_AirTime < m_CoyoteTime && m_Rigidbody2D.velocity.y <= 0f)
+		{
+			// Add a vertical force to the player.
+			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            m_InputBuffer.Dequeue();
+			OnJumpingEvent.Invoke(true);
+		}
 	}
+
+	private void CornerCorrection()
+    {
+		// Left Raycast
+		RaycastHit2D leftRaycast = Physics2D.Raycast(
+			m_MainCollider.bounds.center 
+				+ new Vector3(0f, m_MainCollider.bounds.extents.y)
+				- new Vector3(m_MainCollider.bounds.extents.x, 0f),
+			Vector2.up,
+			m_CornerCorrectionHeight,
+			m_WhatIsGround
+			);
+		// Right Raycast
+		RaycastHit2D rightRaycast = Physics2D.Raycast(
+			m_MainCollider.bounds.center
+				+ new Vector3(0f, m_MainCollider.bounds.extents.y)
+				+ new Vector3(m_MainCollider.bounds.extents.x, 0f),
+			Vector2.up,
+			m_CornerCorrectionHeight,
+			m_WhatIsGround
+			);
+
+		// Draw Rays for each Corner
+		if (m_DebugCornerCorrection)
+			DrawDebugCornerCorrectionRays(leftRaycast, rightRaycast);
+
+		// Modify object position obly if its jumping
+		if (m_Rigidbody2D.velocity.y <= 1f)
+			return;
+
+        // If left raycast is hitting and not the right one
+        if (leftRaycast && !rightRaycast)
+        {
+			transform.position += new Vector3(0.2f, 0f);
+        }
+		// If right raycast is hitting and not the left one
+		else if (rightRaycast && !leftRaycast)
+        {
+			transform.position -= new Vector3(0.2f, 0f);
+		}
+	}
+
+	private void DrawDebugCornerCorrectionRays(RaycastHit2D leftRayCast, RaycastHit2D rightRayCast)
+    {
+		Color leftRayColor;
+		Color rightRayColor;
+		// Change ray color depending if its colliding
+		if (leftRayCast.collider != null)
+		{
+			leftRayColor = Color.green;
+		}
+		else
+		{
+			leftRayColor = Color.red;
+		}
+		if (rightRayCast.collider != null)
+		{
+			rightRayColor = Color.green;
+		}
+		else
+		{
+			rightRayColor = Color.red;
+		}
+
+        // Must be the same rays as CornerCorrection method
+        Debug.DrawRay(
+            m_MainCollider.bounds.center
+                + new Vector3(0f, m_MainCollider.bounds.extents.y)
+                - new Vector3(m_MainCollider.bounds.extents.x, 0f),
+            Vector2.up * m_CornerCorrectionHeight,
+            leftRayColor);
+
+        Debug.DrawRay(
+        m_MainCollider.bounds.center
+            + new Vector3(0f, m_MainCollider.bounds.extents.y)
+            + new Vector3(m_MainCollider.bounds.extents.x, 0f),
+        	Vector2.up* m_CornerCorrectionHeight,
+            rightRayColor);
+    }
 
 	private void InputDequeue()
     {
