@@ -1,12 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
-/// Script for offseting the texture of a Sprite to make a moving background.
+/// Offseting the texture of a Sprite or UI Image to make a moving background.
 /// Required: 
 ///     Texture Import Settings: Wrap Mode -> Repeat
-///     A Material with "Universal Render Pipeline/2D/Sprite-Lit-Defaul" Shader
+///     A Material with shader:
+///         Universal Render Pipeline/2D/Sprite-Lit-Defaul
+///         UI/Default
 /// </summary>
-[RequireComponent(typeof(Renderer))]
 public class TextureOffset : MonoBehaviour
 {
     [Header("Properties")]
@@ -39,31 +42,40 @@ public class TextureOffset : MonoBehaviour
     private float _xOffSet = 0f;
     private float _yOffSet = 0f;
     private float _timeOffSet = 0f;
-    private string _shaderName = "Universal Render Pipeline/2D/Sprite-Lit-Default";
+    private List<string> _shaderName = new List<string>() 
+        { "Universal Render Pipeline/2D/Sprite-Lit-Default" , "UI/Default" };
 
     private Material _material;
 
     void Start()
     {
-        _material = GetComponent<Renderer>().material;
+        if (GetComponent<Renderer>())
+            _material = GetComponent<Renderer>().material;
+        else
+            _material = GetComponent<Image>().material;
 
         InitializeCurves();
 
         if (!_debugMode) return;
         // Debug Mode
-        if (_material.shader.name != _shaderName)
-            Debug.LogError("The Sahder must be Universal " + _shaderName);
-        else
+        if (_shaderName.Contains(_material.shader.name))
             Debug.Log("Shader is OK");
+        else
+        { 
+            Debug.LogError("The Sahder must be ");
+            _shaderName.ForEach(delegate(string name) { Debug.LogError(name); });
+        }
     }
 
     private void InitializeCurves()
     {
         if (_xCurveSpeedValue.length == 0)
-            _xCurveSpeedValue = new AnimationCurve(new Keyframe(0, 0.1f), new Keyframe(1, 0.1f));
+            _xCurveSpeedValue = 
+                new AnimationCurve(new Keyframe(0, 0.1f), new Keyframe(1, 0.1f));
 
         if (_yCurveSpeedValue.length == 0)
-            _yCurveSpeedValue = new AnimationCurve(new Keyframe(0, 0.1f), new Keyframe(1, 0.1f));
+            _yCurveSpeedValue = 
+                new AnimationCurve(new Keyframe(0, 0.1f), new Keyframe(1, 0.1f));
 
         _xCurveSpeedValue.preWrapMode = _xPreWrapMode;
         _xCurveSpeedValue.postWrapMode = _xPostWrapMode;
