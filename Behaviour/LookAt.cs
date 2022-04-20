@@ -13,12 +13,14 @@ public class LookAt : MonoBehaviour
     {
         //TransformLookAt();
         //QuaternionLookRotation();
-		//LookAtMouse();
+
+        //LookAtMousePosition();
+        //LookAtMouseClick();
     }
 
     private void TransformLookAt()
     {
-        transform.LookAt(Camera.main.transform.position, Vector3.up);
+        transform.LookAt(_target.position, Vector3.up);
     }
 
     private void QuaternionLookRotation()
@@ -26,10 +28,29 @@ public class LookAt : MonoBehaviour
         Vector3 relativePos = _target.position - transform.position;
         transform.rotation = Quaternion.LookRotation(relativePos);
     }
-	
-	private void LookAtMouse()
+
+    private void LookAtMousePosition()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.rotation = Quaternion.LookRotation(Vector3.forward, mousePos - transform.position);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        {
+            transform.LookAt(hit.point);
+        }
+    }
+
+    private void LookAtMouseClick()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+            {
+                transform.LookAt(hit.point);
+            }
+        }
     }
 }
