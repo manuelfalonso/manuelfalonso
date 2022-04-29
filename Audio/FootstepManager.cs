@@ -28,12 +28,17 @@ public class FootstepManager : MonoBehaviour
                 _currentList = stepsList[i].Steps;
                 break;
             }
+			else
+                currentList = null;
         }
     }
 
     public void PlayStep()
     {
-        AudioClip clip = _currentList[Random.Range(0, _currentList.Count)];
-        _source.PlayOneShot(clip);
+        if (currentList != null)
+        {
+            AudioClip clip = currentList[Random.Range(0, currentList.Count)];
+            source.PlayOneShot(clip);
+        }
     }
 }
