@@ -11,12 +11,22 @@ public class FormNavigation : MonoBehaviour
 {
     private EventSystem system;
 
-    [SerializeField] private Button submitButton; 
+    [SerializeField] private Button submitButton;
 
     // Start is called before the first frame update
     void Start()
     {
         system = EventSystem.current;
+
+        if (!system)
+        {
+            Debug.LogError(
+                this + ": Event System required");
+            return;
+        }
+        else if (!system.firstSelectedGameObject)
+            Debug.LogError(
+                this + ": Event System First Selected Object is required");
     }
 
     // Update is called once per frame
@@ -24,7 +34,8 @@ public class FormNavigation : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Tab))
         {
-            Selectable previous = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnUp();
+            Selectable previous = 
+                system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnUp();
             if (previous != null)
             {
                 previous.Select();
@@ -32,16 +43,12 @@ public class FormNavigation : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Tab))
         {
-            Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
+            Selectable next = 
+                system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
             if (next != null)
             {
                 next.Select();
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-            submitButton.onClick.Invoke();
-            Debug.Log("Button preseed");
         }
     }
 }
