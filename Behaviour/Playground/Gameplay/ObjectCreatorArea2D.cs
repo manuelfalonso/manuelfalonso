@@ -3,10 +3,10 @@ using System.Collections;
 
 /// <summary>
 /// Spawner area with interval
+/// WARINING!: This script doesnt work with rotation of the spawn area
 /// </summary>
-[AddComponentMenu("Playground/Gameplay/Object Creator Area")]
 [RequireComponent(typeof(BoxCollider2D))]
-public class ObjectCreatorArea : MonoBehaviour
+public class ObjectCreatorArea2D : MonoBehaviour
 {
 	[Header("Object creation")]
 
