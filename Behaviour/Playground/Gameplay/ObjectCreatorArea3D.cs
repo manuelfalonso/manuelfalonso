@@ -18,25 +18,29 @@ public class ObjectCreatorArea3D : MonoBehaviour
 
 	[Tooltip("Configure the spawning pattern")]
 	public float spawnInterval = 1f;
+	public bool spawnOnStart = true;
 
 	private BoxCollider _boxCollider;
 
 	void Start()
 	{
 		_boxCollider = GetComponent<BoxCollider>();
+		// Make the collider not affect physics
+		_boxCollider.isTrigger = true;
 
-		StartCoroutine(SpawnObject());
+		if (spawnOnStart)
+			StartSpawningObjects();
 	}
 
 	/// <summary>
 	/// This will spawn an object, and then wait some time, then spawn another...
 	/// </summary>
-	IEnumerator SpawnObject()
+	private IEnumerator SpawnObject()
 	{
 		while (true)
 		{
-            // Create some random numbers
-            float randomX = Random.Range(
+			// Create some random numbers
+			float randomX = Random.Range(
 				-_boxCollider.size.x, _boxCollider.size.x) * .5f;
 			float randomY = Random.Range(
 				-_boxCollider.size.y, _boxCollider.size.y) * .5f;
@@ -45,13 +49,29 @@ public class ObjectCreatorArea3D : MonoBehaviour
 
 			// Generate the new object
 			GameObject newObject = Instantiate(prefabToSpawn);
-            newObject.transform.position = new Vector3(
-                randomX + transform.position.x,
-                randomY + transform.position.y,
-                randomZ + transform.position.z);
+			newObject.transform.position = new Vector3(
+				randomX + transform.position.x,
+				randomY + transform.position.y,
+				randomZ + transform.position.z);
 
-            // Wait for some time before spawning another object
-            yield return new WaitForSeconds(spawnInterval);
+			// Wait for some time before spawning another object
+			yield return new WaitForSeconds(spawnInterval);
 		}
 	}
+
+	/// <summary>
+	/// Start spawning objects with the time interval set
+	/// </summary>
+	public void StartSpawningObjects()
+    {
+		StartCoroutine(SpawnObject());
+	}
+
+	/// <summary>
+	/// Stop spawning objects
+	/// </summary>
+	public void StopSpawningObjects()
+    {
+		StopAllCoroutines();
+    }
 }

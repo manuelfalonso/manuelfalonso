@@ -21,22 +21,24 @@ public class Timer : MonoBehaviour
     // Used for stopping and continue time without losing milliseconds
     private float _remainingTimeOfOneSecond = 1;
 
-    public int Seconds {
+    public int Seconds
+    {
         get { return _seconds; }
-        private set 
+        private set
         {
             if (value > 60)
                 value = 60;
             else if (value < 0)
                 value = 0;
-                        
+
             if (_secondsInput)
                 _secondsInput.text = value.ToString();
 
             _seconds = value;
         }
     }
-    public int Minutes {
+    public int Minutes
+    {
         get { return _minutes; }
         private set
         {
@@ -45,20 +47,21 @@ public class Timer : MonoBehaviour
             else if (value < 0)
                 value = 0;
 
-            if (_secondsInput)
+            if (_minutesInput)
                 _minutesInput.text = value.ToString();
 
             _minutes = value;
         }
     }
-    public int Hours {
+    public int Hours
+    {
         get { return _hours; }
         private set
         {
             if (value < 0)
                 value = 0;
 
-            if (_secondsInput)
+            if (_hoursInput)
                 _hoursInput.text = value.ToString();
 
             _hours = value;
@@ -77,7 +80,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private int _hoursSet = 0;
 
-    [Header("Timer Inputs")]
+    [Header("Timer Inputs (optional)")]
 
     [SerializeField]
     private TMP_InputField _secondsInput;
@@ -86,7 +89,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TMP_InputField _hoursInput;
 
-    [Header("Timer Buttons")]
+    [Header("Timer Buttons (optional)")]
 
     [SerializeField]
     private Button _startButton;
@@ -98,7 +101,7 @@ public class Timer : MonoBehaviour
     [Header("Debug")]
 
     [SerializeField]
-    private bool _debugMode = false;
+    private bool _enableLogging = false;
 
     #region Unity Events
 
@@ -123,21 +126,30 @@ public class Timer : MonoBehaviour
 
     private void InitializeInputFields()
     {
-        // Initialize format and validation
-        _secondsInput.characterValidation = TMP_InputField.CharacterValidation.Integer;
-        _secondsInput.characterLimit = 2;
-        _minutesInput.characterValidation = TMP_InputField.CharacterValidation.Integer;
-        _minutesInput.characterLimit = 2;
-        _hoursInput.characterValidation = TMP_InputField.CharacterValidation.Integer;
-        _hoursInput.characterLimit = 2;
+        // Initialize format, validation and On Value Changed Events
+        if (_secondsInput)
+        {
+            _secondsInput.characterValidation = TMP_InputField.CharacterValidation.Integer;
+            _secondsInput.characterLimit = 2;
+            _secondsInput.onValueChanged.AddListener(_setSecondsAction);
+        }
+        if (_minutesInput)
+        {
+            _minutesInput.characterValidation = TMP_InputField.CharacterValidation.Integer;
+            _minutesInput.characterLimit = 2;
+            _minutesInput.onValueChanged.AddListener(_setMinutesAction);
+        }
+        if (_hoursInput)
+        {
+            _hoursInput.characterValidation = TMP_InputField.CharacterValidation.Integer;
+            _hoursInput.characterLimit = 2;
+            _hoursInput.onValueChanged.AddListener(_setHoursAction);
+        }
 
         // Initilialize On Value Changed Events
         _setSecondsAction += SetSeconds;
-        _secondsInput.onValueChanged.AddListener(_setSecondsAction);
         _setMinutesAction += SetMinutes;
-        _minutesInput.onValueChanged.AddListener(_setMinutesAction);
         _setHoursAction += SetHours;
-        _hoursInput.onValueChanged.AddListener(_setHoursAction);
     }
 
     private void InitializeButtons()
@@ -154,7 +166,7 @@ public class Timer : MonoBehaviour
 
     private IEnumerator RunTimer()
     {
-        if (_debugMode)
+        if (_enableLogging)
             Debug.Log(Seconds);
 
         while (!IsTimerReached())
@@ -162,8 +174,8 @@ public class Timer : MonoBehaviour
             // Save the remaining time for one second on each frame
             // Credits to Bunny83
             for (
-                float remaingTime = _remainingTimeOfOneSecond; 
-                remaingTime > 0; 
+                float remaingTime = _remainingTimeOfOneSecond;
+                remaingTime > 0;
                 remaingTime -= Time.deltaTime)
             {
                 _remainingTimeOfOneSecond = remaingTime;
@@ -189,7 +201,7 @@ public class Timer : MonoBehaviour
                 Seconds = 59;
             }
 
-            if (_debugMode)
+            if (_enableLogging)
                 Debug.Log(Seconds);
 
             // Check if final timer was reached
@@ -219,13 +231,16 @@ public class Timer : MonoBehaviour
     /// Seconds setter. Cannot be called if the timer is running.
     /// </summary>
     /// <param name="value">Seconds</param>
-    private void SetSeconds(string value)
+    public void SetSeconds(string value)
     {
         if (_isRunning)
             return;
 
         Seconds = int.Parse(value);
         _secondsSet = int.Parse(value);
+
+        if (!_startButton)
+            return;
 
         if (IsTimerReached())
             _startButton.interactable = false;
@@ -237,7 +252,7 @@ public class Timer : MonoBehaviour
     /// Minutes setter. Cannot be called if the timer is running.
     /// </summary>
     /// <param name="value">Minutes</param>
-    private void SetMinutes(string value)
+    public void SetMinutes(string value)
     {
         if (_isRunning)
             return;
@@ -255,7 +270,7 @@ public class Timer : MonoBehaviour
     /// Hour setter. Cannot be called if the timer is running.
     /// </summary>
     /// <param name="value">Hours</param>
-    private void SetHours(string value)
+    public void SetHours(string value)
     {
         if (_isRunning)
             return;
@@ -276,9 +291,9 @@ public class Timer : MonoBehaviour
     {
         _isRunning = true;
 
-        if (_debugMode)
+        if (_enableLogging)
             Debug.Log("Timer Started");
-        
+
         // Start timer
         StartCoroutine(RunTimer());
 
@@ -300,7 +315,7 @@ public class Timer : MonoBehaviour
     {
         _isRunning = false;
 
-        if (_debugMode)
+        if (_enableLogging)
             Debug.Log("Timer Stopped");
 
         // Stop timer
@@ -326,7 +341,7 @@ public class Timer : MonoBehaviour
     {
         _isRunning = false;
 
-        if (_debugMode)
+        if (_enableLogging)
             Debug.Log("Timer Restarted");
 
         // Stop timer
