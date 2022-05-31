@@ -3,7 +3,6 @@ using UnityEngine;
 /// <summary>
 /// Rotate scripts using forces
 /// </summary>
-[AddComponentMenu("Playground/Movement/Rotate")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Rotate : Physics2DObject
 {

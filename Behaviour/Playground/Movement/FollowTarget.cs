@@ -3,7 +3,6 @@ using UnityEngine;
 /// <summary>
 /// Follot target script with look at target option.
 /// </summary>
-[AddComponentMenu("Playground/Movement/Follow Target")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class FollowTarget : Physics2DObject
 {

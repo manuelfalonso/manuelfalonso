@@ -3,7 +3,6 @@ using UnityEngine;
 /// <summary>
 /// Constant movement the direction selected.
 /// </summary>
-[AddComponentMenu("Playground/Movement/Auto Move")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class AutoMove : Physics2DObject
 {
