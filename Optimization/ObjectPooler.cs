@@ -1,19 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Class description here
+/// Single Object Pooler class with variable amount to pool
+/// GetPooledObject takes the first Not Active object of the Pool
 /// </summary>
 public class ObjectPooler : MonoBehaviour
 {
-    [SerializeField] private bool canGrow = true;
-
-    public static ObjectPooler SharedInstance;
-    public List<GameObject> pooledObjects;
+    public static ObjectPooler SharedInstance;    
     public GameObject objectToPool;
     public int amountToPool;
-
+	
+    [SerializeField] private bool canGrow = true;
+	
+	private List<GameObject> pooledObjects;
+	
     void Awake()
     {
         SharedInstance = this;
@@ -57,5 +58,4 @@ public class ObjectPooler : MonoBehaviour
             // otherwise, return null   
             return null;
     }
-
 }
