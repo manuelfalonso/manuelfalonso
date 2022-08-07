@@ -8,11 +8,6 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SceneController : Singleton<SceneController>
 {
-    private void Start()
-    {
-        Restart(5);
-    }
-
     /// <summary>
     /// Load next scene Index
     /// </summary>
