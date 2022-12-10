@@ -8,11 +8,15 @@ public class LookAt : MonoBehaviour
 {
     [SerializeField]
     private Transform _target;
+	
+	[SerializeField]
+    private float _speed;
 
     void Update()
     {
         //TransformLookAt();
         //QuaternionLookRotation();
+		//QuaternionLookRotationWithLerp();
 
         //LookAtMousePosition();
         //LookAtMouseClick();
@@ -27,6 +31,13 @@ public class LookAt : MonoBehaviour
     {
         Vector3 relativePos = _target.position - transform.position;
         transform.rotation = Quaternion.LookRotation(relativePos);
+    }
+	
+	private void QuaternionLookRotationWithLerp()
+    {
+        Vector3 relativePos = _target.position - transform.position;
+        Quaternion newRotation = Quaternion.LookRotation(relativePos);
+		transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, _speed * Time.deltaTime);
     }
 
     private void LookAtMousePosition()

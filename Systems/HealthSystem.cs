@@ -27,7 +27,6 @@ public class HealthSystem
     private bool isMaxHealth = true;
 
     #region Constructor
-
     public HealthSystem(int healthMax)
     {
         this.healthMax = healthMax;
@@ -44,11 +43,9 @@ public class HealthSystem
         IsDead = false;
         health = healthMax;
     }
-
     #endregion
 
     #region Public Methods
-
     public int GetHealth()
     {
         return health;
@@ -96,11 +93,9 @@ public class HealthSystem
 
         CheckOnMaxHealth();
     }
-
     #endregion
 
     #region Private Methods
-
     private void InvokeOnHealthChanged()
     {
         if (OnHealthChanged != null) OnHealthChanged.Invoke(this, EventArgs.Empty);
@@ -135,6 +130,5 @@ public class HealthSystem
             isLowHealth = true;
         }
     }
-
     #endregion
 }
