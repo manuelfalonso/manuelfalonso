@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
 
 /// <summary>
-/// Pick up and hold objects script.
+/// Pick up and hold objects script using parenting and de parenting.
 /// Required:
 /// The PickUp object must have a "Pickup" tag
 /// </summary>
-[AddComponentMenu("Playground/Gameplay/Pick Up And Hold")]
-public class PickUpAndHold : MonoBehaviour
+public class PickUpAndHold2D : MonoBehaviour
 {
 	[Tooltip("Pickup key and drop key could be the same")]
 	public KeyCode pickupKey = KeyCode.B;
 	public KeyCode dropKey = KeyCode.B;
 
-	[Tooltip("An object need to closer than that distance to be picked up.")]
+	[Tooltip("An object need to be closer than that distance to be picked up.")]
 	public float pickUpDistance = 2f;
 
 	private Transform carriedObject = null;
@@ -75,7 +74,7 @@ public class PickUpAndHold : MonoBehaviour
 			Transform pickupParent = carriedObject.parent;
 			if (pickupParent != null)
 			{
-				PickUpAndHold pickupScript = pickupParent.GetComponent<PickUpAndHold>();
+				PickUpAndHold2D pickupScript = pickupParent.GetComponent<PickUpAndHold2D>();
 				if (pickupScript != null)
 				{
 					pickupScript.Drop();

@@ -67,8 +67,10 @@ public static class Utils
 
 	public static float Angle(Vector2 inputVector)
 	{
-		if (inputVector.x < 0) return (Mathf.Atan2(inputVector.x, inputVector.y) * Mathf.Rad2Deg * -1) - 360;
-		else return -Mathf.Atan2(inputVector.x, inputVector.y) * Mathf.Rad2Deg;
+		if (inputVector.x < 0) 
+			return (Mathf.Atan2(inputVector.x, inputVector.y) * Mathf.Rad2Deg * -1) - 360;
+		else 
+			return -Mathf.Atan2(inputVector.x, inputVector.y) * Mathf.Rad2Deg;
 	}
 
 	/// <summary>

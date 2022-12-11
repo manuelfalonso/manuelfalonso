@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 [AddComponentMenu("Playground/Movement/Move With Arrows")]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Move : Physics2DObject
+public class Move : MonoBehaviour
 {
 	[Header("Input keys")]
 	public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
@@ -24,6 +24,13 @@ public class Move : Physics2DObject
 	private float moveHorizontal;
 	private float moveVertical;
 
+	private new Rigidbody2D rigidbody2D;
+
+	void Awake()
+	{
+		rigidbody2D = GetComponent<Rigidbody2D>();
+	}
+	
 	// Update gets called every frame
 	void Update()
 	{

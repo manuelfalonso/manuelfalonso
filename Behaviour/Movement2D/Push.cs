@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 [AddComponentMenu("Playground/Movement/Push")]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Push : Physics2DObject
+public class Push : MonoBehaviour
 {
 	[Header("Input key")]
 
@@ -22,6 +22,13 @@ public class Push : Physics2DObject
 	private bool keyPressed = false;
 	private Vector2 pushVector;
 
+	private new Rigidbody2D rigidbody2D;
+
+	void Awake()
+	{
+		rigidbody2D = GetComponent<Rigidbody2D>();
+	}
+	
 	// Read the input from the player
 	void Update()
 	{

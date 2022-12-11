@@ -5,7 +5,7 @@ using System.Collections;
 /// Wander script using forces
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
-public class Wander : Physics2DObject
+public class Wander : MonoBehaviour
 {
 	[Header("Movement")]
 
@@ -22,6 +22,13 @@ public class Wander : Physics2DObject
 	private Vector2 direction;
 	private Vector3 startingPoint;
 
+	private new Rigidbody2D rigidbody2D;
+
+	void Awake()
+	{
+		rigidbody2D = GetComponent<Rigidbody2D>();
+	}
+	
 	// Start is called at the beginning of the game
 	private void Start()
 	{

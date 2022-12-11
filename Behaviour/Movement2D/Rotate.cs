@@ -4,7 +4,7 @@ using UnityEngine;
 /// Rotate scripts using forces
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
-public class Rotate : Physics2DObject
+public class Rotate : MonoBehaviour
 {
 	[Header("Input keys")]
 	public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
@@ -14,6 +14,13 @@ public class Rotate : Physics2DObject
 
 	private float spin;
 
+	private new Rigidbody2D rigidbody2D;
+
+	void Awake()
+	{
+		rigidbody2D = GetComponent<Rigidbody2D>();
+	}
+	
 	// Update gets called every frame
 	void Update()
 	{

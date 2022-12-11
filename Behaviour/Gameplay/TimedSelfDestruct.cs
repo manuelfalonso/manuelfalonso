@@ -8,21 +8,24 @@ using UnityEngine.Events;
 public class TimedSelfDestruct : MonoBehaviour
 {
 	[Tooltip("After this time, the object will be destroyed")]
-	public float timeToDestruction;
-	[Tooltip("Unity Event invoked when the gameobject is destroyed")]
-	public static UnityEvent OnDestroy = new UnityEvent();
+	[SerializeField] private float _timeToDestruction;
 	[Tooltip("Enable/Disable OnDestroy Event")]
-	public bool isOnDestroyEventEnable = true;
+	[SerializeField] private bool _isOnDestroyEventEnable = true;
+
+	[Space]
+
+	[Tooltip("Unity Event invoked when the gameobject is destroyed")]
+	public UnityEvent OnDestroy = new UnityEvent();
 
 	void Start()
 	{
-		Invoke("DestroyMe", timeToDestruction);
+		Invoke("DestroyMe", _timeToDestruction);
 	}
 
 	// This function will destroy this object
 	void DestroyMe()
 	{
-        if (OnDestroy != null && isOnDestroyEventEnable)
+		if (OnDestroy != null && _isOnDestroyEventEnable)
 			OnDestroy.Invoke();
 
 		Destroy(gameObject);

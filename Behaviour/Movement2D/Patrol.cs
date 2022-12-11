@@ -5,7 +5,7 @@
 /// </summary>
 [AddComponentMenu("Playground/Movement/Patrol")]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Patrol : Physics2DObject
+public class Patrol : MonoBehaviour
 {
 	[Header("Movement")]
 	public float speed = 5f;
@@ -21,6 +21,13 @@ public class Patrol : Physics2DObject
 	private Vector2[] newWaypoints;
 	private int currentTargetIndex;
 
+	private new Rigidbody2D rigidbody2D;
+
+	void Awake()
+	{
+		rigidbody2D = GetComponent<Rigidbody2D>();
+	}
+	
 	void Start()
 	{
 		currentTargetIndex = 0;
