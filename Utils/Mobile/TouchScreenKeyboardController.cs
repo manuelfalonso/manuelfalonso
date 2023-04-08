@@ -93,6 +93,30 @@ public class TouchScreenKeyboardController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Overload method to open the keyboard with a loaded text 
+    /// </summary>
+    /// <param name="text"></param>
+    public void OpenKeyboard(string text)
+    {
+        if (!TouchScreenKeyboard.isSupported)
+            return;
+
+        if (_keyboard == null || _keyboard.active == false)
+        {
+            _keyboard = TouchScreenKeyboard.Open(
+                text,
+                _keyboardType,
+                _autocorrection,
+                _multiLine,
+                _secure,
+                _alert,
+                _textPlaceholder,
+                _characterLimit);
+            //Debug.Log($"OpenKeyboard with text");
+        }
+    }
+	
     // Called from button or Trigger Event
     public void CloseKeyboard()
     {
