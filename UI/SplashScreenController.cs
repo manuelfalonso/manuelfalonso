@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 /// <summary>
 /// Simple Splash screen controller that activates and deactivates objects
-/// TODO It can be improved with object script so each Logo has its own time values
+/// Each object can set its own show duration time
 /// </summary>
 public class SplashScreenController : MonoBehaviour
 {
@@ -15,15 +15,13 @@ public class SplashScreenController : MonoBehaviour
     [SerializeField]
     private float _preDelayTime = 0f;
     [SerializeField]
-    private float _logoDurationTime = 2f;
-    [SerializeField]
     private float _betweenLogosTime = 0f;
     [SerializeField]
     private float _postDelayTime = 0f;
 
     [Space]
     [SerializeField]
-    private List<GameObject> _logos = new List<GameObject>();
+    private List<SplashScreenLogo> _logos = new List<SplashScreenLogo>();
 
     [Header("Events")]
     public UnityEvent OnSplashScreenCompleted = new UnityEvent();
@@ -32,14 +30,13 @@ public class SplashScreenController : MonoBehaviour
     [SerializeField]
     private bool _debugMode = false;
 
+
     private Coroutine _coroutine = null;
-    private WaitForSeconds _logoDuration = default;
     private WaitForSeconds _delayBetweenLogos = default;
 
 
     private void Awake()
     {
-        _logoDuration = new WaitForSeconds(_logoDurationTime);
         _delayBetweenLogos = new WaitForSeconds(_betweenLogosTime);
     }
 
@@ -73,9 +70,9 @@ public class SplashScreenController : MonoBehaviour
             if (_debugMode)
                 Debug.Log($"Running logo index {_currentIndex}");
 
-            _logos[_currentIndex].SetActive(true);
-            yield return _logoDuration;
-            _logos[_currentIndex].SetActive(false);
+            _logos[_currentIndex].gameObject.SetActive(true);
+            yield return new WaitForSeconds(_logos[_currentIndex].logoDurationTime);
+            _logos[_currentIndex].gameObject.SetActive(false);
             yield return _delayBetweenLogos;
         }
 
