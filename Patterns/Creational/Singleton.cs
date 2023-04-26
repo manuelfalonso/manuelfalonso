@@ -5,6 +5,9 @@
 /// </summary>
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
+	[SerializeField]
+    private bool _dontDestroyOnLoad = false;
+	
     private static T instance;
     public static T Instance
     {
@@ -13,7 +16,7 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
 
     protected virtual void Awake()
     {
-        if (instance != null)
+        if (instance != null && instance != this)
         {
 			Destroy(gameObject);      
         }
@@ -21,7 +24,8 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
         {
             instance = (T) this;
 			// The GameObject will persist across multiple scenes.
-			DontDestroyOnLoad(gameObject);
+			if (_dontDestroyOnLoad)
+				DontDestroyOnLoad(gameObject);
         }
     }
 

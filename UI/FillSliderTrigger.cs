@@ -58,6 +58,13 @@ public class FillSliderTrigger : MonoBehaviour
 #endif
 
 
+    public void ResetSlider()
+    {
+        _isFilled = false;
+        _slider.value = 0;
+    }
+	
+	
     private void CheckInput()
     {
         if (_isFilled)
@@ -84,4 +91,5 @@ public class FillSliderTrigger : MonoBehaviour
             OnSliderFilled?.Invoke();
         }
     }
+
 }

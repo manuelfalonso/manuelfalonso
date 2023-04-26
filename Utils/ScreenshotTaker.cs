@@ -6,6 +6,7 @@ using UnityEngine;
 /// <summary>
 /// Utility Class for taking a screenshot from the editor using a menu item.
 /// </summary>
+[ExecuteInEditMode]
 public class ScreenshotTaker : MonoBehaviour
 {
     [MenuItem("Sombra Studios/Tools/Take Screenshot")]
