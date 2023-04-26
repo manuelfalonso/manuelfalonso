@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 /// <summary>
-/// Attach this to a GUIText to make a frames/second indicator.
+/// Attach this to a GUIText to make a frames/second indicator with colors.
 ///
 /// It calculates frames/second over each updateInterval,
 /// so the display does not keep changing wildly.
@@ -13,55 +14,90 @@ using UnityEngine.UI;
 /// correct overall FPS even if the interval renders something like
 /// 5.5 frames.
 /// </summary>
-[RequireComponent(typeof(Text))]
 public class HUDFPS : MonoBehaviour
 {
-    private Text text;
-
+    [Header("UI")]
     [SerializeField]
-    private float updateInterval = 0.5F;
+    private Text _legacyText;
+    [SerializeField]
+    private TextMeshProUGUI _tMProText;
 
-    private float accum = 0; // FPS accumulated over the interval
-    private int frames = 0; // Frames drawn over the interval
-    private float timeleft; // Left time for current interval
+    [Header("Config")]
+    [SerializeField]
+    private float _updateInterval = 0.5F;
+
+    private float _accum = 0; // FPS accumulated over the interval
+    private int _frames = 0; // Frames drawn over the interval
+    private float _timeleft; // Left time for current interval
+
 
     void Start()
     {
-        text = GetComponent<Text>();
-        if (!text)
+        if (TryGetComponent(out Text legacyText))
+            _legacyText = legacyText;
+
+        if (TryGetComponent(out TextMeshProUGUI tMProText))
+            _tMProText = tMProText;
+
+        if (_legacyText == null && _tMProText == null)
         {
-            Debug.Log("UtilityFramesPerSecond needs a GUIText component!");
+            Debug.LogError($"{this}: needs a Text component!");
             enabled = false;
             return;
         }
-        timeleft = updateInterval;
+
+        _timeleft = _updateInterval;
     }
 
     void Update()
     {
-        timeleft -= Time.deltaTime;
-        accum += Time.timeScale / Time.deltaTime;
-        ++frames;
+        _timeleft -= Time.deltaTime;
+        _accum += Time.timeScale / Time.deltaTime;
+        ++_frames;
 
         // Interval ended - update GUI text and start new interval
-        if (timeleft <= 0.0)
+        if (_timeleft <= 0.0)
         {
             // display two fractional digits (f2 format)
-            float fps = accum / frames;
+            float fps = _accum / _frames;
             string format = string.Format("{0:F2} FPS", fps);
-            text.text = format;
 
-            if (fps < 30)
-                text.color = Color.yellow;
-            else
-                if (fps < 10)
-                text.color = Color.red;
-            else
-                text.color = Color.green;
+            if (_legacyText != null)
+                SetLegacyText(fps, format);
 
-            timeleft = updateInterval;
-            accum = 0.0F;
-            frames = 0;
+            if (_tMProText != null)
+                SetTMProText(fps, format);
+
+            _timeleft = _updateInterval;
+            _accum = 0.0F;
+            _frames = 0;
         }
+    }
+
+
+    private void SetLegacyText(float fps, string format)
+    {
+        _legacyText.text = format;
+
+        if (fps < 30)
+            _legacyText.color = Color.yellow;
+        else
+            if (fps < 10)
+            _legacyText.color = Color.red;
+        else
+            _legacyText.color = Color.green;
+    }
+
+    private void SetTMProText(float fps, string format)
+    {
+        _tMProText.text = format;
+
+        if (fps < 30)
+            _tMProText.color = Color.yellow;
+        else
+            if (fps < 10)
+            _tMProText.color = Color.red;
+        else
+            _tMProText.color = Color.green;
     }
 }
