@@ -60,7 +60,7 @@ public class HUDFPS : MonoBehaviour
         {
             // display two fractional digits (f2 format)
             float fps = _accum / _frames;
-            string format = string.Format("{0:F2} FPS", fps);
+            string format = string.Format("{0:F0} FPS", fps);
 
             if (_legacyText != null)
                 SetLegacyText(fps, format);
