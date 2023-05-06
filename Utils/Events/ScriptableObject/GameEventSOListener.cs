@@ -3,26 +3,34 @@ using UnityEngine.Events;
 
 /// <summary>
 /// SO Event Listener using a Unity Event.
+/// Add to the response UnityEvent every neccesary action.
+/// Limitations: 
+/// Must define GameEventSO for each type of data structure needed.
+/// UnityEvents in Editor dont support multi parameter unless they are dynamic.
+/// If the object is disabled will stop listening.
 /// </summary>
 public class GameEventSOListener : MonoBehaviour
 {
     [SerializeField]
-    private GameEventSO gameEvent;
+    private GameEventSO _gameEvent;
     [SerializeField]
-    private UnityEvent response;
+    private UnityEvent _response;
+
 
     private void OnEnable()
     {
-        gameEvent.RegisterListener(this);
+        _gameEvent.RegisterListener(this);
     }
 
     private void OnDisable()
     {
-        gameEvent.UnregisterListener(this);
+        _gameEvent.UnregisterListener(this);
     }
 
+
+    // Called from Game Event Scriptable Object
     public void OnEventRaised()
     {
-        response.Invoke();
+        _response.Invoke();
     }
 }

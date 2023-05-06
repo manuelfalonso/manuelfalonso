@@ -18,13 +18,19 @@ public class HUDFPS : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField]
-    private Text _legacyText;
+    private Text _legacyText = default;
     [SerializeField]
-    private TextMeshProUGUI _tMProText;
+    private TextMeshProUGUI _tMProText = default;
+    [SerializeField]
+    private TextMeshProUGUI _targetFrameRateText = default;
+    [SerializeField]
+    private TextMeshProUGUI _screenRefreshRateText = default;
 
     [Header("Config")]
     [SerializeField]
     private float _updateInterval = 0.5F;
+    [SerializeField]
+    private bool _debugMode = false;
 
     private float _accum = 0; // FPS accumulated over the interval
     private int _frames = 0; // Frames drawn over the interval
@@ -33,23 +39,46 @@ public class HUDFPS : MonoBehaviour
 
     void Start()
     {
-        if (TryGetComponent(out Text legacyText))
-            _legacyText = legacyText;
-
-        if (TryGetComponent(out TextMeshProUGUI tMProText))
-            _tMProText = tMProText;
-
         if (_legacyText == null && _tMProText == null)
         {
-            Debug.LogError($"{this}: needs a Text component!");
+            if (_debugMode)
+                Debug.LogError($"{this} => needs a Text component!");
             enabled = false;
             return;
         }
+
+        SetTargetFrameRateText();
+
+        SetScreenResolutionRefreshRateText();
 
         _timeleft = _updateInterval;
     }
 
     void Update()
+    {
+        CalculateFPS();
+    }
+
+
+    private void SetTargetFrameRateText()
+    {
+        if (_targetFrameRateText != null)
+        {
+            var frameRate = Application.targetFrameRate.ToString();
+            _targetFrameRateText.text = $"Target Frame Rate: {frameRate}";
+        }
+    }
+
+    private void SetScreenResolutionRefreshRateText()
+    {
+        if (_screenRefreshRateText != null)
+        {
+            var refreshRate = Screen.currentResolution.refreshRate.ToString();
+            _screenRefreshRateText.text = $"Screen Refresh Rate: {refreshRate}";
+        }
+    }
+
+    private void CalculateFPS()
     {
         _timeleft -= Time.deltaTime;
         _accum += Time.timeScale / Time.deltaTime;
@@ -63,10 +92,16 @@ public class HUDFPS : MonoBehaviour
             string format = string.Format("{0:F0} FPS", fps);
 
             if (_legacyText != null)
-                SetLegacyText(fps, format);
+            {
+                _legacyText.text = format;
+                _legacyText.color = GetTextColor(fps);
+            }
 
             if (_tMProText != null)
-                SetTMProText(fps, format);
+            {
+                _tMProText.text = format;
+                _tMProText.color = GetTextColor(fps);
+            }
 
             _timeleft = _updateInterval;
             _accum = 0.0F;
@@ -74,30 +109,18 @@ public class HUDFPS : MonoBehaviour
         }
     }
 
-
-    private void SetLegacyText(float fps, string format)
+    private Color GetTextColor(float fps)
     {
-        _legacyText.text = format;
+        Color newColor;
 
         if (fps < 30)
-            _legacyText.color = Color.yellow;
+            newColor = Color.yellow;
         else
             if (fps < 10)
-            _legacyText.color = Color.red;
+            newColor = Color.red;
         else
-            _legacyText.color = Color.green;
-    }
+            newColor = Color.green;
 
-    private void SetTMProText(float fps, string format)
-    {
-        _tMProText.text = format;
-
-        if (fps < 30)
-            _tMProText.color = Color.yellow;
-        else
-            if (fps < 10)
-            _tMProText.color = Color.red;
-        else
-            _tMProText.color = Color.green;
+        return newColor;
     }
 }

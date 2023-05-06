@@ -1,69 +1,33 @@
-using System.Linq;
-using TMPro;
+// Credits to Jason Storey
 using UnityEngine;
-using System;
 
-/// <summary>
-/// Util script to log over UI.
-/// Required: Singleton script
-/// </summary>
-public class Logger : Singleton<Logger>
+namespace SombraStudios
 {
-    [SerializeField]
-    private TextMeshProUGUI debugAreaText = null;
 
-    [SerializeField]
-    private bool enableDebug = false;
-
-    [SerializeField]
-    private int maxLines = 15;
-
-    private void Awake()
+    [AddComponentMenu("_SombraStudios/Services/Logger")]
+    public class Logger : MonoBehaviour
     {
-        base.Awake();
+        [Header("Settings")]
+        [SerializeField]
+        private bool _showLogs = false;
+        [SerializeField]
+        private string _prefix = string.Empty;
+        [SerializeField]
+        private Color _prefixColor = Color.white;
 
-        if (debugAreaText == null)
+        private string _hexColor = string.Empty;
+
+
+        private void OnValidate()
         {
-            debugAreaText = GetComponent<TextMeshProUGUI>();
+            _hexColor = "#" + ColorUtility.ToHtmlStringRGBA(_prefixColor);
         }
-        debugAreaText.text = string.Empty;
-    }
 
-    void OnEnable()
-    {
-        debugAreaText.enabled = enableDebug;
-        enabled = enableDebug;
 
-        if (enabled)
+        public void Log(object message, Object sender)
         {
-            debugAreaText.text += $"<color=\"white\">{DateTime.Now.ToString("HH:mm:ss.fff")} {this.GetType().Name} enabled</color>\n";
-        }
-    }
-
-    public void LogInfo(string message)
-    {
-        ClearLines();
-
-        debugAreaText.text += $"<color=\"green\">{DateTime.Now.ToString("HH:mm:ss.fff")} {message}</color>\n";
-    }
-
-    public void LogError(string message)
-    {
-        ClearLines();
-        debugAreaText.text += $"<color=\"red\">{DateTime.Now.ToString("HH:mm:ss.fff")} {message}</color>\n";
-    }
-
-    public void LogWarning(string message)
-    {
-        ClearLines();
-        debugAreaText.text += $"<color=\"yellow\">{DateTime.Now.ToString("HH:mm:ss.fff")} {message}</color>\n";
-    }
-
-    private void ClearLines()
-    {
-        if (debugAreaText.text.Split('\n').Count() >= maxLines)
-        {
-            debugAreaText.text = string.Empty;
+            if (!_showLogs) return;
+            Debug.Log($"<color={_hexColor}>{_prefix}</color> {message}", sender);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
@@ -21,3 +22,4 @@ public class ScreenshotTaker : MonoBehaviour
         Debug.Log("Screenshot saved at: " + Directory.GetCurrentDirectory() + "\\Screenshots");
     }
 }
+#endif

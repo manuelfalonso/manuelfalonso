@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// 
+/// Event Registry with static references
 /// </summary>
 namespace Tapestry
 {
