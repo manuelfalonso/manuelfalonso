@@ -1,12 +1,12 @@
-namespace SombraStudios.Utils
+namespace SombraStudios.Tools.Coroutines
 {
 
     using System.Collections;
     using UnityEngine;
 
     /// <summary>
-    /// Unity Coroutine runner that allows decoupled scene persistent 
-    /// Coroutines and single or multi coroutine execution validation.
+    /// Unity Coroutine runner that allows game object decoupled, scene 
+    /// persistent and single or multi coroutine execution.
     /// 
     /// Events:
     /// OnCoroutineStarted
@@ -15,27 +15,27 @@ namespace SombraStudios.Utils
     public class CoroutineRunner
     {
         private MonoBehaviour _myMonobehaviour = null;
-        private bool _decoupled = false;
-        private bool _multiCoroutine = false;
+        private bool _isGameObjectDecoupled = false;
+        private bool _isMultiExecution = false;
 
         // Coroutine data
         private Coroutine _coroutine = null;
         private IEnumerator _routine = null;
-        private float _preWaitTime = 0f;
-        private float _postWaitTime = 0f;
+        private float _preWaitTimeInSeconds = 0f;
+        private float _postWaitTimeInSeconds = 0f;
 
         private System.Action OnCoroutineStarted = null;
         private System.Action OnCoroutineFinished = null;
 
 
         /// <param name="myMonobehaviour">Client script</param>
-        /// <param name="decoupled">Starts coroutine from an external object that will not stop the coroutine if client gameobject is deactivated or destroy</param>
-        /// <param name="multiCoroutine">StartCoroutine method let run different routines simultaneously</param>
-        public CoroutineRunner(MonoBehaviour myMonobehaviour, bool decoupled, bool multiCoroutine = false)
+        /// <param name="isGameObjectDecoupled">Starts coroutine from an external object that will not stop the coroutine if client gameobject is deactivated or destroy</param>
+        /// <param name="isMultiExecution">StartCoroutine method let run different routines simultaneously</param>
+        public CoroutineRunner(MonoBehaviour myMonobehaviour, bool isGameObjectDecoupled = false, bool isMultiExecution = false)
         {
             _myMonobehaviour = myMonobehaviour;
-            _decoupled = decoupled;
-            _multiCoroutine = multiCoroutine;
+            _isGameObjectDecoupled = isGameObjectDecoupled;
+            _isMultiExecution = isMultiExecution;
         }
 
 
@@ -43,8 +43,8 @@ namespace SombraStudios.Utils
         public void StartCoroutine(IEnumerator routine, float preWaitTime = 0, float postWaitTime = 0)
         {
             _routine = routine;
-            _preWaitTime = preWaitTime;
-            _postWaitTime = postWaitTime;
+            _preWaitTimeInSeconds = preWaitTime;
+            _postWaitTimeInSeconds = postWaitTime;
 
             Start();
         }
@@ -61,7 +61,7 @@ namespace SombraStudios.Utils
         /// </summary>
         public void StopAll()
         {
-            if (_decoupled)
+            if (_isGameObjectDecoupled)
                 CoroutineManager.Instance.StopAllCoroutines();
             else
                 _myMonobehaviour.StopAllCoroutines();
@@ -76,7 +76,7 @@ namespace SombraStudios.Utils
                 return;
             }
 
-            if (_routine != null && !_multiCoroutine)
+            if (_routine != null && !_isMultiExecution)
                 Stop();
 
             Start();
@@ -99,10 +99,10 @@ namespace SombraStudios.Utils
 
         private void Start()
         {
-            if (!_multiCoroutine)
+            if (!_isMultiExecution)
                 Stop();
 
-            if (_decoupled)
+            if (_isGameObjectDecoupled)
                 _coroutine = CoroutineManager.Instance.StartCoroutine(Routine());
             else
                 _coroutine = _myMonobehaviour.StartCoroutine(Routine());
@@ -110,8 +110,8 @@ namespace SombraStudios.Utils
 
         private IEnumerator Routine()
         {
-            if (_preWaitTime != 0)
-                yield return new WaitForSeconds(_preWaitTime);
+            if (_preWaitTimeInSeconds != 0)
+                yield return new WaitForSeconds(_preWaitTimeInSeconds);
 
             OnCoroutineStarted?.Invoke();
 
@@ -119,8 +119,8 @@ namespace SombraStudios.Utils
 
             OnCoroutineFinished?.Invoke();
 
-            if (_postWaitTime != 0)
-                yield return new WaitForSeconds(_postWaitTime);
+            if (_postWaitTimeInSeconds != 0)
+                yield return new WaitForSeconds(_postWaitTimeInSeconds);
         }
 
         private bool Stop()
@@ -137,7 +137,7 @@ namespace SombraStudios.Utils
             {
                 wasRunning = true;
 
-                if (_decoupled)
+                if (_isGameObjectDecoupled)
                     CoroutineManager.Instance.StopCoroutine(_coroutine);
                 else
                     _myMonobehaviour.StopCoroutine(_coroutine);
@@ -146,24 +146,6 @@ namespace SombraStudios.Utils
             }
 
             return wasRunning;
-        }
-    }
-
-    public class CoroutineManager : MonoBehaviour
-    {
-        private static CoroutineManager _instance;
-        public static CoroutineManager Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new GameObject(nameof(CoroutineManager)).AddComponent<CoroutineManager>();
-                    DontDestroyOnLoad(_instance);
-                }
-
-                return _instance;
-            }
         }
     }
 }

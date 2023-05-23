@@ -60,6 +60,7 @@ namespace SombraStudios.Utils
                 Resources.Load<PrefabInstantiateOnLoadSO>(path);
 
             if (prefabListSO == null) { return; }
+            if (prefabListSO.Active == false) { return; }
             if (prefabListSO.PrefabList == null) return;
             if (prefabListSO.PrefabList.Count == 0) return;
 
