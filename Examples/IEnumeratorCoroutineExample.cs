@@ -1,8 +1,8 @@
+using UnityEngine;
+using System.Collections; // Required for IEnumerator
+
 namespace SombraStudios.Examples
 {
-
-    using UnityEngine;
-    using System.Collections; // Required for IEnumerator
 
     /// <summary>
     /// IEnumerator Coroutines examples

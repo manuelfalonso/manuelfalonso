@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DependencyInjection.Example
+namespace SombraStudios.DependencyInjection.Example
 {
 
     /// <summary>

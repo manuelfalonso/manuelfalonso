@@ -1,8 +1,11 @@
-/// <summary>
-/// Example class to serealize a web response
-/// </summary>
-[System.Serializable]
-public class Joke
+namespace SombraStudios.Services.WebAPI
 {
-    public string value;
+    /// <summary>
+    /// Example class to serealize a web response
+    /// </summary>
+    [System.Serializable]
+    public class Joke
+    {
+        public string value;
+    }
 }

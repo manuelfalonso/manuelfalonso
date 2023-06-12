@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CCCanvas : MonoBehaviour
+namespace SombraStudios.Systems.CloseCaptions
 {
-    public Text CCText;
+    public class CCCanvas : MonoBehaviour
+    {
+        public Text CCText;
+    }
 }

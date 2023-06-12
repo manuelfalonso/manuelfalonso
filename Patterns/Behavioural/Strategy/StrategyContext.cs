@@ -1,4 +1,4 @@
-namespace SombraStudios.Patterns.Behavioural
+namespace SombraStudios.Patterns.Behavioural.Strategy
 {
 
     using System.Collections.Generic;

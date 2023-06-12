@@ -1,21 +1,24 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Example script to use as an item in a UI inventory System.
-/// </summary>
-public class InventoryItemButton : MonoBehaviour
+namespace SombraStudios.UI
 {
-    private Text buttonText;
-    private string[] itemTypes = {"Armor", "Weapon", "Spell"};
-
-    public int typeIndex;
-
-    // Start is called before the first frame update
-    void Awake()
+    /// <summary>
+    /// Example script to use as an item in a UI inventory System.
+    /// </summary>
+    public class InventoryItemButton : MonoBehaviour
     {
-        typeIndex = Random.Range(0, 3);
-        buttonText = GetComponentInChildren<Text>();
-        buttonText.text = itemTypes[typeIndex];
+        private Text buttonText;
+        private string[] itemTypes = {"Armor", "Weapon", "Spell"};
+
+        public int typeIndex;
+
+        // Start is called before the first frame update
+        void Awake()
+        {
+            typeIndex = Random.Range(0, 3);
+            buttonText = GetComponentInChildren<Text>();
+            buttonText.text = itemTypes[typeIndex];
+        }
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections;
 
-namespace DependencyInjection
+namespace SombraStudios.DependencyInjection
 {
 
     public class DependenciesCollection : IEnumerable<Dependency>

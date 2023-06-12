@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-namespace DependencyInjection.Example
+namespace SombraStudios.DependencyInjection.Example
 {
-
     public class ExampleDependencyPlainClass
     {
         [InjectField]

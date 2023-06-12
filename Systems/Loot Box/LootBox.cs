@@ -1,93 +1,96 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Renderer))]
-public abstract class LootBox : MonoBehaviour
+namespace SombraStudios.Systems.LootBox
 {
-    [Header("Common Parameters")]
-
-    [SerializeField] private List<Item> _items;    
-    [SerializeField] private Animation _openAnimation;
-
-    [Tooltip("Enables modified Items Rarety and Items in LootBoxes during gameplay")]
-    [SerializeField] private bool _testMode;
-    [Tooltip("Enables hover to show possible loot")]
-    [SerializeField] private bool _enableShowPosibleLoot = false;
-    [Tooltip("Enable click to open box")]
-    [SerializeField] private bool _enableOpenBox = false;
-
-    private float _totalRarety = 0f;
-
-    protected virtual void Start()
+    [RequireComponent(typeof(Renderer))]
+    public abstract class LootBox : MonoBehaviour
     {
-        CalculateTotalRarety();
-    }
+        [Header("Common Parameters")]
 
-    void Update()
-    {
-        
-    }
+        [SerializeField] private List<Item> _items;    
+        [SerializeField] private Animation _openAnimation;
 
-    private void OnMouseDown()
-    {
-        if (_enableOpenBox)
-        {
-            OpenBox();
-        }
-    }
+        [Tooltip("Enables modified Items Rarety and Items in LootBoxes during gameplay")]
+        [SerializeField] private bool _testMode;
+        [Tooltip("Enables hover to show possible loot")]
+        [SerializeField] private bool _enableShowPosibleLoot = false;
+        [Tooltip("Enable click to open box")]
+        [SerializeField] private bool _enableOpenBox = false;
 
-    private void OnMouseEnter()
-    {
-        if (_enableShowPosibleLoot)
-        {
-            ShowPosibleLoot();
-        }
-    }
+        private float _totalRarety = 0f;
 
-    private void CalculateTotalRarety()
-    {
-        foreach (Item item in _items)
-        {
-            _totalRarety += item.Rarety;
-        }
-    }
-
-    private Item OpenBox()
-    {
-        if (_testMode)
+        protected virtual void Start()
         {
             CalculateTotalRarety();
         }
-                
-        Item itemToReturn = null;
 
-        float raretyItemToReturn = Random.Range(0, _totalRarety);        
-
-        float accumulatedRarety = 0f;
-
-        foreach (Item item in _items)
+        void Update()
         {
-            accumulatedRarety += item.Rarety;
+        
+        }
 
-            if (raretyItemToReturn <= accumulatedRarety && itemToReturn == null)
+        private void OnMouseDown()
+        {
+            if (_enableOpenBox)
             {
-                itemToReturn = item;
-                break;
+                OpenBox();
             }
         }
 
-        return itemToReturn;
-    }
-
-    private void ShowPosibleLoot()
-    {
-        Debug.Log("Show Items");
-        //int itemIndex = 0;
-        for (int i = 0; i < _items.Count; i++)
+        private void OnMouseEnter()
         {
-            Debug.Log(_items[i].Name + " " + 
-                _items[i].Rarety + " " + 
-                _items[i].Description);
+            if (_enableShowPosibleLoot)
+            {
+                ShowPosibleLoot();
+            }
+        }
+
+        private void CalculateTotalRarety()
+        {
+            foreach (Item item in _items)
+            {
+                _totalRarety += item.Rarety;
+            }
+        }
+
+        private Item OpenBox()
+        {
+            if (_testMode)
+            {
+                CalculateTotalRarety();
+            }
+                
+            Item itemToReturn = null;
+
+            float raretyItemToReturn = Random.Range(0, _totalRarety);        
+
+            float accumulatedRarety = 0f;
+
+            foreach (Item item in _items)
+            {
+                accumulatedRarety += item.Rarety;
+
+                if (raretyItemToReturn <= accumulatedRarety && itemToReturn == null)
+                {
+                    itemToReturn = item;
+                    break;
+                }
+            }
+
+            return itemToReturn;
+        }
+
+        private void ShowPosibleLoot()
+        {
+            Debug.Log("Show Items");
+            //int itemIndex = 0;
+            for (int i = 0; i < _items.Count; i++)
+            {
+                Debug.Log(_items[i].Name + " " + 
+                    _items[i].Rarety + " " + 
+                    _items[i].Description);
+            }
         }
     }
 }

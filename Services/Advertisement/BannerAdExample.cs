@@ -2,10 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
 
-/// <summary>
-/// Class for banner advertisement.
-/// </summary>
-public class BannerAdExample : MonoBehaviour
+namespace SombraStudios.Services.Advertisement
+{
+    /// <summary>
+    /// Class for banner advertisement.
+    /// </summary>
+    public class BannerAdExample : MonoBehaviour
 {
     // For the purpose of this example, these buttons are for functionality testing:
     [SerializeField] Button _loadBannerButton;
@@ -101,4 +103,5 @@ public class BannerAdExample : MonoBehaviour
         _showBannerButton.onClick.RemoveAllListeners();
         _hideBannerButton.onClick.RemoveAllListeners();
     }
+}
 }

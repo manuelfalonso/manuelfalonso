@@ -1,29 +1,33 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-/// <summary>
-/// Example Class using Unity events.
-/// </summary>
-public class UnityEventExample : MonoBehaviour
+namespace SombraStudios.Examples
 {
-    public UnityEvent onSpacebar;
-    public UnityEvent onReturn;
 
-    public void OnTriggerStay()
+    /// <summary>
+    /// Example Class using Unity events.
+    /// </summary>
+    public class UnityEventExample : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (onSpacebar != null)
-            {
-                onSpacebar.Invoke();
-            }
-        }
+        public UnityEvent onSpacebar;
+        public UnityEvent onReturn;
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        public void OnTriggerStay()
         {
-            if (onReturn != null)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                onReturn.Invoke();
+                if (onSpacebar != null)
+                {
+                    onSpacebar.Invoke();
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                if (onReturn != null)
+                {
+                    onReturn.Invoke();
+                }
             }
         }
     }

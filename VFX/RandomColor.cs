@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 
-/// <summary>
-/// Asign a random color to the material.
-/// </summary>
-public class RandomColor : MonoBehaviour
+namespace SombraStudios.VFX
 {
-    void Start()
+    /// <summary>
+    /// Asign a random color to the material.
+    /// </summary>
+    public class RandomColor : MonoBehaviour
     {
-        GetComponent<Renderer>().material.color = Random.ColorHSV(0, 1);
+        void Start()
+        {
+            GetComponent<Renderer>().material.color = Random.ColorHSV(0, 1);
+        }
     }
 }

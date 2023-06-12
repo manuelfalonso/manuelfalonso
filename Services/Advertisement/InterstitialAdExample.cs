@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-/// <summary>
-/// Class for Interstitial advertisement.
-/// This type of ads the customer can skip the ads after a determined quantity of seconds.
-/// </summary>
-public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
+namespace SombraStudios.Services.Advertisement
+{
+    /// <summary>
+    /// Class for Interstitial advertisement.
+    /// This type of ads the customer can skip the ads after a determined quantity of seconds.
+    /// </summary>
+    public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] string _androidAdUnitId = "Interstitial_Android";
     [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
@@ -56,4 +58,5 @@ public class InterstitialAdExample : MonoBehaviour, IUnityAdsLoadListener, IUnit
     public void OnUnityAdsShowStart(string adUnitId) { }
     public void OnUnityAdsShowClick(string adUnitId) { }
     public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState) { }
+}
 }

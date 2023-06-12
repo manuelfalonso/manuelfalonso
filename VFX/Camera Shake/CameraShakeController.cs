@@ -1,27 +1,30 @@
 using UnityEngine;
 using DG.Tweening;
 
-/// <summary>
-/// Simple controller to use camera shake with DoTween with Scriptable Objects
-/// </summary>
-public class CameraShakeController : MonoBehaviour
+namespace SombraStudios.VFX
 {
-    public void CameraShake(Camera camera, CameraShakeData shakeData)
+    /// <summary>
+    /// Simple controller to use camera shake with DoTween with Scriptable Objects
+    /// </summary>
+    public class CameraShakeController : MonoBehaviour
     {
-        if (shakeData == null)
-            return;
+        public void ShakeCamera(Camera camera, CameraShakeData shakeData)
+        {
+            if (shakeData == null)
+                return;
 
-        if (camera == null)
-            camera = Camera.main;
+            if (camera == null)
+                camera = Camera.main;
 
-        camera.DOShakePosition(shakeData.duration, shakeData.strength, shakeData.vibrato, shakeData.randomness);
-    }
+            camera.DOShakePosition(shakeData.duration, shakeData.strength, shakeData.vibrato, shakeData.randomness);
+        }
 
-    public void CameraShake(CameraShakeData shakeData)
-    {
-        if (shakeData == null)
-            return;
+        public void ShakeCamera(CameraShakeData shakeData)
+        {
+            if (shakeData == null)
+                return;
 
-        Camera.main.DOShakePosition(shakeData.duration, shakeData.strength, shakeData.vibrato, shakeData.randomness);
+            Camera.main.DOShakePosition(shakeData.duration, shakeData.strength, shakeData.vibrato, shakeData.randomness);
+        }
     }
 }

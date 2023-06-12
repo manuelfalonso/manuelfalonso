@@ -2,20 +2,23 @@ using UnityEngine;
 using System.Net;
 using System.IO;
 
-/// <summary>
-/// Example API Get call
-/// </summary>
-public static class APIHelper
+namespace SombraStudios.Services.WebAPI
 {
-    public static Joke GetNewJoke()
+    /// <summary>
+    /// Example API Get call
+    /// </summary>
+    public static class APIHelper
     {
-        HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://api.chucknorris.io/jokes/random");
-        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        public static Joke GetNewJoke()
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://api.chucknorris.io/jokes/random");
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
-        StreamReader reader = new StreamReader(response.GetResponseStream());
-        string json = reader.ReadToEnd();
+            StreamReader reader = new StreamReader(response.GetResponseStream());
+            string json = reader.ReadToEnd();
 
 
-        return JsonUtility.FromJson<Joke>(json);
+            return JsonUtility.FromJson<Joke>(json);
+        }
     }
 }

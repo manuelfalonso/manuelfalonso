@@ -1,40 +1,44 @@
 using Unity.Netcode;
 using UnityEngine;
 
-/// <summary>
-/// Class to show buttons and labels related to Networking
-/// </summary>
-public class GUILayoutNetwork : MonoBehaviour
+namespace SombraStudios.Networking
 {
-	void OnGUI()
+
+	/// <summary>
+	/// Class to show buttons and labels related to Networking
+	/// </summary>
+	public class GUILayoutNetwork : MonoBehaviour
 	{
-		GUILayout.BeginArea(new Rect(10, 10, 300, 300));
-		if (!NetworkManager.Singleton.IsClient && !NetworkManager.Singleton.IsServer)
+		void OnGUI()
 		{
-			StartButtons();
+			GUILayout.BeginArea(new Rect(10, 10, 300, 300));
+			if (!NetworkManager.Singleton.IsClient && !NetworkManager.Singleton.IsServer)
+			{
+				StartButtons();
+			}
+			else
+			{
+				StatusLabels();
+			}
+
+			GUILayout.EndArea();
 		}
-		else
+
+		static void StartButtons()
 		{
-			StatusLabels();
+			if (GUILayout.Button("Host")) NetworkManager.Singleton.StartHost();
+			if (GUILayout.Button("Client")) NetworkManager.Singleton.StartClient();
+			if (GUILayout.Button("Server")) NetworkManager.Singleton.StartServer();
 		}
 
-		GUILayout.EndArea();
-	}
+		static void StatusLabels()
+		{
+			var mode = NetworkManager.Singleton.IsHost ?
+				"Host" : NetworkManager.Singleton.IsServer ? "Server" : "Client";
 
-	static void StartButtons()
-	{
-		if (GUILayout.Button("Host")) NetworkManager.Singleton.StartHost();
-		if (GUILayout.Button("Client")) NetworkManager.Singleton.StartClient();
-		if (GUILayout.Button("Server")) NetworkManager.Singleton.StartServer();
-	}
-
-	static void StatusLabels()
-	{
-		var mode = NetworkManager.Singleton.IsHost ?
-			"Host" : NetworkManager.Singleton.IsServer ? "Server" : "Client";
-
-		GUILayout.Label("Transport: " +
-			NetworkManager.Singleton.NetworkConfig.NetworkTransport.GetType().Name);
-		GUILayout.Label("Mode: " + mode);
+			GUILayout.Label("Transport: " +
+				NetworkManager.Singleton.NetworkConfig.NetworkTransport.GetType().Name);
+			GUILayout.Label("Mode: " + mode);
+		}
 	}
 }

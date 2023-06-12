@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace DependencyInjection
+namespace SombraStudios.DependencyInjection
 {
 
     public class DependenciesProvider

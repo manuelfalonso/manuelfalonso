@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using UnityEngine;
 
-namespace DependencyInjection
+namespace SombraStudios.DependencyInjection
 {
 
     public static class DependencyFactory

@@ -1,8 +1,7 @@
 using System;
 
-namespace DependencyInjection
+namespace SombraStudios.DependencyInjection
 {
-
     /// <summary>
     /// Type => is what the classes will request for injection
     /// Func => function that returns an object (GameObject.Instantiate 

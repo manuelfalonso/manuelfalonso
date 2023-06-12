@@ -3,11 +3,13 @@ using TMPro;
 using UnityEngine;
 using System;
 
-/// <summary>
-/// Util script to log over UI.
-/// Required: Singleton script
-/// </summary>
-public class UILogger : Singleton<UILogger>
+namespace SombraStudios.UI
+{
+    /// <summary>
+    /// Util script to log over UI.
+    /// Required: Singleton script
+    /// </summary>
+    public class UILogger : Singleton<UILogger>
 {
     [SerializeField]
     private TextMeshProUGUI debugAreaText = null;
@@ -66,4 +68,5 @@ public class UILogger : Singleton<UILogger>
             debugAreaText.text = string.Empty;
         }
     }
+}
 }

@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class SplashScreenLogo : MonoBehaviour
+namespace SombraStudios.UI
 {
-    [Header("Data")]
-    public float logoDurationTime = 2f;
+    public class SplashScreenLogo : MonoBehaviour
+    {
+        [Header("Data")]
+        public float logoDurationTime = 2f;
+    }
 }

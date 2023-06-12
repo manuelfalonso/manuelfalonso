@@ -2,12 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-/// <summary>
-/// Enable Form Navigation up and down, and submit button with keyboard.
-/// Requiered: In the Event System created with the Canvas 
-/// assign a "First Selected" object
-/// </summary>
-public class FormNavigation : MonoBehaviour
+namespace SombraStudios.UI
+{
+    /// <summary>
+    /// Enable Form Navigation up and down, and submit button with keyboard.
+    /// Requiered: In the Event System created with the Canvas 
+    /// assign a "First Selected" object
+    /// </summary>
+    public class FormNavigation : MonoBehaviour
 {
     private EventSystem system;
 
@@ -49,4 +51,5 @@ public class FormNavigation : MonoBehaviour
             }
         }
     }
+}
 }

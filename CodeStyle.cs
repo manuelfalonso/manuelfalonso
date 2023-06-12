@@ -24,6 +24,10 @@
 // COMMENTS:
 // - Rather than simply answering "what" or "how," comments can fill in the gaps and tell us "why."
 // - Use the // comment to keep the explanation next to the logic.
+// - Insert one space between the comment delimiter and the comment text.
+// - Begin with uppercase and end with a period.
+// - Remove commented out code.
+// - Add TODO comments in code if you are really going to complete.
 // - Use a Tooltip instead of a comment for serialized fields. 
 // - Use a Header to group serialized fields
 // - Avoid Regions. They encourage large class sizes. Collapsed code is more difficult to read. 
@@ -162,10 +166,9 @@ namespace StyleSheet
         // - Name with a verb phrase.
         // - Present participle means "before" and past participle mean "after."
         // - Use System.Action delegate for most events (can take 0 to 16 parameters).
-        // - Define a custom EventArg only if necessary (either System.EventArgs or a custom struct).
-        // - OR alternatively, use the System.EventHandler; choose one and apply consistently.
-        // - Choose a naming scheme for events, event handling methods (subscriber/observer), and event raising methods (publisher/subject)
-        // - e.g. event/action = "OpeningDoor", event raising method = "OnDoorOpened", event handling method = "MySubject_DoorOpened"
+        // - Define a custom EventArg only if necessary (either inherited from System.EventArgs or a custom struct).
+        // - Naming scheme for events:
+        // - e.g. event/action = "DoorOpened", event raising method = "OnDoorOpened", event handling method = "MySubject_DoorOpened"
 
         // event before
         public event Action OpeningDoor;

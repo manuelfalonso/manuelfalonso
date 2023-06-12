@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// Finds all of the gameObjects that have a ParallaxLayer.cs script, and moves them!
-/// </summary>
-public class ParallaxController : MonoBehaviour
+namespace SombraStudios.VFX
+{
+    /// <summary>
+    /// Finds all of the gameObjects that have a ParallaxLayer.cs script, and moves them!
+    /// </summary>
+    public class ParallaxController : MonoBehaviour
 {
     public delegate void ParallaxCameraDelegate
         (float cameraPositionChangeX, float cameraPositionChangeY);
@@ -70,4 +72,5 @@ public class ParallaxController : MonoBehaviour
             layer.MoveLayer(positionChangeX, positionChangeY);
         }
     }
+}
 }

@@ -1,20 +1,23 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-/// <summary>
-/// IsPointerOverGameObject function to check if mouse is over GUI
-/// </summary>
-public class MouseOverGUI : MonoBehaviour
+namespace SombraStudios.UI
 {
-    void Update()
+    /// <summary>
+    /// IsPointerOverGameObject function to check if mouse is over GUI
+    /// </summary>
+    public class MouseOverGUI : MonoBehaviour
     {
-        // Check if the left mouse button was clicked
-        if (Input.GetMouseButtonDown(0))
+        void Update()
         {
-            // Check if the mouse was clicked over a UI element
-            if (EventSystem.current.IsPointerOverGameObject())
+            // Check if the left mouse button was clicked
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Clicked on the UI");
+                // Check if the mouse was clicked over a UI element
+                if (EventSystem.current.IsPointerOverGameObject())
+                {
+                    Debug.Log("Clicked on the UI");
+                }
             }
         }
     }
