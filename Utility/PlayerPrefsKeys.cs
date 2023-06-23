@@ -1,5 +1,6 @@
 namespace SombraStudios
 {
+
     /// <summary>
     /// Stores al the keys used for Player Prefs
     /// </summary>
