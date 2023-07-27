@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Audio
+namespace SombraStudios.Audio.Footsteps
 {
-
     /// <summary>
-    /// SO used by the Character Controller Footsteps Manager script to separate list of clips 
+    /// SO used by the Footsteps Controller script to separate list of clips 
     /// depending of checking Collisions with Tags.
     /// </summary>
     [CreateAssetMenu(fileName = "New Footstep Audio List by Tag", menuName = "Footstep Audio List", order = 51)]

@@ -13,8 +13,9 @@ namespace SombraStudios.Gameplay
 		[SerializeField] private float _timeToDestruction;
 		[Tooltip("Enable/Disable OnDestroy Event")]
 		[SerializeField] private bool _isOnDestroyEventEnable = true;
+        [SerializeField] private AudioClip _destroySound;
 
-		[Space]
+        [Space]
 
 		[Tooltip("Unity Event invoked when the gameobject is destroyed")]
 		public UnityEvent OnDestroy = new UnityEvent();
@@ -28,9 +29,16 @@ namespace SombraStudios.Gameplay
 		void DestroyMe()
 		{
 			if (OnDestroy != null && _isOnDestroyEventEnable)
+			{
 				OnDestroy.Invoke();
+			}
 
-			Destroy(gameObject);
+			if (_destroySound != null)
+			{
+                AudioSource.PlayClipAtPoint(_destroySound, transform.position);
+            }
+
+            Destroy(gameObject);
 		}
 	}
 }
