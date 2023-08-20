@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.VFX.Parallax
 {
     /// <summary>
     /// Finds all of the gameObjects that have a ParallaxLayer.cs script, and moves them!

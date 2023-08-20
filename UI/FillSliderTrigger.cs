@@ -13,78 +13,75 @@ namespace SombraStudios.UI
     /// </summary>
     public class FillSliderTrigger : MonoBehaviour
     {
-        [SerializeField]
-        private Slider _slider = default(Slider);
+        [SerializeField] private Slider _slider = default(Slider);
 
         [Header("Input")]
-    #if ENABLE_INPUT_SYSTEM
-        [SerializeField]
-        private InputAction _inputAction = default(InputAction);
-    #elif ENABLE_LEGACY_INPUT_MANAGER
-        [SerializeField]
-        private KeyCode _legacyInputKey = default(KeyCode);
-    #endif
+#if ENABLE_INPUT_SYSTEM
+        [SerializeField] private InputAction _inputAction = default(InputAction);
+#elif ENABLE_LEGACY_INPUT_MANAGER
+        [SerializeField] private KeyCode _legacyInputKey = default(KeyCode);
+#endif
 
         [Header("Config")]
-        [SerializeField]
-        private float _fillSpeed = 1.0f;
-        [SerializeField]
-        private bool _unfillActive = false;
-        [SerializeField]
-        private float _unfillSpeed = 0.1f;
+        [SerializeField] private float _fillSpeed = 1.0f;
+        [SerializeField] private bool _unfillActive = false;
+        [SerializeField] private float _unfillSpeed = 0.1f;
 
         [Header("Events")]
         public UnityEvent OnSliderFilled = new UnityEvent();
 
-
+        private bool _isActive;
         private bool _isFilled = false;
 
 
-    #if ENABLE_INPUT_SYSTEM
         private void OnEnable()
         {
+            _isActive = true;
+#if ENABLE_INPUT_SYSTEM
             _inputAction.Enable();
+#endif
         }
-    #endif
 
         void Update()
         {
             CheckInput();
         }
 
-    #if ENABLE_INPUT_SYSTEM
         private void OnDisable()
         {
+            _isActive = false;
+#if ENABLE_INPUT_SYSTEM
             _inputAction?.Disable();
+#endif
+            ResetSlider();
         }
-    #endif
 
 
-        public void ResetSlider()
-        {
-            _isFilled = false;
-            _slider.value = 0;
-        }
-	
-	
         private void CheckInput()
         {
-            if (_isFilled)
-                return;
+            if (!_isActive) { return; }
+            if (_isFilled) { return; }
+            if (_slider == null) { return; }
 
             // Fill
-    #if ENABLE_INPUT_SYSTEM
+#if ENABLE_INPUT_SYSTEM
             // New Input System
             if (_inputAction.inProgress)
+            {
                 _slider.value += Time.deltaTime * _fillSpeed;
-    #elif ENABLE_LEGACY_INPUT_MANAGER
+            }
+#elif ENABLE_LEGACY_INPUT_MANAGER
             // Old Input System
-            if(Input.GetKey(_legacyInputKey))
+            if(Input.GetKey(_legacyInputKey)) 
+            {
                 _slider.value += Time.deltaTime * _fillSpeed;
-    #endif
+            }                
+#endif
             // Unfill
             else if (_unfillActive)
+            {
                 _slider.value -= Time.deltaTime * _unfillSpeed;
+            }
 
             // Check complete event
             if (!_isFilled && _slider.value >= 1)
@@ -94,5 +91,10 @@ namespace SombraStudios.UI
             }
         }
 
+        public void ResetSlider()
+        {
+            _isFilled = false;
+            _slider.value = 0;
+        }
     }
 }
