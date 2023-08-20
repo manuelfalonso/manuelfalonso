@@ -7,8 +7,7 @@ namespace SombraStudios.Patterns.Creational.Singleton
     /// </summary>
     public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
-	    [SerializeField]
-        private bool _dontDestroyOnLoad = false;
+	    [SerializeField] private bool _dontDestroyOnLoad = false;
 	
         private static T _instance;
         public static T Instance
