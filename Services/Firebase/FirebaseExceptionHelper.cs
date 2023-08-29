@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using Firebase;
 using Firebase.Auth;
 using System;
@@ -40,3 +41,4 @@ namespace SombraStudios.Services.Firebase
         }
     }
 }
+#endif

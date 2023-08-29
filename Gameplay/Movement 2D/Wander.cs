@@ -20,7 +20,7 @@ namespace SombraStudios.Gameplay.Movement2D
 
 		public bool orientToDirection = false;
 		[Tooltip("The direction that the GameObject will be oriented to")]
-		public Enums.Directions lookAxis = Enums.Directions.Up;
+		//public Enums.Directions lookAxis = Enums.Directions.Up;
 
 		private Vector2 direction;
 		private Vector3 startingPoint;
@@ -72,7 +72,7 @@ namespace SombraStudios.Gameplay.Movement2D
 				//if the object has to look in the direction of movement
 				if (orientToDirection)
 				{
-					Utils.SetAxisTowards(lookAxis, transform, direction);
+					//Utils.SetAxisTowards(lookAxis, transform, direction);
 				}
 
 				// this will make Unity wait for some time before continuing 

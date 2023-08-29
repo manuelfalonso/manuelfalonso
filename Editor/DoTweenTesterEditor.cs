@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using DG.DOTweenEditor;
 using System.Collections;
 using System.Collections.Generic;
@@ -44,3 +45,4 @@ namespace SombraStudios.Editor
         }
     }
 }
+#endif

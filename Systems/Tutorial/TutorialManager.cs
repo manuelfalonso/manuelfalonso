@@ -1,3 +1,5 @@
+using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Tools;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -56,11 +58,11 @@ namespace SombraStudios.TutorialSystem
         {
             if (_tutorialSteps.Count == 0)
             {
-                MyLogger.Log(_showLogs, $"No Tutorial found", this );
+                StaticLogger.Log(_showLogs, $"No Tutorial found", this );
                 yield break;
             }
 
-            MyLogger.Log(_showLogs, $"Tutorial Started", this);
+            StaticLogger.Log(_showLogs, $"Tutorial Started", this);
 
             for (_currentStepIndex = TutorialStepIndex(); _currentStepIndex < _tutorialSteps.Count; _currentStepIndex++)
             {
@@ -74,7 +76,7 @@ namespace SombraStudios.TutorialSystem
                 SaveProgression();
             }
 
-            MyLogger.Log(_showLogs, $"Tutorial Finished", this);
+            StaticLogger.Log(_showLogs, $"Tutorial Finished", this);
 
             SaveCompletion();
 
@@ -102,7 +104,7 @@ namespace SombraStudios.TutorialSystem
         {
             PlayerPrefs.DeleteKey(PlayerPrefsKeys.TUTORIAL_COMPLETED);
             PlayerPrefs.DeleteKey(PlayerPrefsKeys.TUTORIAL_STEP);
-            MyLogger.Log(_showLogs, $"TUTORIAL_COMPLETED and TUTORIAL_STEP keys deleted", this);
+            StaticLogger.Log(_showLogs, $"TUTORIAL_COMPLETED and TUTORIAL_STEP keys deleted", this);
         }
 
         private void ResumeProgression()

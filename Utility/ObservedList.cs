@@ -20,7 +20,7 @@ namespace E404.Utils
             return _list.GetEnumerator();
         }
 
-        private IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }

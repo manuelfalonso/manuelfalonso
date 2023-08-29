@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using DG.Tweening;
 using System;
 using System.Collections;
@@ -165,3 +166,4 @@ namespace SombraStudios.Utility
         #endregion
     }
 }
+#endif

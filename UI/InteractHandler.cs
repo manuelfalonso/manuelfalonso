@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
@@ -92,3 +93,4 @@ namespace SombraStudios.UI
         }
     }
 }
+#endif

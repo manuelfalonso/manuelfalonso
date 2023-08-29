@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using UnityEngine;
 using Unity.Netcode;
 
@@ -38,3 +39,4 @@ namespace SombraStudios.Networking
         }
     }
 }
+#endif

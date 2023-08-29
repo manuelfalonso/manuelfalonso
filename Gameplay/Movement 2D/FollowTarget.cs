@@ -20,7 +20,7 @@ namespace SombraStudios.Gameplay.Movement2D
         [SerializeField] private bool _lookAtTarget = false;
 
 	    [Tooltip("The direction that will face the target")]
-        [SerializeField] private Enums.Directions _useSide = Enums.Directions.Up;
+        //[SerializeField] private Enums.Directions _useSide = Enums.Directions.Up;
 
 	    private Rigidbody2D _rigidbody2D;
 
@@ -44,7 +44,7 @@ namespace SombraStudios.Gameplay.Movement2D
             //look towards the target
             if (_lookAtTarget)
             {
-                Utils.SetAxisTowards(_useSide, transform, _target.position - transform.position);
+                //Utils.SetAxisTowards(_useSide, transform, _target.position - transform.position);
             }
 
             //Move towards the target

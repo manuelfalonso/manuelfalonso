@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using UnityEngine;
 
 namespace SombraStudios.Editor
@@ -11,3 +12,4 @@ namespace SombraStudios.Editor
         public abstract DG.Tweening.Tween GetTween();
     }
 }
+#endif

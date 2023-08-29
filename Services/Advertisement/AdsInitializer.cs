@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -41,3 +42,4 @@ namespace SombraStudios.Services.Advertisement
         }
     }
 }
+#endif

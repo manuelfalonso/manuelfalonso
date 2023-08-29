@@ -10,7 +10,7 @@ namespace SombraStudios.Gameplay.Movement2D
 	public class Rotate : MonoBehaviour
 	{
 		[Header("Input keys")]
-		public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
+		//public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
 		[Header("Rotation")]
 		public float speed = 5f;
@@ -29,14 +29,14 @@ namespace SombraStudios.Gameplay.Movement2D
 		{
 			// Register the spin from the player input
 			// Moving with the arrow keys
-			if (typeOfControl == Enums.KeyGroups.ArrowKeys)
-			{
-				spin = Input.GetAxis("Horizontal");
-			}
-			else
-			{
-				spin = Input.GetAxis("Horizontal2");
-			}
+			//if (typeOfControl == Enums.KeyGroups.ArrowKeys)
+			//{
+			//	spin = Input.GetAxis("Horizontal");
+			//}
+			//else
+			//{
+			//	spin = Input.GetAxis("Horizontal2");
+			//}
 		}
 
 		// FixedUpdate is called every frame when the physics are calculated

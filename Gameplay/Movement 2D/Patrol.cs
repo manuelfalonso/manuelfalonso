@@ -16,7 +16,7 @@ namespace SombraStudios.Gameplay.Movement2D
 
 		[Header("Orientation")]
 		public bool orientToDirection = false;
-		public Enums.Directions lookAxis = Enums.Directions.Up;
+		//public Enums.Directions lookAxis = Enums.Directions.Up;
 
 		[Header("Stops")]
 		public Vector2[] waypoints;
@@ -50,10 +50,7 @@ namespace SombraStudios.Gameplay.Movement2D
 
 			if (orientToDirection)
 			{
-				Utils.SetAxisTowards(
-					lookAxis, 
-					transform, 
-					((Vector3)newWaypoints[1] - transform.position).normalized);
+				//Utils.SetAxisTowards(lookAxis, transform, ((Vector3)newWaypoints[1] - transform.position).normalized);
 			}
 		}
 
@@ -75,10 +72,7 @@ namespace SombraStudios.Gameplay.Movement2D
 				if (orientToDirection)
 				{
 					currentTarget = newWaypoints[currentTargetIndex];
-					Utils.SetAxisTowards(
-						lookAxis, 
-						transform, 
-						((Vector3)currentTarget - transform.position).normalized);
+					//Utils.SetAxisTowards(lookAxis, transform, ((Vector3)currentTarget - transform.position).normalized);
 				}
 			}
 		}

@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using UnityEngine;
 using DG.Tweening;
 
@@ -28,3 +29,4 @@ namespace SombraStudios.VFX
         }
     }
 }
+#endif

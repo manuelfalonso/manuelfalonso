@@ -1,3 +1,4 @@
+using SombraStudios.Gameplay.PlayerController;
 using UnityEngine;
 
 namespace SombraStudios.Gameplay.PlayerMovement

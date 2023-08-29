@@ -1,3 +1,4 @@
+#if REQUIRES_EXTERNAL_PACKAGE
 using Unity.Netcode;
 using UnityEngine;
 using DG.Tweening;
@@ -52,3 +53,4 @@ namespace SombraStudios.Networking
 		}
 	}
 }
+#endif

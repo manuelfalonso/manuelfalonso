@@ -25,10 +25,10 @@ namespace SombraStudios.Utility
 
         private void OnEnable()
         {
-            _timerScript.onTimerStarted += OnTimerStartedHandler;
-            _timerScript.onTimerStopped += OnTimerStoppedHandler;
-            _timerScript.onTimerRestarted += OnTimerRestartedHandler;
-            _timerScript.onTimerButtonsCheck += OnTimerButtonsCheckHandler;
+            _timerScript.OnTimerStarted += OnTimerStartedHandler;
+            _timerScript.OnTimerStopped += OnTimerStoppedHandler;
+            _timerScript.OnTimerRestarted += OnTimerRestartedHandler;
+            _timerScript.OnTimerButtonsCheck += OnTimerButtonsCheckHandler;
         }
 
         // Start is called before the first frame update
@@ -39,10 +39,10 @@ namespace SombraStudios.Utility
 
         private void OnDisable()
         {
-            _timerScript.onTimerStarted -= OnTimerStartedHandler;
-            _timerScript.onTimerStopped -= OnTimerStoppedHandler;
-            _timerScript.onTimerRestarted -= OnTimerRestartedHandler;
-            _timerScript.onTimerButtonsCheck -= OnTimerButtonsCheckHandler;
+            _timerScript.OnTimerStarted -= OnTimerStartedHandler;
+            _timerScript.OnTimerStopped -= OnTimerStoppedHandler;
+            _timerScript.OnTimerRestarted -= OnTimerRestartedHandler;
+            _timerScript.OnTimerButtonsCheck -= OnTimerButtonsCheckHandler;
         }
 
 

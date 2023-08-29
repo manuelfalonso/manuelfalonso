@@ -1,4 +1,4 @@
-using SombraStudios.Utility;
+using SombraStudios.Utility.Events;
 using System.Collections;
 using UnityEngine;
 

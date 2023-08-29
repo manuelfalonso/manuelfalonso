@@ -1,3 +1,4 @@
+using SombraStudios.Patterns.Creational.Singleton;
 using System;
 using System.Collections;
 using UnityEngine;

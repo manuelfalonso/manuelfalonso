@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using System.Collections;
+using SombraStudios.Tools;
 
 namespace SombraStudios.TutorialSystem
 {
@@ -43,11 +44,11 @@ namespace SombraStudios.TutorialSystem
         {
             if (!_isActive) { yield break; }
 
-            MyLogger.Log(_showLogs, $"{_name} Step Started");
+            StaticLogger.Log(_showLogs, $"{_name} Step Started");
 
             for (int i = 0; i < _actions.Count; i++)
             {
-                MyLogger.Log(_showLogs, $"{_actions[i].name} Started");
+                StaticLogger.Log(_showLogs, $"{_actions[i].name} Started");
 
                 yield return _actions[i].ExecuteAction();
 
@@ -56,12 +57,12 @@ namespace SombraStudios.TutorialSystem
                 //TutorialManager.Instance.StartCoroutine(_actions[i].ExecuteAction());
                 //yield return new WaitUntil(() => _actions[i].IsCompleted == true);
 
-                MyLogger.Log(_showLogs, $"{_actions[i].name} Finished");
+                StaticLogger.Log(_showLogs, $"{_actions[i].name} Finished");
             }
 
             _completed = true;
 
-            MyLogger.Log(_showLogs, $"{_name} Step Finished");
+            StaticLogger.Log(_showLogs, $"{_name} Step Finished");
 
             yield return null;
         }

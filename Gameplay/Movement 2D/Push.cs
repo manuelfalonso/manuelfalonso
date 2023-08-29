@@ -19,7 +19,7 @@ namespace SombraStudios.Gameplay.Movement2D
 
 		[Tooltip("Strength of the push, and the axis on which it is applied (can be X or Y)")]
 		public float pushStrength = 5f;
-		public Enums.Axes axis = Enums.Axes.Y;
+		//public Enums.Axes axis = Enums.Axes.Y;
 		public bool relativeAxis = true;
 
 		private bool keyPressed = false;
@@ -43,7 +43,7 @@ namespace SombraStudios.Gameplay.Movement2D
 		{
 			if (keyPressed)
 			{
-				pushVector = Utils.GetVectorFromAxis(axis) * pushStrength;
+				//pushVector = Utils.GetVectorFromAxis(axis) * pushStrength;
 
 				//Apply the push
 				if (relativeAxis)

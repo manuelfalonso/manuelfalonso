@@ -1,4 +1,5 @@
-﻿using Cinemachine.Utility;
+﻿#if NEVER_COMPILE_THIS_SCRIPT
+using Cinemachine.Utility;
 using UnityEngine;
 
 namespace SombraStudios.Gameplay.PlayerMovement
@@ -46,3 +47,4 @@ namespace SombraStudios.Gameplay.PlayerMovement
         }
     }
 }
+#endif

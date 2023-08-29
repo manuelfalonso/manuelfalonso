@@ -1,4 +1,5 @@
 using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Tools;
 using System;
 using UnityEngine;
 
@@ -26,7 +27,7 @@ namespace SombraStudios.Systems.GameState
                 if (currentState != value)
                 {
                     currentState = value;
-                    MyLogger.Log(_showLogs, $"Game State Changed: {value.name}", this);
+                    StaticLogger.Log(_showLogs, $"Game State Changed: {value.name}", this);
                     GameStateChanged?.Invoke(currentState);
                 }
             }

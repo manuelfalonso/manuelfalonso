@@ -11,17 +11,17 @@ namespace SombraStudios.Gameplay.Movement2D
 	public class Move : MonoBehaviour
 	{
 		[Header("Input keys")]
-		public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
+		//public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
 		[Header("Movement")]
 		[Tooltip("Speed of movement")]
 		public float speed = 5f;
-		public Enums.MovementType movementType = Enums.MovementType.AllDirections;
+		//public Enums.MovementType movementType = Enums.MovementType.AllDirections;
 
 		[Header("Orientation")]
 		public bool orientToDirection = false;
 		[Tooltip("The direction that will face the player")]
-		public Enums.Directions lookAxis = Enums.Directions.Up;
+		//public Enums.Directions lookAxis = Enums.Directions.Up;
 
 		private Vector2 movement, cachedDirection;
 		private float moveHorizontal;
@@ -38,27 +38,27 @@ namespace SombraStudios.Gameplay.Movement2D
 		void Update()
 		{
 			// Moving with the arrow keys
-			if (typeOfControl == Enums.KeyGroups.ArrowKeys)
-			{
-				moveHorizontal = Input.GetAxis("Horizontal");
-				moveVertical = Input.GetAxis("Vertical");
-			}
-			else
-			{
-				moveHorizontal = Input.GetAxis("Horizontal2");
-				moveVertical = Input.GetAxis("Vertical2");
-			}
+			//if (typeOfControl == Enums.KeyGroups.ArrowKeys)
+			//{
+			//	moveHorizontal = Input.GetAxis("Horizontal");
+			//	moveVertical = Input.GetAxis("Vertical");
+			//}
+			//else
+			//{
+			//	moveHorizontal = Input.GetAxis("Horizontal2");
+			//	moveVertical = Input.GetAxis("Vertical2");
+			//}
 
 			// Zero-out the axes that are not needed, if the movement is constrained
-			switch (movementType)
-			{
-				case Enums.MovementType.OnlyHorizontal:
-					moveVertical = 0f;
-					break;
-				case Enums.MovementType.OnlyVertical:
-					moveHorizontal = 0f;
-					break;
-			}
+			//switch (movementType)
+			//{
+			//	case Enums.MovementType.OnlyHorizontal:
+			//		moveVertical = 0f;
+			//		break;
+			//	case Enums.MovementType.OnlyVertical:
+			//		moveHorizontal = 0f;
+			//		break;
+			//}
 
 			movement = new Vector2(moveHorizontal, moveVertical);
 
@@ -70,7 +70,7 @@ namespace SombraStudios.Gameplay.Movement2D
 				{
 					cachedDirection = movement;
 				}
-				Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
+				//Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
 			}
 		}
 
