@@ -44,11 +44,11 @@ namespace SombraStudios.TutorialSystem
         {
             if (!_isActive) { yield break; }
 
-            StaticLogger.Log(_showLogs, $"{_name} Step Started");
+            Tools.Logger.Log(_showLogs, $"{_name} Step Started");
 
             for (int i = 0; i < _actions.Count; i++)
             {
-                StaticLogger.Log(_showLogs, $"{_actions[i].name} Started");
+                Tools.Logger.Log(_showLogs, $"{_actions[i].name} Started");
 
                 yield return _actions[i].ExecuteAction();
 
@@ -57,12 +57,12 @@ namespace SombraStudios.TutorialSystem
                 //TutorialManager.Instance.StartCoroutine(_actions[i].ExecuteAction());
                 //yield return new WaitUntil(() => _actions[i].IsCompleted == true);
 
-                StaticLogger.Log(_showLogs, $"{_actions[i].name} Finished");
+                Tools.Logger.Log(_showLogs, $"{_actions[i].name} Finished");
             }
 
             _completed = true;
 
-            StaticLogger.Log(_showLogs, $"{_name} Step Finished");
+            Tools.Logger.Log(_showLogs, $"{_name} Step Finished");
 
             yield return null;
         }

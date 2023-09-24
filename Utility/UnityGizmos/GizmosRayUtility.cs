@@ -8,8 +8,8 @@ namespace SombraStudios.Utility.UnityGizmos
     public class GizmosRayUtility : GizmosUtility
     {
         [Header("Ray")]
-        [SerializeField] private Vector3 _from;
-        [SerializeField] private Vector3 _direction;
+        [SerializeField] private Vector3 _from = Vector3.zero;
+        [SerializeField] private Vector3 _direction = Vector3.zero;
 
 
         protected override void DrawGizmo()

@@ -10,7 +10,7 @@ namespace SombraStudios.Utility.UnityGizmos
         [Header("Sphere")]
         [Tooltip("Wireframe Sphere")]
         [SerializeField] private bool _isWireSphere = false;
-        [SerializeField] private Vector3 _center;
+        [SerializeField] private Vector3 _center = Vector3.zero;
         [SerializeField] private float _radius;
 
 

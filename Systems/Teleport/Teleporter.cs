@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEditor;
 
 namespace SombraStudios.Systems.Teleport
 {
@@ -10,7 +11,8 @@ namespace SombraStudios.Systems.Teleport
     /// </summary>
     public class Teleporter : MonoBehaviour
     {
-        [SerializeField] private Object DestinationScene;
+        //[SerializeField] private Object DestinationScene;
+        [SerializeField] private SceneAsset DestinationScene;
         [SerializeField] private string DestinationSpawnPointName;
 
         [Header("Events")]

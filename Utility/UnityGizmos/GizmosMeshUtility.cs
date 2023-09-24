@@ -12,9 +12,9 @@ namespace SombraStudios.Utility.UnityGizmos
         [SerializeField] private bool _isWireMesh = false;
         [Tooltip("Mesh to draw as a gizmo.")]
         [SerializeField] private Mesh _mesh;
-        [SerializeField] private Vector3 _position;
-        [SerializeField] private Quaternion _rotation;
-        [SerializeField] private Vector3 _scale;
+        [SerializeField] private Vector3 _position = Vector3.zero;
+        [SerializeField] private Quaternion _rotation = Quaternion.identity;
+        [SerializeField] private Vector3 _scale = Vector3.one;
 
 
         protected override void DrawGizmo()

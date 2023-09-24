@@ -7,8 +7,8 @@ namespace SombraStudios.Patterns.Creational.Singleton
     /// </summary>
     public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
-	    [SerializeField] private bool _dontDestroyOnLoad = false;
-	
+        [SerializeField] private bool _dontDestroyOnLoad = false;
+
         private static T _instance;
         public static T Instance
         {
@@ -19,15 +19,15 @@ namespace SombraStudios.Patterns.Creational.Singleton
         {
             if (_instance != null && _instance != this)
             {
-			    Destroy(gameObject);      
+                Destroy(gameObject);
             }
             else
             {
-                _instance = (T) this;
-			    // The GameObject will persist across multiple scenes.
-			    if (_dontDestroyOnLoad)
+                _instance = (T)this;
+                // The GameObject will persist across multiple scenes.
+                if (_dontDestroyOnLoad)
                 {
-				    DontDestroyOnLoad(gameObject);
+                    DontDestroyOnLoad(gameObject);
                 }
             }
         }
