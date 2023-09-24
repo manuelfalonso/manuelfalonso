@@ -5,7 +5,7 @@ namespace SombraStudios.Tools
     // Increase Unity Logger performance by disabling "Use Player Log" in Resolution and Presentation Player Settings
     // This is the file that Debug Log writes to when it’s called.
 
-    public static class StaticLogger
+    public static class Logger
     {
 
         // This will remove generated garbage from Logs in builds
