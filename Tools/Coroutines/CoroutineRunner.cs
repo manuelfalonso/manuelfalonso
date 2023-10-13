@@ -50,6 +50,7 @@ namespace SombraStudios.Tools.Coroutines
         }
 
         // Stop
+        /// <returns>Returns if the Coroutine was succesfully stopped</returns>
         public bool StopCoroutine()
         {
             return Stop();
