@@ -13,6 +13,9 @@ namespace SombraStudios.Utility.UnityGizmos
         [SerializeField] private bool _isSelectedGizmo = true;
         [SerializeField] private bool _isLocalPosition = true;
 
+        public bool GizmosEnabled { get => _gizmosEnabled; internal set => _gizmosEnabled = value; }
+        public bool IsSelectedGizmo { get => _isSelectedGizmo; set => _isSelectedGizmo = value; }
+
 
         private void OnDrawGizmos()
         {

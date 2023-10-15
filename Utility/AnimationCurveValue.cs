@@ -25,10 +25,6 @@ namespace SombraStudios.Utility
             _curve.postWrapMode = _postWrapMode;
         }
 
-        public float GetValueTimed()
-        {
-            return _curve.Evaluate(Time.time * _curveSpeed);
-        }
 
         public float GetValueExact(float time)
         {
