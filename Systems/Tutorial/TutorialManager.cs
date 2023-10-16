@@ -1,5 +1,4 @@
 using SombraStudios.Patterns.Creational.Singleton;
-using SombraStudios.Tools;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,37 +11,32 @@ namespace SombraStudios.TutorialSystem
     public class TutorialManager : Singleton<TutorialManager>
     {
         [Header("Data")]
-        [SerializeField]
-        private List<TutorialStep> _tutorialSteps = new List<TutorialStep>();
+        [SerializeField] private List<TutorialStep> _tutorialSteps = new List<TutorialStep>();
 
         [Header("Config")]
-        [SerializeField]
-        private bool _showTutorial = true;
-        [SerializeField]
-        private bool _saveProgression = true;
-        [SerializeField]
-        private float _startWaitInSeconds = 0f;
+        [SerializeField] private bool _showTutorial = true;
+        [Tooltip("In PlayerPrefs keys")]
+        [SerializeField] private bool _saveProgression = true;
+        [Tooltip("In Seconds")]
+        [SerializeField] private float _startWait = 0f;
 
         [Header("Debug")]
-        [SerializeField]
-        private bool _showLogs = false;
+        [SerializeField] private bool _showLogs = false;
 
         public int TutorialStepIndex() => _currentStepIndex;
         public bool IsTutorialCompleted() => _showTutorial && PlayerPrefs.GetInt(PlayerPrefsKeys.TUTORIAL_COMPLETED) == 1;
         public bool IsTutorialActive() => _showTutorial && PlayerPrefs.GetInt(PlayerPrefsKeys.TUTORIAL_COMPLETED) != 1;
 
         private int _currentStepIndex = 0;
-                
+
 
         private IEnumerator Start()
         {
-            yield return new WaitForSeconds(_startWaitInSeconds);
+            yield return new WaitForSeconds(_startWait);
 
-            if (_saveProgression)
-                ResumeProgression();
+            if (_saveProgression) { ResumeProgression(); }
 
-            if (_showTutorial)
-                yield return StartTutorial();
+            if (_showTutorial) { yield return StartTutorial(); }
 
             yield break;
         }
@@ -67,11 +61,6 @@ namespace SombraStudios.TutorialSystem
             for (_currentStepIndex = TutorialStepIndex(); _currentStepIndex < _tutorialSteps.Count; _currentStepIndex++)
             {
                 yield return _tutorialSteps[_currentStepIndex].ExecuteActions();
-
-                // Use this instead of yield return to skip steps with _completed field
-                // TODO the step will continue running in parallel. Stop it.
-                //StartCoroutine(_tutorialSteps[_currentStepIndex].ExecuteActions());
-                //yield return new WaitUntil(() => _tutorialSteps[_currentStepIndex].Completed == true);
 
                 SaveProgression();
             }

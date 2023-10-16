@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace SombraStudios.TutorialSystem
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "SombraStudios/Tutorial/Audio Event Action", order = 4)]
+    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Audio Event Action", order = 4)]
     public class AudioEventAction : RaiseEventAction
     {
         [Header("Data")]

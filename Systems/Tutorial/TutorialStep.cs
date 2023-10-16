@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using System;
-using UnityEngine;
 using System.Collections;
-using SombraStudios.Tools;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace SombraStudios.TutorialSystem
 {
@@ -14,22 +13,12 @@ namespace SombraStudios.TutorialSystem
     {
         [SerializeField] private string _name;
         [SerializeField] private bool _isActive;
-        [SerializeField] private List<TutorialAction> _actions;
-        //[SerializeField]
-        private bool _completed;
         [SerializeField] private bool _showLogs;
+        [SerializeField] private List<TutorialAction> _actions;
+        
+        private bool _completed;
 
-        public bool Completed
-        {
-            get
-            {
-                return _completed;
-            }
-            set
-            {
-                _completed = value;
-            }
-        }
+        public bool Completed { get => _completed; private set => _completed = value; }
 
 
         public TutorialStep(string name, List<TutorialAction> actions)
@@ -51,11 +40,6 @@ namespace SombraStudios.TutorialSystem
                 Tools.Logger.Log(_showLogs, $"{_actions[i].name} Started");
 
                 yield return _actions[i].ExecuteAction();
-
-                // Use this instead of yield return to skip actions with SetActionComplete() Button
-                // TODO the action will continue running in parallel. Stop it.
-                //TutorialManager.Instance.StartCoroutine(_actions[i].ExecuteAction());
-                //yield return new WaitUntil(() => _actions[i].IsCompleted == true);
 
                 Tools.Logger.Log(_showLogs, $"{_actions[i].name} Finished");
             }

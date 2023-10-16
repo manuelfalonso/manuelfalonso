@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SombraStudios.TutorialSystem
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "SombraStudios/Tutorial/Checkpoint Action", order = 3)]
+    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Checkpoint Action", order = 3)]
     public class CheckpointAction : TutorialAction
     {
         [NonSerialized] private bool _isCheckpointReachedInitialValue = false;

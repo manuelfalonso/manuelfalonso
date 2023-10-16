@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace SombraStudios.TutorialSystem
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "SombraStudios/Tutorial/Wait Scene Action", order = 2)]
+    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Wait Scene Action", order = 2)]
     public class WaitSceneAction : TutorialAction
     {
         [Header("Data")]

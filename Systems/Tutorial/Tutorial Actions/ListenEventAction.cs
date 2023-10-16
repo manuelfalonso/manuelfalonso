@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace SombraStudios.TutorialSystem
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "SombraStudios/Tutorial/Listen Event Action", order = 6)]
+    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Listen Event Action", order = 6)]
     public class ListenEventAction : TutorialAction
     {
         [Header("Event Data")]
-        [SerializeField] private GameEventSO _gameEvent;
-        [SerializeField] private GameEventSOListener _gameEventListener;
+        [SerializeField] private GameEvent _gameEvent;
+        [SerializeField] private GameEventScriptableObjectListener _gameEventListener;
 
 
         public override IEnumerator ExecuteAction()
