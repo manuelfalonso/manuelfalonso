@@ -13,7 +13,7 @@ namespace SombraStudios.Utility.Events
     /// </summary>
     public class GameEventMonoBehaviourListener : MonoBehaviour
     {
-        [SerializeField] private GameEventSO _gameEvent;
+        [SerializeField] private GameEvent _gameEvent;
         [SerializeField] private UnityEvent Response;
 
 

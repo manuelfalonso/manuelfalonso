@@ -7,11 +7,11 @@ namespace SombraStudios.Utility.Events
     /// SO Event used to decoupled code instead of a normal class.
     /// Inject a reference to the GameEventSO you want the listeners to raise
     /// </summary>
-    [CreateAssetMenu(fileName = "New Game Event", menuName = "Sombra Studios/Game Events/Game Event", order = 51)]
-    public class GameEventSO : ScriptableObject
+    [CreateAssetMenu(fileName = "New Game Event", menuName = "Sombra Studios/Game Events/Game Event")]
+    public class GameEvent : ScriptableObject
     {
         private List<GameEventMonoBehaviourListener> _monoBehaviourListeners = new List<GameEventMonoBehaviourListener>();
-        private List<GameEventSOListener> _listeners = new List<GameEventSOListener>();
+        private List<GameEventScriptableObjectListener> _listeners = new List<GameEventScriptableObjectListener>();
 
         public void Raise()
         {
@@ -32,7 +32,7 @@ namespace SombraStudios.Utility.Events
             _monoBehaviourListeners.Add(listener);
         }
 
-        public void RegisterListener(GameEventSOListener listener)
+        public void RegisterListener(GameEventScriptableObjectListener listener)
         {
             _listeners.Add(listener);
         }
@@ -43,7 +43,7 @@ namespace SombraStudios.Utility.Events
             _monoBehaviourListeners.Remove(listener);
         }
 
-        public void UnregisterListener(GameEventSOListener listener)
+        public void UnregisterListener(GameEventScriptableObjectListener listener)
         {
             _listeners.Remove(listener);
         }
