@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Asign a random color to the material.

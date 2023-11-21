@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace SombraStudios.Editor
+namespace SombraStudios.Shared.Editor
 {
 
     /// <summary>

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Enable Form Navigation up and down, and submit button with keyboard.

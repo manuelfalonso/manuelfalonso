@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     public class InteractHandler : MonoBehaviour
     {

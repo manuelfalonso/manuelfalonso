@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Debugging class to create an up straight line over the object.

@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using System.Collections;
 
-namespace SombraStudios.DependencyInjection
+namespace SombraStudios.Shared.DependencyInjection
 {
-
     public class DependenciesCollection : IEnumerable<Dependency>
     {
         private List<Dependency> dependencies = new List<Dependency>();

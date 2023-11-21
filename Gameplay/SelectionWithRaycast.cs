@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Raycast script for mouse object selection
     /// </summary>

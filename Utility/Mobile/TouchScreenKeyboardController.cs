@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Utility.Mobile
+namespace SombraStudios.Shared.Utility.Mobile
 {
     /// <summary>
     /// To take control of the Text Mesh Pro - Input Field

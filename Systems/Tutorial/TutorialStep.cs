@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.TutorialSystem
+namespace SombraStudios.Shared.TutorialSystem
 {
     /// <summary>
     /// Runs its logic with Coroutine

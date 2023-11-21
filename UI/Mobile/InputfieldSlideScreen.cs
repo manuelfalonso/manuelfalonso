@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace SombraStudios.UI.Mobile
+namespace SombraStudios.Shared.UI.Mobile
 {
     /// <summary>
     /// When the Touch Keyboard is active and the assigned input field is focused,

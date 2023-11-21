@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Net;
 using System.IO;
 
-namespace SombraStudios.Services.WebAPI
+namespace SombraStudios.Shared.Services.WebAPI
 {
     /// <summary>
     /// Example API Get call

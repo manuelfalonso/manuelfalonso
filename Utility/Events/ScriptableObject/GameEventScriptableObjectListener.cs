@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Utility.Events
+namespace SombraStudios.Shared.Utility.Events
 {
     [CreateAssetMenu(fileName = "New Game Event Listener", menuName = "Sombra Studios/Game Events/Game Event Listener")]
     public class GameEventScriptableObjectListener : ScriptableObject//, ISerializationCallbackReceiver

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Example script to filter and display items in a UI Inventory System.

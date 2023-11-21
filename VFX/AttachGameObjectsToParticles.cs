@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     [RequireComponent(typeof(ParticleSystem))]
     public class AttachGameObjectsToParticles : MonoBehaviour

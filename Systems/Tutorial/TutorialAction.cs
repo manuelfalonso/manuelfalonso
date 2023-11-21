@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.TutorialSystem
+namespace SombraStudios.Shared.TutorialSystem
 {
     /// <summary>
     /// Base class for all tutorial actions

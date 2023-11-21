@@ -1,6 +1,6 @@
 using System;
 
-namespace SombraStudios.Systems.Resource
+namespace SombraStudios.Shared.Systems.Resource
 {
     [Serializable]
     public class Resource : ResourceBase

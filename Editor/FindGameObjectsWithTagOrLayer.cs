@@ -4,7 +4,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Editor
+namespace SombraStudios.Shared.Editor
 {
     /// <summary>
     /// 1) Create an "Editor" folder in your project if you don't have one.
@@ -13,6 +13,7 @@ namespace SombraStudios.Editor
     /// 4) Set the target layer and click "Find".
     /// 5) The results will be displayed in the Unity console.
     /// </summary>
+    // TODO: Consider runtime Tag or Layer asignations
     public class FindGameObjectsWithTagOrLayer : EditorWindow
     {
         /// <summary>

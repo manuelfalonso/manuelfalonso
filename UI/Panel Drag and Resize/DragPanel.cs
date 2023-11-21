@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System.Collections;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
-	public class DragPanel : MonoBehaviour, IPointerDownHandler, IDragHandler {
+    public class DragPanel : MonoBehaviour, IPointerDownHandler, IDragHandler {
 	
 		private Vector2 originalLocalPointerPosition;
 		private Vector3 originalPanelLocalPosition;

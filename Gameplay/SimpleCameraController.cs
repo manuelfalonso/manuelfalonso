@@ -3,9 +3,8 @@ using UnityEngine.InputSystem;
 #endif
 using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Unity script to pan the view with mouse and keyboard
     /// Compatibility with the new InputSystem

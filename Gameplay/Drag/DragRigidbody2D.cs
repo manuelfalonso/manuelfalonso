@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Drag
+namespace SombraStudios.Shared.Gameplay.Drag
 {
-
     /// <summary>
     /// Class to drag and drop and object, affected by physics, with the mouse over the Z axis.
     /// Requiered: any collider or collider2D and rigidbody or rigidbody2D

@@ -1,10 +1,10 @@
-using SombraStudios.Attributes;
-using SombraStudios.Utility.UnityGizmos;
+using SombraStudios.Shared.Attributes;
+using SombraStudios.Shared.Utility.UnityGizmos;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Validator for two tranforms considering desired Direction for Dot Product operation

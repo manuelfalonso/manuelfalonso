@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Move a position towards another one methods
     /// </summary>

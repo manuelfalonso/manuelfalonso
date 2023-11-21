@@ -1,4 +1,4 @@
-namespace SombraStudios.Systems.Resource
+namespace SombraStudios.Shared.Systems.Resource
 {
     /// <summary>
     /// Base class for all resources.

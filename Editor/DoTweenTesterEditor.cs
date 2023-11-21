@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Editor
+namespace SombraStudios.Shared.Editor
 {
 
     /// <summary>

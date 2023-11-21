@@ -1,8 +1,6 @@
-using SombraStudios.Utility;
-using SombraStudios.Utility.TimeScale;
 using UnityEngine;
 
-namespace SombraStudios
+namespace SombraStudios.Shared.Utility.TimeScale
 {
     public class TimeScaleClient : MonoBehaviour
     {

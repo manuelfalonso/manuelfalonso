@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using UnityEditor;
 
-namespace SombraStudios.Systems.Teleport
+namespace SombraStudios.Shared.Systems.Teleport
 {
     /// <summary>
     /// Teleport behaviour to a SpawnPoint object inside the same scene or another one.

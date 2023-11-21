@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Systems.Teleport
+namespace SombraStudios.Shared.Systems.Teleport
 {
     /// <summary>
     /// Uses the Teleport behaviour with a trigger to create a teleport zone

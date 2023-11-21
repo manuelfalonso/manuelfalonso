@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Requirement: Crete a ragdoll from a Humanoid object
     /// </summary>

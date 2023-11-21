@@ -1,7 +1,7 @@
 #if REQUIRES_EXTERNAL_PACKAGE
 using UnityEngine;
 
-namespace SombraStudios.Editor
+namespace SombraStudios.Shared.Editor
 {
 
     /// <summary>

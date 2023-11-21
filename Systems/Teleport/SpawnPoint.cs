@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Systems.Teleport
+namespace SombraStudios.Shared.Systems.Teleport
 {
     /// <summary>
     /// Transform gameObject used as Teleporter destination

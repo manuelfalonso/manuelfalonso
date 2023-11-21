@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// transform.LookAt: Simple instruction to rotate an object to look at another.
     /// Quaternion.LookRotation to look at another Transform.

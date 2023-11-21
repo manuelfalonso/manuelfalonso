@@ -1,6 +1,5 @@
-namespace SombraStudios.Patterns.Behavioural.State
+namespace SombraStudios.Shared.Patterns.Behavioural.State
 {
-
     /// <summary>
     /// To switch the state of the context, create an instance of one 
     /// of the state classes and pass it to the context. You can do this 

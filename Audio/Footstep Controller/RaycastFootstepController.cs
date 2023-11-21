@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Audio.Footsteps
+namespace SombraStudios.Shared.Audio.Footsteps
 {
     /// <summary>
     /// Select an audio clip list with a RayCast to the floor

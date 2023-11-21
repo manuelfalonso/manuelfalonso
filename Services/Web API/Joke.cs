@@ -1,4 +1,4 @@
-namespace SombraStudios.Services.WebAPI
+namespace SombraStudios.Shared.Services.WebAPI
 {
     /// <summary>
     /// Example class to serealize a web response

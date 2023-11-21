@@ -1,9 +1,8 @@
-using SombraStudios.Patterns.Creational.Singleton;
-using SombraStudios.Tools;
+using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Systems.GameState
+namespace SombraStudios.Shared.Systems.GameState
 {
     /// <summary>
     /// Store reference to the actual game state and triggers an event when the game state changed

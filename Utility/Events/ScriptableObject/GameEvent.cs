@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Utility.Events
+namespace SombraStudios.Shared.Utility.Events
 {
     /// <summary>
     /// SO Event used to decoupled code instead of a normal class.

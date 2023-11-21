@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace SombraStudios.Patterns.Structural.Adapter
+namespace SombraStudios.Shared.Patterns.Structural.Adapter
 {
     // The Adaptee contains some useful behavior, but its data is
     // incompatible with the existing client code. The Adaptee needs some

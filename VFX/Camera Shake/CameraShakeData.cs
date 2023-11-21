@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Store Shake Data to be used with DoTween DOShakePosition method

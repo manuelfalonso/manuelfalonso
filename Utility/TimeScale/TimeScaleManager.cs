@@ -1,9 +1,9 @@
-using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Utility.TimeScale
+namespace SombraStudios.Shared.Utility.TimeScale
 {
     public class TimeScaleManager : Singleton<TimeScaleManager>
     {

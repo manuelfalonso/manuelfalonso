@@ -1,9 +1,8 @@
-namespace SombraStudios.Patterns.Behavioural.Strategy
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
 {
-
-    using System.Collections.Generic;
-    using UnityEngine;
-
     /// <summary>
     /// The Context maintains a reference to one of the concrete strategies 
     /// and communicates with this object only via the strategy interface.

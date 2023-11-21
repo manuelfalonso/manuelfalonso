@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-namespace SombraStudios.Services.Advertisement
+namespace SombraStudios.Shared.Services.Advertisement
 {
     /// <summary>
     /// Class for Interstitial advertisement.

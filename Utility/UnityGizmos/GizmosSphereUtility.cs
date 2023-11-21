@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos
 {
     /// <summary>
     /// Draws a solid or wireframe sphere with center and radius.

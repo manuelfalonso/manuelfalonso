@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.DependencyInjection.Example
+namespace SombraStudios.Shared.DependencyInjection.Example
 {
-
     /// <summary>
     /// In this case scneario, the nested class is in a Prefab
     /// as you can see on ExampleDependenciesContext line 35

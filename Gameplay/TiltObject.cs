@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Tilt an object sideways up to tiltAngle
     /// </summary>

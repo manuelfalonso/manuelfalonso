@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Optional Timer Class: Manage all the UI input fields

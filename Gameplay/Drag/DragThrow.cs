@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Drag
+namespace SombraStudios.Shared.Gameplay.Drag
 {
-
     /// <summary>
     /// Class to drag and throw and object with the mouse over the Z Camera axis.
     /// It consider the distance of the las time gap to calculate the velocity.

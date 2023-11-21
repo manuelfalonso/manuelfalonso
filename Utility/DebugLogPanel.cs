@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using TMPro;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Util class to show log messages in a UI text component

@@ -2,7 +2,7 @@ using System.Globalization;
 using System.IO;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Class that creates a text file at the root proyect folder with the string lines

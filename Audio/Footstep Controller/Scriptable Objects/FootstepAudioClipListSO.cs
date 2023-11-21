@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Audio.Footsteps
+namespace SombraStudios.Shared.Audio.Footsteps
 {
     /// <summary>
     /// SO used by the Footsteps Controller script to separate list of clips 

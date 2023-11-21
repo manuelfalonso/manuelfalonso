@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace SombraStudios.DependencyInjection
+namespace SombraStudios.Shared.DependencyInjection
 {
-
     public class DependenciesProvider
     {
         private Dictionary<Type, Dependency> dependencies = 

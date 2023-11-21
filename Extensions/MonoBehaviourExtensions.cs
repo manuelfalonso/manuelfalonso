@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Extensions
+namespace SombraStudios.Shared.Extensions
 {
     /// <summary>
     /// Extension methods for MonoBehaviour classes

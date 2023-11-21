@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-namespace SombraStudios.Gameplay.Spawners
+namespace SombraStudios.Shared.Gameplay.Spawners
 {
-
 	/// <summary>
 	/// 3D Area Object Spawner with interval
 	/// WARINING!: This script doesnt work with rotation of the spawn area

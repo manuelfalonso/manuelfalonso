@@ -1,7 +1,7 @@
-namespace SombraStudios.Patterns.Behavioural.State
-{
-    using UnityEngine;
+using UnityEngine;
 
+namespace SombraStudios.Shared.Patterns.Behavioural.State
+{
     /// <summary>
     /// The client initiliaze the State Machine Behaviour
     /// 

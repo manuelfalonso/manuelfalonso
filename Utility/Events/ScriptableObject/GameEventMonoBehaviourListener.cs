@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Utility.Events
+namespace SombraStudios.Shared.Utility.Events
 {
     /// <summary>
     /// SO Event Listener using a Unity Event.

@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.PlayerMovement
+namespace SombraStudios.Shared.Gameplay.PlayerMovement
 {
-
     /// <summary>
     /// Top down player movement 2d with boundaries limits
     /// </summary>

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-namespace SombraStudios.Video
+namespace SombraStudios.Shared.Video
 {
     /// <summary>
     /// Fix to issue: RenderTexture retaining last video player frame

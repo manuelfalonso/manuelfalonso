@@ -1,9 +1,8 @@
 ﻿/// <summary>
 /// Event Registry with static references
 /// </summary>
-namespace Tapestry
+namespace SombraStudios.Shared.Utility.Events
 {
-
     public class TapestryEventRegistry
     {
         #region Example

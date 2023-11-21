@@ -4,7 +4,7 @@ using Firebase.Auth;
 using System;
 using System.Threading.Tasks;
 
-namespace SombraStudios.Services.Firebase
+namespace SombraStudios.Shared.Services.Firebase
 {
     /// <summary>
     /// Method to return exception error message from a Firebase Excception

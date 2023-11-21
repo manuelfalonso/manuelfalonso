@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 #endif
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Triggers an event when a slider bar is filled using an input

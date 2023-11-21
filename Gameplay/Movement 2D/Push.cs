@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Movement2D
+namespace SombraStudios.Shared.Gameplay.Movement2D
 {
-
 	/// <summary>
 	/// Push script
 	/// </summary>

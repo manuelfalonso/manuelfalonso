@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Rotate over a traget trying to reach its center + offset
     /// </summary>

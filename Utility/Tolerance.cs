@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     public static class Tolerance
     {

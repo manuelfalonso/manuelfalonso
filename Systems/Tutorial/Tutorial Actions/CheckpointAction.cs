@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.TutorialSystem
+namespace SombraStudios.Shared.TutorialSystem
 {
     [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Checkpoint Action", order = 3)]
     public class CheckpointAction : TutorialAction

@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Drag
+namespace SombraStudios.Shared.Gameplay.Drag
 {
-
     /// <summary>
     /// Class to drag and drop and object with the mouse over the Camera Z axis.
     /// </summary>

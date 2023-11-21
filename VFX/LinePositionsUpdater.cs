@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Line Renderer positioner that use World Position to update the line positions.

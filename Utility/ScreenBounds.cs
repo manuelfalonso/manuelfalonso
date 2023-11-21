@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Contains static methods and fields for determining screen bounds

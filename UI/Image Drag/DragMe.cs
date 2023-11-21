@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
 	[RequireComponent(typeof(Image))]
 	public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler

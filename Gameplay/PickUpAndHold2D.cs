@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
 	/// <summary>
 	/// Pick up and hold objects script using parenting and de parenting.
 	/// Required:

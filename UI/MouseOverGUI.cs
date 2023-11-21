@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// IsPointerOverGameObject function to check if mouse is over GUI

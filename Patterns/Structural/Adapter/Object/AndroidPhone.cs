@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Patterns.Structural.Adapater
+namespace SombraStudios.Shared.Patterns.Structural.Adapater
 {
 	public sealed class AndroidPhone : IUsbPhone
 	{

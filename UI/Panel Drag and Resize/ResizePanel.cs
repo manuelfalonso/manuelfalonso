@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
 	public class ResizePanel : MonoBehaviour, IPointerDownHandler, IDragHandler {
 	

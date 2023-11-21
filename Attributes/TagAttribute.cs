@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Attributes
+namespace SombraStudios.Shared.Attributes
 {
     /// <summary>
     /// Displays a field with the list of Editor Tags

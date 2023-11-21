@@ -1,4 +1,4 @@
-namespace SombraStudios.Tools.Coroutines
+namespace SombraStudios.Shared.Tools.Coroutines
 {
 
     using System.Collections;

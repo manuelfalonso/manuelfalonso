@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.DependencyInjection.Example
+namespace SombraStudios.Shared.DependencyInjection.Example
 {
-
     /// <summary>
     /// MonoBehaviour in the scene
     /// </summary>

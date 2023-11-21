@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SombraStudios.Systems.Teleport
+namespace SombraStudios.Shared.Systems.Teleport
 {
     // This Manager must persist between scenes
     public class TeleportManager : Patterns.Creational.Singleton.Singleton<TeleportManager>

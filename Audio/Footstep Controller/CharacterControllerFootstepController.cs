@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Audio.Footsteps
+namespace SombraStudios.Shared.Audio.Footsteps
 {
     /// <summary>
     /// Select an audio clip list with the CharacterController floor hit

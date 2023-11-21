@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Unity Pointer handlers interfaces for UI mouse events. 

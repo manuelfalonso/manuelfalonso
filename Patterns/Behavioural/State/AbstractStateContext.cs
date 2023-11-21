@@ -1,8 +1,7 @@
-namespace SombraStudios.Patterns.Behavioural.State
+using UnityEngine;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.State
 {
-
-    using UnityEngine;
-
     /// <summary>
     /// Context stores a reference to one of the concrete state objects 
     /// and delegates to it all state-specific work. The context 

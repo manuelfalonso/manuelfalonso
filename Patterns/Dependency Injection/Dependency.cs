@@ -1,6 +1,6 @@
 using System;
 
-namespace SombraStudios.DependencyInjection
+namespace SombraStudios.Shared.DependencyInjection
 {
     /// <summary>
     /// Type => is what the classes will request for injection

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Offseting the texture of a Sprite or UI Image to make a moving background.

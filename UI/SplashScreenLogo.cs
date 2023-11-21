@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     public class SplashScreenLogo : MonoBehaviour
     {

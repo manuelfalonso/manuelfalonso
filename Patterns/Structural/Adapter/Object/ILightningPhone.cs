@@ -1,8 +1,6 @@
-using UnityEngine;
-
-namespace SombraStudios.Patterns.Structural.Adapater
+namespace SombraStudios.Shared.Patterns.Structural.Adapater
 {
-	public interface ILightningPhone
+    public interface ILightningPhone
 	{
 		void ConnectLightning();
 		void Recharge();

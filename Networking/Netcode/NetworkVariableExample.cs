@@ -3,7 +3,7 @@ using Unity.Netcode;
 using UnityEngine;
 using DG.Tweening;
 
-namespace SombraStudios.Networking
+namespace SombraStudios.Shared.Networking
 {
 
 	/// <summary>

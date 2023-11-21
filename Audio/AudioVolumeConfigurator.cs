@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-namespace SombraStudios.Audio
+namespace SombraStudios.Shared.Audio
 {
 
     /// <summary>

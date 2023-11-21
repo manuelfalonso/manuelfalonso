@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Spins the object in the defined x, y and/or z axis.
     /// </summary>

@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Systems.CloseCaptions
+namespace SombraStudios.Shared.Systems.CloseCaptions
 {
     /// <summary>
     /// Closed Caption Database is an asset that map given AudioClip to a list of lines & time used by the CCManager

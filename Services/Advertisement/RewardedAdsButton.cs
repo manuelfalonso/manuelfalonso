@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
 
-namespace SombraStudios.Services.Advertisement
+namespace SombraStudios.Shared.Services.Advertisement
 {
     /// <summary>
     /// Example Class for Rewarded Advertisement using a button.

@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.DependencyInjection.Example
+namespace SombraStudios.Shared.DependencyInjection.Example
 {
-
     /// <summary>
     /// we can have all of our dependencies obtained from outside 
     /// without caring about where they are, or even if they are 

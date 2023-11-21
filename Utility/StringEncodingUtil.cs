@@ -1,7 +1,7 @@
 using System.Text;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Util class to return a string with the selected Encoding

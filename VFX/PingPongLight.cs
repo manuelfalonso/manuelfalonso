@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Increase and decrease the light from 0 to a max during a time.

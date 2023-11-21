@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Attributes
+namespace SombraStudios.Shared.Attributes
 {
     /// <summary>
     /// Display a field as read-only in the inspector.

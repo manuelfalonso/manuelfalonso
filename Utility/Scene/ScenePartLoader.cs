@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     public enum CheckMethod
     {

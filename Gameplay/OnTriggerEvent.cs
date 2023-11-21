@@ -1,10 +1,8 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     [RequireComponent(typeof(Collider))]
     public class OnTriggerEvent : MonoBehaviour
     {

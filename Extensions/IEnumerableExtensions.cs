@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SombraStudios.Extensions
+namespace SombraStudios.Shared.Extensions
 {
     /// <summary>
     /// Extension methods for IEnumerables

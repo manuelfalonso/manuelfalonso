@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace SombraStudios.Patterns.Structural.Adapter
+namespace SombraStudios.Shared.Patterns.Structural.Adapter
 {
     // The Adapter makes the Adaptee's data compatible with the Target's class.
     class Adapter : TargetDataClass

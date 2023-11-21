@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace SombraStudios.Gameplay.PlayerMovement
+namespace SombraStudios.Shared.Gameplay.PlayerMovement
 {
-
     /// <summary>
     /// Apply movement to a game object with mouse input and NavMeshAgent
     /// </summary>

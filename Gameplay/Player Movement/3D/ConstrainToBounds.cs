@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.PlayerMovement
+namespace SombraStudios.Shared.Gameplay.PlayerMovement
 {
-
     /// <summary>
     /// Constrain movement delimited by a box Collider
     /// NOTE: Don`t work with CharacterController movement

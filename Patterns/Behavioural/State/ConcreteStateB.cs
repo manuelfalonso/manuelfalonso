@@ -1,8 +1,7 @@
-namespace SombraStudios.Patterns.Behavioural.State
+using UnityEngine;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.State
 {
-
-    using UnityEngine;
-
     /// <summary>
     /// Concrete States provide their own implementations for the 
     /// state-specific methods. To avoid duplication of similar code 

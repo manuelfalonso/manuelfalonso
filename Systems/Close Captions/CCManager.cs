@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace SombraStudios.Systems.CloseCaptions
+namespace SombraStudios.Shared.Systems.CloseCaptions
 {
     /// <summary>
     /// The CCManager will track each CCSource in the scene and hide/display/align them based on the view direction and

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Examples
+namespace SombraStudios.Shared.Examples
 {
     /// <summary>
     /// Logs on every Unity Message event method

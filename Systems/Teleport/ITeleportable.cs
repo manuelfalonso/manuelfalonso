@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Systems.Teleport
+namespace SombraStudios.Shared.Systems.Teleport
 {
     /// <summary>
     /// Implent this to create a teleportable object.

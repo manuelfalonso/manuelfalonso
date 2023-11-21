@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Simple script to set the hot Spot and textture of a Cursor

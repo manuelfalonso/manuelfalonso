@@ -1,4 +1,4 @@
-namespace SombraStudios.DependencyInjection
+namespace SombraStudios.Shared.DependencyInjection
 {
     /// <summary>
     /// The choice is the attribute based one, because you

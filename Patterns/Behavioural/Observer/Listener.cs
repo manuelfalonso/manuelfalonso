@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Patterns.Behavioural.Observer
+namespace SombraStudios.Shared.Patterns.Behavioural.Observer
 {
     /// <summary>
     /// Listen to Observer event

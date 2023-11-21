@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Patterns.Structural.Adapater
+namespace SombraStudios.Shared.Patterns.Structural.Adapater
 {
 	/// <summary>
 	/// Converts the interface of one object so that another object can understand it.

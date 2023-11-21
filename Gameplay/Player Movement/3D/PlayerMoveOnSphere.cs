@@ -2,9 +2,8 @@
 using Cinemachine.Utility;
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.PlayerMovement
+namespace SombraStudios.Shared.Gameplay.PlayerMovement
 {
-
     /// <summary>
     /// Move an object with Input around a SphereCollider.
     /// </summary>

@@ -3,7 +3,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
 
-namespace SombraStudios.Audio
+namespace SombraStudios.Shared.Audio
 {
 
     /// <summary>

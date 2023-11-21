@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Systems
+namespace SombraStudios.Shared.Systems
 {
     /// <summary>
     /// Manages the state of the reloading system.

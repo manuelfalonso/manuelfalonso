@@ -1,7 +1,7 @@
-using SombraStudios.Extensions;
+using SombraStudios.Shared.Extensions;
 using UnityEngine;
 
-namespace SombraStudios.UI.Mobile
+namespace SombraStudios.Shared.UI.Mobile
 {
     /// <summary>
     /// Adjusts the RectTransform based on the device's safe area.

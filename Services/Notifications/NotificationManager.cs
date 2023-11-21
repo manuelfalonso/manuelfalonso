@@ -13,7 +13,7 @@ using Unity.Notifications.iOS;
 #endif
 #endif
 
-namespace SombraStudios.Services.Notifications
+namespace SombraStudios.Shared.Services.Notifications
 {
     /// <summary>
     /// Unity Mobile Notifications documentation:

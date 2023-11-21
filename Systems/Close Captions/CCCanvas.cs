@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace SombraStudios.Systems.CloseCaptions
+namespace SombraStudios.Shared.Systems.CloseCaptions
 {
     public class CCCanvas : MonoBehaviour
     {

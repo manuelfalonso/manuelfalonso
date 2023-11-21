@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Interpolate between an initial and a final color of the material.

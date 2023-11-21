@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Example Class for saving persistent data during runs, re-installing or updating.

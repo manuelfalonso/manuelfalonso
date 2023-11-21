@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Class with static methods for saving and loading data from PlayerPrefs

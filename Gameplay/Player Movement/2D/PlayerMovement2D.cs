@@ -1,9 +1,8 @@
-using SombraStudios.Gameplay.PlayerController;
+using SombraStudios.Shared.Gameplay.PlayerController;
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.PlayerMovement
+namespace SombraStudios.Shared.Gameplay.PlayerMovement
 {
-
     /// <summary>
     /// Supports: Crouch, Jump and Animations.
     /// Edited: ManuelFAlonso

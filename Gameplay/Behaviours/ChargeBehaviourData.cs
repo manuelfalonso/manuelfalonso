@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Behaviours
+namespace SombraStudios.Shared.Gameplay.Behaviours
 {
     /// <summary>
     /// Holds data for configuring charging behavior, including parameters for time-based charging,

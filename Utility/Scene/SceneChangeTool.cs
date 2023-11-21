@@ -12,7 +12,7 @@ using UnityEngine.UIElements;
 using UnityEngine.Experimental.UIElements;
 #endif
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     [InitializeOnLoad]
     public static class SceneChangeTool

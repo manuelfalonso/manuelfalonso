@@ -2,7 +2,7 @@
 using UnityEngine;
 using Unity.Netcode;
 
-namespace SombraStudios.Networking
+namespace SombraStudios.Shared.Networking
 {
 
     /// <summary>

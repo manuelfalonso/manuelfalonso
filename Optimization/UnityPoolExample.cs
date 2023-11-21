@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace SombraStudios.Optimization
+namespace SombraStudios.Shared.Optimization
 {
     /// <summary>
     /// This example creates a game object prefab using a pool so that old objects can be reused.

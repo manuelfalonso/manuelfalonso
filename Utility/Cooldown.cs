@@ -1,10 +1,10 @@
-using SombraStudios.Attributes;
-using SombraStudios.Tools.Coroutines;
+using SombraStudios.Shared.Attributes;
+using SombraStudios.Shared.Tools.Coroutines;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// It can be used as a waiting period between using specific actions in a game/app, 

@@ -2,9 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Gameplay.PlayerController
+namespace SombraStudios.Shared.Gameplay.PlayerController
 {
-
 	/// <summary>
 	/// Supports: Move, Jump, Crouch, OnLanding, OnCrouching and Flip.
 	/// Features: Coyote Time, Input Buffer and Corner Correction.

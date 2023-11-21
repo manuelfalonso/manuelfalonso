@@ -1,9 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     /// <summary>
     /// Move the transform of an object through a list of waypoints
     /// </summary>

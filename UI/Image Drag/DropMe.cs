@@ -1,11 +1,10 @@
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
-	public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
+    public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 	{
 		public Image containerImage;
 		public Image receivingImage;

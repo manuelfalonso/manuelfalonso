@@ -1,8 +1,7 @@
-namespace SombraStudios.Patterns.Behavioural.Strategy
+using UnityEngine;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
 {
-
-    using UnityEngine;
-
     /// <summary>
     /// The Client creates a specific strategy object and passes it to the context. 
     /// The context exposes a setter which lets clients replace the strategy 

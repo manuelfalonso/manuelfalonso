@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Systems.Resource
+namespace SombraStudios.Shared.Systems.Resource
 {
     /// <summary>
     /// Supports:

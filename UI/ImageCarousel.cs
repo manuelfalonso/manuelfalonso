@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Image Carousel Class behaviour. 

@@ -2,7 +2,7 @@
 using Unity.Netcode;
 using UnityEngine;
 
-namespace SombraStudios.Networking
+namespace SombraStudios.Shared.Networking
 {
     /// <summary>
     /// Approval check using a string room password.

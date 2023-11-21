@@ -2,9 +2,9 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using System;
-using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Shared.Patterns.Creational.Singleton;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Util script to log over UI.

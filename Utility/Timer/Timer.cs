@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using System;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Timer Main Class: Manges time settings and runs timer

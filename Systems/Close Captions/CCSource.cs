@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace SombraStudios.Systems.CloseCaptions
+namespace SombraStudios.Shared.Systems.CloseCaptions
 {
     /// <summary>
     /// If an object with an AudioSource have a CCSource, it will be tracked by the CCManager and its current playing clip

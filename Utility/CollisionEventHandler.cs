@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
-using SombraStudios.Attributes;
+using SombraStudios.Shared.Attributes;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Handles collision events based on specified thresholds for 3D.

@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace SombraStudios.Gameplay.Movement2D
+namespace SombraStudios.Shared.Gameplay.Movement2D
 {
-
 	/// <summary>
 	/// Wander script using forces
 	/// </summary>

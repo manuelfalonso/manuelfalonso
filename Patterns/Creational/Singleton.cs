@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Patterns.Creational.Singleton
+namespace SombraStudios.Shared.Patterns.Creational.Singleton
 {
     /// <summary>
     /// Util Class for creating Singleton classes derived from it

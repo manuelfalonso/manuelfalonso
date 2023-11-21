@@ -1,6 +1,5 @@
-namespace SombraStudios
+namespace SombraStudios.Shared.Utility
 {
-
     /// <summary>
     /// Stores al the keys used for Player Prefs
     /// </summary>

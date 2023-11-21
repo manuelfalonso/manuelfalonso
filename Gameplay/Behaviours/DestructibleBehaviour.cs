@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Behaviours
+namespace SombraStudios.Shared.Gameplay.Behaviours
 {
     /// <summary>
     /// Helper component that spawns a prefab game object when the Destroy function is called.

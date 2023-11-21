@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Pool;
 
-namespace SombraStudios.Optimization
+namespace SombraStudios.Shared.Optimization
 {    
     /// <summary>
     /// This component returns the object to the pool when Its disabled.

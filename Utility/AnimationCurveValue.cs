@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Scriptable object to use Animation Curves as values

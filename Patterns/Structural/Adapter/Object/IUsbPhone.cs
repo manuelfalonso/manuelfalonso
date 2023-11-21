@@ -1,8 +1,6 @@
-using UnityEngine;
-
-namespace SombraStudios.Patterns.Structural.Adapater
+namespace SombraStudios.Shared.Patterns.Structural.Adapater
 {
-	public interface IUsbPhone
+    public interface IUsbPhone
 	{
 		void ConnectUsb();
 		void Recharge();

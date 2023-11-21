@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Audio
+namespace SombraStudios.Shared.Audio
 {
 
     /// <summary>

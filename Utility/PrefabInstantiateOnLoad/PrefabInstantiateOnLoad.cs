@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
-
     /// <summary>
     /// Creates on intialize a list of prefabs saved on Resources folder
     /// It can differentiate between all RuntimeInitializeLoadType
@@ -56,8 +55,7 @@ namespace SombraStudios.Utility
         private static void InstantiatePrefabList(string scriptableObjectName)
         {
             var path = MAIN_PATH + "/" + scriptableObjectName;
-            var prefabListSO =
-                Resources.Load<PrefabInstantiateOnLoadSO>(path);
+            var prefabListSO = UnityEngine.Resources.Load<PrefabInstantiateOnLoadSO>(path);
 
             if (prefabListSO == null) { return; }
             if (prefabListSO.Active == false) { return; }

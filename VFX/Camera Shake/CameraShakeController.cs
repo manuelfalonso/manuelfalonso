@@ -2,7 +2,7 @@
 using UnityEngine;
 using DG.Tweening;
 
-namespace SombraStudios.VFX
+namespace SombraStudios.Shared.VFX
 {
     /// <summary>
     /// Simple controller to use camera shake with DoTween with Scriptable Objects

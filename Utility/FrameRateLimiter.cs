@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Limit FPS to optimize performance to the maximum refresh rate of the monitor

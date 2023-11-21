@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
 	/// <summary>
 	/// It could be attach to a NPC or Player to randomly generate characters 

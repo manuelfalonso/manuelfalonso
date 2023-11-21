@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace E404.Utils
+namespace SombraStudios.Shared.Utility
 {
     [Serializable]
     public class ObservedList<T> : IList<T>

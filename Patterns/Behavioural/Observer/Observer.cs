@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Patterns.Behavioural.Observer
+namespace SombraStudios.Shared.Patterns.Behavioural.Observer
 {
     /// <summary>
     /// Observer Pattern

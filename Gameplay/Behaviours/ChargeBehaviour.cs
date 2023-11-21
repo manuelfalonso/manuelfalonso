@@ -1,8 +1,8 @@
-using SombraStudios.Attributes;
+using SombraStudios.Shared.Attributes;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Gameplay.Behaviours
+namespace SombraStudios.Shared.Gameplay.Behaviours
 {
     /// <summary>
     /// Manages a charging behavior with customizable parameters such as time-based charging,

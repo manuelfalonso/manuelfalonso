@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Patterns.Structural.Adapter
+namespace SombraStudios.Shared.Patterns.Structural.Adapter
 {
     // The Target defines the domain-specific class used by the client code.
     public class TargetDataClass

@@ -1,9 +1,8 @@
 ﻿/// <summary>
 /// An event that stores a list of subscribers. 
 /// </summary>
-namespace Tapestry
+namespace SombraStudios.Shared.Utility.Events
 {
-
     public class TapestryEvent
     {
         System.Action repeatUseDelegate;

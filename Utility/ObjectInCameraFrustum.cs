@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Detect collider being seen by the camera.

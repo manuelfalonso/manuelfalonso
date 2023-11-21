@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Unix Time measures time by the number of seconds that have elapsed 

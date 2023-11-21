@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Systems.LootBox
+namespace SombraStudios.Shared.Systems.LootBox
 {
     [CreateAssetMenu(fileName = "New Item Data", menuName = "Item Data", order = 51)]
     public class Item : ScriptableObject

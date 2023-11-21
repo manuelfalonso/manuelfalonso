@@ -1,9 +1,9 @@
-using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     public class NoInternetController : Singleton<NoInternetController>
     {

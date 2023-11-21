@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.VFX.Parallax
+namespace SombraStudios.Shared.VFX.Parallax
 {
     /// <summary>
     /// Allows the controller to move each layer based on the parallaxAmount!

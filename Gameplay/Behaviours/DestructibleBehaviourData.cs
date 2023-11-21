@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Behaviours
+namespace SombraStudios.Shared.Gameplay.Behaviours
 {
     [CreateAssetMenu(fileName = "Destructible Data", menuName = "Sombra Studios/Behaviours/Destructible Data", order = 0)]
     public class DestructibleBehaviourData : ScriptableObject

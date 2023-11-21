@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-namespace SombraStudios.Examples
+namespace SombraStudios.Shared.Examples
 {
 
     /// <summary>

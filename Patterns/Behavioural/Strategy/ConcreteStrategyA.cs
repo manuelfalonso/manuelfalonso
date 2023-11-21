@@ -1,8 +1,7 @@
-namespace SombraStudios.Patterns.Behavioural.Strategy
+using UnityEngine;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
 {
-
-    using UnityEngine;
-
     /// <summary>
     /// Concrete Strategies implement different variations 
     /// of an algorithm the context uses.

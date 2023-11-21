@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.TutorialSystem
+namespace SombraStudios.Shared.TutorialSystem
 {
     /// <summary>
     /// Action for waiting time in seconds

@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.DependencyInjection
+namespace SombraStudios.Shared.DependencyInjection
 {
-
     /// <summary>
     /// Acts as a container of dependencies
     /// Due to the DontDestroyOnLoad it should be as root object

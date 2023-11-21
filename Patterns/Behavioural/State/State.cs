@@ -1,8 +1,7 @@
-namespace SombraStudios.Patterns.Behavioural.State
+using UnityEngine;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.State
 {
-
-    using UnityEngine;
-
     /// <summary>
     /// The State interface declares the state-specific methods. 
     /// These methods should make sense for all concrete states 

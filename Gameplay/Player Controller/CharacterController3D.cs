@@ -1,8 +1,7 @@
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.PlayerController
+namespace SombraStudios.Shared.Gameplay.PlayerController
 {
-
     /// <summary>
     /// Third Person Character Controller Class
     /// Required: Cinemachine. Create a Free Look Camera with World Space orbit

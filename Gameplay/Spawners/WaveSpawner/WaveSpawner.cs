@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Gameplay.Spawners
+namespace SombraStudios.Shared.Gameplay.Spawners
 {
-
     public class WaveSpawner : MonoBehaviour
     {
         [SerializeField] List<WaveConfig> waveConfigs;

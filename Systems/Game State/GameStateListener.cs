@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Systems.GameState
+namespace SombraStudios.Shared.Systems.GameState
 {
     public abstract class GameStateListener : MonoBehaviour
     {

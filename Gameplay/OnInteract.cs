@@ -1,11 +1,9 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-namespace SombraStudios.Gameplay
+namespace SombraStudios.Shared.Gameplay
 {
-
     [RequireComponent(typeof(Collider))]
     public class OnInteract : MonoBehaviour
     {

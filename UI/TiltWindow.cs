@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.UI
+namespace SombraStudios.Shared.UI
 {
 	/// <summary>
 	/// Tilt a transform based on the range defined

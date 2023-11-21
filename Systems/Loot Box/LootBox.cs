@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Systems.LootBox
+namespace SombraStudios.Shared.Systems.LootBox
 {
     [RequireComponent(typeof(Renderer))]
     public abstract class LootBox : MonoBehaviour

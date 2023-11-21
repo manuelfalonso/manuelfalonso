@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Attributes
+namespace SombraStudios.Shared.Attributes
 {
     //Original by DYLAN ENGELMAN http://jupiterlighthousestudio.com/custom-inspectors-unity/
     //Altered by Brecht Lecluyse https://www.brechtos.com

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Utility.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos
 {
     /// <summary>
     /// Decorator/Wrapper over MonoBehaviour OnDrawGizmos and OnDrawGizmosSelected Unity messages.

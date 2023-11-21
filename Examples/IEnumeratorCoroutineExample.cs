@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections; // Required for IEnumerator
 
-namespace SombraStudios.Examples
+namespace SombraStudios.Shared.Examples
 {
 
     /// <summary>

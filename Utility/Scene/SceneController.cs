@@ -1,10 +1,10 @@
-using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Utility
+namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Singleton Scene Manager Script for some common SceneManager uses.

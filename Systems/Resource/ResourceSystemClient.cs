@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Systems.Resource
+namespace SombraStudios.Shared.Systems.Resource
 {
 
     /// <summary>

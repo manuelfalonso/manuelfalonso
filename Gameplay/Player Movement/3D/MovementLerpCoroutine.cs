@@ -1,9 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-namespace SombraStudios.Gameplay.PlayerMovement
+namespace SombraStudios.Shared.Gameplay.PlayerMovement
 {
-
     /// <summary>
     /// When receive a Target move the gameObject with lerp 
     /// </summary>

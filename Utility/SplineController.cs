@@ -1,9 +1,9 @@
-using SombraStudios.Extensions;
+using SombraStudios.Shared.Extensions;
 using System;
 using UnityEngine;
 using UnityEngine.Splines;
 
-namespace SombraStudios.Utils
+namespace SombraStudios.Shared.Utils
 {
     /// <summary>
     /// Animates objects using Unity Splines package and Animation Curves

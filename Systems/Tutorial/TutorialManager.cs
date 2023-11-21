@@ -1,9 +1,10 @@
-using SombraStudios.Patterns.Creational.Singleton;
+using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System.Collections;
 using System.Collections.Generic;
+using SombraStudios.Shared.Utility;
 using UnityEngine;
 
-namespace SombraStudios.TutorialSystem
+namespace SombraStudios.Shared.TutorialSystem
 {
     /// <summary>
     /// Manager for tutorial steps and its actions
