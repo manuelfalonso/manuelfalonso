@@ -28,49 +28,49 @@ namespace SombraStudios.Shared.Systems.Resource
 
             // Methods
             Log($"* Damage Player", this);
-            _playerHealthSystem.DecreaseAmount(80f);
+            _playerHealthSystem.DecreaseAmountWithResult(80f);
             Log($"* Heal Player to max Health", this);
-            _playerHealthSystem.IncreaseAmount(9999f);
+            _playerHealthSystem.IncreaseAmountWithResult(9999f);
             Log($"* Tree fall and killed the Player", this);
-            _playerHealthSystem.ClearAmount();
+            _playerHealthSystem.ClearAmountWithResult();
             Log($"* Revive Player by half of this life", this);
-            _playerHealthSystem.RestoreAmount(0.5f);
+            _playerHealthSystem.RestoreAmountWithResult(0.5f);
             Log($"* Player health now is immutable", this);
             _playerHealthSystem.Immutable = true;
             Log($"* Tring to damage the Player", this);
-            _playerHealthSystem.DecreaseAmount(10f);
+            _playerHealthSystem.DecreaseAmountWithResult(10f);
             Log($"* Player health now is not immutable", this);
             _playerHealthSystem.Immutable = false;
             Log($"* Killed the Player, AGAIN!", this);
-            _playerHealthSystem.ClearAmount();
+            _playerHealthSystem.ClearAmountWithResult();
             Log($"* But now reset it to initial amount", this);
-            _playerHealthSystem.ResetAmount();
+            _playerHealthSystem.ResetAmountWithResult();
 
             yield break;
         }
 
 
-        private void PlayerHealthSystem_OnLowResource()
+        private void PlayerHealthSystem_OnLowResource(float healthAmount)
         {
             Log($"Player OnLowResource", this);
         }
 
-        private void PlayerHealthSystem_OnMaxResource()
+        private void PlayerHealthSystem_OnMaxResource(float healthAmount)
         {
             Log($"Player OnMaxResource", this);
         }
 
-        private void PlayerHealthSystem_OnRestoreResource()
+        private void PlayerHealthSystem_OnRestoreResource(float healthAmount)
         {
             Log($"Player OnRestoreResource", this);
         }
 
-        private void PlayerHealthSystem_OnResourceChanged()
+        private void PlayerHealthSystem_OnResourceChanged(float healthAmount)
         {
             Log($"Player OnResourceChanged: {_playerHealthSystem.Amount}", this);
         }
 
-        private void PlayerHealthSystem_OnEmptyResource()
+        private void PlayerHealthSystem_OnEmptyResource(float healthAmount)
         {
             Log($"Player OnEmptyResource", this);
         }
