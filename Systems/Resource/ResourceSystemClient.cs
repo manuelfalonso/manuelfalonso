@@ -9,7 +9,7 @@ namespace SombraStudios.Shared.Systems.Resource
     /// </summary>
     public class ResourceSystemClient : MonoBehaviour
     {
-        [SerializeField] private ResourceSystem _playerHealthSystem = null;
+        [SerializeField] private IResourceSystem _playerHealthSystem = null;
 
 
         IEnumerator Start()

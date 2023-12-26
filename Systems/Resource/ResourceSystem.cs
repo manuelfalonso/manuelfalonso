@@ -22,7 +22,7 @@ namespace SombraStudios.Shared.Systems.Resource
     /// 
     /// It can be used with any tipe of resource. For example life, mana, wood, water, etc.
     /// </summary>
-    public class ResourceSystem : MonoBehaviour
+    public class ResourceSystem : MonoBehaviour, IResourceSystem
     {
         [Header("ResourceBase")]
         /// <summary>
@@ -99,81 +99,34 @@ namespace SombraStudios.Shared.Systems.Resource
         [Tooltip("If the resource is lower than this value the OnLowResource event will be invoked")]
         [SerializeField] private float _lowAmount = 0;
 
-        /// <summary>
-        /// Gets or sets a value indicating whether the resource is immutable.
-        /// </summary>
-        public bool Immutable { get; set; }
-        /// <summary>
-        /// Gets a value indicating whether the resource is in a low amount state.
-        /// </summary>
-        public bool IsLowAmount { get; private set; } = false;
-        /// <summary>
-        /// Gets a value indicating whether the resource is in an increase cooldown state.
-        /// </summary>
-        public bool IsInIncreaseCooldown { get; private set; } = false;
-        /// <summary>
-        /// Gets a value indicating whether the resource is in a decrease cooldown state.
-        /// </summary>
-        public bool IsInDecreaseCooldown { get; private set; } = false;
-
-        /// <summary>
-        /// Gets a value indicating whether the resource is empty.
-        /// </summary>
-        public bool IsEmptyAmount => _resource.Amount == 0;
-        /// <summary>
-        /// Gets a value indicating whether the resource is at its maximum amount.
-        /// </summary>
-        public bool IsMaxAmount => _resource.Amount == _resource.MaxAmount;
-
-        /// <summary>
-        /// Gets the current resource amount.
-        /// </summary>
         public float Amount => _resource.Amount;
-        /// <summary>
-        /// Gets the maximum resource amount.
-        /// </summary>
         public float MaxAmount => _resource.MaxAmount;
-        /// <summary>
-        /// Gets the resource percentage.
-        /// </summary>
+        public float LowAmount { get => _lowAmount; set => _lowAmount = value; }
         public float ResourcePercent => (float)_resource.Amount / (float)_resource.MaxAmount;
 
-        /// <summary>
-        /// Gets or sets the cooldown time for resource increase.
-        /// </summary>
+        public bool Immutable { get; set; }
+        public bool IsLowAmount { get; private set; } = false;
+        public bool IsEmptyAmount => _resource.Amount == 0;
+        public bool IsMaxAmount => _resource.Amount == _resource.MaxAmount;
+
+        public bool IsInIncreaseCooldown { get; private set; } = false;
         public float IncreaseCooldownTime { get => _increaseCooldownTime; set => _increaseCooldownTime = value; }
-        /// <summary>
-        /// Gets or sets the cooldown time for resource decrease.
-        /// </summary>
+        public bool IsInDecreaseCooldown { get; private set; } = false;
         public float DecreaseCooldownTime { get => _decreaseCooldownTime; set => _decreaseCooldownTime = value; }
-        /// <summary>
-        /// Gets or sets a value indicating whether the resource regenerates.
-        /// </summary>
+        
         public bool Regenerate { get => _regenerate; set => _regenerate = value; }
-        /// <summary>
-        /// Gets or sets the regeneration tick time in seconds.
-        /// </summary>
         public float RegenerationTick { get => _regenerationTick; set => _regenerationTick = value; }
-        /// <summary>
-        /// Gets or sets the regeneration rate per tick.
-        /// </summary>
         public float RegenerationRate { get => _regenerationRate; set => _regenerationRate = value; }
-        /// <summary>
-        /// Gets or sets a value indicating whether the resource degenerates.
-        /// </summary>
         public bool Degenerate { get => _degenerate; set => _degenerate = value; }
-        /// <summary>
-        /// Gets or sets the degeneration tick time in seconds.
-        /// </summary>
         public float DegenerationTick { get => _degenerationTick; set => _degenerationTick = value; }
-        /// <summary>
-        /// Gets or sets the degeneration rate per tick.
-        /// </summary>
         public float DegenerationRate { get => _degenerationRate; set => _degenerationRate = value; }
-        /// <summary>
-        /// Gets or sets the low amount threshold.
-        /// </summary>
-        public float LowAmount { get => _lowAmount; set => _lowAmount = value; }
+
+        UnityEvent<float> IResourceSystem.AmountChanged { get => _amountChanged; set => _amountChanged = value; }
+        UnityEvent<float> IResourceSystem.AmountChangedNormalized { get => _amountChangedNormalized; set => _amountChangedNormalized = value; }
+        UnityEvent<float> IResourceSystem.AmountRestored { get => _amountRestored; set => _amountRestored = value; }
+        UnityEvent<float> IResourceSystem.AmountMaxed { get => _amountMaxed; set => _amountMaxed = value; }
+        UnityEvent<float> IResourceSystem.AmountLow { get => _amountLow; set => _amountLow = value; }
+        UnityEvent<float> IResourceSystem.AmountEmptied { get => _amountEmptied; set => _amountEmptied = value; }
 
         /// <summary>
         /// The resource instance managing the resource data.
@@ -207,27 +160,33 @@ namespace SombraStudios.Shared.Systems.Resource
         /// <summary>
         /// Event invoked when the resource amount changes.
         /// </summary>
-        public UnityEvent<float> AmountChanged = new UnityEvent<float>();
+        [Tooltip("Event invoked when the resource amount changes.")]
+        [SerializeField] private UnityEvent<float> _amountChanged = new UnityEvent<float>();
         /// <summary>
         /// Event invoked when the resource amount changes. Returns the normalized amount.
         /// </summary>
-        public UnityEvent<float> AmountChangedNormalized = new UnityEvent<float>();
+        [Tooltip("Event invoked when the resource amount changes. Returns the normalized amount.")]
+        [SerializeField] private UnityEvent<float> _amountChangedNormalized = new UnityEvent<float>();
         /// <summary>
         /// Event invoked when the resource amount is restored.
         /// </summary>
-        public UnityEvent<float> AmountRestored = new UnityEvent<float>();
+        [Tooltip("Event invoked when the resource amount is restored.")]
+        [SerializeField] private UnityEvent<float> _amountRestored = new UnityEvent<float>();
         /// <summary>
         /// Event invoked when the resource amount reaches its maximum.
         /// </summary>
-        public UnityEvent<float> AmountMaxed = new UnityEvent<float>();
+        [Tooltip("Event invoked when the resource amount reaches its maximum.")]
+        [SerializeField] private UnityEvent<float> _amountMaxed = new UnityEvent<float>();
         /// <summary>
         /// Event invoked when the resource amount is low.
         /// </summary>
-        public UnityEvent<float> AmountLow = new UnityEvent<float>();
+        [Tooltip("Event invoked when the resource amount is low.")]
+        [SerializeField] private UnityEvent<float> _amountLow = new UnityEvent<float>();
         /// <summary>
         /// Event invoked when the resource amount is emptied.
         /// </summary>
-        public UnityEvent<float> AmountEmptied = new UnityEvent<float>();
+        [Tooltip("Event invoked when the resource amount is emptied.")]
+        [SerializeField] private UnityEvent<float> _amountEmptied = new UnityEvent<float>();
 
 
         #region Monobehaviour
@@ -252,12 +211,13 @@ namespace SombraStudios.Shared.Systems.Resource
 
 
         #region Public Methods
-        /// <summary>
-        /// Increases the resource amount and returns the result.
-        /// The Resource must not be empty. Call RestoreAmount or ResetAmount instead
-        /// </summary>
-        /// <param name="amountToIncrease">Must be greater than 0</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        public void IncreaseAmount(float amountToIncrease)
+        {
+            if (!IncreaseResource(amountToIncrease, true)) { return; }
+
+            StartCoroutine(IncreaseCooldown());
+        }
+
         public ResourceSystemResult IncreaseAmountWithResult(float amountToIncrease)
         {
             if (!IncreaseResource(amountToIncrease, true)) { return null; }
@@ -267,23 +227,13 @@ namespace SombraStudios.Shared.Systems.Resource
             return SetResultData();
         }
 
-        /// <summary>
-        /// Increases the resource amount.
-        /// The Resource must not be empty. Call RestoreAmount or ResetAmount instead
-        /// </summary>
-        /// <param name="amountToIncrease">Must be greater than 0</param>
-        public void IncreaseAmount(float amountToIncrease)
+        public void DecreaseAmount(float amountToDecrease)
         {
-            if (!IncreaseResource(amountToIncrease, true)) { return; }
+            if (!DecreaseResource(amountToDecrease, true)) { return; }
 
-            StartCoroutine(IncreaseCooldown());
+            StartCoroutine(DecreaseCooldown());
         }
 
-        /// <summary>
-        /// Decreases the resource amount with the specified result.
-        /// </summary>
-        /// <param name="amountToDecrease">The amount to decrease. Must be greater than 0</param>
-        /// <returns>The result of the operation.</returns>
         public ResourceSystemResult DecreaseAmountWithResult(float amountToDecrease)
         {
             if (!DecreaseResource(amountToDecrease, true)) { return null; }
@@ -293,22 +243,22 @@ namespace SombraStudios.Shared.Systems.Resource
             return SetResultData();
         }
 
-        /// <summary>
-        /// Decreases the resource amount with the specified result.
-        /// </summary>
-        /// <param name="amountToDecrease">The amount to decrease. Must be greater than 0</param>
-        public void DecreaseAmount(float amountToDecrease)
+        public void RestoreAmount(float restorePercentage = 1f)
         {
-            if (!DecreaseResource(amountToDecrease, true)) { return; }
+            if (!IsEmptyAmount) { return; }
+            if (Immutable) { return; }
 
-            StartCoroutine(DecreaseCooldown());
+            if (restorePercentage < 0f || restorePercentage > 1f)
+            {
+                throw new ArgumentOutOfRangeException(nameof(restorePercentage));
+            }
+
+            _resource.IncreaseAmount(_resource.MaxAmount * restorePercentage);
+
+            OnResourceChanged();
+            OnResourceRestored();
         }
 
-        /// <summary>
-        /// Restores resource amount only if the resource was empty.
-        /// </summary>
-        /// <param name="restorePercentage">The percentage to restore.</param>
-        /// <returns>The result of the operation.</returns>
         public ResourceSystemResult RestoreAmountWithResult(float restorePercentage = 1f)
         {
             if (!IsEmptyAmount) { return null; }
@@ -327,30 +277,17 @@ namespace SombraStudios.Shared.Systems.Resource
             return SetResultData();
         }
 
-        /// <summary>
-        /// Restores resource amount only if the resource was empty.
-        /// </summary>
-        /// <param name="restorePercentage">The percentage to restore.</param>
-        public void RestoreAmount(float restorePercentage = 1f)
+        public void ResetAmount()
         {
             if (!IsEmptyAmount) { return; }
             if (Immutable) { return; }
 
-            if (restorePercentage < 0f || restorePercentage > 1f)
-            {
-                throw new ArgumentOutOfRangeException(nameof(restorePercentage));
-            }
-
-            _resource.IncreaseAmount(_resource.MaxAmount * restorePercentage);
+            _resource.ResetAmount();
 
             OnResourceChanged();
             OnResourceRestored();
         }
 
-        /// <summary>
-        /// Reset Resource to initial amount only if the resource was empty.
-        /// </summary>
-        /// <returns>The result of the operation.</returns>
         public ResourceSystemResult ResetAmountWithResult()
         {
             if (!IsEmptyAmount) { return null; }
@@ -364,24 +301,16 @@ namespace SombraStudios.Shared.Systems.Resource
             return SetResultData();
         }
 
-        /// <summary>
-        /// Reset Resource to initial amount only if the resource was empty.
-        /// </summary>
-        public void ResetAmount()
+        public void ClearAmount()
         {
-            if (!IsEmptyAmount) { return; }
+            if (IsEmptyAmount) { return; }
             if (Immutable) { return; }
 
-            _resource.ResetAmount();
+            _resource.ClearAmount();
 
-            OnResourceChanged();
-            OnResourceRestored();
+            OnResourceEmptied();
         }
 
-        /// <summary>
-        /// Clears the resource amount.
-        /// </summary>
-        /// <returns>The result of the operation.</returns>
         public ResourceSystemResult ClearAmountWithResult()
         {
             if (IsEmptyAmount) { return null; }
@@ -392,19 +321,6 @@ namespace SombraStudios.Shared.Systems.Resource
             OnResourceEmptied();
 
             return SetResultData();
-        }
-
-        /// <summary>
-        /// Clears the resource amount.
-        /// </summary>
-        public void ClearAmount()
-        {
-            if (IsEmptyAmount) { return; }
-            if (Immutable) { return; }
-
-            _resource.ClearAmount();
-
-            OnResourceEmptied();
         }
         #endregion
 
@@ -466,7 +382,7 @@ namespace SombraStudios.Shared.Systems.Resource
 
             return success;
         }
-        
+
         /// <summary>
         /// Decreases the resource amount by the specified value.
         /// </summary>
@@ -558,8 +474,8 @@ namespace SombraStudios.Shared.Systems.Resource
         /// </summary>
         private void OnResourceChanged()
         {
-            AmountChanged?.Invoke(_resource.Amount);
-            AmountChangedNormalized?.Invoke(_resource.AmountNormalized);
+            _amountChanged?.Invoke(_resource.Amount);
+            _amountChangedNormalized?.Invoke(_resource.AmountNormalized);
         }
 
         /// <summary>
@@ -567,7 +483,7 @@ namespace SombraStudios.Shared.Systems.Resource
         /// </summary>
         private void OnResourceRestored()
         {
-            AmountRestored?.Invoke(_resource.Amount);
+            _amountRestored?.Invoke(_resource.Amount);
         }
 
         /// <summary>
@@ -575,7 +491,7 @@ namespace SombraStudios.Shared.Systems.Resource
         /// </summary>
         private void OnResourceMaxed()
         {
-            AmountMaxed?.Invoke(_resource.Amount);
+            _amountMaxed?.Invoke(_resource.Amount);
         }
 
         /// <summary>
@@ -583,7 +499,7 @@ namespace SombraStudios.Shared.Systems.Resource
         /// </summary>
         private void OnResourceLow()
         {
-            AmountLow?.Invoke(_resource.Amount);
+            _amountLow?.Invoke(_resource.Amount);
         }
 
         /// <summary>
@@ -591,7 +507,7 @@ namespace SombraStudios.Shared.Systems.Resource
         /// </summary>
         private void OnResourceEmptied()
         {
-            AmountEmptied?.Invoke(_resource.Amount);
+            _amountEmptied?.Invoke(_resource.Amount);
         }
         #endregion
 
