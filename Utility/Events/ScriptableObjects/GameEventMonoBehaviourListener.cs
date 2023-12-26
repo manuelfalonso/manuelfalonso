@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Shared.Utility.Events
+namespace SombraStudios.Shared.Utility.Events.ScriptableObjects
 {
     /// <summary>
     /// SO Event Listener using a Unity Event.
@@ -17,15 +17,9 @@ namespace SombraStudios.Shared.Utility.Events
         [SerializeField] private UnityEvent Response;
 
 
-        private void OnEnable()
-        {
-            _gameEvent.RegisterListener(this);
-        }
+        private void OnEnable() => _gameEvent.RegisterListener(this);
 
-        private void OnDisable()
-        {
-            _gameEvent.UnregisterListener(this);
-        }
+        private void OnDisable() => _gameEvent.UnregisterListener(this);
 
 
         // Called from Game Event Scriptable Object

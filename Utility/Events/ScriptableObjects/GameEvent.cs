@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.Events
+namespace SombraStudios.Shared.Utility.Events.ScriptableObjects
 {
     /// <summary>
     /// SO Event used to decoupled code instead of a normal class.
@@ -12,6 +12,7 @@ namespace SombraStudios.Shared.Utility.Events
     {
         private List<GameEventMonoBehaviourListener> _monoBehaviourListeners = new List<GameEventMonoBehaviourListener>();
         private List<GameEventScriptableObjectListener> _listeners = new List<GameEventScriptableObjectListener>();
+
 
         public void Raise()
         {

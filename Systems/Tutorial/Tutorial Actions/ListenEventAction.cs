@@ -1,10 +1,13 @@
-using SombraStudios.Shared.Utility.Events;
+using SombraStudios.Shared.Utility.Events.ScriptableObjects;
 using System.Collections;
 using UnityEngine;
 
 namespace SombraStudios.Shared.TutorialSystem
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Listen Event Action", order = 6)]
+    [CreateAssetMenu(
+        fileName = "New Tutorial Action", 
+        menuName = "Sombra Studios/Tutorial/Listen Event Action", 
+        order = 6)]
     public class ListenEventAction : TutorialAction
     {
         [Header("Event Data")]

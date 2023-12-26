@@ -1,10 +1,13 @@
-using SombraStudios.Shared.Utility.Events;
+using SombraStudios.Shared.Utility.Events.ScriptableObjects;
 using System.Collections;
 using UnityEngine;
 
 namespace SombraStudios.Shared.TutorialSystem
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Raise Event Action", order = 5)]
+    [CreateAssetMenu(
+        fileName = "New Tutorial Action", 
+        menuName = "Sombra Studios/Tutorial/Raise Event Action", 
+        order = 5)]
     public class RaiseEventAction : TutorialAction
     {
         [Header("Event Data")]
