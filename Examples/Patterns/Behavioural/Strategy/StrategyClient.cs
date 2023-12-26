@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
+namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
 {
     /// <summary>
     /// The Client creates a specific strategy object and passes it to the context. 

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
+namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
 {
     /// <summary>
     /// The Context maintains a reference to one of the concrete strategies 
