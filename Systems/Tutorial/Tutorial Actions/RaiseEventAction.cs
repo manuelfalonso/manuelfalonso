@@ -1,4 +1,4 @@
-using SombraStudios.Shared.Utility.Events.ScriptableObjects;
+using SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects;
 using System.Collections;
 using UnityEngine;
 
