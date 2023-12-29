@@ -13,11 +13,15 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
         /// <summary>
         /// List of MonoBehaviour listeners for this event.
         /// </summary>
-        private List<GameEventMonoBehaviourListener> _monoBehaviourListeners = new List<GameEventMonoBehaviourListener>();
+        private List<GameEventMonoBehaviourListener> _monoBehaviourListeners = new ();
+        /// <summary>
+        /// List of MonoBehaviourList listeners for this event.
+        /// </summary>
+        private List<GameEventMonoBehaviourListListener> _monoBehaviourListListeners = new ();
         /// <summary>
         /// List of ScriptableObject listeners for this event.
         /// </summary>
-        private List<GameEventScriptableObjectListener> _listeners = new List<GameEventScriptableObjectListener>();
+        private List<GameEventScriptableObjectListener> _listeners = new ();
 
 
         /// <summary>
@@ -28,6 +32,11 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
             for (int i = _monoBehaviourListeners.Count - 1; i >= 0; i--)
             {
                 _monoBehaviourListeners[i].OnEventRaised();
+            }
+
+            for (int i = _monoBehaviourListListeners.Count - 1; i >= 0; i--)
+            {
+                _monoBehaviourListListeners[i].OnEventRaised(this);
             }
 
             for (int i = _listeners.Count - 1; i >= 0; i--)
@@ -47,6 +56,15 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
         }
 
         /// <summary>
+        /// Registers a MonoBehaviourList listener for this event.
+        /// </summary>
+        /// <param name="listener">The listener to register.</param>
+        public void RegisterListener(GameEventMonoBehaviourListListener listener)
+        {
+            _monoBehaviourListListeners.Add(listener);
+        }
+
+        /// <summary>
         /// Registers a ScriptableObject listener for this event.
         /// </summary>
         /// <param name="listener">The listener to register.</param>
@@ -63,6 +81,15 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
         public void UnregisterListener(GameEventMonoBehaviourListener listener)
         {
             _monoBehaviourListeners.Remove(listener);
+        }
+
+        /// <summary>
+        /// Unregisters a MonoBehaviourList listener for this event.
+        /// </summary>
+        /// <param name="listener">The listener to unregister.</param>
+        public void UnregisterListener(GameEventMonoBehaviourListListener listener)
+        {
+            _monoBehaviourListListeners.Remove(listener);
         }
 
         /// <summary>
