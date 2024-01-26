@@ -9,12 +9,6 @@ namespace SombraStudios.Shared.Patterns.Creational.Singleton
     public class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         /// <summary>
-        /// Determines whether the Singleton instance should persist across scene changes.
-        /// </summary>
-        [Tooltip("Determines whether the Singleton instance should persist across scene changes.")]
-        [SerializeField] private bool _dontDestroyOnLoad = false;
-
-        /// <summary>
         /// The static instance of the Singleton.
         /// </summary>
         protected static T _instance;
@@ -37,22 +31,28 @@ namespace SombraStudios.Shared.Patterns.Creational.Singleton
         /// </summary>
         public static T Instance
         {
-            get {
+            get
+            {
                 if (_instance == null)
                 {
                     _instance = FindFirstObjectByType<T>();
+                    // Faster but returns an arbitrary object of the type
+                    //_instance = FindAnyObjectByType<T>();
+
                     if (_instance == null)
                     {
-                        GameObject obj = new GameObject();
-                        obj.name = typeof(T).Name + "AutoCreated";
+                        var obj = new GameObject(typeof(T).Name + " AutoCreated");
                         _instance = obj.AddComponent<T>();
                     }
                 }
-                return _instance; 
+                return _instance;
             }
         }
 
 
+        /// <summary>
+        /// Make sure to call base.Awake() when overriding this method.
+        /// </summary>
         protected virtual void Awake() => HandleInstance();
 
         protected virtual void OnDestroy()
@@ -78,12 +78,8 @@ namespace SombraStudios.Shared.Patterns.Creational.Singleton
             else
             {
                 _instance = (T)this;
-
-                // The GameObject will persist across multiple scenes.
-                if (_dontDestroyOnLoad)
-                {
-                    DontDestroyOnLoad(gameObject);
-                }
+                // or
+                //_instance = this as T;
             }
         }
     }
