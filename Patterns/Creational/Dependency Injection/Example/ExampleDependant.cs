@@ -3,7 +3,7 @@ using UnityEngine;
 namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection.Example
 {
     /// <summary>
-    /// we can have all of our dependencies obtained from outside 
+    /// We can have all of our dependencies obtained from outside 
     /// without caring about where they are, or even if they are 
     /// singletons or not.
     /// </summary>

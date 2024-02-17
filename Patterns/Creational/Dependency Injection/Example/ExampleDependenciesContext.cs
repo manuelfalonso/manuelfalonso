@@ -3,6 +3,7 @@ using UnityEngine;
 namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection.Example
 {
     /// <summary>
+    /// <inheritdoc/>
     /// MonoBehaviour in the scene
     /// </summary>
     public class ExampleDependenciesContext : DependenciesContext
