@@ -65,7 +65,7 @@ namespace SombraStudios.Shared.Systems.Resource
         /// Determines if the resource regenerates.
         /// </summary>
         [Tooltip("Determines if the resource regenerates.")]
-        [SerializeField] private bool _regenerate = true;
+        [SerializeField] private bool _regenerate = false;
         /// <summary>
         /// Time between regeneration ticks, in seconds.
         /// </summary>
@@ -80,7 +80,7 @@ namespace SombraStudios.Shared.Systems.Resource
         /// Determines if the resource degenerates.
         /// </summary>
         [Tooltip("Determines if the resource degenerates.")]
-        [SerializeField] private bool _degenerate = true;
+        [SerializeField] private bool _degenerate = false;
         /// <summary>
         /// Time between degeneration ticks, in seconds.
         /// </summary>
@@ -351,7 +351,7 @@ namespace SombraStudios.Shared.Systems.Resource
             var success = false;
 
             // Validate amount
-            if (amountToIncrease <= 0)
+            if (amountToIncrease < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(amountToIncrease));
             }
@@ -394,7 +394,7 @@ namespace SombraStudios.Shared.Systems.Resource
             var success = false;
 
             // Validate amount
-            if (amountToDecrease <= 0)
+            if (amountToDecrease < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(amountToDecrease));
             }
