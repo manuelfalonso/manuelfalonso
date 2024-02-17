@@ -84,7 +84,7 @@ namespace SombraStudios.Shared.Utility.Cooldown
         {
             if (!_isActive) { return; }
             if (!_isInCooldown) { return; }
-            if (_coroutineRunner.StopCoroutine()) { CooldownStopped?.Invoke(); }
+            if (_coroutineRunner.TryStopCoroutine()) { CooldownStopped?.Invoke(); }
             _isInCooldown = false;
         }
 

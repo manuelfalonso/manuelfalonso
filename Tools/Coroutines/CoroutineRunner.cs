@@ -1,9 +1,9 @@
+using System;
+using System.Collections;
+using UnityEngine;
+
 namespace SombraStudios.Shared.Tools.Coroutines
 {
-
-    using System.Collections;
-    using UnityEngine;
-
     /// <summary>
     /// Unity Coroutine runner that allows game object decoupled, scene 
     /// persistent and single or multi coroutine execution.
@@ -14,33 +14,74 @@ namespace SombraStudios.Shared.Tools.Coroutines
     /// </summary>
     public class CoroutineRunner
     {
-        private MonoBehaviour _myMonobehaviour = null;
-        private bool _isGameObjectDecoupled = false;
-        private bool _isMultiExecution = false;
+        /// <summary>
+        /// The client script associated with the CoroutineRunner.
+        /// </summary>
+        private readonly MonoBehaviour _myMonobehaviour = null;
+        /// <summary>
+        /// Determines whether the coroutine starts from an external object that will not stop the coroutine if the 
+        /// client GameObject is deactivated or destroyed.
+        /// </summary>
+        private readonly bool _isGameObjectDecoupled = false;
+        /// <summary>
+        /// Determines whether the StartCoroutine method lets run different routines simultaneously.
+        /// </summary>
+        private readonly bool _isMultiExecution = false;
 
         // Coroutine data
+        /// <summary>
+        /// The current coroutine instance.
+        /// </summary>
         private Coroutine _coroutine = null;
+        /// <summary>
+        /// The IEnumerator routine associated with the coroutine.
+        /// </summary>
         private IEnumerator _routine = null;
+        /// <summary>
+        /// The time to wait before starting the coroutine.
+        /// </summary>
         private float _preWaitTimeInSeconds = 0f;
+        /// <summary>
+        /// The time to wait after the coroutine finishes.
+        /// </summary>
         private float _postWaitTimeInSeconds = 0f;
 
-        private System.Action OnCoroutineStarted = null;
-        private System.Action OnCoroutineFinished = null;
+        /// <summary>
+        /// Event invoked when the coroutine starts.
+        /// </summary>
+        private event Action OnCoroutineStarted = null;
+        /// <summary>
+        /// Event invoked when the coroutine finishes.
+        /// </summary>
+        private event Action OnCoroutineFinished = null;
 
 
-        /// <param name="myMonobehaviour">Client script</param>
-        /// <param name="isGameObjectDecoupled">Starts coroutine from an external object that will not stop the coroutine if client gameobject is deactivated or destroy</param>
-        /// <param name="isMultiExecution">StartCoroutine method let run different routines simultaneously</param>
+        /// <summary>
+        /// Initializes a new instance of the CoroutineRunner class.
+        /// </summary>
+        /// <param name="myMonobehaviour">The client script.</param>
+        /// <param name="isGameObjectDecoupled">Determines whether the coroutine starts from an external object that 
+        /// will not stop the coroutine if the client GameObject is deactivated or destroyed.</param>
+        /// <param name="isMultiExecution">Determines whether the StartCoroutine method lets run different routines 
+        /// simultaneously.</param>
         public CoroutineRunner(MonoBehaviour myMonobehaviour, bool isGameObjectDecoupled = false, bool isMultiExecution = false)
         {
             _myMonobehaviour = myMonobehaviour;
             _isGameObjectDecoupled = isGameObjectDecoupled;
             _isMultiExecution = isMultiExecution;
+
+            if (!_isGameObjectDecoupled && _myMonobehaviour == null)
+            {
+                Debug.LogError($"{this} => If isGameObjectDecoupled is false, myMonobehaviour must be assigned!");
+            }
         }
 
 
-        // Start
-        public void StartCoroutine(IEnumerator routine, float preWaitTime = 0, float postWaitTime = 0)
+        #region Public Methods
+        /// <summary>
+        /// Starts a coroutine with optional pre and post wait times.
+        /// </summary>
+        public void StartCoroutine(IEnumerator routine, float preWaitTime = 0f, float postWaitTime = 0f)
         {
             _routine = routine;
             _preWaitTimeInSeconds = preWaitTime;
@@ -49,70 +90,110 @@ namespace SombraStudios.Shared.Tools.Coroutines
             Start();
         }
 
-        // Stop
-        /// <returns>Returns if the Coroutine was succesfully stopped</returns>
-        public bool StopCoroutine()
+        /// <summary>
+        /// Attempts to stop the current coroutine.
+        /// </summary>
+        /// <returns>Returns true if the coroutine was successfully stopped; otherwise, false.</returns>
+        public bool TryStopCoroutine()
         {
-            return Stop();
+            if (CanStop())
+            {
+                Stop();
+                return true;
+            }
+            return false;
         }
 
-        // Stop All
         /// <summary>
-        /// Warning: If decoupled, this method will stop ALL decoupled Coroutines.
+        /// Stops all coroutines.
         /// </summary>
         public void StopAll()
         {
             if (_isGameObjectDecoupled)
-                CoroutineManager.Instance.StopAllCoroutines();
-            else
-                _myMonobehaviour.StopAllCoroutines();
-        }
-
-        // Restart
-        public void Restart()
-        {
-            if (_routine == null)
             {
-                Debug.LogError($"{this} => Before restarting, start a coroutine!");
-                return;
+                Debug.LogWarning($"{this} => Stopping all decoupled coroutines!");
+                CoroutineManager.Instance.StopAllCoroutines();
             }
-
-            if (_routine != null && !_isMultiExecution)
-                Stop();
-
-            Start();
+            else
+            {
+                _myMonobehaviour.StopAllCoroutines();
+            }
         }
 
-        // Subscribe On Started
-        public void SubscribeOnCoroutineStarted(System.Action callback)
+        /// <summary>
+        /// Attempts to restart the coroutine.
+        /// </summary>
+        /// <returns>Returns true if the coroutine was successfully restarted; otherwise, false.</returns>
+        public bool TryRestart()
+        {
+            if (CanRestart())
+            {
+                Restart();
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Subscribes to the coroutine started event.
+        /// </summary>
+        public void SubscribeOnCoroutineStarted(Action callback)
         {
             OnCoroutineStarted -= callback;
             OnCoroutineStarted += callback;
         }
 
-        // Subscribe On Finished
-        public void SubscribeOnCoroutineFinished(System.Action callback)
+        /// <summary>
+        /// Unsubscribes from the coroutine started event.
+        /// </summary>
+        public void UnsubscribeOnCoroutineStarted(Action callback)
+        {
+            OnCoroutineStarted -= callback;
+        }
+
+        /// <summary>
+        /// Subscribes to the coroutine finished event.
+        /// </summary>
+        public void SubscribeOnCoroutineFinished(Action callback)
         {
             OnCoroutineFinished -= callback;
             OnCoroutineFinished += callback;
         }
 
+        /// <summary>
+        /// Unsubscribes from the coroutine finished event.
+        /// </summary>
+        public void UnsubscribeOnCoroutineFinished(Action callback)
+        {
+            OnCoroutineFinished -= callback;
+        }
+        #endregion
 
+
+        #region Private Methods
+        /// <summary>
+        /// Starts the coroutine.
+        /// </summary>
         private void Start()
         {
-            if (!_isMultiExecution)
-                Stop();
+            if (!_isMultiExecution) { Stop(); }
 
             if (_isGameObjectDecoupled)
+            {
                 _coroutine = CoroutineManager.Instance.StartCoroutine(Routine());
+            }
             else
+            {
                 _coroutine = _myMonobehaviour.StartCoroutine(Routine());
+            }
         }
 
+        /// <summary>
+        /// The main coroutine routine.
+        /// </summary>
         private IEnumerator Routine()
         {
-            if (_preWaitTimeInSeconds != 0)
-                yield return new WaitForSeconds(_preWaitTimeInSeconds);
+            if (_preWaitTimeInSeconds != 0f) { yield return new WaitForSeconds(_preWaitTimeInSeconds); }
 
             OnCoroutineStarted?.Invoke();
 
@@ -120,33 +201,67 @@ namespace SombraStudios.Shared.Tools.Coroutines
 
             OnCoroutineFinished?.Invoke();
 
-            if (_postWaitTimeInSeconds != 0)
-                yield return new WaitForSeconds(_postWaitTimeInSeconds);
+            if (_postWaitTimeInSeconds != 0f) { yield return new WaitForSeconds(_postWaitTimeInSeconds); }
         }
 
-        private bool Stop()
+        /// <summary>
+        /// Checks if the coroutine can be stopped.
+        /// </summary>
+        /// <returns>Returns true if the coroutine can be stopped; otherwise, false.</returns>
+        private bool CanStop()
         {
-            bool wasRunning = false;
+            bool canStop = true;
 
             if (_routine == null)
             {
                 Debug.LogError($"{this} => Before stopping, start a coroutine!");
-                return wasRunning;
+                canStop = false;
             }
 
-            if (_coroutine != null)
-            {
-                wasRunning = true;
-
-                if (_isGameObjectDecoupled)
-                    CoroutineManager.Instance.StopCoroutine(_coroutine);
-                else
-                    _myMonobehaviour.StopCoroutine(_coroutine);
-
-                _coroutine = null;
-            }
-
-            return wasRunning;
+            return canStop;
         }
+
+        /// <summary>
+        /// Stops the current coroutine.
+        /// </summary>
+        private void Stop()
+        {
+            if (_isGameObjectDecoupled)
+            {
+                CoroutineManager.Instance.StopCoroutine(_coroutine);
+            }
+            else
+            {
+                _myMonobehaviour.StopCoroutine(_coroutine);
+            }
+
+            _coroutine = null;
+        }
+
+        /// <summary>
+        /// Checks if the coroutine can be restarted.
+        /// </summary>
+        /// <returns>Returns true if the coroutine can be restarted; otherwise, false.</returns>
+        private bool CanRestart()
+        {
+            bool canRestart = true;
+            if (_routine == null)
+            {
+                Debug.LogError($"{this} => Before restarting, start a coroutine!");
+                canRestart = false;
+            }
+            return canRestart;
+        }
+
+        /// <summary>
+        /// Restarts the coroutine.
+        /// </summary>
+        private void Restart()
+        {
+            if (!_isMultiExecution) { Stop(); }
+
+            Start();
+        }
+        #endregion
     }
 }
