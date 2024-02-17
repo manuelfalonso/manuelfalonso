@@ -1,3 +1,4 @@
+#if UNITY_SPLINES
 using SombraStudios.Shared.Extensions;
 using System;
 using UnityEngine;
@@ -163,3 +164,4 @@ namespace SombraStudios.Shared.Utils
         #endregion
     }
 }
+#endif
