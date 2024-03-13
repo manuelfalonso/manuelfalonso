@@ -1,15 +1,15 @@
-using SombraStudios.Shared.Attributes;
 using UnityEngine;
 using UnityEngine.Events;
+using SombraStudios.Shared.Attributes;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Physics
 {
     /// <summary>
-    /// Handles collision events based on specified thresholds for 2D.
+    /// Handles collision events based on specified thresholds for 3D.
     /// The Rigidody is required to send the Collision Events. The Collider can be on child objects.
     /// </summary>
-    [RequireComponent(typeof(Rigidbody2D))]
-    public class CollisionEventHandler2D : MonoBehaviour
+    [RequireComponent(typeof(Rigidbody))]
+    public class CollisionEventHandler : MonoBehaviour
     {
         [Header("Settings")]
         /// <summary>
@@ -17,6 +17,16 @@ namespace SombraStudios.Shared.Utility
         /// </summary>
         [Tooltip("Type of collision event to handle (Enter, Stay, Exit).")]
         [SerializeField] private CollisionEventType _eventType = CollisionEventType.Enter;
+        /// <summary>
+        /// Type of threshold to use for triggering events (Impulse, Velocity, ImpulseOrVelocity).
+        /// </summary>
+        [Tooltip("Type of threshold to use for triggering events (Impulse, Velocity, ImpulseOrVelocity).")]
+        [SerializeField] private CollisionThresholdType _thresholdType = CollisionThresholdType.Impulse;
+        /// <summary>
+        /// Force threshold to breach, to fire the ThresholdMet event
+        /// </summary>
+        [Tooltip("Force threshold to breach to fire the ThresholdMet event")]
+        [SerializeField] private float _forceThreshold = 0f;
         /// <summary>
         /// Collision velocity threshold to breach, to fire the ThresholdMetEvent
         /// </summary>
@@ -31,11 +41,26 @@ namespace SombraStudios.Shared.Utility
 
         [Header("Debug")]
         /// <summary>
+        /// Wheter the component is calculating collisions or not.
+        /// </summary>        
+        [Tooltip("Wheter the component is calculating collisions or not.")]
+        [SerializeField] private bool _isActive = true;
+        /// <summary>
+        /// Debug - Last recorded impulse during collision.
+        /// </summary>
+        [Tooltip("Debug - Last recorded impulse during collision.")]
+        [SerializeField, ReadOnly] private float _lastImpulse;
+        /// <summary>
         /// Debug - Last recorded relative velocity during collision.
         /// </summary>
         [Tooltip("Debug - Last recorded relative velocity during collision.")]
         [SerializeField, ReadOnly] private float _lastVelocity;
 
+        /// <summary>
+        /// Debug - Maximum recorded impulse during collisions.
+        /// </summary>
+        [Tooltip("Debug - Maximum recorded impulse during collisions.")]
+        [SerializeField, ReadOnly] private float _maxImpulse;
         /// <summary>
         /// Debug - Maximum recorded relative velocity during collisions.
         /// </summary>
@@ -43,38 +68,49 @@ namespace SombraStudios.Shared.Utility
         [SerializeField, ReadOnly] private float _maxVelocity;
 
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        #region Unity Messages
+        private void OnCollisionEnter(Collision collision)
         {
+            if (!_isActive) { return; }
             if (!IsCollisionEventType(CollisionEventType.Enter)) { return; }
             CalculateCollision(collision);
         }
 
-        private void OnCollisionStay2D(Collision2D collision)
+        private void OnCollisionStay(Collision collision)
         {
+            if (!_isActive) { return; }
             if (!IsCollisionEventType(CollisionEventType.Stay)) { return; }
             CalculateCollision(collision);
         }
 
-        private void OnCollisionExit2D(Collision2D collision)
+        private void OnCollisionExit(Collision collision)
         {
+            if (!_isActive) { return; }
             if (!IsCollisionEventType(CollisionEventType.Exit)) { return; }
             CalculateCollision(collision);
         }
+        #endregion
 
 
+        #region Private Methods
         /// <summary>
         /// Calculates and processes collision data.
         /// </summary>
         /// <param name="other">The collision data.</param>
-        private void CalculateCollision(Collision2D other)
+        private void CalculateCollision(Collision other)
         {
+            _lastImpulse = other.impulse.magnitude;
             _lastVelocity = other.relativeVelocity.magnitude;
 
+            _maxImpulse = Mathf.Max(_maxImpulse, _lastImpulse);
             _maxVelocity = Mathf.Max(_maxVelocity, _lastVelocity);
 
+            var forceMet = _lastImpulse > _forceThreshold;
             var velocityMet = _lastVelocity > _velocityThreshold;
 
-            if (velocityMet)
+            if (_thresholdType == CollisionThresholdType.Impulse && forceMet ||
+                _thresholdType == CollisionThresholdType.Velocity && velocityMet ||
+                _thresholdType == CollisionThresholdType.ImpulseOrVelocity && (forceMet || velocityMet))
             {
                 CollisionThresholdMet?.Invoke();
             }
@@ -87,7 +123,8 @@ namespace SombraStudios.Shared.Utility
         /// <returns>True if the event type should be processed, false otherwise.</returns>
         private bool IsCollisionEventType(CollisionEventType collisionEventType)
         {
-            return _eventType == CollisionEventType.None ? false : (_eventType & collisionEventType) != 0;
+            return _eventType != CollisionEventType.None && (_eventType & collisionEventType) != 0;
         }
+        #endregion
     }
 }
