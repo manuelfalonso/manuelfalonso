@@ -31,6 +31,28 @@ namespace SombraStudios.Shared.UI
         [Tooltip("Wheel angle at which the motor starts rotating")]
         public float WheelReleasedSpeed = 200f;
 
+        [Header("Events")]
+        /// <summary>
+        /// Event invoked when the clamped value of the steering wheel changes.
+        /// </summary>
+        [Tooltip("Event invoked when the clamped value of the steering wheel changes")]
+        public UnityEvent<float> OnSteeringWheelClampedValueChanged;
+        /// <summary>
+        /// Event invoked when the angle of the steering wheel changes.
+        /// </summary>
+        [Tooltip("Event invoked when the angle of the steering wheel changes")]
+        public UnityEvent<float> OnSteeringWheelAngleChanged;
+        /// <summary>
+        /// Event invoked when the steering wheel is being held.
+        /// </summary
+        [Tooltip("Event invoked when the steering wheel is being held")]
+        public UnityEvent OnSteeringWheelHeld;
+        /// <summary>
+        /// Event invoked when the steering wheel is released.
+        /// </summary>
+        [Tooltip("Event invoked when the steering wheel is released")]
+        public UnityEvent OnSteeringWheelReleased;
+
         private RectTransform _rectT;
         private Vector2 _centerPoint;
 
@@ -38,6 +60,18 @@ namespace SombraStudios.Shared.UI
         private float _wheelPrevAngle = 0f;
 
         private bool _wheelBeingHeld = false;
+
+        public float WheelAngle
+        {
+            get { return _wheelAngle; }
+            set
+            {
+                if (_wheelAngle == value) return;
+                _wheelAngle = value;
+                OnSteeringWheelAngleChanged?.Invoke(GetAngle());
+                OnSteeringWheelClampedValueChanged?.Invoke(GetClampedValue());
+            }
+        }
 
 
         #region Unity Messages
@@ -63,7 +97,7 @@ namespace SombraStudios.Shared.UI
         public float GetClampedValue()
         {
             // returns a value in range [-1,1] similar to GetAxis("Horizontal")
-            return _wheelAngle / MaximumSteeringAngle;
+            return WheelAngle / MaximumSteeringAngle;
         }
 
         /// <summary>
@@ -73,7 +107,7 @@ namespace SombraStudios.Shared.UI
         public float GetAngle()
         {
             // returns the wheel angle itself without clamp operation
-            return _wheelAngle;
+            return WheelAngle;
         }
         #endregion
 
@@ -126,15 +160,15 @@ namespace SombraStudios.Shared.UI
         {
             // If the wheel is released, reset the rotation
             // to initial (zero) rotation by wheelReleasedSpeed degrees per second
-            if (!_wheelBeingHeld && !Mathf.Approximately(0f, _wheelAngle))
+            if (!_wheelBeingHeld && !Mathf.Approximately(0f, WheelAngle))
             {
                 float deltaAngle = WheelReleasedSpeed * Time.deltaTime;
-                if (Mathf.Abs(deltaAngle) > Mathf.Abs(_wheelAngle))
-                    _wheelAngle = 0f;
-                else if (_wheelAngle > 0f)
-                    _wheelAngle -= deltaAngle;
+                if (Mathf.Abs(deltaAngle) > Mathf.Abs(WheelAngle))
+                    WheelAngle = 0f;
+                else if (WheelAngle > 0f)
+                    WheelAngle -= deltaAngle;
                 else
-                    _wheelAngle += deltaAngle;
+                    WheelAngle += deltaAngle;
             }
         }
 
@@ -144,7 +178,7 @@ namespace SombraStudios.Shared.UI
         private void ApplyRotation()
         {
             // Rotate the wheel image
-            _rectT.localEulerAngles = Vector3.back * _wheelAngle;
+            _rectT.localEulerAngles = Vector3.back * WheelAngle;
         }
         #endregion
 
@@ -160,6 +194,7 @@ namespace SombraStudios.Shared.UI
             Vector2 pointerPos = ((PointerEventData)eventData).position;
 
             _wheelBeingHeld = true;
+            OnSteeringWheelHeld?.Invoke();
             _centerPoint = RectTransformUtility.WorldToScreenPoint(((PointerEventData)eventData).pressEventCamera, _rectT.position);
             _wheelPrevAngle = Vector2.Angle(Vector2.up, pointerPos - _centerPoint);
         }
@@ -178,12 +213,12 @@ namespace SombraStudios.Shared.UI
             if (Vector2.Distance(pointerPos, _centerPoint) > 20f)
             {
                 if (pointerPos.x > _centerPoint.x)
-                    _wheelAngle += wheelNewAngle - _wheelPrevAngle;
+                    WheelAngle += wheelNewAngle - _wheelPrevAngle;
                 else
-                    _wheelAngle -= wheelNewAngle - _wheelPrevAngle;
+                    WheelAngle -= wheelNewAngle - _wheelPrevAngle;
             }
             // Make sure wheel angle never exceeds maximumSteeringAngle
-            _wheelAngle = Mathf.Clamp(_wheelAngle, -MaximumSteeringAngle, MaximumSteeringAngle);
+            WheelAngle = Mathf.Clamp(WheelAngle, -MaximumSteeringAngle, MaximumSteeringAngle);
             _wheelPrevAngle = wheelNewAngle;
         }
 
@@ -198,6 +233,7 @@ namespace SombraStudios.Shared.UI
             DragEvent(eventData);
 
             _wheelBeingHeld = false;
+            OnSteeringWheelReleased?.Invoke();
         }
         #endregion
     }
