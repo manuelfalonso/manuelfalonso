@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace SombraStudios.Shared.Physics
+namespace SombraStudios.Shared.Physics.Events
 {
     /// <summary>
-    /// Types of collision events.
+    /// Types of physics interaction events.
     /// </summary>
     [Serializable]
     [Flags]
-    public enum CollisionEventType
+    public enum PhysicInteractionEventType
     {
         None = 0,
         Enter = 1,
