@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.FrameRate
 {
     /// <summary>
     /// Limit FPS to optimize performance to the maximum refresh rate of the monitor
@@ -8,10 +8,14 @@ namespace SombraStudios.Shared.Utility
     /// </summary>
     public static class FrameRateLimiter
     {
+        private static bool _isActive = true;
+
         [RuntimeInitializeOnLoadMethod]
         public static void LimitFrameRate()
         {
-            Application.targetFrameRate = Screen.currentResolution.refreshRate;
+            if (!_isActive) { return; }
+
+            Application.targetFrameRate = (int)Screen.currentResolution.refreshRateRatio.value;
         }
     }
 }
