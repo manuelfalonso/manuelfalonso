@@ -4,7 +4,7 @@ using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Audio.System
+namespace SombraStudios.Shared.Audio.System.Clients
 {
     /// <summary>
     /// Manages audio levels and playback in the game.

@@ -14,12 +14,12 @@ namespace SombraStudios.Shared.Audio.System
         /// Dictionary mapping string keys to SFXRack instances.
         /// </summary>
         [Tooltip("Dictionary mapping string keys to SFXRack instances.")]
-        [SerializeField] private SFXStringDictionary _sfxRack = new SFXStringDictionary();
+        [SerializeField] private SFXStringDictionary _sfxRack = new ();
         /// <summary>
         /// Dictionary mapping string keys to SFXInterruptable instances.
         /// </summary>
         [Tooltip("Dictionary mapping string keys to SFXInterruptable instances.")]
-        [SerializeField] private SFXInterruptableDictionary _voiceRack = new SFXInterruptableDictionary();
+        [SerializeField] private SFXInterruptableDictionary _voiceRack = new ();
 
         /// <summary>
         /// Gets the dictionary containing SFXRack instances.

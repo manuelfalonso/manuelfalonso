@@ -1,3 +1,4 @@
+using SombraStudios.Shared.Editor.SearchTools.Base;
 using UnityEditor;
 using UnityEngine;
 

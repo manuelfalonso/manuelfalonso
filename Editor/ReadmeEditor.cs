@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace SombraStudios.Shared.Editor
 {
-
     /// <summary>
     /// Editor script for the readme scriptable object
     /// Credits to: rich-joslin-unity

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Animation
+namespace SombraStudios.Shared.Animations
 {
     /// <summary>
     /// Enables a component to react to the 'ActionBegin' animation event.

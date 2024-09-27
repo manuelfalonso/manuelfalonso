@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Examples.Patterns.Structural.Adapter
+namespace SombraStudios.Shared.Examples.Patterns.Structural.Adapter.Class
 {
     /// <summary>
     /// Converts the interface of one object so that another object can understand it.

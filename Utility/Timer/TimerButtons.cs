@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.Timer
 {
     /// <summary>
     /// Optional Timer Class: Manage all the UI Buttons

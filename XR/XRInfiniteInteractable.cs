@@ -1,7 +1,8 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace UnityEngine.XR.Content.Interaction
+namespace SombraStudios.Shared.XR
 {
     /// <summary>
     /// This component makes sure that the attached <c>Interactor</c> always have an interactable selected.

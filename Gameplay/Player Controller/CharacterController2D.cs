@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Gameplay.PlayerController
 	/// Supports: Move, Jump, Crouch, OnLanding, OnCrouching and Flip.
 	/// Features: Coyote Time, Input Buffer and Corner Correction.
 	/// Edited: Manuel F. Alonso
-	/// Source: Brackeys, CodeMonkey & Alva Majo + DEValen
+	/// Source: Brackeys, CodeMonkey and Alva Majo + DEValen
 	/// Require: A layer defined for the ground
 	/// </summary>
 	[RequireComponent(typeof(Rigidbody2D))]

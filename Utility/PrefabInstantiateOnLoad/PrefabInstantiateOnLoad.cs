@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
 {
     /// <summary>
     /// Creates on intialize a list of prefabs saved on Resources folder

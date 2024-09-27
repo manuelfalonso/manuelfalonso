@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Shared.Animation
+namespace SombraStudios.Shared.Animations
 {
     /// <summary>
     /// Will receive triggers from the <see cref="AnimationEventActionBegin"/> and 

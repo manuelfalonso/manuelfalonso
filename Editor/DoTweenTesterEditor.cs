@@ -1,7 +1,5 @@
-#if REQUIRES_EXTERNAL_PACKAGE
+#if DOTWEEN
 using DG.DOTweenEditor;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,7 +10,7 @@ namespace SombraStudios.Shared.Editor
     /// Editor script to preview and test a Tween
     /// </summary>
     [CustomEditor(typeof(DoTweenTester), true)]
-    public class DoTweenTesterEditor : Editor
+    public class DoTweenTesterEditor : UnityEditor.Editor
     {
         public override void OnInspectorGUI()
         {

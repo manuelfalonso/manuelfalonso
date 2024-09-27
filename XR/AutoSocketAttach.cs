@@ -1,7 +1,8 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace UnityEngine.XR.Content.Interaction
+namespace SombraStudios.Shared.XR
 {
     /// <summary>
     /// Initializes an <see cref="XRSocketInteractor"/> attach point to match the initial scene position of the object it is containing.

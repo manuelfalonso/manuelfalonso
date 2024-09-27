@@ -16,7 +16,7 @@ namespace SombraStudios.Shared.Utility
 
         [SerializeField]
         [Tooltip("The Camera in which the detection will be made")]
-        private Camera camera;
+        private Camera _camera;
 
 
         private Vector3 objectViewportPosition;
@@ -27,13 +27,13 @@ namespace SombraStudios.Shared.Utility
         #region Unity Events
         private void Start()
         {
-            if (!camera)
+            if (!_camera)
                 Debug.LogWarning($"Missing Camera Reference");
         }
 
         void Update()
         {
-            if (!camera)
+            if (!_camera)
                 return;
 
             CalculateObjectInCameraViewport();
@@ -42,7 +42,7 @@ namespace SombraStudios.Shared.Utility
 
         private void CalculateObjectInCameraViewport()
         {
-            objectViewportPosition = camera.WorldToViewportPoint(transform.position);
+            objectViewportPosition = _camera.WorldToViewportPoint(transform.position);
             isInsideCameraView = IsInsideCameraView(objectViewportPosition);
 
             if (isInsideCameraView && !wasDetected)

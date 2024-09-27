@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Attributes
+namespace SombraStudios.Shared.Attributes.Editor
 {
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
     public class ReadOnlyPropertyDrawer : PropertyDrawer

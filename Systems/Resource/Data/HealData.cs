@@ -1,4 +1,4 @@
-namespace SombraStudios.Shared.Systems.Resource
+namespace SombraStudios.Shared.Systems.Resource.Data
 {
     public class HealData
     {

@@ -1,4 +1,4 @@
-namespace SombraStudios.Shared.Examples.Patterns.Structural.Adapter
+namespace SombraStudios.Shared.Examples.Patterns.Structural.Adapter.Class
 {
     // The Adapter makes the Adaptee's data compatible with the Target's class.
     class Adapter : TargetDataClass

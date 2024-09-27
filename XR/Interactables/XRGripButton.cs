@@ -1,8 +1,9 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace UnityEngine.XR.Content.Interaction
+namespace SombraStudios.Shared.XR.Interactables
 {
     /// <summary>
     /// An interactable that can be pressed by a direct interactor

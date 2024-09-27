@@ -6,11 +6,9 @@ namespace SombraStudios.Shared.UI
 {
     /// <summary>
     /// Attach this to a GUIText to make a frames/second indicator with colors.
-    ///
     /// It calculates frames/second over each updateInterval,
     /// so the display does not keep changing wildly.
-    ///
-    /// It is also fairly accurate at very low FPS counts (<10).
+    /// It is also fairly accurate at very low FPS counts (&lt;10).
     /// We do this not by simply counting frames per interval, but
     /// by accumulating FPS for each frame. This way we end up with
     /// correct overall FPS even if the interval renders something like
@@ -75,8 +73,8 @@ namespace SombraStudios.Shared.UI
         {
             if (_screenRefreshRateText != null)
             {
-                var refreshRate = Screen.currentResolution.refreshRate.ToString();
-                _screenRefreshRateText.text = $"Screen Refresh Rate: {refreshRate}";
+                var refreshRate = Screen.currentResolution.refreshRateRatio.numerator.ToString();
+                _screenRefreshRateText.text = $"Screen Refresh Rate: {refreshRate} Hz";
             }
         }
 
@@ -117,8 +115,7 @@ namespace SombraStudios.Shared.UI
 
             if (fps < 30)
                 newColor = Color.yellow;
-            else
-                if (fps < 10)
+            else if (fps < 10)
                 newColor = Color.red;
             else
                 newColor = Color.green;

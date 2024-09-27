@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace SombraStudios.Shared.Attributes
+namespace SombraStudios.Shared.Attributes.Editor
 {
 #if UNITY_EDITOR
     /// <summary>

@@ -1,4 +1,4 @@
-#if REQUIRES_EXTERNAL_PACKAGE
+#if DOTWEEN
 using UnityEngine;
 
 namespace SombraStudios.Shared.Editor

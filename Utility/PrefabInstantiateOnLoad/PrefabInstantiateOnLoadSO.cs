@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
 {
 
     public class PrefabInstantiateOnLoadSO : ScriptableObject

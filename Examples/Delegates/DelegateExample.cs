@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Examples
+namespace SombraStudios.Shared.Examples.Delegates
 {
 
     /// <summary>

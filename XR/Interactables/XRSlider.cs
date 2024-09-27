@@ -2,8 +2,9 @@
 using System;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine;
 
-namespace UnityEngine.XR.Content.Interaction
+namespace SombraStudios.Shared.XR.Interactables
 {
     /// <summary>
     /// An interactable that follows the position of the interactor on a single axis

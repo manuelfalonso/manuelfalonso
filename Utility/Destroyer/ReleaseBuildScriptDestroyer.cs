@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.Destroyer
 {
     /// <summary>
     /// Destroys specified script components if the build is not a development 

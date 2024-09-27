@@ -1,9 +1,10 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
 using System;
+using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-namespace UnityEngine.XR.Content.Interaction
+namespace SombraStudios.Shared.XR.Interactables
 {
     /// <summary>
     /// An interactable joystick that can move side to side, and forward and back by a direct interactor

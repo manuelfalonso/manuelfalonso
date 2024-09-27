@@ -1,4 +1,4 @@
-using SombraStudios.Shared.Systems.Resource;
+using SombraStudios.Shared.Systems.Resource.Data;
 using System;
 
 namespace SombraStudios.Shared.Interfaces

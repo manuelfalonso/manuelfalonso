@@ -1,4 +1,4 @@
-using SombraStudios.Shared.Utility.UnityGizmos;
+using SombraStudios.Shared.Utility.UnityGizmos.Interfaces;
 using UnityEditor;
 using UnityEngine;
 

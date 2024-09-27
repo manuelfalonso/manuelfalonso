@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos.Interfaces
 {
     /// <summary>
     /// Defines the interface for drawing a Gizmo in Unity with a Editor script.

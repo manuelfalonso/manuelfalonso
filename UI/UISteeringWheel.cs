@@ -44,7 +44,7 @@ namespace SombraStudios.Shared.UI
         public UnityEvent<float> OnSteeringWheelAngleChanged;
         /// <summary>
         /// Event invoked when the steering wheel is being held.
-        /// </summary
+        /// </summary>
         [Tooltip("Event invoked when the steering wheel is being held")]
         public UnityEvent OnSteeringWheelHeld;
         /// <summary>

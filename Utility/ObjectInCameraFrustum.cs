@@ -16,7 +16,7 @@ namespace SombraStudios.Shared.Utility
 
     [SerializeField]
     [Tooltip("The Camera in which the detection will be made")]
-    private Camera camera;
+    private Camera _camera;
     [SerializeField]
     [Tooltip("The camera will not be moved during gameplay?")]
     private bool isCameraStatic = false;
@@ -34,17 +34,17 @@ namespace SombraStudios.Shared.Utility
     {
         objCollider = GetComponent<Collider>();
 
-        if (!camera)
+        if (!_camera)
             Debug.LogWarning($"Missing Camera Reference");
 
         // If camera is static we can calculate planes just once
-        if (isCameraStatic && camera)
-            planes = GeometryUtility.CalculateFrustumPlanes(camera);
+        if (isCameraStatic && _camera)
+            planes = GeometryUtility.CalculateFrustumPlanes(_camera);
     }
 
     void Update()
     {
-        if (!camera)
+        if (!_camera)
             return;
 
         ReCalculatePlanes();
@@ -56,7 +56,7 @@ namespace SombraStudios.Shared.Utility
     {
         // Re calculate planes if the camera is not static
         if (!isCameraStatic)
-            planes = GeometryUtility.CalculateFrustumPlanes(camera);
+            planes = GeometryUtility.CalculateFrustumPlanes(_camera);
     }
 
     private void DetectBoundsInPlanes()

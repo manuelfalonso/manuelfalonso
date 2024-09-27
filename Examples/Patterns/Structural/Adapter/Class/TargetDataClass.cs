@@ -1,4 +1,4 @@
-namespace SombraStudios.Shared.Examples.Patterns.Structural.Adapter
+namespace SombraStudios.Shared.Examples.Patterns.Structural.Adapter.Class
 {
     // The Target defines the domain-specific class used by the client code.
     public class TargetDataClass

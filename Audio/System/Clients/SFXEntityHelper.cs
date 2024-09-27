@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Audio.System
+namespace SombraStudios.Shared.Audio.System.Clients
 {
     /// <summary>
     /// Helper class for managing SFX and voice playback for entities.

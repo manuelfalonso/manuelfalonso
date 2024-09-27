@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.Destroyer
 {
     /// <summary>
     /// Destroys the GameObject this script is attached to if the build is 

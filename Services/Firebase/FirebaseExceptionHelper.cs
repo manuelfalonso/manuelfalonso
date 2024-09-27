@@ -1,4 +1,4 @@
-#if REQUIRES_EXTERNAL_PACKAGE
+#if FIREBASE_APP && FIREBASE_AUTH
 using Firebase;
 using Firebase.Auth;
 using System;

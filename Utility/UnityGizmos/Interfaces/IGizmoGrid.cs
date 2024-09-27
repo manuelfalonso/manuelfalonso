@@ -1,4 +1,4 @@
-namespace SombraStudios.Shared.Utility.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos.Interfaces
 {
     /// <summary>
     /// Defines the interface for a Gizmo that represents a grid in Unity.
