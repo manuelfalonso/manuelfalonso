@@ -12,10 +12,6 @@ namespace SombraStudios.Shared.Utility.UnityMessages
         [Header("Physics")]
         [Tooltip("When a GameObject collides with another GameObject, Unity calls OnTriggerEnter.")]
         public UnityEvent OnTriggerEnterEvent = new ();
-        // TODO: Uncomment if needed. It generates performance issues.
-        //[Tooltip("OnTriggerStay is called once per physics update for every Collider other that is touching " +
-        //    "the trigger.")]
-        //public UnityEvent OnTriggerStayEvent = new ();
         [Tooltip("OnTriggerExit is called when the Collider other has stopped touching the trigger.")]
         public UnityEvent OnTriggerExitEvent = new ();
 
@@ -25,11 +21,6 @@ namespace SombraStudios.Shared.Utility.UnityMessages
         {
             OnTriggerEnterEvent.Invoke();
         }
-
-        //private void OnTriggerStay(Collider other)
-        //{
-        //    OnTriggerStayEvent.Invoke();
-        //}
 
         private void OnTriggerExit(Collider other)
         {
