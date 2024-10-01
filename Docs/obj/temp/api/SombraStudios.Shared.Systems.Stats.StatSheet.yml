@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatSheet
+  id: StatSheet
+  parent: SombraStudios.Shared.Systems.Stats
+  children:
+  - SombraStudios.Shared.Systems.Stats.StatSheet.AddStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  - SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  - SombraStudios.Shared.Systems.Stats.StatSheet.Stats
+  langs:
+  - csharp
+  - vb
+  name: StatSheet
+  nameWithType: StatSheet
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet
+  type: Class
+  source:
+    remote:
+      path: Systems/Stats/StatSheet.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StatSheet
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatSheet.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Represents a collection of stats.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Stat Sheet", menuName = "Sombra Studios/Stat Sheet")]
+
+      public class StatSheet : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Stat Sheet", menuName:="Sombra Studios/Stat Sheet")>
+
+      Public Class StatSheet Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Stat Sheet
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Stat Sheet
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet.Stats
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatSheet.Stats
+  id: Stats
+  parent: SombraStudios.Shared.Systems.Stats.StatSheet
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: StatSheet.Stats
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet.Stats
+  type: Property
+  source:
+    remote:
+      path: Systems/Stats/StatSheet.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Stats
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatSheet.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Gets a list of all stats.
+  example: []
+  syntax:
+    content: public List<IBaseStat> Stats { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SombraStudios.Shared.Systems.Stats.IBaseStat}
+    content.vb: Public ReadOnly Property Stats As List(Of IBaseStat)
+  overload: SombraStudios.Shared.Systems.Stats.StatSheet.Stats*
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet.AddStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatSheet.AddStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  id: AddStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  parent: SombraStudios.Shared.Systems.Stats.StatSheet
+  langs:
+  - csharp
+  - vb
+  name: AddStat(IBaseStat)
+  nameWithType: StatSheet.AddStat(IBaseStat)
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet.AddStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  type: Method
+  source:
+    remote:
+      path: Systems/Stats/StatSheet.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AddStat
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatSheet.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Adds a stat to the appropriate list.
+  example: []
+  syntax:
+    content: public void AddStat(IBaseStat stat)
+    parameters:
+    - id: stat
+      type: SombraStudios.Shared.Systems.Stats.IBaseStat
+      description: The stat to add.
+    content.vb: Public Sub AddStat(stat As IBaseStat)
+  overload: SombraStudios.Shared.Systems.Stats.StatSheet.AddStat*
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  id: RemoveStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  parent: SombraStudios.Shared.Systems.Stats.StatSheet
+  langs:
+  - csharp
+  - vb
+  name: RemoveStat(IBaseStat)
+  nameWithType: StatSheet.RemoveStat(IBaseStat)
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat(SombraStudios.Shared.Systems.Stats.IBaseStat)
+  type: Method
+  source:
+    remote:
+      path: Systems/Stats/StatSheet.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RemoveStat
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatSheet.cs
+    startLine: 58
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Removes a stat from the appropriate list.
+  example: []
+  syntax:
+    content: public void RemoveStat(IBaseStat stat)
+    parameters:
+    - id: stat
+      type: SombraStudios.Shared.Systems.Stats.IBaseStat
+      description: The stat to remove.
+    content.vb: Public Sub RemoveStat(stat As IBaseStat)
+  overload: SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat*
+references:
+- uid: SombraStudios.Shared.Systems.Stats
+  commentId: N:SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Stats
+  nameWithType: SombraStudios.Shared.Systems.Stats
+  fullName: SombraStudios.Shared.Systems.Stats
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet.Stats*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatSheet.Stats
+  href: SombraStudios.Shared.Systems.Stats.StatSheet.html#SombraStudios_Shared_Systems_Stats_StatSheet_Stats
+  name: Stats
+  nameWithType: StatSheet.Stats
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet.Stats
+- uid: System.Collections.Generic.List{SombraStudios.Shared.Systems.Stats.IBaseStat}
+  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.Systems.Stats.IBaseStat}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IBaseStat>
+  nameWithType: List<IBaseStat>
+  fullName: System.Collections.Generic.List<SombraStudios.Shared.Systems.Stats.IBaseStat>
+  nameWithType.vb: List(Of IBaseStat)
+  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.Systems.Stats.IBaseStat)
+  name.vb: List(Of IBaseStat)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Stats.IBaseStat
+    name: IBaseStat
+    href: SombraStudios.Shared.Systems.Stats.IBaseStat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Stats.IBaseStat
+    name: IBaseStat
+    href: SombraStudios.Shared.Systems.Stats.IBaseStat.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet.AddStat*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatSheet.AddStat
+  href: SombraStudios.Shared.Systems.Stats.StatSheet.html#SombraStudios_Shared_Systems_Stats_StatSheet_AddStat_SombraStudios_Shared_Systems_Stats_IBaseStat_
+  name: AddStat
+  nameWithType: StatSheet.AddStat
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet.AddStat
+- uid: SombraStudios.Shared.Systems.Stats.IBaseStat
+  commentId: T:SombraStudios.Shared.Systems.Stats.IBaseStat
+  parent: SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.Shared.Systems.Stats.IBaseStat.html
+  name: IBaseStat
+  nameWithType: IBaseStat
+  fullName: SombraStudios.Shared.Systems.Stats.IBaseStat
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat
+  href: SombraStudios.Shared.Systems.Stats.StatSheet.html#SombraStudios_Shared_Systems_Stats_StatSheet_RemoveStat_SombraStudios_Shared_Systems_Stats_IBaseStat_
+  name: RemoveStat
+  nameWithType: StatSheet.RemoveStat
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet.RemoveStat

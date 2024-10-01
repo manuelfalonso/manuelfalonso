@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent
+  commentId: T:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent
+  id: TeleportableNavMeshAgent
+  parent: SombraStudios.Shared.Systems.Teleport
+  children:
+  - SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport
+  - SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject
+  - SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo(UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: TeleportableNavMeshAgent
+  nameWithType: TeleportableNavMeshAgent
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent
+  type: Class
+  source:
+    remote:
+      path: Systems/Teleport/TeleportableNavMeshAgent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TeleportableNavMeshAgent
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportableNavMeshAgent.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Example NavMeshAgent component availbale to teleport
+  example: []
+  syntax:
+    content: >-
+      [RequireComponent(typeof(NavMeshAgent))]
+
+      public class TeleportableNavMeshAgent : MonoBehaviour, ITeleportable
+    content.vb: >-
+      <RequireComponent(GetType(NavMeshAgent))>
+
+      Public Class TeleportableNavMeshAgent Inherits MonoBehaviour Implements ITeleportable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  implements:
+  - SombraStudios.Shared.Systems.Teleport.ITeleportable
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.AI.NavMeshAgent
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport
+  commentId: P:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport
+  id: CanTeleport
+  parent: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent
+  langs:
+  - csharp
+  - vb
+  name: CanTeleport
+  nameWithType: TeleportableNavMeshAgent.CanTeleport
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport
+  type: Property
+  source:
+    remote:
+      path: Systems/Teleport/TeleportableNavMeshAgent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanTeleport
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportableNavMeshAgent.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  example: []
+  syntax:
+    content: public bool CanTeleport { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CanTeleport As Boolean
+  overload: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport*
+  implements:
+  - SombraStudios.Shared.Systems.Teleport.ITeleportable.CanTeleport
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject
+  commentId: P:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject
+  id: GameObject
+  parent: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent
+  langs:
+  - csharp
+  - vb
+  name: GameObject
+  nameWithType: TeleportableNavMeshAgent.GameObject
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject
+  type: Property
+  source:
+    remote:
+      path: Systems/Teleport/TeleportableNavMeshAgent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameObject
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportableNavMeshAgent.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  example: []
+  syntax:
+    content: public GameObject GameObject { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property GameObject As GameObject
+  overload: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject*
+  implements:
+  - SombraStudios.Shared.Systems.Teleport.ITeleportable.GameObject
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo(UnityEngine.Transform)
+  commentId: M:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo(UnityEngine.Transform)
+  id: TeleportTo(UnityEngine.Transform)
+  parent: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent
+  langs:
+  - csharp
+  - vb
+  name: TeleportTo(Transform)
+  nameWithType: TeleportableNavMeshAgent.TeleportTo(Transform)
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Systems/Teleport/TeleportableNavMeshAgent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TeleportTo
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportableNavMeshAgent.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  example: []
+  syntax:
+    content: public void TeleportTo(Transform destination)
+    parameters:
+    - id: destination
+      type: UnityEngine.Transform
+    content.vb: Public Sub TeleportTo(destination As Transform)
+  overload: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo*
+  implements:
+  - SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
+references:
+- uid: SombraStudios.Shared.Systems.Teleport
+  commentId: N:SombraStudios.Shared.Systems.Teleport
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Teleport
+  nameWithType: SombraStudios.Shared.Systems.Teleport
+  fullName: SombraStudios.Shared.Systems.Teleport
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Teleport
+    name: Teleport
+    href: SombraStudios.Shared.Systems.Teleport.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Teleport
+    name: Teleport
+    href: SombraStudios.Shared.Systems.Teleport.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Systems.Teleport.ITeleportable
+  commentId: T:SombraStudios.Shared.Systems.Teleport.ITeleportable
+  parent: SombraStudios.Shared.Systems.Teleport
+  href: SombraStudios.Shared.Systems.Teleport.ITeleportable.html
+  name: ITeleportable
+  nameWithType: ITeleportable
+  fullName: SombraStudios.Shared.Systems.Teleport.ITeleportable
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport*
+  commentId: Overload:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport
+  href: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.html#SombraStudios_Shared_Systems_Teleport_TeleportableNavMeshAgent_CanTeleport
+  name: CanTeleport
+  nameWithType: TeleportableNavMeshAgent.CanTeleport
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.CanTeleport
+- uid: SombraStudios.Shared.Systems.Teleport.ITeleportable.CanTeleport
+  commentId: P:SombraStudios.Shared.Systems.Teleport.ITeleportable.CanTeleport
+  parent: SombraStudios.Shared.Systems.Teleport.ITeleportable
+  href: SombraStudios.Shared.Systems.Teleport.ITeleportable.html#SombraStudios_Shared_Systems_Teleport_ITeleportable_CanTeleport
+  name: CanTeleport
+  nameWithType: ITeleportable.CanTeleport
+  fullName: SombraStudios.Shared.Systems.Teleport.ITeleportable.CanTeleport
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject*
+  commentId: Overload:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject
+  href: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.html#SombraStudios_Shared_Systems_Teleport_TeleportableNavMeshAgent_GameObject
+  name: GameObject
+  nameWithType: TeleportableNavMeshAgent.GameObject
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject
+- uid: SombraStudios.Shared.Systems.Teleport.ITeleportable.GameObject
+  commentId: P:SombraStudios.Shared.Systems.Teleport.ITeleportable.GameObject
+  parent: SombraStudios.Shared.Systems.Teleport.ITeleportable
+  href: SombraStudios.Shared.Systems.Teleport.ITeleportable.html#SombraStudios_Shared_Systems_Teleport_ITeleportable_GameObject
+  name: GameObject
+  nameWithType: ITeleportable.GameObject
+  fullName: SombraStudios.Shared.Systems.Teleport.ITeleportable.GameObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo*
+  commentId: Overload:SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo
+  href: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.html#SombraStudios_Shared_Systems_Teleport_TeleportableNavMeshAgent_TeleportTo_UnityEngine_Transform_
+  name: TeleportTo
+  nameWithType: TeleportableNavMeshAgent.TeleportTo
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo
+- uid: SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
+  commentId: M:SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
+  parent: SombraStudios.Shared.Systems.Teleport.ITeleportable
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Teleport.ITeleportable.html#SombraStudios_Shared_Systems_Teleport_ITeleportable_TeleportTo_UnityEngine_Transform_
+  name: TeleportTo(Transform)
+  nameWithType: ITeleportable.TeleportTo(Transform)
+  fullName: SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
+    name: TeleportTo
+    href: SombraStudios.Shared.Systems.Teleport.ITeleportable.html#SombraStudios_Shared_Systems_Teleport_ITeleportable_TeleportTo_UnityEngine_Transform_
+  - name: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
+    name: TeleportTo
+    href: SombraStudios.Shared.Systems.Teleport.ITeleportable.html#SombraStudios_Shared_Systems_Teleport_ITeleportable_TeleportTo_UnityEngine_Transform_
+  - name: (
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform

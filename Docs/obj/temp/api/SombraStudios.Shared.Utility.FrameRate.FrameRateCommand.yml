@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  commentId: T:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  id: FrameRateCommand
+  parent: SombraStudios.Shared.Utility.FrameRate
+  children:
+  - SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute
+  - SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute
+  - SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.ShowLogs
+  - SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.TargetFrameRate
+  langs:
+  - csharp
+  - vb
+  name: FrameRateCommand
+  nameWithType: FrameRateCommand
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  type: Class
+  source:
+    remote:
+      path: Utility/FrameRate/FrameRateCommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FrameRateCommand
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRate/FrameRateCommand.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.FrameRate
+  summary: Command to set the target frame rate of the application.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "FrameRateCommand", menuName = "Sombra Studios/Commands/Frame Rate Command")]
+
+      public class FrameRateCommand : CommandScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="FrameRateCommand", menuName:="Sombra Studios/Commands/Frame Rate Command")>
+
+      Public Class FrameRateCommand Inherits CommandScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: FrameRateCommand
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Commands/Frame Rate Command
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.TargetFrameRate
+  commentId: F:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.TargetFrameRate
+  id: TargetFrameRate
+  parent: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  langs:
+  - csharp
+  - vb
+  name: TargetFrameRate
+  nameWithType: FrameRateCommand.TargetFrameRate
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.TargetFrameRate
+  type: Field
+  source:
+    remote:
+      path: Utility/FrameRate/FrameRateCommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TargetFrameRate
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRate/FrameRateCommand.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.FrameRate
+  summary: The target frame rate to set.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("The target frame rate to set.")]
+
+      public int TargetFrameRate
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Tooltip("The target frame rate to set.")>
+
+      Public TargetFrameRate As Integer
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The target frame rate to set.
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.ShowLogs
+  commentId: F:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.ShowLogs
+  id: ShowLogs
+  parent: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  langs:
+  - csharp
+  - vb
+  name: ShowLogs
+  nameWithType: FrameRateCommand.ShowLogs
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.ShowLogs
+  type: Field
+  source:
+    remote:
+      path: Utility/FrameRate/FrameRateCommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ShowLogs
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRate/FrameRateCommand.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.FrameRate
+  summary: Whether to show logs when the frame rate is set.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Whether to show logs when the frame rate is set.")]
+
+      public bool ShowLogs
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Whether to show logs when the frame rate is set.")>
+
+      Public ShowLogs As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether to show logs when the frame rate is set.
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute
+  commentId: M:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute
+  id: CanExecute
+  parent: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  langs:
+  - csharp
+  - vb
+  name: CanExecute()
+  nameWithType: FrameRateCommand.CanExecute()
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute()
+  type: Method
+  source:
+    remote:
+      path: Utility/FrameRate/FrameRateCommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanExecute
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRate/FrameRateCommand.cs
+    startLine: 27
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.FrameRate
+  summary: Determines whether the command can be executed.
+  example: []
+  syntax:
+    content: protected override bool CanExecute()
+    return:
+      type: System.Boolean
+      description: True if the command can be executed, otherwise false.
+    content.vb: Protected Overrides Function CanExecute() As Boolean
+  overridden: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+  overload: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute*
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute
+  commentId: M:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute
+  id: Execute
+  parent: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: FrameRateCommand.Execute()
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: Utility/FrameRate/FrameRateCommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Execute
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRate/FrameRateCommand.cs
+    startLine: 50
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.FrameRate
+  summary: Executes the command to set the target frame rate.
+  example: []
+  syntax:
+    content: protected override void Execute()
+    content.vb: Protected Overrides Sub Execute()
+  overridden: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+  overload: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute*
+references:
+- uid: SombraStudios.Shared.Utility.FrameRate
+  commentId: N:SombraStudios.Shared.Utility.FrameRate
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.FrameRate
+  nameWithType: SombraStudios.Shared.Utility.FrameRate
+  fullName: SombraStudios.Shared.Utility.FrameRate
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.FrameRate
+    name: FrameRate
+    href: SombraStudios.Shared.Utility.FrameRate.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.FrameRate
+    name: FrameRate
+    href: SombraStudios.Shared.Utility.FrameRate.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.html
+  name: CommandScriptableObject
+  nameWithType: CommandScriptableObject
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  name: TryExecute()
+  nameWithType: CommandScriptableObject.TryExecute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+    name: TryExecute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+    name: TryExecute
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Command
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Command
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Command
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  name: CanExecute()
+  nameWithType: CommandScriptableObject.CanExecute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+    name: CanExecute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+    name: CanExecute
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute*
+  commentId: Overload:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute
+  href: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.html#SombraStudios_Shared_Utility_FrameRate_FrameRateCommand_CanExecute
+  name: CanExecute
+  nameWithType: FrameRateCommand.CanExecute
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  name: Execute()
+  nameWithType: CommandScriptableObject.Execute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+    name: Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+    name: Execute
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute*
+  commentId: Overload:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute
+  href: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.html#SombraStudios_Shared_Utility_FrameRate_FrameRateCommand_Execute
+  name: Execute
+  nameWithType: FrameRateCommand.Execute
+  fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute

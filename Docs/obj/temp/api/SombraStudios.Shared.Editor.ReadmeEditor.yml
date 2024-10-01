@@ -1,0 +1,248 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Editor.ReadmeEditor
+  commentId: T:SombraStudios.Shared.Editor.ReadmeEditor
+  id: ReadmeEditor
+  parent: SombraStudios.Shared.Editor
+  children:
+  - SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI
+  - SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: ReadmeEditor
+  nameWithType: ReadmeEditor
+  fullName: SombraStudios.Shared.Editor.ReadmeEditor
+  type: Class
+  source:
+    remote:
+      path: Editor/ReadmeEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReadmeEditor
+    path: ../Assets/Sombra Studios/Shared/Editor/ReadmeEditor.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  summary: >-
+    Editor script for the readme scriptable object
+
+    Credits to: rich-joslin-unity
+  example: []
+  syntax:
+    content: >-
+      [CustomEditor(typeof(Readme))]
+
+      [InitializeOnLoad]
+
+      public class ReadmeEditor : Editor
+    content.vb: >-
+      <CustomEditor(GetType(Readme))>
+
+      <InitializeOnLoad>
+
+      Public Class ReadmeEditor Inherits Editor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: SombraStudios.Shared.Editor.Readme
+  - type: UnityEditor.InitializeOnLoadAttribute
+    ctor: UnityEditor.InitializeOnLoadAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI
+  commentId: M:SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI
+  id: OnHeaderGUI
+  parent: SombraStudios.Shared.Editor.ReadmeEditor
+  langs:
+  - csharp
+  - vb
+  name: OnHeaderGUI()
+  nameWithType: ReadmeEditor.OnHeaderGUI()
+  fullName: SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI()
+  type: Method
+  source:
+    remote:
+      path: Editor/ReadmeEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnHeaderGUI
+    path: ../Assets/Sombra Studios/Shared/Editor/ReadmeEditor.cs
+    startLine: 124
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  example: []
+  syntax:
+    content: protected override void OnHeaderGUI()
+    content.vb: Protected Overrides Sub OnHeaderGUI()
+  overridden: UnityEditor.Editor.OnHeaderGUI
+  overload: SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI*
+- uid: SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI
+  commentId: M:SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: SombraStudios.Shared.Editor.ReadmeEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: ReadmeEditor.OnInspectorGUI()
+  fullName: SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Editor/ReadmeEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnInspectorGUI
+    path: ../Assets/Sombra Studios/Shared/Editor/ReadmeEditor.cs
+    startLine: 148
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  summary: <p>Implement this function to make a custom inspector.</p>
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overridden: UnityEditor.Editor.OnInspectorGUI
+  overload: SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI*
+references:
+- uid: SombraStudios.Shared.Editor
+  commentId: N:SombraStudios.Shared.Editor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Editor
+  nameWithType: SombraStudios.Shared.Editor
+  fullName: SombraStudios.Shared.Editor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.Editor.OnHeaderGUI
+  commentId: M:UnityEditor.Editor.OnHeaderGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: OnHeaderGUI()
+  nameWithType: Editor.OnHeaderGUI()
+  fullName: UnityEditor.Editor.OnHeaderGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.OnHeaderGUI
+    name: OnHeaderGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.OnHeaderGUI
+    name: OnHeaderGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI*
+  commentId: Overload:SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI
+  href: SombraStudios.Shared.Editor.ReadmeEditor.html#SombraStudios_Shared_Editor_ReadmeEditor_OnHeaderGUI
+  name: OnHeaderGUI
+  nameWithType: ReadmeEditor.OnHeaderGUI
+  fullName: SombraStudios.Shared.Editor.ReadmeEditor.OnHeaderGUI
+- uid: UnityEditor.Editor.OnInspectorGUI
+  commentId: M:UnityEditor.Editor.OnInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: OnInspectorGUI()
+  nameWithType: Editor.OnInspectorGUI()
+  fullName: UnityEditor.Editor.OnInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI*
+  commentId: Overload:SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI
+  href: SombraStudios.Shared.Editor.ReadmeEditor.html#SombraStudios_Shared_Editor_ReadmeEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: ReadmeEditor.OnInspectorGUI
+  fullName: SombraStudios.Shared.Editor.ReadmeEditor.OnInspectorGUI

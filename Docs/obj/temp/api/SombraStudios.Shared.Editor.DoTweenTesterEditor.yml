@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Editor.DoTweenTesterEditor
+  commentId: T:SombraStudios.Shared.Editor.DoTweenTesterEditor
+  id: DoTweenTesterEditor
+  parent: SombraStudios.Shared.Editor
+  children:
+  - SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: DoTweenTesterEditor
+  nameWithType: DoTweenTesterEditor
+  fullName: SombraStudios.Shared.Editor.DoTweenTesterEditor
+  type: Class
+  source:
+    remote:
+      path: Editor/DoTweenTesterEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoTweenTesterEditor
+    path: ../Assets/Sombra Studios/Shared/Editor/DoTweenTesterEditor.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  summary: Editor script to preview and test a Tween
+  example: []
+  syntax:
+    content: >-
+      [CustomEditor(typeof(DoTweenTester), true)]
+
+      public class DoTweenTesterEditor : Editor
+    content.vb: >-
+      <CustomEditor(GetType(DoTweenTester), True)>
+
+      Public Class DoTweenTesterEditor Inherits Editor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type,System.Boolean)
+    arguments:
+    - type: System.Type
+      value: SombraStudios.Shared.Editor.DoTweenTester
+    - type: System.Boolean
+      value: true
+- uid: SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI
+  commentId: M:SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: SombraStudios.Shared.Editor.DoTweenTesterEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: DoTweenTesterEditor.OnInspectorGUI()
+  fullName: SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Editor/DoTweenTesterEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnInspectorGUI
+    path: ../Assets/Sombra Studios/Shared/Editor/DoTweenTesterEditor.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  summary: <p>Implement this function to make a custom inspector.</p>
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overridden: UnityEditor.Editor.OnInspectorGUI
+  overload: SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI*
+references:
+- uid: SombraStudios.Shared.Editor
+  commentId: N:SombraStudios.Shared.Editor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Editor
+  nameWithType: SombraStudios.Shared.Editor
+  fullName: SombraStudios.Shared.Editor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.Editor.OnInspectorGUI
+  commentId: M:UnityEditor.Editor.OnInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: OnInspectorGUI()
+  nameWithType: Editor.OnInspectorGUI()
+  fullName: UnityEditor.Editor.OnInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI*
+  commentId: Overload:SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI
+  href: SombraStudios.Shared.Editor.DoTweenTesterEditor.html#SombraStudios_Shared_Editor_DoTweenTesterEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: DoTweenTesterEditor.OnInspectorGUI
+  fullName: SombraStudios.Shared.Editor.DoTweenTesterEditor.OnInspectorGUI

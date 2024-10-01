@@ -1,0 +1,773 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  commentId: T:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  id: SFXLevelManager
+  parent: SombraStudios.Shared.Audio.System.Clients
+  children:
+  - SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume
+  - SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio(System.String,UnityEngine.Vector3)
+  - SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume
+  - SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume
+  langs:
+  - csharp
+  - vb
+  name: SFXLevelManager
+  nameWithType: SFXLevelManager
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  type: Class
+  source:
+    remote:
+      path: Audio/System/Clients/SFXLevelManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SFXLevelManager
+    path: ../Assets/Sombra Studios/Shared/Audio/System/Clients/SFXLevelManager.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System.Clients
+  summary: Manages audio levels and playback in the game.
+  example: []
+  syntax:
+    content: 'public class SFXLevelManager : Singleton<SFXLevelManager>'
+    content.vb: Public Class SFXLevelManager Inherits Singleton(Of SFXLevelManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}._instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.HasInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.TryGetInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Current
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Awake
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.OnDestroy
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio(System.String,UnityEngine.Vector3)
+  commentId: M:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio(System.String,UnityEngine.Vector3)
+  id: PlayOneShotAudio(System.String,UnityEngine.Vector3)
+  parent: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  langs:
+  - csharp
+  - vb
+  name: PlayOneShotAudio(string, Vector3)
+  nameWithType: SFXLevelManager.PlayOneShotAudio(string, Vector3)
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio(string, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Audio/System/Clients/SFXLevelManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PlayOneShotAudio
+    path: ../Assets/Sombra Studios/Shared/Audio/System/Clients/SFXLevelManager.cs
+    startLine: 67
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System.Clients
+  summary: Plays a one-shot audio clip at the specified position.
+  example: []
+  syntax:
+    content: public void PlayOneShotAudio(string audioEvent, Vector3 position)
+    parameters:
+    - id: audioEvent
+      type: System.String
+      description: The key of the audio event to play.
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position at which to play the audio.
+    content.vb: Public Sub PlayOneShotAudio(audioEvent As String, position As Vector3)
+  overload: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio*
+  nameWithType.vb: SFXLevelManager.PlayOneShotAudio(String, Vector3)
+  fullName.vb: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio(String, UnityEngine.Vector3)
+  name.vb: PlayOneShotAudio(String, Vector3)
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume
+  commentId: M:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume
+  id: SetVolume
+  parent: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  langs:
+  - csharp
+  - vb
+  name: SetVolume()
+  nameWithType: SFXLevelManager.SetVolume()
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume()
+  type: Method
+  source:
+    remote:
+      path: Audio/System/Clients/SFXLevelManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetVolume
+    path: ../Assets/Sombra Studios/Shared/Audio/System/Clients/SFXLevelManager.cs
+    startLine: 130
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System.Clients
+  syntax:
+    content: >-
+      [Button(null, EButtonEnableMode.Always)]
+
+      public void SetVolume()
+    content.vb: >-
+      <Button(Nothing, EButtonEnableMode.Always)>
+
+      Public Sub SetVolume()
+  overload: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume*
+  attributes:
+  - type: NaughtyAttributes.ButtonAttribute
+    ctor: NaughtyAttributes.ButtonAttribute.#ctor(System.String,NaughtyAttributes.EButtonEnableMode)
+    arguments:
+    - type: System.String
+    - type: NaughtyAttributes.EButtonEnableMode
+      value: 0
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume
+  commentId: M:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume
+  id: MuteVolume
+  parent: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  langs:
+  - csharp
+  - vb
+  name: MuteVolume()
+  nameWithType: SFXLevelManager.MuteVolume()
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume()
+  type: Method
+  source:
+    remote:
+      path: Audio/System/Clients/SFXLevelManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MuteVolume
+    path: ../Assets/Sombra Studios/Shared/Audio/System/Clients/SFXLevelManager.cs
+    startLine: 133
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System.Clients
+  syntax:
+    content: >-
+      [Button(null, EButtonEnableMode.Always)]
+
+      public void MuteVolume()
+    content.vb: >-
+      <Button(Nothing, EButtonEnableMode.Always)>
+
+      Public Sub MuteVolume()
+  overload: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume*
+  attributes:
+  - type: NaughtyAttributes.ButtonAttribute
+    ctor: NaughtyAttributes.ButtonAttribute.#ctor(System.String,NaughtyAttributes.EButtonEnableMode)
+    arguments:
+    - type: System.String
+    - type: NaughtyAttributes.EButtonEnableMode
+      value: 0
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume
+  commentId: M:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume
+  id: UnmuteVolume
+  parent: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+  langs:
+  - csharp
+  - vb
+  name: UnmuteVolume()
+  nameWithType: SFXLevelManager.UnmuteVolume()
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume()
+  type: Method
+  source:
+    remote:
+      path: Audio/System/Clients/SFXLevelManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnmuteVolume
+    path: ../Assets/Sombra Studios/Shared/Audio/System/Clients/SFXLevelManager.cs
+    startLine: 136
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System.Clients
+  syntax:
+    content: >-
+      [Button(null, EButtonEnableMode.Always)]
+
+      public void UnmuteVolume()
+    content.vb: >-
+      <Button(Nothing, EButtonEnableMode.Always)>
+
+      Public Sub UnmuteVolume()
+  overload: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume*
+  attributes:
+  - type: NaughtyAttributes.ButtonAttribute
+    ctor: NaughtyAttributes.ButtonAttribute.#ctor(System.String,NaughtyAttributes.EButtonEnableMode)
+    arguments:
+    - type: System.String
+    - type: NaughtyAttributes.EButtonEnableMode
+      value: 0
+references:
+- uid: SombraStudios.Shared.Audio.System.Clients
+  commentId: N:SombraStudios.Shared.Audio.System.Clients
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Audio.System.Clients
+  nameWithType: SombraStudios.Shared.Audio.System.Clients
+  fullName: SombraStudios.Shared.Audio.System.Clients
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System.Clients
+    name: Clients
+    href: SombraStudios.Shared.Audio.System.Clients.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System.Clients
+    name: Clients
+    href: SombraStudios.Shared.Audio.System.Clients.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<SFXLevelManager>
+  nameWithType: Singleton<SFXLevelManager>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>
+  nameWithType.vb: Singleton(Of SFXLevelManager)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager)
+  name.vb: Singleton(Of SFXLevelManager)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+    name: SFXLevelManager
+    href: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager
+    name: SFXLevelManager
+    href: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.html
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}._instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<SFXLevelManager>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>._instance
+  nameWithType.vb: Singleton(Of SFXLevelManager)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.HasInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<SFXLevelManager>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>.HasInstance
+  nameWithType.vb: Singleton(Of SFXLevelManager).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.TryGetInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<SFXLevelManager>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>.TryGetInstance()
+  nameWithType.vb: Singleton(Of SFXLevelManager).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Current
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<SFXLevelManager>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>.Current
+  nameWithType.vb: Singleton(Of SFXLevelManager).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<SFXLevelManager>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>.Instance
+  nameWithType.vb: Singleton(Of SFXLevelManager).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Awake
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<SFXLevelManager>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>.Awake()
+  nameWithType.vb: Singleton(Of SFXLevelManager).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.OnDestroy
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<SFXLevelManager>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Audio.System.Clients.SFXLevelManager>.OnDestroy()
+  nameWithType.vb: Singleton(Of SFXLevelManager).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Audio.System.Clients.SFXLevelManager).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Audio.System.Clients.SFXLevelManager}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton
+  commentId: N:SombraStudios.Shared.Patterns.Creational.Singleton
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.Singleton
+  nameWithType: SombraStudios.Shared.Patterns.Creational.Singleton
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<T>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>._instance
+  nameWithType.vb: Singleton(Of T)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<T>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.HasInstance
+  nameWithType.vb: Singleton(Of T).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<T>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.TryGetInstance()
+  nameWithType.vb: Singleton(Of T).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<T>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Current
+  nameWithType.vb: Singleton(Of T).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<T>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.OnDestroy()
+  nameWithType.vb: Singleton(Of T).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio*
+  commentId: Overload:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio
+  href: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.html#SombraStudios_Shared_Audio_System_Clients_SFXLevelManager_PlayOneShotAudio_System_String_UnityEngine_Vector3_
+  name: PlayOneShotAudio
+  nameWithType: SFXLevelManager.PlayOneShotAudio
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.PlayOneShotAudio
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume*
+  commentId: Overload:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume
+  href: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.html#SombraStudios_Shared_Audio_System_Clients_SFXLevelManager_SetVolume
+  name: SetVolume
+  nameWithType: SFXLevelManager.SetVolume
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.SetVolume
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume*
+  commentId: Overload:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume
+  href: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.html#SombraStudios_Shared_Audio_System_Clients_SFXLevelManager_MuteVolume
+  name: MuteVolume
+  nameWithType: SFXLevelManager.MuteVolume
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.MuteVolume
+- uid: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume*
+  commentId: Overload:SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume
+  href: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.html#SombraStudios_Shared_Audio_System_Clients_SFXLevelManager_UnmuteVolume
+  name: UnmuteVolume
+  nameWithType: SFXLevelManager.UnmuteVolume
+  fullName: SombraStudios.Shared.Audio.System.Clients.SFXLevelManager.UnmuteVolume

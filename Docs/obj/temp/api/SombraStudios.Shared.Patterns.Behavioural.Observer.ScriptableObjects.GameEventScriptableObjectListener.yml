@@ -1,0 +1,250 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  id: GameEventScriptableObjectListener
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.Response
+  langs:
+  - csharp
+  - vb
+  name: GameEventScriptableObjectListener
+  nameWithType: GameEventScriptableObjectListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEventScriptableObjectListener.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameEventScriptableObjectListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEventScriptableObjectListener.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: ScriptableObject-based listener for a ScriptableObject event using a Unity Event.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Game Event Listener", menuName = "Sombra Studios/Game Events/Game Event Listener")]
+
+      public class GameEventScriptableObjectListener : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Game Event Listener", menuName:="Sombra Studios/Game Events/Game Event Listener")>
+
+      Public Class GameEventScriptableObjectListener Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Game Event Listener
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Game Events/Game Event Listener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.Response
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.Response
+  id: Response
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: GameEventScriptableObjectListener.Response
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.Response
+  type: Field
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEventScriptableObjectListener.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Response
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEventScriptableObjectListener.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: The Unity Event response to invoke when the ScriptableObject event is raised.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("The Unity Event response to invoke when the ScriptableObject event is raised.")]
+
+      public UnityEvent Response
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("The Unity Event response to invoke when the ScriptableObject event is raised.")>
+
+      Public Response As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The Unity Event response to invoke when the ScriptableObject event is raised.
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised
+  id: OnEventRaised
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaised()
+  nameWithType: GameEventScriptableObjectListener.OnEventRaised()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEventScriptableObjectListener.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnEventRaised
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEventScriptableObjectListener.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Called from the ScriptableObject event. Invokes the response UnityEvent.
+  example: []
+  syntax:
+    content: public void OnEventRaised()
+    content.vb: Public Sub OnEventRaised()
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GameEventScriptableObjectListener_OnEventRaised
+  name: OnEventRaised
+  nameWithType: GameEventScriptableObjectListener.OnEventRaised
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.OnEventRaised

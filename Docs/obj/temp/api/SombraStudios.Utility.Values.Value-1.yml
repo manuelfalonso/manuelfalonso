@@ -1,0 +1,388 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Utility.Values.Value`1
+  commentId: T:SombraStudios.Utility.Values.Value`1
+  id: Value`1
+  parent: SombraStudios.Utility.Values
+  children:
+  - SombraStudios.Utility.Values.Value`1.#ctor(`0)
+  - SombraStudios.Utility.Values.Value`1.AddModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  - SombraStudios.Utility.Values.Value`1.CalculateFinalValue
+  - SombraStudios.Utility.Values.Value`1.FinalValue
+  - SombraStudios.Utility.Values.Value`1.GetInitialValue
+  - SombraStudios.Utility.Values.Value`1.RemoveModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  langs:
+  - csharp
+  - vb
+  name: Value<T>
+  nameWithType: Value<T>
+  fullName: SombraStudios.Utility.Values.Value<T>
+  type: Class
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Value
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: public abstract class Value<T>
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class Value(Of T)
+  inheritance:
+  - System.Object
+  nameWithType.vb: Value(Of T)
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T)
+  name.vb: Value(Of T)
+- uid: SombraStudios.Utility.Values.Value`1.FinalValue
+  commentId: P:SombraStudios.Utility.Values.Value`1.FinalValue
+  id: FinalValue
+  parent: SombraStudios.Utility.Values.Value`1
+  langs:
+  - csharp
+  - vb
+  name: FinalValue
+  nameWithType: Value<T>.FinalValue
+  fullName: SombraStudios.Utility.Values.Value<T>.FinalValue
+  type: Property
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FinalValue
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: public T FinalValue { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property FinalValue As T
+  overload: SombraStudios.Utility.Values.Value`1.FinalValue*
+  nameWithType.vb: Value(Of T).FinalValue
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).FinalValue
+- uid: SombraStudios.Utility.Values.Value`1.#ctor(`0)
+  commentId: M:SombraStudios.Utility.Values.Value`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: SombraStudios.Utility.Values.Value`1
+  langs:
+  - csharp
+  - vb
+  name: Value(T)
+  nameWithType: Value<T>.Value(T)
+  fullName: SombraStudios.Utility.Values.Value<T>.Value(T)
+  type: Constructor
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: public Value(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+    content.vb: Public Sub New(value As T)
+  overload: SombraStudios.Utility.Values.Value`1.#ctor*
+  nameWithType.vb: Value(Of T).New(T)
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).New(T)
+  name.vb: New(T)
+- uid: SombraStudios.Utility.Values.Value`1.GetInitialValue
+  commentId: M:SombraStudios.Utility.Values.Value`1.GetInitialValue
+  id: GetInitialValue
+  parent: SombraStudios.Utility.Values.Value`1
+  langs:
+  - csharp
+  - vb
+  name: GetInitialValue()
+  nameWithType: Value<T>.GetInitialValue()
+  fullName: SombraStudios.Utility.Values.Value<T>.GetInitialValue()
+  type: Method
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetInitialValue
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: public T GetInitialValue()
+    return:
+      type: '{T}'
+    content.vb: Public Function GetInitialValue() As T
+  overload: SombraStudios.Utility.Values.Value`1.GetInitialValue*
+  nameWithType.vb: Value(Of T).GetInitialValue()
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).GetInitialValue()
+- uid: SombraStudios.Utility.Values.Value`1.AddModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  commentId: M:SombraStudios.Utility.Values.Value`1.AddModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  id: AddModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  parent: SombraStudios.Utility.Values.Value`1
+  langs:
+  - csharp
+  - vb
+  name: AddModifier(ValueModifier<T>)
+  nameWithType: Value<T>.AddModifier(ValueModifier<T>)
+  fullName: SombraStudios.Utility.Values.Value<T>.AddModifier(SombraStudios.Utility.Values.ValueModifier<T>)
+  type: Method
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AddModifier
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: public void AddModifier(ValueModifier<T> modifier)
+    parameters:
+    - id: modifier
+      type: SombraStudios.Utility.Values.ValueModifier{{T}}
+    content.vb: Public Sub AddModifier(modifier As ValueModifier(Of T))
+  overload: SombraStudios.Utility.Values.Value`1.AddModifier*
+  nameWithType.vb: Value(Of T).AddModifier(ValueModifier(Of T))
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).AddModifier(SombraStudios.Utility.Values.ValueModifier(Of T))
+  name.vb: AddModifier(ValueModifier(Of T))
+- uid: SombraStudios.Utility.Values.Value`1.RemoveModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  commentId: M:SombraStudios.Utility.Values.Value`1.RemoveModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  id: RemoveModifier(SombraStudios.Utility.Values.ValueModifier{`0})
+  parent: SombraStudios.Utility.Values.Value`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveModifier(ValueModifier<T>)
+  nameWithType: Value<T>.RemoveModifier(ValueModifier<T>)
+  fullName: SombraStudios.Utility.Values.Value<T>.RemoveModifier(SombraStudios.Utility.Values.ValueModifier<T>)
+  type: Method
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RemoveModifier
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: public void RemoveModifier(ValueModifier<T> modifier)
+    parameters:
+    - id: modifier
+      type: SombraStudios.Utility.Values.ValueModifier{{T}}
+    content.vb: Public Sub RemoveModifier(modifier As ValueModifier(Of T))
+  overload: SombraStudios.Utility.Values.Value`1.RemoveModifier*
+  nameWithType.vb: Value(Of T).RemoveModifier(ValueModifier(Of T))
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).RemoveModifier(SombraStudios.Utility.Values.ValueModifier(Of T))
+  name.vb: RemoveModifier(ValueModifier(Of T))
+- uid: SombraStudios.Utility.Values.Value`1.CalculateFinalValue
+  commentId: M:SombraStudios.Utility.Values.Value`1.CalculateFinalValue
+  id: CalculateFinalValue
+  parent: SombraStudios.Utility.Values.Value`1
+  langs:
+  - csharp
+  - vb
+  name: CalculateFinalValue()
+  nameWithType: Value<T>.CalculateFinalValue()
+  fullName: SombraStudios.Utility.Values.Value<T>.CalculateFinalValue()
+  type: Method
+  source:
+    remote:
+      path: WIP/Value Modifier/GenericValueModifier/Value.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CalculateFinalValue
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/GenericValueModifier/Value.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utility.Values
+  syntax:
+    content: protected abstract T CalculateFinalValue()
+    return:
+      type: '{T}'
+    content.vb: Protected MustOverride Function CalculateFinalValue() As T
+  overload: SombraStudios.Utility.Values.Value`1.CalculateFinalValue*
+  nameWithType.vb: Value(Of T).CalculateFinalValue()
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).CalculateFinalValue()
+references:
+- uid: SombraStudios.Utility.Values
+  commentId: N:SombraStudios.Utility.Values
+  href: SombraStudios.html
+  name: SombraStudios.Utility.Values
+  nameWithType: SombraStudios.Utility.Values
+  fullName: SombraStudios.Utility.Values
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Utility
+    name: Utility
+    href: SombraStudios.Utility.html
+  - name: .
+  - uid: SombraStudios.Utility.Values
+    name: Values
+    href: SombraStudios.Utility.Values.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Utility
+    name: Utility
+    href: SombraStudios.Utility.html
+  - name: .
+  - uid: SombraStudios.Utility.Values
+    name: Values
+    href: SombraStudios.Utility.Values.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Utility.Values.Value`1.FinalValue*
+  commentId: Overload:SombraStudios.Utility.Values.Value`1.FinalValue
+  href: SombraStudios.Utility.Values.Value-1.html#SombraStudios_Utility_Values_Value_1_FinalValue
+  name: FinalValue
+  nameWithType: Value<T>.FinalValue
+  fullName: SombraStudios.Utility.Values.Value<T>.FinalValue
+  nameWithType.vb: Value(Of T).FinalValue
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).FinalValue
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Utility.Values.Value`1.#ctor*
+  commentId: Overload:SombraStudios.Utility.Values.Value`1.#ctor
+  href: SombraStudios.Utility.Values.Value-1.html#SombraStudios_Utility_Values_Value_1__ctor__0_
+  name: Value
+  nameWithType: Value<T>.Value
+  fullName: SombraStudios.Utility.Values.Value<T>.Value
+  nameWithType.vb: Value(Of T).New
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).New
+  name.vb: New
+- uid: SombraStudios.Utility.Values.Value`1.GetInitialValue*
+  commentId: Overload:SombraStudios.Utility.Values.Value`1.GetInitialValue
+  href: SombraStudios.Utility.Values.Value-1.html#SombraStudios_Utility_Values_Value_1_GetInitialValue
+  name: GetInitialValue
+  nameWithType: Value<T>.GetInitialValue
+  fullName: SombraStudios.Utility.Values.Value<T>.GetInitialValue
+  nameWithType.vb: Value(Of T).GetInitialValue
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).GetInitialValue
+- uid: SombraStudios.Utility.Values.Value`1.AddModifier*
+  commentId: Overload:SombraStudios.Utility.Values.Value`1.AddModifier
+  href: SombraStudios.Utility.Values.Value-1.html#SombraStudios_Utility_Values_Value_1_AddModifier_SombraStudios_Utility_Values_ValueModifier__0__
+  name: AddModifier
+  nameWithType: Value<T>.AddModifier
+  fullName: SombraStudios.Utility.Values.Value<T>.AddModifier
+  nameWithType.vb: Value(Of T).AddModifier
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).AddModifier
+- uid: SombraStudios.Utility.Values.ValueModifier{{T}}
+  commentId: T:SombraStudios.Utility.Values.ValueModifier{`0}
+  parent: SombraStudios.Utility.Values
+  definition: SombraStudios.Utility.Values.ValueModifier`1
+  href: SombraStudios.Utility.Values.ValueModifier-1.html
+  name: ValueModifier<T>
+  nameWithType: ValueModifier<T>
+  fullName: SombraStudios.Utility.Values.ValueModifier<T>
+  nameWithType.vb: ValueModifier(Of T)
+  fullName.vb: SombraStudios.Utility.Values.ValueModifier(Of T)
+  name.vb: ValueModifier(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Utility.Values.ValueModifier`1
+    name: ValueModifier
+    href: SombraStudios.Utility.Values.ValueModifier-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Utility.Values.ValueModifier`1
+    name: ValueModifier
+    href: SombraStudios.Utility.Values.ValueModifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Utility.Values.ValueModifier`1
+  commentId: T:SombraStudios.Utility.Values.ValueModifier`1
+  href: SombraStudios.Utility.Values.ValueModifier-1.html
+  name: ValueModifier<T>
+  nameWithType: ValueModifier<T>
+  fullName: SombraStudios.Utility.Values.ValueModifier<T>
+  nameWithType.vb: ValueModifier(Of T)
+  fullName.vb: SombraStudios.Utility.Values.ValueModifier(Of T)
+  name.vb: ValueModifier(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Utility.Values.ValueModifier`1
+    name: ValueModifier
+    href: SombraStudios.Utility.Values.ValueModifier-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Utility.Values.ValueModifier`1
+    name: ValueModifier
+    href: SombraStudios.Utility.Values.ValueModifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Utility.Values.Value`1.RemoveModifier*
+  commentId: Overload:SombraStudios.Utility.Values.Value`1.RemoveModifier
+  href: SombraStudios.Utility.Values.Value-1.html#SombraStudios_Utility_Values_Value_1_RemoveModifier_SombraStudios_Utility_Values_ValueModifier__0__
+  name: RemoveModifier
+  nameWithType: Value<T>.RemoveModifier
+  fullName: SombraStudios.Utility.Values.Value<T>.RemoveModifier
+  nameWithType.vb: Value(Of T).RemoveModifier
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).RemoveModifier
+- uid: SombraStudios.Utility.Values.Value`1.CalculateFinalValue*
+  commentId: Overload:SombraStudios.Utility.Values.Value`1.CalculateFinalValue
+  href: SombraStudios.Utility.Values.Value-1.html#SombraStudios_Utility_Values_Value_1_CalculateFinalValue
+  name: CalculateFinalValue
+  nameWithType: Value<T>.CalculateFinalValue
+  fullName: SombraStudios.Utility.Values.Value<T>.CalculateFinalValue
+  nameWithType.vb: Value(Of T).CalculateFinalValue
+  fullName.vb: SombraStudios.Utility.Values.Value(Of T).CalculateFinalValue

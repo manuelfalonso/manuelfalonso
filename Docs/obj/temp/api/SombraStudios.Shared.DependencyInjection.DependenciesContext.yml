@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesContext
+  commentId: T:SombraStudios.Shared.DependencyInjection.DependenciesContext
+  id: DependenciesContext
+  parent: SombraStudios.Shared.DependencyInjection
+  children:
+  - SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure
+  - SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup
+  - SombraStudios.Shared.DependencyInjection.DependenciesContext.dependenciesCollection
+  langs:
+  - csharp
+  - vb
+  name: DependenciesContext
+  nameWithType: DependenciesContext
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesContext
+  type: Class
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesContext.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DependenciesContext
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesContext.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  summary: >-
+    Acts as a container of dependencies
+
+    Due to the DontDestroyOnLoad it should be as root object
+
+    Dependant object (with InjectField attribute) should be its 
+
+    childs or inside this same GameObject to work properly
+  example: []
+  syntax:
+    content: >-
+      [DefaultExecutionOrder(-1)]
+
+      public abstract class DependenciesContext : MonoBehaviour
+    content.vb: >-
+      <DefaultExecutionOrder(-1)>
+
+      Public MustInherit Class DependenciesContext Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - SombraStudios.Shared.DependencyInjection.Example.ExampleDependenciesContext
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  attributes:
+  - type: UnityEngine.DefaultExecutionOrder
+    ctor: UnityEngine.DefaultExecutionOrder.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: -1
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesContext.dependenciesCollection
+  commentId: F:SombraStudios.Shared.DependencyInjection.DependenciesContext.dependenciesCollection
+  id: dependenciesCollection
+  parent: SombraStudios.Shared.DependencyInjection.DependenciesContext
+  langs:
+  - csharp
+  - vb
+  name: dependenciesCollection
+  nameWithType: DependenciesContext.dependenciesCollection
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesContext.dependenciesCollection
+  type: Field
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesContext.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: dependenciesCollection
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesContext.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  syntax:
+    content: protected DependenciesCollection dependenciesCollection
+    return:
+      type: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+    content.vb: Protected dependenciesCollection As DependenciesCollection
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup
+  id: Setup
+  parent: SombraStudios.Shared.DependencyInjection.DependenciesContext
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: DependenciesContext.Setup()
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesContext.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Setup
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesContext.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  syntax:
+    content: protected abstract void Setup()
+    content.vb: Protected MustOverride Sub Setup()
+  overload: SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup*
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure
+  id: Configure
+  parent: SombraStudios.Shared.DependencyInjection.DependenciesContext
+  langs:
+  - csharp
+  - vb
+  name: Configure()
+  nameWithType: DependenciesContext.Configure()
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesContext.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Configure
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesContext.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  syntax:
+    content: protected abstract void Configure()
+    content.vb: Protected MustOverride Sub Configure()
+  overload: SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure*
+references:
+- uid: SombraStudios.Shared.DependencyInjection
+  commentId: N:SombraStudios.Shared.DependencyInjection
+  href: SombraStudios.html
+  name: SombraStudios.Shared.DependencyInjection
+  nameWithType: SombraStudios.Shared.DependencyInjection
+  fullName: SombraStudios.Shared.DependencyInjection
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.DependencyInjection.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.DependencyInjection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  commentId: T:SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  parent: SombraStudios.Shared.DependencyInjection
+  href: SombraStudios.Shared.DependencyInjection.DependenciesCollection.html
+  name: DependenciesCollection
+  nameWithType: DependenciesCollection
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup
+  href: SombraStudios.Shared.DependencyInjection.DependenciesContext.html#SombraStudios_Shared_DependencyInjection_DependenciesContext_Setup
+  name: Setup
+  nameWithType: DependenciesContext.Setup
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesContext.Setup
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure
+  href: SombraStudios.Shared.DependencyInjection.DependenciesContext.html#SombraStudios_Shared_DependencyInjection_DependenciesContext_Configure
+  name: Configure
+  nameWithType: DependenciesContext.Configure
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesContext.Configure

@@ -1,0 +1,230 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.ValueModifier.Modifier
+  commentId: T:SombraStudios.ValueModifier.Modifier
+  id: Modifier
+  parent: SombraStudios.ValueModifier
+  children:
+  - SombraStudios.ValueModifier.Modifier.Apply(System.Single)
+  - SombraStudios.ValueModifier.Modifier.Duration
+  - SombraStudios.ValueModifier.Modifier.ElapsedDuration
+  - SombraStudios.ValueModifier.Modifier._value
+  langs:
+  - csharp
+  - vb
+  name: Modifier
+  nameWithType: Modifier
+  fullName: SombraStudios.ValueModifier.Modifier
+  type: Class
+  source:
+    remote:
+      path: WIP/Stat/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Modifier
+    path: ../Assets/Sombra Studios/Shared/WIP/Stat/Value Modifier/Modifier.cs
+    startLine: 2
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.ValueModifier
+  syntax:
+    content: public abstract class Modifier
+    content.vb: Public MustInherit Class Modifier
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SombraStudios.ValueModifier.AddModifier
+  - SombraStudios.ValueModifier.DecreaseOverTimeModifier
+  - SombraStudios.ValueModifier.DivideModifier
+  - SombraStudios.ValueModifier.IncreaseOverTimeModifier
+  - SombraStudios.ValueModifier.MultiplyModifier
+  - SombraStudios.ValueModifier.SubstractModifier
+- uid: SombraStudios.ValueModifier.Modifier.ElapsedDuration
+  commentId: P:SombraStudios.ValueModifier.Modifier.ElapsedDuration
+  id: ElapsedDuration
+  parent: SombraStudios.ValueModifier.Modifier
+  langs:
+  - csharp
+  - vb
+  name: ElapsedDuration
+  nameWithType: Modifier.ElapsedDuration
+  fullName: SombraStudios.ValueModifier.Modifier.ElapsedDuration
+  type: Property
+  source:
+    remote:
+      path: WIP/Stat/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ElapsedDuration
+    path: ../Assets/Sombra Studios/Shared/WIP/Stat/Value Modifier/Modifier.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.ValueModifier
+  syntax:
+    content: public float ElapsedDuration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property ElapsedDuration As Single
+  overload: SombraStudios.ValueModifier.Modifier.ElapsedDuration*
+- uid: SombraStudios.ValueModifier.Modifier.Duration
+  commentId: P:SombraStudios.ValueModifier.Modifier.Duration
+  id: Duration
+  parent: SombraStudios.ValueModifier.Modifier
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Modifier.Duration
+  fullName: SombraStudios.ValueModifier.Modifier.Duration
+  type: Property
+  source:
+    remote:
+      path: WIP/Stat/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Duration
+    path: ../Assets/Sombra Studios/Shared/WIP/Stat/Value Modifier/Modifier.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.ValueModifier
+  syntax:
+    content: public float Duration { get; protected set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Duration As Single
+  overload: SombraStudios.ValueModifier.Modifier.Duration*
+- uid: SombraStudios.ValueModifier.Modifier._value
+  commentId: F:SombraStudios.ValueModifier.Modifier._value
+  id: _value
+  parent: SombraStudios.ValueModifier.Modifier
+  langs:
+  - csharp
+  - vb
+  name: _value
+  nameWithType: Modifier._value
+  fullName: SombraStudios.ValueModifier.Modifier._value
+  type: Field
+  source:
+    remote:
+      path: WIP/Stat/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _value
+    path: ../Assets/Sombra Studios/Shared/WIP/Stat/Value Modifier/Modifier.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.ValueModifier
+  syntax:
+    content: protected float _value
+    return:
+      type: System.Single
+    content.vb: Protected _value As Single
+- uid: SombraStudios.ValueModifier.Modifier.Apply(System.Single)
+  commentId: M:SombraStudios.ValueModifier.Modifier.Apply(System.Single)
+  id: Apply(System.Single)
+  parent: SombraStudios.ValueModifier.Modifier
+  langs:
+  - csharp
+  - vb
+  name: Apply(float)
+  nameWithType: Modifier.Apply(float)
+  fullName: SombraStudios.ValueModifier.Modifier.Apply(float)
+  type: Method
+  source:
+    remote:
+      path: WIP/Stat/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Apply
+    path: ../Assets/Sombra Studios/Shared/WIP/Stat/Value Modifier/Modifier.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.ValueModifier
+  syntax:
+    content: public abstract float Apply(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public MustOverride Function Apply(value As Single) As Single
+  overload: SombraStudios.ValueModifier.Modifier.Apply*
+  nameWithType.vb: Modifier.Apply(Single)
+  fullName.vb: SombraStudios.ValueModifier.Modifier.Apply(Single)
+  name.vb: Apply(Single)
+references:
+- uid: SombraStudios.ValueModifier
+  commentId: N:SombraStudios.ValueModifier
+  href: SombraStudios.html
+  name: SombraStudios.ValueModifier
+  nameWithType: SombraStudios.ValueModifier
+  fullName: SombraStudios.ValueModifier
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.ValueModifier
+    name: ValueModifier
+    href: SombraStudios.ValueModifier.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.ValueModifier
+    name: ValueModifier
+    href: SombraStudios.ValueModifier.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.ValueModifier.Modifier.ElapsedDuration*
+  commentId: Overload:SombraStudios.ValueModifier.Modifier.ElapsedDuration
+  href: SombraStudios.ValueModifier.Modifier.html#SombraStudios_ValueModifier_Modifier_ElapsedDuration
+  name: ElapsedDuration
+  nameWithType: Modifier.ElapsedDuration
+  fullName: SombraStudios.ValueModifier.Modifier.ElapsedDuration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.ValueModifier.Modifier.Duration*
+  commentId: Overload:SombraStudios.ValueModifier.Modifier.Duration
+  href: SombraStudios.ValueModifier.Modifier.html#SombraStudios_ValueModifier_Modifier_Duration
+  name: Duration
+  nameWithType: Modifier.Duration
+  fullName: SombraStudios.ValueModifier.Modifier.Duration
+- uid: SombraStudios.ValueModifier.Modifier.Apply*
+  commentId: Overload:SombraStudios.ValueModifier.Modifier.Apply
+  href: SombraStudios.ValueModifier.Modifier.html#SombraStudios_ValueModifier_Modifier_Apply_System_Single_
+  name: Apply
+  nameWithType: Modifier.Apply
+  fullName: SombraStudios.ValueModifier.Modifier.Apply

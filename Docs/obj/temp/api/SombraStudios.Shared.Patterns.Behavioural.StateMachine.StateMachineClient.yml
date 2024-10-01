@@ -1,0 +1,528 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  id: StateMachineClient
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient._stateMachine
+  langs:
+  - csharp
+  - vb
+  name: StateMachineClient
+  nameWithType: StateMachineClient
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StateMachineClient
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Base class for objects that use a state machine.
+  example: []
+  syntax:
+    content: 'public abstract class StateMachineClient : MonoBehaviour'
+    content.vb: Public MustInherit Class StateMachineClient Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient._stateMachine
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient._stateMachine
+  id: _stateMachine
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: _stateMachine
+  nameWithType: StateMachineClient._stateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient._stateMachine
+  type: Field
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _stateMachine
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  syntax:
+    content: protected StateMachine _stateMachine
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachine
+    content.vb: Protected _stateMachine As StateMachine
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start
+  id: Start
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: StateMachineClient.Start()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Start
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  syntax:
+    content: protected virtual void Start()
+    content.vb: Protected Overridable Sub Start()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start*
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update
+  id: Update
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: StateMachineClient.Update()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Update
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  syntax:
+    content: protected virtual void Update()
+    content.vb: Protected Overridable Sub Update()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update*
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate
+  id: FixedUpdate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: FixedUpdate()
+  nameWithType: StateMachineClient.FixedUpdate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FixedUpdate
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  syntax:
+    content: protected virtual void FixedUpdate()
+    content.vb: Protected Overridable Sub FixedUpdate()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate*
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine
+  id: SetUpStateMachine
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: SetUpStateMachine()
+  nameWithType: StateMachineClient.SetUpStateMachine()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetUpStateMachine
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Sets up the state machine with transitions and states.
+  example: []
+  syntax:
+    content: protected abstract void SetUpStateMachine()
+    content.vb: Protected MustOverride Sub SetUpStateMachine()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine*
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  id: At(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: At(IState, IState, IPredicate)
+  nameWithType: StateMachineClient.At(IState, IState, IPredicate)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: At
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Adds a transition from one state to another state based on a condition predicate.
+  example: []
+  syntax:
+    content: protected void At(IState from, IState to, IPredicate condition)
+    parameters:
+    - id: from
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+    - id: to
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+    - id: condition
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+    content.vb: Protected Sub At(from As IState, [to] As IState, condition As IPredicate)
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At*
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  id: Any(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient
+  langs:
+  - csharp
+  - vb
+  name: Any(IState, IPredicate)
+  nameWithType: StateMachineClient.Any(IState, IPredicate)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/StateMachineClient.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Any
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/StateMachineClient.cs
+    startLine: 41
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Adds a transition from any state to a specific state based on a condition predicate.
+  example: []
+  syntax:
+    content: protected void Any(IState to, IPredicate condition)
+    parameters:
+    - id: to
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+    - id: condition
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+    content.vb: Protected Sub Any([to] As IState, condition As IPredicate)
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+    name: StateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+    name: StateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachine
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachine
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachine.html
+  name: StateMachine
+  nameWithType: StateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachine
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_StateMachineClient_Start
+  name: Start
+  nameWithType: StateMachineClient.Start
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Start
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_StateMachineClient_Update
+  name: Update
+  nameWithType: StateMachineClient.Update
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Update
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_StateMachineClient_FixedUpdate
+  name: FixedUpdate
+  nameWithType: StateMachineClient.FixedUpdate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.FixedUpdate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_StateMachineClient_SetUpStateMachine
+  name: SetUpStateMachine
+  nameWithType: StateMachineClient.SetUpStateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.SetUpStateMachine
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_StateMachineClient_At_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IPredicate_
+  name: At
+  nameWithType: StateMachineClient.At
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.At
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate.html
+  name: IPredicate
+  nameWithType: IPredicate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_StateMachineClient_Any_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IPredicate_
+  name: Any
+  nameWithType: StateMachineClient.Any
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.StateMachineClient.Any

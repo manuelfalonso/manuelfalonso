@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.XR.Content.Interaction.Lock
+  commentId: T:UnityEngine.XR.Content.Interaction.Lock
+  id: Lock
+  parent: UnityEngine.XR.Content.Interaction
+  children:
+  - UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  - UnityEngine.XR.Content.Interaction.Lock.RequiredKeys
+  langs:
+  - csharp
+  - vb
+  name: Lock
+  nameWithType: Lock
+  fullName: UnityEngine.XR.Content.Interaction.Lock
+  type: Class
+  source:
+    remote:
+      path: XR/Key Lock System/Lock.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Lock
+    path: ../Assets/Sombra Studios/Shared/XR/Key Lock System/Lock.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: UnityEngine.XR.Content.Interaction
+  summary: >-
+    Use this object as a generic way to validate if an object can perform some action.
+
+    The check is done in the <xref href="UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)" data-throw-if-not-resolved="false"></xref> method.
+
+    This class is used in combination with a <xref href="UnityEngine.XR.Content.Interaction.Keychain" data-throw-if-not-resolved="false"></xref> component.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Lock
+    content.vb: >-
+      <Serializable>
+
+      Public Class Lock
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.XR.Content.Interaction.Lock.RequiredKeys
+  commentId: P:UnityEngine.XR.Content.Interaction.Lock.RequiredKeys
+  id: RequiredKeys
+  parent: UnityEngine.XR.Content.Interaction.Lock
+  langs:
+  - csharp
+  - vb
+  name: RequiredKeys
+  nameWithType: Lock.RequiredKeys
+  fullName: UnityEngine.XR.Content.Interaction.Lock.RequiredKeys
+  type: Property
+  source:
+    remote:
+      path: XR/Key Lock System/Lock.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RequiredKeys
+    path: ../Assets/Sombra Studios/Shared/XR/Key Lock System/Lock.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: UnityEngine.XR.Content.Interaction
+  summary: Returns the required keys to unlock this lock.
+  example: []
+  syntax:
+    content: public List<Key> RequiredKeys { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{UnityEngine.XR.Content.Interaction.Key}
+    content.vb: Public ReadOnly Property RequiredKeys As List(Of Key)
+  overload: UnityEngine.XR.Content.Interaction.Lock.RequiredKeys*
+- uid: UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  commentId: M:UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  id: CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  parent: UnityEngine.XR.Content.Interaction.Lock
+  langs:
+  - csharp
+  - vb
+  name: CanUnlock(IKeychain)
+  nameWithType: Lock.CanUnlock(IKeychain)
+  fullName: UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  type: Method
+  source:
+    remote:
+      path: XR/Key Lock System/Lock.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanUnlock
+    path: ../Assets/Sombra Studios/Shared/XR/Key Lock System/Lock.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: UnityEngine.XR.Content.Interaction
+  summary: Checks if the supplied keychain has all the required keys to open this lock.
+  example: []
+  syntax:
+    content: public bool CanUnlock(IKeychain keychain)
+    parameters:
+    - id: keychain
+      type: UnityEngine.XR.Content.Interaction.IKeychain
+      description: The keychain to be checked.
+    return:
+      type: System.Boolean
+      description: True if the supplied keychain has all the required keys; false otherwise.
+    content.vb: Public Function CanUnlock(keychain As IKeychain) As Boolean
+  overload: UnityEngine.XR.Content.Interaction.Lock.CanUnlock*
+references:
+- uid: UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  commentId: M:UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  href: UnityEngine.XR.Content.Interaction.Lock.html#UnityEngine_XR_Content_Interaction_Lock_CanUnlock_UnityEngine_XR_Content_Interaction_IKeychain_
+  name: CanUnlock(IKeychain)
+  nameWithType: Lock.CanUnlock(IKeychain)
+  fullName: UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+  spec.csharp:
+  - uid: UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+    name: CanUnlock
+    href: UnityEngine.XR.Content.Interaction.Lock.html#UnityEngine_XR_Content_Interaction_Lock_CanUnlock_UnityEngine_XR_Content_Interaction_IKeychain_
+  - name: (
+  - uid: UnityEngine.XR.Content.Interaction.IKeychain
+    name: IKeychain
+    href: UnityEngine.XR.Content.Interaction.IKeychain.html
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Content.Interaction.Lock.CanUnlock(UnityEngine.XR.Content.Interaction.IKeychain)
+    name: CanUnlock
+    href: UnityEngine.XR.Content.Interaction.Lock.html#UnityEngine_XR_Content_Interaction_Lock_CanUnlock_UnityEngine_XR_Content_Interaction_IKeychain_
+  - name: (
+  - uid: UnityEngine.XR.Content.Interaction.IKeychain
+    name: IKeychain
+    href: UnityEngine.XR.Content.Interaction.IKeychain.html
+  - name: )
+- uid: UnityEngine.XR.Content.Interaction.Keychain
+  commentId: T:UnityEngine.XR.Content.Interaction.Keychain
+  href: UnityEngine.XR.Content.Interaction.Keychain.html
+  name: Keychain
+  nameWithType: Keychain
+  fullName: UnityEngine.XR.Content.Interaction.Keychain
+- uid: UnityEngine.XR.Content.Interaction
+  commentId: N:UnityEngine.XR.Content.Interaction
+  href: UnityEngine.html
+  name: UnityEngine.XR.Content.Interaction
+  nameWithType: UnityEngine.XR.Content.Interaction
+  fullName: UnityEngine.XR.Content.Interaction
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.Content
+    name: Content
+    href: UnityEngine.XR.Content.html
+  - name: .
+  - uid: UnityEngine.XR.Content.Interaction
+    name: Interaction
+    href: UnityEngine.XR.Content.Interaction.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    href: UnityEngine.XR.html
+  - name: .
+  - uid: UnityEngine.XR.Content
+    name: Content
+    href: UnityEngine.XR.Content.html
+  - name: .
+  - uid: UnityEngine.XR.Content.Interaction
+    name: Interaction
+    href: UnityEngine.XR.Content.Interaction.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.XR.Content.Interaction.Lock.RequiredKeys*
+  commentId: Overload:UnityEngine.XR.Content.Interaction.Lock.RequiredKeys
+  href: UnityEngine.XR.Content.Interaction.Lock.html#UnityEngine_XR_Content_Interaction_Lock_RequiredKeys
+  name: RequiredKeys
+  nameWithType: Lock.RequiredKeys
+  fullName: UnityEngine.XR.Content.Interaction.Lock.RequiredKeys
+- uid: System.Collections.Generic.List{UnityEngine.XR.Content.Interaction.Key}
+  commentId: T:System.Collections.Generic.List{UnityEngine.XR.Content.Interaction.Key}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Key>
+  nameWithType: List<Key>
+  fullName: System.Collections.Generic.List<UnityEngine.XR.Content.Interaction.Key>
+  nameWithType.vb: List(Of Key)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.XR.Content.Interaction.Key)
+  name.vb: List(Of Key)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.XR.Content.Interaction.Key
+    name: Key
+    href: UnityEngine.XR.Content.Interaction.Key.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.XR.Content.Interaction.Key
+    name: Key
+    href: UnityEngine.XR.Content.Interaction.Key.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.XR.Content.Interaction.Lock.CanUnlock*
+  commentId: Overload:UnityEngine.XR.Content.Interaction.Lock.CanUnlock
+  href: UnityEngine.XR.Content.Interaction.Lock.html#UnityEngine_XR_Content_Interaction_Lock_CanUnlock_UnityEngine_XR_Content_Interaction_IKeychain_
+  name: CanUnlock
+  nameWithType: Lock.CanUnlock
+  fullName: UnityEngine.XR.Content.Interaction.Lock.CanUnlock
+- uid: UnityEngine.XR.Content.Interaction.IKeychain
+  commentId: T:UnityEngine.XR.Content.Interaction.IKeychain
+  parent: UnityEngine.XR.Content.Interaction
+  href: UnityEngine.XR.Content.Interaction.IKeychain.html
+  name: IKeychain
+  nameWithType: IKeychain
+  fullName: UnityEngine.XR.Content.Interaction.IKeychain
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

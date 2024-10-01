@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  id: CCSource
+  parent: SombraStudios.Shared.Systems.CloseCaptions
+  children:
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.AlwaysTracked
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.CanvasPrefab
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.MaxDistance
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Scale
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine(System.String)
+  langs:
+  - csharp
+  - vb
+  name: CCSource
+  nameWithType: CCSource
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  type: Class
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CCSource
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  summary: >-
+    If an object with an AudioSource have a CCSource, it will be tracked by the CCManager and its current playing clip
+
+    will be lookup on the current CCManager's CCDatabase so the right line can be displayed for the current play time
+  example: []
+  syntax:
+    content: >-
+      [RequireComponent(typeof(AudioSource))]
+
+      public class CCSource : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(AudioSource))>
+
+      Public Class CCSource Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.AudioSource
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.CanvasPrefab
+  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCSource.CanvasPrefab
+  id: CanvasPrefab
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: CanvasPrefab
+  nameWithType: CCSource.CanvasPrefab
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.CanvasPrefab
+  type: Field
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanvasPrefab
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public CCCanvas CanvasPrefab
+    return:
+      type: SombraStudios.Shared.Systems.CloseCaptions.CCCanvas
+    content.vb: Public CanvasPrefab As CCCanvas
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.AlwaysTracked
+  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCSource.AlwaysTracked
+  id: AlwaysTracked
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: AlwaysTracked
+  nameWithType: CCSource.AlwaysTracked
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.AlwaysTracked
+  type: Field
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AlwaysTracked
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public bool AlwaysTracked
+    return:
+      type: System.Boolean
+    content.vb: Public AlwaysTracked As Boolean
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.MaxDistance
+  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCSource.MaxDistance
+  id: MaxDistance
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: MaxDistance
+  nameWithType: CCSource.MaxDistance
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.MaxDistance
+  type: Field
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxDistance
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public float MaxDistance
+    return:
+      type: System.Single
+    content.vb: Public MaxDistance As Single
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Scale
+  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Scale
+  id: Scale
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: Scale
+  nameWithType: CCSource.Scale
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Scale
+  type: Field
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Scale
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public float Scale
+    return:
+      type: System.Single
+    content.vb: Public Scale As Single
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
+  commentId: P:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
+  id: Displayed
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: Displayed
+  nameWithType: CCSource.Displayed
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
+  type: Property
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Displayed
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public bool Displayed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Displayed As Boolean
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed*
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
+  commentId: P:SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
+  id: IsPlaying
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: IsPlaying
+  nameWithType: CCSource.IsPlaying
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
+  type: Property
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsPlaying
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public bool IsPlaying { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPlaying As Boolean
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying*
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  id: Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: Display(Vector3, CCDatabase)
+  nameWithType: CCSource.Display(Vector3, CCDatabase)
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3, SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  type: Method
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Display
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public void Display(Vector3 toCamera, CCDatabase database)
+    parameters:
+    - id: toCamera
+      type: UnityEngine.Vector3
+    - id: database
+      type: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+    content.vb: Public Sub Display(toCamera As Vector3, database As CCDatabase)
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display*
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
+  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
+  id: Hide
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: Hide()
+  nameWithType: CCSource.Hide()
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide()
+  type: Method
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Hide
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 60
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public void Hide()
+    content.vb: Public Sub Hide()
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide*
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine(System.String)
+  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine(System.String)
+  id: SetLine(System.String)
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
+  langs:
+  - csharp
+  - vb
+  name: SetLine(string)
+  nameWithType: CCSource.SetLine(string)
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine(string)
+  type: Method
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCSource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetLine
+    path: ../Assets/Sombra Studios/Shared/Systems/CloseCaptions/CCSource.cs
+    startLine: 66
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public void SetLine(string line)
+    parameters:
+    - id: line
+      type: System.String
+    content.vb: Public Sub SetLine(line As String)
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine*
+  nameWithType.vb: CCSource.SetLine(String)
+  fullName.vb: SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine(String)
+  name.vb: SetLine(String)
+references:
+- uid: SombraStudios.Shared.Systems.CloseCaptions
+  commentId: N:SombraStudios.Shared.Systems.CloseCaptions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.CloseCaptions
+  nameWithType: SombraStudios.Shared.Systems.CloseCaptions
+  fullName: SombraStudios.Shared.Systems.CloseCaptions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.CloseCaptions
+    name: CloseCaptions
+    href: SombraStudios.Shared.Systems.CloseCaptions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.CloseCaptions
+    name: CloseCaptions
+    href: SombraStudios.Shared.Systems.CloseCaptions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCCanvas
+  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCCanvas
+  parent: SombraStudios.Shared.Systems.CloseCaptions
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCCanvas.html
+  name: CCCanvas
+  nameWithType: CCCanvas
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCCanvas
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_Displayed
+  name: Displayed
+  nameWithType: CCSource.Displayed
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_IsPlaying
+  name: IsPlaying
+  nameWithType: CCSource.IsPlaying
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_Display_UnityEngine_Vector3_SombraStudios_Shared_Systems_CloseCaptions_CCDatabase_
+  name: Display
+  nameWithType: CCSource.Display
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+  parent: SombraStudios.Shared.Systems.CloseCaptions
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase.html
+  name: CCDatabase
+  nameWithType: CCDatabase
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_Hide
+  name: Hide
+  nameWithType: CCSource.Hide
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_SetLine_System_String_
+  name: SetLine
+  nameWithType: CCSource.SetLine
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.SetLine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

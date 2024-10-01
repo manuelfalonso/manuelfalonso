@@ -1,0 +1,292 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  commentId: T:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  id: DependenciesProvider
+  parent: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  children:
+  - SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.#ctor(SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection)
+  - SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get(System.Type)
+  - SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get``1
+  - SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: DependenciesProvider
+  nameWithType: DependenciesProvider
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  type: Class
+  source:
+    remote:
+      path: Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DependenciesProvider
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  summary: Provides dependency injection functionality for creating and managing objects.
+  example: []
+  syntax:
+    content: public class DependenciesProvider
+    content.vb: Public Class DependenciesProvider
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.#ctor(SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.#ctor(SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection)
+  id: '#ctor(SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection)'
+  parent: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  langs:
+  - csharp
+  - vb
+  name: DependenciesProvider(DependenciesCollection)
+  nameWithType: DependenciesProvider.DependenciesProvider(DependenciesCollection)
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.DependenciesProvider(SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection)
+  type: Constructor
+  source:
+    remote:
+      path: Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  summary: Initializes a new instance of the DependenciesProvider class with the specified dependencies.
+  example: []
+  syntax:
+    content: public DependenciesProvider(DependenciesCollection dependencies)
+    parameters:
+    - id: dependencies
+      type: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection
+      description: The collection of dependencies to be registered.
+    content.vb: Public Sub New(dependencies As DependenciesCollection)
+  overload: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.#ctor*
+  nameWithType.vb: DependenciesProvider.New(DependenciesCollection)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.New(SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection)
+  name.vb: New(DependenciesCollection)
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get(System.Type)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get(System.Type)
+  id: Get(System.Type)
+  parent: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  langs:
+  - csharp
+  - vb
+  name: Get(Type)
+  nameWithType: DependenciesProvider.Get(Type)
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Get
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  summary: Retrieves an instance of the specified type from the registered dependencies.
+  example: []
+  syntax:
+    content: public object Get(Type type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type of the object to retrieve.
+    return:
+      type: System.Object
+      description: An instance of the specified type.
+    content.vb: Public Function [Get](type As Type) As Object
+  overload: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get*
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get``1
+  commentId: M:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get``1
+  id: Get``1
+  parent: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  langs:
+  - csharp
+  - vb
+  name: Get<T>()
+  nameWithType: DependenciesProvider.Get<T>()
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get<T>()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Get
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+    startLine: 58
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  summary: Retrieves an instance of the specified generic type from the registered dependencies.
+  example: []
+  syntax:
+    content: public T Get<T>()
+    typeParameters:
+    - id: T
+      description: The type of the object to retrieve.
+    return:
+      type: '{T}'
+      description: An instance of the specified generic type.
+    content.vb: Public Function [Get](Of T)() As T
+  overload: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get*
+  nameWithType.vb: DependenciesProvider.Get(Of T)()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get(Of T)()
+  name.vb: Get(Of T)()
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject(System.Object)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject(System.Object)
+  id: Inject(System.Object)
+  parent: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider
+  langs:
+  - csharp
+  - vb
+  name: Inject(object)
+  nameWithType: DependenciesProvider.Inject(object)
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject(object)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Inject
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/DependencyInjection/DependenciesProvider.cs
+    startLine: 68
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  summary: Injects dependencies into the specified object based on fields with the InjectField attribute.
+  example: []
+  syntax:
+    content: public object Inject(object dependant)
+    parameters:
+    - id: dependant
+      type: System.Object
+      description: The object to inject dependencies into.
+    return:
+      type: System.Object
+      description: The object with injected dependencies.
+    content.vb: Public Function Inject(dependant As Object) As Object
+  overload: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject*
+  nameWithType.vb: DependenciesProvider.Inject(Object)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject(Object)
+  name.vb: Inject(Object)
+references:
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  commentId: N:SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  nameWithType: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.Patterns.Creational.DependencyInjection.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.Patterns.Creational.DependencyInjection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.#ctor*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.#ctor
+  href: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.html#SombraStudios_Shared_Patterns_Creational_DependencyInjection_DependenciesProvider__ctor_SombraStudios_Shared_Patterns_Creational_DependencyInjection_DependenciesCollection_
+  name: DependenciesProvider
+  nameWithType: DependenciesProvider.DependenciesProvider
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.DependenciesProvider
+  nameWithType.vb: DependenciesProvider.New
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.New
+  name.vb: New
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection
+  commentId: T:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection
+  parent: SombraStudios.Shared.Patterns.Creational.DependencyInjection
+  href: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection.html
+  name: DependenciesCollection
+  nameWithType: DependenciesCollection
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesCollection
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get
+  href: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.html#SombraStudios_Shared_Patterns_Creational_DependencyInjection_DependenciesProvider_Get_System_Type_
+  name: Get
+  nameWithType: DependenciesProvider.Get
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Get
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject
+  href: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.html#SombraStudios_Shared_Patterns_Creational_DependencyInjection_DependenciesProvider_Inject_System_Object_
+  name: Inject
+  nameWithType: DependenciesProvider.Inject
+  fullName: SombraStudios.Shared.Patterns.Creational.DependencyInjection.DependenciesProvider.Inject

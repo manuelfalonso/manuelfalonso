@@ -1,0 +1,425 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.CountdownTimer
+  commentId: T:SombraStudios.Shared.CountdownTimer
+  id: CountdownTimer
+  parent: SombraStudios.Shared
+  children:
+  - SombraStudios.Shared.CountdownTimer.#ctor(System.Single)
+  - SombraStudios.Shared.CountdownTimer.IsFinished
+  - SombraStudios.Shared.CountdownTimer.Tick
+  langs:
+  - csharp
+  - vb
+  name: CountdownTimer
+  nameWithType: CountdownTimer
+  fullName: SombraStudios.Shared.CountdownTimer
+  type: Class
+  source:
+    remote:
+      path: WIP/Csharp Timer/CountdownTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CountdownTimer
+    path: ../Assets/Sombra Studios/Shared/WIP/Csharp Timer/CountdownTimer.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared
+  summary: Timer that counts down from a specific value to zero.
+  example: []
+  syntax:
+    content: 'public class CountdownTimer : Timer'
+    content.vb: Public Class CountdownTimer Inherits Timer
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Timer
+  inheritedMembers:
+  - SombraStudios.Shared.Timer.CurrentTime
+  - SombraStudios.Shared.Timer.IsRunning
+  - SombraStudios.Shared.Timer.initialTime
+  - SombraStudios.Shared.Timer.Progress
+  - SombraStudios.Shared.Timer.OnTimerStart
+  - SombraStudios.Shared.Timer.OnTimerStop
+  - SombraStudios.Shared.Timer.Start
+  - SombraStudios.Shared.Timer.Stop
+  - SombraStudios.Shared.Timer.Resume
+  - SombraStudios.Shared.Timer.Pause
+  - SombraStudios.Shared.Timer.Reset
+  - SombraStudios.Shared.Timer.Reset(System.Single)
+- uid: SombraStudios.Shared.CountdownTimer.#ctor(System.Single)
+  commentId: M:SombraStudios.Shared.CountdownTimer.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: SombraStudios.Shared.CountdownTimer
+  langs:
+  - csharp
+  - vb
+  name: CountdownTimer(float)
+  nameWithType: CountdownTimer.CountdownTimer(float)
+  fullName: SombraStudios.Shared.CountdownTimer.CountdownTimer(float)
+  type: Constructor
+  source:
+    remote:
+      path: WIP/Csharp Timer/CountdownTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/WIP/Csharp Timer/CountdownTimer.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared
+  syntax:
+    content: public CountdownTimer(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Sub New(value As Single)
+  overload: SombraStudios.Shared.CountdownTimer.#ctor*
+  nameWithType.vb: CountdownTimer.New(Single)
+  fullName.vb: SombraStudios.Shared.CountdownTimer.New(Single)
+  name.vb: New(Single)
+- uid: SombraStudios.Shared.CountdownTimer.Tick
+  commentId: M:SombraStudios.Shared.CountdownTimer.Tick
+  id: Tick
+  parent: SombraStudios.Shared.CountdownTimer
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: CountdownTimer.Tick()
+  fullName: SombraStudios.Shared.CountdownTimer.Tick()
+  type: Method
+  source:
+    remote:
+      path: WIP/Csharp Timer/CountdownTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Tick
+    path: ../Assets/Sombra Studios/Shared/WIP/Csharp Timer/CountdownTimer.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared
+  example: []
+  syntax:
+    content: public override void Tick()
+    content.vb: Public Overrides Sub Tick()
+  overridden: SombraStudios.Shared.Timer.Tick
+  overload: SombraStudios.Shared.CountdownTimer.Tick*
+- uid: SombraStudios.Shared.CountdownTimer.IsFinished
+  commentId: P:SombraStudios.Shared.CountdownTimer.IsFinished
+  id: IsFinished
+  parent: SombraStudios.Shared.CountdownTimer
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: CountdownTimer.IsFinished
+  fullName: SombraStudios.Shared.CountdownTimer.IsFinished
+  type: Property
+  source:
+    remote:
+      path: WIP/Csharp Timer/CountdownTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsFinished
+    path: ../Assets/Sombra Studios/Shared/WIP/Csharp Timer/CountdownTimer.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared
+  example: []
+  syntax:
+    content: public override bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property IsFinished As Boolean
+  overridden: SombraStudios.Shared.Timer.IsFinished
+  overload: SombraStudios.Shared.CountdownTimer.IsFinished*
+references:
+- uid: SombraStudios.Shared
+  commentId: N:SombraStudios.Shared
+  href: SombraStudios.html
+  name: SombraStudios.Shared
+  nameWithType: SombraStudios.Shared
+  fullName: SombraStudios.Shared
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Timer
+  commentId: T:SombraStudios.Shared.Timer
+  parent: SombraStudios.Shared
+  href: SombraStudios.Shared.Timer.html
+  name: Timer
+  nameWithType: Timer
+  fullName: SombraStudios.Shared.Timer
+- uid: SombraStudios.Shared.Timer.CurrentTime
+  commentId: P:SombraStudios.Shared.Timer.CurrentTime
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_CurrentTime
+  name: CurrentTime
+  nameWithType: Timer.CurrentTime
+  fullName: SombraStudios.Shared.Timer.CurrentTime
+- uid: SombraStudios.Shared.Timer.IsRunning
+  commentId: P:SombraStudios.Shared.Timer.IsRunning
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_IsRunning
+  name: IsRunning
+  nameWithType: Timer.IsRunning
+  fullName: SombraStudios.Shared.Timer.IsRunning
+- uid: SombraStudios.Shared.Timer.initialTime
+  commentId: F:SombraStudios.Shared.Timer.initialTime
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_initialTime
+  name: initialTime
+  nameWithType: Timer.initialTime
+  fullName: SombraStudios.Shared.Timer.initialTime
+- uid: SombraStudios.Shared.Timer.Progress
+  commentId: P:SombraStudios.Shared.Timer.Progress
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Progress
+  name: Progress
+  nameWithType: Timer.Progress
+  fullName: SombraStudios.Shared.Timer.Progress
+- uid: SombraStudios.Shared.Timer.OnTimerStart
+  commentId: F:SombraStudios.Shared.Timer.OnTimerStart
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_OnTimerStart
+  name: OnTimerStart
+  nameWithType: Timer.OnTimerStart
+  fullName: SombraStudios.Shared.Timer.OnTimerStart
+- uid: SombraStudios.Shared.Timer.OnTimerStop
+  commentId: F:SombraStudios.Shared.Timer.OnTimerStop
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_OnTimerStop
+  name: OnTimerStop
+  nameWithType: Timer.OnTimerStop
+  fullName: SombraStudios.Shared.Timer.OnTimerStop
+- uid: SombraStudios.Shared.Timer.Start
+  commentId: M:SombraStudios.Shared.Timer.Start
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Start
+  name: Start()
+  nameWithType: Timer.Start()
+  fullName: SombraStudios.Shared.Timer.Start()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Start
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Timer.Stop
+  commentId: M:SombraStudios.Shared.Timer.Stop
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Stop
+  name: Stop()
+  nameWithType: Timer.Stop()
+  fullName: SombraStudios.Shared.Timer.Stop()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Stop
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Timer.Resume
+  commentId: M:SombraStudios.Shared.Timer.Resume
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Resume
+  name: Resume()
+  nameWithType: Timer.Resume()
+  fullName: SombraStudios.Shared.Timer.Resume()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Resume
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Timer.Pause
+  commentId: M:SombraStudios.Shared.Timer.Pause
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Pause
+  name: Pause()
+  nameWithType: Timer.Pause()
+  fullName: SombraStudios.Shared.Timer.Pause()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Pause
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Timer.Reset
+  commentId: M:SombraStudios.Shared.Timer.Reset
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Reset
+  name: Reset()
+  nameWithType: Timer.Reset()
+  fullName: SombraStudios.Shared.Timer.Reset()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Reset
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Timer.Reset(System.Single)
+  commentId: M:SombraStudios.Shared.Timer.Reset(System.Single)
+  parent: SombraStudios.Shared.Timer
+  isExternal: true
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Reset_System_Single_
+  name: Reset(float)
+  nameWithType: Timer.Reset(float)
+  fullName: SombraStudios.Shared.Timer.Reset(float)
+  nameWithType.vb: Timer.Reset(Single)
+  fullName.vb: SombraStudios.Shared.Timer.Reset(Single)
+  name.vb: Reset(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.CountdownTimer.#ctor*
+  commentId: Overload:SombraStudios.Shared.CountdownTimer.#ctor
+  href: SombraStudios.Shared.CountdownTimer.html#SombraStudios_Shared_CountdownTimer__ctor_System_Single_
+  name: CountdownTimer
+  nameWithType: CountdownTimer.CountdownTimer
+  fullName: SombraStudios.Shared.CountdownTimer.CountdownTimer
+  nameWithType.vb: CountdownTimer.New
+  fullName.vb: SombraStudios.Shared.CountdownTimer.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Timer.Tick
+  commentId: M:SombraStudios.Shared.Timer.Tick
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Tick
+  name: Tick()
+  nameWithType: Timer.Tick()
+  fullName: SombraStudios.Shared.Timer.Tick()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Tick
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_Tick
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.CountdownTimer.Tick*
+  commentId: Overload:SombraStudios.Shared.CountdownTimer.Tick
+  href: SombraStudios.Shared.CountdownTimer.html#SombraStudios_Shared_CountdownTimer_Tick
+  name: Tick
+  nameWithType: CountdownTimer.Tick
+  fullName: SombraStudios.Shared.CountdownTimer.Tick
+- uid: SombraStudios.Shared.Timer.IsFinished
+  commentId: P:SombraStudios.Shared.Timer.IsFinished
+  parent: SombraStudios.Shared.Timer
+  href: SombraStudios.Shared.Timer.html#SombraStudios_Shared_Timer_IsFinished
+  name: IsFinished
+  nameWithType: Timer.IsFinished
+  fullName: SombraStudios.Shared.Timer.IsFinished
+- uid: SombraStudios.Shared.CountdownTimer.IsFinished*
+  commentId: Overload:SombraStudios.Shared.CountdownTimer.IsFinished
+  href: SombraStudios.Shared.CountdownTimer.html#SombraStudios_Shared_CountdownTimer_IsFinished
+  name: IsFinished
+  nameWithType: CountdownTimer.IsFinished
+  fullName: SombraStudios.Shared.CountdownTimer.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

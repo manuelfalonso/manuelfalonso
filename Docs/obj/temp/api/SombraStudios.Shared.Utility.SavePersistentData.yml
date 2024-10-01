@@ -1,0 +1,355 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.SavePersistentData
+  commentId: T:SombraStudios.Shared.Utility.SavePersistentData
+  id: SavePersistentData
+  parent: SombraStudios.Shared.Utility
+  children:
+  - SombraStudios.Shared.Utility.SavePersistentData.LoadColor
+  - SombraStudios.Shared.Utility.SavePersistentData.SaveColor
+  - SombraStudios.Shared.Utility.SavePersistentData.TeamColor
+  langs:
+  - csharp
+  - vb
+  name: SavePersistentData
+  nameWithType: SavePersistentData
+  fullName: SombraStudios.Shared.Utility.SavePersistentData
+  type: Class
+  source:
+    remote:
+      path: Utility/SavePersistentData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SavePersistentData
+    path: ../Assets/Sombra Studios/Shared/Utility/SavePersistentData.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  summary: >-
+    Example Class for saving persistent data during runs, re-installing or updating.
+
+    Save method can be use at inicialization and load at quit method.
+  example: []
+  syntax:
+    content: 'public class SavePersistentData : MonoBehaviour'
+    content.vb: Public Class SavePersistentData Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Utility.SavePersistentData.TeamColor
+  commentId: F:SombraStudios.Shared.Utility.SavePersistentData.TeamColor
+  id: TeamColor
+  parent: SombraStudios.Shared.Utility.SavePersistentData
+  langs:
+  - csharp
+  - vb
+  name: TeamColor
+  nameWithType: SavePersistentData.TeamColor
+  fullName: SombraStudios.Shared.Utility.SavePersistentData.TeamColor
+  type: Field
+  source:
+    remote:
+      path: Utility/SavePersistentData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TeamColor
+    path: ../Assets/Sombra Studios/Shared/Utility/SavePersistentData.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  syntax:
+    content: public Color TeamColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public TeamColor As Color
+- uid: SombraStudios.Shared.Utility.SavePersistentData.SaveColor
+  commentId: M:SombraStudios.Shared.Utility.SavePersistentData.SaveColor
+  id: SaveColor
+  parent: SombraStudios.Shared.Utility.SavePersistentData
+  langs:
+  - csharp
+  - vb
+  name: SaveColor()
+  nameWithType: SavePersistentData.SaveColor()
+  fullName: SombraStudios.Shared.Utility.SavePersistentData.SaveColor()
+  type: Method
+  source:
+    remote:
+      path: Utility/SavePersistentData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SaveColor
+    path: ../Assets/Sombra Studios/Shared/Utility/SavePersistentData.cs
+    startLine: 35
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  summary: Save serealizable data in a json file in a persistent file.
+  example: []
+  syntax:
+    content: public void SaveColor()
+    content.vb: Public Sub SaveColor()
+  overload: SombraStudios.Shared.Utility.SavePersistentData.SaveColor*
+- uid: SombraStudios.Shared.Utility.SavePersistentData.LoadColor
+  commentId: M:SombraStudios.Shared.Utility.SavePersistentData.LoadColor
+  id: LoadColor
+  parent: SombraStudios.Shared.Utility.SavePersistentData
+  langs:
+  - csharp
+  - vb
+  name: LoadColor()
+  nameWithType: SavePersistentData.LoadColor()
+  fullName: SombraStudios.Shared.Utility.SavePersistentData.LoadColor()
+  type: Method
+  source:
+    remote:
+      path: Utility/SavePersistentData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LoadColor
+    path: ../Assets/Sombra Studios/Shared/Utility/SavePersistentData.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  summary: Load serealizable data from a json file in a persistent file.
+  example: []
+  syntax:
+    content: public void LoadColor()
+    content.vb: Public Sub LoadColor()
+  overload: SombraStudios.Shared.Utility.SavePersistentData.LoadColor*
+references:
+- uid: SombraStudios.Shared.Utility
+  commentId: N:SombraStudios.Shared.Utility
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility
+  nameWithType: SombraStudios.Shared.Utility
+  fullName: SombraStudios.Shared.Utility
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: SombraStudios.Shared.Utility.SavePersistentData.SaveColor*
+  commentId: Overload:SombraStudios.Shared.Utility.SavePersistentData.SaveColor
+  href: SombraStudios.Shared.Utility.SavePersistentData.html#SombraStudios_Shared_Utility_SavePersistentData_SaveColor
+  name: SaveColor
+  nameWithType: SavePersistentData.SaveColor
+  fullName: SombraStudios.Shared.Utility.SavePersistentData.SaveColor
+- uid: SombraStudios.Shared.Utility.SavePersistentData.LoadColor*
+  commentId: Overload:SombraStudios.Shared.Utility.SavePersistentData.LoadColor
+  href: SombraStudios.Shared.Utility.SavePersistentData.html#SombraStudios_Shared_Utility_SavePersistentData_LoadColor
+  name: LoadColor
+  nameWithType: SavePersistentData.LoadColor
+  fullName: SombraStudios.Shared.Utility.SavePersistentData.LoadColor

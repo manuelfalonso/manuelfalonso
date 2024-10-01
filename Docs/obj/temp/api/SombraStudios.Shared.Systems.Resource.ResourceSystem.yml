@@ -1,0 +1,1499 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystem
+  id: ResourceSystem
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChanged
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChangedNormalized
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountEmptied
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountLow
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountMaxed
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountRestored
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Single)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ResourceSystem
+  nameWithType: ResourceSystem
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResourceSystem
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: >-
+    Supports:
+
+    - Increase and decrease resource amount
+
+    - Restore resource to a defined amount
+
+    - Lock amount with cooldowns when resource increase and decrease 
+
+    - Resource immutable behaviour
+
+    - Regeneration and degeneration
+
+    - Events:
+
+    AmountChanged
+
+    AmountChangedNormalized
+
+    AmountRestored
+
+    AmountMaxed
+
+    AmountLow
+
+    AmountEmptied
+
+
+    It can be used with any tipe of resource. For example life, mana, wood, water, etc.
+  example: []
+  syntax:
+    content: 'public class ResourceSystem : MonoBehaviour'
+    content.vb: Public Class ResourceSystem Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount
+  id: Amount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: ResourceSystem.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Amount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 101
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float Amount { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Amount As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount
+  id: MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: MaxAmount
+  nameWithType: ResourceSystem.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 102
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float MaxAmount { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property MaxAmount As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount
+  id: LowAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: LowAmount
+  nameWithType: ResourceSystem.LowAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LowAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 103
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float LowAmount { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LowAmount As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent
+  id: ResourcePercent
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: ResourcePercent
+  nameWithType: ResourceSystem.ResourcePercent
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResourcePercent
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 104
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float ResourcePercent { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ResourcePercent As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable
+  id: Immutable
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: Immutable
+  nameWithType: ResourceSystem.Immutable
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Immutable
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 106
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool Immutable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Immutable As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount
+  id: IsLowAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: IsLowAmount
+  nameWithType: ResourceSystem.IsLowAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsLowAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 107
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool IsLowAmount { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLowAmount As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount
+  id: IsEmptyAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: IsEmptyAmount
+  nameWithType: ResourceSystem.IsEmptyAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsEmptyAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 108
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool IsEmptyAmount { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmptyAmount As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount
+  id: IsMaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: IsMaxAmount
+  nameWithType: ResourceSystem.IsMaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsMaxAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 109
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool IsMaxAmount { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsMaxAmount As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown
+  id: IsInIncreaseCooldown
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: IsInIncreaseCooldown
+  nameWithType: ResourceSystem.IsInIncreaseCooldown
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInIncreaseCooldown
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 111
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool IsInIncreaseCooldown { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInIncreaseCooldown As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime
+  id: IncreaseCooldownTime
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: IncreaseCooldownTime
+  nameWithType: ResourceSystem.IncreaseCooldownTime
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IncreaseCooldownTime
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 112
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float IncreaseCooldownTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property IncreaseCooldownTime As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown
+  id: IsInDecreaseCooldown
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: IsInDecreaseCooldown
+  nameWithType: ResourceSystem.IsInDecreaseCooldown
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInDecreaseCooldown
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 113
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool IsInDecreaseCooldown { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInDecreaseCooldown As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime
+  id: DecreaseCooldownTime
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: DecreaseCooldownTime
+  nameWithType: ResourceSystem.DecreaseCooldownTime
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseCooldownTime
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 114
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float DecreaseCooldownTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DecreaseCooldownTime As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate
+  id: Regenerate
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: Regenerate
+  nameWithType: ResourceSystem.Regenerate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Regenerate
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 116
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool Regenerate { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Regenerate As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick
+  id: RegenerationTick
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: RegenerationTick
+  nameWithType: ResourceSystem.RegenerationTick
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegenerationTick
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 117
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float RegenerationTick { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RegenerationTick As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate
+  id: RegenerationRate
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: RegenerationRate
+  nameWithType: ResourceSystem.RegenerationRate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegenerationRate
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 118
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float RegenerationRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RegenerationRate As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate
+  id: Degenerate
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: Degenerate
+  nameWithType: ResourceSystem.Degenerate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Degenerate
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 119
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool Degenerate { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Degenerate As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick
+  id: DegenerationTick
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: DegenerationTick
+  nameWithType: ResourceSystem.DegenerationTick
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DegenerationTick
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 120
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float DegenerationTick { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DegenerationTick As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate
+  id: DegenerationRate
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: DegenerationRate
+  nameWithType: ResourceSystem.DegenerationRate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DegenerationRate
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 121
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public float DegenerationRate { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property DegenerationRate As Single
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChanged
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChanged
+  id: AmountChanged
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: AmountChanged
+  nameWithType: ResourceSystem.AmountChanged
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChanged
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountChanged
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 156
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Event invoked when the resource amount changes.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the resource amount changes.")]
+
+      public UnityEvent<float> AmountChanged
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the resource amount changes.")>
+
+      Public AmountChanged As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the resource amount changes.
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChangedNormalized
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChangedNormalized
+  id: AmountChangedNormalized
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: AmountChangedNormalized
+  nameWithType: ResourceSystem.AmountChangedNormalized
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountChangedNormalized
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountChangedNormalized
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 161
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Event invoked when the resource amount changes. Returns the normalized amount.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the resource amount changes. Returns the normalized amount.")]
+
+      public UnityEvent<float> AmountChangedNormalized
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the resource amount changes. Returns the normalized amount.")>
+
+      Public AmountChangedNormalized As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the resource amount changes. Returns the normalized amount.
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountRestored
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountRestored
+  id: AmountRestored
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: AmountRestored
+  nameWithType: ResourceSystem.AmountRestored
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountRestored
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountRestored
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 166
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Event invoked when the resource amount is restored.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the resource amount is restored.")]
+
+      public UnityEvent<float> AmountRestored
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the resource amount is restored.")>
+
+      Public AmountRestored As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the resource amount is restored.
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountMaxed
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountMaxed
+  id: AmountMaxed
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: AmountMaxed
+  nameWithType: ResourceSystem.AmountMaxed
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountMaxed
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountMaxed
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 171
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Event invoked when the resource amount reaches its maximum.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the resource amount reaches its maximum.")]
+
+      public UnityEvent<float> AmountMaxed
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the resource amount reaches its maximum.")>
+
+      Public AmountMaxed As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the resource amount reaches its maximum.
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountLow
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountLow
+  id: AmountLow
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: AmountLow
+  nameWithType: ResourceSystem.AmountLow
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountLow
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountLow
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 176
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Event invoked when the resource amount is low.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the resource amount is low.")]
+
+      public UnityEvent<float> AmountLow
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the resource amount is low.")>
+
+      Public AmountLow As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the resource amount is low.
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountEmptied
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountEmptied
+  id: AmountEmptied
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: AmountEmptied
+  nameWithType: ResourceSystem.AmountEmptied
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.AmountEmptied
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountEmptied
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 181
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Event invoked when the resource amount is emptied.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the resource amount is emptied.")]
+
+      public UnityEvent<float> AmountEmptied
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the resource amount is emptied.")>
+
+      Public AmountEmptied As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the resource amount is emptied.
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  id: TryIncreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: TryIncreaseAmount(float, out ResourceSystemResult, bool)
+  nameWithType: ResourceSystem.TryIncreaseAmount(float, out ResourceSystemResult, bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount(float, out SombraStudios.Shared.Systems.Resource.ResourceSystemResult, bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryIncreaseAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 206
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public bool TryIncreaseAmount(float amountToIncrease, out ResourceSystemResult result, bool considerCooldonws = true)
+    parameters:
+    - id: amountToIncrease
+      type: System.Single
+    - id: result
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+    - id: considerCooldonws
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryIncreaseAmount(amountToIncrease As Single, result As ResourceSystemResult, considerCooldonws As Boolean = True) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount*
+  nameWithType.vb: ResourceSystem.TryIncreaseAmount(Single, ResourceSystemResult, Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount(Single, SombraStudios.Shared.Systems.Resource.ResourceSystemResult, Boolean)
+  name.vb: TryIncreaseAmount(Single, ResourceSystemResult, Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  id: DecreaseAmount(System.Single,SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: DecreaseAmount(float, out ResourceSystemResult)
+  nameWithType: ResourceSystem.DecreaseAmount(float, out ResourceSystemResult)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount(float, out SombraStudios.Shared.Systems.Resource.ResourceSystemResult)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 220
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public void DecreaseAmount(float amountToDecrease, out ResourceSystemResult result)
+    parameters:
+    - id: amountToDecrease
+      type: System.Single
+    - id: result
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+    content.vb: Public Sub DecreaseAmount(amountToDecrease As Single, result As ResourceSystemResult)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount*
+  nameWithType.vb: ResourceSystem.DecreaseAmount(Single, ResourceSystemResult)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount(Single, SombraStudios.Shared.Systems.Resource.ResourceSystemResult)
+  name.vb: DecreaseAmount(Single, ResourceSystemResult)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Single)
+  id: RestoreAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: RestoreAmount(out ResourceSystemResult, float)
+  nameWithType: ResourceSystem.RestoreAmount(out ResourceSystemResult, float)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount(out SombraStudios.Shared.Systems.Resource.ResourceSystemResult, float)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RestoreAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 231
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public void RestoreAmount(out ResourceSystemResult result, float restorePercentage = 1)
+    parameters:
+    - id: result
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+    - id: restorePercentage
+      type: System.Single
+    content.vb: Public Sub RestoreAmount(result As ResourceSystemResult, restorePercentage As Single = 1)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount*
+  nameWithType.vb: ResourceSystem.RestoreAmount(ResourceSystemResult, Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult, Single)
+  name.vb: RestoreAmount(ResourceSystemResult, Single)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  id: ResetAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: ResetAmount(out ResourceSystemResult, bool)
+  nameWithType: ResourceSystem.ResetAmount(out ResourceSystemResult, bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount(out SombraStudios.Shared.Systems.Resource.ResourceSystemResult, bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 251
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public void ResetAmount(out ResourceSystemResult result, bool validateEmpty = false)
+    parameters:
+    - id: result
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+    - id: validateEmpty
+      type: System.Boolean
+    content.vb: Public Sub ResetAmount(result As ResourceSystemResult, validateEmpty As Boolean = False)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount*
+  nameWithType.vb: ResourceSystem.ResetAmount(ResourceSystemResult, Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult, Boolean)
+  name.vb: ResetAmount(ResourceSystemResult, Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  id: ClearAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult@)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem
+  langs:
+  - csharp
+  - vb
+  name: ClearAmount(out ResourceSystemResult)
+  nameWithType: ResourceSystem.ClearAmount(out ResourceSystemResult)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount(out SombraStudios.Shared.Systems.Resource.ResourceSystemResult)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ClearAmount
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceSystem.cs
+    startLine: 269
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  syntax:
+    content: public void ClearAmount(out ResourceSystemResult result)
+    parameters:
+    - id: result
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+    content.vb: Public Sub ClearAmount(result As ResourceSystemResult)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount*
+  nameWithType.vb: ResourceSystem.ClearAmount(ResourceSystemResult)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount(SombraStudios.Shared.Systems.Resource.ResourceSystemResult)
+  name.vb: ClearAmount(ResourceSystemResult)
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_Amount
+  name: Amount
+  nameWithType: ResourceSystem.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Amount
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_MaxAmount
+  name: MaxAmount
+  nameWithType: ResourceSystem.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_LowAmount
+  name: LowAmount
+  nameWithType: ResourceSystem.LowAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.LowAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_ResourcePercent
+  name: ResourcePercent
+  nameWithType: ResourceSystem.ResourcePercent
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResourcePercent
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_Immutable
+  name: Immutable
+  nameWithType: ResourceSystem.Immutable
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Immutable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_IsLowAmount
+  name: IsLowAmount
+  nameWithType: ResourceSystem.IsLowAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsLowAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_IsEmptyAmount
+  name: IsEmptyAmount
+  nameWithType: ResourceSystem.IsEmptyAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsEmptyAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_IsMaxAmount
+  name: IsMaxAmount
+  nameWithType: ResourceSystem.IsMaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsMaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_IsInIncreaseCooldown
+  name: IsInIncreaseCooldown
+  nameWithType: ResourceSystem.IsInIncreaseCooldown
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInIncreaseCooldown
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_IncreaseCooldownTime
+  name: IncreaseCooldownTime
+  nameWithType: ResourceSystem.IncreaseCooldownTime
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IncreaseCooldownTime
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_IsInDecreaseCooldown
+  name: IsInDecreaseCooldown
+  nameWithType: ResourceSystem.IsInDecreaseCooldown
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.IsInDecreaseCooldown
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_DecreaseCooldownTime
+  name: DecreaseCooldownTime
+  nameWithType: ResourceSystem.DecreaseCooldownTime
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseCooldownTime
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_Regenerate
+  name: Regenerate
+  nameWithType: ResourceSystem.Regenerate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Regenerate
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_RegenerationTick
+  name: RegenerationTick
+  nameWithType: ResourceSystem.RegenerationTick
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationTick
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_RegenerationRate
+  name: RegenerationRate
+  nameWithType: ResourceSystem.RegenerationRate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.RegenerationRate
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_Degenerate
+  name: Degenerate
+  nameWithType: ResourceSystem.Degenerate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.Degenerate
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_DegenerationTick
+  name: DegenerationTick
+  nameWithType: ResourceSystem.DegenerationTick
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationTick
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_DegenerationRate
+  name: DegenerationRate
+  nameWithType: ResourceSystem.DegenerationRate
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DegenerationRate
+- uid: UnityEngine.Events.UnityEvent{System.Single}
+  commentId: T:UnityEngine.Events.UnityEvent{System.Single}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: UnityEvent<float>
+  nameWithType: UnityEvent<float>
+  fullName: UnityEngine.Events.UnityEvent<float>
+  nameWithType.vb: UnityEvent(Of Single)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of Single)
+  name.vb: UnityEvent(Of Single)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_TryIncreaseAmount_System_Single_SombraStudios_Shared_Systems_Resource_ResourceSystemResult__System_Boolean_
+  name: TryIncreaseAmount
+  nameWithType: ResourceSystem.TryIncreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.TryIncreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+  parent: SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystemResult.html
+  name: ResourceSystemResult
+  nameWithType: ResourceSystemResult
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_DecreaseAmount_System_Single_SombraStudios_Shared_Systems_Resource_ResourceSystemResult__
+  name: DecreaseAmount
+  nameWithType: ResourceSystem.DecreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.DecreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_RestoreAmount_SombraStudios_Shared_Systems_Resource_ResourceSystemResult__System_Single_
+  name: RestoreAmount
+  nameWithType: ResourceSystem.RestoreAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.RestoreAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_ResetAmount_SombraStudios_Shared_Systems_Resource_ResourceSystemResult__System_Boolean_
+  name: ResetAmount
+  nameWithType: ResourceSystem.ResetAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.ResetAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_ClearAmount_SombraStudios_Shared_Systems_Resource_ResourceSystemResult__
+  name: ClearAmount
+  nameWithType: ResourceSystem.ClearAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem.ClearAmount

@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  commentId: T:SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  id: PickUpAndHold2D
+  parent: SombraStudios.Shared.Gameplay
+  children:
+  - SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop
+  - SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp
+  - SombraStudios.Shared.Gameplay.PickUpAndHold2D.dropKey
+  - SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickUpDistance
+  - SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickupKey
+  langs:
+  - csharp
+  - vb
+  name: PickUpAndHold2D
+  nameWithType: PickUpAndHold2D
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  type: Class
+  source:
+    remote:
+      path: Gameplay/PickUpAndHold2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PickUpAndHold2D
+    path: ../Assets/Sombra Studios/Shared/Gameplay/PickUpAndHold2D.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  summary: >-
+    Pick up and hold objects script using parenting and de parenting.
+
+    Required:
+
+    The PickUp object must have a "Pickup" tag
+  example: []
+  syntax:
+    content: 'public class PickUpAndHold2D : MonoBehaviour'
+    content.vb: Public Class PickUpAndHold2D Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickupKey
+  commentId: F:SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickupKey
+  id: pickupKey
+  parent: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  langs:
+  - csharp
+  - vb
+  name: pickupKey
+  nameWithType: PickUpAndHold2D.pickupKey
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickupKey
+  type: Field
+  source:
+    remote:
+      path: Gameplay/PickUpAndHold2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: pickupKey
+    path: ../Assets/Sombra Studios/Shared/Gameplay/PickUpAndHold2D.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: >-
+      [Tooltip("Pickup key and drop key could be the same")]
+
+      public KeyCode pickupKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: >-
+      <Tooltip("Pickup key and drop key could be the same")>
+
+      Public pickupKey As KeyCode
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Pickup key and drop key could be the same
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.dropKey
+  commentId: F:SombraStudios.Shared.Gameplay.PickUpAndHold2D.dropKey
+  id: dropKey
+  parent: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  langs:
+  - csharp
+  - vb
+  name: dropKey
+  nameWithType: PickUpAndHold2D.dropKey
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.dropKey
+  type: Field
+  source:
+    remote:
+      path: Gameplay/PickUpAndHold2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: dropKey
+    path: ../Assets/Sombra Studios/Shared/Gameplay/PickUpAndHold2D.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public KeyCode dropKey
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public dropKey As KeyCode
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickUpDistance
+  commentId: F:SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickUpDistance
+  id: pickUpDistance
+  parent: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  langs:
+  - csharp
+  - vb
+  name: pickUpDistance
+  nameWithType: PickUpAndHold2D.pickUpDistance
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.pickUpDistance
+  type: Field
+  source:
+    remote:
+      path: Gameplay/PickUpAndHold2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: pickUpDistance
+    path: ../Assets/Sombra Studios/Shared/Gameplay/PickUpAndHold2D.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: >-
+      [Tooltip("An object need to be closer than that distance to be picked up.")]
+
+      public float pickUpDistance
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("An object need to be closer than that distance to be picked up.")>
+
+      Public pickUpDistance As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: An object need to be closer than that distance to be picked up.
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop
+  commentId: M:SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop
+  id: Drop
+  parent: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  langs:
+  - csharp
+  - vb
+  name: Drop()
+  nameWithType: PickUpAndHold2D.Drop()
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/PickUpAndHold2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Drop
+    path: ../Assets/Sombra Studios/Shared/Gameplay/PickUpAndHold2D.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public void Drop()
+    content.vb: Public Sub Drop()
+  overload: SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop*
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp
+  commentId: M:SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp
+  id: PickUp
+  parent: SombraStudios.Shared.Gameplay.PickUpAndHold2D
+  langs:
+  - csharp
+  - vb
+  name: PickUp()
+  nameWithType: PickUpAndHold2D.PickUp()
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/PickUpAndHold2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PickUp
+    path: ../Assets/Sombra Studios/Shared/Gameplay/PickUpAndHold2D.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public bool PickUp()
+    return:
+      type: System.Boolean
+    content.vb: Public Function PickUp() As Boolean
+  overload: SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp*
+references:
+- uid: SombraStudios.Shared.Gameplay
+  commentId: N:SombraStudios.Shared.Gameplay
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay
+  nameWithType: SombraStudios.Shared.Gameplay
+  fullName: SombraStudios.Shared.Gameplay
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop*
+  commentId: Overload:SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop
+  href: SombraStudios.Shared.Gameplay.PickUpAndHold2D.html#SombraStudios_Shared_Gameplay_PickUpAndHold2D_Drop
+  name: Drop
+  nameWithType: PickUpAndHold2D.Drop
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.Drop
+- uid: SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp*
+  commentId: Overload:SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp
+  href: SombraStudios.Shared.Gameplay.PickUpAndHold2D.html#SombraStudios_Shared_Gameplay_PickUpAndHold2D_PickUp
+  name: PickUp
+  nameWithType: PickUpAndHold2D.PickUp
+  fullName: SombraStudios.Shared.Gameplay.PickUpAndHold2D.PickUp
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

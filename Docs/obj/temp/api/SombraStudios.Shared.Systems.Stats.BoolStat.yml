@@ -1,0 +1,818 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Stats.BoolStat
+  commentId: T:SombraStudios.Shared.Systems.Stats.BoolStat
+  id: BoolStat
+  parent: SombraStudios.Shared.Systems.Stats
+  children:
+  - SombraStudios.Shared.Systems.Stats.BoolStat.#ctor(System.Boolean,System.String)
+  - SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue
+  langs:
+  - csharp
+  - vb
+  name: BoolStat
+  nameWithType: BoolStat
+  fullName: SombraStudios.Shared.Systems.Stats.BoolStat
+  type: Class
+  source:
+    remote:
+      path: Systems/Stats/StatTypes/BoolStat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BoolStat
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatTypes/BoolStat.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Represents a boolean stat.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class BoolStat : Stat<bool, StatBoolModifier>, IStat<bool>, IBaseStat
+    content.vb: >-
+      <Serializable>
+
+      Public Class BoolStat Inherits Stat(Of Boolean, StatBoolModifier) Implements IStat(Of Boolean), IBaseStat
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  implements:
+  - SombraStudios.Shared.Systems.Stats.IStat{System.Boolean}
+  - SombraStudios.Shared.Systems.Stats.IBaseStat
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._name
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._baseValue
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._statModifiers
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._modifiedValue
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.StatModified
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.Name
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetBaseValue
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetValue
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifiersFromSource(System.Object)
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.HasModifierFromSource(System.Object)
+  - SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.CalculateValue
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Systems.Stats.BoolStat.#ctor(System.Boolean,System.String)
+  commentId: M:SombraStudios.Shared.Systems.Stats.BoolStat.#ctor(System.Boolean,System.String)
+  id: '#ctor(System.Boolean,System.String)'
+  parent: SombraStudios.Shared.Systems.Stats.BoolStat
+  langs:
+  - csharp
+  - vb
+  name: BoolStat(bool, string)
+  nameWithType: BoolStat.BoolStat(bool, string)
+  fullName: SombraStudios.Shared.Systems.Stats.BoolStat.BoolStat(bool, string)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatTypes/BoolStat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatTypes/BoolStat.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new boolean stat with a value and name.
+  example: []
+  syntax:
+    content: public BoolStat(bool value, string name)
+    parameters:
+    - id: value
+      type: System.Boolean
+      description: The base value of the stat.
+    - id: name
+      type: System.String
+      description: The name of the stat.
+    content.vb: Public Sub New(value As Boolean, name As String)
+  overload: SombraStudios.Shared.Systems.Stats.BoolStat.#ctor*
+  nameWithType.vb: BoolStat.New(Boolean, String)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.BoolStat.New(Boolean, String)
+  name.vb: New(Boolean, String)
+- uid: SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue
+  id: CalculateValue
+  parent: SombraStudios.Shared.Systems.Stats.BoolStat
+  langs:
+  - csharp
+  - vb
+  name: CalculateValue()
+  nameWithType: BoolStat.CalculateValue()
+  fullName: SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue()
+  type: Method
+  source:
+    remote:
+      path: Systems/Stats/StatTypes/BoolStat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CalculateValue
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatTypes/BoolStat.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Calculates the modified value of the stat.
+  example: []
+  syntax:
+    content: protected override void CalculateValue()
+    content.vb: Protected Overrides Sub CalculateValue()
+  overridden: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.CalculateValue
+  overload: SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue*
+references:
+- uid: SombraStudios.Shared.Systems.Stats
+  commentId: N:SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Stats
+  nameWithType: SombraStudios.Shared.Systems.Stats
+  fullName: SombraStudios.Shared.Systems.Stats
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  commentId: T:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  parent: SombraStudios.Shared.Systems.Stats
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html
+  name: Stat<bool, StatBoolModifier>
+  nameWithType: Stat<bool, StatBoolModifier>
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  name.vb: Stat(Of Boolean, StatBoolModifier)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2
+    name: Stat
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Stats.StatBoolModifier
+    name: StatBoolModifier
+    href: SombraStudios.Shared.Systems.Stats.StatBoolModifier.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2
+    name: Stat
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Stats.StatBoolModifier
+    name: StatBoolModifier
+    href: SombraStudios.Shared.Systems.Stats.StatBoolModifier.html
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.IStat{System.Boolean}
+  commentId: T:SombraStudios.Shared.Systems.Stats.IStat{System.Boolean}
+  parent: SombraStudios.Shared.Systems.Stats
+  definition: SombraStudios.Shared.Systems.Stats.IStat`1
+  href: SombraStudios.Shared.Systems.Stats.IStat-1.html
+  name: IStat<bool>
+  nameWithType: IStat<bool>
+  fullName: SombraStudios.Shared.Systems.Stats.IStat<bool>
+  nameWithType.vb: IStat(Of Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.IStat(Of Boolean)
+  name.vb: IStat(Of Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.IStat`1
+    name: IStat
+    href: SombraStudios.Shared.Systems.Stats.IStat-1.html
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.IStat`1
+    name: IStat
+    href: SombraStudios.Shared.Systems.Stats.IStat-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.IBaseStat
+  commentId: T:SombraStudios.Shared.Systems.Stats.IBaseStat
+  parent: SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.Shared.Systems.Stats.IBaseStat.html
+  name: IBaseStat
+  nameWithType: IBaseStat
+  fullName: SombraStudios.Shared.Systems.Stats.IBaseStat
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._name
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._name
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2._name
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__name
+  name: _name
+  nameWithType: Stat<bool, StatBoolModifier>._name
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>._name
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier)._name
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier)._name
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._baseValue
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._baseValue
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2._baseValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__baseValue
+  name: _baseValue
+  nameWithType: Stat<bool, StatBoolModifier>._baseValue
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>._baseValue
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier)._baseValue
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier)._baseValue
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._statModifiers
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._statModifiers
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2._statModifiers
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__statModifiers
+  name: _statModifiers
+  nameWithType: Stat<bool, StatBoolModifier>._statModifiers
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>._statModifiers
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier)._statModifiers
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier)._statModifiers
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._modifiedValue
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}._modifiedValue
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2._modifiedValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__modifiedValue
+  name: _modifiedValue
+  nameWithType: Stat<bool, StatBoolModifier>._modifiedValue
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>._modifiedValue
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier)._modifiedValue
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier)._modifiedValue
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.StatModified
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.StatModified
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.StatModified
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_StatModified
+  name: StatModified
+  nameWithType: Stat<bool, StatBoolModifier>.StatModified
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.StatModified
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).StatModified
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).StatModified
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.Name
+  commentId: P:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.Name
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.Name
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_Name
+  name: Name
+  nameWithType: Stat<bool, StatBoolModifier>.Name
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.Name
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).Name
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).Name
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetBaseValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetBaseValue
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.GetBaseValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetBaseValue
+  name: GetBaseValue()
+  nameWithType: Stat<bool, StatBoolModifier>.GetBaseValue()
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.GetBaseValue()
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).GetBaseValue()
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).GetBaseValue()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetBaseValue
+    name: GetBaseValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetBaseValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetBaseValue
+    name: GetBaseValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetBaseValue
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetValue
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.GetValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetValue
+  name: GetValue()
+  nameWithType: Stat<bool, StatBoolModifier>.GetValue()
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.GetValue()
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).GetValue()
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).GetValue()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetValue
+    name: GetValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.GetValue
+    name: GetValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetValue
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.AddModifier(`1)
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_AddModifier__1_
+  name: AddModifier(StatBoolModifier)
+  nameWithType: Stat<bool, StatBoolModifier>.AddModifier(StatBoolModifier)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).AddModifier(StatBoolModifier)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+    name: AddModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_AddModifier__1_
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Stats.StatBoolModifier
+    name: StatBoolModifier
+    href: SombraStudios.Shared.Systems.Stats.StatBoolModifier.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.AddModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+    name: AddModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_AddModifier__1_
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Stats.StatBoolModifier
+    name: StatBoolModifier
+    href: SombraStudios.Shared.Systems.Stats.StatBoolModifier.html
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifier(`1)
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifier__1_
+  name: RemoveModifier(StatBoolModifier)
+  nameWithType: Stat<bool, StatBoolModifier>.RemoveModifier(StatBoolModifier)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).RemoveModifier(StatBoolModifier)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+    name: RemoveModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifier__1_
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Stats.StatBoolModifier
+    name: StatBoolModifier
+    href: SombraStudios.Shared.Systems.Stats.StatBoolModifier.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifier(SombraStudios.Shared.Systems.Stats.StatBoolModifier)
+    name: RemoveModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifier__1_
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Stats.StatBoolModifier
+    name: StatBoolModifier
+    href: SombraStudios.Shared.Systems.Stats.StatBoolModifier.html
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifiersFromSource(System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifiersFromSource(System.Object)
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifiersFromSource(System.Object)
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifiersFromSource_System_Object_
+  name: RemoveModifiersFromSource(object)
+  nameWithType: Stat<bool, StatBoolModifier>.RemoveModifiersFromSource(object)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.RemoveModifiersFromSource(object)
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).RemoveModifiersFromSource(Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).RemoveModifiersFromSource(Object)
+  name.vb: RemoveModifiersFromSource(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifiersFromSource(System.Object)
+    name: RemoveModifiersFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifiersFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.RemoveModifiersFromSource(System.Object)
+    name: RemoveModifiersFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifiersFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.HasModifierFromSource(System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.HasModifierFromSource(System.Object)
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.HasModifierFromSource(System.Object)
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_HasModifierFromSource_System_Object_
+  name: HasModifierFromSource(object)
+  nameWithType: Stat<bool, StatBoolModifier>.HasModifierFromSource(object)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.HasModifierFromSource(object)
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).HasModifierFromSource(Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).HasModifierFromSource(Object)
+  name.vb: HasModifierFromSource(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.HasModifierFromSource(System.Object)
+    name: HasModifierFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_HasModifierFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.HasModifierFromSource(System.Object)
+    name: HasModifierFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_HasModifierFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.CalculateValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.CalculateValue
+  parent: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}
+  definition: SombraStudios.Shared.Systems.Stats.Stat`2.CalculateValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_CalculateValue
+  name: CalculateValue()
+  nameWithType: Stat<bool, StatBoolModifier>.CalculateValue()
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<bool, SombraStudios.Shared.Systems.Stats.StatBoolModifier>.CalculateValue()
+  nameWithType.vb: Stat(Of Boolean, StatBoolModifier).CalculateValue()
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of Boolean, SombraStudios.Shared.Systems.Stats.StatBoolModifier).CalculateValue()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.CalculateValue
+    name: CalculateValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_CalculateValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat{System.Boolean,SombraStudios.Shared.Systems.Stats.StatBoolModifier}.CalculateValue
+    name: CalculateValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_CalculateValue
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2
+  commentId: T:SombraStudios.Shared.Systems.Stats.Stat`2
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html
+  name: Stat<T, TModifier>
+  nameWithType: Stat<T, TModifier>
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>
+  nameWithType.vb: Stat(Of T, TModifier)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier)
+  name.vb: Stat(Of T, TModifier)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2
+    name: Stat
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TModifier
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2
+    name: Stat
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TModifier
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.IStat`1
+  commentId: T:SombraStudios.Shared.Systems.Stats.IStat`1
+  href: SombraStudios.Shared.Systems.Stats.IStat-1.html
+  name: IStat<T>
+  nameWithType: IStat<T>
+  fullName: SombraStudios.Shared.Systems.Stats.IStat<T>
+  nameWithType.vb: IStat(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.IStat(Of T)
+  name.vb: IStat(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.IStat`1
+    name: IStat
+    href: SombraStudios.Shared.Systems.Stats.IStat-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.IStat`1
+    name: IStat
+    href: SombraStudios.Shared.Systems.Stats.IStat-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2._name
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat`2._name
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__name
+  name: _name
+  nameWithType: Stat<T, TModifier>._name
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>._name
+  nameWithType.vb: Stat(Of T, TModifier)._name
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier)._name
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2._baseValue
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat`2._baseValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__baseValue
+  name: _baseValue
+  nameWithType: Stat<T, TModifier>._baseValue
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>._baseValue
+  nameWithType.vb: Stat(Of T, TModifier)._baseValue
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier)._baseValue
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2._statModifiers
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat`2._statModifiers
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__statModifiers
+  name: _statModifiers
+  nameWithType: Stat<T, TModifier>._statModifiers
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>._statModifiers
+  nameWithType.vb: Stat(Of T, TModifier)._statModifiers
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier)._statModifiers
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2._modifiedValue
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat`2._modifiedValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2__modifiedValue
+  name: _modifiedValue
+  nameWithType: Stat<T, TModifier>._modifiedValue
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>._modifiedValue
+  nameWithType.vb: Stat(Of T, TModifier)._modifiedValue
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier)._modifiedValue
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.StatModified
+  commentId: F:SombraStudios.Shared.Systems.Stats.Stat`2.StatModified
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_StatModified
+  name: StatModified
+  nameWithType: Stat<T, TModifier>.StatModified
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.StatModified
+  nameWithType.vb: Stat(Of T, TModifier).StatModified
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).StatModified
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.Name
+  commentId: P:SombraStudios.Shared.Systems.Stats.Stat`2.Name
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_Name
+  name: Name
+  nameWithType: Stat<T, TModifier>.Name
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.Name
+  nameWithType.vb: Stat(Of T, TModifier).Name
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).Name
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.GetBaseValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.GetBaseValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetBaseValue
+  name: GetBaseValue()
+  nameWithType: Stat<T, TModifier>.GetBaseValue()
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.GetBaseValue()
+  nameWithType.vb: Stat(Of T, TModifier).GetBaseValue()
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).GetBaseValue()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.GetBaseValue
+    name: GetBaseValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetBaseValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.GetBaseValue
+    name: GetBaseValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetBaseValue
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.GetValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.GetValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetValue
+  name: GetValue()
+  nameWithType: Stat<T, TModifier>.GetValue()
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.GetValue()
+  nameWithType.vb: Stat(Of T, TModifier).GetValue()
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).GetValue()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.GetValue
+    name: GetValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.GetValue
+    name: GetValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_GetValue
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.AddModifier(`1)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.AddModifier(`1)
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_AddModifier__1_
+  name: AddModifier(TModifier)
+  nameWithType: Stat<T, TModifier>.AddModifier(TModifier)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.AddModifier(TModifier)
+  nameWithType.vb: Stat(Of T, TModifier).AddModifier(TModifier)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).AddModifier(TModifier)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.AddModifier(`1)
+    name: AddModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_AddModifier__1_
+  - name: (
+  - name: TModifier
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.AddModifier(`1)
+    name: AddModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_AddModifier__1_
+  - name: (
+  - name: TModifier
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifier(`1)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifier(`1)
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifier__1_
+  name: RemoveModifier(TModifier)
+  nameWithType: Stat<T, TModifier>.RemoveModifier(TModifier)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.RemoveModifier(TModifier)
+  nameWithType.vb: Stat(Of T, TModifier).RemoveModifier(TModifier)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).RemoveModifier(TModifier)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifier(`1)
+    name: RemoveModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifier__1_
+  - name: (
+  - name: TModifier
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifier(`1)
+    name: RemoveModifier
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifier__1_
+  - name: (
+  - name: TModifier
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifiersFromSource(System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifiersFromSource(System.Object)
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifiersFromSource_System_Object_
+  name: RemoveModifiersFromSource(object)
+  nameWithType: Stat<T, TModifier>.RemoveModifiersFromSource(object)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.RemoveModifiersFromSource(object)
+  nameWithType.vb: Stat(Of T, TModifier).RemoveModifiersFromSource(Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).RemoveModifiersFromSource(Object)
+  name.vb: RemoveModifiersFromSource(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifiersFromSource(System.Object)
+    name: RemoveModifiersFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifiersFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.RemoveModifiersFromSource(System.Object)
+    name: RemoveModifiersFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_RemoveModifiersFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.HasModifierFromSource(System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.HasModifierFromSource(System.Object)
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_HasModifierFromSource_System_Object_
+  name: HasModifierFromSource(object)
+  nameWithType: Stat<T, TModifier>.HasModifierFromSource(object)
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.HasModifierFromSource(object)
+  nameWithType.vb: Stat(Of T, TModifier).HasModifierFromSource(Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).HasModifierFromSource(Object)
+  name.vb: HasModifierFromSource(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.HasModifierFromSource(System.Object)
+    name: HasModifierFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_HasModifierFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.HasModifierFromSource(System.Object)
+    name: HasModifierFromSource
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_HasModifierFromSource_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.Stat`2.CalculateValue
+  commentId: M:SombraStudios.Shared.Systems.Stats.Stat`2.CalculateValue
+  href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_CalculateValue
+  name: CalculateValue()
+  nameWithType: Stat<T, TModifier>.CalculateValue()
+  fullName: SombraStudios.Shared.Systems.Stats.Stat<T, TModifier>.CalculateValue()
+  nameWithType.vb: Stat(Of T, TModifier).CalculateValue()
+  fullName.vb: SombraStudios.Shared.Systems.Stats.Stat(Of T, TModifier).CalculateValue()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.CalculateValue
+    name: CalculateValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_CalculateValue
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.Stat`2.CalculateValue
+    name: CalculateValue
+    href: SombraStudios.Shared.Systems.Stats.Stat-2.html#SombraStudios_Shared_Systems_Stats_Stat_2_CalculateValue
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.BoolStat.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.BoolStat.#ctor
+  href: SombraStudios.Shared.Systems.Stats.BoolStat.html#SombraStudios_Shared_Systems_Stats_BoolStat__ctor_System_Boolean_System_String_
+  name: BoolStat
+  nameWithType: BoolStat.BoolStat
+  fullName: SombraStudios.Shared.Systems.Stats.BoolStat.BoolStat
+  nameWithType.vb: BoolStat.New
+  fullName.vb: SombraStudios.Shared.Systems.Stats.BoolStat.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue
+  href: SombraStudios.Shared.Systems.Stats.BoolStat.html#SombraStudios_Shared_Systems_Stats_BoolStat_CalculateValue
+  name: CalculateValue
+  nameWithType: BoolStat.CalculateValue
+  fullName: SombraStudios.Shared.Systems.Stats.BoolStat.CalculateValue

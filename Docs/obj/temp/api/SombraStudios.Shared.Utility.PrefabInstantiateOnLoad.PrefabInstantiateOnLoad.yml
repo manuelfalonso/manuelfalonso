@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  commentId: T:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  id: PrefabInstantiateOnLoad
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  children:
+  - SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_ASSEMBLIES_PATH
+  - SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_SCENE_LOAD_PATH
+  - SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SCENE_LOAD_PATH
+  - SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SPLASH_SCREEN_PATH
+  - SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.MAIN_PATH
+  - SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.SUBSYSTEM_REGISTRATION_PATH
+  langs:
+  - csharp
+  - vb
+  name: PrefabInstantiateOnLoad
+  nameWithType: PrefabInstantiateOnLoad
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  type: Class
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PrefabInstantiateOnLoad
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  summary: >-
+    Creates on intialize a list of prefabs saved on Resources folder
+
+    It can differentiate between all RuntimeInitializeLoadType
+
+    Each corresponding asset list can be created in menu:
+
+    Assets/Create/Sombra Studios/Utils/Intantiate On Load List
+
+    Documentation:
+
+    https://docs.unity3d.com/ScriptReference/RuntimeInitializeLoadType.html
+  example: []
+  syntax:
+    content: 'public class PrefabInstantiateOnLoad : MonoBehaviour'
+    content.vb: Public Class PrefabInstantiateOnLoad Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.MAIN_PATH
+  commentId: F:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.MAIN_PATH
+  id: MAIN_PATH
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  langs:
+  - csharp
+  - vb
+  name: MAIN_PATH
+  nameWithType: PrefabInstantiateOnLoad.MAIN_PATH
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.MAIN_PATH
+  type: Field
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MAIN_PATH
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  syntax:
+    content: public const string MAIN_PATH = "Instantiate Prefab Lists"
+    return:
+      type: System.String
+    content.vb: Public Const MAIN_PATH As String = "Instantiate Prefab Lists"
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_SCENE_LOAD_PATH
+  commentId: F:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_SCENE_LOAD_PATH
+  id: AFTER_SCENE_LOAD_PATH
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  langs:
+  - csharp
+  - vb
+  name: AFTER_SCENE_LOAD_PATH
+  nameWithType: PrefabInstantiateOnLoad.AFTER_SCENE_LOAD_PATH
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_SCENE_LOAD_PATH
+  type: Field
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AFTER_SCENE_LOAD_PATH
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  syntax:
+    content: public const string AFTER_SCENE_LOAD_PATH = "AfterSceneLoad List"
+    return:
+      type: System.String
+    content.vb: Public Const AFTER_SCENE_LOAD_PATH As String = "AfterSceneLoad List"
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SCENE_LOAD_PATH
+  commentId: F:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SCENE_LOAD_PATH
+  id: BEFORE_SCENE_LOAD_PATH
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  langs:
+  - csharp
+  - vb
+  name: BEFORE_SCENE_LOAD_PATH
+  nameWithType: PrefabInstantiateOnLoad.BEFORE_SCENE_LOAD_PATH
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SCENE_LOAD_PATH
+  type: Field
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BEFORE_SCENE_LOAD_PATH
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  syntax:
+    content: public const string BEFORE_SCENE_LOAD_PATH = "BeforeSceneLoad List"
+    return:
+      type: System.String
+    content.vb: Public Const BEFORE_SCENE_LOAD_PATH As String = "BeforeSceneLoad List"
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_ASSEMBLIES_PATH
+  commentId: F:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_ASSEMBLIES_PATH
+  id: AFTER_ASSEMBLIES_PATH
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  langs:
+  - csharp
+  - vb
+  name: AFTER_ASSEMBLIES_PATH
+  nameWithType: PrefabInstantiateOnLoad.AFTER_ASSEMBLIES_PATH
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.AFTER_ASSEMBLIES_PATH
+  type: Field
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AFTER_ASSEMBLIES_PATH
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  syntax:
+    content: public const string AFTER_ASSEMBLIES_PATH = "AfterAssembliesLoaded List"
+    return:
+      type: System.String
+    content.vb: Public Const AFTER_ASSEMBLIES_PATH As String = "AfterAssembliesLoaded List"
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SPLASH_SCREEN_PATH
+  commentId: F:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SPLASH_SCREEN_PATH
+  id: BEFORE_SPLASH_SCREEN_PATH
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  langs:
+  - csharp
+  - vb
+  name: BEFORE_SPLASH_SCREEN_PATH
+  nameWithType: PrefabInstantiateOnLoad.BEFORE_SPLASH_SCREEN_PATH
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.BEFORE_SPLASH_SCREEN_PATH
+  type: Field
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BEFORE_SPLASH_SCREEN_PATH
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  syntax:
+    content: public const string BEFORE_SPLASH_SCREEN_PATH = "BeforeSplashScreen List"
+    return:
+      type: System.String
+    content.vb: Public Const BEFORE_SPLASH_SCREEN_PATH As String = "BeforeSplashScreen List"
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.SUBSYSTEM_REGISTRATION_PATH
+  commentId: F:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.SUBSYSTEM_REGISTRATION_PATH
+  id: SUBSYSTEM_REGISTRATION_PATH
+  parent: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad
+  langs:
+  - csharp
+  - vb
+  name: SUBSYSTEM_REGISTRATION_PATH
+  nameWithType: PrefabInstantiateOnLoad.SUBSYSTEM_REGISTRATION_PATH
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.PrefabInstantiateOnLoad.SUBSYSTEM_REGISTRATION_PATH
+  type: Field
+  source:
+    remote:
+      path: Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SUBSYSTEM_REGISTRATION_PATH
+    path: ../Assets/Sombra Studios/Shared/Utility/PrefabInstantiateOnLoad/PrefabInstantiateOnLoad.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  syntax:
+    content: public const string SUBSYSTEM_REGISTRATION_PATH = "SubsystemRegistration List"
+    return:
+      type: System.String
+    content.vb: Public Const SUBSYSTEM_REGISTRATION_PATH As String = "SubsystemRegistration List"
+references:
+- uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  commentId: N:SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  nameWithType: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  fullName: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+    name: PrefabInstantiateOnLoad
+    href: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad
+    name: PrefabInstantiateOnLoad
+    href: SombraStudios.Shared.Utility.PrefabInstantiateOnLoad.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

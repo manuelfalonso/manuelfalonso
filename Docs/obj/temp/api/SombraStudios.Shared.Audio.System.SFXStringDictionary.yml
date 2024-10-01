@@ -1,0 +1,2386 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  commentId: T:SombraStudios.Shared.Audio.System.SFXStringDictionary
+  id: SFXStringDictionary
+  parent: SombraStudios.Shared.Audio.System
+  children:
+  - SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll(UnityEngine.Transform)
+  - SombraStudios.Shared.Audio.System.SFXStringDictionary.Play(System.String)
+  - SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop(System.String)
+  - SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances
+  langs:
+  - csharp
+  - vb
+  name: SFXStringDictionary
+  nameWithType: SFXStringDictionary
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  type: Class
+  source:
+    remote:
+      path: Audio/System/SFXStringDictionary.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SFXStringDictionary
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXStringDictionary.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Represents a dictionary mapping string keys to SFXRack values.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SFXStringDictionary : SerializedDictionary<string, SFXRack>, IDictionary<string, SFXRack>, ICollection<KeyValuePair<string, SFXRack>>, IReadOnlyDictionary<string, SFXRack>, IReadOnlyCollection<KeyValuePair<string, SFXRack>>, IEnumerable<KeyValuePair<string, SFXRack>>, IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ISerializationCallbackReceiver
+    content.vb: >-
+      <Serializable>
+
+      Public Class SFXStringDictionary Inherits SerializedDictionary(Of String, SFXRack) Implements IDictionary(Of String, SFXRack), ICollection(Of KeyValuePair(Of String, SFXRack)), IReadOnlyDictionary(Of String, SFXRack), IReadOnlyCollection(Of KeyValuePair(Of String, SFXRack)), IEnumerable(Of KeyValuePair(Of String, SFXRack)), IDictionary, ICollection, IEnumerable, IDeserializationCallback, ISerializable, ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  derivedClasses:
+  - SombraStudios.Shared.Audio.System.SFXInterruptableDictionary
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  - System.Collections.Generic.IReadOnlyDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  - System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  - System.Collections.IDictionary
+  - System.Collections.ICollection
+  - System.Collections.IEnumerable
+  - System.Runtime.Serialization.IDeserializationCallback
+  - System.Runtime.Serialization.ISerializable
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Item(System.String)
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Add(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Clear
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String)
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryAdd(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.AddConflictAllowed(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnAfterDeserialize
+  - AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnBeforeSerialize
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsKey(System.String)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetEnumerator
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnDeserialization(System.Object)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryGetValue(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.EnsureCapacity(System.Int32)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess(System.Int32)
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Comparer
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Count
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Keys
+  - System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Values
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}.SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Int32)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll(UnityEngine.Transform)
+  commentId: M:SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll(UnityEngine.Transform)
+  id: InstantiateAll(UnityEngine.Transform)
+  parent: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  langs:
+  - csharp
+  - vb
+  name: InstantiateAll(Transform)
+  nameWithType: SFXStringDictionary.InstantiateAll(Transform)
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Audio/System/SFXStringDictionary.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InstantiateAll
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXStringDictionary.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Instantiates all SFXRack instances associated with this dictionary at the specified transform.
+  example: []
+  syntax:
+    content: public virtual void InstantiateAll(Transform t)
+    parameters:
+    - id: t
+      type: UnityEngine.Transform
+      description: The transform at which to instantiate the SFXRack instances.
+    content.vb: Public Overridable Sub InstantiateAll(t As Transform)
+  overload: SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll*
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.Play(System.String)
+  commentId: M:SombraStudios.Shared.Audio.System.SFXStringDictionary.Play(System.String)
+  id: Play(System.String)
+  parent: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  langs:
+  - csharp
+  - vb
+  name: Play(string)
+  nameWithType: SFXStringDictionary.Play(string)
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.Play(string)
+  type: Method
+  source:
+    remote:
+      path: Audio/System/SFXStringDictionary.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Play
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXStringDictionary.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Plays the audio associated with the specified key.
+  example: []
+  syntax:
+    content: public virtual void Play(string audio)
+    parameters:
+    - id: audio
+      type: System.String
+      description: The key associated with the audio to play.
+    content.vb: Public Overridable Sub Play(audio As String)
+  overload: SombraStudios.Shared.Audio.System.SFXStringDictionary.Play*
+  nameWithType.vb: SFXStringDictionary.Play(String)
+  fullName.vb: SombraStudios.Shared.Audio.System.SFXStringDictionary.Play(String)
+  name.vb: Play(String)
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop(System.String)
+  commentId: M:SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop(System.String)
+  id: Stop(System.String)
+  parent: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  langs:
+  - csharp
+  - vb
+  name: Stop(string)
+  nameWithType: SFXStringDictionary.Stop(string)
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop(string)
+  type: Method
+  source:
+    remote:
+      path: Audio/System/SFXStringDictionary.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Stop
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXStringDictionary.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Stops the audio associated with the specified key.
+  example: []
+  syntax:
+    content: public virtual void Stop(string audio)
+    parameters:
+    - id: audio
+      type: System.String
+      description: The key associated with the audio to stop.
+    content.vb: Public Overridable Sub [Stop](audio As String)
+  overload: SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop*
+  nameWithType.vb: SFXStringDictionary.Stop(String)
+  fullName.vb: SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop(String)
+  name.vb: Stop(String)
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances
+  commentId: M:SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances
+  id: StopAllInstances
+  parent: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  langs:
+  - csharp
+  - vb
+  name: StopAllInstances()
+  nameWithType: SFXStringDictionary.StopAllInstances()
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances()
+  type: Method
+  source:
+    remote:
+      path: Audio/System/SFXStringDictionary.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopAllInstances
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXStringDictionary.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Stops all audio instances associated with this dictionary.
+  example: []
+  syntax:
+    content: public virtual void StopAllInstances()
+    content.vb: Public Overridable Sub StopAllInstances()
+  overload: SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances*
+references:
+- uid: SombraStudios.Shared.Audio.System
+  commentId: N:SombraStudios.Shared.Audio.System
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Audio.System
+  nameWithType: SombraStudios.Shared.Audio.System
+  fullName: SombraStudios.Shared.Audio.System
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, SFXRack>
+  nameWithType: Dictionary<string, SFXRack>
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>
+  nameWithType.vb: Dictionary(Of String, SFXRack)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: Dictionary(Of String, SFXRack)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  commentId: T:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  parent: AYellowpaper.SerializedCollections
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SerializedDictionary<string, SFXRack>
+  nameWithType: SerializedDictionary<string, SFXRack>
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: SerializedDictionary(Of String, SFXRack)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2
+    name: SerializedDictionary
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2
+    name: SerializedDictionary
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: System.Collections.Generic.IDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<string, SFXRack>
+  nameWithType: IDictionary<string, SFXRack>
+  fullName: System.Collections.Generic.IDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>
+  nameWithType.vb: IDictionary(Of String, SFXRack)
+  fullName.vb: System.Collections.Generic.IDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: IDictionary(Of String, SFXRack)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<KeyValuePair<string, SFXRack>>
+  nameWithType: ICollection<KeyValuePair<string, SFXRack>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<string, SombraStudios.Shared.Audio.System.SFXRack>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, SFXRack))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of String, SombraStudios.Shared.Audio.System.SFXRack))
+  name.vb: ICollection(Of KeyValuePair(Of String, SFXRack))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, SFXRack>
+  nameWithType: IReadOnlyDictionary<string, SFXRack>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>
+  nameWithType.vb: IReadOnlyDictionary(Of String, SFXRack)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: IReadOnlyDictionary(Of String, SFXRack)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<KeyValuePair<string, SFXRack>>
+  nameWithType: IReadOnlyCollection<KeyValuePair<string, SFXRack>>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.Collections.Generic.KeyValuePair<string, SombraStudios.Shared.Audio.System.SFXRack>>
+  nameWithType.vb: IReadOnlyCollection(Of KeyValuePair(Of String, SFXRack))
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.Collections.Generic.KeyValuePair(Of String, SombraStudios.Shared.Audio.System.SFXRack))
+  name.vb: IReadOnlyCollection(Of KeyValuePair(Of String, SFXRack))
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, SFXRack>>
+  nameWithType: IEnumerable<KeyValuePair<string, SFXRack>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, SombraStudios.Shared.Audio.System.SFXRack>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, SFXRack))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, SombraStudios.Shared.Audio.System.SFXRack))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, SFXRack))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  - name: )
+- uid: System.Collections.IDictionary
+  commentId: T:System.Collections.IDictionary
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.idictionary
+  name: IDictionary
+  nameWithType: IDictionary
+  fullName: System.Collections.IDictionary
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Runtime.Serialization.IDeserializationCallback
+  commentId: T:System.Runtime.Serialization.IDeserializationCallback
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback
+  name: IDeserializationCallback
+  nameWithType: IDeserializationCallback
+  fullName: System.Runtime.Serialization.IDeserializationCallback
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Item(System.String)
+  commentId: P:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Item(System.String)
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.Item(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: SerializedDictionary<string, SFXRack>.this[string]
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.this[string]
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).this[](String)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Item(System.String)
+    name: this[]
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Add(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Add(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.Add(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Add(string, SFXRack)
+  nameWithType: SerializedDictionary<string, SFXRack>.Add(string, SFXRack)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Add(string, SombraStudios.Shared.Audio.System.SFXRack)
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).Add(String, SFXRack)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Add(String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: Add(String, SFXRack)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Add(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+    name: Add
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Add(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+    name: Add
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Clear
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Clear
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.Clear
+  name: Clear()
+  nameWithType: SerializedDictionary<string, SFXRack>.Clear()
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Clear()
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).Clear()
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Clear()
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Clear
+    name: Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Clear
+    name: Clear
+  - name: (
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String)
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.Remove(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Remove(string)
+  nameWithType: SerializedDictionary<string, SFXRack>.Remove(string)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Remove(string)
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).Remove(String)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Remove(String)
+  name.vb: Remove(String)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String)
+    name: Remove
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String)
+    name: Remove
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryAdd(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryAdd(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.TryAdd(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: TryAdd(string, SFXRack)
+  nameWithType: SerializedDictionary<string, SFXRack>.TryAdd(string, SFXRack)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.TryAdd(string, SombraStudios.Shared.Audio.System.SFXRack)
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).TryAdd(String, SFXRack)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).TryAdd(String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: TryAdd(String, SFXRack)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryAdd(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+    name: TryAdd
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryAdd(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+    name: TryAdd
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.AddConflictAllowed(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.AddConflictAllowed(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.AddConflictAllowed(`0,`1)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AddConflictAllowed(string, SFXRack)
+  nameWithType: SerializedDictionary<string, SFXRack>.AddConflictAllowed(string, SFXRack)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.AddConflictAllowed(string, SombraStudios.Shared.Audio.System.SFXRack)
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).AddConflictAllowed(String, SFXRack)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).AddConflictAllowed(String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: AddConflictAllowed(String, SFXRack)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.AddConflictAllowed(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+    name: AddConflictAllowed
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.AddConflictAllowed(System.String,SombraStudios.Shared.Audio.System.SFXRack)
+    name: AddConflictAllowed
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnAfterDeserialize
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnAfterDeserialize
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  nameWithType: SerializedDictionary<string, SFXRack>.OnAfterDeserialize()
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.OnAfterDeserialize()
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).OnAfterDeserialize()
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).OnAfterDeserialize()
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnAfterDeserialize
+    name: OnAfterDeserialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnAfterDeserialize
+    name: OnAfterDeserialize
+  - name: (
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnBeforeSerialize
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnBeforeSerialize
+  parent: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  nameWithType: SerializedDictionary<string, SFXRack>.OnBeforeSerialize()
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.OnBeforeSerialize()
+  nameWithType.vb: SerializedDictionary(Of String, SFXRack).OnBeforeSerialize()
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).OnBeforeSerialize()
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnBeforeSerialize
+    name: OnBeforeSerialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnBeforeSerialize
+    name: OnBeforeSerialize
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsKey(System.String)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsKey(System.String)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  name: ContainsKey(string)
+  nameWithType: Dictionary<string, SFXRack>.ContainsKey(string)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.ContainsKey(string)
+  nameWithType.vb: Dictionary(Of String, SFXRack).ContainsKey(String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).ContainsKey(String)
+  name.vb: ContainsKey(String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsKey(System.String)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsKey(System.String)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  name: ContainsValue(SFXRack)
+  nameWithType: Dictionary<string, SFXRack>.ContainsValue(SFXRack)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+  nameWithType.vb: Dictionary(Of String, SFXRack).ContainsValue(SFXRack)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.ContainsValue(SombraStudios.Shared.Audio.System.SFXRack)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetEnumerator
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetEnumerator
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  name: GetEnumerator()
+  nameWithType: Dictionary<string, SFXRack>.GetEnumerator()
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.GetEnumerator()
+  nameWithType.vb: Dictionary(Of String, SFXRack).GetEnumerator()
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Dictionary<string, SFXRack>.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType.vb: Dictionary(Of String, SFXRack).GetObjectData(SerializationInfo, StreamingContext)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnDeserialization(System.Object)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnDeserialization(System.Object)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  name: OnDeserialization(object)
+  nameWithType: Dictionary<string, SFXRack>.OnDeserialization(object)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.OnDeserialization(object)
+  nameWithType.vb: Dictionary(Of String, SFXRack).OnDeserialization(Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).OnDeserialization(Object)
+  name.vb: OnDeserialization(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryGetValue(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryGetValue(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  name: TryGetValue(string, out SFXRack)
+  nameWithType: Dictionary<string, SFXRack>.TryGetValue(string, out SFXRack)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.TryGetValue(string, out SombraStudios.Shared.Audio.System.SFXRack)
+  nameWithType.vb: Dictionary(Of String, SFXRack).TryGetValue(String, SFXRack)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).TryGetValue(String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: TryGetValue(String, SFXRack)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryGetValue(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TryGetValue(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.EnsureCapacity(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.EnsureCapacity(System.Int32)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  name: EnsureCapacity(int)
+  nameWithType: Dictionary<string, SFXRack>.EnsureCapacity(int)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.EnsureCapacity(int)
+  nameWithType.vb: Dictionary(Of String, SFXRack).EnsureCapacity(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).EnsureCapacity(Integer)
+  name.vb: EnsureCapacity(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  name: Remove(string, out SFXRack)
+  nameWithType: Dictionary<string, SFXRack>.Remove(string, out SFXRack)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Remove(string, out SombraStudios.Shared.Audio.System.SFXRack)
+  nameWithType.vb: Dictionary(Of String, SFXRack).Remove(String, SFXRack)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Remove(String, SombraStudios.Shared.Audio.System.SFXRack)
+  name.vb: Remove(String, SFXRack)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Remove(System.String,SombraStudios.Shared.Audio.System.SFXRack@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.TrimExcess
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  name: TrimExcess()
+  nameWithType: Dictionary<string, SFXRack>.TrimExcess()
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.TrimExcess()
+  nameWithType.vb: Dictionary(Of String, SFXRack).TrimExcess()
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).TrimExcess()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess(System.Int32)
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  name: TrimExcess(int)
+  nameWithType: Dictionary<string, SFXRack>.TrimExcess(int)
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.TrimExcess(int)
+  nameWithType.vb: Dictionary(Of String, SFXRack).TrimExcess(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).TrimExcess(Integer)
+  name.vb: TrimExcess(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Comparer
+  commentId: P:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Comparer
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.Comparer
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.comparer
+  name: Comparer
+  nameWithType: Dictionary<string, SFXRack>.Comparer
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Comparer
+  nameWithType.vb: Dictionary(Of String, SFXRack).Comparer
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Comparer
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Count
+  commentId: P:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Count
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.count
+  name: Count
+  nameWithType: Dictionary<string, SFXRack>.Count
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Count
+  nameWithType.vb: Dictionary(Of String, SFXRack).Count
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Count
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Keys
+  commentId: P:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Keys
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.Keys
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.keys
+  name: Keys
+  nameWithType: Dictionary<string, SFXRack>.Keys
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Keys
+  nameWithType.vb: Dictionary(Of String, SFXRack).Keys
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Keys
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Values
+  commentId: P:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}.Values
+  parent: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Audio.System.SFXRack}
+  definition: System.Collections.Generic.Dictionary`2.Values
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.values
+  name: Values
+  nameWithType: Dictionary<string, SFXRack>.Values
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Audio.System.SFXRack>.Values
+  nameWithType.vb: Dictionary(Of String, SFXRack).Values
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Audio.System.SFXRack).Values
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}}.SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Int32)
+  commentId: M:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  parent: SombraStudios.Shared.Extensions.IEnumerableExtensions
+  definition: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: GetUniqueRandomItems<KeyValuePair<string, SFXRack>>(IEnumerable<KeyValuePair<string, SFXRack>>, int)
+  nameWithType: IEnumerableExtensions.GetUniqueRandomItems<KeyValuePair<string, SFXRack>>(IEnumerable<KeyValuePair<string, SFXRack>>, int)
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems<System.Collections.Generic.KeyValuePair<string, SombraStudios.Shared.Audio.System.SFXRack>>(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, SombraStudios.Shared.Audio.System.SFXRack>>, int)
+  nameWithType.vb: IEnumerableExtensions.GetUniqueRandomItems(Of KeyValuePair(Of String, SFXRack))(IEnumerable(Of KeyValuePair(Of String, SFXRack)), Integer)
+  fullName.vb: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems(Of System.Collections.Generic.KeyValuePair(Of String, SombraStudios.Shared.Audio.System.SFXRack))(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, SombraStudios.Shared.Audio.System.SFXRack)), Integer)
+  name.vb: GetUniqueRandomItems(Of KeyValuePair(Of String, SFXRack))(IEnumerable(Of KeyValuePair(Of String, SFXRack)), Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,SombraStudios.Shared.Audio.System.SFXRack}},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Audio.System.SFXRack
+    name: SFXRack
+    href: SombraStudios.Shared.Audio.System.SFXRack.html
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2
+  commentId: T:AYellowpaper.SerializedCollections.SerializedDictionary`2
+  name: SerializedDictionary<TKey, TValue>
+  nameWithType: SerializedDictionary<TKey, TValue>
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue)
+  name.vb: SerializedDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2
+    name: SerializedDictionary
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2
+    name: SerializedDictionary
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: AYellowpaper.SerializedCollections
+  commentId: N:AYellowpaper.SerializedCollections
+  name: AYellowpaper.SerializedCollections
+  nameWithType: AYellowpaper.SerializedCollections
+  fullName: AYellowpaper.SerializedCollections
+  spec.csharp:
+  - uid: AYellowpaper
+    name: AYellowpaper
+  - name: .
+  - uid: AYellowpaper.SerializedCollections
+    name: SerializedCollections
+  spec.vb:
+  - uid: AYellowpaper
+    name: AYellowpaper
+  - name: .
+  - uid: AYellowpaper.SerializedCollections
+    name: SerializedCollections
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Item(`0)
+  commentId: P:AYellowpaper.SerializedCollections.SerializedDictionary`2.Item(`0)
+  name: this[TKey]
+  nameWithType: SerializedDictionary<TKey, TValue>.this[TKey]
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.this[TKey]
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).this[](TKey)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).this[](TKey)
+  name.vb: this[](TKey)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - name: TKey
+  - name: ']'
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Item(`0)
+    name: this[]
+  - name: (
+  - name: TKey
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Add(`0,`1)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.Add(`0,`1)
+  name: Add(TKey, TValue)
+  nameWithType: SerializedDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).Add(TKey, TValue)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Add(`0,`1)
+    name: Add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Add(`0,`1)
+    name: Add
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Clear
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.Clear
+  name: Clear()
+  nameWithType: SerializedDictionary<TKey, TValue>.Clear()
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.Clear()
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).Clear()
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).Clear()
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Clear
+    name: Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Clear
+    name: Clear
+  - name: (
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Remove(`0)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.Remove(`0)
+  name: Remove(TKey)
+  nameWithType: SerializedDictionary<TKey, TValue>.Remove(TKey)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).Remove(TKey)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).Remove(TKey)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Remove(`0)
+    name: Remove
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.Remove(`0)
+    name: Remove
+  - name: (
+  - name: TKey
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.TryAdd(`0,`1)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.TryAdd(`0,`1)
+  name: TryAdd(TKey, TValue)
+  nameWithType: SerializedDictionary<TKey, TValue>.TryAdd(TKey, TValue)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.TryAdd(TKey, TValue)
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).TryAdd(TKey, TValue)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).TryAdd(TKey, TValue)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.TryAdd(`0,`1)
+    name: TryAdd
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.TryAdd(`0,`1)
+    name: TryAdd
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.AddConflictAllowed(`0,`1)
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.AddConflictAllowed(`0,`1)
+  name: AddConflictAllowed(TKey, TValue)
+  nameWithType: SerializedDictionary<TKey, TValue>.AddConflictAllowed(TKey, TValue)
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.AddConflictAllowed(TKey, TValue)
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).AddConflictAllowed(TKey, TValue)
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).AddConflictAllowed(TKey, TValue)
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.AddConflictAllowed(`0,`1)
+    name: AddConflictAllowed
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.AddConflictAllowed(`0,`1)
+    name: AddConflictAllowed
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnAfterDeserialize
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.OnAfterDeserialize
+  name: OnAfterDeserialize()
+  nameWithType: SerializedDictionary<TKey, TValue>.OnAfterDeserialize()
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.OnAfterDeserialize()
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).OnAfterDeserialize()
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).OnAfterDeserialize()
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnAfterDeserialize
+    name: OnAfterDeserialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnAfterDeserialize
+    name: OnAfterDeserialize
+  - name: (
+  - name: )
+- uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnBeforeSerialize
+  commentId: M:AYellowpaper.SerializedCollections.SerializedDictionary`2.OnBeforeSerialize
+  name: OnBeforeSerialize()
+  nameWithType: SerializedDictionary<TKey, TValue>.OnBeforeSerialize()
+  fullName: AYellowpaper.SerializedCollections.SerializedDictionary<TKey, TValue>.OnBeforeSerialize()
+  nameWithType.vb: SerializedDictionary(Of TKey, TValue).OnBeforeSerialize()
+  fullName.vb: AYellowpaper.SerializedCollections.SerializedDictionary(Of TKey, TValue).OnBeforeSerialize()
+  spec.csharp:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnBeforeSerialize
+    name: OnBeforeSerialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AYellowpaper.SerializedCollections.SerializedDictionary`2.OnBeforeSerialize
+    name: OnBeforeSerialize
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  name: ContainsKey(TKey)
+  nameWithType: Dictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: Dictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containskey
+  - name: (
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+  commentId: M:System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  name: ContainsValue(TValue)
+  nameWithType: Dictionary<TKey, TValue>.ContainsValue(TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.ContainsValue(TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).ContainsValue(TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).ContainsValue(TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.ContainsValue(`1)
+    name: ContainsValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.containsvalue
+  - name: (
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.GetEnumerator
+  commentId: M:System.Collections.Generic.Dictionary`2.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  name: GetEnumerator()
+  nameWithType: Dictionary<TKey, TValue>.GetEnumerator()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.GetEnumerator()
+  nameWithType.vb: Dictionary(Of TKey, TValue).GetEnumerator()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Dictionary<TKey, TValue>.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType.vb: Dictionary(Of TKey, TValue).GetObjectData(SerializationInfo, StreamingContext)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.getobjectdata
+  - name: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  - name: ','
+  - name: " "
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+  commentId: M:System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  name: OnDeserialization(object)
+  nameWithType: Dictionary<TKey, TValue>.OnDeserialization(object)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.OnDeserialization(object)
+  nameWithType.vb: Dictionary(Of TKey, TValue).OnDeserialization(Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).OnDeserialization(Object)
+  name.vb: OnDeserialization(Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)
+    name: OnDeserialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ondeserialization
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  name: TryGetValue(TKey, out TValue)
+  nameWithType: Dictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  name.vb: TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trygetvalue
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  name: EnsureCapacity(int)
+  nameWithType: Dictionary<TKey, TValue>.EnsureCapacity(int)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.EnsureCapacity(int)
+  nameWithType.vb: Dictionary(Of TKey, TValue).EnsureCapacity(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).EnsureCapacity(Integer)
+  name.vb: EnsureCapacity(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)
+    name: EnsureCapacity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.ensurecapacity
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+  commentId: M:System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  name: Remove(TKey, out TValue)
+  nameWithType: Dictionary<TKey, TValue>.Remove(TKey, out TValue)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Remove(TKey, out TValue)
+  nameWithType.vb: Dictionary(Of TKey, TValue).Remove(TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Remove(TKey, TValue)
+  name.vb: Remove(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: TValue
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.Remove(`0,`1@)
+    name: Remove
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.remove#system-collections-generic-dictionary-2-remove(-0-1@)
+  - name: (
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TrimExcess
+  commentId: M:System.Collections.Generic.Dictionary`2.TrimExcess
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  name: TrimExcess()
+  nameWithType: Dictionary<TKey, TValue>.TrimExcess()
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TrimExcess()
+  nameWithType.vb: Dictionary(Of TKey, TValue).TrimExcess()
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TrimExcess()
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+  commentId: M:System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  name: TrimExcess(int)
+  nameWithType: Dictionary<TKey, TValue>.TrimExcess(int)
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.TrimExcess(int)
+  nameWithType.vb: Dictionary(Of TKey, TValue).TrimExcess(Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).TrimExcess(Integer)
+  name.vb: TrimExcess(Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)
+    name: TrimExcess
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.trimexcess#system-collections-generic-dictionary-2-trimexcess(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2.Comparer
+  commentId: P:System.Collections.Generic.Dictionary`2.Comparer
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.comparer
+  name: Comparer
+  nameWithType: Dictionary<TKey, TValue>.Comparer
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Comparer
+  nameWithType.vb: Dictionary(Of TKey, TValue).Comparer
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Comparer
+- uid: System.Collections.Generic.Dictionary`2.Count
+  commentId: P:System.Collections.Generic.Dictionary`2.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.count
+  name: Count
+  nameWithType: Dictionary<TKey, TValue>.Count
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Count
+  nameWithType.vb: Dictionary(Of TKey, TValue).Count
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Count
+- uid: System.Collections.Generic.Dictionary`2.Keys
+  commentId: P:System.Collections.Generic.Dictionary`2.Keys
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.keys
+  name: Keys
+  nameWithType: Dictionary<TKey, TValue>.Keys
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Keys
+  nameWithType.vb: Dictionary(Of TKey, TValue).Keys
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Keys
+- uid: System.Collections.Generic.Dictionary`2.Values
+  commentId: P:System.Collections.Generic.Dictionary`2.Values
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2.values
+  name: Values
+  nameWithType: Dictionary<TKey, TValue>.Values
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Values
+  nameWithType.vb: Dictionary(Of TKey, TValue).Values
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Values
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: GetUniqueRandomItems<T>(IEnumerable<T>, int)
+  nameWithType: IEnumerableExtensions.GetUniqueRandomItems<T>(IEnumerable<T>, int)
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems<T>(System.Collections.Generic.IEnumerable<T>, int)
+  nameWithType.vb: IEnumerableExtensions.GetUniqueRandomItems(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: GetUniqueRandomItems(Of T)(IEnumerable(Of T), Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions
+  commentId: T:SombraStudios.Shared.Extensions.IEnumerableExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html
+  name: IEnumerableExtensions
+  nameWithType: IEnumerableExtensions
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll
+  href: SombraStudios.Shared.Audio.System.SFXStringDictionary.html#SombraStudios_Shared_Audio_System_SFXStringDictionary_InstantiateAll_UnityEngine_Transform_
+  name: InstantiateAll
+  nameWithType: SFXStringDictionary.InstantiateAll
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.InstantiateAll
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.Play*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXStringDictionary.Play
+  href: SombraStudios.Shared.Audio.System.SFXStringDictionary.html#SombraStudios_Shared_Audio_System_SFXStringDictionary_Play_System_String_
+  name: Play
+  nameWithType: SFXStringDictionary.Play
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.Play
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop
+  href: SombraStudios.Shared.Audio.System.SFXStringDictionary.html#SombraStudios_Shared_Audio_System_SFXStringDictionary_Stop_System_String_
+  name: Stop
+  nameWithType: SFXStringDictionary.Stop
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.Stop
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances
+  href: SombraStudios.Shared.Audio.System.SFXStringDictionary.html#SombraStudios_Shared_Audio_System_SFXStringDictionary_StopAllInstances
+  name: StopAllInstances
+  nameWithType: SFXStringDictionary.StopAllInstances
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary.StopAllInstances

@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Audio.System.SFXScriptableData
+  commentId: T:SombraStudios.Shared.Audio.System.SFXScriptableData
+  id: SFXScriptableData
+  parent: SombraStudios.Shared.Audio.System
+  children:
+  - SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack
+  - SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack
+  langs:
+  - csharp
+  - vb
+  name: SFXScriptableData
+  nameWithType: SFXScriptableData
+  fullName: SombraStudios.Shared.Audio.System.SFXScriptableData
+  type: Class
+  source:
+    remote:
+      path: Audio/System/SFXScriptableData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SFXScriptableData
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXScriptableData.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Represents a ScriptableObject containing SFX and voice data.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      [CreateAssetMenu(fileName = "New SFX Data", menuName = "Sombra Studios/Audio/SFX Data")]
+
+      public class SFXScriptableData : ScriptableObject
+    content.vb: >-
+      <Serializable>
+
+      <CreateAssetMenu(fileName:="New SFX Data", menuName:="Sombra Studios/Audio/SFX Data")>
+
+      Public Class SFXScriptableData Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New SFX Data
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Audio/SFX Data
+- uid: SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack
+  commentId: P:SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack
+  id: SFXRack
+  parent: SombraStudios.Shared.Audio.System.SFXScriptableData
+  langs:
+  - csharp
+  - vb
+  name: SFXRack
+  nameWithType: SFXScriptableData.SFXRack
+  fullName: SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack
+  type: Property
+  source:
+    remote:
+      path: Audio/System/SFXScriptableData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SFXRack
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXScriptableData.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Gets the dictionary containing SFXRack instances.
+  example: []
+  syntax:
+    content: public SFXStringDictionary SFXRack { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Audio.System.SFXStringDictionary
+    content.vb: Public ReadOnly Property SFXRack As SFXStringDictionary
+  overload: SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack*
+- uid: SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack
+  commentId: P:SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack
+  id: VoiceRack
+  parent: SombraStudios.Shared.Audio.System.SFXScriptableData
+  langs:
+  - csharp
+  - vb
+  name: VoiceRack
+  nameWithType: SFXScriptableData.VoiceRack
+  fullName: SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack
+  type: Property
+  source:
+    remote:
+      path: Audio/System/SFXScriptableData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: VoiceRack
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXScriptableData.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Gets the dictionary containing SFXInterruptable instances.
+  example: []
+  syntax:
+    content: public SFXInterruptableDictionary VoiceRack { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Audio.System.SFXInterruptableDictionary
+    content.vb: Public ReadOnly Property VoiceRack As SFXInterruptableDictionary
+  overload: SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack*
+references:
+- uid: SombraStudios.Shared.Audio.System
+  commentId: N:SombraStudios.Shared.Audio.System
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Audio.System
+  nameWithType: SombraStudios.Shared.Audio.System
+  fullName: SombraStudios.Shared.Audio.System
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack
+  href: SombraStudios.Shared.Audio.System.SFXScriptableData.html#SombraStudios_Shared_Audio_System_SFXScriptableData_SFXRack
+  name: SFXRack
+  nameWithType: SFXScriptableData.SFXRack
+  fullName: SombraStudios.Shared.Audio.System.SFXScriptableData.SFXRack
+- uid: SombraStudios.Shared.Audio.System.SFXStringDictionary
+  commentId: T:SombraStudios.Shared.Audio.System.SFXStringDictionary
+  parent: SombraStudios.Shared.Audio.System
+  href: SombraStudios.Shared.Audio.System.SFXStringDictionary.html
+  name: SFXStringDictionary
+  nameWithType: SFXStringDictionary
+  fullName: SombraStudios.Shared.Audio.System.SFXStringDictionary
+- uid: SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack
+  href: SombraStudios.Shared.Audio.System.SFXScriptableData.html#SombraStudios_Shared_Audio_System_SFXScriptableData_VoiceRack
+  name: VoiceRack
+  nameWithType: SFXScriptableData.VoiceRack
+  fullName: SombraStudios.Shared.Audio.System.SFXScriptableData.VoiceRack
+- uid: SombraStudios.Shared.Audio.System.SFXInterruptableDictionary
+  commentId: T:SombraStudios.Shared.Audio.System.SFXInterruptableDictionary
+  parent: SombraStudios.Shared.Audio.System
+  href: SombraStudios.Shared.Audio.System.SFXInterruptableDictionary.html
+  name: SFXInterruptableDictionary
+  nameWithType: SFXInterruptableDictionary
+  fullName: SombraStudios.Shared.Audio.System.SFXInterruptableDictionary

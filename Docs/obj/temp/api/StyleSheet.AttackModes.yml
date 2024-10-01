@@ -1,0 +1,188 @@
+### YamlMime:ManagedReference
+items:
+- uid: StyleSheet.AttackModes
+  commentId: T:StyleSheet.AttackModes
+  id: AttackModes
+  parent: StyleSheet
+  children:
+  - StyleSheet.AttackModes.Melee
+  - StyleSheet.AttackModes.MeleeAndSpecial
+  - StyleSheet.AttackModes.None
+  - StyleSheet.AttackModes.Ranged
+  - StyleSheet.AttackModes.Special
+  langs:
+  - csharp
+  - vb
+  name: AttackModes
+  nameWithType: AttackModes
+  fullName: StyleSheet.AttackModes
+  type: Enum
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AttackModes
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 67
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum AttackModes
+    content.vb: >-
+      <Flags>
+
+      Public Enum AttackModes
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: StyleSheet.AttackModes.None
+  commentId: F:StyleSheet.AttackModes.None
+  id: None
+  parent: StyleSheet.AttackModes
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AttackModes.None
+  fullName: StyleSheet.AttackModes.None
+  type: Field
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: None
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 71
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: None = 0
+    return:
+      type: StyleSheet.AttackModes
+- uid: StyleSheet.AttackModes.Melee
+  commentId: F:StyleSheet.AttackModes.Melee
+  id: Melee
+  parent: StyleSheet.AttackModes
+  langs:
+  - csharp
+  - vb
+  name: Melee
+  nameWithType: AttackModes.Melee
+  fullName: StyleSheet.AttackModes.Melee
+  type: Field
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Melee
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 72
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: Melee = 1
+    return:
+      type: StyleSheet.AttackModes
+- uid: StyleSheet.AttackModes.Ranged
+  commentId: F:StyleSheet.AttackModes.Ranged
+  id: Ranged
+  parent: StyleSheet.AttackModes
+  langs:
+  - csharp
+  - vb
+  name: Ranged
+  nameWithType: AttackModes.Ranged
+  fullName: StyleSheet.AttackModes.Ranged
+  type: Field
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Ranged
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 73
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: Ranged = 2
+    return:
+      type: StyleSheet.AttackModes
+- uid: StyleSheet.AttackModes.Special
+  commentId: F:StyleSheet.AttackModes.Special
+  id: Special
+  parent: StyleSheet.AttackModes
+  langs:
+  - csharp
+  - vb
+  name: Special
+  nameWithType: AttackModes.Special
+  fullName: StyleSheet.AttackModes.Special
+  type: Field
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Special
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 74
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: Special = 4
+    return:
+      type: StyleSheet.AttackModes
+- uid: StyleSheet.AttackModes.MeleeAndSpecial
+  commentId: F:StyleSheet.AttackModes.MeleeAndSpecial
+  id: MeleeAndSpecial
+  parent: StyleSheet.AttackModes
+  langs:
+  - csharp
+  - vb
+  name: MeleeAndSpecial
+  nameWithType: AttackModes.MeleeAndSpecial
+  fullName: StyleSheet.AttackModes.MeleeAndSpecial
+  type: Field
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MeleeAndSpecial
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 76
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: MeleeAndSpecial = Melee | Special
+    return:
+      type: StyleSheet.AttackModes
+    content.vb: MeleeAndSpecial = Melee Or Special
+references:
+- uid: StyleSheet
+  commentId: N:StyleSheet
+  href: StyleSheet.html
+  name: StyleSheet
+  nameWithType: StyleSheet
+  fullName: StyleSheet
+- uid: StyleSheet.AttackModes
+  commentId: T:StyleSheet.AttackModes
+  parent: StyleSheet
+  href: StyleSheet.AttackModes.html
+  name: AttackModes
+  nameWithType: AttackModes
+  fullName: StyleSheet.AttackModes

@@ -1,0 +1,360 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatModifier`1
+  id: StatModifier`1
+  parent: SombraStudios.Shared.Systems.Stats
+  children:
+  - SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor(`0)
+  - SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor(`0,System.Object)
+  - SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  - SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  - SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  - SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  langs:
+  - csharp
+  - vb
+  name: StatModifier<T>
+  nameWithType: StatModifier<T>
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StatModifier
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Represents a modifier for a stat.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class StatModifier<T>
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class StatModifier(Of T)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Stats.StatBoolModifier
+  - SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  - SombraStudios.Shared.Systems.Stats.StatIntModifier
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: StatModifier(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)
+  name.vb: StatModifier(Of T)
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  id: _source
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  langs:
+  - csharp
+  - vb
+  name: _source
+  nameWithType: StatModifier<T>._source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>._source
+  type: Field
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _source
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: The source of the modifier.
+  example: []
+  syntax:
+    content: public object _source
+    return:
+      type: System.Object
+    content.vb: Public _source As Object
+  nameWithType.vb: StatModifier(Of T)._source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)._source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  id: _value
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  langs:
+  - csharp
+  - vb
+  name: _value
+  nameWithType: StatModifier<T>._value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>._value
+  type: Field
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _value
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: The value of the modifier.
+  example: []
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected T _value
+    return:
+      type: '{T}'
+    content.vb: >-
+      <SerializeField>
+
+      Protected _value As T
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: StatModifier(Of T)._value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)._value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  id: Source
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: StatModifier<T>.Source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Source
+  type: Property
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Source
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Gets the source of the modifier.
+  example: []
+  syntax:
+    content: public object Source { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property Source As Object
+  overload: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source*
+  nameWithType.vb: StatModifier(Of T).Source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  id: Value
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: StatModifier<T>.Value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Value
+  type: Property
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Value
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 27
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Gets the value of the modifier.
+  example: []
+  syntax:
+    content: public T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Value As T
+  overload: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value*
+  nameWithType.vb: StatModifier(Of T).Value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor(`0,System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor(`0,System.Object)
+  id: '#ctor(`0,System.Object)'
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  langs:
+  - csharp
+  - vb
+  name: StatModifier(T, object)
+  nameWithType: StatModifier<T>.StatModifier(T, object)
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.StatModifier(T, object)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 35
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new stat modifier with a value and source.
+  example: []
+  syntax:
+    content: public StatModifier(T value, object source)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value of the modifier.
+    - id: source
+      type: System.Object
+      description: The source of the modifier.
+    content.vb: Public Sub New(value As T, source As Object)
+  overload: SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor*
+  nameWithType.vb: StatModifier(Of T).New(T, Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).New(T, Object)
+  name.vb: New(T, Object)
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor(`0)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  langs:
+  - csharp
+  - vb
+  name: StatModifier(T)
+  nameWithType: StatModifier<T>.StatModifier(T)
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.StatModifier(T)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatModifier.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new stat modifier with a value and no source.
+  example: []
+  syntax:
+    content: public StatModifier(T value)
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The value of the modifier.
+    content.vb: Public Sub New(value As T)
+  overload: SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor*
+  nameWithType.vb: StatModifier(Of T).New(T)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).New(T)
+  name.vb: New(T)
+references:
+- uid: SombraStudios.Shared.Systems.Stats
+  commentId: N:SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Stats
+  nameWithType: SombraStudios.Shared.Systems.Stats
+  fullName: SombraStudios.Shared.Systems.Stats
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Source
+  name: Source
+  nameWithType: StatModifier<T>.Source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Source
+  nameWithType.vb: StatModifier(Of T).Source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Value
+  name: Value
+  nameWithType: StatModifier<T>.Value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Value
+  nameWithType.vb: StatModifier(Of T).Value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatModifier`1.#ctor
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__ctor__0_System_Object_
+  name: StatModifier
+  nameWithType: StatModifier<T>.StatModifier
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.StatModifier
+  nameWithType.vb: StatModifier(Of T).New
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).New
+  name.vb: New

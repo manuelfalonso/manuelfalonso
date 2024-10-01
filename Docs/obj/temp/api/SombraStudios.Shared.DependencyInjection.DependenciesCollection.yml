@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  commentId: T:SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  id: DependenciesCollection
+  parent: SombraStudios.Shared.DependencyInjection
+  children:
+  - SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add(SombraStudios.Shared.DependencyInjection.Dependency)
+  - SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator
+  langs:
+  - csharp
+  - vb
+  name: DependenciesCollection
+  nameWithType: DependenciesCollection
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  type: Class
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesCollection.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DependenciesCollection
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesCollection.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  syntax:
+    content: 'public class DependenciesCollection : IEnumerable<Dependency>, IEnumerable'
+    content.vb: Public Class DependenciesCollection Implements IEnumerable(Of Dependency), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}
+  - System.Collections.IEnumerable
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Int32)
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add(SombraStudios.Shared.DependencyInjection.Dependency)
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add(SombraStudios.Shared.DependencyInjection.Dependency)
+  id: Add(SombraStudios.Shared.DependencyInjection.Dependency)
+  parent: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  langs:
+  - csharp
+  - vb
+  name: Add(Dependency)
+  nameWithType: DependenciesCollection.Add(Dependency)
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add(SombraStudios.Shared.DependencyInjection.Dependency)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesCollection.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Add
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesCollection.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  syntax:
+    content: public void Add(Dependency dependency)
+    parameters:
+    - id: dependency
+      type: SombraStudios.Shared.DependencyInjection.Dependency
+    content.vb: Public Sub Add(dependency As Dependency)
+  overload: SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add*
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator
+  id: GetEnumerator
+  parent: SombraStudios.Shared.DependencyInjection.DependenciesCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: DependenciesCollection.GetEnumerator()
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependenciesCollection.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetEnumerator
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependenciesCollection.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  example: []
+  syntax:
+    content: public IEnumerator<Dependency> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{SombraStudios.Shared.DependencyInjection.Dependency}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of Dependency)
+  overload: SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.GetEnumerator
+references:
+- uid: SombraStudios.Shared.DependencyInjection
+  commentId: N:SombraStudios.Shared.DependencyInjection
+  href: SombraStudios.html
+  name: SombraStudios.Shared.DependencyInjection
+  nameWithType: SombraStudios.Shared.DependencyInjection
+  fullName: SombraStudios.Shared.DependencyInjection
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.DependencyInjection.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.DependencyInjection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}
+  commentId: T:System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Dependency>
+  nameWithType: IEnumerable<Dependency>
+  fullName: System.Collections.Generic.IEnumerable<SombraStudios.Shared.DependencyInjection.Dependency>
+  nameWithType.vb: IEnumerable(Of Dependency)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SombraStudios.Shared.DependencyInjection.Dependency)
+  name.vb: IEnumerable(Of Dependency)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Int32)
+  commentId: M:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  parent: SombraStudios.Shared.Extensions.IEnumerableExtensions
+  definition: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: GetUniqueRandomItems<Dependency>(IEnumerable<Dependency>, int)
+  nameWithType: IEnumerableExtensions.GetUniqueRandomItems<Dependency>(IEnumerable<Dependency>, int)
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems<SombraStudios.Shared.DependencyInjection.Dependency>(System.Collections.Generic.IEnumerable<SombraStudios.Shared.DependencyInjection.Dependency>, int)
+  nameWithType.vb: IEnumerableExtensions.GetUniqueRandomItems(Of Dependency)(IEnumerable(Of Dependency), Integer)
+  fullName.vb: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems(Of SombraStudios.Shared.DependencyInjection.Dependency)(System.Collections.Generic.IEnumerable(Of SombraStudios.Shared.DependencyInjection.Dependency), Integer)
+  name.vb: GetUniqueRandomItems(Of Dependency)(IEnumerable(Of Dependency), Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: <
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  commentId: M:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  name: GetUniqueRandomItems<T>(IEnumerable<T>, int)
+  nameWithType: IEnumerableExtensions.GetUniqueRandomItems<T>(IEnumerable<T>, int)
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems<T>(System.Collections.Generic.IEnumerable<T>, int)
+  nameWithType.vb: IEnumerableExtensions.GetUniqueRandomItems(Of T)(IEnumerable(Of T), Integer)
+  fullName.vb: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
+  name.vb: GetUniqueRandomItems(Of T)(IEnumerable(Of T), Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
+    name: GetUniqueRandomItems
+    href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions
+  commentId: T:SombraStudios.Shared.Extensions.IEnumerableExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html
+  name: IEnumerableExtensions
+  nameWithType: IEnumerableExtensions
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add
+  href: SombraStudios.Shared.DependencyInjection.DependenciesCollection.html#SombraStudios_Shared_DependencyInjection_DependenciesCollection_Add_SombraStudios_Shared_DependencyInjection_Dependency_
+  name: Add
+  nameWithType: DependenciesCollection.Add
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesCollection.Add
+- uid: SombraStudios.Shared.DependencyInjection.Dependency
+  commentId: T:SombraStudios.Shared.DependencyInjection.Dependency
+  parent: SombraStudios.Shared.DependencyInjection
+  href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  name: Dependency
+  nameWithType: Dependency
+  fullName: SombraStudios.Shared.DependencyInjection.Dependency
+- uid: SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator
+  href: SombraStudios.Shared.DependencyInjection.DependenciesCollection.html#SombraStudios_Shared_DependencyInjection_DependenciesCollection_GetEnumerator
+  name: GetEnumerator
+  nameWithType: DependenciesCollection.GetEnumerator
+  fullName: SombraStudios.Shared.DependencyInjection.DependenciesCollection.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<Dependency>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<SombraStudios.Shared.DependencyInjection.Dependency>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of Dependency).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SombraStudios.Shared.DependencyInjection.Dependency).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{SombraStudios.Shared.DependencyInjection.Dependency}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{SombraStudios.Shared.DependencyInjection.Dependency}
+  commentId: T:System.Collections.Generic.IEnumerator{SombraStudios.Shared.DependencyInjection.Dependency}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<Dependency>
+  nameWithType: IEnumerator<Dependency>
+  fullName: System.Collections.Generic.IEnumerator<SombraStudios.Shared.DependencyInjection.Dependency>
+  nameWithType.vb: IEnumerator(Of Dependency)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of SombraStudios.Shared.DependencyInjection.Dependency)
+  name.vb: IEnumerator(Of Dependency)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.DependencyInjection.Dependency
+    name: Dependency
+    href: SombraStudios.Shared.DependencyInjection.Dependency.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

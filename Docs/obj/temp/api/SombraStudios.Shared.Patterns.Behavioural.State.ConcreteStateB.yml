@@ -1,0 +1,307 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB
+  id: ConcreteStateB
+  parent: SombraStudios.Shared.Patterns.Behavioural.State
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.#ctor(SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext)
+  - SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2
+  - SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start
+  langs:
+  - csharp
+  - vb
+  name: ConcreteStateB
+  nameWithType: ConcreteStateB
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/State/ConcreteStateB.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ConcreteStateB
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/State/ConcreteStateB.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Patterns.Behavioural.State
+  summary: >-
+    Concrete States provide their own implementations for the 
+
+    state-specific methods. To avoid duplication of similar code 
+
+    across multiple states, you may provide intermediate abstract 
+
+    classes that encapsulate some common behavior.
+
+    State objects may store a backreference to the context object. 
+
+    Through this reference, the state can fetch any required info 
+
+    from the context object, as well as initiate state transitions.
+
+
+    This example is for a Dungeon behaviour
+  example: []
+  syntax:
+    content: 'public class ConcreteStateB : State'
+    content.vb: Public Class ConcreteStateB Inherits State
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Patterns.Behavioural.State.State
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Behavioural.State.State._context
+  - SombraStudios.Shared.Patterns.Behavioural.State.State.Handle1
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.#ctor(SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.#ctor(SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext)
+  id: '#ctor(SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext)'
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB
+  langs:
+  - csharp
+  - vb
+  name: ConcreteStateB(AbstractStateContext)
+  nameWithType: ConcreteStateB.ConcreteStateB(AbstractStateContext)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.ConcreteStateB(SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext)
+  type: Constructor
+  source:
+    remote:
+      path: Patterns/Behavioural/State/ConcreteStateB.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/State/ConcreteStateB.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Patterns.Behavioural.State
+  syntax:
+    content: public ConcreteStateB(AbstractStateContext context)
+    parameters:
+    - id: context
+      type: SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext
+    content.vb: Public Sub New(context As AbstractStateContext)
+  overload: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.#ctor*
+  nameWithType.vb: ConcreteStateB.New(AbstractStateContext)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.New(SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext)
+  name.vb: New(AbstractStateContext)
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start
+  id: Start
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ConcreteStateB.Start()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/State/ConcreteStateB.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Start
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/State/ConcreteStateB.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Patterns.Behavioural.State
+  example: []
+  syntax:
+    content: public override void Start()
+    content.vb: Public Overrides Sub Start()
+  overridden: SombraStudios.Shared.Patterns.Behavioural.State.State.Start
+  overload: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start*
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2
+  id: Handle2
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB
+  langs:
+  - csharp
+  - vb
+  name: Handle2()
+  nameWithType: ConcreteStateB.Handle2()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/State/ConcreteStateB.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Handle2
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/State/ConcreteStateB.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Patterns.Behavioural.State
+  example: []
+  syntax:
+    content: public override void Handle2()
+    content.vb: Public Overrides Sub Handle2()
+  overridden: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle2
+  overload: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.State
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.State
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.State
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.State
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State
+    name: State
+    href: SombraStudios.Shared.Patterns.Behavioural.State.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State
+    name: State
+    href: SombraStudios.Shared.Patterns.Behavioural.State.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.State
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.State.State
+  parent: SombraStudios.Shared.Patterns.Behavioural.State
+  href: SombraStudios.Shared.Patterns.Behavioural.State.State.html
+  name: State
+  nameWithType: State
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.State
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.State._context
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.State.State._context
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.State
+  href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State__context
+  name: _context
+  nameWithType: State._context
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.State._context
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle1
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.State.State.Handle1
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.State
+  href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Handle1
+  name: Handle1()
+  nameWithType: State.Handle1()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle1()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle1
+    name: Handle1
+    href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Handle1
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle1
+    name: Handle1
+    href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Handle1
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.#ctor*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.#ctor
+  href: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.html#SombraStudios_Shared_Patterns_Behavioural_State_ConcreteStateB__ctor_SombraStudios_Shared_Patterns_Behavioural_State_AbstractStateContext_
+  name: ConcreteStateB
+  nameWithType: ConcreteStateB.ConcreteStateB
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.ConcreteStateB
+  nameWithType.vb: ConcreteStateB.New
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.New
+  name.vb: New
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext
+  parent: SombraStudios.Shared.Patterns.Behavioural.State
+  href: SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext.html
+  name: AbstractStateContext
+  nameWithType: AbstractStateContext
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.AbstractStateContext
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Start
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.State.State.Start
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.State
+  href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Start
+  name: Start()
+  nameWithType: State.Start()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.State.Start()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Start
+    name: Start
+    href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Start
+    name: Start
+    href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Start
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start
+  href: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.html#SombraStudios_Shared_Patterns_Behavioural_State_ConcreteStateB_Start
+  name: Start
+  nameWithType: ConcreteStateB.Start
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Start
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle2
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.State.State.Handle2
+  parent: SombraStudios.Shared.Patterns.Behavioural.State.State
+  href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Handle2
+  name: Handle2()
+  nameWithType: State.Handle2()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle2()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle2
+    name: Handle2
+    href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Handle2
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.State.State.Handle2
+    name: Handle2
+    href: SombraStudios.Shared.Patterns.Behavioural.State.State.html#SombraStudios_Shared_Patterns_Behavioural_State_State_Handle2
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2
+  href: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.html#SombraStudios_Shared_Patterns_Behavioural_State_ConcreteStateB_Handle2
+  name: Handle2
+  nameWithType: ConcreteStateB.Handle2
+  fullName: SombraStudios.Shared.Patterns.Behavioural.State.ConcreteStateB.Handle2

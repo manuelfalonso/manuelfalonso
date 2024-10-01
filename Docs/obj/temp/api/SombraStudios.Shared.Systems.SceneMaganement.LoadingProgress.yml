@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
+  commentId: T:SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
+  id: LoadingProgress
+  parent: SombraStudios.Shared.Systems.SceneMaganement
+  children:
+  - SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress
+  - SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.ProgressChanged
+  - SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: LoadingProgress
+  nameWithType: LoadingProgress
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
+  type: Class
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LoadingProgress
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 245
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: 'public class LoadingProgress : IProgress<float>'
+    content.vb: Public Class LoadingProgress Implements IProgress(Of Single)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IProgress{System.Single}
+- uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.ProgressChanged
+  commentId: E:SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.ProgressChanged
+  id: ProgressChanged
+  parent: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
+  langs:
+  - csharp
+  - vb
+  name: ProgressChanged
+  nameWithType: LoadingProgress.ProgressChanged
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.ProgressChanged
+  type: Event
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ProgressChanged
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 247
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: public event Action<float> ProgressChanged
+    return:
+      type: System.Action{System.Single}
+    content.vb: Public Event ProgressChanged As Action(Of Single)
+- uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress
+  commentId: P:SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress
+  id: Progress
+  parent: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: LoadingProgress.Progress
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress
+  type: Property
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Progress
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 249
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: public float Progress { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Progress As Single
+  overload: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress*
+- uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report(System.Single)
+  id: Report(System.Single)
+  parent: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
+  langs:
+  - csharp
+  - vb
+  name: Report(float)
+  nameWithType: LoadingProgress.Report(float)
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report(float)
+  type: Method
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Report
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 252
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  example: []
+  syntax:
+    content: public void Report(float value)
+    parameters:
+    - id: value
+      type: System.Single
+    content.vb: Public Sub Report(value As Single)
+  overload: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report*
+  implements:
+  - System.IProgress{System.Single}.Report(System.Single)
+  nameWithType.vb: LoadingProgress.Report(Single)
+  fullName.vb: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report(Single)
+  name.vb: Report(Single)
+references:
+- uid: SombraStudios.Shared.Systems.SceneMaganement
+  commentId: N:SombraStudios.Shared.Systems.SceneMaganement
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.SceneMaganement
+  nameWithType: SombraStudios.Shared.Systems.SceneMaganement
+  fullName: SombraStudios.Shared.Systems.SceneMaganement
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.SceneMaganement
+    name: SceneMaganement
+    href: SombraStudios.Shared.Systems.SceneMaganement.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.SceneMaganement
+    name: SceneMaganement
+    href: SombraStudios.Shared.Systems.SceneMaganement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IProgress{System.Single}
+  commentId: T:System.IProgress{System.Single}
+  parent: System
+  definition: System.IProgress`1
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<float>
+  nameWithType: IProgress<float>
+  fullName: System.IProgress<float>
+  nameWithType.vb: IProgress(Of Single)
+  fullName.vb: System.IProgress(Of Single)
+  name.vb: IProgress(Of Single)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{System.Single}
+  commentId: T:System.Action{System.Single}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<float>
+  nameWithType: Action<float>
+  fullName: System.Action<float>
+  nameWithType.vb: Action(Of Single)
+  fullName.vb: System.Action(Of Single)
+  name.vb: Action(Of Single)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress*
+  commentId: Overload:SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress
+  href: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.html#SombraStudios_Shared_Systems_SceneMaganement_LoadingProgress_Progress
+  name: Progress
+  nameWithType: LoadingProgress.Progress
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Progress
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report*
+  commentId: Overload:SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report
+  href: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.html#SombraStudios_Shared_Systems_SceneMaganement_LoadingProgress_Report_System_Single_
+  name: Report
+  nameWithType: LoadingProgress.Report
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress.Report
+- uid: System.IProgress{System.Single}.Report(System.Single)
+  commentId: M:System.IProgress{System.Single}.Report(System.Single)
+  parent: System.IProgress{System.Single}
+  definition: System.IProgress`1.Report(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  name: Report(float)
+  nameWithType: IProgress<float>.Report(float)
+  fullName: System.IProgress<float>.Report(float)
+  nameWithType.vb: IProgress(Of Single).Report(Single)
+  fullName.vb: System.IProgress(Of Single).Report(Single)
+  name.vb: Report(Single)
+  spec.csharp:
+  - uid: System.IProgress{System.Single}.Report(System.Single)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: System.IProgress{System.Single}.Report(System.Single)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.IProgress`1.Report(`0)
+  commentId: M:System.IProgress`1.Report(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  name: Report(T)
+  nameWithType: IProgress<T>.Report(T)
+  fullName: System.IProgress<T>.Report(T)
+  nameWithType.vb: IProgress(Of T).Report(T)
+  fullName.vb: System.IProgress(Of T).Report(T)
+  spec.csharp:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IProgress`1.Report(`0)
+    name: Report
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1.report
+  - name: (
+  - name: T
+  - name: )

@@ -1,0 +1,832 @@
+### YamlMime:ManagedReference
+items:
+- uid: StyleSheet.CodeStyle
+  commentId: T:StyleSheet.CodeStyle
+  id: CodeStyle
+  parent: StyleSheet
+  children:
+  - StyleSheet.CodeStyle.DescriptionName
+  - StyleSheet.CodeStyle.DoorOpened
+  - StyleSheet.CodeStyle.Health
+  - StyleSheet.CodeStyle.IsNewPosition(UnityEngine.Vector3)
+  - StyleSheet.CodeStyle.MaxHealth
+  - StyleSheet.CodeStyle.MaxHealthReadOnly
+  - StyleSheet.CodeStyle.OnDoorOpened
+  - StyleSheet.CodeStyle.OnPointsScored(System.Int32)
+  - StyleSheet.CodeStyle.OpeningDoor
+  - StyleSheet.CodeStyle.PointsScored
+  - StyleSheet.CodeStyle.SetInitialPosition(System.Single,System.Single,System.Single)
+  - StyleSheet.CodeStyle.SetMaxHealth(System.Int32)
+  - StyleSheet.CodeStyle.ThingHappened
+  langs:
+  - csharp
+  - vb
+  name: CodeStyle
+  nameWithType: CodeStyle
+  fullName: StyleSheet.CodeStyle
+  type: Class
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CodeStyle
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 102
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: 'public class CodeStyle : MonoBehaviour'
+    content.vb: Public Class CodeStyle Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: StyleSheet.CodeStyle.MaxHealthReadOnly
+  commentId: P:StyleSheet.CodeStyle.MaxHealthReadOnly
+  id: MaxHealthReadOnly
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: MaxHealthReadOnly
+  nameWithType: CodeStyle.MaxHealthReadOnly
+  fullName: StyleSheet.CodeStyle.MaxHealthReadOnly
+  type: Property
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxHealthReadOnly
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 142
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public int MaxHealthReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxHealthReadOnly As Integer
+  overload: StyleSheet.CodeStyle.MaxHealthReadOnly*
+- uid: StyleSheet.CodeStyle.MaxHealth
+  commentId: P:StyleSheet.CodeStyle.MaxHealth
+  id: MaxHealth
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: MaxHealth
+  nameWithType: CodeStyle.MaxHealth
+  fullName: StyleSheet.CodeStyle.MaxHealth
+  type: Property
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxHealth
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 148
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public int MaxHealth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxHealth As Integer
+  overload: StyleSheet.CodeStyle.MaxHealth*
+- uid: StyleSheet.CodeStyle.Health
+  commentId: P:StyleSheet.CodeStyle.Health
+  id: Health
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: Health
+  nameWithType: CodeStyle.Health
+  fullName: StyleSheet.CodeStyle.Health
+  type: Property
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Health
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 155
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public int Health { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Health As Integer
+  overload: StyleSheet.CodeStyle.Health*
+- uid: StyleSheet.CodeStyle.SetMaxHealth(System.Int32)
+  commentId: M:StyleSheet.CodeStyle.SetMaxHealth(System.Int32)
+  id: SetMaxHealth(System.Int32)
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: SetMaxHealth(int)
+  nameWithType: CodeStyle.SetMaxHealth(int)
+  fullName: StyleSheet.CodeStyle.SetMaxHealth(int)
+  type: Method
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetMaxHealth
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 158
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public void SetMaxHealth(int newMaxValue)
+    parameters:
+    - id: newMaxValue
+      type: System.Int32
+    content.vb: Public Sub SetMaxHealth(newMaxValue As Integer)
+  overload: StyleSheet.CodeStyle.SetMaxHealth*
+  nameWithType.vb: CodeStyle.SetMaxHealth(Integer)
+  fullName.vb: StyleSheet.CodeStyle.SetMaxHealth(Integer)
+  name.vb: SetMaxHealth(Integer)
+- uid: StyleSheet.CodeStyle.DescriptionName
+  commentId: P:StyleSheet.CodeStyle.DescriptionName
+  id: DescriptionName
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: DescriptionName
+  nameWithType: CodeStyle.DescriptionName
+  fullName: StyleSheet.CodeStyle.DescriptionName
+  type: Property
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DescriptionName
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 161
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public string DescriptionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DescriptionName As String
+  overload: StyleSheet.CodeStyle.DescriptionName*
+- uid: StyleSheet.CodeStyle.OpeningDoor
+  commentId: E:StyleSheet.CodeStyle.OpeningDoor
+  id: OpeningDoor
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: OpeningDoor
+  nameWithType: CodeStyle.OpeningDoor
+  fullName: StyleSheet.CodeStyle.OpeningDoor
+  type: Event
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OpeningDoor
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 173
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public event Action OpeningDoor
+    return:
+      type: System.Action
+    content.vb: Public Event OpeningDoor As Action
+- uid: StyleSheet.CodeStyle.DoorOpened
+  commentId: E:StyleSheet.CodeStyle.DoorOpened
+  id: DoorOpened
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: DoorOpened
+  nameWithType: CodeStyle.DoorOpened
+  fullName: StyleSheet.CodeStyle.DoorOpened
+  type: Event
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoorOpened
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 176
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public event Action DoorOpened
+    return:
+      type: System.Action
+    content.vb: Public Event DoorOpened As Action
+- uid: StyleSheet.CodeStyle.PointsScored
+  commentId: E:StyleSheet.CodeStyle.PointsScored
+  id: PointsScored
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: PointsScored
+  nameWithType: CodeStyle.PointsScored
+  fullName: StyleSheet.CodeStyle.PointsScored
+  type: Event
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PointsScored
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 178
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public event Action<int> PointsScored
+    return:
+      type: System.Action{System.Int32}
+    content.vb: Public Event PointsScored As Action(Of Integer)
+- uid: StyleSheet.CodeStyle.ThingHappened
+  commentId: E:StyleSheet.CodeStyle.ThingHappened
+  id: ThingHappened
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: ThingHappened
+  nameWithType: CodeStyle.ThingHappened
+  fullName: StyleSheet.CodeStyle.ThingHappened
+  type: Event
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ThingHappened
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 179
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public event Action<CodeStyle.CustomEventArgs> ThingHappened
+    return:
+      type: System.Action{StyleSheet.CodeStyle.CustomEventArgs}
+    content.vb: Public Event ThingHappened As Action(Of CodeStyle.CustomEventArgs)
+- uid: StyleSheet.CodeStyle.OnDoorOpened
+  commentId: M:StyleSheet.CodeStyle.OnDoorOpened
+  id: OnDoorOpened
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: OnDoorOpened()
+  nameWithType: CodeStyle.OnDoorOpened()
+  fullName: StyleSheet.CodeStyle.OnDoorOpened()
+  type: Method
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnDoorOpened
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 182
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public void OnDoorOpened()
+    content.vb: Public Sub OnDoorOpened()
+  overload: StyleSheet.CodeStyle.OnDoorOpened*
+- uid: StyleSheet.CodeStyle.OnPointsScored(System.Int32)
+  commentId: M:StyleSheet.CodeStyle.OnPointsScored(System.Int32)
+  id: OnPointsScored(System.Int32)
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: OnPointsScored(int)
+  nameWithType: CodeStyle.OnPointsScored(int)
+  fullName: StyleSheet.CodeStyle.OnPointsScored(int)
+  type: Method
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnPointsScored
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 187
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public void OnPointsScored(int points)
+    parameters:
+    - id: points
+      type: System.Int32
+    content.vb: Public Sub OnPointsScored(points As Integer)
+  overload: StyleSheet.CodeStyle.OnPointsScored*
+  nameWithType.vb: CodeStyle.OnPointsScored(Integer)
+  fullName.vb: StyleSheet.CodeStyle.OnPointsScored(Integer)
+  name.vb: OnPointsScored(Integer)
+- uid: StyleSheet.CodeStyle.SetInitialPosition(System.Single,System.Single,System.Single)
+  commentId: M:StyleSheet.CodeStyle.SetInitialPosition(System.Single,System.Single,System.Single)
+  id: SetInitialPosition(System.Single,System.Single,System.Single)
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: SetInitialPosition(float, float, float)
+  nameWithType: CodeStyle.SetInitialPosition(float, float, float)
+  fullName: StyleSheet.CodeStyle.SetInitialPosition(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetInitialPosition
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 211
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public void SetInitialPosition(float x, float y, float z)
+    parameters:
+    - id: x
+      type: System.Single
+    - id: y
+      type: System.Single
+    - id: z
+      type: System.Single
+    content.vb: Public Sub SetInitialPosition(x As Single, y As Single, z As Single)
+  overload: StyleSheet.CodeStyle.SetInitialPosition*
+  nameWithType.vb: CodeStyle.SetInitialPosition(Single, Single, Single)
+  fullName.vb: StyleSheet.CodeStyle.SetInitialPosition(Single, Single, Single)
+  name.vb: SetInitialPosition(Single, Single, Single)
+- uid: StyleSheet.CodeStyle.IsNewPosition(UnityEngine.Vector3)
+  commentId: M:StyleSheet.CodeStyle.IsNewPosition(UnityEngine.Vector3)
+  id: IsNewPosition(UnityEngine.Vector3)
+  parent: StyleSheet.CodeStyle
+  langs:
+  - csharp
+  - vb
+  name: IsNewPosition(Vector3)
+  nameWithType: CodeStyle.IsNewPosition(Vector3)
+  fullName: StyleSheet.CodeStyle.IsNewPosition(UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsNewPosition
+    path: ../Assets/Sombra Studios/Shared/CodeStyle.cs
+    startLine: 217
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: public bool IsNewPosition(Vector3 newPosition)
+    parameters:
+    - id: newPosition
+      type: UnityEngine.Vector3
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsNewPosition(newPosition As Vector3) As Boolean
+  overload: StyleSheet.CodeStyle.IsNewPosition*
+references:
+- uid: StyleSheet
+  commentId: N:StyleSheet
+  href: StyleSheet.html
+  name: StyleSheet
+  nameWithType: StyleSheet
+  fullName: StyleSheet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: StyleSheet.CodeStyle.MaxHealthReadOnly*
+  commentId: Overload:StyleSheet.CodeStyle.MaxHealthReadOnly
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_MaxHealthReadOnly
+  name: MaxHealthReadOnly
+  nameWithType: CodeStyle.MaxHealthReadOnly
+  fullName: StyleSheet.CodeStyle.MaxHealthReadOnly
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: StyleSheet.CodeStyle.MaxHealth*
+  commentId: Overload:StyleSheet.CodeStyle.MaxHealth
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_MaxHealth
+  name: MaxHealth
+  nameWithType: CodeStyle.MaxHealth
+  fullName: StyleSheet.CodeStyle.MaxHealth
+- uid: StyleSheet.CodeStyle.Health*
+  commentId: Overload:StyleSheet.CodeStyle.Health
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_Health
+  name: Health
+  nameWithType: CodeStyle.Health
+  fullName: StyleSheet.CodeStyle.Health
+- uid: StyleSheet.CodeStyle.SetMaxHealth*
+  commentId: Overload:StyleSheet.CodeStyle.SetMaxHealth
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_SetMaxHealth_System_Int32_
+  name: SetMaxHealth
+  nameWithType: CodeStyle.SetMaxHealth
+  fullName: StyleSheet.CodeStyle.SetMaxHealth
+- uid: StyleSheet.CodeStyle.DescriptionName*
+  commentId: Overload:StyleSheet.CodeStyle.DescriptionName
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_DescriptionName
+  name: DescriptionName
+  nameWithType: CodeStyle.DescriptionName
+  fullName: StyleSheet.CodeStyle.DescriptionName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{System.Int32}
+  commentId: T:System.Action{System.Int32}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<int>
+  nameWithType: Action<int>
+  fullName: System.Action<int>
+  nameWithType.vb: Action(Of Integer)
+  fullName.vb: System.Action(Of Integer)
+  name.vb: Action(Of Integer)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{StyleSheet.CodeStyle.CustomEventArgs}
+  commentId: T:System.Action{StyleSheet.CodeStyle.CustomEventArgs}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<CodeStyle.CustomEventArgs>
+  nameWithType: Action<CodeStyle.CustomEventArgs>
+  fullName: System.Action<StyleSheet.CodeStyle.CustomEventArgs>
+  nameWithType.vb: Action(Of CodeStyle.CustomEventArgs)
+  fullName.vb: System.Action(Of StyleSheet.CodeStyle.CustomEventArgs)
+  name.vb: Action(Of CodeStyle.CustomEventArgs)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: StyleSheet.CodeStyle
+    name: CodeStyle
+    href: StyleSheet.CodeStyle.html
+  - name: .
+  - uid: StyleSheet.CodeStyle.CustomEventArgs
+    name: CustomEventArgs
+    href: StyleSheet.CodeStyle.CustomEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: StyleSheet.CodeStyle
+    name: CodeStyle
+    href: StyleSheet.CodeStyle.html
+  - name: .
+  - uid: StyleSheet.CodeStyle.CustomEventArgs
+    name: CustomEventArgs
+    href: StyleSheet.CodeStyle.CustomEventArgs.html
+  - name: )
+- uid: StyleSheet.CodeStyle.OnDoorOpened*
+  commentId: Overload:StyleSheet.CodeStyle.OnDoorOpened
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_OnDoorOpened
+  name: OnDoorOpened
+  nameWithType: CodeStyle.OnDoorOpened
+  fullName: StyleSheet.CodeStyle.OnDoorOpened
+- uid: StyleSheet.CodeStyle.OnPointsScored*
+  commentId: Overload:StyleSheet.CodeStyle.OnPointsScored
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_OnPointsScored_System_Int32_
+  name: OnPointsScored
+  nameWithType: CodeStyle.OnPointsScored
+  fullName: StyleSheet.CodeStyle.OnPointsScored
+- uid: StyleSheet.CodeStyle.SetInitialPosition*
+  commentId: Overload:StyleSheet.CodeStyle.SetInitialPosition
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_SetInitialPosition_System_Single_System_Single_System_Single_
+  name: SetInitialPosition
+  nameWithType: CodeStyle.SetInitialPosition
+  fullName: StyleSheet.CodeStyle.SetInitialPosition
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: StyleSheet.CodeStyle.IsNewPosition*
+  commentId: Overload:StyleSheet.CodeStyle.IsNewPosition
+  href: StyleSheet.CodeStyle.html#StyleSheet_CodeStyle_IsNewPosition_UnityEngine_Vector3_
+  name: IsNewPosition
+  nameWithType: CodeStyle.IsNewPosition
+  fullName: StyleSheet.CodeStyle.IsNewPosition
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

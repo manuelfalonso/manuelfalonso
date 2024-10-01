@@ -1,0 +1,371 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Stats.StatIntModifier
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatIntModifier
+  id: StatIntModifier
+  parent: SombraStudios.Shared.Systems.Stats
+  children:
+  - SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  - SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)
+  - SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType
+  langs:
+  - csharp
+  - vb
+  name: StatIntModifier
+  nameWithType: StatIntModifier
+  fullName: SombraStudios.Shared.Systems.Stats.StatIntModifier
+  type: Class
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatIntModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StatIntModifier
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatIntModifier.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Represents a modifier for an integer stat.
+  example: []
+  syntax:
+    content: 'public class StatIntModifier : StatModifier<int>'
+    content.vb: Public Class StatIntModifier Inherits StatModifier(Of Integer)
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}._source
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}._value
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}.Source
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}.Value
+- uid: SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType
+  id: ModType
+  parent: SombraStudios.Shared.Systems.Stats.StatIntModifier
+  langs:
+  - csharp
+  - vb
+  name: ModType
+  nameWithType: StatIntModifier.ModType
+  fullName: SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType
+  type: Property
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatIntModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ModType
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatIntModifier.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Gets the type of operation the modifier performs.
+  example: []
+  syntax:
+    content: public ModifierOperationType ModType { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+    content.vb: Public ReadOnly Property ModType As ModifierOperationType
+  overload: SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType*
+- uid: SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)
+  id: '#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)'
+  parent: SombraStudios.Shared.Systems.Stats.StatIntModifier
+  langs:
+  - csharp
+  - vb
+  name: StatIntModifier(int, ModifierOperationType, object)
+  nameWithType: StatIntModifier.StatIntModifier(int, ModifierOperationType, object)
+  fullName: SombraStudios.Shared.Systems.Stats.StatIntModifier.StatIntModifier(int, SombraStudios.Shared.Systems.Stats.ModifierOperationType, object)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatIntModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatIntModifier.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new integer stat modifier with a value, operation type, and source.
+  example: []
+  syntax:
+    content: public StatIntModifier(int value, ModifierOperationType modifierOperationType, object source)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value of the modifier.
+    - id: modifierOperationType
+      type: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+      description: The type of operation the modifier performs.
+    - id: source
+      type: System.Object
+      description: The source of the modifier.
+    content.vb: Public Sub New(value As Integer, modifierOperationType As ModifierOperationType, source As Object)
+  overload: SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor*
+  nameWithType.vb: StatIntModifier.New(Integer, ModifierOperationType, Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatIntModifier.New(Integer, SombraStudios.Shared.Systems.Stats.ModifierOperationType, Object)
+  name.vb: New(Integer, ModifierOperationType, Object)
+- uid: SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  id: '#ctor(System.Int32,SombraStudios.Shared.Systems.Stats.ModifierOperationType)'
+  parent: SombraStudios.Shared.Systems.Stats.StatIntModifier
+  langs:
+  - csharp
+  - vb
+  name: StatIntModifier(int, ModifierOperationType)
+  nameWithType: StatIntModifier.StatIntModifier(int, ModifierOperationType)
+  fullName: SombraStudios.Shared.Systems.Stats.StatIntModifier.StatIntModifier(int, SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatIntModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatIntModifier.cs
+    startLine: 36
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new integer stat modifier with a value and operation type, and no source.
+  example: []
+  syntax:
+    content: public StatIntModifier(int value, ModifierOperationType modifierOperationType)
+    parameters:
+    - id: value
+      type: System.Int32
+      description: The value of the modifier.
+    - id: modifierOperationType
+      type: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+      description: The type of operation the modifier performs.
+    content.vb: Public Sub New(value As Integer, modifierOperationType As ModifierOperationType)
+  overload: SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor*
+  nameWithType.vb: StatIntModifier.New(Integer, ModifierOperationType)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatIntModifier.New(Integer, SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  name.vb: New(Integer, ModifierOperationType)
+references:
+- uid: SombraStudios.Shared.Systems.Stats
+  commentId: N:SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Stats
+  nameWithType: SombraStudios.Shared.Systems.Stats
+  fullName: SombraStudios.Shared.Systems.Stats
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  parent: SombraStudios.Shared.Systems.Stats
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  name: StatModifier<int>
+  nameWithType: StatModifier<int>
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<int>
+  nameWithType.vb: StatModifier(Of Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Integer)
+  name.vb: StatModifier(Of Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}._source
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}._source
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__source
+  name: _source
+  nameWithType: StatModifier<int>._source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<int>._source
+  nameWithType.vb: StatModifier(Of Integer)._source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Integer)._source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}._value
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}._value
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__value
+  name: _value
+  nameWithType: StatModifier<int>._value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<int>._value
+  nameWithType.vb: StatModifier(Of Integer)._value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Integer)._value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}.Source
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}.Source
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Source
+  name: Source
+  nameWithType: StatModifier<int>.Source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<int>.Source
+  nameWithType.vb: StatModifier(Of Integer).Source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Integer).Source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}.Value
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}.Value
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Int32}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Value
+  name: Value
+  nameWithType: StatModifier<int>.Value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<int>.Value
+  nameWithType.vb: StatModifier(Of Integer).Value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Integer).Value
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatModifier`1
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  name: StatModifier<T>
+  nameWithType: StatModifier<T>
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>
+  nameWithType.vb: StatModifier(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)
+  name.vb: StatModifier(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__source
+  name: _source
+  nameWithType: StatModifier<T>._source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>._source
+  nameWithType.vb: StatModifier(Of T)._source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)._source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__value
+  name: _value
+  nameWithType: StatModifier<T>._value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>._value
+  nameWithType.vb: StatModifier(Of T)._value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)._value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Source
+  name: Source
+  nameWithType: StatModifier<T>.Source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Source
+  nameWithType.vb: StatModifier(Of T).Source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Value
+  name: Value
+  nameWithType: StatModifier<T>.Value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Value
+  nameWithType.vb: StatModifier(Of T).Value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Value
+- uid: SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType
+  href: SombraStudios.Shared.Systems.Stats.StatIntModifier.html#SombraStudios_Shared_Systems_Stats_StatIntModifier_ModType
+  name: ModType
+  nameWithType: StatIntModifier.ModType
+  fullName: SombraStudios.Shared.Systems.Stats.StatIntModifier.ModType
+- uid: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+  commentId: T:SombraStudios.Shared.Systems.Stats.ModifierOperationType
+  parent: SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.Shared.Systems.Stats.ModifierOperationType.html
+  name: ModifierOperationType
+  nameWithType: ModifierOperationType
+  fullName: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+- uid: SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatIntModifier.#ctor
+  href: SombraStudios.Shared.Systems.Stats.StatIntModifier.html#SombraStudios_Shared_Systems_Stats_StatIntModifier__ctor_System_Int32_SombraStudios_Shared_Systems_Stats_ModifierOperationType_System_Object_
+  name: StatIntModifier
+  nameWithType: StatIntModifier.StatIntModifier
+  fullName: SombraStudios.Shared.Systems.Stats.StatIntModifier.StatIntModifier
+  nameWithType.vb: StatIntModifier.New
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatIntModifier.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

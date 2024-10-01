@@ -1,0 +1,318 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  commentId: T:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  id: GameEvent
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  children:
+  - SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise
+  - SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  - SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  - SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  - SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  langs:
+  - csharp
+  - vb
+  name: GameEvent
+  nameWithType: GameEvent
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  type: Class
+  source:
+    remote:
+      path: Utility/Events/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameEvent
+    path: ../Assets/Sombra Studios/Shared/Utility/Events/ScriptableObjects/GameEvent.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  summary: >-
+    SO Event used to decoupled code instead of a normal class.
+
+    Inject a reference to the GameEventSO you want the listeners to raise
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Game Event", menuName = "Sombra Studios/Game Events/Game Event")]
+
+      public class GameEvent : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Game Event", menuName:="Sombra Studios/Game Events/Game Event")>
+
+      Public Class GameEvent Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Game Event
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Game Events/Game Event
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise
+  commentId: M:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise
+  id: Raise
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: Raise()
+  nameWithType: GameEvent.Raise()
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise()
+  type: Method
+  source:
+    remote:
+      path: Utility/Events/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Raise
+    path: ../Assets/Sombra Studios/Shared/Utility/Events/ScriptableObjects/GameEvent.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  syntax:
+    content: public void Raise()
+    content.vb: Public Sub Raise()
+  overload: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise*
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  commentId: M:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  id: RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: RegisterListener(GameEventMonoBehaviourListener)
+  nameWithType: GameEvent.RegisterListener(GameEventMonoBehaviourListener)
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  type: Method
+  source:
+    remote:
+      path: Utility/Events/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisterListener
+    path: ../Assets/Sombra Studios/Shared/Utility/Events/ScriptableObjects/GameEvent.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  syntax:
+    content: public void RegisterListener(GameEventMonoBehaviourListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener
+    content.vb: Public Sub RegisterListener(listener As GameEventMonoBehaviourListener)
+  overload: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener*
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  commentId: M:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  id: RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: RegisterListener(GameEventScriptableObjectListener)
+  nameWithType: GameEvent.RegisterListener(GameEventScriptableObjectListener)
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  type: Method
+  source:
+    remote:
+      path: Utility/Events/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisterListener
+    path: ../Assets/Sombra Studios/Shared/Utility/Events/ScriptableObjects/GameEvent.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  syntax:
+    content: public void RegisterListener(GameEventScriptableObjectListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener
+    content.vb: Public Sub RegisterListener(listener As GameEventScriptableObjectListener)
+  overload: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener*
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  commentId: M:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  id: UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: UnregisterListener(GameEventMonoBehaviourListener)
+  nameWithType: GameEvent.UnregisterListener(GameEventMonoBehaviourListener)
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener)
+  type: Method
+  source:
+    remote:
+      path: Utility/Events/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnregisterListener
+    path: ../Assets/Sombra Studios/Shared/Utility/Events/ScriptableObjects/GameEvent.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  syntax:
+    content: public void UnregisterListener(GameEventMonoBehaviourListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener
+    content.vb: Public Sub UnregisterListener(listener As GameEventMonoBehaviourListener)
+  overload: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener*
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  commentId: M:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  id: UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: UnregisterListener(GameEventScriptableObjectListener)
+  nameWithType: GameEvent.UnregisterListener(GameEventScriptableObjectListener)
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener)
+  type: Method
+  source:
+    remote:
+      path: Utility/Events/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnregisterListener
+    path: ../Assets/Sombra Studios/Shared/Utility/Events/ScriptableObjects/GameEvent.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  syntax:
+    content: public void UnregisterListener(GameEventScriptableObjectListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener
+    content.vb: Public Sub UnregisterListener(listener As GameEventScriptableObjectListener)
+  overload: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener*
+references:
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Utility.Events.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Events
+    name: Events
+    href: SombraStudios.Shared.Utility.Events.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Events.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Utility.Events.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Events
+    name: Events
+    href: SombraStudios.Shared.Utility.Events.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Events.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Utility.Events.ScriptableObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise*
+  commentId: Overload:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise
+  href: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.html#SombraStudios_Shared_Utility_Events_ScriptableObjects_GameEvent_Raise
+  name: Raise
+  nameWithType: GameEvent.Raise
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.Raise
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener*
+  commentId: Overload:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener
+  href: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.html#SombraStudios_Shared_Utility_Events_ScriptableObjects_GameEvent_RegisterListener_SombraStudios_Shared_Utility_Events_ScriptableObjects_GameEventMonoBehaviourListener_
+  name: RegisterListener
+  nameWithType: GameEvent.RegisterListener
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.RegisterListener
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener
+  commentId: T:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  href: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener.html
+  name: GameEventMonoBehaviourListener
+  nameWithType: GameEventMonoBehaviourListener
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventMonoBehaviourListener
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener
+  commentId: T:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener
+  parent: SombraStudios.Shared.Utility.Events.ScriptableObjects
+  href: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener.html
+  name: GameEventScriptableObjectListener
+  nameWithType: GameEventScriptableObjectListener
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEventScriptableObjectListener
+- uid: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener*
+  commentId: Overload:SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener
+  href: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.html#SombraStudios_Shared_Utility_Events_ScriptableObjects_GameEvent_UnregisterListener_SombraStudios_Shared_Utility_Events_ScriptableObjects_GameEventMonoBehaviourListener_
+  name: UnregisterListener
+  nameWithType: GameEvent.UnregisterListener
+  fullName: SombraStudios.Shared.Utility.Events.ScriptableObjects.GameEvent.UnregisterListener

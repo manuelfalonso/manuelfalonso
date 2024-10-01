@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.AI.LineOfSight
+  commentId: T:SombraStudios.Shared.AI.LineOfSight
+  id: LineOfSight
+  parent: SombraStudios.Shared.AI
+  children:
+  - SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView(UnityEngine.Transform,UnityEngine.Transform,System.Single)
+  - SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData,System.Single)
+  - SombraStudios.Shared.AI.LineOfSight.IsInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData)
+  langs:
+  - csharp
+  - vb
+  name: LineOfSight
+  nameWithType: LineOfSight
+  fullName: SombraStudios.Shared.AI.LineOfSight
+  type: Class
+  source:
+    remote:
+      path: AI/IsInSightData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LineOfSight
+    path: ../Assets/Sombra Studios/Shared/AI/IsInSightData.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared.AI
+  namespace: SombraStudios.Shared.AI
+  syntax:
+    content: public static class LineOfSight
+    content.vb: Public Module LineOfSight
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData,System.Single)
+  commentId: M:SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData,System.Single)
+  id: IsInFieldOfViewAndInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData,System.Single)
+  parent: SombraStudios.Shared.AI.LineOfSight
+  langs:
+  - csharp
+  - vb
+  name: IsInFieldOfViewAndInSight(IsInSightData, float)
+  nameWithType: LineOfSight.IsInFieldOfViewAndInSight(LineOfSight.IsInSightData, float)
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData, float)
+  type: Method
+  source:
+    remote:
+      path: AI/LineOfSight.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInFieldOfViewAndInSight
+    path: ../Assets/Sombra Studios/Shared/AI/LineOfSight.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.AI
+  namespace: SombraStudios.Shared.AI
+  summary: Checks if the target is inside the view of the entity and if it is in sight of the entity.
+  example: []
+  syntax:
+    content: public static bool IsInFieldOfViewAndInSight(LineOfSight.IsInSightData data, float viewAngle)
+    parameters:
+    - id: data
+      type: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+      description: The data for the sight check.
+    - id: viewAngle
+      type: System.Single
+      description: The field of view angle.
+    return:
+      type: System.Boolean
+      description: >-
+        True if the target is inside the specified angle and the "InSight" condition is met; 
+            otherwise, false.
+    content.vb: Public Shared Function IsInFieldOfViewAndInSight(data As LineOfSight.IsInSightData, viewAngle As Single) As Boolean
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight*
+  nameWithType.vb: LineOfSight.IsInFieldOfViewAndInSight(LineOfSight.IsInSightData, Single)
+  fullName.vb: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData, Single)
+  name.vb: IsInFieldOfViewAndInSight(IsInSightData, Single)
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView(UnityEngine.Transform,UnityEngine.Transform,System.Single)
+  commentId: M:SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView(UnityEngine.Transform,UnityEngine.Transform,System.Single)
+  id: IsInFieldOfView(UnityEngine.Transform,UnityEngine.Transform,System.Single)
+  parent: SombraStudios.Shared.AI.LineOfSight
+  langs:
+  - csharp
+  - vb
+  name: IsInFieldOfView(Transform, Transform, float)
+  nameWithType: LineOfSight.IsInFieldOfView(Transform, Transform, float)
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView(UnityEngine.Transform, UnityEngine.Transform, float)
+  type: Method
+  source:
+    remote:
+      path: AI/LineOfSight.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInFieldOfView
+    path: ../Assets/Sombra Studios/Shared/AI/LineOfSight.cs
+    startLine: 47
+  assemblies:
+  - SombraStudios.Shared.AI
+  namespace: SombraStudios.Shared.AI
+  summary: >-
+    Checks if a target is within the field of view of an entity based on their positions and the 
+
+    specified half-field of view angle.
+  example: []
+  syntax:
+    content: public static bool IsInFieldOfView(Transform entity, Transform target, float viewAngle)
+    parameters:
+    - id: entity
+      type: UnityEngine.Transform
+      description: The transform of the entity (observer).
+    - id: target
+      type: UnityEngine.Transform
+      description: The transform of the target.
+    - id: viewAngle
+      type: System.Single
+      description: The half-field of view angle (in degrees).
+    return:
+      type: System.Boolean
+      description: Returns true if the target is within the field of view, otherwise false.
+    content.vb: Public Shared Function IsInFieldOfView(entity As Transform, target As Transform, viewAngle As Single) As Boolean
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView*
+  nameWithType.vb: LineOfSight.IsInFieldOfView(Transform, Transform, Single)
+  fullName.vb: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView(UnityEngine.Transform, UnityEngine.Transform, Single)
+  name.vb: IsInFieldOfView(Transform, Transform, Single)
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData)
+  commentId: M:SombraStudios.Shared.AI.LineOfSight.IsInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData)
+  id: IsInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData)
+  parent: SombraStudios.Shared.AI.LineOfSight
+  langs:
+  - csharp
+  - vb
+  name: IsInSight(IsInSightData)
+  nameWithType: LineOfSight.IsInSight(LineOfSight.IsInSightData)
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSight(SombraStudios.Shared.AI.LineOfSight.IsInSightData)
+  type: Method
+  source:
+    remote:
+      path: AI/LineOfSight.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInSight
+    path: ../Assets/Sombra Studios/Shared/AI/LineOfSight.cs
+    startLine: 66
+  assemblies:
+  - SombraStudios.Shared.AI
+  namespace: SombraStudios.Shared.AI
+  summary: >-
+    Checks if there is a direct line of sight between two points, considering obstacles on a specified layer.
+
+    Returns true if there is no obstacle (except the specified target), otherwise, false.
+  example: []
+  syntax:
+    content: public static bool IsInSight(LineOfSight.IsInSightData data)
+    parameters:
+    - id: data
+      type: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+      description: The data for the sight check.
+    return:
+      type: System.Boolean
+      description: True if there is a direct line of sight without obstacles (except the target), otherwise, false.
+    content.vb: Public Shared Function IsInSight(data As LineOfSight.IsInSightData) As Boolean
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSight*
+references:
+- uid: SombraStudios.Shared.AI
+  commentId: N:SombraStudios.Shared.AI
+  href: SombraStudios.html
+  name: SombraStudios.Shared.AI
+  nameWithType: SombraStudios.Shared.AI
+  fullName: SombraStudios.Shared.AI
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.AI
+    name: AI
+    href: SombraStudios.Shared.AI.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.AI
+    name: AI
+    href: SombraStudios.Shared.AI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight
+  href: SombraStudios.Shared.AI.LineOfSight.html#SombraStudios_Shared_AI_LineOfSight_IsInFieldOfViewAndInSight_SombraStudios_Shared_AI_LineOfSight_IsInSightData_System_Single_
+  name: IsInFieldOfViewAndInSight
+  nameWithType: LineOfSight.IsInFieldOfViewAndInSight
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfViewAndInSight
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+  commentId: T:SombraStudios.Shared.AI.LineOfSight.IsInSightData
+  parent: SombraStudios.Shared.AI
+  href: SombraStudios.Shared.AI.LineOfSight.html
+  name: LineOfSight.IsInSightData
+  nameWithType: LineOfSight.IsInSightData
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+  spec.csharp:
+  - uid: SombraStudios.Shared.AI.LineOfSight
+    name: LineOfSight
+    href: SombraStudios.Shared.AI.LineOfSight.html
+  - name: .
+  - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+    name: IsInSightData
+    href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html
+  spec.vb:
+  - uid: SombraStudios.Shared.AI.LineOfSight
+    name: LineOfSight
+    href: SombraStudios.Shared.AI.LineOfSight.html
+  - name: .
+  - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+    name: IsInSightData
+    href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView
+  href: SombraStudios.Shared.AI.LineOfSight.html#SombraStudios_Shared_AI_LineOfSight_IsInFieldOfView_UnityEngine_Transform_UnityEngine_Transform_System_Single_
+  name: IsInFieldOfView
+  nameWithType: LineOfSight.IsInFieldOfView
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInFieldOfView
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSight*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSight
+  href: SombraStudios.Shared.AI.LineOfSight.html#SombraStudios_Shared_AI_LineOfSight_IsInSight_SombraStudios_Shared_AI_LineOfSight_IsInSightData_
+  name: IsInSight
+  nameWithType: LineOfSight.IsInSight
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSight

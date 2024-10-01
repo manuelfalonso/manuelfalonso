@@ -1,0 +1,818 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  id: ChargeBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargeReached
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingEnded
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStarted
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStoped
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.DischargeReached
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge
+  - SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges
+  langs:
+  - csharp
+  - vb
+  name: ChargeBehaviour
+  nameWithType: ChargeBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ChargeBehaviour
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: >-
+    Manages a charging behavior with customizable parameters such as time-based charging,
+
+    maximum charges, and automatic discharge. Provides events for tracking charging progress
+
+    and allows for starting, stopping, and using charges.
+  example: []
+  syntax:
+    content: 'public class ChargeBehaviour : MonoBehaviour'
+    content.vb: Public Class ChargeBehaviour Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data
+  id: Data
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: ChargeBehaviour.Data
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Data
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 61
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Gets or sets the charging behavior data.
+  example: []
+  syntax:
+    content: public ChargeBehaviourData Data { get; set; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourData
+    content.vb: Public Property Data As ChargeBehaviourData
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive
+  id: IsActive
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: ChargeBehaviour.IsActive
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsActive
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 65
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Gets or sets whether the charging behavior is active.
+  example: []
+  syntax:
+    content: public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges
+  id: Charges
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: Charges
+  nameWithType: ChargeBehaviour.Charges
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Charges
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 69
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Gets the current number of charges.
+  example: []
+  syntax:
+    content: public int Charges { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Charges As Integer
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge
+  id: TotalCharge
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: TotalCharge
+  nameWithType: ChargeBehaviour.TotalCharge
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TotalCharge
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 108
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Gets the total accumulated charge value.
+  example: []
+  syntax:
+    content: public float TotalCharge { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property TotalCharge As Single
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging
+  id: IsCharging
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: IsCharging
+  nameWithType: ChargeBehaviour.IsCharging
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsCharging
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 112
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Gets whether the charging process is currently active.
+  example: []
+  syntax:
+    content: public bool IsCharging { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCharging As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged
+  id: IsMaxCharged
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: IsMaxCharged
+  nameWithType: ChargeBehaviour.IsMaxCharged
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsMaxCharged
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 117
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Gets whether the maximum number of charges has been reached.
+  example: []
+  syntax:
+    content: public bool IsMaxCharged { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsMaxCharged As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStarted
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStarted
+  id: ChargingStarted
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: ChargingStarted
+  nameWithType: ChargeBehaviour.ChargingStarted
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStarted
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ChargingStarted
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 124
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Event invoked when charging starts.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when charging starts.")]
+
+      public UnityEvent ChargingStarted
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Event invoked when charging starts.")>
+
+      Public ChargingStarted As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when charging starts.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStoped
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStoped
+  id: ChargingStoped
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: ChargingStoped
+  nameWithType: ChargeBehaviour.ChargingStoped
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingStoped
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ChargingStoped
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 129
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Event invoked when charging stops.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when charging stops.")]
+
+      public UnityEvent ChargingStoped
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Event invoked when charging stops.")>
+
+      Public ChargingStoped As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when charging stops.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingEnded
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingEnded
+  id: ChargingEnded
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: ChargingEnded
+  nameWithType: ChargeBehaviour.ChargingEnded
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargingEnded
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ChargingEnded
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 134
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Event invoked when the maximum charges are reached.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the maximum charges are reached.")]
+
+      public UnityEvent ChargingEnded
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Event invoked when the maximum charges are reached.")>
+
+      Public ChargingEnded As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the maximum charges are reached.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargeReached
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargeReached
+  id: ChargeReached
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: ChargeReached
+  nameWithType: ChargeBehaviour.ChargeReached
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.ChargeReached
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ChargeReached
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 140
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Event invoked on each charge.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Invoked on each charge.")]
+
+      public UnityEvent<int> ChargeReached
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Int32}
+    content.vb: >-
+      <Tooltip("Invoked on each charge.")>
+
+      Public ChargeReached As UnityEvent(Of Integer)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Invoked on each charge.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.DischargeReached
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.DischargeReached
+  id: DischargeReached
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: DischargeReached
+  nameWithType: ChargeBehaviour.DischargeReached
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.DischargeReached
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DischargeReached
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 145
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Event invoked on each discharge.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Invoked on each discharge.")]
+
+      public UnityEvent<int> DischargeReached
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Int32}
+    content.vb: >-
+      <Tooltip("Invoked on each discharge.")>
+
+      Public DischargeReached As UnityEvent(Of Integer)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Invoked on each discharge.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging
+  id: StartCharging
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: StartCharging()
+  nameWithType: ChargeBehaviour.StartCharging()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartCharging
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 172
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Starts the charging process.
+  example: []
+  syntax:
+    content: public bool StartCharging()
+    return:
+      type: System.Boolean
+      description: True if charging started successfully, false otherwise.
+    content.vb: Public Function StartCharging() As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging
+  id: StopCharging
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: StopCharging()
+  nameWithType: ChargeBehaviour.StopCharging()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopCharging
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 196
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Stops the charging process.
+  example: []
+  syntax:
+    content: public bool StopCharging()
+    return:
+      type: System.Boolean
+      description: True if charging stopped successfully, false otherwise.
+    content.vb: Public Function StopCharging() As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges
+  id: UseCharges
+  parent: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour
+  langs:
+  - csharp
+  - vb
+  name: UseCharges()
+  nameWithType: ChargeBehaviour.UseCharges()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Behaviours/ChargeBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UseCharges
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/ChargeBehaviour.cs
+    startLine: 224
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours
+  summary: Resets charges to the initial value.
+  example: []
+  syntax:
+    content: public ChargeBehaviourResult UseCharges()
+    return:
+      type: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourResult
+      description: A result indicating the success of the operation along with charge information.
+    content.vb: Public Function UseCharges() As ChargeBehaviourResult
+  overload: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges*
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours
+  fullName: SombraStudios.Shared.Gameplay.Behaviours
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_Data
+  name: Data
+  nameWithType: ChargeBehaviour.Data
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Data
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourData
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourData
+  parent: SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourData.html
+  name: ChargeBehaviourData
+  nameWithType: ChargeBehaviourData
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourData
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_IsActive
+  name: IsActive
+  nameWithType: ChargeBehaviour.IsActive
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_Charges
+  name: Charges
+  nameWithType: ChargeBehaviour.Charges
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.Charges
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_TotalCharge
+  name: TotalCharge
+  nameWithType: ChargeBehaviour.TotalCharge
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.TotalCharge
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_IsCharging
+  name: IsCharging
+  nameWithType: ChargeBehaviour.IsCharging
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsCharging
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_IsMaxCharged
+  name: IsMaxCharged
+  nameWithType: ChargeBehaviour.IsMaxCharged
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.IsMaxCharged
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: UnityEngine.Events.UnityEvent{System.Int32}
+  commentId: T:UnityEngine.Events.UnityEvent{System.Int32}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: UnityEvent<int>
+  nameWithType: UnityEvent<int>
+  fullName: UnityEngine.Events.UnityEvent<int>
+  nameWithType.vb: UnityEvent(Of Integer)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of Integer)
+  name.vb: UnityEvent(Of Integer)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_StartCharging
+  name: StartCharging
+  nameWithType: ChargeBehaviour.StartCharging
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StartCharging
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_StopCharging
+  name: StopCharging
+  nameWithType: ChargeBehaviour.StopCharging
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.StopCharging
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_ChargeBehaviour_UseCharges
+  name: UseCharges
+  nameWithType: ChargeBehaviour.UseCharges
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviour.UseCharges
+- uid: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourResult
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourResult
+  parent: SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourResult.html
+  name: ChargeBehaviourResult
+  nameWithType: ChargeBehaviourResult
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.ChargeBehaviourResult

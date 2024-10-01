@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Lock
+  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.Lock
+  id: Lock
+  parent: SombraStudios.Shared.XR.KeyLockSystem
+  children:
+  - SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  - SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
+  langs:
+  - csharp
+  - vb
+  name: Lock
+  nameWithType: Lock
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock
+  type: Class
+  source:
+    remote:
+      path: XR/KeyLockSystem/Lock.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Lock
+    path: ../Assets/Sombra Studios/Shared/XR/KeyLockSystem/Lock.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.KeyLockSystem
+  summary: >-
+    Use this object as a generic way to validate if an object can perform some action.
+
+    The check is done in the <xref href="SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)" data-throw-if-not-resolved="false"></xref> method.
+
+    This class is used in combination with a <xref href="SombraStudios.Shared.XR.KeyLockSystem.Keychain" data-throw-if-not-resolved="false"></xref> component.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Lock
+    content.vb: >-
+      <Serializable>
+
+      Public Class Lock
+  seealso:
+  - linkId: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+    commentId: T:SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+  - linkId: SombraStudios.Shared.XR.SocketInteractor.XRLockGridSocketInteractor
+    commentId: T:SombraStudios.Shared.XR.SocketInteractor.XRLockGridSocketInteractor
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
+  commentId: P:SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
+  id: RequiredKeys
+  parent: SombraStudios.Shared.XR.KeyLockSystem.Lock
+  langs:
+  - csharp
+  - vb
+  name: RequiredKeys
+  nameWithType: Lock.RequiredKeys
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
+  type: Property
+  source:
+    remote:
+      path: XR/KeyLockSystem/Lock.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RequiredKeys
+    path: ../Assets/Sombra Studios/Shared/XR/KeyLockSystem/Lock.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.KeyLockSystem
+  summary: Returns the required keys to unlock this lock.
+  example: []
+  syntax:
+    content: public List<Key> RequiredKeys { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.Key}
+    content.vb: Public ReadOnly Property RequiredKeys As List(Of Key)
+  overload: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys*
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  id: CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  parent: SombraStudios.Shared.XR.KeyLockSystem.Lock
+  langs:
+  - csharp
+  - vb
+  name: CanUnlock(IKeychain)
+  nameWithType: Lock.CanUnlock(IKeychain)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  type: Method
+  source:
+    remote:
+      path: XR/KeyLockSystem/Lock.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanUnlock
+    path: ../Assets/Sombra Studios/Shared/XR/KeyLockSystem/Lock.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.KeyLockSystem
+  summary: Checks if the supplied keychain has all the required keys to open this lock.
+  example: []
+  syntax:
+    content: public bool CanUnlock(IKeychain keychain)
+    parameters:
+    - id: keychain
+      type: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
+      description: The keychain to be checked.
+    return:
+      type: System.Boolean
+      description: True if the supplied keychain has all the required keys; false otherwise.
+    content.vb: Public Function CanUnlock(keychain As IKeychain) As Boolean
+  overload: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock*
+references:
+- uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+  commentId: T:SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+  href: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.html
+  name: XRLockSocketInteractor
+  nameWithType: XRLockSocketInteractor
+  fullName: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+- uid: SombraStudios.Shared.XR.SocketInteractor.XRLockGridSocketInteractor
+  commentId: T:SombraStudios.Shared.XR.SocketInteractor.XRLockGridSocketInteractor
+  href: SombraStudios.Shared.XR.SocketInteractor.XRLockGridSocketInteractor.html
+  name: XRLockGridSocketInteractor
+  nameWithType: XRLockGridSocketInteractor
+  fullName: SombraStudios.Shared.XR.SocketInteractor.XRLockGridSocketInteractor
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  href: SombraStudios.Shared.XR.KeyLockSystem.Lock.html#SombraStudios_Shared_XR_KeyLockSystem_Lock_CanUnlock_SombraStudios_Shared_XR_KeyLockSystem_IKeychain_
+  name: CanUnlock(IKeychain)
+  nameWithType: Lock.CanUnlock(IKeychain)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+  spec.csharp:
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+    name: CanUnlock
+    href: SombraStudios.Shared.XR.KeyLockSystem.Lock.html#SombraStudios_Shared_XR_KeyLockSystem_Lock_CanUnlock_SombraStudios_Shared_XR_KeyLockSystem_IKeychain_
+  - name: (
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
+    name: IKeychain
+    href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
+    name: CanUnlock
+    href: SombraStudios.Shared.XR.KeyLockSystem.Lock.html#SombraStudios_Shared_XR_KeyLockSystem_Lock_CanUnlock_SombraStudios_Shared_XR_KeyLockSystem_IKeychain_
+  - name: (
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
+    name: IKeychain
+    href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html
+  - name: )
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain
+  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.Keychain
+  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html
+  name: Keychain
+  nameWithType: Keychain
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain
+- uid: SombraStudios.Shared.XR.KeyLockSystem
+  commentId: N:SombraStudios.Shared.XR.KeyLockSystem
+  href: SombraStudios.html
+  name: SombraStudios.Shared.XR.KeyLockSystem
+  nameWithType: SombraStudios.Shared.XR.KeyLockSystem
+  fullName: SombraStudios.Shared.XR.KeyLockSystem
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.XR
+    name: XR
+    href: SombraStudios.Shared.XR.html
+  - name: .
+  - uid: SombraStudios.Shared.XR.KeyLockSystem
+    name: KeyLockSystem
+    href: SombraStudios.Shared.XR.KeyLockSystem.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.XR
+    name: XR
+    href: SombraStudios.Shared.XR.html
+  - name: .
+  - uid: SombraStudios.Shared.XR.KeyLockSystem
+    name: KeyLockSystem
+    href: SombraStudios.Shared.XR.KeyLockSystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys*
+  commentId: Overload:SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
+  href: SombraStudios.Shared.XR.KeyLockSystem.Lock.html#SombraStudios_Shared_XR_KeyLockSystem_Lock_RequiredKeys
+  name: RequiredKeys
+  nameWithType: Lock.RequiredKeys
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
+- uid: System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.Key}
+  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.Key}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Key>
+  nameWithType: List<Key>
+  fullName: System.Collections.Generic.List<SombraStudios.Shared.XR.KeyLockSystem.Key>
+  nameWithType.vb: List(Of Key)
+  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.XR.KeyLockSystem.Key)
+  name.vb: List(Of Key)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.Key
+    name: Key
+    href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.Key
+    name: Key
+    href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock*
+  commentId: Overload:SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock
+  href: SombraStudios.Shared.XR.KeyLockSystem.Lock.html#SombraStudios_Shared_XR_KeyLockSystem_Lock_CanUnlock_SombraStudios_Shared_XR_KeyLockSystem_IKeychain_
+  name: CanUnlock
+  nameWithType: Lock.CanUnlock
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock
+- uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
+  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.IKeychain
+  parent: SombraStudios.Shared.XR.KeyLockSystem
+  href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html
+  name: IKeychain
+  nameWithType: IKeychain
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Scenes.SceneObject
+  commentId: T:SombraStudios.Shared.Scenes.SceneObject
+  id: SceneObject
+  parent: SombraStudios.Shared.Scenes
+  children:
+  - SombraStudios.Shared.Scenes.SceneObject.Name
+  - SombraStudios.Shared.Scenes.SceneObject.op_Implicit(SombraStudios.Shared.Scenes.SceneObject)~System.String
+  - SombraStudios.Shared.Scenes.SceneObject.op_Implicit(System.String)~SombraStudios.Shared.Scenes.SceneObject
+  langs:
+  - csharp
+  - vb
+  name: SceneObject
+  nameWithType: SceneObject
+  fullName: SombraStudios.Shared.Scenes.SceneObject
+  type: Class
+  source:
+    remote:
+      path: Scenes/SceneObjectEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SceneObject
+    path: ../Assets/Sombra Studios/Shared/Scenes/SceneObjectEditor.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Scenes
+  namespace: SombraStudios.Shared.Scenes
+  summary: Represents a serializable reference to a scene. This allows for scene references in the editor that are safer than using strings.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SceneObject
+    content.vb: >-
+      <Serializable>
+
+      Public Class SceneObject
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Scenes.SceneObject.Name
+  commentId: P:SombraStudios.Shared.Scenes.SceneObject.Name
+  id: Name
+  parent: SombraStudios.Shared.Scenes.SceneObject
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: SceneObject.Name
+  fullName: SombraStudios.Shared.Scenes.SceneObject.Name
+  type: Property
+  source:
+    remote:
+      path: Scenes/SceneObjectEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Name
+    path: ../Assets/Sombra Studios/Shared/Scenes/SceneObjectEditor.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Scenes
+  namespace: SombraStudios.Shared.Scenes
+  summary: Gets the name of the scene.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: SombraStudios.Shared.Scenes.SceneObject.Name*
+- uid: SombraStudios.Shared.Scenes.SceneObject.op_Implicit(SombraStudios.Shared.Scenes.SceneObject)~System.String
+  commentId: M:SombraStudios.Shared.Scenes.SceneObject.op_Implicit(SombraStudios.Shared.Scenes.SceneObject)~System.String
+  id: op_Implicit(SombraStudios.Shared.Scenes.SceneObject)~System.String
+  parent: SombraStudios.Shared.Scenes.SceneObject
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(SceneObject)
+  nameWithType: SceneObject.implicit operator string(SceneObject)
+  fullName: SombraStudios.Shared.Scenes.SceneObject.implicit operator string(SombraStudios.Shared.Scenes.SceneObject)
+  type: Operator
+  source:
+    remote:
+      path: Scenes/SceneObjectEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Implicit
+    path: ../Assets/Sombra Studios/Shared/Scenes/SceneObjectEditor.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Scenes
+  namespace: SombraStudios.Shared.Scenes
+  summary: Allows a SceneObject to be implicitly converted to a string.
+  example: []
+  syntax:
+    content: public static implicit operator string(SceneObject sceneObject)
+    parameters:
+    - id: sceneObject
+      type: SombraStudios.Shared.Scenes.SceneObject
+      description: The SceneObject to convert.
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(sceneObject As SceneObject) As String
+  overload: SombraStudios.Shared.Scenes.SceneObject.op_Implicit*
+  nameWithType.vb: SceneObject.CType(SceneObject)
+  fullName.vb: SombraStudios.Shared.Scenes.SceneObject.CType(SombraStudios.Shared.Scenes.SceneObject)
+  name.vb: CType(SceneObject)
+- uid: SombraStudios.Shared.Scenes.SceneObject.op_Implicit(System.String)~SombraStudios.Shared.Scenes.SceneObject
+  commentId: M:SombraStudios.Shared.Scenes.SceneObject.op_Implicit(System.String)~SombraStudios.Shared.Scenes.SceneObject
+  id: op_Implicit(System.String)~SombraStudios.Shared.Scenes.SceneObject
+  parent: SombraStudios.Shared.Scenes.SceneObject
+  langs:
+  - csharp
+  - vb
+  name: implicit operator SceneObject(string)
+  nameWithType: SceneObject.implicit operator SceneObject(string)
+  fullName: SombraStudios.Shared.Scenes.SceneObject.implicit operator SombraStudios.Shared.Scenes.SceneObject(string)
+  type: Operator
+  source:
+    remote:
+      path: Scenes/SceneObjectEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Implicit
+    path: ../Assets/Sombra Studios/Shared/Scenes/SceneObjectEditor.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Scenes
+  namespace: SombraStudios.Shared.Scenes
+  summary: Allows a string to be implicitly converted to a SceneObject.
+  example: []
+  syntax:
+    content: public static implicit operator SceneObject(string sceneName)
+    parameters:
+    - id: sceneName
+      type: System.String
+      description: The scene name to convert.
+    return:
+      type: SombraStudios.Shared.Scenes.SceneObject
+    content.vb: Public Shared Widening Operator CType(sceneName As String) As SceneObject
+  overload: SombraStudios.Shared.Scenes.SceneObject.op_Implicit*
+  nameWithType.vb: SceneObject.CType(String)
+  fullName.vb: SombraStudios.Shared.Scenes.SceneObject.CType(String)
+  name.vb: CType(String)
+references:
+- uid: SombraStudios.Shared.Scenes
+  commentId: N:SombraStudios.Shared.Scenes
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Scenes
+  nameWithType: SombraStudios.Shared.Scenes
+  fullName: SombraStudios.Shared.Scenes
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Scenes
+    name: Scenes
+    href: SombraStudios.Shared.Scenes.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Scenes
+    name: Scenes
+    href: SombraStudios.Shared.Scenes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Scenes.SceneObject.Name*
+  commentId: Overload:SombraStudios.Shared.Scenes.SceneObject.Name
+  href: SombraStudios.Shared.Scenes.SceneObject.html#SombraStudios_Shared_Scenes_SceneObject_Name
+  name: Name
+  nameWithType: SceneObject.Name
+  fullName: SombraStudios.Shared.Scenes.SceneObject.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Scenes.SceneObject.op_Implicit*
+  commentId: Overload:SombraStudios.Shared.Scenes.SceneObject.op_Implicit
+  name: implicit operator
+  nameWithType: SceneObject.implicit operator
+  fullName: SombraStudios.Shared.Scenes.SceneObject.implicit operator
+  nameWithType.vb: SceneObject.CType
+  fullName.vb: SombraStudios.Shared.Scenes.SceneObject.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: SombraStudios.Shared.Scenes.SceneObject
+  commentId: T:SombraStudios.Shared.Scenes.SceneObject
+  parent: SombraStudios.Shared.Scenes
+  href: SombraStudios.Shared.Scenes.SceneObject.html
+  name: SceneObject
+  nameWithType: SceneObject
+  fullName: SombraStudios.Shared.Scenes.SceneObject

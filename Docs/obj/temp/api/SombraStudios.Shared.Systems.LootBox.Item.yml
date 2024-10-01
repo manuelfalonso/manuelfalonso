@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.LootBox.Item
+  commentId: T:SombraStudios.Shared.Systems.LootBox.Item
+  id: Item
+  parent: SombraStudios.Shared.Systems.LootBox
+  children:
+  - SombraStudios.Shared.Systems.LootBox.Item.Description
+  - SombraStudios.Shared.Systems.LootBox.Item.Name
+  - SombraStudios.Shared.Systems.LootBox.Item.Rarety
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Item
+  fullName: SombraStudios.Shared.Systems.LootBox.Item
+  type: Class
+  source:
+    remote:
+      path: Systems/LootBox/Item.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Item
+    path: ../Assets/Sombra Studios/Shared/Systems/LootBox/Item.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.LootBox
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Item Data", menuName = "Item Data", order = 51)]
+
+      public class Item : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Item Data", menuName:="Item Data", order:=51)>
+
+      Public Class Item Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Item Data
+    - name: menuName
+      type: System.String
+      value: Item Data
+    - name: order
+      type: System.Int32
+      value: 51
+- uid: SombraStudios.Shared.Systems.LootBox.Item.Rarety
+  commentId: P:SombraStudios.Shared.Systems.LootBox.Item.Rarety
+  id: Rarety
+  parent: SombraStudios.Shared.Systems.LootBox.Item
+  langs:
+  - csharp
+  - vb
+  name: Rarety
+  nameWithType: Item.Rarety
+  fullName: SombraStudios.Shared.Systems.LootBox.Item.Rarety
+  type: Property
+  source:
+    remote:
+      path: Systems/LootBox/Item.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Rarety
+    path: ../Assets/Sombra Studios/Shared/Systems/LootBox/Item.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.LootBox
+  syntax:
+    content: public float Rarety { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Rarety As Single
+  overload: SombraStudios.Shared.Systems.LootBox.Item.Rarety*
+- uid: SombraStudios.Shared.Systems.LootBox.Item.Name
+  commentId: P:SombraStudios.Shared.Systems.LootBox.Item.Name
+  id: Name
+  parent: SombraStudios.Shared.Systems.LootBox.Item
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Item.Name
+  fullName: SombraStudios.Shared.Systems.LootBox.Item.Name
+  type: Property
+  source:
+    remote:
+      path: Systems/LootBox/Item.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Name
+    path: ../Assets/Sombra Studios/Shared/Systems/LootBox/Item.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.LootBox
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: SombraStudios.Shared.Systems.LootBox.Item.Name*
+- uid: SombraStudios.Shared.Systems.LootBox.Item.Description
+  commentId: P:SombraStudios.Shared.Systems.LootBox.Item.Description
+  id: Description
+  parent: SombraStudios.Shared.Systems.LootBox.Item
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Item.Description
+  fullName: SombraStudios.Shared.Systems.LootBox.Item.Description
+  type: Property
+  source:
+    remote:
+      path: Systems/LootBox/Item.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../Assets/Sombra Studios/Shared/Systems/LootBox/Item.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.LootBox
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Description As String
+  overload: SombraStudios.Shared.Systems.LootBox.Item.Description*
+references:
+- uid: SombraStudios.Shared.Systems.LootBox
+  commentId: N:SombraStudios.Shared.Systems.LootBox
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.LootBox
+  nameWithType: SombraStudios.Shared.Systems.LootBox
+  fullName: SombraStudios.Shared.Systems.LootBox
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.LootBox
+    name: LootBox
+    href: SombraStudios.Shared.Systems.LootBox.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.LootBox
+    name: LootBox
+    href: SombraStudios.Shared.Systems.LootBox.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.LootBox.Item.Rarety*
+  commentId: Overload:SombraStudios.Shared.Systems.LootBox.Item.Rarety
+  href: SombraStudios.Shared.Systems.LootBox.Item.html#SombraStudios_Shared_Systems_LootBox_Item_Rarety
+  name: Rarety
+  nameWithType: Item.Rarety
+  fullName: SombraStudios.Shared.Systems.LootBox.Item.Rarety
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.LootBox.Item.Name*
+  commentId: Overload:SombraStudios.Shared.Systems.LootBox.Item.Name
+  href: SombraStudios.Shared.Systems.LootBox.Item.html#SombraStudios_Shared_Systems_LootBox_Item_Name
+  name: Name
+  nameWithType: Item.Name
+  fullName: SombraStudios.Shared.Systems.LootBox.Item.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Systems.LootBox.Item.Description*
+  commentId: Overload:SombraStudios.Shared.Systems.LootBox.Item.Description
+  href: SombraStudios.Shared.Systems.LootBox.Item.html#SombraStudios_Shared_Systems_LootBox_Item_Description
+  name: Description
+  nameWithType: Item.Description
+  fullName: SombraStudios.Shared.Systems.LootBox.Item.Description

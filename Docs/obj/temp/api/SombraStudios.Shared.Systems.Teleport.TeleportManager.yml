@@ -1,0 +1,693 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager
+  commentId: T:SombraStudios.Shared.Systems.Teleport.TeleportManager
+  id: TeleportManager
+  parent: SombraStudios.Shared.Systems.Teleport
+  children:
+  - SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint(System.String)
+  - SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  - SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  langs:
+  - csharp
+  - vb
+  name: TeleportManager
+  nameWithType: TeleportManager
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager
+  type: Class
+  source:
+    remote:
+      path: Systems/Teleport/TeleportManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TeleportManager
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportManager.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  syntax:
+    content: 'public class TeleportManager : Singleton<TeleportManager>'
+    content.vb: Public Class TeleportManager Inherits Singleton(Of TeleportManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}._instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.HasInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.TryGetInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Current
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Awake
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.OnDestroy
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  commentId: M:SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  id: RegisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  parent: SombraStudios.Shared.Systems.Teleport.TeleportManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterSpawnPoint(SpawnPoint)
+  nameWithType: TeleportManager.RegisterSpawnPoint(SpawnPoint)
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  type: Method
+  source:
+    remote:
+      path: Systems/Teleport/TeleportManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisterSpawnPoint
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportManager.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  syntax:
+    content: public void RegisterSpawnPoint(SpawnPoint spawnPoint)
+    parameters:
+    - id: spawnPoint
+      type: SombraStudios.Shared.Systems.Teleport.SpawnPoint
+    content.vb: Public Sub RegisterSpawnPoint(spawnPoint As SpawnPoint)
+  overload: SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint*
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint(System.String)
+  commentId: M:SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint(System.String)
+  id: FindSpawnPoint(System.String)
+  parent: SombraStudios.Shared.Systems.Teleport.TeleportManager
+  langs:
+  - csharp
+  - vb
+  name: FindSpawnPoint(string)
+  nameWithType: TeleportManager.FindSpawnPoint(string)
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint(string)
+  type: Method
+  source:
+    remote:
+      path: Systems/Teleport/TeleportManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindSpawnPoint
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportManager.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  syntax:
+    content: public SpawnPoint FindSpawnPoint(string spawnName)
+    parameters:
+    - id: spawnName
+      type: System.String
+    return:
+      type: SombraStudios.Shared.Systems.Teleport.SpawnPoint
+    content.vb: Public Function FindSpawnPoint(spawnName As String) As SpawnPoint
+  overload: SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint*
+  nameWithType.vb: TeleportManager.FindSpawnPoint(String)
+  fullName.vb: SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint(String)
+  name.vb: FindSpawnPoint(String)
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  commentId: M:SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  id: UnregisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  parent: SombraStudios.Shared.Systems.Teleport.TeleportManager
+  langs:
+  - csharp
+  - vb
+  name: UnregisterSpawnPoint(SpawnPoint)
+  nameWithType: TeleportManager.UnregisterSpawnPoint(SpawnPoint)
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint(SombraStudios.Shared.Systems.Teleport.SpawnPoint)
+  type: Method
+  source:
+    remote:
+      path: Systems/Teleport/TeleportManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnregisterSpawnPoint
+    path: ../Assets/Sombra Studios/Shared/Systems/Teleport/TeleportManager.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Teleport
+  syntax:
+    content: public void UnregisterSpawnPoint(SpawnPoint spawnPoint)
+    parameters:
+    - id: spawnPoint
+      type: SombraStudios.Shared.Systems.Teleport.SpawnPoint
+    content.vb: Public Sub UnregisterSpawnPoint(spawnPoint As SpawnPoint)
+  overload: SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint*
+references:
+- uid: SombraStudios.Shared.Systems.Teleport
+  commentId: N:SombraStudios.Shared.Systems.Teleport
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Teleport
+  nameWithType: SombraStudios.Shared.Systems.Teleport
+  fullName: SombraStudios.Shared.Systems.Teleport
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Teleport
+    name: Teleport
+    href: SombraStudios.Shared.Systems.Teleport.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Teleport
+    name: Teleport
+    href: SombraStudios.Shared.Systems.Teleport.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<TeleportManager>
+  nameWithType: Singleton<TeleportManager>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>
+  nameWithType.vb: Singleton(Of TeleportManager)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager)
+  name.vb: Singleton(Of TeleportManager)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Teleport.TeleportManager
+    name: TeleportManager
+    href: SombraStudios.Shared.Systems.Teleport.TeleportManager.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Teleport.TeleportManager
+    name: TeleportManager
+    href: SombraStudios.Shared.Systems.Teleport.TeleportManager.html
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}._instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<TeleportManager>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>._instance
+  nameWithType.vb: Singleton(Of TeleportManager)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.HasInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<TeleportManager>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>.HasInstance
+  nameWithType.vb: Singleton(Of TeleportManager).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.TryGetInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<TeleportManager>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>.TryGetInstance()
+  nameWithType.vb: Singleton(Of TeleportManager).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Current
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<TeleportManager>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>.Current
+  nameWithType.vb: Singleton(Of TeleportManager).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<TeleportManager>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>.Instance
+  nameWithType.vb: Singleton(Of TeleportManager).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Awake
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<TeleportManager>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>.Awake()
+  nameWithType.vb: Singleton(Of TeleportManager).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.OnDestroy
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<TeleportManager>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Teleport.TeleportManager>.OnDestroy()
+  nameWithType.vb: Singleton(Of TeleportManager).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Teleport.TeleportManager).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Teleport.TeleportManager}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton
+  commentId: N:SombraStudios.Shared.Patterns.Creational.Singleton
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.Singleton
+  nameWithType: SombraStudios.Shared.Patterns.Creational.Singleton
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<T>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>._instance
+  nameWithType.vb: Singleton(Of T)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<T>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.HasInstance
+  nameWithType.vb: Singleton(Of T).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<T>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.TryGetInstance()
+  nameWithType.vb: Singleton(Of T).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<T>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Current
+  nameWithType.vb: Singleton(Of T).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<T>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.OnDestroy()
+  nameWithType.vb: Singleton(Of T).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint*
+  commentId: Overload:SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint
+  href: SombraStudios.Shared.Systems.Teleport.TeleportManager.html#SombraStudios_Shared_Systems_Teleport_TeleportManager_RegisterSpawnPoint_SombraStudios_Shared_Systems_Teleport_SpawnPoint_
+  name: RegisterSpawnPoint
+  nameWithType: TeleportManager.RegisterSpawnPoint
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager.RegisterSpawnPoint
+- uid: SombraStudios.Shared.Systems.Teleport.SpawnPoint
+  commentId: T:SombraStudios.Shared.Systems.Teleport.SpawnPoint
+  parent: SombraStudios.Shared.Systems.Teleport
+  href: SombraStudios.Shared.Systems.Teleport.SpawnPoint.html
+  name: SpawnPoint
+  nameWithType: SpawnPoint
+  fullName: SombraStudios.Shared.Systems.Teleport.SpawnPoint
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint*
+  commentId: Overload:SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint
+  href: SombraStudios.Shared.Systems.Teleport.TeleportManager.html#SombraStudios_Shared_Systems_Teleport_TeleportManager_FindSpawnPoint_System_String_
+  name: FindSpawnPoint
+  nameWithType: TeleportManager.FindSpawnPoint
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager.FindSpawnPoint
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint*
+  commentId: Overload:SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint
+  href: SombraStudios.Shared.Systems.Teleport.TeleportManager.html#SombraStudios_Shared_Systems_Teleport_TeleportManager_UnregisterSpawnPoint_SombraStudios_Shared_Systems_Teleport_SpawnPoint_
+  name: UnregisterSpawnPoint
+  nameWithType: TeleportManager.UnregisterSpawnPoint
+  fullName: SombraStudios.Shared.Systems.Teleport.TeleportManager.UnregisterSpawnPoint

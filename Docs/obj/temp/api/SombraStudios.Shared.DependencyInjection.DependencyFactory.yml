@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory
+  commentId: T:SombraStudios.Shared.DependencyInjection.DependencyFactory
+  id: DependencyFactory
+  parent: SombraStudios.Shared.DependencyInjection
+  children:
+  - SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass``1
+  - SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject``1(``0)
+  - SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: DependencyFactory
+  nameWithType: DependencyFactory
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory
+  type: Class
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependencyFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DependencyFactory
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependencyFactory.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  syntax:
+    content: public static class DependencyFactory
+    content.vb: Public Module DependencyFactory
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass``1
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass``1
+  id: FromClass``1
+  parent: SombraStudios.Shared.DependencyInjection.DependencyFactory
+  langs:
+  - csharp
+  - vb
+  name: FromClass<T>()
+  nameWithType: DependencyFactory.FromClass<T>()
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass<T>()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependencyFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FromClass
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependencyFactory.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  summary: >-
+    generic function to create an instance using a default 
+
+    constructor and calling Inject right after that.
+  example: []
+  syntax:
+    content: 'public static DependencyFactory.Delegate FromClass<T>() where T : class, new()'
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+      description: ''
+    content.vb: Public Shared Function FromClass(Of T As {Class, New})() As DependencyFactory.Delegate
+  overload: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass*
+  nameWithType.vb: DependencyFactory.FromClass(Of T)()
+  fullName.vb: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass(Of T)()
+  name.vb: FromClass(Of T)()
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab``1(``0)
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab``1(``0)
+  id: FromPrefab``1(``0)
+  parent: SombraStudios.Shared.DependencyInjection.DependencyFactory
+  langs:
+  - csharp
+  - vb
+  name: FromPrefab<T>(T)
+  nameWithType: DependencyFactory.FromPrefab<T>(T)
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependencyFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FromPrefab
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependencyFactory.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  summary: >-
+    Instantiate the prefab, find all the MonoBehaviours in it and 
+
+    call Inject for each one of them.
+  example: []
+  syntax:
+    content: 'public static DependencyFactory.Delegate FromPrefab<T>(T prefab) where T : MonoBehaviour'
+    parameters:
+    - id: prefab
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+      description: ''
+    content.vb: Public Shared Function FromPrefab(Of T As MonoBehaviour)(prefab As T) As DependencyFactory.Delegate
+  overload: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab*
+  nameWithType.vb: DependencyFactory.FromPrefab(Of T)(T)
+  fullName.vb: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab(Of T)(T)
+  name.vb: FromPrefab(Of T)(T)
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject``1(``0)
+  commentId: M:SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject``1(``0)
+  id: FromGameObject``1(``0)
+  parent: SombraStudios.Shared.DependencyInjection.DependencyFactory
+  langs:
+  - csharp
+  - vb
+  name: FromGameObject<T>(T)
+  nameWithType: DependencyFactory.FromGameObject<T>(T)
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Dependency Injection/DependencyFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FromGameObject
+    path: ../Assets/Sombra Studios/Shared/Patterns/Dependency Injection/DependencyFactory.cs
+    startLine: 64
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.DependencyInjection
+  summary: Inject an existing GameObject in the scene
+  example: []
+  syntax:
+    content: 'public static DependencyFactory.Delegate FromGameObject<T>(T instance) where T : MonoBehaviour'
+    parameters:
+    - id: instance
+      type: '{T}'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+      description: ''
+    content.vb: Public Shared Function FromGameObject(Of T As MonoBehaviour)(instance As T) As DependencyFactory.Delegate
+  overload: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject*
+  nameWithType.vb: DependencyFactory.FromGameObject(Of T)(T)
+  fullName.vb: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject(Of T)(T)
+  name.vb: FromGameObject(Of T)(T)
+references:
+- uid: SombraStudios.Shared.DependencyInjection
+  commentId: N:SombraStudios.Shared.DependencyInjection
+  href: SombraStudios.html
+  name: SombraStudios.Shared.DependencyInjection
+  nameWithType: SombraStudios.Shared.DependencyInjection
+  fullName: SombraStudios.Shared.DependencyInjection
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.DependencyInjection.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection
+    name: DependencyInjection
+    href: SombraStudios.Shared.DependencyInjection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass
+  href: SombraStudios.Shared.DependencyInjection.DependencyFactory.html#SombraStudios_Shared_DependencyInjection_DependencyFactory_FromClass__1
+  name: FromClass
+  nameWithType: DependencyFactory.FromClass
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromClass
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+  commentId: T:SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+  parent: SombraStudios.Shared.DependencyInjection
+  href: SombraStudios.Shared.DependencyInjection.DependencyFactory.html
+  name: DependencyFactory.Delegate
+  nameWithType: DependencyFactory.Delegate
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+  spec.csharp:
+  - uid: SombraStudios.Shared.DependencyInjection.DependencyFactory
+    name: DependencyFactory
+    href: SombraStudios.Shared.DependencyInjection.DependencyFactory.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+    name: Delegate
+    href: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate.html
+  spec.vb:
+  - uid: SombraStudios.Shared.DependencyInjection.DependencyFactory
+    name: DependencyFactory
+    href: SombraStudios.Shared.DependencyInjection.DependencyFactory.html
+  - name: .
+  - uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate
+    name: Delegate
+    href: SombraStudios.Shared.DependencyInjection.DependencyFactory.Delegate.html
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab
+  href: SombraStudios.Shared.DependencyInjection.DependencyFactory.html#SombraStudios_Shared_DependencyInjection_DependencyFactory_FromPrefab__1___0_
+  name: FromPrefab
+  nameWithType: DependencyFactory.FromPrefab
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromPrefab
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject*
+  commentId: Overload:SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject
+  href: SombraStudios.Shared.DependencyInjection.DependencyFactory.html#SombraStudios_Shared_DependencyInjection_DependencyFactory_FromGameObject__1___0_
+  name: FromGameObject
+  nameWithType: DependencyFactory.FromGameObject
+  fullName: SombraStudios.Shared.DependencyInjection.DependencyFactory.FromGameObject

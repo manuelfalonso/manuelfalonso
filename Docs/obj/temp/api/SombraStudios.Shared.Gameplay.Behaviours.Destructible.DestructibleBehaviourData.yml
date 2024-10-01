@@ -1,0 +1,443 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  id: DestructibleBehaviourData
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerLower
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerMultiplier
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerUpper
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebris
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerLower
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerUpper
+  langs:
+  - csharp
+  - vb
+  name: DestructibleBehaviourData
+  nameWithType: DestructibleBehaviourData
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DestructibleBehaviourData
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "Destructible Data", menuName = "Sombra Studios/Behaviours/Destructible Data", order = 0)]
+
+      public class DestructibleBehaviourData : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="Destructible Data", menuName:="Sombra Studios/Behaviours/Destructible Data", order:=0)>
+
+      Public Class DestructibleBehaviourData Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: Destructible Data
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/Destructible Data
+    - name: order
+      type: System.Int32
+      value: 0
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerMultiplier
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerMultiplier
+  id: ExplosionPowerMultiplier
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: ExplosionPowerMultiplier
+  nameWithType: DestructibleBehaviourData.ExplosionPowerMultiplier
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerMultiplier
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExplosionPowerMultiplier
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  syntax:
+    content: >-
+      [Header("Explosion")]
+
+      [Tooltip("Multiplier for the explosion force applied to debris.")]
+
+      public float ExplosionPowerMultiplier
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Explosion")>
+
+      <Tooltip("Multiplier for the explosion force applied to debris.")>
+
+      Public ExplosionPowerMultiplier As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Explosion
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Multiplier for the explosion force applied to debris.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerLower
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerLower
+  id: ExplosionPowerLower
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: ExplosionPowerLower
+  nameWithType: DestructibleBehaviourData.ExplosionPowerLower
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerLower
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExplosionPowerLower
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  summary: Lower bound for the random explosion force.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Lower bound for the random explosion force.")]
+
+      public float ExplosionPowerLower
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Lower bound for the random explosion force.")>
+
+      Public ExplosionPowerLower As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Lower bound for the random explosion force.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerUpper
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerUpper
+  id: ExplosionPowerUpper
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: ExplosionPowerUpper
+  nameWithType: DestructibleBehaviourData.ExplosionPowerUpper
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.ExplosionPowerUpper
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExplosionPowerUpper
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  summary: Upper bound for the random explosion force.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Upper bound for the random explosion force.")]
+
+      public float ExplosionPowerUpper
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Upper bound for the random explosion force.")>
+
+      Public ExplosionPowerUpper As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Upper bound for the random explosion force.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebris
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebris
+  id: RemoveDebris
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: RemoveDebris
+  nameWithType: DestructibleBehaviourData.RemoveDebris
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebris
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RemoveDebris
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  syntax:
+    content: >-
+      [Header("Debris")]
+
+      [Tooltip("Determines whether to remove debris.")]
+
+      public bool RemoveDebris
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Debris")>
+
+      <Tooltip("Determines whether to remove debris.")>
+
+      Public RemoveDebris As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Debris
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Determines whether to remove debris.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerLower
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerLower
+  id: RemoveDebrisTimerLower
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: RemoveDebrisTimerLower
+  nameWithType: DestructibleBehaviourData.RemoveDebrisTimerLower
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerLower
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RemoveDebrisTimerLower
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  summary: Minimum time before removing debris.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Minimum time before removing debris.")]
+
+      [Min(0.1)]
+
+      public float RemoveDebrisTimerLower
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Minimum time before removing debris.")>
+
+      <Min(0.1)>
+
+      Public RemoveDebrisTimerLower As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Minimum time before removing debris.
+  - type: UnityEngine.MinAttribute
+    ctor: UnityEngine.MinAttribute.#ctor(System.Single)
+    arguments:
+    - type: System.Single
+      value: 0.1
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerUpper
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerUpper
+  id: RemoveDebrisTimerUpper
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: RemoveDebrisTimerUpper
+  nameWithType: DestructibleBehaviourData.RemoveDebrisTimerUpper
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData.RemoveDebrisTimerUpper
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RemoveDebrisTimerUpper
+    path: ../Assets/Sombra Studios/Shared/Gameplay/Behaviours/Destructible/DestructibleBehaviourData.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  summary: Maximum time before removing debris.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Maximum time before removing debris.")]
+
+      [Min(0.1)]
+
+      public float RemoveDebrisTimerUpper
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Maximum time before removing debris.")>
+
+      <Min(0.1)>
+
+      Public RemoveDebrisTimerUpper As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum time before removing debris.
+  - type: UnityEngine.MinAttribute
+    ctor: UnityEngine.MinAttribute.#ctor(System.Single)
+    arguments:
+    - type: System.Single
+      value: 0.1
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+    name: Destructible
+    href: SombraStudios.Shared.Gameplay.Behaviours.Destructible.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+    name: Destructible
+    href: SombraStudios.Shared.Gameplay.Behaviours.Destructible.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

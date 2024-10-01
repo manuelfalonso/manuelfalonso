@@ -1,0 +1,307 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
+  commentId: T:SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
+  id: SceneGroup
+  parent: SombraStudios.Shared.Systems.SceneMaganement
+  children:
+  - SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType(SombraStudios.Shared.Systems.SceneMaganement.SceneType)
+  - SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.GroupName
+  - SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.Scenes
+  langs:
+  - csharp
+  - vb
+  name: SceneGroup
+  nameWithType: SceneGroup
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
+  type: Class
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SceneGroup
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SceneGroup
+    content.vb: >-
+      <Serializable>
+
+      Public Class SceneGroup
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.GroupName
+  commentId: F:SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.GroupName
+  id: GroupName
+  parent: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
+  langs:
+  - csharp
+  - vb
+  name: GroupName
+  nameWithType: SceneGroup.GroupName
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.GroupName
+  type: Field
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GroupName
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: public string GroupName
+    return:
+      type: System.String
+    content.vb: Public GroupName As String
+- uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.Scenes
+  commentId: F:SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.Scenes
+  id: Scenes
+  parent: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
+  langs:
+  - csharp
+  - vb
+  name: Scenes
+  nameWithType: SceneGroup.Scenes
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.Scenes
+  type: Field
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Scenes
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: public List<SceneData> Scenes
+    return:
+      type: System.Collections.Generic.List{SombraStudios.Shared.Systems.SceneMaganement.SceneData}
+    content.vb: Public Scenes As List(Of SceneData)
+- uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType(SombraStudios.Shared.Systems.SceneMaganement.SceneType)
+  commentId: M:SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType(SombraStudios.Shared.Systems.SceneMaganement.SceneType)
+  id: FindSceneNameByType(SombraStudios.Shared.Systems.SceneMaganement.SceneType)
+  parent: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
+  langs:
+  - csharp
+  - vb
+  name: FindSceneNameByType(SceneType)
+  nameWithType: SceneGroup.FindSceneNameByType(SceneType)
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType(SombraStudios.Shared.Systems.SceneMaganement.SceneType)
+  type: Method
+  source:
+    remote:
+      path: Systems/SceneManagement/SceneLoader.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindSceneNameByType
+    path: ../Assets/Sombra Studios/Shared/Systems/SceneManagement/SceneLoader.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.Systems.SceneManagement
+  namespace: SombraStudios.Shared.Systems.SceneMaganement
+  syntax:
+    content: public string FindSceneNameByType(SceneType sceneType)
+    parameters:
+    - id: sceneType
+      type: SombraStudios.Shared.Systems.SceneMaganement.SceneType
+    return:
+      type: System.String
+    content.vb: Public Function FindSceneNameByType(sceneType As SceneType) As String
+  overload: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType*
+references:
+- uid: SombraStudios.Shared.Systems.SceneMaganement
+  commentId: N:SombraStudios.Shared.Systems.SceneMaganement
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.SceneMaganement
+  nameWithType: SombraStudios.Shared.Systems.SceneMaganement
+  fullName: SombraStudios.Shared.Systems.SceneMaganement
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.SceneMaganement
+    name: SceneMaganement
+    href: SombraStudios.Shared.Systems.SceneMaganement.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.SceneMaganement
+    name: SceneMaganement
+    href: SombraStudios.Shared.Systems.SceneMaganement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{SombraStudios.Shared.Systems.SceneMaganement.SceneData}
+  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.Systems.SceneMaganement.SceneData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SceneData>
+  nameWithType: List<SceneData>
+  fullName: System.Collections.Generic.List<SombraStudios.Shared.Systems.SceneMaganement.SceneData>
+  nameWithType.vb: List(Of SceneData)
+  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.Systems.SceneMaganement.SceneData)
+  name.vb: List(Of SceneData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneData
+    name: SceneData
+    href: SombraStudios.Shared.Systems.SceneMaganement.SceneData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneData
+    name: SceneData
+    href: SombraStudios.Shared.Systems.SceneMaganement.SceneData.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType*
+  commentId: Overload:SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType
+  href: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.html#SombraStudios_Shared_Systems_SceneMaganement_SceneGroup_FindSceneNameByType_SombraStudios_Shared_Systems_SceneMaganement_SceneType_
+  name: FindSceneNameByType
+  nameWithType: SceneGroup.FindSceneNameByType
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup.FindSceneNameByType
+- uid: SombraStudios.Shared.Systems.SceneMaganement.SceneType
+  commentId: T:SombraStudios.Shared.Systems.SceneMaganement.SceneType
+  parent: SombraStudios.Shared.Systems.SceneMaganement
+  href: SombraStudios.Shared.Systems.SceneMaganement.SceneType.html
+  name: SceneType
+  nameWithType: SceneType
+  fullName: SombraStudios.Shared.Systems.SceneMaganement.SceneType

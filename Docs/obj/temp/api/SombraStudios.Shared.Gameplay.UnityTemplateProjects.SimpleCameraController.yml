@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  commentId: T:SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  id: SimpleCameraController
+  parent: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  children:
+  - SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.boost
+  - SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.invertY
+  - SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.mouseSensitivityCurve
+  - SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.positionLerpTime
+  - SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.rotationLerpTime
+  langs:
+  - csharp
+  - vb
+  name: SimpleCameraController
+  nameWithType: SimpleCameraController
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  type: Class
+  source:
+    remote:
+      path: Gameplay/SimpleCameraController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SimpleCameraController
+    path: ../Assets/Sombra Studios/Shared/Gameplay/SimpleCameraController.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  syntax:
+    content: 'public class SimpleCameraController : MonoBehaviour'
+    content.vb: Public Class SimpleCameraController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.boost
+  commentId: F:SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.boost
+  id: boost
+  parent: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  langs:
+  - csharp
+  - vb
+  name: boost
+  nameWithType: SimpleCameraController.boost
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.boost
+  type: Field
+  source:
+    remote:
+      path: Gameplay/SimpleCameraController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: boost
+    path: ../Assets/Sombra Studios/Shared/Gameplay/SimpleCameraController.cs
+    startLine: 66
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  syntax:
+    content: >-
+      [Header("Movement Settings")]
+
+      [Tooltip("Exponential boost factor on translation, controllable by mouse wheel.")]
+
+      public float boost
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Movement Settings")>
+
+      <Tooltip("Exponential boost factor on translation, controllable by mouse wheel.")>
+
+      Public boost As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Movement Settings
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Exponential boost factor on translation, controllable by mouse wheel.
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.positionLerpTime
+  commentId: F:SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.positionLerpTime
+  id: positionLerpTime
+  parent: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  langs:
+  - csharp
+  - vb
+  name: positionLerpTime
+  nameWithType: SimpleCameraController.positionLerpTime
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.positionLerpTime
+  type: Field
+  source:
+    remote:
+      path: Gameplay/SimpleCameraController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: positionLerpTime
+    path: ../Assets/Sombra Studios/Shared/Gameplay/SimpleCameraController.cs
+    startLine: 69
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  syntax:
+    content: >-
+      [Tooltip("Time it takes to interpolate camera position 99% of the way to the target.")]
+
+      [Range(0.001, 1)]
+
+      public float positionLerpTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Time it takes to interpolate camera position 99% of the way to the target.")>
+
+      <Range(0.001, 1)>
+
+      Public positionLerpTime As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Time it takes to interpolate camera position 99% of the way to the target.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0.001
+    - type: System.Single
+      value: 1
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.mouseSensitivityCurve
+  commentId: F:SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.mouseSensitivityCurve
+  id: mouseSensitivityCurve
+  parent: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  langs:
+  - csharp
+  - vb
+  name: mouseSensitivityCurve
+  nameWithType: SimpleCameraController.mouseSensitivityCurve
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.mouseSensitivityCurve
+  type: Field
+  source:
+    remote:
+      path: Gameplay/SimpleCameraController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: mouseSensitivityCurve
+    path: ../Assets/Sombra Studios/Shared/Gameplay/SimpleCameraController.cs
+    startLine: 73
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  syntax:
+    content: >-
+      [Header("Rotation Settings")]
+
+      [Tooltip("X = Change in mouse position.\nY = Multiplicative factor for camera rotation.")]
+
+      public AnimationCurve mouseSensitivityCurve
+    return:
+      type: UnityEngine.AnimationCurve
+    content.vb: >-
+      <Header("Rotation Settings")>
+
+      <Tooltip("X = Change in mouse position." & vbLf & "Y = Multiplicative factor for camera rotation.")>
+
+      Public mouseSensitivityCurve As AnimationCurve
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Rotation Settings
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: >-
+        X = Change in mouse position.
+
+        Y = Multiplicative factor for camera rotation.
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.rotationLerpTime
+  commentId: F:SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.rotationLerpTime
+  id: rotationLerpTime
+  parent: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  langs:
+  - csharp
+  - vb
+  name: rotationLerpTime
+  nameWithType: SimpleCameraController.rotationLerpTime
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.rotationLerpTime
+  type: Field
+  source:
+    remote:
+      path: Gameplay/SimpleCameraController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: rotationLerpTime
+    path: ../Assets/Sombra Studios/Shared/Gameplay/SimpleCameraController.cs
+    startLine: 76
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  syntax:
+    content: >-
+      [Tooltip("Time it takes to interpolate camera rotation 99% of the way to the target.")]
+
+      [Range(0.001, 1)]
+
+      public float rotationLerpTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Time it takes to interpolate camera rotation 99% of the way to the target.")>
+
+      <Range(0.001, 1)>
+
+      Public rotationLerpTime As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Time it takes to interpolate camera rotation 99% of the way to the target.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0.001
+    - type: System.Single
+      value: 1
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.invertY
+  commentId: F:SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.invertY
+  id: invertY
+  parent: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController
+  langs:
+  - csharp
+  - vb
+  name: invertY
+  nameWithType: SimpleCameraController.invertY
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects.SimpleCameraController.invertY
+  type: Field
+  source:
+    remote:
+      path: Gameplay/SimpleCameraController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: invertY
+    path: ../Assets/Sombra Studios/Shared/Gameplay/SimpleCameraController.cs
+    startLine: 79
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  syntax:
+    content: >-
+      [Tooltip("Whether or not to invert our Y axis for mouse input to rotation.")]
+
+      public bool invertY
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Whether or not to invert our Y axis for mouse input to rotation.")>
+
+      Public invertY As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether or not to invert our Y axis for mouse input to rotation.
+references:
+- uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  commentId: N:SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  nameWithType: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  fullName: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+    name: UnityTemplateProjects
+    href: SombraStudios.Shared.Gameplay.UnityTemplateProjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.UnityTemplateProjects
+    name: UnityTemplateProjects
+    href: SombraStudios.Shared.Gameplay.UnityTemplateProjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

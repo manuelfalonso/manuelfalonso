@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  id: GameEvent
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  langs:
+  - csharp
+  - vb
+  name: GameEvent
+  nameWithType: GameEvent
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameEvent
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: >-
+    ScriptableObject event used to decouple code instead of a normal class.
+
+    Inject a reference to the GameEventSO you want the listeners to raise.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Game Event", menuName = "Sombra Studios/Game Events/Game Event")]
+
+      public class GameEvent : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Game Event", menuName:="Sombra Studios/Game Events/Game Event")>
+
+      Public Class GameEvent Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Game Event
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Game Events/Game Event
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise
+  id: Raise
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: Raise()
+  nameWithType: GameEvent.Raise()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Raise
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Raises the event, notifying all registered listeners.
+  example: []
+  syntax:
+    content: public void Raise()
+    content.vb: Public Sub Raise()
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  id: RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: RegisterListener(GameEventMonoBehaviourListener)
+  nameWithType: GameEvent.RegisterListener(GameEventMonoBehaviourListener)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisterListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 52
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Registers a MonoBehaviour listener for this event.
+  example: []
+  syntax:
+    content: public void RegisterListener(GameEventMonoBehaviourListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
+      description: The listener to register.
+    content.vb: Public Sub RegisterListener(listener As GameEventMonoBehaviourListener)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  id: RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: RegisterListener(GameEventMonoBehaviourListListener)
+  nameWithType: GameEvent.RegisterListener(GameEventMonoBehaviourListListener)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisterListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 61
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Registers a MonoBehaviourList listener for this event.
+  example: []
+  syntax:
+    content: public void RegisterListener(GameEventMonoBehaviourListListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
+      description: The listener to register.
+    content.vb: Public Sub RegisterListener(listener As GameEventMonoBehaviourListListener)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  id: RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: RegisterListener(GameEventScriptableObjectListener)
+  nameWithType: GameEvent.RegisterListener(GameEventScriptableObjectListener)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisterListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 70
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Registers a ScriptableObject listener for this event.
+  example: []
+  syntax:
+    content: public void RegisterListener(GameEventScriptableObjectListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+      description: The listener to register.
+    content.vb: Public Sub RegisterListener(listener As GameEventScriptableObjectListener)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  id: UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: UnregisterListener(GameEventMonoBehaviourListener)
+  nameWithType: GameEvent.UnregisterListener(GameEventMonoBehaviourListener)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnregisterListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 80
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Unregisters a MonoBehaviour listener for this event.
+  example: []
+  syntax:
+    content: public void UnregisterListener(GameEventMonoBehaviourListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
+      description: The listener to unregister.
+    content.vb: Public Sub UnregisterListener(listener As GameEventMonoBehaviourListener)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  id: UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: UnregisterListener(GameEventMonoBehaviourListListener)
+  nameWithType: GameEvent.UnregisterListener(GameEventMonoBehaviourListListener)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnregisterListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 89
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Unregisters a MonoBehaviourList listener for this event.
+  example: []
+  syntax:
+    content: public void UnregisterListener(GameEventMonoBehaviourListListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
+      description: The listener to unregister.
+    content.vb: Public Sub UnregisterListener(listener As GameEventMonoBehaviourListListener)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  id: UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  langs:
+  - csharp
+  - vb
+  name: UnregisterListener(GameEventScriptableObjectListener)
+  nameWithType: GameEvent.UnregisterListener(GameEventScriptableObjectListener)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener(SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnregisterListener
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/Observer/ScriptableObjects/GameEvent.cs
+    startLine: 98
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Unregisters a ScriptableObject listener for this event.
+  example: []
+  syntax:
+    content: public void UnregisterListener(GameEventScriptableObjectListener listener)
+    parameters:
+    - id: listener
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+      description: The listener to unregister.
+    content.vb: Public Sub UnregisterListener(listener As GameEventScriptableObjectListener)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GameEvent_Raise
+  name: Raise
+  nameWithType: GameEvent.Raise
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.Raise
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GameEvent_RegisterListener_SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GameEventMonoBehaviourListener_
+  name: RegisterListener
+  nameWithType: GameEvent.RegisterListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.RegisterListener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener.html
+  name: GameEventMonoBehaviourListener
+  nameWithType: GameEventMonoBehaviourListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.html
+  name: GameEventMonoBehaviourListListener
+  nameWithType: GameEventMonoBehaviourListListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.html
+  name: GameEventScriptableObjectListener
+  nameWithType: GameEventScriptableObjectListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GameEvent_UnregisterListener_SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GameEventMonoBehaviourListener_
+  name: UnregisterListener
+  nameWithType: GameEvent.UnregisterListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.UnregisterListener

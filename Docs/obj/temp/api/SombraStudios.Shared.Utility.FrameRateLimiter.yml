@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.FrameRateLimiter
+  commentId: T:SombraStudios.Shared.Utility.FrameRateLimiter
+  id: FrameRateLimiter
+  parent: SombraStudios.Shared.Utility
+  children:
+  - SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate
+  langs:
+  - csharp
+  - vb
+  name: FrameRateLimiter
+  nameWithType: FrameRateLimiter
+  fullName: SombraStudios.Shared.Utility.FrameRateLimiter
+  type: Class
+  source:
+    remote:
+      path: Utility/FrameRateLimiter.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FrameRateLimiter
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRateLimiter.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility
+  summary: >-
+    Limit FPS to optimize performance to the maximum refresh rate of the monitor
+
+    This script don't need to and can't be attached to any Game Object
+  example: []
+  syntax:
+    content: public static class FrameRateLimiter
+    content.vb: Public Module FrameRateLimiter
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate
+  commentId: M:SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate
+  id: LimitFrameRate
+  parent: SombraStudios.Shared.Utility.FrameRateLimiter
+  langs:
+  - csharp
+  - vb
+  name: LimitFrameRate()
+  nameWithType: FrameRateLimiter.LimitFrameRate()
+  fullName: SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate()
+  type: Method
+  source:
+    remote:
+      path: Utility/FrameRateLimiter.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LimitFrameRate
+    path: ../Assets/Sombra Studios/Shared/Utility/FrameRateLimiter.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Shared.Utility
+  syntax:
+    content: >-
+      [RuntimeInitializeOnLoadMethod]
+
+      public static void LimitFrameRate()
+    content.vb: >-
+      <RuntimeInitializeOnLoadMethod>
+
+      Public Shared Sub LimitFrameRate()
+  overload: SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate*
+  attributes:
+  - type: UnityEngine.RuntimeInitializeOnLoadMethodAttribute
+    ctor: UnityEngine.RuntimeInitializeOnLoadMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: SombraStudios.Shared.Utility
+  commentId: N:SombraStudios.Shared.Utility
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility
+  nameWithType: SombraStudios.Shared.Utility
+  fullName: SombraStudios.Shared.Utility
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate*
+  commentId: Overload:SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate
+  href: SombraStudios.Shared.Utility.FrameRateLimiter.html#SombraStudios_Shared_Utility_FrameRateLimiter_LimitFrameRate
+  name: LimitFrameRate
+  nameWithType: FrameRateLimiter.LimitFrameRate
+  fullName: SombraStudios.Shared.Utility.FrameRateLimiter.LimitFrameRate

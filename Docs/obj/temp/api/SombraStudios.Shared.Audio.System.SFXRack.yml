@@ -1,0 +1,324 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Audio.System.SFXRack
+  commentId: T:SombraStudios.Shared.Audio.System.SFXRack
+  id: SFXRack
+  parent: SombraStudios.Shared.Audio.System
+  children:
+  - SombraStudios.Shared.Audio.System.SFXRack.#ctor(SombraStudios.Shared.Audio.System.RackData)
+  - SombraStudios.Shared.Audio.System.SFXRack.AudioData
+  - SombraStudios.Shared.Audio.System.SFXRack.AudioInstance
+  - SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform
+  - SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance(UnityEngine.Transform)
+  langs:
+  - csharp
+  - vb
+  name: SFXRack
+  nameWithType: SFXRack
+  fullName: SombraStudios.Shared.Audio.System.SFXRack
+  type: Class
+  source:
+    remote:
+      path: Audio/System/SFXRack.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SFXRack
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXRack.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Represents a rack containing audio data and an AudioSource instance.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SFXRack
+    content.vb: >-
+      <Serializable>
+
+      Public Class SFXRack
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform
+  commentId: P:SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform
+  id: InstanceTransform
+  parent: SombraStudios.Shared.Audio.System.SFXRack
+  langs:
+  - csharp
+  - vb
+  name: InstanceTransform
+  nameWithType: SFXRack.InstanceTransform
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform
+  type: Property
+  source:
+    remote:
+      path: Audio/System/SFXRack.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InstanceTransform
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXRack.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Gets the transform of the instantiated SFXRack instance.
+  example: []
+  syntax:
+    content: public Transform InstanceTransform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public ReadOnly Property InstanceTransform As Transform
+  overload: SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform*
+- uid: SombraStudios.Shared.Audio.System.SFXRack.AudioInstance
+  commentId: P:SombraStudios.Shared.Audio.System.SFXRack.AudioInstance
+  id: AudioInstance
+  parent: SombraStudios.Shared.Audio.System.SFXRack
+  langs:
+  - csharp
+  - vb
+  name: AudioInstance
+  nameWithType: SFXRack.AudioInstance
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.AudioInstance
+  type: Property
+  source:
+    remote:
+      path: Audio/System/SFXRack.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AudioInstance
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXRack.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Gets the AudioSource component of the instantiated SFXRack instance.
+  example: []
+  syntax:
+    content: public AudioSource AudioInstance { get; }
+    parameters: []
+    return:
+      type: UnityEngine.AudioSource
+    content.vb: Public ReadOnly Property AudioInstance As AudioSource
+  overload: SombraStudios.Shared.Audio.System.SFXRack.AudioInstance*
+- uid: SombraStudios.Shared.Audio.System.SFXRack.AudioData
+  commentId: P:SombraStudios.Shared.Audio.System.SFXRack.AudioData
+  id: AudioData
+  parent: SombraStudios.Shared.Audio.System.SFXRack
+  langs:
+  - csharp
+  - vb
+  name: AudioData
+  nameWithType: SFXRack.AudioData
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.AudioData
+  type: Property
+  source:
+    remote:
+      path: Audio/System/SFXRack.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AudioData
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXRack.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Gets the audio data associated with this SFXRack.
+  example: []
+  syntax:
+    content: public RackData AudioData { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Audio.System.RackData
+    content.vb: Public ReadOnly Property AudioData As RackData
+  overload: SombraStudios.Shared.Audio.System.SFXRack.AudioData*
+- uid: SombraStudios.Shared.Audio.System.SFXRack.#ctor(SombraStudios.Shared.Audio.System.RackData)
+  commentId: M:SombraStudios.Shared.Audio.System.SFXRack.#ctor(SombraStudios.Shared.Audio.System.RackData)
+  id: '#ctor(SombraStudios.Shared.Audio.System.RackData)'
+  parent: SombraStudios.Shared.Audio.System.SFXRack
+  langs:
+  - csharp
+  - vb
+  name: SFXRack(RackData)
+  nameWithType: SFXRack.SFXRack(RackData)
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.SFXRack(SombraStudios.Shared.Audio.System.RackData)
+  type: Constructor
+  source:
+    remote:
+      path: Audio/System/SFXRack.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXRack.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Initializes a new instance of the SFXRack class with the specified audio data.
+  example: []
+  syntax:
+    content: public SFXRack(RackData dataRef)
+    parameters:
+    - id: dataRef
+      type: SombraStudios.Shared.Audio.System.RackData
+      description: The audio data to associate with the SFXRack.
+    content.vb: Public Sub New(dataRef As RackData)
+  overload: SombraStudios.Shared.Audio.System.SFXRack.#ctor*
+  nameWithType.vb: SFXRack.New(RackData)
+  fullName.vb: SombraStudios.Shared.Audio.System.SFXRack.New(SombraStudios.Shared.Audio.System.RackData)
+  name.vb: New(RackData)
+- uid: SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance(UnityEngine.Transform)
+  commentId: M:SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance(UnityEngine.Transform)
+  id: InstantiateEventInstance(UnityEngine.Transform)
+  parent: SombraStudios.Shared.Audio.System.SFXRack
+  langs:
+  - csharp
+  - vb
+  name: InstantiateEventInstance(Transform)
+  nameWithType: SFXRack.InstantiateEventInstance(Transform)
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Audio/System/SFXRack.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InstantiateEventInstance
+    path: ../Assets/Sombra Studios/Shared/Audio/System/SFXRack.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.System
+  summary: Instantiates an AudioSource at the specified transform with the audio data of this SFXRack.
+  example: []
+  syntax:
+    content: public void InstantiateEventInstance(Transform transform)
+    parameters:
+    - id: transform
+      type: UnityEngine.Transform
+      description: The transform at which to instantiate the AudioSource.
+    content.vb: Public Sub InstantiateEventInstance(transform As Transform)
+  overload: SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance*
+references:
+- uid: SombraStudios.Shared.Audio.System
+  commentId: N:SombraStudios.Shared.Audio.System
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Audio.System
+  nameWithType: SombraStudios.Shared.Audio.System
+  fullName: SombraStudios.Shared.Audio.System
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.System
+    name: System
+    href: SombraStudios.Shared.Audio.System.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform
+  href: SombraStudios.Shared.Audio.System.SFXRack.html#SombraStudios_Shared_Audio_System_SFXRack_InstanceTransform
+  name: InstanceTransform
+  nameWithType: SFXRack.InstanceTransform
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.InstanceTransform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Audio.System.SFXRack.AudioInstance*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXRack.AudioInstance
+  href: SombraStudios.Shared.Audio.System.SFXRack.html#SombraStudios_Shared_Audio_System_SFXRack_AudioInstance
+  name: AudioInstance
+  nameWithType: SFXRack.AudioInstance
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.AudioInstance
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource
+- uid: SombraStudios.Shared.Audio.System.SFXRack.AudioData*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXRack.AudioData
+  href: SombraStudios.Shared.Audio.System.SFXRack.html#SombraStudios_Shared_Audio_System_SFXRack_AudioData
+  name: AudioData
+  nameWithType: SFXRack.AudioData
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.AudioData
+- uid: SombraStudios.Shared.Audio.System.RackData
+  commentId: T:SombraStudios.Shared.Audio.System.RackData
+  parent: SombraStudios.Shared.Audio.System
+  href: SombraStudios.Shared.Audio.System.RackData.html
+  name: RackData
+  nameWithType: RackData
+  fullName: SombraStudios.Shared.Audio.System.RackData
+- uid: SombraStudios.Shared.Audio.System.SFXRack.#ctor*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXRack.#ctor
+  href: SombraStudios.Shared.Audio.System.SFXRack.html#SombraStudios_Shared_Audio_System_SFXRack__ctor_SombraStudios_Shared_Audio_System_RackData_
+  name: SFXRack
+  nameWithType: SFXRack.SFXRack
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.SFXRack
+  nameWithType.vb: SFXRack.New
+  fullName.vb: SombraStudios.Shared.Audio.System.SFXRack.New
+  name.vb: New
+- uid: SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance*
+  commentId: Overload:SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance
+  href: SombraStudios.Shared.Audio.System.SFXRack.html#SombraStudios_Shared_Audio_System_SFXRack_InstantiateEventInstance_UnityEngine_Transform_
+  name: InstantiateEventInstance
+  nameWithType: SFXRack.InstantiateEventInstance
+  fullName: SombraStudios.Shared.Audio.System.SFXRack.InstantiateEventInstance

@@ -1,0 +1,2859 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.XR.Interactables.XRLever
+  commentId: T:SombraStudios.Shared.XR.Interactables.XRLever
+  id: XRLever
+  parent: SombraStudios.Shared.XR.Interactables
+  children:
+  - SombraStudios.Shared.XR.Interactables.XRLever.Handle
+  - SombraStudios.Shared.XR.Interactables.XRLever.LockToValue
+  - SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle
+  - SombraStudios.Shared.XR.Interactables.XRLever.MinAngle
+  - SombraStudios.Shared.XR.Interactables.XRLever.OnDisable
+  - SombraStudios.Shared.XR.Interactables.XRLever.OnEnable
+  - SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate
+  - SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate
+  - SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  - SombraStudios.Shared.XR.Interactables.XRLever.Value
+  langs:
+  - csharp
+  - vb
+  name: XRLever
+  nameWithType: XRLever
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever
+  type: Class
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: XRLever
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: An interactable lever that snaps into an on or off position by a direct interactor
+  example: []
+  syntax:
+    content: 'public class XRLever : XRBaseInteractable, IXRActivateInteractable, IXRHoverInteractable, IXRSelectInteractable, IXRFocusInteractable, IXRInteractionStrengthInteractable, IXRInteractable, IXROverridesGazeAutoSelect'
+    content.vb: Public Class XRLever Inherits XRBaseInteractable Implements IXRActivateInteractable, IXRHoverInteractable, IXRSelectInteractable, IXRFocusInteractable, IXRInteractionStrengthInteractable, IXRInteractable, IXROverridesGazeAutoSelect
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  implements:
+  - UnityEngine.XR.Interaction.Toolkit.IXRActivateInteractable
+  - UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractable
+  - UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractable
+  - UnityEngine.XR.Interaction.Toolkit.IXRFocusInteractable
+  - UnityEngine.XR.Interaction.Toolkit.IXRInteractionStrengthInteractable
+  - UnityEngine.XR.Interaction.Toolkit.IXRInteractable
+  - UnityEngine.XR.Interaction.Toolkit.IXROverridesGazeAutoSelect
+  inheritedMembers:
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Reset
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Awake
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDestroy
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachTransform(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetLocalAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistance(UnityEngine.Vector3)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetInteractionStrength(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.CaptureAttachPose(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnRegistered(UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnUnregistered(UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntering(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntered(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExiting(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExited(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivated(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivated(UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrength(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessHoverFilters(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessSelectFilters(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor,System.Single)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceling(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceled(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.getDistanceOverride
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionManager
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.colliders
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayers
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.distanceCalculationMode
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectMode
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusMode
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.customReticle
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeInteraction
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeSelect
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideGazeTimeToSelect
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.gazeTimeToSelect
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideTimeToAutoDeselectGaze
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.timeToAutoDeselectGaze
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeAssistance
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstHoverEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastHoverExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstSelectEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastSelectExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstFocusEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastFocusExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.activated
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.deactivated
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsHovering
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isHovered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsSelecting
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractorSelecting
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isSelected
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionGroupsFocusing
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractionGroupFocusing
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isFocused
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.canFocus
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingHoverFilters
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverFilters
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingSelectFilters
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectFilters
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingInteractionStrengthFilters
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionStrengthFilters
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.largestInteractionStrength
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayerMask
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEntered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExited
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCanceled
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onActivate
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onDeactivate
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEnter
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEnter
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExit
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExit
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEnter
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExit
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCancel
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoveringInteractors
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectingInteractor
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.registered
+  - UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.unregistered
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.Handle
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.Handle
+  id: Handle
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: XRLever.Handle
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.Handle
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Handle
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: The object that is visually grabbed and manipulated
+  example: []
+  syntax:
+    content: public Transform Handle { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public Property Handle As Transform
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.Handle*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.Value
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.Value
+  id: Value
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: XRLever.Value
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.Value
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Value
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: The value of the lever
+  example: []
+  syntax:
+    content: public bool Value { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Value As Boolean
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.Value*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.LockToValue
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.LockToValue
+  id: LockToValue
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: LockToValue
+  nameWithType: XRLever.LockToValue
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.LockToValue
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LockToValue
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 60
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: If enabled, the lever will snap to the value position when released
+  example: []
+  syntax:
+    content: public bool LockToValue { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LockToValue As Boolean
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.LockToValue*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle
+  id: MaxAngle
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: MaxAngle
+  nameWithType: XRLever.MaxAngle
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxAngle
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 65
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: Angle of the lever in the 'on' position
+  example: []
+  syntax:
+    content: public float MaxAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MaxAngle As Single
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.MinAngle
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.MinAngle
+  id: MinAngle
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: MinAngle
+  nameWithType: XRLever.MinAngle
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.MinAngle
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MinAngle
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 74
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: Angle of the lever in the 'off' position
+  example: []
+  syntax:
+    content: public float MinAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property MinAngle As Single
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.MinAngle*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate
+  id: OnLeverActivate
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: OnLeverActivate
+  nameWithType: XRLever.OnLeverActivate
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnLeverActivate
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 83
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: Events to trigger when the lever activates
+  example: []
+  syntax:
+    content: public UnityEvent OnLeverActivate { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public ReadOnly Property OnLeverActivate As UnityEvent
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate
+  commentId: P:SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate
+  id: OnLeverDeactivate
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: OnLeverDeactivate
+  nameWithType: XRLever.OnLeverDeactivate
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate
+  type: Property
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnLeverDeactivate
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 88
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  summary: Events to trigger when the lever deactivates
+  example: []
+  syntax:
+    content: public UnityEvent OnLeverDeactivate { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public ReadOnly Property OnLeverDeactivate As UnityEvent
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnEnable
+  commentId: M:SombraStudios.Shared.XR.Interactables.XRLever.OnEnable
+  id: OnEnable
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: OnEnable()
+  nameWithType: XRLever.OnEnable()
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnEnable()
+  type: Method
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnEnable
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 97
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  example: []
+  syntax:
+    content: protected override void OnEnable()
+    content.vb: Protected Overrides Sub OnEnable()
+  overridden: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnEnable
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.OnEnable*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnDisable
+  commentId: M:SombraStudios.Shared.XR.Interactables.XRLever.OnDisable
+  id: OnDisable
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: OnDisable()
+  nameWithType: XRLever.OnDisable()
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnDisable()
+  type: Method
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnDisable
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 104
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  example: []
+  syntax:
+    content: protected override void OnDisable()
+    content.vb: Protected Overrides Sub OnDisable()
+  overridden: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDisable
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.OnDisable*
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  commentId: M:SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  id: ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  parent: SombraStudios.Shared.XR.Interactables.XRLever
+  langs:
+  - csharp
+  - vb
+  name: ProcessInteractable(UpdatePhase)
+  nameWithType: XRLever.ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase)
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  type: Method
+  source:
+    remote:
+      path: XR/Interactables/XRLever.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ProcessInteractable
+    path: ../Assets/Sombra Studios/Shared/XR/Interactables/XRLever.cs
+    startLine: 148
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR.Interactables
+  example: []
+  syntax:
+    content: public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
+    parameters:
+    - id: updatePhase
+      type: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    content.vb: Public Overrides Sub ProcessInteractable(updatePhase As XRInteractionUpdateOrder.UpdatePhase)
+  overridden: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  overload: SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable*
+references:
+- uid: SombraStudios.Shared.XR.Interactables
+  commentId: N:SombraStudios.Shared.XR.Interactables
+  href: SombraStudios.html
+  name: SombraStudios.Shared.XR.Interactables
+  nameWithType: SombraStudios.Shared.XR.Interactables
+  fullName: SombraStudios.Shared.XR.Interactables
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.XR
+    name: XR
+    href: SombraStudios.Shared.XR.html
+  - name: .
+  - uid: SombraStudios.Shared.XR.Interactables
+    name: Interactables
+    href: SombraStudios.Shared.XR.Interactables.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.XR
+    name: XR
+    href: SombraStudios.Shared.XR.html
+  - name: .
+  - uid: SombraStudios.Shared.XR.Interactables
+    name: Interactables
+    href: SombraStudios.Shared.XR.Interactables.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: XRBaseInteractable
+  nameWithType: XRBaseInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRActivateInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRActivateInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRActivateInteractable
+  nameWithType: IXRActivateInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRActivateInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRHoverInteractable
+  nameWithType: IXRHoverInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRSelectInteractable
+  nameWithType: IXRSelectInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRFocusInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRFocusInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRFocusInteractable
+  nameWithType: IXRFocusInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRFocusInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractionStrengthInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRInteractionStrengthInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRInteractionStrengthInteractable
+  nameWithType: IXRInteractionStrengthInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRInteractionStrengthInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractable
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRInteractable
+  nameWithType: IXRInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.IXROverridesGazeAutoSelect
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXROverridesGazeAutoSelect
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXROverridesGazeAutoSelect
+  nameWithType: IXROverridesGazeAutoSelect
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXROverridesGazeAutoSelect
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Reset
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Reset
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: Reset()
+  nameWithType: XRBaseInteractable.Reset()
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Reset()
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Reset
+    name: Reset
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Reset
+    name: Reset
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Awake
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Awake
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: Awake()
+  nameWithType: XRBaseInteractable.Awake()
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Awake()
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Awake
+    name: Awake
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.Awake
+    name: Awake
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDestroy
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDestroy
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnDestroy()
+  nameWithType: XRBaseInteractable.OnDestroy()
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDestroy()
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDestroy
+    name: OnDestroy
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDestroy
+    name: OnDestroy
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachTransform(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachTransform(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetAttachTransform(IXRInteractor)
+  nameWithType: XRBaseInteractable.GetAttachTransform(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachTransform(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachTransform(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetAttachTransform
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachTransform(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetAttachTransform
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetAttachPoseOnSelect(IXRSelectInteractor)
+  nameWithType: XRBaseInteractable.GetAttachPoseOnSelect(IXRSelectInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: GetAttachPoseOnSelect
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: GetAttachPoseOnSelect
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetLocalAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetLocalAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetLocalAttachPoseOnSelect(IXRSelectInteractor)
+  nameWithType: XRBaseInteractable.GetLocalAttachPoseOnSelect(IXRSelectInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetLocalAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetLocalAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: GetLocalAttachPoseOnSelect
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetLocalAttachPoseOnSelect(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: GetLocalAttachPoseOnSelect
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetDistanceSqrToInteractor(IXRInteractor)
+  nameWithType: XRBaseInteractable.GetDistanceSqrToInteractor(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetDistanceSqrToInteractor
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetDistanceSqrToInteractor
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistance(UnityEngine.Vector3)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistance(UnityEngine.Vector3)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetDistance(Vector3)
+  nameWithType: XRBaseInteractable.GetDistance(Vector3)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistance(UnityEngine.Vector3)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistance(UnityEngine.Vector3)
+    name: GetDistance
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistance(UnityEngine.Vector3)
+    name: GetDistance
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetInteractionStrength(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetInteractionStrength(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetInteractionStrength(IXRInteractor)
+  nameWithType: XRBaseInteractable.GetInteractionStrength(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetInteractionStrength(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetInteractionStrength(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetInteractionStrength
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetInteractionStrength(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetInteractionStrength
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsHoverableBy(IXRHoverInteractor)
+  nameWithType: XRBaseInteractable.IsHoverableBy(IXRHoverInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+    name: IsHoverableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor
+    name: IXRHoverInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+    name: IsHoverableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor
+    name: IXRHoverInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsSelectableBy(IXRSelectInteractor)
+  nameWithType: XRBaseInteractable.IsSelectableBy(IXRSelectInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: IsSelectableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: IsSelectableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsHovered(IXRHoverInteractor)
+  nameWithType: XRBaseInteractable.IsHovered(IXRHoverInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+    name: IsHovered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor
+    name: IXRHoverInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+    name: IsHovered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor
+    name: IXRHoverInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsSelected(IXRSelectInteractor)
+  nameWithType: XRBaseInteractable.IsSelected(IXRSelectInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: IsSelected
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: IsSelected
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsHovered(IXRInteractor)
+  nameWithType: XRBaseInteractable.IsHovered(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: IsHovered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHovered(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: IsHovered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsSelected(IXRInteractor)
+  nameWithType: XRBaseInteractable.IsSelected(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: IsSelected
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelected(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: IsSelected
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetCustomReticle(IXRInteractor)
+  nameWithType: XRBaseInteractable.GetCustomReticle(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: GetCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: AttachCustomReticle(IXRInteractor)
+  nameWithType: XRBaseInteractable.AttachCustomReticle(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: AttachCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: AttachCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: RemoveCustomReticle(IXRInteractor)
+  nameWithType: XRBaseInteractable.RemoveCustomReticle(IXRInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: RemoveCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
+    name: RemoveCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.CaptureAttachPose(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.CaptureAttachPose(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: CaptureAttachPose(IXRSelectInteractor)
+  nameWithType: XRBaseInteractable.CaptureAttachPose(IXRSelectInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.CaptureAttachPose(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.CaptureAttachPose(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: CaptureAttachPose
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.CaptureAttachPose(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: CaptureAttachPose
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnRegistered(UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnRegistered(UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnRegistered(InteractableRegisteredEventArgs)
+  nameWithType: XRBaseInteractable.OnRegistered(InteractableRegisteredEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnRegistered(UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnRegistered(UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs)
+    name: OnRegistered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs
+    name: InteractableRegisteredEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnRegistered(UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs)
+    name: OnRegistered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.InteractableRegisteredEventArgs
+    name: InteractableRegisteredEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnUnregistered(UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnUnregistered(UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnUnregistered(InteractableUnregisteredEventArgs)
+  nameWithType: XRBaseInteractable.OnUnregistered(InteractableUnregisteredEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnUnregistered(UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnUnregistered(UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs)
+    name: OnUnregistered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs
+    name: InteractableUnregisteredEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnUnregistered(UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs)
+    name: OnUnregistered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.InteractableUnregisteredEventArgs
+    name: InteractableUnregisteredEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverEntering(HoverEnterEventArgs)
+  nameWithType: XRBaseInteractable.OnHoverEntering(HoverEnterEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+    name: OnHoverEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs
+    name: HoverEnterEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+    name: OnHoverEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs
+    name: HoverEnterEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverEntered(HoverEnterEventArgs)
+  nameWithType: XRBaseInteractable.OnHoverEntered(HoverEnterEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+    name: OnHoverEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs
+    name: HoverEnterEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs)
+    name: OnHoverEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverEnterEventArgs
+    name: HoverEnterEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverExiting(HoverExitEventArgs)
+  nameWithType: XRBaseInteractable.OnHoverExiting(HoverExitEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+    name: OnHoverExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs
+    name: HoverExitEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+    name: OnHoverExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs
+    name: HoverExitEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverExited(HoverExitEventArgs)
+  nameWithType: XRBaseInteractable.OnHoverExited(HoverExitEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+    name: OnHoverExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs
+    name: HoverExitEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs)
+    name: OnHoverExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.HoverExitEventArgs
+    name: HoverExitEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectEntering(SelectEnterEventArgs)
+  nameWithType: XRBaseInteractable.OnSelectEntering(SelectEnterEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+    name: OnSelectEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs
+    name: SelectEnterEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+    name: OnSelectEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs
+    name: SelectEnterEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectEntered(SelectEnterEventArgs)
+  nameWithType: XRBaseInteractable.OnSelectEntered(SelectEnterEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+    name: OnSelectEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs
+    name: SelectEnterEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+    name: OnSelectEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs
+    name: SelectEnterEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectExiting(SelectExitEventArgs)
+  nameWithType: XRBaseInteractable.OnSelectExiting(SelectExitEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+    name: OnSelectExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs
+    name: SelectExitEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+    name: OnSelectExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs
+    name: SelectExitEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectExited(SelectExitEventArgs)
+  nameWithType: XRBaseInteractable.OnSelectExited(SelectExitEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+    name: OnSelectExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs
+    name: SelectExitEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+    name: OnSelectExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs
+    name: SelectExitEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntering(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntering(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnFocusEntering(FocusEnterEventArgs)
+  nameWithType: XRBaseInteractable.OnFocusEntering(FocusEnterEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntering(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntering(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+    name: OnFocusEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs
+    name: FocusEnterEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntering(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+    name: OnFocusEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs
+    name: FocusEnterEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntered(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntered(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnFocusEntered(FocusEnterEventArgs)
+  nameWithType: XRBaseInteractable.OnFocusEntered(FocusEnterEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntered(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntered(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+    name: OnFocusEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs
+    name: FocusEnterEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusEntered(UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs)
+    name: OnFocusEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusEnterEventArgs
+    name: FocusEnterEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExiting(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExiting(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnFocusExiting(FocusExitEventArgs)
+  nameWithType: XRBaseInteractable.OnFocusExiting(FocusExitEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExiting(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExiting(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+    name: OnFocusExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs
+    name: FocusExitEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExiting(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+    name: OnFocusExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs
+    name: FocusExitEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExited(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExited(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnFocusExited(FocusExitEventArgs)
+  nameWithType: XRBaseInteractable.OnFocusExited(FocusExitEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExited(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExited(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+    name: OnFocusExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs
+    name: FocusExitEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnFocusExited(UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs)
+    name: OnFocusExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.FocusExitEventArgs
+    name: FocusExitEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivated(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivated(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnActivated(ActivateEventArgs)
+  nameWithType: XRBaseInteractable.OnActivated(ActivateEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivated(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivated(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs)
+    name: OnActivated
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs
+    name: ActivateEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivated(UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs)
+    name: OnActivated
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.ActivateEventArgs
+    name: ActivateEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivated(UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivated(UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnDeactivated(DeactivateEventArgs)
+  nameWithType: XRBaseInteractable.OnDeactivated(DeactivateEventArgs)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivated(UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivated(UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs)
+    name: OnDeactivated
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs
+    name: DeactivateEventArgs
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivated(UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs)
+    name: OnDeactivated
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.DeactivateEventArgs
+    name: DeactivateEventArgs
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrength(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrength(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: ProcessInteractionStrength(UpdatePhase)
+  nameWithType: XRBaseInteractable.ProcessInteractionStrength(XRInteractionUpdateOrder.UpdatePhase)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrength(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrength(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+    name: ProcessInteractionStrength
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    name: UpdatePhase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrength(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+    name: ProcessInteractionStrength
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    name: UpdatePhase
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessHoverFilters(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessHoverFilters(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: ProcessHoverFilters(IXRHoverInteractor)
+  nameWithType: XRBaseInteractable.ProcessHoverFilters(IXRHoverInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessHoverFilters(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessHoverFilters(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+    name: ProcessHoverFilters
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor
+    name: IXRHoverInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessHoverFilters(UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor)
+    name: ProcessHoverFilters
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRHoverInteractor
+    name: IXRHoverInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessSelectFilters(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessSelectFilters(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: ProcessSelectFilters(IXRSelectInteractor)
+  nameWithType: XRBaseInteractable.ProcessSelectFilters(IXRSelectInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessSelectFilters(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessSelectFilters(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: ProcessSelectFilters
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessSelectFilters(UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor)
+    name: ProcessSelectFilters
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRSelectInteractor
+    name: IXRSelectInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor,System.Single)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor,System.Single)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: ProcessInteractionStrengthFilters(IXRInteractor, float)
+  nameWithType: XRBaseInteractable.ProcessInteractionStrengthFilters(IXRInteractor, float)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor, float)
+  nameWithType.vb: XRBaseInteractable.ProcessInteractionStrengthFilters(IXRInteractor, Single)
+  fullName.vb: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor, Single)
+  name.vb: ProcessInteractionStrengthFilters(IXRInteractor, Single)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor,System.Single)
+    name: ProcessInteractionStrengthFilters
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractionStrengthFilters(UnityEngine.XR.Interaction.Toolkit.IXRInteractor,System.Single)
+    name: ProcessInteractionStrengthFilters
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.IXRInteractor
+    name: IXRInteractor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverEntering(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnHoverEntering(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverEntered(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnHoverEntered(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverExiting(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnHoverExiting(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnHoverExited(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnHoverExited(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnHoverExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnHoverExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectEntering(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnSelectEntering(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectEntering
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectEntered(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnSelectEntered(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectEntered(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectEntered
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectExiting(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnSelectExiting(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectExiting
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectExited(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnSelectExited(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectExited(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectExited
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceling(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceling(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectCanceling(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnSelectCanceling(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceling(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceling(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectCanceling
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceling(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectCanceling
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceled(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceled(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnSelectCanceled(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnSelectCanceled(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceled(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceled(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectCanceled
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnSelectCanceled(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnSelectCanceled
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnActivate(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnActivate(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnActivate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnActivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnActivate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnDeactivate(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.OnDeactivate(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnDeactivate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDeactivate(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: OnDeactivate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: GetDistanceSqrToInteractor(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.GetDistanceSqrToInteractor(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: GetDistanceSqrToInteractor
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.GetDistanceSqrToInteractor(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: GetDistanceSqrToInteractor
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: AttachCustomReticle(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.AttachCustomReticle(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: AttachCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.AttachCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: AttachCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: RemoveCustomReticle(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.RemoveCustomReticle(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: RemoveCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.RemoveCustomReticle(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: RemoveCustomReticle
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsHoverableBy(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.IsHoverableBy(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: IsHoverableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsHoverableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: IsHoverableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: IsSelectableBy(XRBaseInteractor)
+  nameWithType: XRBaseInteractable.IsSelectableBy(XRBaseInteractor)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: IsSelectableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
+    name: IsSelectableBy
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor
+    name: XRBaseInteractor
+    isExternal: true
+  - name: )
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.getDistanceOverride
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.getDistanceOverride
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: getDistanceOverride
+  nameWithType: XRBaseInteractable.getDistanceOverride
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.getDistanceOverride
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionManager
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionManager
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactionManager
+  nameWithType: XRBaseInteractable.interactionManager
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionManager
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.colliders
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.colliders
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: colliders
+  nameWithType: XRBaseInteractable.colliders
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.colliders
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayers
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayers
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactionLayers
+  nameWithType: XRBaseInteractable.interactionLayers
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayers
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.distanceCalculationMode
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.distanceCalculationMode
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: distanceCalculationMode
+  nameWithType: XRBaseInteractable.distanceCalculationMode
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.distanceCalculationMode
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectMode
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectMode
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: selectMode
+  nameWithType: XRBaseInteractable.selectMode
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectMode
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusMode
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusMode
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: focusMode
+  nameWithType: XRBaseInteractable.focusMode
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusMode
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.customReticle
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.customReticle
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: customReticle
+  nameWithType: XRBaseInteractable.customReticle
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.customReticle
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeInteraction
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeInteraction
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: allowGazeInteraction
+  nameWithType: XRBaseInteractable.allowGazeInteraction
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeInteraction
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeSelect
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeSelect
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: allowGazeSelect
+  nameWithType: XRBaseInteractable.allowGazeSelect
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeSelect
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideGazeTimeToSelect
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideGazeTimeToSelect
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: overrideGazeTimeToSelect
+  nameWithType: XRBaseInteractable.overrideGazeTimeToSelect
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideGazeTimeToSelect
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.gazeTimeToSelect
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.gazeTimeToSelect
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: gazeTimeToSelect
+  nameWithType: XRBaseInteractable.gazeTimeToSelect
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.gazeTimeToSelect
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideTimeToAutoDeselectGaze
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideTimeToAutoDeselectGaze
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: overrideTimeToAutoDeselectGaze
+  nameWithType: XRBaseInteractable.overrideTimeToAutoDeselectGaze
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.overrideTimeToAutoDeselectGaze
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.timeToAutoDeselectGaze
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.timeToAutoDeselectGaze
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: timeToAutoDeselectGaze
+  nameWithType: XRBaseInteractable.timeToAutoDeselectGaze
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.timeToAutoDeselectGaze
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeAssistance
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeAssistance
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: allowGazeAssistance
+  nameWithType: XRBaseInteractable.allowGazeAssistance
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.allowGazeAssistance
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstHoverEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstHoverEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: firstHoverEntered
+  nameWithType: XRBaseInteractable.firstHoverEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstHoverEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastHoverExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastHoverExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: lastHoverExited
+  nameWithType: XRBaseInteractable.lastHoverExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastHoverExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: hoverEntered
+  nameWithType: XRBaseInteractable.hoverEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: hoverExited
+  nameWithType: XRBaseInteractable.hoverExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstSelectEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstSelectEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: firstSelectEntered
+  nameWithType: XRBaseInteractable.firstSelectEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstSelectEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastSelectExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastSelectExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: lastSelectExited
+  nameWithType: XRBaseInteractable.lastSelectExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastSelectExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: selectEntered
+  nameWithType: XRBaseInteractable.selectEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: selectExited
+  nameWithType: XRBaseInteractable.selectExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstFocusEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstFocusEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: firstFocusEntered
+  nameWithType: XRBaseInteractable.firstFocusEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstFocusEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastFocusExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastFocusExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: lastFocusExited
+  nameWithType: XRBaseInteractable.lastFocusExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.lastFocusExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: focusEntered
+  nameWithType: XRBaseInteractable.focusEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: focusExited
+  nameWithType: XRBaseInteractable.focusExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.focusExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.activated
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.activated
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: activated
+  nameWithType: XRBaseInteractable.activated
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.activated
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.deactivated
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.deactivated
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: deactivated
+  nameWithType: XRBaseInteractable.deactivated
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.deactivated
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsHovering
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsHovering
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactorsHovering
+  nameWithType: XRBaseInteractable.interactorsHovering
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsHovering
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isHovered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isHovered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: isHovered
+  nameWithType: XRBaseInteractable.isHovered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isHovered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsSelecting
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsSelecting
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactorsSelecting
+  nameWithType: XRBaseInteractable.interactorsSelecting
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactorsSelecting
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractorSelecting
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractorSelecting
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: firstInteractorSelecting
+  nameWithType: XRBaseInteractable.firstInteractorSelecting
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractorSelecting
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isSelected
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isSelected
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: isSelected
+  nameWithType: XRBaseInteractable.isSelected
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isSelected
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionGroupsFocusing
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionGroupsFocusing
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactionGroupsFocusing
+  nameWithType: XRBaseInteractable.interactionGroupsFocusing
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionGroupsFocusing
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractionGroupFocusing
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractionGroupFocusing
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: firstInteractionGroupFocusing
+  nameWithType: XRBaseInteractable.firstInteractionGroupFocusing
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.firstInteractionGroupFocusing
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isFocused
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isFocused
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: isFocused
+  nameWithType: XRBaseInteractable.isFocused
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.isFocused
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.canFocus
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.canFocus
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: canFocus
+  nameWithType: XRBaseInteractable.canFocus
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.canFocus
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingHoverFilters
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingHoverFilters
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: startingHoverFilters
+  nameWithType: XRBaseInteractable.startingHoverFilters
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingHoverFilters
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverFilters
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverFilters
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: hoverFilters
+  nameWithType: XRBaseInteractable.hoverFilters
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoverFilters
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingSelectFilters
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingSelectFilters
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: startingSelectFilters
+  nameWithType: XRBaseInteractable.startingSelectFilters
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingSelectFilters
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectFilters
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectFilters
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: selectFilters
+  nameWithType: XRBaseInteractable.selectFilters
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectFilters
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingInteractionStrengthFilters
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingInteractionStrengthFilters
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: startingInteractionStrengthFilters
+  nameWithType: XRBaseInteractable.startingInteractionStrengthFilters
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.startingInteractionStrengthFilters
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionStrengthFilters
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionStrengthFilters
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactionStrengthFilters
+  nameWithType: XRBaseInteractable.interactionStrengthFilters
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionStrengthFilters
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.largestInteractionStrength
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.largestInteractionStrength
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: largestInteractionStrength
+  nameWithType: XRBaseInteractable.largestInteractionStrength
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.largestInteractionStrength
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayerMask
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayerMask
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: interactionLayerMask
+  nameWithType: XRBaseInteractable.interactionLayerMask
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.interactionLayerMask
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onFirstHoverEntered
+  nameWithType: XRBaseInteractable.onFirstHoverEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onLastHoverExited
+  nameWithType: XRBaseInteractable.onLastHoverExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onHoverEntered
+  nameWithType: XRBaseInteractable.onHoverEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onHoverExited
+  nameWithType: XRBaseInteractable.onHoverExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEntered
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEntered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onSelectEntered
+  nameWithType: XRBaseInteractable.onSelectEntered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEntered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExited
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExited
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onSelectExited
+  nameWithType: XRBaseInteractable.onSelectExited
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExited
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCanceled
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCanceled
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onSelectCanceled
+  nameWithType: XRBaseInteractable.onSelectCanceled
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCanceled
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onActivate
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onActivate
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onActivate
+  nameWithType: XRBaseInteractable.onActivate
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onActivate
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onDeactivate
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onDeactivate
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onDeactivate
+  nameWithType: XRBaseInteractable.onDeactivate
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onDeactivate
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEnter
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEnter
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onFirstHoverEnter
+  nameWithType: XRBaseInteractable.onFirstHoverEnter
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onFirstHoverEnter
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEnter
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEnter
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onHoverEnter
+  nameWithType: XRBaseInteractable.onHoverEnter
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverEnter
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExit
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExit
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onHoverExit
+  nameWithType: XRBaseInteractable.onHoverExit
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onHoverExit
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExit
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExit
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onLastHoverExit
+  nameWithType: XRBaseInteractable.onLastHoverExit
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onLastHoverExit
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEnter
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEnter
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onSelectEnter
+  nameWithType: XRBaseInteractable.onSelectEnter
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectEnter
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExit
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExit
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onSelectExit
+  nameWithType: XRBaseInteractable.onSelectExit
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectExit
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCancel
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCancel
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: onSelectCancel
+  nameWithType: XRBaseInteractable.onSelectCancel
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.onSelectCancel
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoveringInteractors
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoveringInteractors
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: hoveringInteractors
+  nameWithType: XRBaseInteractable.hoveringInteractors
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.hoveringInteractors
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectingInteractor
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectingInteractor
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: selectingInteractor
+  nameWithType: XRBaseInteractable.selectingInteractor
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.selectingInteractor
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.registered
+  commentId: E:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.registered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: registered
+  nameWithType: XRBaseInteractable.registered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.registered
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.unregistered
+  commentId: E:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.unregistered
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: unregistered
+  nameWithType: XRBaseInteractable.unregistered
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.unregistered
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.XR.Interaction.Toolkit
+  commentId: N:UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: UnityEngine.XR.Interaction.Toolkit
+  nameWithType: UnityEngine.XR.Interaction.Toolkit
+  fullName: UnityEngine.XR.Interaction.Toolkit
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.Handle*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.Handle
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_Handle
+  name: Handle
+  nameWithType: XRLever.Handle
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.Handle
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.Value*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.Value
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_Value
+  name: Value
+  nameWithType: XRLever.Value
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.Value
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.LockToValue*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.LockToValue
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_LockToValue
+  name: LockToValue
+  nameWithType: XRLever.LockToValue
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.LockToValue
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_MaxAngle
+  name: MaxAngle
+  nameWithType: XRLever.MaxAngle
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.MaxAngle
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.MinAngle*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.MinAngle
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_MinAngle
+  name: MinAngle
+  nameWithType: XRLever.MinAngle
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.MinAngle
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_OnLeverActivate
+  name: OnLeverActivate
+  nameWithType: XRLever.OnLeverActivate
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverActivate
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_OnLeverDeactivate
+  name: OnLeverDeactivate
+  nameWithType: XRLever.OnLeverDeactivate
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnLeverDeactivate
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnEnable
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnEnable
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnEnable()
+  nameWithType: XRBaseInteractable.OnEnable()
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnEnable()
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnEnable
+    name: OnEnable
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnEnable
+    name: OnEnable
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnEnable*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.OnEnable
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_OnEnable
+  name: OnEnable
+  nameWithType: XRLever.OnEnable
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnEnable
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDisable
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDisable
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: OnDisable()
+  nameWithType: XRBaseInteractable.OnDisable()
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDisable()
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDisable
+    name: OnDisable
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.OnDisable
+    name: OnDisable
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.OnDisable*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.OnDisable
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_OnDisable
+  name: OnDisable
+  nameWithType: XRLever.OnDisable
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.OnDisable
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  commentId: M:UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  parent: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable
+  isExternal: true
+  name: ProcessInteractable(UpdatePhase)
+  nameWithType: XRBaseInteractable.ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase)
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+    name: ProcessInteractable
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    name: UpdatePhase
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.ProcessInteractable(UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase)
+    name: ProcessInteractable
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    name: UpdatePhase
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable*
+  commentId: Overload:SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable
+  href: SombraStudios.Shared.XR.Interactables.XRLever.html#SombraStudios_Shared_XR_Interactables_XRLever_ProcessInteractable_UnityEngine_XR_Interaction_Toolkit_XRInteractionUpdateOrder_UpdatePhase_
+  name: ProcessInteractable
+  nameWithType: XRLever.ProcessInteractable
+  fullName: SombraStudios.Shared.XR.Interactables.XRLever.ProcessInteractable
+- uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: XRInteractionUpdateOrder.UpdatePhase
+  nameWithType: XRInteractionUpdateOrder.UpdatePhase
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+  spec.csharp:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder
+    name: XRInteractionUpdateOrder
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    name: UpdatePhase
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder
+    name: XRInteractionUpdateOrder
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder.UpdatePhase
+    name: UpdatePhase
+    isExternal: true

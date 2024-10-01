@@ -1,0 +1,371 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  id: StatFloatModifier
+  parent: SombraStudios.Shared.Systems.Stats
+  children:
+  - SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  - SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)
+  - SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType
+  langs:
+  - csharp
+  - vb
+  name: StatFloatModifier
+  nameWithType: StatFloatModifier
+  fullName: SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  type: Class
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatFloatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StatFloatModifier
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatFloatModifier.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Represents a modifier for a float stat.
+  example: []
+  syntax:
+    content: 'public class StatFloatModifier : StatModifier<float>'
+    content.vb: Public Class StatFloatModifier Inherits StatModifier(Of Single)
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}._source
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}._value
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}.Source
+  - SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}.Value
+- uid: SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType
+  id: ModType
+  parent: SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  langs:
+  - csharp
+  - vb
+  name: ModType
+  nameWithType: StatFloatModifier.ModType
+  fullName: SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType
+  type: Property
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatFloatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ModType
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatFloatModifier.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Gets the type of operation the modifier performs.
+  example: []
+  syntax:
+    content: public ModifierOperationType ModType { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+    content.vb: Public ReadOnly Property ModType As ModifierOperationType
+  overload: SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType*
+- uid: SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)
+  id: '#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType,System.Object)'
+  parent: SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  langs:
+  - csharp
+  - vb
+  name: StatFloatModifier(float, ModifierOperationType, object)
+  nameWithType: StatFloatModifier.StatFloatModifier(float, ModifierOperationType, object)
+  fullName: SombraStudios.Shared.Systems.Stats.StatFloatModifier.StatFloatModifier(float, SombraStudios.Shared.Systems.Stats.ModifierOperationType, object)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatFloatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatFloatModifier.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new float stat modifier with a value, operation type, and source.
+  example: []
+  syntax:
+    content: public StatFloatModifier(float value, ModifierOperationType modifierOperationType, object source)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value of the modifier.
+    - id: modifierOperationType
+      type: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+      description: The type of operation the modifier performs.
+    - id: source
+      type: System.Object
+      description: The source of the modifier.
+    content.vb: Public Sub New(value As Single, modifierOperationType As ModifierOperationType, source As Object)
+  overload: SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor*
+  nameWithType.vb: StatFloatModifier.New(Single, ModifierOperationType, Object)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatFloatModifier.New(Single, SombraStudios.Shared.Systems.Stats.ModifierOperationType, Object)
+  name.vb: New(Single, ModifierOperationType, Object)
+- uid: SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  id: '#ctor(System.Single,SombraStudios.Shared.Systems.Stats.ModifierOperationType)'
+  parent: SombraStudios.Shared.Systems.Stats.StatFloatModifier
+  langs:
+  - csharp
+  - vb
+  name: StatFloatModifier(float, ModifierOperationType)
+  nameWithType: StatFloatModifier.StatFloatModifier(float, ModifierOperationType)
+  fullName: SombraStudios.Shared.Systems.Stats.StatFloatModifier.StatFloatModifier(float, SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatModifiers/StatFloatModifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatModifiers/StatFloatModifier.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new float stat modifier with a value and operation type, and no source.
+  example: []
+  syntax:
+    content: public StatFloatModifier(float value, ModifierOperationType modifierOperationType)
+    parameters:
+    - id: value
+      type: System.Single
+      description: The value of the modifier.
+    - id: modifierOperationType
+      type: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+      description: The type of operation the modifier performs.
+    content.vb: Public Sub New(value As Single, modifierOperationType As ModifierOperationType)
+  overload: SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor*
+  nameWithType.vb: StatFloatModifier.New(Single, ModifierOperationType)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatFloatModifier.New(Single, SombraStudios.Shared.Systems.Stats.ModifierOperationType)
+  name.vb: New(Single, ModifierOperationType)
+references:
+- uid: SombraStudios.Shared.Systems.Stats
+  commentId: N:SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Stats
+  nameWithType: SombraStudios.Shared.Systems.Stats
+  fullName: SombraStudios.Shared.Systems.Stats
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  parent: SombraStudios.Shared.Systems.Stats
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  name: StatModifier<float>
+  nameWithType: StatModifier<float>
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<float>
+  nameWithType.vb: StatModifier(Of Single)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Single)
+  name.vb: StatModifier(Of Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}._source
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}._source
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__source
+  name: _source
+  nameWithType: StatModifier<float>._source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<float>._source
+  nameWithType.vb: StatModifier(Of Single)._source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Single)._source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}._value
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}._value
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__value
+  name: _value
+  nameWithType: StatModifier<float>._value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<float>._value
+  nameWithType.vb: StatModifier(Of Single)._value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Single)._value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}.Source
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}.Source
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Source
+  name: Source
+  nameWithType: StatModifier<float>.Source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<float>.Source
+  nameWithType.vb: StatModifier(Of Single).Source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Single).Source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}.Value
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}.Value
+  parent: SombraStudios.Shared.Systems.Stats.StatModifier{System.Single}
+  definition: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Value
+  name: Value
+  nameWithType: StatModifier<float>.Value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<float>.Value
+  nameWithType.vb: StatModifier(Of Single).Value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of Single).Value
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatModifier`1
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  name: StatModifier<T>
+  nameWithType: StatModifier<T>
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>
+  nameWithType.vb: StatModifier(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)
+  name.vb: StatModifier(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Stats.StatModifier`1
+    name: StatModifier
+    href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier`1._source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__source
+  name: _source
+  nameWithType: StatModifier<T>._source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>._source
+  nameWithType.vb: StatModifier(Of T)._source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)._source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  commentId: F:SombraStudios.Shared.Systems.Stats.StatModifier`1._value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1__value
+  name: _value
+  nameWithType: StatModifier<T>._value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>._value
+  nameWithType.vb: StatModifier(Of T)._value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T)._value
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier`1.Source
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Source
+  name: Source
+  nameWithType: StatModifier<T>.Source
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Source
+  nameWithType.vb: StatModifier(Of T).Source
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Source
+- uid: SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatModifier`1.Value
+  href: SombraStudios.Shared.Systems.Stats.StatModifier-1.html#SombraStudios_Shared_Systems_Stats_StatModifier_1_Value
+  name: Value
+  nameWithType: StatModifier<T>.Value
+  fullName: SombraStudios.Shared.Systems.Stats.StatModifier<T>.Value
+  nameWithType.vb: StatModifier(Of T).Value
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatModifier(Of T).Value
+- uid: SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType
+  href: SombraStudios.Shared.Systems.Stats.StatFloatModifier.html#SombraStudios_Shared_Systems_Stats_StatFloatModifier_ModType
+  name: ModType
+  nameWithType: StatFloatModifier.ModType
+  fullName: SombraStudios.Shared.Systems.Stats.StatFloatModifier.ModType
+- uid: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+  commentId: T:SombraStudios.Shared.Systems.Stats.ModifierOperationType
+  parent: SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.Shared.Systems.Stats.ModifierOperationType.html
+  name: ModifierOperationType
+  nameWithType: ModifierOperationType
+  fullName: SombraStudios.Shared.Systems.Stats.ModifierOperationType
+- uid: SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatFloatModifier.#ctor
+  href: SombraStudios.Shared.Systems.Stats.StatFloatModifier.html#SombraStudios_Shared_Systems_Stats_StatFloatModifier__ctor_System_Single_SombraStudios_Shared_Systems_Stats_ModifierOperationType_System_Object_
+  name: StatFloatModifier
+  nameWithType: StatFloatModifier.StatFloatModifier
+  fullName: SombraStudios.Shared.Systems.Stats.StatFloatModifier.StatFloatModifier
+  nameWithType.vb: StatFloatModifier.New
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatFloatModifier.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

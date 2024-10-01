@@ -1,0 +1,362 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction
+  commentId: T:SombraStudios.Shared.TutorialSystem.CheckpointAction
+  id: CheckpointAction
+  parent: SombraStudios.Shared.TutorialSystem
+  children:
+  - SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction
+  - SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
+  - SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached
+  langs:
+  - csharp
+  - vb
+  name: CheckpointAction
+  nameWithType: CheckpointAction
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction
+  type: Class
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActions/CheckpointAction.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CheckpointAction
+    path: ../Assets/Sombra Studios/Shared/Systems/Tutorial/TutorialActions/CheckpointAction.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.TutorialSystem
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Checkpoint Action", order = 3)]
+
+      public class CheckpointAction : TutorialAction, ISerializationCallbackReceiver
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Tutorial Action", menuName:="Sombra Studios/Tutorial/Checkpoint Action", order:=3)>
+
+      Public Class CheckpointAction Inherits TutorialAction Implements ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.TutorialSystem.TutorialAction
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - SombraStudios.Shared.TutorialSystem.TutorialAction._active
+  - SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
+  - SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
+  - SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Tutorial Action
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Tutorial/Checkpoint Action
+    - name: order
+      type: System.Int32
+      value: 3
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction
+  commentId: M:SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction
+  id: ExecuteAction
+  parent: SombraStudios.Shared.TutorialSystem.CheckpointAction
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAction()
+  nameWithType: CheckpointAction.ExecuteAction()
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActions/CheckpointAction.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExecuteAction
+    path: ../Assets/Sombra Studios/Shared/Systems/Tutorial/TutorialActions/CheckpointAction.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.TutorialSystem
+  example: []
+  syntax:
+    content: public override IEnumerator ExecuteAction()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Overrides Function ExecuteAction() As IEnumerator
+  overridden: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+  overload: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction*
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
+  id: OnAfterDeserialize
+  parent: SombraStudios.Shared.TutorialSystem.CheckpointAction
+  langs:
+  - csharp
+  - vb
+  name: OnAfterDeserialize()
+  nameWithType: CheckpointAction.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActions/CheckpointAction.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnAfterDeserialize
+    path: ../Assets/Sombra Studios/Shared/Systems/Tutorial/TutorialActions/CheckpointAction.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.TutorialSystem
+  summary: <p>Implement this method to receive a callback after Unity deserializes your object.</p>
+  example: []
+  syntax:
+    content: public override void OnAfterDeserialize()
+    content.vb: Public Overrides Sub OnAfterDeserialize()
+  overridden: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+  overload: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize*
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached
+  commentId: M:SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached
+  id: SetCheckpointReached
+  parent: SombraStudios.Shared.TutorialSystem.CheckpointAction
+  langs:
+  - csharp
+  - vb
+  name: SetCheckpointReached()
+  nameWithType: CheckpointAction.SetCheckpointReached()
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActions/CheckpointAction.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetCheckpointReached
+    path: ../Assets/Sombra Studios/Shared/Systems/Tutorial/TutorialActions/CheckpointAction.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.TutorialSystem
+  syntax:
+    content: public void SetCheckpointReached()
+    content.vb: Public Sub SetCheckpointReached()
+  overload: SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached*
+references:
+- uid: SombraStudios.Shared.TutorialSystem
+  commentId: N:SombraStudios.Shared.TutorialSystem
+  href: SombraStudios.html
+  name: SombraStudios.Shared.TutorialSystem
+  nameWithType: SombraStudios.Shared.TutorialSystem
+  fullName: SombraStudios.Shared.TutorialSystem
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.TutorialSystem
+    name: TutorialSystem
+    href: SombraStudios.Shared.TutorialSystem.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.TutorialSystem
+    name: TutorialSystem
+    href: SombraStudios.Shared.TutorialSystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction
+  commentId: T:SombraStudios.Shared.TutorialSystem.TutorialAction
+  parent: SombraStudios.Shared.TutorialSystem
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html
+  name: TutorialAction
+  nameWithType: TutorialAction
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction._active
+  commentId: F:SombraStudios.Shared.TutorialSystem.TutorialAction._active
+  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction__active
+  name: _active
+  nameWithType: TutorialAction._active
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction._active
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
+  commentId: F:SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
+  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction__isCompletedInitialValue
+  name: _isCompletedInitialValue
+  nameWithType: TutorialAction._isCompletedInitialValue
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
+  commentId: P:SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
+  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_IsCompleted
+  name: IsCompleted
+  nameWithType: TutorialAction.IsCompleted
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnBeforeSerialize
+  name: OnBeforeSerialize()
+  nameWithType: TutorialAction.OnBeforeSerialize()
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize()
+  spec.csharp:
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+    name: OnBeforeSerialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnBeforeSerialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+    name: OnBeforeSerialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnBeforeSerialize
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_ExecuteAction
+  name: ExecuteAction()
+  nameWithType: TutorialAction.ExecuteAction()
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction()
+  spec.csharp:
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+    name: ExecuteAction
+    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_ExecuteAction
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+    name: ExecuteAction
+    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_ExecuteAction
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction*
+  commentId: Overload:SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction
+  href: SombraStudios.Shared.TutorialSystem.CheckpointAction.html#SombraStudios_Shared_TutorialSystem_CheckpointAction_ExecuteAction
+  name: ExecuteAction
+  nameWithType: CheckpointAction.ExecuteAction
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnAfterDeserialize
+  name: OnAfterDeserialize()
+  nameWithType: TutorialAction.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize()
+  spec.csharp:
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+    name: OnAfterDeserialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnAfterDeserialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+    name: OnAfterDeserialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnAfterDeserialize
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize*
+  commentId: Overload:SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
+  href: SombraStudios.Shared.TutorialSystem.CheckpointAction.html#SombraStudios_Shared_TutorialSystem_CheckpointAction_OnAfterDeserialize
+  name: OnAfterDeserialize
+  nameWithType: CheckpointAction.OnAfterDeserialize
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
+- uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached*
+  commentId: Overload:SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached
+  href: SombraStudios.Shared.TutorialSystem.CheckpointAction.html#SombraStudios_Shared_TutorialSystem_CheckpointAction_SetCheckpointReached
+  name: SetCheckpointReached
+  nameWithType: CheckpointAction.SetCheckpointReached
+  fullName: SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached

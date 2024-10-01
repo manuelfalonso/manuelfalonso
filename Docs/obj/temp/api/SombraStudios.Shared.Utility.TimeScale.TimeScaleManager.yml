@@ -1,0 +1,1019 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  commentId: T:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  id: TimeScaleManager
+  parent: SombraStudios.Shared.Utility.TimeScale
+  children:
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Paused
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resumed
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.TimeScaleChanged
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
+  langs:
+  - csharp
+  - vb
+  name: TimeScaleManager
+  nameWithType: TimeScaleManager
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  type: Class
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TimeScaleManager
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: 'public class TimeScaleManager : Singleton<TimeScaleManager>'
+    content.vb: Public Class TimeScaleManager Inherits Singleton(Of TimeScaleManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}._instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.HasInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.TryGetInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Current
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Awake
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.OnDestroy
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
+  commentId: P:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
+  id: UpdatesPerSecond
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: UpdatesPerSecond
+  nameWithType: TimeScaleManager.UpdatesPerSecond
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
+  type: Property
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UpdatesPerSecond
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: public int UpdatesPerSecond { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property UpdatesPerSecond As Integer
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond*
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging
+  commentId: P:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging
+  id: IsTimeScaleChanging
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: IsTimeScaleChanging
+  nameWithType: TimeScaleManager.IsTimeScaleChanging
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging
+  type: Property
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsTimeScaleChanging
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: public bool IsTimeScaleChanging { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsTimeScaleChanging As Boolean
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging*
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive
+  commentId: P:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive
+  id: IsActive
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: TimeScaleManager.IsActive
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive
+  type: Property
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsActive
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  summary: Is the behaviour of this script running
+  example: []
+  syntax:
+    content: public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive*
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused
+  commentId: P:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused
+  id: IsPaused
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: IsPaused
+  nameWithType: TimeScaleManager.IsPaused
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused
+  type: Property
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsPaused
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: public bool IsPaused { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPaused As Boolean
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused*
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.TimeScaleChanged
+  commentId: E:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.TimeScaleChanged
+  id: TimeScaleChanged
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: TimeScaleChanged
+  nameWithType: TimeScaleManager.TimeScaleChanged
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.TimeScaleChanged
+  type: Event
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TimeScaleChanged
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: public event Action<float> TimeScaleChanged
+    return:
+      type: System.Action{System.Single}
+    content.vb: Public Event TimeScaleChanged As Action(Of Single)
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Paused
+  commentId: E:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Paused
+  id: Paused
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: Paused
+  nameWithType: TimeScaleManager.Paused
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Paused
+  type: Event
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Paused
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: public event Action Paused
+    return:
+      type: System.Action
+    content.vb: Public Event Paused As Action
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resumed
+  commentId: E:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resumed
+  id: Resumed
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: Resumed
+  nameWithType: TimeScaleManager.Resumed
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resumed
+  type: Event
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Resumed
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  syntax:
+    content: public event Action Resumed
+    return:
+      type: System.Action
+    content.vb: Public Event Resumed As Action
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause
+  commentId: M:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause
+  id: Pause
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: TimeScaleManager.Pause()
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause()
+  type: Method
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Pause
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 27
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  summary: Set TimeScale to 0
+  example: []
+  syntax:
+    content: public void Pause()
+    content.vb: Public Sub Pause()
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause*
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
+  commentId: M:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
+  id: Resume
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: Resume()
+  nameWithType: TimeScaleManager.Resume()
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume()
+  type: Method
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Resume
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  summary: Set TimeScale to 1
+  example: []
+  syntax:
+    content: public void Resume()
+    content.vb: Public Sub [Resume]()
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume*
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  commentId: M:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  id: SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+  langs:
+  - csharp
+  - vb
+  name: SetTimeScale(AnimationCurveValue)
+  nameWithType: TimeScaleManager.SetTimeScale(AnimationCurveValue)
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  type: Method
+  source:
+    remote:
+      path: Utility/TimeScale/TimeScaleManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetTimeScale
+    path: ../Assets/Sombra Studios/Shared/Utility/TimeScale/TimeScaleManager.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.TimeScale
+  summary: ''
+  example: []
+  syntax:
+    content: public bool SetTimeScale(AnimationCurveValue timeScaleData)
+    parameters:
+    - id: timeScaleData
+      type: SombraStudios.Shared.Utility.AnimationCurveValue
+      description: TimeScale changed succesfully
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function SetTimeScale(timeScaleData As AnimationCurveValue) As Boolean
+  overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale*
+references:
+- uid: SombraStudios.Shared.Utility.TimeScale
+  commentId: N:SombraStudios.Shared.Utility.TimeScale
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.TimeScale
+  nameWithType: SombraStudios.Shared.Utility.TimeScale
+  fullName: SombraStudios.Shared.Utility.TimeScale
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.TimeScale
+    name: TimeScale
+    href: SombraStudios.Shared.Utility.TimeScale.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.TimeScale
+    name: TimeScale
+    href: SombraStudios.Shared.Utility.TimeScale.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html
+  name: Singleton<TimeScaleManager>
+  nameWithType: Singleton<TimeScaleManager>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>
+  nameWithType.vb: Singleton(Of TimeScaleManager)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager)
+  name.vb: Singleton(Of TimeScaleManager)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+  - name: <
+  - uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+    name: TimeScaleManager
+    href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
+    name: TimeScaleManager
+    href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}._instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  name: _instance
+  nameWithType: Singleton<TimeScaleManager>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>._instance
+  nameWithType.vb: Singleton(Of TimeScaleManager)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.HasInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  name: HasInstance
+  nameWithType: Singleton<TimeScaleManager>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>.HasInstance
+  nameWithType.vb: Singleton(Of TimeScaleManager).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.TryGetInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<TimeScaleManager>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>.TryGetInstance()
+  nameWithType.vb: Singleton(Of TimeScaleManager).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.TryGetInstance
+    name: TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.TryGetInstance
+    name: TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Current
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  name: Current
+  nameWithType: Singleton<TimeScaleManager>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>.Current
+  nameWithType.vb: Singleton(Of TimeScaleManager).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  name: Instance
+  nameWithType: Singleton<TimeScaleManager>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>.Instance
+  nameWithType.vb: Singleton(Of TimeScaleManager).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Awake
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  name: Awake()
+  nameWithType: Singleton<TimeScaleManager>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>.Awake()
+  nameWithType.vb: Singleton(Of TimeScaleManager).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Awake
+    name: Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.Awake
+    name: Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.OnDestroy
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<TimeScaleManager>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Utility.TimeScale.TimeScaleManager>.OnDestroy()
+  nameWithType.vb: Singleton(Of TimeScaleManager).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Utility.TimeScale.TimeScaleManager).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.OnDestroy
+    name: OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.TimeScale.TimeScaleManager}.OnDestroy
+    name: OnDestroy
+  - name: (
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton
+  commentId: N:SombraStudios.Shared.Patterns.Creational.Singleton
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.Singleton
+  nameWithType: SombraStudios.Shared.Patterns.Creational.Singleton
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<T>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>._instance
+  nameWithType.vb: Singleton(Of T)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<T>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.HasInstance
+  nameWithType.vb: Singleton(Of T).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<T>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.TryGetInstance()
+  nameWithType.vb: Singleton(Of T).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<T>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Current
+  nameWithType.vb: Singleton(Of T).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<T>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.OnDestroy()
+  nameWithType.vb: Singleton(Of T).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_UpdatesPerSecond
+  name: UpdatesPerSecond
+  nameWithType: TimeScaleManager.UpdatesPerSecond
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_IsTimeScaleChanging
+  name: IsTimeScaleChanging
+  nameWithType: TimeScaleManager.IsTimeScaleChanging
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsTimeScaleChanging
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_IsActive
+  name: IsActive
+  nameWithType: TimeScaleManager.IsActive
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsActive
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_IsPaused
+  name: IsPaused
+  nameWithType: TimeScaleManager.IsPaused
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.IsPaused
+- uid: System.Action{System.Single}
+  commentId: T:System.Action{System.Single}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<float>
+  nameWithType: Action<float>
+  fullName: System.Action<float>
+  nameWithType.vb: Action(Of Single)
+  fullName.vb: System.Action(Of Single)
+  name.vb: Action(Of Single)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_Pause
+  name: Pause
+  nameWithType: TimeScaleManager.Pause
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Pause
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_Resume
+  name: Resume
+  nameWithType: TimeScaleManager.Resume
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale*
+  commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_SetTimeScale_SombraStudios_Shared_Utility_AnimationCurveValue_
+  name: SetTimeScale
+  nameWithType: TimeScaleManager.SetTimeScale
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale
+- uid: SombraStudios.Shared.Utility.AnimationCurveValue
+  commentId: T:SombraStudios.Shared.Utility.AnimationCurveValue
+  parent: SombraStudios.Shared.Utility
+  href: SombraStudios.Shared.Utility.AnimationCurveValue.html
+  name: AnimationCurveValue
+  nameWithType: AnimationCurveValue
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValue
+- uid: SombraStudios.Shared.Utility
+  commentId: N:SombraStudios.Shared.Utility
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility
+  nameWithType: SombraStudios.Shared.Utility
+  fullName: SombraStudios.Shared.Utility
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html

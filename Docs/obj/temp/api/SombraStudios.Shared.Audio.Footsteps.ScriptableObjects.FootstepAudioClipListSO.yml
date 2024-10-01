@@ -1,0 +1,319 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO
+  commentId: T:SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO
+  id: FootstepAudioClipListSO
+  parent: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  children:
+  - SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Steps
+  - SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Tag
+  langs:
+  - csharp
+  - vb
+  name: FootstepAudioClipListSO
+  nameWithType: FootstepAudioClipListSO
+  fullName: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO
+  type: Class
+  source:
+    remote:
+      path: Audio/Footsteps/ScriptableObjects/FootstepAudioClipListSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FootstepAudioClipListSO
+    path: ../Assets/Sombra Studios/Shared/Audio/Footsteps/ScriptableObjects/FootstepAudioClipListSO.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  summary: >-
+    SO used by the Footsteps Controller script to separate list of clips 
+
+    depending of checking Collisions with Tags.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Footstep Audio List by Tag", menuName = "Footstep Audio List", order = 51)]
+
+      public class FootstepAudioClipListSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Footstep Audio List by Tag", menuName:="Footstep Audio List", order:=51)>
+
+      Public Class FootstepAudioClipListSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Footstep Audio List by Tag
+    - name: menuName
+      type: System.String
+      value: Footstep Audio List
+    - name: order
+      type: System.Int32
+      value: 51
+- uid: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Tag
+  commentId: F:SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Tag
+  id: Tag
+  parent: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: FootstepAudioClipListSO.Tag
+  fullName: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Tag
+  type: Field
+  source:
+    remote:
+      path: Audio/Footsteps/ScriptableObjects/FootstepAudioClipListSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Tag
+    path: ../Assets/Sombra Studios/Shared/Audio/Footsteps/ScriptableObjects/FootstepAudioClipListSO.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  syntax:
+    content: >-
+      [Tooltip("The Tag must be the same name as the one in the Tag List in the Editor")]
+
+      public string Tag
+    return:
+      type: System.String
+    content.vb: >-
+      <Tooltip("The Tag must be the same name as the one in the Tag List in the Editor")>
+
+      Public Tag As String
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The Tag must be the same name as the one in the Tag List in the Editor
+- uid: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Steps
+  commentId: F:SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Steps
+  id: Steps
+  parent: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO
+  langs:
+  - csharp
+  - vb
+  name: Steps
+  nameWithType: FootstepAudioClipListSO.Steps
+  fullName: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.FootstepAudioClipListSO.Steps
+  type: Field
+  source:
+    remote:
+      path: Audio/Footsteps/ScriptableObjects/FootstepAudioClipListSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Steps
+    path: ../Assets/Sombra Studios/Shared/Audio/Footsteps/ScriptableObjects/FootstepAudioClipListSO.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Audio
+  namespace: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  syntax:
+    content: public List<AudioClip> Steps
+    return:
+      type: System.Collections.Generic.List{UnityEngine.AudioClip}
+    content.vb: Public Steps As List(Of AudioClip)
+references:
+- uid: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  fullName: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.Footsteps
+    name: Footsteps
+    href: SombraStudios.Shared.Audio.Footsteps.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio
+    name: Audio
+    href: SombraStudios.Shared.Audio.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.Footsteps
+    name: Footsteps
+    href: SombraStudios.Shared.Audio.Footsteps.html
+  - name: .
+  - uid: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Audio.Footsteps.ScriptableObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.List{UnityEngine.AudioClip}
+  commentId: T:System.Collections.Generic.List{UnityEngine.AudioClip}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AudioClip>
+  nameWithType: List<AudioClip>
+  fullName: System.Collections.Generic.List<UnityEngine.AudioClip>
+  nameWithType.vb: List(Of AudioClip)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.AudioClip)
+  name.vb: List(Of AudioClip)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.AudioClip
+    name: AudioClip
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,196 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Utils.Modifier
+  commentId: T:SombraStudios.Utils.Modifier
+  id: Modifier
+  parent: SombraStudios.Utils
+  children:
+  - SombraStudios.Utils.Modifier.#ctor(System.Single)
+  - SombraStudios.Utils.Modifier.ApplyModifier(System.Single)
+  - SombraStudios.Utils.Modifier._value
+  langs:
+  - csharp
+  - vb
+  name: Modifier
+  nameWithType: Modifier
+  fullName: SombraStudios.Utils.Modifier
+  type: Class
+  source:
+    remote:
+      path: WIP/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Modifier
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/Modifier.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utils
+  syntax:
+    content: public abstract class Modifier
+    content.vb: Public MustInherit Class Modifier
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SombraStudios.Utils.ModifierMultiply
+  - SombraStudios.Utils.ModifierSum
+- uid: SombraStudios.Utils.Modifier._value
+  commentId: F:SombraStudios.Utils.Modifier._value
+  id: _value
+  parent: SombraStudios.Utils.Modifier
+  langs:
+  - csharp
+  - vb
+  name: _value
+  nameWithType: Modifier._value
+  fullName: SombraStudios.Utils.Modifier._value
+  type: Field
+  source:
+    remote:
+      path: WIP/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _value
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/Modifier.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utils
+  syntax:
+    content: protected float _value
+    return:
+      type: System.Single
+    content.vb: Protected _value As Single
+- uid: SombraStudios.Utils.Modifier.#ctor(System.Single)
+  commentId: M:SombraStudios.Utils.Modifier.#ctor(System.Single)
+  id: '#ctor(System.Single)'
+  parent: SombraStudios.Utils.Modifier
+  langs:
+  - csharp
+  - vb
+  name: Modifier(float)
+  nameWithType: Modifier.Modifier(float)
+  fullName: SombraStudios.Utils.Modifier.Modifier(float)
+  type: Constructor
+  source:
+    remote:
+      path: WIP/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/Modifier.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utils
+  syntax:
+    content: public Modifier(float valor)
+    parameters:
+    - id: valor
+      type: System.Single
+    content.vb: Public Sub New(valor As Single)
+  overload: SombraStudios.Utils.Modifier.#ctor*
+  nameWithType.vb: Modifier.New(Single)
+  fullName.vb: SombraStudios.Utils.Modifier.New(Single)
+  name.vb: New(Single)
+- uid: SombraStudios.Utils.Modifier.ApplyModifier(System.Single)
+  commentId: M:SombraStudios.Utils.Modifier.ApplyModifier(System.Single)
+  id: ApplyModifier(System.Single)
+  parent: SombraStudios.Utils.Modifier
+  langs:
+  - csharp
+  - vb
+  name: ApplyModifier(float)
+  nameWithType: Modifier.ApplyModifier(float)
+  fullName: SombraStudios.Utils.Modifier.ApplyModifier(float)
+  type: Method
+  source:
+    remote:
+      path: WIP/Value Modifier/Modifier.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ApplyModifier
+    path: ../Assets/Sombra Studios/Shared/WIP/Value Modifier/Modifier.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared
+  namespace: SombraStudios.Utils
+  syntax:
+    content: public abstract float ApplyModifier(float valorBase)
+    parameters:
+    - id: valorBase
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public MustOverride Function ApplyModifier(valorBase As Single) As Single
+  overload: SombraStudios.Utils.Modifier.ApplyModifier*
+  nameWithType.vb: Modifier.ApplyModifier(Single)
+  fullName.vb: SombraStudios.Utils.Modifier.ApplyModifier(Single)
+  name.vb: ApplyModifier(Single)
+references:
+- uid: SombraStudios.Utils
+  commentId: N:SombraStudios.Utils
+  href: SombraStudios.html
+  name: SombraStudios.Utils
+  nameWithType: SombraStudios.Utils
+  fullName: SombraStudios.Utils
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Utils
+    name: Utils
+    href: SombraStudios.Utils.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Utils
+    name: Utils
+    href: SombraStudios.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Utils.Modifier.#ctor*
+  commentId: Overload:SombraStudios.Utils.Modifier.#ctor
+  href: SombraStudios.Utils.Modifier.html#SombraStudios_Utils_Modifier__ctor_System_Single_
+  name: Modifier
+  nameWithType: Modifier.Modifier
+  fullName: SombraStudios.Utils.Modifier.Modifier
+  nameWithType.vb: Modifier.New
+  fullName.vb: SombraStudios.Utils.Modifier.New
+  name.vb: New
+- uid: SombraStudios.Utils.Modifier.ApplyModifier*
+  commentId: Overload:SombraStudios.Utils.Modifier.ApplyModifier
+  href: SombraStudios.Utils.Modifier.html#SombraStudios_Utils_Modifier_ApplyModifier_System_Single_
+  name: ApplyModifier
+  nameWithType: Modifier.ApplyModifier
+  fullName: SombraStudios.Utils.Modifier.ApplyModifier

@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler
+  commentId: T:SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler
+  id: UnityPausingAndFocusMessagesHandler
+  parent: SombraStudios.Shared.Utility.UnityMessages
+  children:
+  - SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationGetFocusEvent
+  - SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationLosesFocusEvent
+  - SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationPauseEvent
+  langs:
+  - csharp
+  - vb
+  name: UnityPausingAndFocusMessagesHandler
+  nameWithType: UnityPausingAndFocusMessagesHandler
+  fullName: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler
+  type: Class
+  source:
+    remote:
+      path: Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnityPausingAndFocusMessagesHandler
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityMessages
+  summary: >-
+    Documentation:
+
+    https://docs.unity3d.com/ScriptReference/MonoBehaviour.html
+  example: []
+  syntax:
+    content: 'public class UnityPausingAndFocusMessagesHandler : MonoBehaviour'
+    content.vb: Public Class UnityPausingAndFocusMessagesHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationGetFocusEvent
+  commentId: F:SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationGetFocusEvent
+  id: OnApplicationGetFocusEvent
+  parent: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler
+  langs:
+  - csharp
+  - vb
+  name: OnApplicationGetFocusEvent
+  nameWithType: UnityPausingAndFocusMessagesHandler.OnApplicationGetFocusEvent
+  fullName: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationGetFocusEvent
+  type: Field
+  source:
+    remote:
+      path: Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnApplicationGetFocusEvent
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityMessages
+  syntax:
+    content: >-
+      [Header("Pausing and Focus Messages")]
+
+      [Tooltip("Sent to all GameObjects when the player gets focus.")]
+
+      public UnityEvent OnApplicationGetFocusEvent
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Header("Pausing and Focus Messages")>
+
+      <Tooltip("Sent to all GameObjects when the player gets focus.")>
+
+      Public OnApplicationGetFocusEvent As UnityEvent
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Pausing and Focus Messages
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sent to all GameObjects when the player gets focus.
+- uid: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationLosesFocusEvent
+  commentId: F:SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationLosesFocusEvent
+  id: OnApplicationLosesFocusEvent
+  parent: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler
+  langs:
+  - csharp
+  - vb
+  name: OnApplicationLosesFocusEvent
+  nameWithType: UnityPausingAndFocusMessagesHandler.OnApplicationLosesFocusEvent
+  fullName: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationLosesFocusEvent
+  type: Field
+  source:
+    remote:
+      path: Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnApplicationLosesFocusEvent
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityMessages
+  syntax:
+    content: >-
+      [Tooltip("Sent to all GameObjects when the player loses focus.")]
+
+      public UnityEvent OnApplicationLosesFocusEvent
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Sent to all GameObjects when the player loses focus.")>
+
+      Public OnApplicationLosesFocusEvent As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sent to all GameObjects when the player loses focus.
+- uid: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationPauseEvent
+  commentId: F:SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationPauseEvent
+  id: OnApplicationPauseEvent
+  parent: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler
+  langs:
+  - csharp
+  - vb
+  name: OnApplicationPauseEvent
+  nameWithType: UnityPausingAndFocusMessagesHandler.OnApplicationPauseEvent
+  fullName: SombraStudios.Shared.Utility.UnityMessages.UnityPausingAndFocusMessagesHandler.OnApplicationPauseEvent
+  type: Field
+  source:
+    remote:
+      path: Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnApplicationPauseEvent
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityMessages/UnityPausingAndFocusMessagesHandler.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityMessages
+  syntax:
+    content: >-
+      [Tooltip("Sent to all GameObjects when the application pauses.")]
+
+      public UnityEvent OnApplicationPauseEvent
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Sent to all GameObjects when the application pauses.")>
+
+      Public OnApplicationPauseEvent As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sent to all GameObjects when the application pauses.
+references:
+- uid: SombraStudios.Shared.Utility.UnityMessages
+  commentId: N:SombraStudios.Shared.Utility.UnityMessages
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.UnityMessages
+  nameWithType: SombraStudios.Shared.Utility.UnityMessages
+  fullName: SombraStudios.Shared.Utility.UnityMessages
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.UnityMessages
+    name: UnityMessages
+    href: SombraStudios.Shared.Utility.UnityMessages.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.UnityMessages
+    name: UnityMessages
+    href: SombraStudios.Shared.Utility.UnityMessages.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true

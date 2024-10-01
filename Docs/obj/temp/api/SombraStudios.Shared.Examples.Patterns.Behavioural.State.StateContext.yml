@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext
+  commentId: T:SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext
+  id: StateContext
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  children:
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon
+  langs:
+  - csharp
+  - vb
+  name: StateContext
+  nameWithType: StateContext
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext
+  type: Class
+  source:
+    remote:
+      path: Examples/Patterns/Behavioural/State/StateContext.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StateContext
+    path: ../Assets/Sombra Studios/Shared/Examples/Patterns/Behavioural/State/StateContext.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Examples
+  namespace: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  summary: >-
+    To switch the state of the context, create an instance of one 
+
+    of the state classes and pass it to the context. You can do this 
+
+    within the context itself, or in various states, or in the client. 
+
+    Wherever this is done, the class becomes dependent on the concrete 
+
+    state class that it instantiates.
+
+
+    In this example is a Map State Machine
+  example: []
+  syntax:
+    content: 'public class StateContext : AbstractStateContext'
+    content.vb: Public Class StateContext Inherits AbstractStateContext
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext
+  inheritedMembers:
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext._currentState
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.SetState(SombraStudios.Shared.Examples.Patterns.Behavioural.State.State)
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon
+  commentId: M:SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon
+  id: AttackDungeon
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext
+  langs:
+  - csharp
+  - vb
+  name: AttackDungeon()
+  nameWithType: StateContext.AttackDungeon()
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon()
+  type: Method
+  source:
+    remote:
+      path: Examples/Patterns/Behavioural/State/StateContext.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AttackDungeon
+    path: ../Assets/Sombra Studios/Shared/Examples/Patterns/Behavioural/State/StateContext.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Examples
+  namespace: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  syntax:
+    content: public void AttackDungeon()
+    content.vb: Public Sub AttackDungeon()
+  overload: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon*
+references:
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  commentId: N:SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  nameWithType: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples
+    name: Examples
+    href: SombraStudios.Shared.Examples.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Examples.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+    name: State
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples
+    name: Examples
+    href: SombraStudios.Shared.Examples.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Examples.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+    name: State
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext
+  commentId: T:SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.State
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.html
+  name: AbstractStateContext
+  nameWithType: AbstractStateContext
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext._currentState
+  commentId: F:SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext._currentState
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.html#SombraStudios_Shared_Examples_Patterns_Behavioural_State_AbstractStateContext__currentState
+  name: _currentState
+  nameWithType: AbstractStateContext._currentState
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext._currentState
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.SetState(SombraStudios.Shared.Examples.Patterns.Behavioural.State.State)
+  commentId: M:SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.SetState(SombraStudios.Shared.Examples.Patterns.Behavioural.State.State)
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.html#SombraStudios_Shared_Examples_Patterns_Behavioural_State_AbstractStateContext_SetState_SombraStudios_Shared_Examples_Patterns_Behavioural_State_State_
+  name: SetState(State)
+  nameWithType: AbstractStateContext.SetState(State)
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.SetState(SombraStudios.Shared.Examples.Patterns.Behavioural.State.State)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.SetState(SombraStudios.Shared.Examples.Patterns.Behavioural.State.State)
+    name: SetState
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.html#SombraStudios_Shared_Examples_Patterns_Behavioural_State_AbstractStateContext_SetState_SombraStudios_Shared_Examples_Patterns_Behavioural_State_State_
+  - name: (
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.State
+    name: State
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.State.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.SetState(SombraStudios.Shared.Examples.Patterns.Behavioural.State.State)
+    name: SetState
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.AbstractStateContext.html#SombraStudios_Shared_Examples_Patterns_Behavioural_State_AbstractStateContext_SetState_SombraStudios_Shared_Examples_Patterns_Behavioural_State_State_
+  - name: (
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.State
+    name: State
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.State.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon*
+  commentId: Overload:SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.html#SombraStudios_Shared_Examples_Patterns_Behavioural_State_StateContext_AttackDungeon
+  name: AttackDungeon
+  nameWithType: StateContext.AttackDungeon
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.State.StateContext.AttackDungeon

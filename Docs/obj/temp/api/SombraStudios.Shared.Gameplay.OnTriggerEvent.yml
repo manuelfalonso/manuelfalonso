@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  commentId: T:SombraStudios.Shared.Gameplay.OnTriggerEvent
+  id: OnTriggerEvent
+  parent: SombraStudios.Shared.Gameplay
+  children:
+  - SombraStudios.Shared.Gameplay.OnTriggerEvent.enterEventCooldown
+  - SombraStudios.Shared.Gameplay.OnTriggerEvent.enterIsOneShot
+  - SombraStudios.Shared.Gameplay.OnTriggerEvent.exitEventCooldown
+  - SombraStudios.Shared.Gameplay.OnTriggerEvent.exitIsOneShot
+  - SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerEnterEvent
+  - SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerExitEvent
+  langs:
+  - csharp
+  - vb
+  name: OnTriggerEvent
+  nameWithType: OnTriggerEvent
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  type: Class
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTriggerEvent
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: >-
+      [RequireComponent(typeof(Collider))]
+
+      public class OnTriggerEvent : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(Collider))>
+
+      Public Class OnTriggerEvent Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.Collider
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent.enterIsOneShot
+  commentId: F:SombraStudios.Shared.Gameplay.OnTriggerEvent.enterIsOneShot
+  id: enterIsOneShot
+  parent: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: enterIsOneShot
+  nameWithType: OnTriggerEvent.enterIsOneShot
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent.enterIsOneShot
+  type: Field
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: enterIsOneShot
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: >-
+      [Header("Trigger Enter Event Section")]
+
+      public bool enterIsOneShot
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Trigger Enter Event Section")>
+
+      Public enterIsOneShot As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Trigger Enter Event Section
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent.enterEventCooldown
+  commentId: F:SombraStudios.Shared.Gameplay.OnTriggerEvent.enterEventCooldown
+  id: enterEventCooldown
+  parent: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: enterEventCooldown
+  nameWithType: OnTriggerEvent.enterEventCooldown
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent.enterEventCooldown
+  type: Field
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: enterEventCooldown
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public float enterEventCooldown
+    return:
+      type: System.Single
+    content.vb: Public enterEventCooldown As Single
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerEnterEvent
+  commentId: F:SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerEnterEvent
+  id: onTriggerEnterEvent
+  parent: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: onTriggerEnterEvent
+  nameWithType: OnTriggerEvent.onTriggerEnterEvent
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerEnterEvent
+  type: Field
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: onTriggerEnterEvent
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public UnityEvent onTriggerEnterEvent
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onTriggerEnterEvent As UnityEvent
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent.exitIsOneShot
+  commentId: F:SombraStudios.Shared.Gameplay.OnTriggerEvent.exitIsOneShot
+  id: exitIsOneShot
+  parent: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: exitIsOneShot
+  nameWithType: OnTriggerEvent.exitIsOneShot
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent.exitIsOneShot
+  type: Field
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: exitIsOneShot
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: >-
+      [Space]
+
+      [Header("Trigger Exit Event Section")]
+
+      public bool exitIsOneShot
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Space>
+
+      <Header("Trigger Exit Event Section")>
+
+      Public exitIsOneShot As Boolean
+  attributes:
+  - type: UnityEngine.SpaceAttribute
+    ctor: UnityEngine.SpaceAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Trigger Exit Event Section
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent.exitEventCooldown
+  commentId: F:SombraStudios.Shared.Gameplay.OnTriggerEvent.exitEventCooldown
+  id: exitEventCooldown
+  parent: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: exitEventCooldown
+  nameWithType: OnTriggerEvent.exitEventCooldown
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent.exitEventCooldown
+  type: Field
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: exitEventCooldown
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public float exitEventCooldown
+    return:
+      type: System.Single
+    content.vb: Public exitEventCooldown As Single
+- uid: SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerExitEvent
+  commentId: F:SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerExitEvent
+  id: onTriggerExitEvent
+  parent: SombraStudios.Shared.Gameplay.OnTriggerEvent
+  langs:
+  - csharp
+  - vb
+  name: onTriggerExitEvent
+  nameWithType: OnTriggerEvent.onTriggerExitEvent
+  fullName: SombraStudios.Shared.Gameplay.OnTriggerEvent.onTriggerExitEvent
+  type: Field
+  source:
+    remote:
+      path: Gameplay/OnTriggerEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: onTriggerExitEvent
+    path: ../Assets/Sombra Studios/Shared/Gameplay/OnTriggerEvent.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay
+  syntax:
+    content: public UnityEvent onTriggerExitEvent
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public onTriggerExitEvent As UnityEvent
+references:
+- uid: SombraStudios.Shared.Gameplay
+  commentId: N:SombraStudios.Shared.Gameplay
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay
+  nameWithType: SombraStudios.Shared.Gameplay
+  fullName: SombraStudios.Shared.Gameplay
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true

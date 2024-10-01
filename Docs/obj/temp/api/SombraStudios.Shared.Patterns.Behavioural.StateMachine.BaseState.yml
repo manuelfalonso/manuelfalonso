@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  id: BaseState
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate
+  langs:
+  - csharp
+  - vb
+  name: BaseState
+  nameWithType: BaseState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/BaseState.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BaseState
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/BaseState.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Base class for a state in a state machine.
+  example: []
+  syntax:
+    content: 'public abstract class BaseState : IState'
+    content.vb: Public MustInherit Class BaseState Implements IState
+  inheritance:
+  - System.Object
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter
+  id: OnEnter
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  langs:
+  - csharp
+  - vb
+  name: OnEnter()
+  nameWithType: BaseState.OnEnter()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/BaseState.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnEnter
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/BaseState.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Called when entering the state.
+  example: []
+  syntax:
+    content: public virtual void OnEnter()
+    content.vb: Public Overridable Sub OnEnter()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnEnter
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate
+  id: OnUpdate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  langs:
+  - csharp
+  - vb
+  name: OnUpdate()
+  nameWithType: BaseState.OnUpdate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/BaseState.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnUpdate
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/BaseState.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Called every frame while the state is active.
+  example: []
+  syntax:
+    content: public virtual void OnUpdate()
+    content.vb: Public Overridable Sub OnUpdate()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnUpdate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate
+  id: OnFixedUpdate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  langs:
+  - csharp
+  - vb
+  name: OnFixedUpdate()
+  nameWithType: BaseState.OnFixedUpdate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/BaseState.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnFixedUpdate
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/BaseState.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Called every fixed frame while the state is active.
+  example: []
+  syntax:
+    content: public virtual void OnFixedUpdate()
+    content.vb: Public Overridable Sub OnFixedUpdate()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnFixedUpdate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit
+  id: OnExit
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState
+  langs:
+  - csharp
+  - vb
+  name: OnExit()
+  nameWithType: BaseState.OnExit()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/BaseState.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnExit
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/BaseState.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Called when exiting the state.
+  example: []
+  syntax:
+    content: public virtual void OnExit()
+    content.vb: Public Overridable Sub OnExit()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnExit
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+    name: StateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+    name: StateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_BaseState_OnEnter
+  name: OnEnter
+  nameWithType: BaseState.OnEnter
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnEnter
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnEnter
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnEnter
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnEnter
+  name: OnEnter()
+  nameWithType: IState.OnEnter()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnEnter()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnEnter
+    name: OnEnter
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnEnter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnEnter
+    name: OnEnter
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnEnter
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_BaseState_OnUpdate
+  name: OnUpdate
+  nameWithType: BaseState.OnUpdate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnUpdate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnUpdate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnUpdate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnUpdate
+  name: OnUpdate()
+  nameWithType: IState.OnUpdate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnUpdate()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnUpdate
+    name: OnUpdate
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnUpdate
+    name: OnUpdate
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnUpdate
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_BaseState_OnFixedUpdate
+  name: OnFixedUpdate
+  nameWithType: BaseState.OnFixedUpdate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnFixedUpdate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnFixedUpdate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnFixedUpdate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnFixedUpdate
+  name: OnFixedUpdate()
+  nameWithType: IState.OnFixedUpdate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnFixedUpdate()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnFixedUpdate
+    name: OnFixedUpdate
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnFixedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnFixedUpdate
+    name: OnFixedUpdate
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnFixedUpdate
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_BaseState_OnExit
+  name: OnExit
+  nameWithType: BaseState.OnExit
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.BaseState.OnExit
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnExit
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnExit
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnExit
+  name: OnExit()
+  nameWithType: IState.OnExit()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnExit()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnExit
+    name: OnExit
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnExit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.OnExit
+    name: OnExit
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_OnExit
+  - name: (
+  - name: )

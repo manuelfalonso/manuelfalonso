@@ -1,0 +1,1606 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  id: MaterialsAssetSearchWindow
+  parent: SombraStudios.Shared.Editor.SearchTools
+  children:
+  - SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo(UnityEngine.Material)
+  - SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find(UnityEngine.GameObject)
+  - SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow
+  - SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  langs:
+  - csharp
+  - vb
+  name: MaterialsAssetSearchWindow
+  nameWithType: MaterialsAssetSearchWindow
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  type: Class
+  source:
+    remote:
+      path: Editor/SearchTools/MaterialAssetSearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaterialsAssetSearchWindow
+    path: ../Assets/Sombra Studios/Shared/Editor/SearchTools/MaterialAssetSearchWindow.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools
+  summary: Custom Editor window to search for Material assets.
+  example: []
+  syntax:
+    content: 'public class MaterialsAssetSearchWindow : AssetSearchWindow<Material>'
+    content.vb: Public Class MaterialsAssetSearchWindow Inherits AssetSearchWindow(Of Material)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.EditorWindow
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  - SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  inheritedMembers:
+  - SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindFolder
+  - SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindInScene(UnityEngine.SceneManagement.Scene)
+  - SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindProject
+  - SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.ShowResults
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchResults
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchOption
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchInactiveObjects
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._selectedFolder
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._isSearching
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._infoMessage
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._warningMessage
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._errorMessage
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._scrollPosition
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.OnGUI
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindButton
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectSearchOptions
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchInactiveObjects
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectFolder
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.InfoMessage
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.WarningMessage
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ErrorMessage
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindOpenScene
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindScenesInBuild
+  - SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindAllScenes
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow
+  id: OpenWindow
+  parent: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  langs:
+  - csharp
+  - vb
+  name: OpenWindow()
+  nameWithType: MaterialsAssetSearchWindow.OpenWindow()
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/MaterialAssetSearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OpenWindow
+    path: ../Assets/Sombra Studios/Shared/Editor/SearchTools/MaterialAssetSearchWindow.cs
+    startLine: 27
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools
+  summary: Opens the Material search window from the Unity Editor menu.
+  example: []
+  syntax:
+    content: >-
+      [MenuItem("Sombra Studios/Tools/Search Tools/Material")]
+
+      public static void OpenWindow()
+    content.vb: >-
+      <MenuItem("Sombra Studios/Tools/Search Tools/Material")>
+
+      Public Shared Sub OpenWindow()
+  overload: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Sombra Studios/Tools/Search Tools/Material
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find(UnityEngine.GameObject)
+  id: Find(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  langs:
+  - csharp
+  - vb
+  name: Find(GameObject)
+  nameWithType: MaterialsAssetSearchWindow.Find(GameObject)
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/MaterialAssetSearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Find
+    path: ../Assets/Sombra Studios/Shared/Editor/SearchTools/MaterialAssetSearchWindow.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools
+  summary: Searches within a specific GameObject.
+  example: []
+  syntax:
+    content: protected override void Find(GameObject go)
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+      description: The GameObject to search in.
+    content.vb: Protected Overrides Sub Find(go As GameObject)
+  overridden: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.Find(UnityEngine.GameObject)
+  overload: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find*
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo(UnityEngine.Material)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo(UnityEngine.Material)
+  id: AddAdditionalResultInfo(UnityEngine.Material)
+  parent: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  langs:
+  - csharp
+  - vb
+  name: AddAdditionalResultInfo(Material)
+  nameWithType: MaterialsAssetSearchWindow.AddAdditionalResultInfo(Material)
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo(UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/MaterialAssetSearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AddAdditionalResultInfo
+    path: ../Assets/Sombra Studios/Shared/Editor/SearchTools/MaterialAssetSearchWindow.cs
+    startLine: 57
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools
+  summary: Adds additional information to the search results.
+  example: []
+  syntax:
+    content: protected override SearchWindow<Material>.SearchResults AddAdditionalResultInfo(Material asset)
+    parameters:
+    - id: asset
+      type: UnityEngine.Material
+      description: The asset to add additional information for.
+    return:
+      type: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchResults
+      description: The search result with additional information.
+    content.vb: Protected Overrides Function AddAdditionalResultInfo(asset As Material) As SearchWindow(Of Material).SearchResults
+  overridden: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.AddAdditionalResultInfo(UnityEngine.Material)
+  overload: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo*
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  id: ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  parent: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  langs:
+  - csharp
+  - vb
+  name: ShowAdditionalResultInfo(ResultsAdditionalInfo)
+  nameWithType: MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SearchWindow<Material>.ResultsAdditionalInfo)
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.ResultsAdditionalInfo)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/MaterialAssetSearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ShowAdditionalResultInfo
+    path: ../Assets/Sombra Studios/Shared/Editor/SearchTools/MaterialAssetSearchWindow.cs
+    startLine: 74
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools
+  summary: Displays additional information in the search results.
+  example: []
+  syntax:
+    content: protected override void ShowAdditionalResultInfo(SearchWindow<Material>.ResultsAdditionalInfo assetInfo)
+    parameters:
+    - id: assetInfo
+      type: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+      description: The additional information to display.
+    content.vb: Protected Overrides Sub ShowAdditionalResultInfo(assetInfo As SearchWindow(Of Material).ResultsAdditionalInfo)
+  overridden: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  overload: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo*
+  nameWithType.vb: MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SearchWindow(Of Material).ResultsAdditionalInfo)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).ResultsAdditionalInfo)
+references:
+- uid: SombraStudios.Shared.Editor.SearchTools
+  commentId: N:SombraStudios.Shared.Editor.SearchTools
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Editor.SearchTools
+  nameWithType: SombraStudios.Shared.Editor.SearchTools
+  fullName: SombraStudios.Shared.Editor.SearchTools
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools
+    name: SearchTools
+    href: SombraStudios.Shared.Editor.SearchTools.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools
+    name: SearchTools
+    href: SombraStudios.Shared.Editor.SearchTools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.EditorWindow
+  commentId: T:UnityEditor.EditorWindow
+  parent: UnityEditor
+  isExternal: true
+  name: EditorWindow
+  nameWithType: EditorWindow
+  fullName: UnityEditor.EditorWindow
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  parent: SombraStudios.Shared.Editor.SearchTools.Base
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  name: SearchWindow<Material>
+  nameWithType: SearchWindow<Material>
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>
+  nameWithType.vb: SearchWindow(Of Material)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)
+  name.vb: SearchWindow(Of Material)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: <
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  parent: SombraStudios.Shared.Editor.SearchTools.Base
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html
+  name: AssetSearchWindow<Material>
+  nameWithType: AssetSearchWindow<Material>
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<UnityEngine.Material>
+  nameWithType.vb: AssetSearchWindow(Of Material)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of UnityEngine.Material)
+  name.vb: AssetSearchWindow(Of Material)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+    name: AssetSearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html
+  - name: <
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+    name: AssetSearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindFolder
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindFolder
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindFolder
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindFolder
+  name: FindFolder()
+  nameWithType: AssetSearchWindow<Material>.FindFolder()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<UnityEngine.Material>.FindFolder()
+  nameWithType.vb: AssetSearchWindow(Of Material).FindFolder()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of UnityEngine.Material).FindFolder()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindFolder
+    name: FindFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindFolder
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindFolder
+    name: FindFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindFolder
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindInScene(UnityEngine.SceneManagement.Scene)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindInScene(UnityEngine.SceneManagement.Scene)
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  name: FindInScene(Scene)
+  nameWithType: AssetSearchWindow<Material>.FindInScene(Scene)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<UnityEngine.Material>.FindInScene(UnityEngine.SceneManagement.Scene)
+  nameWithType.vb: AssetSearchWindow(Of Material).FindInScene(Scene)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of UnityEngine.Material).FindInScene(UnityEngine.SceneManagement.Scene)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindInScene(UnityEngine.SceneManagement.Scene)
+    name: FindInScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  - name: (
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindInScene(UnityEngine.SceneManagement.Scene)
+    name: FindInScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  - name: (
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindProject
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindProject
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindProject
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindProject
+  name: FindProject()
+  nameWithType: AssetSearchWindow<Material>.FindProject()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<UnityEngine.Material>.FindProject()
+  nameWithType.vb: AssetSearchWindow(Of Material).FindProject()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of UnityEngine.Material).FindProject()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindProject
+    name: FindProject
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindProject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.FindProject
+    name: FindProject
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindProject
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.ShowResults
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.ShowResults
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.ShowResults
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_ShowResults
+  name: ShowResults()
+  nameWithType: AssetSearchWindow<Material>.ShowResults()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<UnityEngine.Material>.ShowResults()
+  nameWithType.vb: AssetSearchWindow(Of Material).ShowResults()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of UnityEngine.Material).ShowResults()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.ShowResults
+    name: ShowResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_ShowResults
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.ShowResults
+    name: ShowResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_ShowResults
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchResults
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchResults
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchResults
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__searchResults
+  name: _searchResults
+  nameWithType: SearchWindow<Material>._searchResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._searchResults
+  nameWithType.vb: SearchWindow(Of Material)._searchResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._searchResults
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchOption
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchOption
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchOption
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__searchOption
+  name: _searchOption
+  nameWithType: SearchWindow<Material>._searchOption
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._searchOption
+  nameWithType.vb: SearchWindow(Of Material)._searchOption
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._searchOption
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchInactiveObjects
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._searchInactiveObjects
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchInactiveObjects
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__searchInactiveObjects
+  name: _searchInactiveObjects
+  nameWithType: SearchWindow<Material>._searchInactiveObjects
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._searchInactiveObjects
+  nameWithType.vb: SearchWindow(Of Material)._searchInactiveObjects
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._searchInactiveObjects
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._selectedFolder
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._selectedFolder
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._selectedFolder
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__selectedFolder
+  name: _selectedFolder
+  nameWithType: SearchWindow<Material>._selectedFolder
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._selectedFolder
+  nameWithType.vb: SearchWindow(Of Material)._selectedFolder
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._selectedFolder
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._isSearching
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._isSearching
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._isSearching
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__isSearching
+  name: _isSearching
+  nameWithType: SearchWindow<Material>._isSearching
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._isSearching
+  nameWithType.vb: SearchWindow(Of Material)._isSearching
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._isSearching
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._infoMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._infoMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._infoMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__infoMessage
+  name: _infoMessage
+  nameWithType: SearchWindow<Material>._infoMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._infoMessage
+  nameWithType.vb: SearchWindow(Of Material)._infoMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._infoMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._warningMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._warningMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._warningMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__warningMessage
+  name: _warningMessage
+  nameWithType: SearchWindow<Material>._warningMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._warningMessage
+  nameWithType.vb: SearchWindow(Of Material)._warningMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._warningMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._errorMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._errorMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._errorMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__errorMessage
+  name: _errorMessage
+  nameWithType: SearchWindow<Material>._errorMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._errorMessage
+  nameWithType.vb: SearchWindow(Of Material)._errorMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._errorMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._scrollPosition
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}._scrollPosition
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._scrollPosition
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__scrollPosition
+  name: _scrollPosition
+  nameWithType: SearchWindow<Material>._scrollPosition
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>._scrollPosition
+  nameWithType.vb: SearchWindow(Of Material)._scrollPosition
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material)._scrollPosition
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.OnGUI
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.OnGUI
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.OnGUI
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_OnGUI
+  name: OnGUI()
+  nameWithType: SearchWindow<Material>.OnGUI()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.OnGUI()
+  nameWithType.vb: SearchWindow(Of Material).OnGUI()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).OnGUI()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.OnGUI
+    name: OnGUI
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_OnGUI
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.OnGUI
+    name: OnGUI
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_OnGUI
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindButton
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindButton
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindButton
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindButton
+  name: FindButton()
+  nameWithType: SearchWindow<Material>.FindButton()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.FindButton()
+  nameWithType.vb: SearchWindow(Of Material).FindButton()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).FindButton()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindButton
+    name: FindButton
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindButton
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindButton
+    name: FindButton
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindButton
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectSearchOptions
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectSearchOptions
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectSearchOptions
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectSearchOptions
+  name: SelectSearchOptions()
+  nameWithType: SearchWindow<Material>.SelectSearchOptions()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.SelectSearchOptions()
+  nameWithType.vb: SearchWindow(Of Material).SelectSearchOptions()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).SelectSearchOptions()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectSearchOptions
+    name: SelectSearchOptions
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectSearchOptions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectSearchOptions
+    name: SelectSearchOptions
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectSearchOptions
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchInactiveObjects
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchInactiveObjects
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchInactiveObjects
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SearchInactiveObjects
+  name: SearchInactiveObjects()
+  nameWithType: SearchWindow<Material>.SearchInactiveObjects()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.SearchInactiveObjects()
+  nameWithType.vb: SearchWindow(Of Material).SearchInactiveObjects()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).SearchInactiveObjects()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchInactiveObjects
+    name: SearchInactiveObjects
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SearchInactiveObjects
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchInactiveObjects
+    name: SearchInactiveObjects
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SearchInactiveObjects
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectFolder
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectFolder
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectFolder
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectFolder
+  name: SelectFolder()
+  nameWithType: SearchWindow<Material>.SelectFolder()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.SelectFolder()
+  nameWithType.vb: SearchWindow(Of Material).SelectFolder()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).SelectFolder()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectFolder
+    name: SelectFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectFolder
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SelectFolder
+    name: SelectFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectFolder
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.InfoMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.InfoMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.InfoMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_InfoMessage
+  name: InfoMessage()
+  nameWithType: SearchWindow<Material>.InfoMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.InfoMessage()
+  nameWithType.vb: SearchWindow(Of Material).InfoMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).InfoMessage()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.InfoMessage
+    name: InfoMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_InfoMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.InfoMessage
+    name: InfoMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_InfoMessage
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.WarningMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.WarningMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.WarningMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_WarningMessage
+  name: WarningMessage()
+  nameWithType: SearchWindow<Material>.WarningMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.WarningMessage()
+  nameWithType.vb: SearchWindow(Of Material).WarningMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).WarningMessage()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.WarningMessage
+    name: WarningMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_WarningMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.WarningMessage
+    name: WarningMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_WarningMessage
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ErrorMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ErrorMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ErrorMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ErrorMessage
+  name: ErrorMessage()
+  nameWithType: SearchWindow<Material>.ErrorMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.ErrorMessage()
+  nameWithType.vb: SearchWindow(Of Material).ErrorMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).ErrorMessage()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ErrorMessage
+    name: ErrorMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ErrorMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ErrorMessage
+    name: ErrorMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ErrorMessage
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindOpenScene
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindOpenScene
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindOpenScene
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindOpenScene
+  name: FindOpenScene()
+  nameWithType: SearchWindow<Material>.FindOpenScene()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.FindOpenScene()
+  nameWithType.vb: SearchWindow(Of Material).FindOpenScene()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).FindOpenScene()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindOpenScene
+    name: FindOpenScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindOpenScene
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindOpenScene
+    name: FindOpenScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindOpenScene
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindScenesInBuild
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindScenesInBuild
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindScenesInBuild
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindScenesInBuild
+  name: FindScenesInBuild()
+  nameWithType: SearchWindow<Material>.FindScenesInBuild()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.FindScenesInBuild()
+  nameWithType.vb: SearchWindow(Of Material).FindScenesInBuild()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).FindScenesInBuild()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindScenesInBuild
+    name: FindScenesInBuild
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindScenesInBuild
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindScenesInBuild
+    name: FindScenesInBuild
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindScenesInBuild
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindAllScenes
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindAllScenes
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindAllScenes
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindAllScenes
+  name: FindAllScenes()
+  nameWithType: SearchWindow<Material>.FindAllScenes()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.FindAllScenes()
+  nameWithType.vb: SearchWindow(Of Material).FindAllScenes()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).FindAllScenes()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindAllScenes
+    name: FindAllScenes
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindAllScenes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.FindAllScenes
+    name: FindAllScenes
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindAllScenes
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  name: SearchWindow<T>
+  nameWithType: SearchWindow<T>
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>
+  nameWithType.vb: SearchWindow(Of T)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)
+  name.vb: SearchWindow(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base
+  commentId: N:SombraStudios.Shared.Editor.SearchTools.Base
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Editor.SearchTools.Base
+  nameWithType: SombraStudios.Shared.Editor.SearchTools.Base
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools
+    name: SearchTools
+    href: SombraStudios.Shared.Editor.SearchTools.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base
+    name: Base
+    href: SombraStudios.Shared.Editor.SearchTools.Base.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools
+    name: SearchTools
+    href: SombraStudios.Shared.Editor.SearchTools.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base
+    name: Base
+    href: SombraStudios.Shared.Editor.SearchTools.Base.html
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html
+  name: AssetSearchWindow<T>
+  nameWithType: AssetSearchWindow<T>
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<T>
+  nameWithType.vb: AssetSearchWindow(Of T)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of T)
+  name.vb: AssetSearchWindow(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+    name: AssetSearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+    name: AssetSearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindFolder
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindFolder
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindFolder
+  name: FindFolder()
+  nameWithType: AssetSearchWindow<T>.FindFolder()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<T>.FindFolder()
+  nameWithType.vb: AssetSearchWindow(Of T).FindFolder()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of T).FindFolder()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindFolder
+    name: FindFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindFolder
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindFolder
+    name: FindFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindFolder
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+  isExternal: true
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  name: FindInScene(Scene)
+  nameWithType: AssetSearchWindow<T>.FindInScene(Scene)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<T>.FindInScene(UnityEngine.SceneManagement.Scene)
+  nameWithType.vb: AssetSearchWindow(Of T).FindInScene(Scene)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of T).FindInScene(UnityEngine.SceneManagement.Scene)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+    name: FindInScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  - name: (
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+    name: FindInScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  - name: (
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindProject
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindProject
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindProject
+  name: FindProject()
+  nameWithType: AssetSearchWindow<T>.FindProject()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<T>.FindProject()
+  nameWithType.vb: AssetSearchWindow(Of T).FindProject()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of T).FindProject()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindProject
+    name: FindProject
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindProject
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.FindProject
+    name: FindProject
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_FindProject
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.ShowResults
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.ShowResults
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_ShowResults
+  name: ShowResults()
+  nameWithType: AssetSearchWindow<T>.ShowResults()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<T>.ShowResults()
+  nameWithType.vb: AssetSearchWindow(Of T).ShowResults()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of T).ShowResults()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.ShowResults
+    name: ShowResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_ShowResults
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.ShowResults
+    name: ShowResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_ShowResults
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchResults
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchResults
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__searchResults
+  name: _searchResults
+  nameWithType: SearchWindow<T>._searchResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._searchResults
+  nameWithType.vb: SearchWindow(Of T)._searchResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._searchResults
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchOption
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchOption
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__searchOption
+  name: _searchOption
+  nameWithType: SearchWindow<T>._searchOption
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._searchOption
+  nameWithType.vb: SearchWindow(Of T)._searchOption
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._searchOption
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchInactiveObjects
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._searchInactiveObjects
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__searchInactiveObjects
+  name: _searchInactiveObjects
+  nameWithType: SearchWindow<T>._searchInactiveObjects
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._searchInactiveObjects
+  nameWithType.vb: SearchWindow(Of T)._searchInactiveObjects
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._searchInactiveObjects
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._selectedFolder
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._selectedFolder
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__selectedFolder
+  name: _selectedFolder
+  nameWithType: SearchWindow<T>._selectedFolder
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._selectedFolder
+  nameWithType.vb: SearchWindow(Of T)._selectedFolder
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._selectedFolder
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._isSearching
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._isSearching
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__isSearching
+  name: _isSearching
+  nameWithType: SearchWindow<T>._isSearching
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._isSearching
+  nameWithType.vb: SearchWindow(Of T)._isSearching
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._isSearching
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._infoMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._infoMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__infoMessage
+  name: _infoMessage
+  nameWithType: SearchWindow<T>._infoMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._infoMessage
+  nameWithType.vb: SearchWindow(Of T)._infoMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._infoMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._warningMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._warningMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__warningMessage
+  name: _warningMessage
+  nameWithType: SearchWindow<T>._warningMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._warningMessage
+  nameWithType.vb: SearchWindow(Of T)._warningMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._warningMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._errorMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._errorMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__errorMessage
+  name: _errorMessage
+  nameWithType: SearchWindow<T>._errorMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._errorMessage
+  nameWithType.vb: SearchWindow(Of T)._errorMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._errorMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._scrollPosition
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1._scrollPosition
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1__scrollPosition
+  name: _scrollPosition
+  nameWithType: SearchWindow<T>._scrollPosition
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>._scrollPosition
+  nameWithType.vb: SearchWindow(Of T)._scrollPosition
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T)._scrollPosition
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.OnGUI
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.OnGUI
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_OnGUI
+  name: OnGUI()
+  nameWithType: SearchWindow<T>.OnGUI()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.OnGUI()
+  nameWithType.vb: SearchWindow(Of T).OnGUI()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).OnGUI()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.OnGUI
+    name: OnGUI
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_OnGUI
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.OnGUI
+    name: OnGUI
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_OnGUI
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindButton
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindButton
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindButton
+  name: FindButton()
+  nameWithType: SearchWindow<T>.FindButton()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.FindButton()
+  nameWithType.vb: SearchWindow(Of T).FindButton()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).FindButton()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindButton
+    name: FindButton
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindButton
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindButton
+    name: FindButton
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindButton
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectSearchOptions
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectSearchOptions
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectSearchOptions
+  name: SelectSearchOptions()
+  nameWithType: SearchWindow<T>.SelectSearchOptions()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.SelectSearchOptions()
+  nameWithType.vb: SearchWindow(Of T).SelectSearchOptions()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).SelectSearchOptions()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectSearchOptions
+    name: SelectSearchOptions
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectSearchOptions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectSearchOptions
+    name: SelectSearchOptions
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectSearchOptions
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchInactiveObjects
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchInactiveObjects
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SearchInactiveObjects
+  name: SearchInactiveObjects()
+  nameWithType: SearchWindow<T>.SearchInactiveObjects()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.SearchInactiveObjects()
+  nameWithType.vb: SearchWindow(Of T).SearchInactiveObjects()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).SearchInactiveObjects()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchInactiveObjects
+    name: SearchInactiveObjects
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SearchInactiveObjects
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchInactiveObjects
+    name: SearchInactiveObjects
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SearchInactiveObjects
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectFolder
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectFolder
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectFolder
+  name: SelectFolder()
+  nameWithType: SearchWindow<T>.SelectFolder()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.SelectFolder()
+  nameWithType.vb: SearchWindow(Of T).SelectFolder()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).SelectFolder()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectFolder
+    name: SelectFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectFolder
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SelectFolder
+    name: SelectFolder
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_SelectFolder
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.InfoMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.InfoMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_InfoMessage
+  name: InfoMessage()
+  nameWithType: SearchWindow<T>.InfoMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.InfoMessage()
+  nameWithType.vb: SearchWindow(Of T).InfoMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).InfoMessage()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.InfoMessage
+    name: InfoMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_InfoMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.InfoMessage
+    name: InfoMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_InfoMessage
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.WarningMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.WarningMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_WarningMessage
+  name: WarningMessage()
+  nameWithType: SearchWindow<T>.WarningMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.WarningMessage()
+  nameWithType.vb: SearchWindow(Of T).WarningMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).WarningMessage()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.WarningMessage
+    name: WarningMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_WarningMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.WarningMessage
+    name: WarningMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_WarningMessage
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ErrorMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ErrorMessage
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ErrorMessage
+  name: ErrorMessage()
+  nameWithType: SearchWindow<T>.ErrorMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.ErrorMessage()
+  nameWithType.vb: SearchWindow(Of T).ErrorMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).ErrorMessage()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ErrorMessage
+    name: ErrorMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ErrorMessage
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ErrorMessage
+    name: ErrorMessage
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ErrorMessage
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindOpenScene
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindOpenScene
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindOpenScene
+  name: FindOpenScene()
+  nameWithType: SearchWindow<T>.FindOpenScene()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.FindOpenScene()
+  nameWithType.vb: SearchWindow(Of T).FindOpenScene()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).FindOpenScene()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindOpenScene
+    name: FindOpenScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindOpenScene
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindOpenScene
+    name: FindOpenScene
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindOpenScene
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindScenesInBuild
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindScenesInBuild
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindScenesInBuild
+  name: FindScenesInBuild()
+  nameWithType: SearchWindow<T>.FindScenesInBuild()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.FindScenesInBuild()
+  nameWithType.vb: SearchWindow(Of T).FindScenesInBuild()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).FindScenesInBuild()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindScenesInBuild
+    name: FindScenesInBuild
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindScenesInBuild
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindScenesInBuild
+    name: FindScenesInBuild
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindScenesInBuild
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindAllScenes
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindAllScenes
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindAllScenes
+  name: FindAllScenes()
+  nameWithType: SearchWindow<T>.FindAllScenes()
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.FindAllScenes()
+  nameWithType.vb: SearchWindow(Of T).FindAllScenes()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).FindAllScenes()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindAllScenes
+    name: FindAllScenes
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindAllScenes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.FindAllScenes
+    name: FindAllScenes
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_FindAllScenes
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow
+  href: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.html#SombraStudios_Shared_Editor_SearchTools_MaterialsAssetSearchWindow_OpenWindow
+  name: OpenWindow
+  nameWithType: MaterialsAssetSearchWindow.OpenWindow
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.OpenWindow
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.Find(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.Find(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.Find(UnityEngine.GameObject)
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_Find_UnityEngine_GameObject_
+  name: Find(GameObject)
+  nameWithType: AssetSearchWindow<Material>.Find(GameObject)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<UnityEngine.Material>.Find(UnityEngine.GameObject)
+  nameWithType.vb: AssetSearchWindow(Of Material).Find(GameObject)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of UnityEngine.Material).Find(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.Find(UnityEngine.GameObject)
+    name: Find
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_Find_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow{UnityEngine.Material}.Find(UnityEngine.GameObject)
+    name: Find
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_Find_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find
+  href: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.html#SombraStudios_Shared_Editor_SearchTools_MaterialsAssetSearchWindow_Find_UnityEngine_GameObject_
+  name: Find
+  nameWithType: MaterialsAssetSearchWindow.Find
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.Find
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.Find(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.Find(UnityEngine.GameObject)
+  isExternal: true
+  href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_Find_UnityEngine_GameObject_
+  name: Find(GameObject)
+  nameWithType: AssetSearchWindow<T>.Find(GameObject)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow<T>.Find(UnityEngine.GameObject)
+  nameWithType.vb: AssetSearchWindow(Of T).Find(GameObject)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow(Of T).Find(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.Find(UnityEngine.GameObject)
+    name: Find
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_Find_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1.Find(UnityEngine.GameObject)
+    name: Find
+    href: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_AssetSearchWindow_1_Find_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.AddAdditionalResultInfo(UnityEngine.Material)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.AddAdditionalResultInfo(UnityEngine.Material)
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  name: AddAdditionalResultInfo(Material)
+  nameWithType: SearchWindow<Material>.AddAdditionalResultInfo(Material)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.AddAdditionalResultInfo(UnityEngine.Material)
+  nameWithType.vb: SearchWindow(Of Material).AddAdditionalResultInfo(Material)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).AddAdditionalResultInfo(UnityEngine.Material)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.AddAdditionalResultInfo(UnityEngine.Material)
+    name: AddAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  - name: (
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.AddAdditionalResultInfo(UnityEngine.Material)
+    name: AddAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  - name: (
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo
+  href: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.html#SombraStudios_Shared_Editor_SearchTools_MaterialsAssetSearchWindow_AddAdditionalResultInfo_UnityEngine_Material_
+  name: AddAdditionalResultInfo
+  nameWithType: MaterialsAssetSearchWindow.AddAdditionalResultInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.AddAdditionalResultInfo
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchResults
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchResults
+  parent: SombraStudios.Shared.Editor.SearchTools.Base
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchResults
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  name: SearchWindow<Material>.SearchResults
+  nameWithType: SearchWindow<Material>.SearchResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.SearchResults
+  nameWithType.vb: SearchWindow(Of Material).SearchResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).SearchResults
+  name.vb: SearchWindow(Of Material).SearchResults
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: <
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.SearchResults.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.SearchResults.html
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  name: AddAdditionalResultInfo(T)
+  nameWithType: SearchWindow<T>.AddAdditionalResultInfo(T)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.AddAdditionalResultInfo(T)
+  nameWithType.vb: SearchWindow(Of T).AddAdditionalResultInfo(T)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).AddAdditionalResultInfo(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+    name: AddAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+    name: AddAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchResults
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchResults
+  parent: SombraStudios.Shared.Editor.SearchTools.Base
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  name: SearchWindow<T>.SearchResults
+  nameWithType: SearchWindow<T>.SearchResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.SearchResults
+  nameWithType.vb: SearchWindow(Of T).SearchResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).SearchResults
+  name.vb: SearchWindow(Of T).SearchResults
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.SearchResults.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.SearchResults.html
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+  parent: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow__0__ResultsAdditionalInfo_
+  name: ShowAdditionalResultInfo(ResultsAdditionalInfo)
+  nameWithType: SearchWindow<Material>.ShowAdditionalResultInfo(SearchWindow<Material>.ResultsAdditionalInfo)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.ResultsAdditionalInfo)
+  nameWithType.vb: SearchWindow(Of Material).ShowAdditionalResultInfo(SearchWindow(Of Material).ResultsAdditionalInfo)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).ResultsAdditionalInfo)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+    name: ShowAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow__0__ResultsAdditionalInfo_
+  - name: (
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo)
+    name: ShowAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow__0__ResultsAdditionalInfo_
+  - name: (
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo
+  href: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.html#SombraStudios_Shared_Editor_SearchTools_MaterialsAssetSearchWindow_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_UnityEngine_Material__ResultsAdditionalInfo_
+  name: ShowAdditionalResultInfo
+  nameWithType: MaterialsAssetSearchWindow.ShowAdditionalResultInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.ShowAdditionalResultInfo
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+  parent: SombraStudios.Shared.Editor.SearchTools.Base
+  definition: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  name: SearchWindow<Material>.ResultsAdditionalInfo
+  nameWithType: SearchWindow<Material>.ResultsAdditionalInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<UnityEngine.Material>.ResultsAdditionalInfo
+  nameWithType.vb: SearchWindow(Of Material).ResultsAdditionalInfo
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of UnityEngine.Material).ResultsAdditionalInfo
+  name.vb: SearchWindow(Of Material).ResultsAdditionalInfo
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: <
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Material
+    name: Material
+    isExternal: true
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{UnityEngine.Material}.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow__0__ResultsAdditionalInfo_
+  name: ShowAdditionalResultInfo(ResultsAdditionalInfo)
+  nameWithType: SearchWindow<T>.ShowAdditionalResultInfo(SearchWindow<T>.ResultsAdditionalInfo)
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.ResultsAdditionalInfo)
+  nameWithType.vb: SearchWindow(Of T).ShowAdditionalResultInfo(SearchWindow(Of T).ResultsAdditionalInfo)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).ResultsAdditionalInfo)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+    name: ShowAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow__0__ResultsAdditionalInfo_
+  - name: (
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+    name: ShowAdditionalResultInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_Base_SearchWindow__0__ResultsAdditionalInfo_
+  - name: (
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  - name: )
+- uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+  parent: SombraStudios.Shared.Editor.SearchTools.Base
+  href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  name: SearchWindow<T>.ResultsAdditionalInfo
+  nameWithType: SearchWindow<T>.ResultsAdditionalInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow<T>.ResultsAdditionalInfo
+  nameWithType.vb: SearchWindow(Of T).ResultsAdditionalInfo
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow(Of T).ResultsAdditionalInfo
+  name.vb: SearchWindow(Of T).ResultsAdditionalInfo
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow-1.ResultsAdditionalInfo.html

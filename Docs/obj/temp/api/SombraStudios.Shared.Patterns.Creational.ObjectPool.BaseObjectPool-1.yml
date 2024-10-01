@@ -1,0 +1,618 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  id: BaseObjectPool`1
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  children:
+  - SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnDestroy(`0)
+  - SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnGet(`0)
+  - SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnRelease(`0)
+  - SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.CreateFunc
+  - SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.Pool
+  - SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1._prefab
+  langs:
+  - csharp
+  - vb
+  name: BaseObjectPool<T>
+  nameWithType: BaseObjectPool<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>
+  type: Class
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BaseObjectPool
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Base class for implementing an object pool for components.
+  example: []
+  syntax:
+    content: 'public abstract class BaseObjectPool<T> : MonoBehaviour where T : Component'
+    typeParameters:
+    - id: T
+      description: The type of component to pool.
+    content.vb: Public MustInherit Class BaseObjectPool(Of T As Component) Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - SombraStudios.Shared.Optimization.UnityPoolExample
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  nameWithType.vb: BaseObjectPool(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T)
+  name.vb: BaseObjectPool(Of T)
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1._prefab
+  commentId: F:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1._prefab
+  id: _prefab
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: _prefab
+  nameWithType: BaseObjectPool<T>._prefab
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>._prefab
+  type: Field
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _prefab
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Prefab to pool.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Prefab to pool.")]
+
+      [SerializeField]
+
+      protected T _prefab
+    return:
+      type: '{T}'
+    content.vb: >-
+      <Tooltip("Prefab to pool.")>
+
+      <SerializeField>
+
+      Protected _prefab As T
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Prefab to pool.
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: BaseObjectPool(Of T)._prefab
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T)._prefab
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.Pool
+  commentId: P:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.Pool
+  id: Pool
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: Pool
+  nameWithType: BaseObjectPool<T>.Pool
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.Pool
+  type: Property
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Pool
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 52
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Gets the object pool instance.
+  example: []
+  syntax:
+    content: public IObjectPool<T> Pool { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Pool.IObjectPool{{T}}
+    content.vb: Public ReadOnly Property Pool As IObjectPool(Of T)
+  overload: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.Pool*
+  nameWithType.vb: BaseObjectPool(Of T).Pool
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).Pool
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.CreateFunc
+  commentId: M:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.CreateFunc
+  id: CreateFunc
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: CreateFunc()
+  nameWithType: BaseObjectPool<T>.CreateFunc()
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.CreateFunc()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CreateFunc
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 96
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Used to create a new instance when the pool is empty.
+  example: []
+  syntax:
+    content: protected abstract T CreateFunc()
+    return:
+      type: '{T}'
+      description: A new instance of the pooled object.
+    content.vb: Protected MustOverride Function CreateFunc() As T
+  overload: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.CreateFunc*
+  nameWithType.vb: BaseObjectPool(Of T).CreateFunc()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).CreateFunc()
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnGet(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnGet(`0)
+  id: ActionOnGet(`0)
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: ActionOnGet(T)
+  nameWithType: BaseObjectPool<T>.ActionOnGet(T)
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.ActionOnGet(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ActionOnGet
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 102
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Called when the instance is taken from the pool.
+  example: []
+  syntax:
+    content: protected abstract void ActionOnGet(T t)
+    parameters:
+    - id: t
+      type: '{T}'
+      description: The object taken from the pool.
+    content.vb: Protected MustOverride Sub ActionOnGet(t As T)
+  overload: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnGet*
+  nameWithType.vb: BaseObjectPool(Of T).ActionOnGet(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).ActionOnGet(T)
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnRelease(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnRelease(`0)
+  id: ActionOnRelease(`0)
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: ActionOnRelease(T)
+  nameWithType: BaseObjectPool<T>.ActionOnRelease(T)
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.ActionOnRelease(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ActionOnRelease
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 108
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Called when the instance is returned to the pool. This can be used to clean up or disable the instance.
+  example: []
+  syntax:
+    content: protected abstract void ActionOnRelease(T t)
+    parameters:
+    - id: t
+      type: '{T}'
+      description: The object returned to the pool.
+    content.vb: Protected MustOverride Sub ActionOnRelease(t As T)
+  overload: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnRelease*
+  nameWithType.vb: BaseObjectPool(Of T).ActionOnRelease(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).ActionOnRelease(T)
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnDestroy(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnDestroy(`0)
+  id: ActionOnDestroy(`0)
+  parent: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: ActionOnDestroy(T)
+  nameWithType: BaseObjectPool<T>.ActionOnDestroy(T)
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.ActionOnDestroy(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/ObjectPool/BaseObjectPool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ActionOnDestroy
+    path: ../Assets/Sombra Studios/Shared/Patterns/Creational/ObjectPool/BaseObjectPool.cs
+    startLine: 114
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  summary: Called when the element could not be returned to the pool due to the pool reaching the maximum size.
+  example: []
+  syntax:
+    content: protected abstract void ActionOnDestroy(T t)
+    parameters:
+    - id: t
+      type: '{T}'
+      description: The object to be destroyed.
+    content.vb: Protected MustOverride Sub ActionOnDestroy(t As T)
+  overload: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnDestroy*
+  nameWithType.vb: BaseObjectPool(Of T).ActionOnDestroy(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).ActionOnDestroy(T)
+references:
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  commentId: N:SombraStudios.Shared.Patterns.Creational.ObjectPool
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  nameWithType: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.ObjectPool
+    name: ObjectPool
+    href: SombraStudios.Shared.Patterns.Creational.ObjectPool.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.ObjectPool
+    name: ObjectPool
+    href: SombraStudios.Shared.Patterns.Creational.ObjectPool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.Pool*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.Pool
+  href: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool-1.html#SombraStudios_Shared_Patterns_Creational_ObjectPool_BaseObjectPool_1_Pool
+  name: Pool
+  nameWithType: BaseObjectPool<T>.Pool
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.Pool
+  nameWithType.vb: BaseObjectPool(Of T).Pool
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).Pool
+- uid: UnityEngine.Pool.IObjectPool{{T}}
+  commentId: T:UnityEngine.Pool.IObjectPool{`0}
+  parent: UnityEngine.Pool
+  definition: UnityEngine.Pool.IObjectPool`1
+  name: IObjectPool<T>
+  nameWithType: IObjectPool<T>
+  fullName: UnityEngine.Pool.IObjectPool<T>
+  nameWithType.vb: IObjectPool(Of T)
+  fullName.vb: UnityEngine.Pool.IObjectPool(Of T)
+  name.vb: IObjectPool(Of T)
+  spec.csharp:
+  - uid: UnityEngine.Pool.IObjectPool`1
+    name: IObjectPool
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Pool.IObjectPool`1
+    name: IObjectPool
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Pool.IObjectPool`1
+  commentId: T:UnityEngine.Pool.IObjectPool`1
+  isExternal: true
+  name: IObjectPool<T>
+  nameWithType: IObjectPool<T>
+  fullName: UnityEngine.Pool.IObjectPool<T>
+  nameWithType.vb: IObjectPool(Of T)
+  fullName.vb: UnityEngine.Pool.IObjectPool(Of T)
+  name.vb: IObjectPool(Of T)
+  spec.csharp:
+  - uid: UnityEngine.Pool.IObjectPool`1
+    name: IObjectPool
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Pool.IObjectPool`1
+    name: IObjectPool
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Pool
+  commentId: N:UnityEngine.Pool
+  isExternal: true
+  name: UnityEngine.Pool
+  nameWithType: UnityEngine.Pool
+  fullName: UnityEngine.Pool
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Pool
+    name: Pool
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Pool
+    name: Pool
+    isExternal: true
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.CreateFunc*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.CreateFunc
+  href: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool-1.html#SombraStudios_Shared_Patterns_Creational_ObjectPool_BaseObjectPool_1_CreateFunc
+  name: CreateFunc
+  nameWithType: BaseObjectPool<T>.CreateFunc
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.CreateFunc
+  nameWithType.vb: BaseObjectPool(Of T).CreateFunc
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).CreateFunc
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnGet*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnGet
+  href: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool-1.html#SombraStudios_Shared_Patterns_Creational_ObjectPool_BaseObjectPool_1_ActionOnGet__0_
+  name: ActionOnGet
+  nameWithType: BaseObjectPool<T>.ActionOnGet
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.ActionOnGet
+  nameWithType.vb: BaseObjectPool(Of T).ActionOnGet
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).ActionOnGet
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnRelease*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnRelease
+  href: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool-1.html#SombraStudios_Shared_Patterns_Creational_ObjectPool_BaseObjectPool_1_ActionOnRelease__0_
+  name: ActionOnRelease
+  nameWithType: BaseObjectPool<T>.ActionOnRelease
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.ActionOnRelease
+  nameWithType.vb: BaseObjectPool(Of T).ActionOnRelease
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).ActionOnRelease
+- uid: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnDestroy*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool`1.ActionOnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool-1.html#SombraStudios_Shared_Patterns_Creational_ObjectPool_BaseObjectPool_1_ActionOnDestroy__0_
+  name: ActionOnDestroy
+  nameWithType: BaseObjectPool<T>.ActionOnDestroy
+  fullName: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool<T>.ActionOnDestroy
+  nameWithType.vb: BaseObjectPool(Of T).ActionOnDestroy
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.ObjectPool.BaseObjectPool(Of T).ActionOnDestroy

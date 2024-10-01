@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition
+  id: Transition
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.#ctor(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To
+  langs:
+  - csharp
+  - vb
+  name: Transition
+  nameWithType: Transition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/Transition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Transition
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/Transition.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: Implementation of a transition between states in a state machine using condition predicates.
+  example: []
+  syntax:
+    content: 'public class Transition : ITransition'
+    content.vb: Public Class Transition Implements ITransition
+  inheritance:
+  - System.Object
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To
+  id: To
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: Transition.To
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/Transition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: To
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/Transition.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: The state to transition to.
+  example: []
+  syntax:
+    content: public IState To { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+    content.vb: Public ReadOnly Property [To] As IState
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.To
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition
+  id: Condition
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: Transition.Condition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/Transition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Condition
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/Transition.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  summary: The condition predicate for the transition.
+  example: []
+  syntax:
+    content: public IPredicate Condition { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+    content.vb: Public ReadOnly Property Condition As IPredicate
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.Condition
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.#ctor(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.#ctor(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  id: '#ctor(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)'
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition
+  langs:
+  - csharp
+  - vb
+  name: Transition(IState, IPredicate)
+  nameWithType: Transition.Transition(IState, IPredicate)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Transition(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  type: Constructor
+  source:
+    remote:
+      path: Patterns/Behavioural/StateMachine/Transition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Patterns/Behavioural/StateMachine/Transition.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  syntax:
+    content: public Transition(IState to, IPredicate condition)
+    parameters:
+    - id: to
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+    - id: condition
+      type: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+    content.vb: Public Sub New([to] As IState, condition As IPredicate)
+  overload: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.#ctor*
+  nameWithType.vb: Transition.New(IState, IPredicate)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.New(SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate)
+  name.vb: New(IState, IPredicate)
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+    name: StateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+    name: StateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.html
+  name: ITransition
+  nameWithType: ITransition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_Transition_To
+  name: To
+  nameWithType: Transition.To
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.To
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.To
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.To
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_ITransition_To
+  name: To
+  nameWithType: ITransition.To
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.To
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_Transition_Condition
+  name: Condition
+  nameWithType: Transition.Condition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Condition
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.Condition
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.Condition
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_ITransition_Condition
+  name: Condition
+  nameWithType: ITransition.Condition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.ITransition.Condition
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+  parent: SombraStudios.Shared.Patterns.Behavioural.StateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate.html
+  name: IPredicate
+  nameWithType: IPredicate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.IPredicate
+- uid: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.#ctor*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.#ctor
+  href: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.html#SombraStudios_Shared_Patterns_Behavioural_StateMachine_Transition__ctor_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_StateMachine_IPredicate_
+  name: Transition
+  nameWithType: Transition.Transition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.Transition
+  nameWithType.vb: Transition.New
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StateMachine.Transition.New
+  name.vb: New

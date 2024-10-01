@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Extensions.ListExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ListExtensions
+  id: ListExtensions
+  parent: SombraStudios.Shared.Extensions
+  children:
+  - SombraStudios.Shared.Extensions.ListExtensions.Shuffle``1(System.Collections.Generic.IList{``0})
+  langs:
+  - csharp
+  - vb
+  name: ListExtensions
+  nameWithType: ListExtensions
+  fullName: SombraStudios.Shared.Extensions.ListExtensions
+  type: Class
+  source:
+    remote:
+      path: Extensions/ListExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ListExtensions
+    path: ../Assets/Sombra Studios/Shared/Extensions/ListExtensions.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Extension methods for IEnumerables
+  example: []
+  syntax:
+    content: public static class ListExtensions
+    content.vb: Public Module ListExtensions
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Extensions.ListExtensions.Shuffle``1(System.Collections.Generic.IList{``0})
+  commentId: M:SombraStudios.Shared.Extensions.ListExtensions.Shuffle``1(System.Collections.Generic.IList{``0})
+  id: Shuffle``1(System.Collections.Generic.IList{``0})
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.ListExtensions
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<T>(IList<T>)
+  nameWithType: ListExtensions.Shuffle<T>(IList<T>)
+  fullName: SombraStudios.Shared.Extensions.ListExtensions.Shuffle<T>(System.Collections.Generic.IList<T>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ListExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Shuffle
+    path: ../Assets/Sombra Studios/Shared/Extensions/ListExtensions.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: >-
+    Shuffles the elements in the list using the Durstenfeld implementation of the Fisher-Yates algorithm.
+
+    This method modifies the input list in-place, ensuring each permutation is equally likely, and returns the list for method chaining.
+
+    Reference: http://en.wikipedia.org/wiki/Fisher-Yates_shuffle
+  example: []
+  syntax:
+    content: public static IList<T> Shuffle<T>(this IList<T> list)
+    parameters:
+    - id: list
+      type: System.Collections.Generic.IList{{T}}
+      description: The list to be shuffled.
+    typeParameters:
+    - id: T
+      description: The type of the elements in the list.
+    return:
+      type: System.Collections.Generic.IList{{T}}
+      description: The shuffled list.
+    content.vb: Public Shared Function Shuffle(Of T)(list As IList(Of T)) As IList(Of T)
+  overload: SombraStudios.Shared.Extensions.ListExtensions.Shuffle*
+  nameWithType.vb: ListExtensions.Shuffle(Of T)(IList(Of T))
+  fullName.vb: SombraStudios.Shared.Extensions.ListExtensions.Shuffle(Of T)(System.Collections.Generic.IList(Of T))
+  name.vb: Shuffle(Of T)(IList(Of T))
+references:
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Extensions.ListExtensions.Shuffle*
+  commentId: Overload:SombraStudios.Shared.Extensions.ListExtensions.Shuffle
+  href: SombraStudios.Shared.Extensions.ListExtensions.html#SombraStudios_Shared_Extensions_ListExtensions_Shuffle__1_System_Collections_Generic_IList___0__
+  name: Shuffle
+  nameWithType: ListExtensions.Shuffle
+  fullName: SombraStudios.Shared.Extensions.ListExtensions.Shuffle
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

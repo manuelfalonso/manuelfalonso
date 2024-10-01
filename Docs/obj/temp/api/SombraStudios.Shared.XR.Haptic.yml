@@ -1,0 +1,296 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.XR.Haptic
+  commentId: T:SombraStudios.Shared.XR.Haptic
+  id: Haptic
+  parent: SombraStudios.Shared.XR
+  children:
+  - SombraStudios.Shared.XR.Haptic.Duration
+  - SombraStudios.Shared.XR.Haptic.Intensity
+  - SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs)
+  - SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  langs:
+  - csharp
+  - vb
+  name: Haptic
+  nameWithType: Haptic
+  fullName: SombraStudios.Shared.XR.Haptic
+  type: Class
+  source:
+    remote:
+      path: XR/HapticInteractable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Haptic
+    path: ../Assets/Sombra Studios/Shared/XR/HapticInteractable.cs
+    startLine: 155
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR
+  summary: Configuration for haptic feedback.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Haptic
+    content.vb: >-
+      <Serializable>
+
+      Public Class Haptic
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.XR.Haptic.Intensity
+  commentId: F:SombraStudios.Shared.XR.Haptic.Intensity
+  id: Intensity
+  parent: SombraStudios.Shared.XR.Haptic
+  langs:
+  - csharp
+  - vb
+  name: Intensity
+  nameWithType: Haptic.Intensity
+  fullName: SombraStudios.Shared.XR.Haptic.Intensity
+  type: Field
+  source:
+    remote:
+      path: XR/HapticInteractable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Intensity
+    path: ../Assets/Sombra Studios/Shared/XR/HapticInteractable.cs
+    startLine: 159
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR
+  syntax:
+    content: >-
+      [Range(0, 1)]
+
+      public float Intensity
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0, 1)>
+
+      Public Intensity As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SombraStudios.Shared.XR.Haptic.Duration
+  commentId: F:SombraStudios.Shared.XR.Haptic.Duration
+  id: Duration
+  parent: SombraStudios.Shared.XR.Haptic
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Haptic.Duration
+  fullName: SombraStudios.Shared.XR.Haptic.Duration
+  type: Field
+  source:
+    remote:
+      path: XR/HapticInteractable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Duration
+    path: ../Assets/Sombra Studios/Shared/XR/HapticInteractable.cs
+    startLine: 160
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR
+  syntax:
+    content: public float Duration
+    return:
+      type: System.Single
+    content.vb: Public Duration As Single
+- uid: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs)
+  commentId: M:SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs)
+  id: TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs)
+  parent: SombraStudios.Shared.XR.Haptic
+  langs:
+  - csharp
+  - vb
+  name: TriggerHaptic(BaseInteractionEventArgs)
+  nameWithType: Haptic.TriggerHaptic(BaseInteractionEventArgs)
+  fullName: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs)
+  type: Method
+  source:
+    remote:
+      path: XR/HapticInteractable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TriggerHaptic
+    path: ../Assets/Sombra Studios/Shared/XR/HapticInteractable.cs
+    startLine: 167
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR
+  summary: Triggers haptic feedback based on the provided interaction event arguments.
+  example: []
+  syntax:
+    content: public void TriggerHaptic(BaseInteractionEventArgs baseInteractionEventArgs)
+    parameters:
+    - id: baseInteractionEventArgs
+      type: UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
+      description: The interaction event arguments.
+    content.vb: Public Sub TriggerHaptic(baseInteractionEventArgs As BaseInteractionEventArgs)
+  overload: SombraStudios.Shared.XR.Haptic.TriggerHaptic*
+- uid: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  commentId: M:SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  id: TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  parent: SombraStudios.Shared.XR.Haptic
+  langs:
+  - csharp
+  - vb
+  name: TriggerHaptic(XRBaseControllerInteractor)
+  nameWithType: Haptic.TriggerHaptic(XRBaseControllerInteractor)
+  fullName: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  type: Method
+  source:
+    remote:
+      path: XR/HapticInteractable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TriggerHaptic
+    path: ../Assets/Sombra Studios/Shared/XR/HapticInteractable.cs
+    startLine: 179
+  assemblies:
+  - SombraStudios.Shared.XR
+  namespace: SombraStudios.Shared.XR
+  summary: Triggers haptic feedback on the provided controller interactor.
+  example: []
+  syntax:
+    content: public void TriggerHaptic(XRBaseControllerInteractor xRBaseControllerInteractor)
+    parameters:
+    - id: xRBaseControllerInteractor
+      type: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
+      description: The controller interactor to trigger haptic feedback on.
+    content.vb: Public Sub TriggerHaptic(xRBaseControllerInteractor As XRBaseControllerInteractor)
+  overload: SombraStudios.Shared.XR.Haptic.TriggerHaptic*
+references:
+- uid: SombraStudios.Shared.XR
+  commentId: N:SombraStudios.Shared.XR
+  href: SombraStudios.html
+  name: SombraStudios.Shared.XR
+  nameWithType: SombraStudios.Shared.XR
+  fullName: SombraStudios.Shared.XR
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.XR
+    name: XR
+    href: SombraStudios.Shared.XR.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.XR
+    name: XR
+    href: SombraStudios.Shared.XR.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.XR.Haptic.TriggerHaptic*
+  commentId: Overload:SombraStudios.Shared.XR.Haptic.TriggerHaptic
+  href: SombraStudios.Shared.XR.Haptic.html#SombraStudios_Shared_XR_Haptic_TriggerHaptic_UnityEngine_XR_Interaction_Toolkit_BaseInteractionEventArgs_
+  name: TriggerHaptic
+  nameWithType: Haptic.TriggerHaptic
+  fullName: SombraStudios.Shared.XR.Haptic.TriggerHaptic
+- uid: UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: BaseInteractionEventArgs
+  nameWithType: BaseInteractionEventArgs
+  fullName: UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
+- uid: UnityEngine.XR.Interaction.Toolkit
+  commentId: N:UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: UnityEngine.XR.Interaction.Toolkit
+  nameWithType: UnityEngine.XR.Interaction.Toolkit
+  fullName: UnityEngine.XR.Interaction.Toolkit
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: XRBaseControllerInteractor
+  nameWithType: XRBaseControllerInteractor
+  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor

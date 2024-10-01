@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem
+  commentId: T:SombraStudios.Shared.Systems.AmmoReloadSystem
+  id: AmmoReloadSystem
+  parent: SombraStudios.Shared.Systems
+  children:
+  - SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload
+  - SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize(System.Single)
+  - SombraStudios.Shared.Systems.AmmoReloadSystem.Reload
+  - SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingCanceled
+  - SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingFinished
+  - SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingStarted
+  langs:
+  - csharp
+  - vb
+  name: AmmoReloadSystem
+  nameWithType: AmmoReloadSystem
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem
+  type: Class
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmmoReloadSystem
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  summary: >-
+    Manages the state of the reloading system.
+
+    Invokes events with the changes of state
+  example: []
+  syntax:
+    content: 'public class AmmoReloadSystem : MonoBehaviour'
+    content.vb: Public Class AmmoReloadSystem Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingStarted
+  commentId: E:SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingStarted
+  id: ReloadingStarted
+  parent: SombraStudios.Shared.Systems.AmmoReloadSystem
+  langs:
+  - csharp
+  - vb
+  name: ReloadingStarted
+  nameWithType: AmmoReloadSystem.ReloadingStarted
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingStarted
+  type: Event
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReloadingStarted
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  syntax:
+    content: public event EventHandler ReloadingStarted
+    return:
+      type: System.EventHandler
+    content.vb: Public Event ReloadingStarted As EventHandler
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingCanceled
+  commentId: E:SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingCanceled
+  id: ReloadingCanceled
+  parent: SombraStudios.Shared.Systems.AmmoReloadSystem
+  langs:
+  - csharp
+  - vb
+  name: ReloadingCanceled
+  nameWithType: AmmoReloadSystem.ReloadingCanceled
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingCanceled
+  type: Event
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReloadingCanceled
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  syntax:
+    content: public event EventHandler ReloadingCanceled
+    return:
+      type: System.EventHandler
+    content.vb: Public Event ReloadingCanceled As EventHandler
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingFinished
+  commentId: E:SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingFinished
+  id: ReloadingFinished
+  parent: SombraStudios.Shared.Systems.AmmoReloadSystem
+  langs:
+  - csharp
+  - vb
+  name: ReloadingFinished
+  nameWithType: AmmoReloadSystem.ReloadingFinished
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.ReloadingFinished
+  type: Event
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReloadingFinished
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  syntax:
+    content: public event EventHandler ReloadingFinished
+    return:
+      type: System.EventHandler
+    content.vb: Public Event ReloadingFinished As EventHandler
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize(System.Single)
+  id: Initialize(System.Single)
+  parent: SombraStudios.Shared.Systems.AmmoReloadSystem
+  langs:
+  - csharp
+  - vb
+  name: Initialize(float)
+  nameWithType: AmmoReloadSystem.Initialize(float)
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize(float)
+  type: Method
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Initialize
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  syntax:
+    content: public void Initialize(float reloadTime)
+    parameters:
+    - id: reloadTime
+      type: System.Single
+    content.vb: Public Sub Initialize(reloadTime As Single)
+  overload: SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize*
+  nameWithType.vb: AmmoReloadSystem.Initialize(Single)
+  fullName.vb: SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize(Single)
+  name.vb: Initialize(Single)
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.Reload
+  commentId: M:SombraStudios.Shared.Systems.AmmoReloadSystem.Reload
+  id: Reload
+  parent: SombraStudios.Shared.Systems.AmmoReloadSystem
+  langs:
+  - csharp
+  - vb
+  name: Reload()
+  nameWithType: AmmoReloadSystem.Reload()
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.Reload()
+  type: Method
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reload
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  syntax:
+    content: public void Reload()
+    content.vb: Public Sub Reload()
+  overload: SombraStudios.Shared.Systems.AmmoReloadSystem.Reload*
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload
+  commentId: M:SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload
+  id: CancelReload
+  parent: SombraStudios.Shared.Systems.AmmoReloadSystem
+  langs:
+  - csharp
+  - vb
+  name: CancelReload()
+  nameWithType: AmmoReloadSystem.CancelReload()
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload()
+  type: Method
+  source:
+    remote:
+      path: Systems/AmmoReloadSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CancelReload
+    path: ../Assets/Sombra Studios/Shared/Systems/AmmoReloadSystem.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems
+  syntax:
+    content: public void CancelReload()
+    content.vb: Public Sub CancelReload()
+  overload: SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload*
+references:
+- uid: SombraStudios.Shared.Systems
+  commentId: N:SombraStudios.Shared.Systems
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems
+  nameWithType: SombraStudios.Shared.Systems
+  fullName: SombraStudios.Shared.Systems
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize*
+  commentId: Overload:SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize
+  href: SombraStudios.Shared.Systems.AmmoReloadSystem.html#SombraStudios_Shared_Systems_AmmoReloadSystem_Initialize_System_Single_
+  name: Initialize
+  nameWithType: AmmoReloadSystem.Initialize
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.Initialize
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.Reload*
+  commentId: Overload:SombraStudios.Shared.Systems.AmmoReloadSystem.Reload
+  href: SombraStudios.Shared.Systems.AmmoReloadSystem.html#SombraStudios_Shared_Systems_AmmoReloadSystem_Reload
+  name: Reload
+  nameWithType: AmmoReloadSystem.Reload
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.Reload
+- uid: SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload*
+  commentId: Overload:SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload
+  href: SombraStudios.Shared.Systems.AmmoReloadSystem.html#SombraStudios_Shared_Systems_AmmoReloadSystem_CancelReload
+  name: CancelReload
+  nameWithType: AmmoReloadSystem.CancelReload
+  fullName: SombraStudios.Shared.Systems.AmmoReloadSystem.CancelReload

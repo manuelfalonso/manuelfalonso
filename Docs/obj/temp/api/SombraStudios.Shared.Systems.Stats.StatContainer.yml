@@ -1,0 +1,387 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatContainer
+  id: StatContainer
+  parent: SombraStudios.Shared.Systems.Stats
+  children:
+  - SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)
+  - SombraStudios.Shared.Systems.Stats.StatContainer.Stats
+  - SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue``1(System.String,``0@)
+  langs:
+  - csharp
+  - vb
+  name: StatContainer
+  nameWithType: StatContainer
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer
+  type: Class
+  source:
+    remote:
+      path: Systems/Stats/StatContainer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StatContainer
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatContainer.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Represents a container for stats.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class StatContainer
+    content.vb: >-
+      <Serializable>
+
+      Public Class StatContainer
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.Stats
+  commentId: P:SombraStudios.Shared.Systems.Stats.StatContainer.Stats
+  id: Stats
+  parent: SombraStudios.Shared.Systems.Stats.StatContainer
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: StatContainer.Stats
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.Stats
+  type: Property
+  source:
+    remote:
+      path: Systems/Stats/StatContainer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Stats
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatContainer.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Gets the dictionary of stats.
+  example: []
+  syntax:
+    content: public Dictionary<string, IBaseStat> Stats { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Systems.Stats.IBaseStat}
+    content.vb: Public ReadOnly Property Stats As Dictionary(Of String, IBaseStat)
+  overload: SombraStudios.Shared.Systems.Stats.StatContainer.Stats*
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)
+  id: '#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)'
+  parent: SombraStudios.Shared.Systems.Stats.StatContainer
+  langs:
+  - csharp
+  - vb
+  name: StatContainer(StatSheet)
+  nameWithType: StatContainer.StatContainer(StatSheet)
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.StatContainer(SombraStudios.Shared.Systems.Stats.StatSheet)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Stats/StatContainer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatContainer.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Constructs a new stat container with a stat sheet.
+  example: []
+  syntax:
+    content: public StatContainer(StatSheet statSheet)
+    parameters:
+    - id: statSheet
+      type: SombraStudios.Shared.Systems.Stats.StatSheet
+      description: The stat sheet to use for initializing the container.
+    content.vb: Public Sub New(statSheet As StatSheet)
+  overload: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor*
+  nameWithType.vb: StatContainer.New(StatSheet)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatContainer.New(SombraStudios.Shared.Systems.Stats.StatSheet)
+  name.vb: New(StatSheet)
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue``1(System.String,``0@)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue``1(System.String,``0@)
+  id: TryGetValue``1(System.String,``0@)
+  parent: SombraStudios.Shared.Systems.Stats.StatContainer
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue<T>(string, out T)
+  nameWithType: StatContainer.TryGetValue<T>(string, out T)
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue<T>(string, out T)
+  type: Method
+  source:
+    remote:
+      path: Systems/Stats/StatContainer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryGetValue
+    path: ../Assets/Sombra Studios/Shared/Systems/Stats/StatContainer.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Stats
+  summary: Tries to get the value of a stat.
+  example: []
+  syntax:
+    content: public bool TryGetValue<T>(string statName, out T value)
+    parameters:
+    - id: statName
+      type: System.String
+      description: The name of the stat.
+    - id: value
+      type: '{T}'
+      description: The value of the stat, if found.
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+      description: True if the stat was found, false otherwise.
+    content.vb: Public Function TryGetValue(Of T)(statName As String, value As T) As Boolean
+  overload: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue*
+  nameWithType.vb: StatContainer.TryGetValue(Of T)(String, T)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue(Of T)(String, T)
+  name.vb: TryGetValue(Of T)(String, T)
+references:
+- uid: SombraStudios.Shared.Systems.Stats
+  commentId: N:SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Stats
+  nameWithType: SombraStudios.Shared.Systems.Stats
+  fullName: SombraStudios.Shared.Systems.Stats
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Stats
+    name: Stats
+    href: SombraStudios.Shared.Systems.Stats.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.Stats*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatContainer.Stats
+  href: SombraStudios.Shared.Systems.Stats.StatContainer.html#SombraStudios_Shared_Systems_Stats_StatContainer_Stats
+  name: Stats
+  nameWithType: StatContainer.Stats
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.Stats
+- uid: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Systems.Stats.IBaseStat}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Systems.Stats.IBaseStat}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, IBaseStat>
+  nameWithType: Dictionary<string, IBaseStat>
+  fullName: System.Collections.Generic.Dictionary<string, SombraStudios.Shared.Systems.Stats.IBaseStat>
+  nameWithType.vb: Dictionary(Of String, IBaseStat)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, SombraStudios.Shared.Systems.Stats.IBaseStat)
+  name.vb: Dictionary(Of String, IBaseStat)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Stats.IBaseStat
+    name: IBaseStat
+    href: SombraStudios.Shared.Systems.Stats.IBaseStat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Stats.IBaseStat
+    name: IBaseStat
+    href: SombraStudios.Shared.Systems.Stats.IBaseStat.html
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatContainer.#ctor
+  href: SombraStudios.Shared.Systems.Stats.StatContainer.html#SombraStudios_Shared_Systems_Stats_StatContainer__ctor_SombraStudios_Shared_Systems_Stats_StatSheet_
+  name: StatContainer
+  nameWithType: StatContainer.StatContainer
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.StatContainer
+  nameWithType.vb: StatContainer.New
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatContainer.New
+  name.vb: New
+- uid: SombraStudios.Shared.Systems.Stats.StatSheet
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatSheet
+  parent: SombraStudios.Shared.Systems.Stats
+  href: SombraStudios.Shared.Systems.Stats.StatSheet.html
+  name: StatSheet
+  nameWithType: StatSheet
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheet
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue*
+  commentId: Overload:SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue
+  href: SombraStudios.Shared.Systems.Stats.StatContainer.html#SombraStudios_Shared_Systems_Stats_StatContainer_TryGetValue__1_System_String___0__
+  name: TryGetValue
+  nameWithType: StatContainer.TryGetValue
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

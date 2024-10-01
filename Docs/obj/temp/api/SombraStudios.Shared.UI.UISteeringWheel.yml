@@ -1,0 +1,952 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.UI.UISteeringWheel
+  commentId: T:SombraStudios.Shared.UI.UISteeringWheel
+  id: UISteeringWheel
+  parent: SombraStudios.Shared.UI
+  children:
+  - SombraStudios.Shared.UI.UISteeringWheel.DragEvent(UnityEngine.EventSystems.BaseEventData)
+  - SombraStudios.Shared.UI.UISteeringWheel.GetAngle
+  - SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue
+  - SombraStudios.Shared.UI.UISteeringWheel.MaximumSteeringAngle
+  - SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelAngleChanged
+  - SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelClampedValueChanged
+  - SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelHeld
+  - SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelReleased
+  - SombraStudios.Shared.UI.UISteeringWheel.PressEvent(UnityEngine.EventSystems.BaseEventData)
+  - SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent(UnityEngine.EventSystems.BaseEventData)
+  - SombraStudios.Shared.UI.UISteeringWheel.UI_Element
+  - SombraStudios.Shared.UI.UISteeringWheel.WheelAngle
+  - SombraStudios.Shared.UI.UISteeringWheel.WheelReleasedSpeed
+  langs:
+  - csharp
+  - vb
+  name: UISteeringWheel
+  nameWithType: UISteeringWheel
+  fullName: SombraStudios.Shared.UI.UISteeringWheel
+  type: Class
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UISteeringWheel
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: >-
+    Represents a UI steering wheel control.
+
+    Credits to yasirkula for the original script.
+
+    https://forum.unity.com/threads/touchscreen-steering-wheel-rotation-example-mouse-supported.196741/
+  example: []
+  syntax:
+    content: 'public class UISteeringWheel : MonoBehaviour'
+    content.vb: Public Class UISteeringWheel Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.UI.UISteeringWheel.UI_Element
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.UI_Element
+  id: UI_Element
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: UI_Element
+  nameWithType: UISteeringWheel.UI_Element
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.UI_Element
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UI_Element
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  syntax:
+    content: >-
+      [Header("References")]
+
+      [Tooltip("Image that will act as the steering wheel")]
+
+      public Graphic UI_Element
+    return:
+      type: UnityEngine.UI.Graphic
+    content.vb: >-
+      <Header("References")>
+
+      <Tooltip("Image that will act as the steering wheel")>
+
+      Public UI_Element As Graphic
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: References
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Image that will act as the steering wheel
+- uid: SombraStudios.Shared.UI.UISteeringWheel.MaximumSteeringAngle
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.MaximumSteeringAngle
+  id: MaximumSteeringAngle
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: MaximumSteeringAngle
+  nameWithType: UISteeringWheel.MaximumSteeringAngle
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.MaximumSteeringAngle
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaximumSteeringAngle
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  syntax:
+    content: >-
+      [Header("Settings")]
+
+      [Tooltip("Maximum steering wheel angle in degrees from center rotation")]
+
+      public float MaximumSteeringAngle
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Settings")>
+
+      <Tooltip("Maximum steering wheel angle in degrees from center rotation")>
+
+      Public MaximumSteeringAngle As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Settings
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Maximum steering wheel angle in degrees from center rotation
+- uid: SombraStudios.Shared.UI.UISteeringWheel.WheelReleasedSpeed
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.WheelReleasedSpeed
+  id: WheelReleasedSpeed
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: WheelReleasedSpeed
+  nameWithType: UISteeringWheel.WheelReleasedSpeed
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.WheelReleasedSpeed
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: WheelReleasedSpeed
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Wheel angle at which the motor starts rotating.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Wheel angle at which the motor starts rotating")]
+
+      public float WheelReleasedSpeed
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Wheel angle at which the motor starts rotating")>
+
+      Public WheelReleasedSpeed As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Wheel angle at which the motor starts rotating
+- uid: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelClampedValueChanged
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelClampedValueChanged
+  id: OnSteeringWheelClampedValueChanged
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: OnSteeringWheelClampedValueChanged
+  nameWithType: UISteeringWheel.OnSteeringWheelClampedValueChanged
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelClampedValueChanged
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnSteeringWheelClampedValueChanged
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  syntax:
+    content: >-
+      [Header("Events")]
+
+      [Tooltip("Event invoked when the clamped value of the steering wheel changes")]
+
+      public UnityEvent<float> OnSteeringWheelClampedValueChanged
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Header("Events")>
+
+      <Tooltip("Event invoked when the clamped value of the steering wheel changes")>
+
+      Public OnSteeringWheelClampedValueChanged As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the clamped value of the steering wheel changes
+- uid: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelAngleChanged
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelAngleChanged
+  id: OnSteeringWheelAngleChanged
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: OnSteeringWheelAngleChanged
+  nameWithType: UISteeringWheel.OnSteeringWheelAngleChanged
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelAngleChanged
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnSteeringWheelAngleChanged
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Event invoked when the angle of the steering wheel changes.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the angle of the steering wheel changes")]
+
+      public UnityEvent<float> OnSteeringWheelAngleChanged
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Single}
+    content.vb: >-
+      <Tooltip("Event invoked when the angle of the steering wheel changes")>
+
+      Public OnSteeringWheelAngleChanged As UnityEvent(Of Single)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the angle of the steering wheel changes
+- uid: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelHeld
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelHeld
+  id: OnSteeringWheelHeld
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: OnSteeringWheelHeld
+  nameWithType: UISteeringWheel.OnSteeringWheelHeld
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelHeld
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnSteeringWheelHeld
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Event invoked when the steering wheel is being held.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the steering wheel is being held")]
+
+      public UnityEvent OnSteeringWheelHeld
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Event invoked when the steering wheel is being held")>
+
+      Public OnSteeringWheelHeld As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the steering wheel is being held
+- uid: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelReleased
+  commentId: F:SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelReleased
+  id: OnSteeringWheelReleased
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: OnSteeringWheelReleased
+  nameWithType: UISteeringWheel.OnSteeringWheelReleased
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.OnSteeringWheelReleased
+  type: Field
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnSteeringWheelReleased
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Event invoked when the steering wheel is released.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event invoked when the steering wheel is released")]
+
+      public UnityEvent OnSteeringWheelReleased
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Tooltip("Event invoked when the steering wheel is released")>
+
+      Public OnSteeringWheelReleased As UnityEvent
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event invoked when the steering wheel is released
+- uid: SombraStudios.Shared.UI.UISteeringWheel.WheelAngle
+  commentId: P:SombraStudios.Shared.UI.UISteeringWheel.WheelAngle
+  id: WheelAngle
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: WheelAngle
+  nameWithType: UISteeringWheel.WheelAngle
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.WheelAngle
+  type: Property
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: WheelAngle
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 63
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  syntax:
+    content: public float WheelAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property WheelAngle As Single
+  overload: SombraStudios.Shared.UI.UISteeringWheel.WheelAngle*
+- uid: SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue
+  commentId: M:SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue
+  id: GetClampedValue
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: GetClampedValue()
+  nameWithType: UISteeringWheel.GetClampedValue()
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue()
+  type: Method
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetClampedValue
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 96
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Gets the clamped value of the steering wheel.
+  example: []
+  syntax:
+    content: public float GetClampedValue()
+    return:
+      type: System.Single
+      description: The clamped value in the range [-1, 1].
+    content.vb: Public Function GetClampedValue() As Single
+  overload: SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue*
+- uid: SombraStudios.Shared.UI.UISteeringWheel.GetAngle
+  commentId: M:SombraStudios.Shared.UI.UISteeringWheel.GetAngle
+  id: GetAngle
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: GetAngle()
+  nameWithType: UISteeringWheel.GetAngle()
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.GetAngle()
+  type: Method
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetAngle
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 106
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Gets the angle of the steering wheel.
+  example: []
+  syntax:
+    content: public float GetAngle()
+    return:
+      type: System.Single
+      description: The angle of the steering wheel.
+    content.vb: Public Function GetAngle() As Single
+  overload: SombraStudios.Shared.UI.UISteeringWheel.GetAngle*
+- uid: SombraStudios.Shared.UI.UISteeringWheel.PressEvent(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:SombraStudios.Shared.UI.UISteeringWheel.PressEvent(UnityEngine.EventSystems.BaseEventData)
+  id: PressEvent(UnityEngine.EventSystems.BaseEventData)
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: PressEvent(BaseEventData)
+  nameWithType: UISteeringWheel.PressEvent(BaseEventData)
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.PressEvent(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PressEvent
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 190
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Handles the pointer down event.
+  example: []
+  syntax:
+    content: public void PressEvent(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+      description: The event data.
+    content.vb: Public Sub PressEvent(eventData As BaseEventData)
+  overload: SombraStudios.Shared.UI.UISteeringWheel.PressEvent*
+- uid: SombraStudios.Shared.UI.UISteeringWheel.DragEvent(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:SombraStudios.Shared.UI.UISteeringWheel.DragEvent(UnityEngine.EventSystems.BaseEventData)
+  id: DragEvent(UnityEngine.EventSystems.BaseEventData)
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: DragEvent(BaseEventData)
+  nameWithType: UISteeringWheel.DragEvent(BaseEventData)
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.DragEvent(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DragEvent
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 205
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Handles the drag event.
+  example: []
+  syntax:
+    content: public void DragEvent(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+      description: The event data.
+    content.vb: Public Sub DragEvent(eventData As BaseEventData)
+  overload: SombraStudios.Shared.UI.UISteeringWheel.DragEvent*
+- uid: SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent(UnityEngine.EventSystems.BaseEventData)
+  id: ReleaseEvent(UnityEngine.EventSystems.BaseEventData)
+  parent: SombraStudios.Shared.UI.UISteeringWheel
+  langs:
+  - csharp
+  - vb
+  name: ReleaseEvent(BaseEventData)
+  nameWithType: UISteeringWheel.ReleaseEvent(BaseEventData)
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: UI/UISteeringWheel.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReleaseEvent
+    path: ../Assets/Sombra Studios/Shared/UI/UISteeringWheel.cs
+    startLine: 228
+  assemblies:
+  - SombraStudios.Shared.UI
+  namespace: SombraStudios.Shared.UI
+  summary: Handles the pointer up event.
+  example: []
+  syntax:
+    content: public void ReleaseEvent(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+      description: The event data.
+    content.vb: Public Sub ReleaseEvent(eventData As BaseEventData)
+  overload: SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent*
+references:
+- uid: SombraStudios.Shared.UI
+  commentId: N:SombraStudios.Shared.UI
+  href: SombraStudios.html
+  name: SombraStudios.Shared.UI
+  nameWithType: SombraStudios.Shared.UI
+  fullName: SombraStudios.Shared.UI
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.UI
+    name: UI
+    href: SombraStudios.Shared.UI.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.UI
+    name: UI
+    href: SombraStudios.Shared.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.UI.Graphic
+  commentId: T:UnityEngine.UI.Graphic
+  parent: UnityEngine.UI
+  isExternal: true
+  name: Graphic
+  nameWithType: Graphic
+  fullName: UnityEngine.UI.Graphic
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  isExternal: true
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    isExternal: true
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Events.UnityEvent{System.Single}
+  commentId: T:UnityEngine.Events.UnityEvent{System.Single}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: UnityEvent<float>
+  nameWithType: UnityEvent<float>
+  fullName: UnityEngine.Events.UnityEvent<float>
+  nameWithType.vb: UnityEvent(Of Single)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of Single)
+  name.vb: UnityEvent(Of Single)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: SombraStudios.Shared.UI.UISteeringWheel.WheelAngle*
+  commentId: Overload:SombraStudios.Shared.UI.UISteeringWheel.WheelAngle
+  href: SombraStudios.Shared.UI.UISteeringWheel.html#SombraStudios_Shared_UI_UISteeringWheel_WheelAngle
+  name: WheelAngle
+  nameWithType: UISteeringWheel.WheelAngle
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.WheelAngle
+- uid: SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue*
+  commentId: Overload:SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue
+  href: SombraStudios.Shared.UI.UISteeringWheel.html#SombraStudios_Shared_UI_UISteeringWheel_GetClampedValue
+  name: GetClampedValue
+  nameWithType: UISteeringWheel.GetClampedValue
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.GetClampedValue
+- uid: SombraStudios.Shared.UI.UISteeringWheel.GetAngle*
+  commentId: Overload:SombraStudios.Shared.UI.UISteeringWheel.GetAngle
+  href: SombraStudios.Shared.UI.UISteeringWheel.html#SombraStudios_Shared_UI_UISteeringWheel_GetAngle
+  name: GetAngle
+  nameWithType: UISteeringWheel.GetAngle
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.GetAngle
+- uid: SombraStudios.Shared.UI.UISteeringWheel.PressEvent*
+  commentId: Overload:SombraStudios.Shared.UI.UISteeringWheel.PressEvent
+  href: SombraStudios.Shared.UI.UISteeringWheel.html#SombraStudios_Shared_UI_UISteeringWheel_PressEvent_UnityEngine_EventSystems_BaseEventData_
+  name: PressEvent
+  nameWithType: UISteeringWheel.PressEvent
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.PressEvent
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: SombraStudios.Shared.UI.UISteeringWheel.DragEvent*
+  commentId: Overload:SombraStudios.Shared.UI.UISteeringWheel.DragEvent
+  href: SombraStudios.Shared.UI.UISteeringWheel.html#SombraStudios_Shared_UI_UISteeringWheel_DragEvent_UnityEngine_EventSystems_BaseEventData_
+  name: DragEvent
+  nameWithType: UISteeringWheel.DragEvent
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.DragEvent
+- uid: SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent*
+  commentId: Overload:SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent
+  href: SombraStudios.Shared.UI.UISteeringWheel.html#SombraStudios_Shared_UI_UISteeringWheel_ReleaseEvent_UnityEngine_EventSystems_BaseEventData_
+  name: ReleaseEvent
+  nameWithType: UISteeringWheel.ReleaseEvent
+  fullName: SombraStudios.Shared.UI.UISteeringWheel.ReleaseEvent

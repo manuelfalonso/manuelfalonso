@@ -1,0 +1,436 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  commentId: T:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  id: IGizmoGUITexture
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  children:
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder
+  langs:
+  - csharp
+  - vb
+  name: IGizmoGUITexture
+  nameWithType: IGizmoGUITexture
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  type: Interface
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IGizmoGUITexture
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Defines the interface for a Gizmo that represents a GUI texture in Unity.
+  example: []
+  syntax:
+    content: 'public interface IGizmoGUITexture : IGizmo'
+    content.vb: Public Interface IGizmoGUITexture Inherits IGizmo
+  inheritedMembers:
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.MonoBehaviour
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosEnabled
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosColor
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.ShowOnlyInPlayMode
+  - SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.IsLocalPosition
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect
+  id: GUITextureScreenRect
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureScreenRect
+  nameWithType: IGizmoGUITexture.GUITextureScreenRect
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureScreenRect
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the screen rectangle for the GUI Texture.
+  example: []
+  syntax:
+    content: Rect GUITextureScreenRect { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Rect
+    content.vb: Property GUITextureScreenRect As Rect
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect*
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture
+  id: GUITextureTexture
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureTexture
+  nameWithType: IGizmoGUITexture.GUITextureTexture
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureTexture
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the Texture object for the GUI Texture.
+  example: []
+  syntax:
+    content: Texture GUITextureTexture { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Texture
+    content.vb: Property GUITextureTexture As Texture
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture*
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder
+  id: GUITextureLeftBorder
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureLeftBorder
+  nameWithType: IGizmoGUITexture.GUITextureLeftBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureLeftBorder
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the left border size for the GUI Texture.
+  example: []
+  syntax:
+    content: int GUITextureLeftBorder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property GUITextureLeftBorder As Integer
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder*
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder
+  id: GUITextureRightBorder
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureRightBorder
+  nameWithType: IGizmoGUITexture.GUITextureRightBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureRightBorder
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the right border size for the GUI Texture.
+  example: []
+  syntax:
+    content: int GUITextureRightBorder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property GUITextureRightBorder As Integer
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder*
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder
+  id: GUITextureTopBorder
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureTopBorder
+  nameWithType: IGizmoGUITexture.GUITextureTopBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureTopBorder
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the top border size for the GUI Texture.
+  example: []
+  syntax:
+    content: int GUITextureTopBorder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property GUITextureTopBorder As Integer
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder*
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder
+  id: GUITextureBottomBorder
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureBottomBorder
+  nameWithType: IGizmoGUITexture.GUITextureBottomBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureBottomBorder
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the bottom border size for the GUI Texture.
+  example: []
+  syntax:
+    content: int GUITextureBottomBorder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property GUITextureBottomBorder As Integer
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder*
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial
+  id: GUITextureMaterial
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture
+  langs:
+  - csharp
+  - vb
+  name: GUITextureMaterial
+  nameWithType: IGizmoGUITexture.GUITextureMaterial
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial
+  type: Property
+  source:
+    remote:
+      path: Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GUITextureMaterial
+    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Interfaces/IGizmoGUITexture.cs
+    startLine: 36
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  summary: Gets or sets the Material object for the GUI Texture.
+  example: []
+  syntax:
+    content: Material GUITextureMaterial { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Material
+    content.vb: Property GUITextureMaterial As Material
+  overload: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial*
+references:
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  commentId: N:SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  nameWithType: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.UnityGizmos
+    name: UnityGizmos
+    href: SombraStudios.Shared.Utility.UnityGizmos.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.UnityGizmos
+    name: UnityGizmos
+    href: SombraStudios.Shared.Utility.UnityGizmos.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.html
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.MonoBehaviour
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.MonoBehaviour
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmo_MonoBehaviour
+  name: MonoBehaviour
+  nameWithType: IGizmo.MonoBehaviour
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.MonoBehaviour
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosEnabled
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosEnabled
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmo_GizmosEnabled
+  name: GizmosEnabled
+  nameWithType: IGizmo.GizmosEnabled
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosEnabled
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosColor
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosColor
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmo_GizmosColor
+  name: GizmosColor
+  nameWithType: IGizmo.GizmosColor
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.GizmosColor
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.ShowOnlyInPlayMode
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.ShowOnlyInPlayMode
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmo_ShowOnlyInPlayMode
+  name: ShowOnlyInPlayMode
+  nameWithType: IGizmo.ShowOnlyInPlayMode
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.ShowOnlyInPlayMode
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.IsLocalPosition
+  commentId: P:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.IsLocalPosition
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmo_IsLocalPosition
+  name: IsLocalPosition
+  nameWithType: IGizmo.IsLocalPosition
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.IsLocalPosition
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  commentId: T:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+  parent: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo.html
+  name: IGizmo
+  nameWithType: IGizmo
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmo
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureScreenRect
+  name: GUITextureScreenRect
+  nameWithType: IGizmoGUITexture.GUITextureScreenRect
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureScreenRect
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureTexture
+  name: GUITextureTexture
+  nameWithType: IGizmoGUITexture.GUITextureTexture
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTexture
+- uid: UnityEngine.Texture
+  commentId: T:UnityEngine.Texture
+  parent: UnityEngine
+  isExternal: true
+  name: Texture
+  nameWithType: Texture
+  fullName: UnityEngine.Texture
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureLeftBorder
+  name: GUITextureLeftBorder
+  nameWithType: IGizmoGUITexture.GUITextureLeftBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureLeftBorder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureRightBorder
+  name: GUITextureRightBorder
+  nameWithType: IGizmoGUITexture.GUITextureRightBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureRightBorder
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureTopBorder
+  name: GUITextureTopBorder
+  nameWithType: IGizmoGUITexture.GUITextureTopBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureTopBorder
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureBottomBorder
+  name: GUITextureBottomBorder
+  nameWithType: IGizmoGUITexture.GUITextureBottomBorder
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureBottomBorder
+- uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial*
+  commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial
+  href: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.html#SombraStudios_Shared_Utility_UnityGizmos_Interfaces_IGizmoGUITexture_GUITextureMaterial
+  name: GUITextureMaterial
+  nameWithType: IGizmoGUITexture.GUITextureMaterial
+  fullName: SombraStudios.Shared.Utility.UnityGizmos.Interfaces.IGizmoGUITexture.GUITextureMaterial
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material

@@ -1,0 +1,387 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceBase
+  id: ResourceBase
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.ResourceBase.#ctor(System.String,System.String)
+  - SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource(System.Single)
+  - SombraStudios.Shared.Systems.Resource.ResourceBase.Description
+  - SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource(System.Single)
+  - SombraStudios.Shared.Systems.Resource.ResourceBase.Name
+  - SombraStudios.Shared.Systems.Resource.ResourceBase.ToString
+  langs:
+  - csharp
+  - vb
+  name: ResourceBase
+  nameWithType: ResourceBase
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResourceBase
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: >-
+    Base class for all resources.
+
+    A Resource has a Name and description and it can be increased and decreased.
+  example: []
+  syntax:
+    content: public abstract class ResourceBase
+    content.vb: Public MustInherit Class ResourceBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Resource.Resource
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.Name
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceBase.Name
+  id: Name
+  parent: SombraStudios.Shared.Systems.Resource.ResourceBase
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ResourceBase.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.Name
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Name
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the name of the resource.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: SombraStudios.Shared.Systems.Resource.ResourceBase.Name*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.Description
+  commentId: P:SombraStudios.Shared.Systems.Resource.ResourceBase.Description
+  id: Description
+  parent: SombraStudios.Shared.Systems.Resource.ResourceBase
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ResourceBase.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.Description
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the description of the resource.
+  example: []
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SombraStudios.Shared.Systems.Resource.ResourceBase.Description*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.#ctor(System.String,System.String)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceBase.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: SombraStudios.Shared.Systems.Resource.ResourceBase
+  langs:
+  - csharp
+  - vb
+  name: ResourceBase(string, string)
+  nameWithType: ResourceBase.ResourceBase(string, string)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.ResourceBase(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Initializes a new instance of the ResourceBase class.
+  example: []
+  syntax:
+    content: protected ResourceBase(string name, string description)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the resource.
+    - id: description
+      type: System.String
+      description: The description of the resource.
+    content.vb: Protected Sub New(name As String, description As String)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceBase.#ctor*
+  nameWithType.vb: ResourceBase.New(String, String)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceBase.New(String, String)
+  name.vb: New(String, String)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.ToString
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceBase.ToString
+  id: ToString
+  parent: SombraStudios.Shared.Systems.Resource.ResourceBase
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ResourceBase.ToString()
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.ToString()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ToString
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Returns a string representation of the resource.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representing the resource.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SombraStudios.Shared.Systems.Resource.ResourceBase.ToString*
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource(System.Single)
+  id: IncreaseResource(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceBase
+  langs:
+  - csharp
+  - vb
+  name: IncreaseResource(float)
+  nameWithType: ResourceBase.IncreaseResource(float)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource(float)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IncreaseResource
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 44
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Increases the resource by the specified amount.
+  example: []
+  syntax:
+    content: protected abstract void IncreaseResource(float amountToIncrease)
+    parameters:
+    - id: amountToIncrease
+      type: System.Single
+      description: The amount to increase the resource by.
+    content.vb: Protected MustOverride Sub IncreaseResource(amountToIncrease As Single)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource*
+  nameWithType.vb: ResourceBase.IncreaseResource(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource(Single)
+  name.vb: IncreaseResource(Single)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource(System.Single)
+  id: DecreaseResource(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceBase
+  langs:
+  - csharp
+  - vb
+  name: DecreaseResource(float)
+  nameWithType: ResourceBase.DecreaseResource(float)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource(float)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/ResourceBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseResource
+    path: ../Assets/Sombra Studios/Shared/Systems/Resource/ResourceBase.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Decreases the resource by the specified amount.
+  example: []
+  syntax:
+    content: protected abstract void DecreaseResource(float amountToDecrease)
+    parameters:
+    - id: amountToDecrease
+      type: System.Single
+      description: The amount to decrease the resource by.
+    content.vb: Protected MustOverride Sub DecreaseResource(amountToDecrease As Single)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource*
+  nameWithType.vb: ResourceBase.DecreaseResource(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource(Single)
+  name.vb: DecreaseResource(Single)
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.Name*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceBase.Name
+  href: SombraStudios.Shared.Systems.Resource.ResourceBase.html#SombraStudios_Shared_Systems_Resource_ResourceBase_Name
+  name: Name
+  nameWithType: ResourceBase.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.Description*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceBase.Description
+  href: SombraStudios.Shared.Systems.Resource.ResourceBase.html#SombraStudios_Shared_Systems_Resource_ResourceBase_Description
+  name: Description
+  nameWithType: ResourceBase.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.Description
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceBase.#ctor
+  href: SombraStudios.Shared.Systems.Resource.ResourceBase.html#SombraStudios_Shared_Systems_Resource_ResourceBase__ctor_System_String_System_String_
+  name: ResourceBase
+  nameWithType: ResourceBase.ResourceBase
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.ResourceBase
+  nameWithType.vb: ResourceBase.New
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceBase.New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.ToString*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceBase.ToString
+  href: SombraStudios.Shared.Systems.Resource.ResourceBase.html#SombraStudios_Shared_Systems_Resource_ResourceBase_ToString
+  name: ToString
+  nameWithType: ResourceBase.ToString
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.ToString
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource
+  href: SombraStudios.Shared.Systems.Resource.ResourceBase.html#SombraStudios_Shared_Systems_Resource_ResourceBase_IncreaseResource_System_Single_
+  name: IncreaseResource
+  nameWithType: ResourceBase.IncreaseResource
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.IncreaseResource
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource
+  href: SombraStudios.Shared.Systems.Resource.ResourceBase.html#SombraStudios_Shared_Systems_Resource_ResourceBase_DecreaseResource_System_Single_
+  name: DecreaseResource
+  nameWithType: ResourceBase.DecreaseResource
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceBase.DecreaseResource
