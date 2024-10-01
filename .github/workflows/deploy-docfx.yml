@@ -1,0 +1,55 @@
+# GitHub Actions workflow to build and deploy Docfx documentation to GitHub Pages
+
+# Trigger the action on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+# Sets permissions for the GitHub token to allow deployment
+permissions:
+  actions: read
+  pages: write
+  id-token: write
+
+# Control concurrency, so that only one deployment runs at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  publish-docs:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    # Step 2: Install .NET and Docfx
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.100'
+
+    # Install Docfx globally as a .NET tool
+    - run: dotnet tool update -g docfx
+
+    # Step 3: Build the documentation
+    # Make sure to replace <docfx-project-path> with your actual Docfx project path
+    - run: docfx Docs/docfx.json
+
+    # Step 4: Upload the generated _site folder as an artifact
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'Docs/_site'
+
+    # Step 5: Deploy the artifact to GitHub Pages
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
