@@ -64,6 +64,19 @@ To get started with this repository:
 3. Add the required scripting define symbols (mentioned above) in your Unity Player settings.
 4. Review the [documentation](https://manuelfalonso.github.io/manuelfalonso/) for detailed usage instructions for each script.
 
+## Key Features
+
+This repository includes a variety of features designed to enhance Unity development. Below are some of the key features:
+
+### 1. Prefab Instantiation Management with Scriptable Objects
+
+- **Scriptable Object-Based Instantiation**: This system allows you to manage the instantiation of prefabs using ScriptableObjects, promoting clean, decoupled code.
+- **`RuntimeInitializeOnLoadMethod` Integration**: Prefabs are instantiated at runtime using the `RuntimeInitializeOnLoadMethod` attribute, providing flexibility for initialization before or after scene loading.
+- **Support for `RuntimeInitializeLoadType`**: Each instantiation can be configured to initialize at different points in the application lifecycle by managing the `RuntimeInitializeLoadType`, such as:
+  - **BeforeSceneLoad**: Initialize prefabs before any scene is loaded.
+  - **AfterSceneLoad**: Initialize prefabs after the first scene is loaded.
+  - **AfterAssembliesLoaded**: Run instantiation after the assemblies are loaded.
+
 ## Contributing
 
 If you would like to contribute to this repository, feel free to submit a pull request or open an issue. Any suggestions or improvements are welcome!
