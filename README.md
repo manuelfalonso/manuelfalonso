@@ -17,22 +17,22 @@ I am a Unity Developer with a passion for creating scalable and reusable code. M
 This repository includes various Unity packages, each associated with preprocessor directives to ensure compatibility and efficient usage. Below is a list of the packages used and their related directives:
 
 ### Unity
-| Package                       | Preprocessor Directive Symbol      | Namespace                              | Documentation |
-|-------------------------------|------------------------------------|----------------------------------------|-------------------------------|
-| **Splines**                   | `#if UNITY_SPLINES`                | **UnityEngine.Splines**                | [Splines](https://docs.unity3d.com/Packages/com.unity.splines@2.4/manual/index.html) |
-| **XR Interaction Toolkit**    | `#if UNITY_XR_INTERACTION_TOOLKIT` | **UnityEngine.XR.Interaction.Toolkit** | [XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/index.html) |
-| **Cinemachine**               | `#if CINEMACHINE`                  | **Unity.Cinemachine**                  | [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html) |
-| **Ads**                       | `#if UNITY_ADVERTISEMENTS`         | **UnityEngine.Advertisements**         | [Ads](https://docs.unity.com/ads/en-us/manual/UnityAdsHome) |
+| Package                       | Preprocessor Directive Symbol      | Documentation |
+|-------------------------------|------------------------------------|-------------------------------|
+| **Splines**                   | `#if UNITY_SPLINES`                | [Splines](https://docs.unity3d.com/Packages/com.unity.splines@2.4/manual/index.html) |
+| **XR Interaction Toolkit**    | `#if UNITY_XR_INTERACTION_TOOLKIT` | [XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/index.html) |
+| **Cinemachine**               | `#if CINEMACHINE`                  | [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html) |
+| **Ads**                       | `#if UNITY_ADVERTISEMENTS`         | [Ads](https://docs.unity.com/ads/en-us/manual/UnityAdsHome) |
 
 ### External
-| Package                       | Preprocessor Directive Symbol              | Namespace                              | Documentation |
-|-------------------------------|--------------------------------------------|----------------------------------------|-------------------------------|
-| **Naughty Attributes**        | `#if NAUGHTY_ATTRIBUTES`                   | **NaughtyAttributes**                  | [Naughty Attributes](https://assetstore.unity.com/packages/p/naughtyattributes-129996) |
-| **Serialized Dictionary**     | `#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS` | **AYellowpaper.SerializedCollections** | [Serialized Dictionary](https://assetstore.unity.com/packages/tools/utilities/serialized-dictionary-243052) |
-| **DOTween (HOTween v2)**      | `#if DOTWEEN`                              | **DG.Tweening**                        | [DOTween (HOTween v2)](https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html) |
-| **Eflatun.SceneReference**    | `#if Eflatun_SceneReference`               | **Eflatun.SceneReference**             | [Eflatun.SceneReference](https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0) |
-| **Firebase**                  | `#if FIREBASE_APP`                         | **Firebase**                           | [Firebase](https://firebase.google.com/docs/unity/setup?hl=en) |
-| **Firebase Authentication**   | `#if FIREBASE_AUTH`                        | **Firebase.Auth**                      | [Firebase Authentication](https://firebase.google.com/docs/auth/unity/start?hl=en) |
+| Package                       | Preprocessor Directive Symbol              | Documentation |
+|-------------------------------|--------------------------------------------|-------------------------------|
+| **Naughty Attributes**        | `#if NAUGHTY_ATTRIBUTES`                   | [Naughty Attributes](https://assetstore.unity.com/packages/p/naughtyattributes-129996) |
+| **Serialized Dictionary**     | `#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS` | [Serialized Dictionary](https://assetstore.unity.com/packages/tools/utilities/serialized-dictionary-243052) |
+| **DOTween (HOTween v2)**      | `#if DOTWEEN`                              | [DOTween (HOTween v2)](https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html) |
+| **Eflatun.SceneReference**    | `#if Eflatun_SceneReference`               | [Eflatun.SceneReference](https://github.com/starikcetin/Eflatun.SceneReference.git#4.0.0) |
+| **Firebase**                  | `#if FIREBASE_APP`                         | [Firebase](https://firebase.google.com/docs/unity/setup?hl=en) |
+| **Firebase Authentication**   | `#if FIREBASE_AUTH`                        | [Firebase Authentication](https://firebase.google.com/docs/auth/unity/start?hl=en) |
 
 Make sure the appropriate symbols are defined in the **Scripting Define Symbols** in Unity's **Player Settings** when working with these packages:
 Go to Edit > Project Settings > Player. Under **Scripting Define Symbols**, add a new symbol, for example, CINEMACHINE.
