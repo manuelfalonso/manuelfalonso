@@ -40,7 +40,6 @@ jobs:
     - run: dotnet tool update -g docfx
 
     # Step 3: Build the documentation
-    # Make sure to replace <docfx-project-path> with your actual Docfx project path
     - run: docfx Docs/docfx.json
 
     # Step 4: Upload the generated _site folder as an artifact
