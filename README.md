@@ -10,7 +10,7 @@ I am a Unity Developer with a passion for creating scalable and reusable code. M
 ## Technologies Used
 
 - **Unity**: All scripts are developed using [Unity](https://unity.com/), leveraging both C# scripting and the Unity Engine.
-- **Docfx**: Documentation for the repository is generated using [Docfx](https://dotnet.github.io/docfx/), providing detailed explanations and guides for each script. You can visit the [documentation site here](https://manuelfalonso.github.io/Unity-Scripts/).
+- **Docfx**: Documentation for the repository is generated using [Docfx](https://dotnet.github.io/docfx/), providing detailed explanations and guides for each script. You can visit the [documentation site here](https://manuelfalonso.github.io/manuelfalonso/).
   
 ## Packages and Preprocessor Directives
 
@@ -51,7 +51,7 @@ To get started with this repository:
 1. Clone the repository to your local machine.
 2. Make sure all necessary packages are installed and enabled in your Unity project.
 3. Add the required scripting define symbols (mentioned above) in your Unity Player settings.
-4. Review the [documentation](https://manuelfalonso.github.io/Unity-Scripts/) for detailed usage instructions for each script.
+4. Review the [documentation](https://manuelfalonso.github.io/manuelfalonso/) for detailed usage instructions for each script.
 
 ## Contributing
 
