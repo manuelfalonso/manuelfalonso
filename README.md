@@ -3,6 +3,17 @@
 
 Welcome to my collection of Unity scripts, a growing library designed to help Unity developers streamline their development process. This repository contains reusable, optimized, and production-ready scripts that focus on modularity and clean code practices.
 
+## Table of Contents
+
+1. [About Me](#about-me)
+2. [Technologies Used](#technologies-used)
+3. [Packages and Preprocessor Directives](#packages-and-preprocessor-directives)
+4. [Repository Structure](#repository-structure)
+5. [Getting Started](#getting-started)
+6. [Key Features](#key-features)
+   - [1. Prefab Instantiation Management with Scriptable Objects](#1-prefab-instantiation-management-with-scriptable-objects)
+7. [Contributing](#contributing)
+
 ## About Me
 
 I am a Unity Developer with a passion for creating scalable and reusable code. My experience spans across VR game development, mobile optimization, and implementing complex systems in Unity. This repository reflects my journey in game development and my desire to share useful tools with the Unity community.
