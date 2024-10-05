@@ -1,9 +1,9 @@
-using SombraStudios.Shared.Editor.SearchTools.Base;
+using SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor.SearchTools
+namespace SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
 {
     /// <summary>  
     /// Custom Editor window to search for Material assets.  
