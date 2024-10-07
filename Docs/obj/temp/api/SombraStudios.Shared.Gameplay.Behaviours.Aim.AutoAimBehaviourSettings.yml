@@ -1,0 +1,950 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  id: AutoAimBehaviourSettings
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.AimSpeed
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.DeadzoneDistance
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFadeOut
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFrequency
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomness
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomnessMode
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseStrength
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseVibrato
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.OutOfDeadzoneDelay
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.PredictionVelocityFactor
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.TargetOffset
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseConstraints
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseNoise
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UsePrediction
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.XConstraint
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.YConstraint
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.ZConstraint
+  langs:
+  - csharp
+  - vb
+  name: AutoAimBehaviourSettings
+  nameWithType: AutoAimBehaviourSettings
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoAimBehaviourSettings
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Settings for the auto-aim behaviour.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AutoAimSettings", menuName = "Sombra Studios/Behaviours/AutoAimSettings")]
+
+      public class AutoAimBehaviourSettings : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AutoAimSettings", menuName:="Sombra Studios/Behaviours/AutoAimSettings")>
+
+      Public Class AutoAimBehaviourSettings Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AutoAimSettings
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/AutoAimSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.AimSpeed
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.AimSpeed
+  id: AimSpeed
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: AimSpeed
+  nameWithType: AutoAimBehaviourSettings.AimSpeed
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.AimSpeed
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AimSpeed
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Aim")]
+
+      [Tooltip("Speed at which the aim moves.")]
+
+      public float AimSpeed
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Aim")>
+
+      <Tooltip("Speed at which the aim moves.")>
+
+      Public AimSpeed As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Aim
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Speed at which the aim moves.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UsePrediction
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UsePrediction
+  id: UsePrediction
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: UsePrediction
+  nameWithType: AutoAimBehaviourSettings.UsePrediction
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UsePrediction
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UsePrediction
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Prediction")]
+
+      [Tooltip("If true, the aim will be predicted based on the target's velocity of the Rigidbody.")]
+
+      public bool UsePrediction
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Prediction")>
+
+      <Tooltip("If true, the aim will be predicted based on the target's velocity of the Rigidbody.")>
+
+      Public UsePrediction As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Prediction
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, the aim will be predicted based on the target's velocity of the Rigidbody.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.PredictionVelocityFactor
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.PredictionVelocityFactor
+  id: PredictionVelocityFactor
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: PredictionVelocityFactor
+  nameWithType: AutoAimBehaviourSettings.PredictionVelocityFactor
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.PredictionVelocityFactor
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PredictionVelocityFactor
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Factor by which the target's velocity is multiplied for prediction.")]
+
+      public float PredictionVelocityFactor
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Factor by which the target's velocity is multiplied for prediction.")>
+
+      Public PredictionVelocityFactor As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Factor by which the target's velocity is multiplied for prediction.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.DeadzoneDistance
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.DeadzoneDistance
+  id: DeadzoneDistance
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: DeadzoneDistance
+  nameWithType: AutoAimBehaviourSettings.DeadzoneDistance
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.DeadzoneDistance
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DeadzoneDistance
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Deadzone")]
+
+      [Tooltip("Distance within which the aim will not adjust.")]
+
+      public float DeadzoneDistance
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Deadzone")>
+
+      <Tooltip("Distance within which the aim will not adjust.")>
+
+      Public DeadzoneDistance As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deadzone
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Distance within which the aim will not adjust.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.OutOfDeadzoneDelay
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.OutOfDeadzoneDelay
+  id: OutOfDeadzoneDelay
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: OutOfDeadzoneDelay
+  nameWithType: AutoAimBehaviourSettings.OutOfDeadzoneDelay
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.OutOfDeadzoneDelay
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OutOfDeadzoneDelay
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Reaction delay to get out of deadzone.")]
+
+      public float OutOfDeadzoneDelay
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Reaction delay to get out of deadzone.")>
+
+      Public OutOfDeadzoneDelay As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Reaction delay to get out of deadzone.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.TargetOffset
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.TargetOffset
+  id: TargetOffset
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: TargetOffset
+  nameWithType: AutoAimBehaviourSettings.TargetOffset
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.TargetOffset
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TargetOffset
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Offset")]
+
+      [Tooltip("Offset applied to the aim position.")]
+
+      public Vector3 TargetOffset
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Header("Offset")>
+
+      <Tooltip("Offset applied to the aim position.")>
+
+      Public TargetOffset As Vector3
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Offset
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Offset applied to the aim position.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseConstraints
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseConstraints
+  id: UseConstraints
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: UseConstraints
+  nameWithType: AutoAimBehaviourSettings.UseConstraints
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseConstraints
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UseConstraints
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Constraints")]
+
+      [Tooltip("If true, constraints will be applied to the aim.")]
+
+      public bool UseConstraints
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Constraints")>
+
+      <Tooltip("If true, constraints will be applied to the aim.")>
+
+      Public UseConstraints As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Constraints
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, constraints will be applied to the aim.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.XConstraint
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.XConstraint
+  id: XConstraint
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: XConstraint
+  nameWithType: AutoAimBehaviourSettings.XConstraint
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.XConstraint
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: XConstraint
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("If true, the aim will be constrained on the X axis.")]
+
+      public bool XConstraint
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("If true, the aim will be constrained on the X axis.")>
+
+      Public XConstraint As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, the aim will be constrained on the X axis.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.YConstraint
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.YConstraint
+  id: YConstraint
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: YConstraint
+  nameWithType: AutoAimBehaviourSettings.YConstraint
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.YConstraint
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: YConstraint
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("If true, the aim will be constrained on the Y axis.")]
+
+      public bool YConstraint
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("If true, the aim will be constrained on the Y axis.")>
+
+      Public YConstraint As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, the aim will be constrained on the Y axis.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.ZConstraint
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.ZConstraint
+  id: ZConstraint
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: ZConstraint
+  nameWithType: AutoAimBehaviourSettings.ZConstraint
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.ZConstraint
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ZConstraint
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("If true, the aim will be constrained on the Z axis.")]
+
+      public bool ZConstraint
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("If true, the aim will be constrained on the Z axis.")>
+
+      Public ZConstraint As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, the aim will be constrained on the Z axis.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseNoise
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseNoise
+  id: UseNoise
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: UseNoise
+  nameWithType: AutoAimBehaviourSettings.UseNoise
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.UseNoise
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UseNoise
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 47
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Noise")]
+
+      [Tooltip("If true, a shake will be applied to the aim.")]
+
+      public bool UseNoise
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Noise")>
+
+      <Tooltip("If true, a shake will be applied to the aim.")>
+
+      Public UseNoise As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Noise
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, a shake will be applied to the aim.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFrequency
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFrequency
+  id: NoiseFrequency
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: NoiseFrequency
+  nameWithType: AutoAimBehaviourSettings.NoiseFrequency
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFrequency
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NoiseFrequency
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 50
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Frequency of the noise applied to the aim.")]
+
+      public float NoiseFrequency
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Frequency of the noise applied to the aim.")>
+
+      Public NoiseFrequency As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Frequency of the noise applied to the aim.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseStrength
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseStrength
+  id: NoiseStrength
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: NoiseStrength
+  nameWithType: AutoAimBehaviourSettings.NoiseStrength
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseStrength
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NoiseStrength
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Strength of the noise applied to the aim.")]
+
+      public Vector3 NoiseStrength
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Tooltip("Strength of the noise applied to the aim.")>
+
+      Public NoiseStrength As Vector3
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Strength of the noise applied to the aim.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseVibrato
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseVibrato
+  id: NoiseVibrato
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: NoiseVibrato
+  nameWithType: AutoAimBehaviourSettings.NoiseVibrato
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseVibrato
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NoiseVibrato
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Vibrato of the noise applied to the aim.")]
+
+      public int NoiseVibrato
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Tooltip("Vibrato of the noise applied to the aim.")>
+
+      Public NoiseVibrato As Integer
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Vibrato of the noise applied to the aim.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomness
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomness
+  id: NoiseRandomness
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: NoiseRandomness
+  nameWithType: AutoAimBehaviourSettings.NoiseRandomness
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomness
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NoiseRandomness
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 60
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Randomness of the noise applied to the aim.")]
+
+      [Range(0, 180)]
+
+      public float NoiseRandomness
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("Randomness of the noise applied to the aim.")>
+
+      <Range(0, 180)>
+
+      Public NoiseRandomness As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Randomness of the noise applied to the aim.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 180
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFadeOut
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFadeOut
+  id: NoiseFadeOut
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: NoiseFadeOut
+  nameWithType: AutoAimBehaviourSettings.NoiseFadeOut
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseFadeOut
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NoiseFadeOut
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 63
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("If true, the noise will fade out over time.")]
+
+      public bool NoiseFadeOut
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("If true, the noise will fade out over time.")>
+
+      Public NoiseFadeOut As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If true, the noise will fade out over time.
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomnessMode
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomnessMode
+  id: NoiseRandomnessMode
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  langs:
+  - csharp
+  - vb
+  name: NoiseRandomnessMode
+  nameWithType: AutoAimBehaviourSettings.NoiseRandomnessMode
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.NoiseRandomnessMode
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NoiseRandomnessMode
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourSettings.cs
+    startLine: 66
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Tooltip("Randomness mode of the noise applied to the aim.")]
+
+      public ShakeRandomnessMode NoiseRandomnessMode
+    return:
+      type: DG.Tweening.ShakeRandomnessMode
+    content.vb: >-
+      <Tooltip("Randomness mode of the noise applied to the aim.")>
+
+      Public NoiseRandomnessMode As ShakeRandomnessMode
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Randomness mode of the noise applied to the aim.
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.Aim
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
+    name: Aim
+    href: SombraStudios.Shared.Gameplay.Behaviours.Aim.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
+    name: Aim
+    href: SombraStudios.Shared.Gameplay.Behaviours.Aim.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DG.Tweening.ShakeRandomnessMode
+  commentId: T:DG.Tweening.ShakeRandomnessMode
+  parent: DG.Tweening
+  isExternal: true
+  name: ShakeRandomnessMode
+  nameWithType: ShakeRandomnessMode
+  fullName: DG.Tweening.ShakeRandomnessMode
+- uid: DG.Tweening
+  commentId: N:DG.Tweening
+  isExternal: true
+  name: DG.Tweening
+  nameWithType: DG.Tweening
+  fullName: DG.Tweening
+  spec.csharp:
+  - uid: DG
+    name: DG
+    isExternal: true
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    isExternal: true
+  spec.vb:
+  - uid: DG
+    name: DG
+    isExternal: true
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    isExternal: true

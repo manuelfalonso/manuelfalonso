@@ -135,34 +135,39 @@ items:
   items:
   - uid: SombraStudios.Shared.Editor.ScriptableObjects.ScriptableObjectChecker
     name: ScriptableObjectChecker
-- uid: SombraStudios.Shared.Editor.SearchTools
-  name: SombraStudios.Shared.Editor.SearchTools
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
+  name: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
   items:
-  - uid: SombraStudios.Shared.Editor.SearchTools.GameobjectWithTagOrLayerComponentSearchWindow
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.GameobjectWithTagOrLayerComponentSearchWindow
     name: GameobjectWithTagOrLayerComponentSearchWindow
-  - uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.MaterialsAssetSearchWindow
     name: MaterialsAssetSearchWindow
-  - uid: SombraStudios.Shared.Editor.SearchTools.MaterialsAssetSearchWindow.MaterialAdditionalInfo
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.MaterialsAssetSearchWindow.MaterialAdditionalInfo
     name: MaterialsAssetSearchWindow.MaterialAdditionalInfo
-  - uid: SombraStudios.Shared.Editor.SearchTools.ParticleSystemComponentSearchWindow
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.ParticleSystemComponentSearchWindow
     name: ParticleSystemComponentSearchWindow
-  - uid: SombraStudios.Shared.Editor.SearchTools.TargetType
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.TargetType
     name: TargetType
-- uid: SombraStudios.Shared.Editor.SearchTools.Base
-  name: SombraStudios.Shared.Editor.SearchTools.Base
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  name: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
   items:
-  - uid: SombraStudios.Shared.Editor.SearchTools.Base.AssetSearchWindow`1
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.AssetSearchWindow`1
     name: AssetSearchWindow<T>
-  - uid: SombraStudios.Shared.Editor.SearchTools.Base.ComponentSearchWindow`1
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.ComponentSearchWindow`1
     name: ComponentSearchWindow<T>
-  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchOptions
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions
     name: SearchOptions
-  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
     name: SearchWindow<T>
-  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.ResultsAdditionalInfo
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
     name: SearchWindow<T>.ResultsAdditionalInfo
-  - uid: SombraStudios.Shared.Editor.SearchTools.Base.SearchWindow`1.SearchResults
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
     name: SearchWindow<T>.SearchResults
+- uid: SombraStudios.Shared.Editor.SearchTools.Reference
+  name: SombraStudios.Shared.Editor.SearchTools.Reference
+  items:
+  - uid: SombraStudios.Shared.Editor.SearchTools.Reference.ReferenceSearchWindow
+    name: ReferenceSearchWindow
 - uid: SombraStudios.Shared.Editor.UnityGizmos
   name: SombraStudios.Shared.Editor.UnityGizmos
   items:
@@ -350,8 +355,10 @@ items:
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
   name: SombraStudios.Shared.Gameplay.Behaviours.Aim
   items:
-  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AimBehaviourController
-    name: AimBehaviourController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+    name: AutoAimBehaviourController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+    name: AutoAimBehaviourSettings
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Charge
   name: SombraStudios.Shared.Gameplay.Behaviours.Charge
   items:
@@ -934,8 +941,6 @@ items:
     name: StringEncodingUtil
   - uid: SombraStudios.Shared.Utility.Tolerance
     name: Tolerance
-  - uid: SombraStudios.Shared.Utility.UnityPhysicsTriggerStayMessagesHandler
-    name: UnityPhysicsTriggerStayMessagesHandler
   - uid: SombraStudios.Shared.Utility.UnixTimestampConverter
     name: UnixTimestampConverter
   - uid: SombraStudios.Shared.Utility.UsingLineRendererForDebugging
@@ -1080,6 +1085,8 @@ items:
     name: UnityPhysicsCollisionStayMessagesHandler
   - uid: SombraStudios.Shared.Utility.UnityMessages.UnityPhysicsTriggerMessagesHandler
     name: UnityPhysicsTriggerMessagesHandler
+  - uid: SombraStudios.Shared.Utility.UnityMessages.UnityPhysicsTriggerStayMessagesHandler
+    name: UnityPhysicsTriggerStayMessagesHandler
   - uid: SombraStudios.Shared.Utility.UnityMessages.UnityRendererMessagesHandler
     name: UnityRendererMessagesHandler
   - uid: SombraStudios.Shared.Utility.UnityMessages.UnityTransformMessagesHandler

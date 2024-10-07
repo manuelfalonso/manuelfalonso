@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  id: AutoAimBehaviourController
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStarted
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStopped
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetChanged
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetLocked
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetRemoved
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+  langs:
+  - csharp
+  - vb
+  name: AutoAimBehaviourController
+  nameWithType: AutoAimBehaviourController
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoAimBehaviourController
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Controls the auto-aim behaviour of a game object.
+  example: []
+  syntax:
+    content: 'public class AutoAimBehaviourController : MonoBehaviour'
+    content.vb: Public Class AutoAimBehaviourController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetChanged
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetChanged
+  id: AimTargetChanged
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: AimTargetChanged
+  nameWithType: AutoAimBehaviourController.AimTargetChanged
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetChanged
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AimTargetChanged
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: >-
+      [Header("Events")]
+
+      public UnityEvent AimTargetChanged
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Header("Events")>
+
+      Public AimTargetChanged As UnityEvent
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetRemoved
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetRemoved
+  id: AimTargetRemoved
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: AimTargetRemoved
+  nameWithType: AutoAimBehaviourController.AimTargetRemoved
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetRemoved
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AimTargetRemoved
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: public UnityEvent AimTargetRemoved
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public AimTargetRemoved As UnityEvent
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetLocked
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetLocked
+  id: AimTargetLocked
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: AimTargetLocked
+  nameWithType: AutoAimBehaviourController.AimTargetLocked
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetLocked
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AimTargetLocked
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: public UnityEvent AimTargetLocked
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public AimTargetLocked As UnityEvent
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStarted
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStarted
+  id: AimStarted
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: AimStarted
+  nameWithType: AutoAimBehaviourController.AimStarted
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStarted
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AimStarted
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: public UnityEvent AimStarted
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public AimStarted As UnityEvent
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStopped
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStopped
+  id: AimStopped
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: AimStopped
+  nameWithType: AutoAimBehaviourController.AimStopped
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimStopped
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AimStopped
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  syntax:
+    content: public UnityEvent AimStopped
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public AimStopped As UnityEvent
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+  id: Target
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: AutoAimBehaviourController.Target
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Target
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Gets or sets the target to aim at.
+  example: []
+  syntax:
+    content: public Transform Target { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public Property Target As Transform
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+  id: Data
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: AutoAimBehaviourController.Data
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Data
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 64
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Gets or sets the auto-aim behaviour settings.
+  example: []
+  syntax:
+    content: public AutoAimBehaviourSettings Data { get; set; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+    content.vb: Public Property Data As AutoAimBehaviourSettings
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+  id: IsAiming
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: IsAiming
+  nameWithType: AutoAimBehaviourController.IsAiming
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsAiming
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 69
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Gets a value indicating whether the object is currently aiming.
+  example: []
+  syntax:
+    content: public bool IsAiming { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsAiming As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
+  id: IsInDeadzone
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: IsInDeadzone
+  nameWithType: AutoAimBehaviourController.IsInDeadzone
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInDeadzone
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 94
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Gets or sets a value indicating whether the target is within the deadzone.
+  example: []
+  syntax:
+    content: public bool IsInDeadzone { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsInDeadzone As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone*
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.Aim
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
+    name: Aim
+    href: SombraStudios.Shared.Gameplay.Behaviours.Aim.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
+    name: Aim
+    href: SombraStudios.Shared.Gameplay.Behaviours.Aim.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_Target
+  name: Target
+  nameWithType: AutoAimBehaviourController.Target
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_Data
+  name: Data
+  nameWithType: AutoAimBehaviourController.Data
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings.html
+  name: AutoAimBehaviourSettings
+  nameWithType: AutoAimBehaviourSettings
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_IsAiming
+  name: IsAiming
+  nameWithType: AutoAimBehaviourController.IsAiming
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_IsInDeadzone
+  name: IsInDeadzone
+  nameWithType: AutoAimBehaviourController.IsInDeadzone
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone

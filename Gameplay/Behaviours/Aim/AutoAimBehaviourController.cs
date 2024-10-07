@@ -38,10 +38,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// </summary>
         public Transform Target
         {
-            get
-            {
-                return _target;
-            }
+            get => _target;
             set
             {
                 if (_target == value)
@@ -72,7 +69,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// </summary>
         public bool IsAiming
         {
-            get { return _isAiming; }
+            get => _isAiming;
             private set
             {
                 if (_isAiming == value)
@@ -97,7 +94,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// </summary>
         public bool IsInDeadzone
         {
-            get { return _isInDeadzone; }
+            get => _isInDeadzone;
             set
             {
                 if (_isInDeadzone == value)
@@ -229,12 +226,11 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// </summary>
         private void ApplyPrediction()
         {
-            if (_data.UsePrediction)
+            if (!_data.UsePrediction) return;
+
+            if (_targetRigidbody != null)
             {
-                if (_targetRigidbody != null)
-                {
-                    _targetPosition += _targetRigidbody.velocity * _data.PredictionVelocityFactor;
-                }
+                _targetPosition += _targetRigidbody.velocity * _data.PredictionVelocityFactor;
             }
         }
 
@@ -252,20 +248,19 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         private void ApplyNoise()
         {
 #if DOTWEEN
-            if (_data.UseNoise)
+            if (!_data.UseNoise) return;
+
+            _currentNoiseTime += Time.deltaTime;
+            if (_currentNoiseTime > _data.NoiseFrequency)
             {
-                _currentNoiseTime += Time.deltaTime;
-                if (_currentNoiseTime > _data.NoiseFrequency)
-                {
-                    _currentNoiseTime = 0;
-                    transform.DOShakeRotation(
-                        _data.NoiseFrequency,
-                        _data.NoiseStrength,
-                        _data.NoiseVibrato,
-                        _data.NoiseRandomness,
-                        _data.NoiseFadeOut,
-                        _data.NoiseRandomnessMode);
-                }
+                _currentNoiseTime = 0;
+                transform.DOShakeRotation(
+                    _data.NoiseFrequency,
+                    _data.NoiseStrength,
+                    _data.NoiseVibrato,
+                    _data.NoiseRandomness,
+                    _data.NoiseFadeOut,
+                    _data.NoiseRandomnessMode);
             }
 #endif
         }
@@ -307,12 +302,11 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// </summary>
         private void ApplyConstraints()
         {
-            if (_data.UseConstraints)
-            {
-                if (_data.XConstraint) _targetRotation.x = 0;
-                if (_data.YConstraint) _targetRotation.y = 0;
-                if (_data.ZConstraint) _targetRotation.z = 0;
-            }
+            if (!_data.UseConstraints) return;
+
+            if (_data.XConstraint) _targetRotation.x = 0;
+            if (_data.YConstraint) _targetRotation.y = 0;
+            if (_data.ZConstraint) _targetRotation.z = 0;
         }
         #endregion
     }

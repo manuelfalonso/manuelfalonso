@@ -1,0 +1,1429 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  id: SearchWindow`1
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  children:
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ErrorMessage
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.Find(UnityEngine.GameObject)
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindAllScenes
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindButton
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindFolder
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindOpenScene
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindProject
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindScenesInBuild
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.InfoMessage
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.OnGUI
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchInactiveObjects
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectFolder
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectSearchOptions
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowResults
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.WarningMessage
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._errorMessage
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._infoMessage
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._isSearching
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._scrollPosition
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchInactiveObjects
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchOption
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchResults
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._selectedFolder
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._warningMessage
+  langs:
+  - csharp
+  - vb
+  name: SearchWindow<T>
+  nameWithType: SearchWindow<T>
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>
+  type: Class
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SearchWindow
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Abstract base class for creating a custom Editor window to find various assets or objects.
+  example: []
+  syntax:
+    content: 'public abstract class SearchWindow<T> : EditorWindow'
+    typeParameters:
+    - id: T
+    content.vb: Public MustInherit Class SearchWindow(Of T) Inherits EditorWindow
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.EditorWindow
+  derivedClasses:
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.AssetSearchWindow`1
+  - SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.ComponentSearchWindow`1
+  nameWithType.vb: SearchWindow(Of T)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)
+  name.vb: SearchWindow(Of T)
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchResults
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchResults
+  id: _searchResults
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _searchResults
+  nameWithType: SearchWindow<T>._searchResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._searchResults
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _searchResults
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: List of search results.
+  example: []
+  syntax:
+    content: protected readonly List<SearchWindow<T>.SearchResults> _searchResults
+    return:
+      type: System.Collections.Generic.List{SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults}
+    content.vb: Protected ReadOnly _searchResults As List(Of SearchWindow(Of T).SearchResults)
+  nameWithType.vb: SearchWindow(Of T)._searchResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._searchResults
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchOption
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchOption
+  id: _searchOption
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _searchOption
+  nameWithType: SearchWindow<T>._searchOption
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._searchOption
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _searchOption
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: The search option selected by the user.
+  example: []
+  syntax:
+    content: protected SearchOptions _searchOption
+    return:
+      type: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions
+    content.vb: Protected _searchOption As SearchOptions
+  nameWithType.vb: SearchWindow(Of T)._searchOption
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._searchOption
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchInactiveObjects
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._searchInactiveObjects
+  id: _searchInactiveObjects
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _searchInactiveObjects
+  nameWithType: SearchWindow<T>._searchInactiveObjects
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._searchInactiveObjects
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _searchInactiveObjects
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Whether to search inactive objects.
+  example: []
+  syntax:
+    content: protected bool _searchInactiveObjects
+    return:
+      type: System.Boolean
+    content.vb: Protected _searchInactiveObjects As Boolean
+  nameWithType.vb: SearchWindow(Of T)._searchInactiveObjects
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._searchInactiveObjects
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._selectedFolder
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._selectedFolder
+  id: _selectedFolder
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _selectedFolder
+  nameWithType: SearchWindow<T>._selectedFolder
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._selectedFolder
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _selectedFolder
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: The folder selected by the user for searching.
+  example: []
+  syntax:
+    content: protected DefaultAsset _selectedFolder
+    return:
+      type: UnityEditor.DefaultAsset
+    content.vb: Protected _selectedFolder As DefaultAsset
+  nameWithType.vb: SearchWindow(Of T)._selectedFolder
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._selectedFolder
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._isSearching
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._isSearching
+  id: _isSearching
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _isSearching
+  nameWithType: SearchWindow<T>._isSearching
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._isSearching
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _isSearching
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 58
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Indicates if a search is currently in progress.
+  example: []
+  syntax:
+    content: protected bool _isSearching
+    return:
+      type: System.Boolean
+    content.vb: Protected _isSearching As Boolean
+  nameWithType.vb: SearchWindow(Of T)._isSearching
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._isSearching
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._infoMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._infoMessage
+  id: _infoMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _infoMessage
+  nameWithType: SearchWindow<T>._infoMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._infoMessage
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _infoMessage
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 63
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Information message to display.
+  example: []
+  syntax:
+    content: protected string _infoMessage
+    return:
+      type: System.String
+    content.vb: Protected _infoMessage As String
+  nameWithType.vb: SearchWindow(Of T)._infoMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._infoMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._warningMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._warningMessage
+  id: _warningMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _warningMessage
+  nameWithType: SearchWindow<T>._warningMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._warningMessage
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _warningMessage
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 68
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Warning message to display.
+  example: []
+  syntax:
+    content: protected string _warningMessage
+    return:
+      type: System.String
+    content.vb: Protected _warningMessage As String
+  nameWithType.vb: SearchWindow(Of T)._warningMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._warningMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._errorMessage
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._errorMessage
+  id: _errorMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _errorMessage
+  nameWithType: SearchWindow<T>._errorMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._errorMessage
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _errorMessage
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 73
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Error message to display if any issues occur during the search.
+  example: []
+  syntax:
+    content: protected string _errorMessage
+    return:
+      type: System.String
+    content.vb: Protected _errorMessage As String
+  nameWithType.vb: SearchWindow(Of T)._errorMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._errorMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._scrollPosition
+  commentId: F:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1._scrollPosition
+  id: _scrollPosition
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: _scrollPosition
+  nameWithType: SearchWindow<T>._scrollPosition
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>._scrollPosition
+  type: Field
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _scrollPosition
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 78
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Scroll position for the results display.
+  example: []
+  syntax:
+    content: protected Vector2 _scrollPosition
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Protected _scrollPosition As Vector2
+  nameWithType.vb: SearchWindow(Of T)._scrollPosition
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T)._scrollPosition
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.OnGUI
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.OnGUI
+  id: OnGUI
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: OnGUI()
+  nameWithType: SearchWindow<T>.OnGUI()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.OnGUI()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnGUI
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 84
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Unity callback for drawing the GUI.
+  example: []
+  syntax:
+    content: protected virtual void OnGUI()
+    content.vb: Protected Overridable Sub OnGUI()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.OnGUI*
+  nameWithType.vb: SearchWindow(Of T).OnGUI()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).OnGUI()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindButton
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindButton
+  id: FindButton
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindButton()
+  nameWithType: SearchWindow<T>.FindButton()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindButton()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindButton
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 103
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays the Find button and initiates the search when clicked.
+  example: []
+  syntax:
+    content: protected void FindButton()
+    content.vb: Protected Sub FindButton()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindButton*
+  nameWithType.vb: SearchWindow(Of T).FindButton()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindButton()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectSearchOptions
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectSearchOptions
+  id: SelectSearchOptions
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: SelectSearchOptions()
+  nameWithType: SearchWindow<T>.SelectSearchOptions()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SelectSearchOptions()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SelectSearchOptions
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 140
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays the search options toolbar.
+  example: []
+  syntax:
+    content: protected void SelectSearchOptions()
+    content.vb: Protected Sub SelectSearchOptions()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectSearchOptions*
+  nameWithType.vb: SearchWindow(Of T).SelectSearchOptions()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SelectSearchOptions()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchInactiveObjects
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchInactiveObjects
+  id: SearchInactiveObjects
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: SearchInactiveObjects()
+  nameWithType: SearchWindow<T>.SearchInactiveObjects()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SearchInactiveObjects()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SearchInactiveObjects
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 149
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays a toggle for searching inactive objects.
+  example: []
+  syntax:
+    content: protected void SearchInactiveObjects()
+    content.vb: Protected Sub SearchInactiveObjects()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchInactiveObjects*
+  nameWithType.vb: SearchWindow(Of T).SearchInactiveObjects()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SearchInactiveObjects()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectFolder
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectFolder
+  id: SelectFolder
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: SelectFolder()
+  nameWithType: SearchWindow<T>.SelectFolder()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SelectFolder()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SelectFolder
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 157
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays a field for selecting a folder if the search option is set to Folder.
+  example: []
+  syntax:
+    content: protected void SelectFolder()
+    content.vb: Protected Sub SelectFolder()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectFolder*
+  nameWithType.vb: SearchWindow(Of T).SelectFolder()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SelectFolder()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.InfoMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.InfoMessage
+  id: InfoMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: InfoMessage()
+  nameWithType: SearchWindow<T>.InfoMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.InfoMessage()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InfoMessage
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 169
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays an information message if there is any.
+  example: []
+  syntax:
+    content: protected void InfoMessage()
+    content.vb: Protected Sub InfoMessage()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.InfoMessage*
+  nameWithType.vb: SearchWindow(Of T).InfoMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).InfoMessage()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.WarningMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.WarningMessage
+  id: WarningMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: WarningMessage()
+  nameWithType: SearchWindow<T>.WarningMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.WarningMessage()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: WarningMessage
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 184
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays a warning message if there is any.
+  example: []
+  syntax:
+    content: protected void WarningMessage()
+    content.vb: Protected Sub WarningMessage()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.WarningMessage*
+  nameWithType.vb: SearchWindow(Of T).WarningMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).WarningMessage()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ErrorMessage
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ErrorMessage
+  id: ErrorMessage
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage()
+  nameWithType: SearchWindow<T>.ErrorMessage()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ErrorMessage()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ErrorMessage
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 199
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays an error message if there is any.
+  example: []
+  syntax:
+    content: protected void ErrorMessage()
+    content.vb: Protected Sub ErrorMessage()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ErrorMessage*
+  nameWithType.vb: SearchWindow(Of T).ErrorMessage()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ErrorMessage()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindOpenScene
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindOpenScene
+  id: FindOpenScene
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindOpenScene()
+  nameWithType: SearchWindow<T>.FindOpenScene()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindOpenScene()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindOpenScene
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 214
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches the currently open scene.
+  example: []
+  syntax:
+    content: protected void FindOpenScene()
+    content.vb: Protected Sub FindOpenScene()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindOpenScene*
+  nameWithType.vb: SearchWindow(Of T).FindOpenScene()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindOpenScene()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindScenesInBuild
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindScenesInBuild
+  id: FindScenesInBuild
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindScenesInBuild()
+  nameWithType: SearchWindow<T>.FindScenesInBuild()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindScenesInBuild()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindScenesInBuild
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 226
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches all scenes included in the build settings.
+  example: []
+  syntax:
+    content: protected void FindScenesInBuild()
+    content.vb: Protected Sub FindScenesInBuild()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindScenesInBuild*
+  nameWithType.vb: SearchWindow(Of T).FindScenesInBuild()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindScenesInBuild()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindAllScenes
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindAllScenes
+  id: FindAllScenes
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindAllScenes()
+  nameWithType: SearchWindow<T>.FindAllScenes()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindAllScenes()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindAllScenes
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 244
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches all scenes in the project.
+  example: []
+  syntax:
+    content: protected void FindAllScenes()
+    content.vb: Protected Sub FindAllScenes()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindAllScenes*
+  nameWithType.vb: SearchWindow(Of T).FindAllScenes()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindAllScenes()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.AddAdditionalResultInfo(`0)
+  id: AddAdditionalResultInfo(`0)
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: AddAdditionalResultInfo(T)
+  nameWithType: SearchWindow<T>.AddAdditionalResultInfo(T)
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.AddAdditionalResultInfo(T)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AddAdditionalResultInfo
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 267
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Adds additional information to the search results.
+  example: []
+  syntax:
+    content: protected virtual SearchWindow<T>.SearchResults AddAdditionalResultInfo(T asset)
+    parameters:
+    - id: asset
+      type: '{T}'
+      description: The asset to add additional information for.
+    return:
+      type: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+      description: The search result with additional information.
+    content.vb: Protected Overridable Function AddAdditionalResultInfo(asset As T) As SearchWindow(Of T).SearchResults
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.AddAdditionalResultInfo*
+  nameWithType.vb: SearchWindow(Of T).AddAdditionalResultInfo(T)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).AddAdditionalResultInfo(T)
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  id: ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow{`0}.ResultsAdditionalInfo)
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: ShowAdditionalResultInfo(ResultsAdditionalInfo)
+  nameWithType: SearchWindow<T>.ShowAdditionalResultInfo(SearchWindow<T>.ResultsAdditionalInfo)
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ResultsAdditionalInfo)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ShowAdditionalResultInfo
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 282
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays additional information in the search results.
+  example: []
+  syntax:
+    content: protected virtual void ShowAdditionalResultInfo(SearchWindow<T>.ResultsAdditionalInfo assetInfo)
+    parameters:
+    - id: assetInfo
+      type: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
+      description: The additional information to display.
+    content.vb: Protected Overridable Sub ShowAdditionalResultInfo(assetInfo As SearchWindow(Of T).ResultsAdditionalInfo)
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowAdditionalResultInfo*
+  nameWithType.vb: SearchWindow(Of T).ShowAdditionalResultInfo(SearchWindow(Of T).ResultsAdditionalInfo)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ShowAdditionalResultInfo(SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ResultsAdditionalInfo)
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindFolder
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindFolder
+  id: FindFolder
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindFolder()
+  nameWithType: SearchWindow<T>.FindFolder()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindFolder()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindFolder
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 292
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches within the selected folder.
+  example: []
+  syntax:
+    content: protected abstract void FindFolder()
+    content.vb: Protected MustOverride Sub FindFolder()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindFolder*
+  nameWithType.vb: SearchWindow(Of T).FindFolder()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindFolder()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindProject
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindProject
+  id: FindProject
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindProject()
+  nameWithType: SearchWindow<T>.FindProject()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindProject()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindProject
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 297
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches the entire project.
+  example: []
+  syntax:
+    content: protected abstract void FindProject()
+    content.vb: Protected MustOverride Sub FindProject()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindProject*
+  nameWithType.vb: SearchWindow(Of T).FindProject()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindProject()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowResults
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowResults
+  id: ShowResults
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: ShowResults()
+  nameWithType: SearchWindow<T>.ShowResults()
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ShowResults()
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ShowResults
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 302
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Displays the search results.
+  example: []
+  syntax:
+    content: protected abstract void ShowResults()
+    content.vb: Protected MustOverride Sub ShowResults()
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowResults*
+  nameWithType.vb: SearchWindow(Of T).ShowResults()
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ShowResults()
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindInScene(UnityEngine.SceneManagement.Scene)
+  id: FindInScene(UnityEngine.SceneManagement.Scene)
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: FindInScene(Scene)
+  nameWithType: SearchWindow<T>.FindInScene(Scene)
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindInScene(UnityEngine.SceneManagement.Scene)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FindInScene
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 308
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches within a specific scene.
+  example: []
+  syntax:
+    content: protected abstract void FindInScene(Scene scene)
+    parameters:
+    - id: scene
+      type: UnityEngine.SceneManagement.Scene
+      description: The scene to search in.
+    content.vb: Protected MustOverride Sub FindInScene(scene As Scene)
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindInScene*
+  nameWithType.vb: SearchWindow(Of T).FindInScene(Scene)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindInScene(UnityEngine.SceneManagement.Scene)
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.Find(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.Find(UnityEngine.GameObject)
+  id: Find(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+  langs:
+  - csharp
+  - vb
+  name: Find(GameObject)
+  nameWithType: SearchWindow<T>.Find(GameObject)
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.Find(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Find
+    path: ../Editor/SearchTools/AssetOrComponent/Base/SearchWindow.cs
+    startLine: 314
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  summary: Searches within a specific GameObject.
+  example: []
+  syntax:
+    content: protected abstract void Find(GameObject go)
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+      description: The GameObject to search in.
+    content.vb: Protected MustOverride Sub Find(go As GameObject)
+  overload: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.Find*
+  nameWithType.vb: SearchWindow(Of T).Find(GameObject)
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).Find(UnityEngine.GameObject)
+references:
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  commentId: N:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  nameWithType: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools
+    name: SearchTools
+    href: SombraStudios.Shared.Editor.SearchTools.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
+    name: AssetOrComponent
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+    name: Base
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools
+    name: SearchTools
+    href: SombraStudios.Shared.Editor.SearchTools.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
+    name: AssetOrComponent
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+    name: Base
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.EditorWindow
+  commentId: T:UnityEditor.EditorWindow
+  parent: UnityEditor
+  isExternal: true
+  name: EditorWindow
+  nameWithType: EditorWindow
+  fullName: UnityEditor.EditorWindow
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: System.Collections.Generic.List{SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults}
+  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<SearchWindow<T>.SearchResults>
+  nameWithType: List<SearchWindow<T>.SearchResults>
+  fullName: System.Collections.Generic.List<SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SearchResults>
+  nameWithType.vb: List(Of SearchWindow(Of T).SearchResults)
+  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SearchResults)
+  name.vb: List(Of SearchWindow(Of T).SearchResults)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.SearchResults.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.SearchResults.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions.html
+  name: SearchOptions
+  nameWithType: SearchOptions
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEditor.DefaultAsset
+  commentId: T:UnityEditor.DefaultAsset
+  parent: UnityEditor
+  isExternal: true
+  name: DefaultAsset
+  nameWithType: DefaultAsset
+  fullName: UnityEditor.DefaultAsset
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.OnGUI*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.OnGUI
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_OnGUI
+  name: OnGUI
+  nameWithType: SearchWindow<T>.OnGUI
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.OnGUI
+  nameWithType.vb: SearchWindow(Of T).OnGUI
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).OnGUI
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindButton*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindButton
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindButton
+  name: FindButton
+  nameWithType: SearchWindow<T>.FindButton
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindButton
+  nameWithType.vb: SearchWindow(Of T).FindButton
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindButton
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectSearchOptions*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectSearchOptions
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_SelectSearchOptions
+  name: SelectSearchOptions
+  nameWithType: SearchWindow<T>.SelectSearchOptions
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SelectSearchOptions
+  nameWithType.vb: SearchWindow(Of T).SelectSearchOptions
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SelectSearchOptions
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchInactiveObjects*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchInactiveObjects
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_SearchInactiveObjects
+  name: SearchInactiveObjects
+  nameWithType: SearchWindow<T>.SearchInactiveObjects
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SearchInactiveObjects
+  nameWithType.vb: SearchWindow(Of T).SearchInactiveObjects
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SearchInactiveObjects
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectFolder*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SelectFolder
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_SelectFolder
+  name: SelectFolder
+  nameWithType: SearchWindow<T>.SelectFolder
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SelectFolder
+  nameWithType.vb: SearchWindow(Of T).SelectFolder
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SelectFolder
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.InfoMessage*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.InfoMessage
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_InfoMessage
+  name: InfoMessage
+  nameWithType: SearchWindow<T>.InfoMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.InfoMessage
+  nameWithType.vb: SearchWindow(Of T).InfoMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).InfoMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.WarningMessage*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.WarningMessage
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_WarningMessage
+  name: WarningMessage
+  nameWithType: SearchWindow<T>.WarningMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.WarningMessage
+  nameWithType.vb: SearchWindow(Of T).WarningMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).WarningMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ErrorMessage*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ErrorMessage
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_ErrorMessage
+  name: ErrorMessage
+  nameWithType: SearchWindow<T>.ErrorMessage
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ErrorMessage
+  nameWithType.vb: SearchWindow(Of T).ErrorMessage
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ErrorMessage
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindOpenScene*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindOpenScene
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindOpenScene
+  name: FindOpenScene
+  nameWithType: SearchWindow<T>.FindOpenScene
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindOpenScene
+  nameWithType.vb: SearchWindow(Of T).FindOpenScene
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindOpenScene
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindScenesInBuild*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindScenesInBuild
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindScenesInBuild
+  name: FindScenesInBuild
+  nameWithType: SearchWindow<T>.FindScenesInBuild
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindScenesInBuild
+  nameWithType.vb: SearchWindow(Of T).FindScenesInBuild
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindScenesInBuild
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindAllScenes*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindAllScenes
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindAllScenes
+  name: FindAllScenes
+  nameWithType: SearchWindow<T>.FindAllScenes
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindAllScenes
+  nameWithType.vb: SearchWindow(Of T).FindAllScenes
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindAllScenes
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.AddAdditionalResultInfo*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.AddAdditionalResultInfo
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_AddAdditionalResultInfo__0_
+  name: AddAdditionalResultInfo
+  nameWithType: SearchWindow<T>.AddAdditionalResultInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.AddAdditionalResultInfo
+  nameWithType.vb: SearchWindow(Of T).AddAdditionalResultInfo
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).AddAdditionalResultInfo
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  name: SearchWindow<T>.SearchResults
+  nameWithType: SearchWindow<T>.SearchResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.SearchResults
+  nameWithType.vb: SearchWindow(Of T).SearchResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).SearchResults
+  name.vb: SearchWindow(Of T).SearchResults
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.SearchResults.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
+    name: SearchResults
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.SearchResults.html
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowAdditionalResultInfo*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowAdditionalResultInfo
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_ShowAdditionalResultInfo_SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow__0__ResultsAdditionalInfo_
+  name: ShowAdditionalResultInfo
+  nameWithType: SearchWindow<T>.ShowAdditionalResultInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ShowAdditionalResultInfo
+  nameWithType.vb: SearchWindow(Of T).ShowAdditionalResultInfo
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ShowAdditionalResultInfo
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
+  commentId: T:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
+  parent: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  name: SearchWindow<T>.ResultsAdditionalInfo
+  nameWithType: SearchWindow<T>.ResultsAdditionalInfo
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ResultsAdditionalInfo
+  nameWithType.vb: SearchWindow(Of T).ResultsAdditionalInfo
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ResultsAdditionalInfo
+  name.vb: SearchWindow(Of T).ResultsAdditionalInfo
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.ResultsAdditionalInfo.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: ResultsAdditionalInfo
+    href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.ResultsAdditionalInfo.html
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindFolder*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindFolder
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindFolder
+  name: FindFolder
+  nameWithType: SearchWindow<T>.FindFolder
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindFolder
+  nameWithType.vb: SearchWindow(Of T).FindFolder
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindFolder
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindProject*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindProject
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindProject
+  name: FindProject
+  nameWithType: SearchWindow<T>.FindProject
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindProject
+  nameWithType.vb: SearchWindow(Of T).FindProject
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindProject
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowResults*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ShowResults
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_ShowResults
+  name: ShowResults
+  nameWithType: SearchWindow<T>.ShowResults
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.ShowResults
+  nameWithType.vb: SearchWindow(Of T).ShowResults
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).ShowResults
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindInScene*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.FindInScene
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_FindInScene_UnityEngine_SceneManagement_Scene_
+  name: FindInScene
+  nameWithType: SearchWindow<T>.FindInScene
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.FindInScene
+  nameWithType.vb: SearchWindow(Of T).FindInScene
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).FindInScene
+- uid: UnityEngine.SceneManagement.Scene
+  commentId: T:UnityEngine.SceneManagement.Scene
+  parent: UnityEngine.SceneManagement
+  isExternal: true
+  name: Scene
+  nameWithType: Scene
+  fullName: UnityEngine.SceneManagement.Scene
+- uid: UnityEngine.SceneManagement
+  commentId: N:UnityEngine.SceneManagement
+  isExternal: true
+  name: UnityEngine.SceneManagement
+  nameWithType: UnityEngine.SceneManagement
+  fullName: UnityEngine.SceneManagement
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.SceneManagement
+    name: SceneManagement
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.SceneManagement
+    name: SceneManagement
+    isExternal: true
+- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.Find*
+  commentId: Overload:SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.Find
+  href: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow-1.html#SombraStudios_Shared_Editor_SearchTools_AssetOrComponent_Base_SearchWindow_1_Find_UnityEngine_GameObject_
+  name: Find
+  nameWithType: SearchWindow<T>.Find
+  fullName: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow<T>.Find
+  nameWithType.vb: SearchWindow(Of T).Find
+  fullName.vb: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow(Of T).Find
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
