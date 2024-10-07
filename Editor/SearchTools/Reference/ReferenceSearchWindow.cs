@@ -44,7 +44,7 @@ namespace SombraStudios.Shared.Editor.SearchTools.Reference
         /// <summary>
         /// Opens the Reference Finder window.
         /// </summary>
-        [MenuItem("Tools/Reference Finder")]
+        [MenuItem("Sombra Studios/Tools/Reference Finder")]
         public static void OpenWindow()
         {
             GetWindow<ReferenceSearchWindow>("Reference Finder");
