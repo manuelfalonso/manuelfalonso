@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Gameplay
+namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
 {
     /// <summary>
     /// Settings for the auto-aim behaviour.
