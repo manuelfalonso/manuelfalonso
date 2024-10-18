@@ -143,6 +143,16 @@ This repository includes a variety of features designed to enhance Unity develop
   - **AfterSceneLoad**: Initialize prefabs after the first scene is loaded.
   - **AfterAssembliesLoaded**: Run instantiation after the assemblies are loaded.
 
+#### When to Use It
+
+- When you need to automatically instantiate essential objects (e.g., managers, global controllers) during game loading or when entering Play Mode, ensuring consistency across all scenes.
+- For large projects where you want to centralize and simplify scene setup by ensuring base objects are always present without manual intervention.
+
+#### When Not to Use It
+
+- If the prefab needs to be instantiated on-demand based on user interactions (e.g., spawning enemies or items during gameplay).
+- When prefabs need to be instantiated with specific runtime data that cannot be pre-configured in a ScriptableObject.
+
 ## Contributing
 
 If you would like to contribute to this repository, feel free to submit a pull request or open an issue. Any suggestions or improvements are welcome!
