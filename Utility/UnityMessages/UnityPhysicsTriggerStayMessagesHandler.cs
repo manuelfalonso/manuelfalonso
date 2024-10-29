@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.UnityMessages
 {
     /// <summary>
     /// Documentation:
