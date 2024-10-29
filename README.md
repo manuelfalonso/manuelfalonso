@@ -104,6 +104,7 @@ The repository is organized into the following main folders:
       - **Cooldown/**: Scripts to manage cooldown timers.
       - **Destroyer/**: Conditional object destruction logic.
       - **FrameRate/**: Scripts to manage or display frame rates.
+	  - **Mirror/**: Scripts to mirror the Transform on position, rotation or scale along a given axis.
       - **Mobile/**: Scripts for mobile-specific functionality, like touch inputs or keyboards.
       - **PrefabInstantiateOnLoad/**: Automatically instantiate prefabs on scene load.
       - **Resources/**: Scripts to manage resource loading and references.
