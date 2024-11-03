@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Destructible
     /// If the spawned game object has a rigidbodies then they will have force added to them based on the
     /// fields provided.
     /// </summary>
-    public class DestructibleBehaviour : MonoBehaviour
+    public class DestructibleBehaviour : MonoBehaviour, IBehaviour
     {
         [Header("Prefab")]
         /// <summary>
@@ -23,16 +23,22 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Destructible
         [Tooltip("The data defining the destructible behavior.")]
         [SerializeField] private DestructibleBehaviourData _data;
 
+        [Header("Debug")]
+        [SerializeField] private bool _isEnabled;
+
         /// <summary>
         /// Gets or sets a value indicating whether the object is destroyed.
         /// </summary>
         public bool Destroyed { get; protected set; }
+        public bool IsEnabled { get => _isEnabled; set => _isEnabled = value; }
+
+        public void ToggleBehaviour() => _isEnabled = !_isEnabled;
 
 
         /// <summary>
         /// Destroys the object and spawns the destroyed version.
         /// </summary>
-        public virtual void Destroy()
+        public virtual void ExecuteBehaviour()
         {
             if (Destroyed) { return; }
             if (_destroyedVersion == null) { return; }

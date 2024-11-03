@@ -9,7 +9,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
     /// <summary>
     /// Controls the auto-aim behaviour of a game object.
     /// </summary>
-    public class AutoAimBehaviourController : MonoBehaviour
+    public class AutoAimBehaviourController : MonoBehaviour, IBehaviour
     {
         [Tooltip("The target to aim at.")]
         [SerializeField] private Transform _target;
@@ -21,6 +21,8 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         [SerializeField] private bool _showDebugRays = false;
 
         [Header("Debug")]
+        [Tooltip("Indicates whether the behaviour is enabled.")]
+        [SerializeField] private bool _isEnabled;
         [Tooltip("Indicates whether the object is currently aiming.")]
         [SerializeField] private bool _isAiming = false;
         [Tooltip("Indicates whether the target is within the deadzone.")]
@@ -115,6 +117,10 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
             }
         }
 
+        public bool IsEnabled { get => _isEnabled; set => _isEnabled = value; }
+        
+        public void ToggleBehaviour() => IsEnabled = !IsEnabled;
+
         private Quaternion _currentRotation;
         private Vector3 _targetPosition;
         private Quaternion _targetRotation;
@@ -141,7 +147,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// </summary>
         private void Update()
         {
-            AutoAim();
+            ExecuteBehaviour();
         }
 
         /// <summary>
@@ -194,7 +200,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// <summary>
         /// Handles the auto-aim logic.
         /// </summary>
-        private void AutoAim()
+        public void ExecuteBehaviour()
         {
             if (_target == null) return;
 

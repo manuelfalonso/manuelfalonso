@@ -9,7 +9,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
     /// maximum charges, and automatic discharge. Provides events for tracking charging progress
     /// and allows for starting, stopping, and using charges.
     /// </summary>
-    public class ChargeBehaviour : MonoBehaviour
+    public class ChargeBehaviour : MonoBehaviour, IBehaviour
     {
         [Header("Data")]
         /// <summary>
@@ -23,7 +23,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// Indicates whether the charging behavior is active.
         /// </summary>
         [Tooltip("Indicates whether the charging behavior is active.")]
-        [SerializeField] private bool _isActive = true;
+        [SerializeField] private bool _isEnabled = true;
         /// <summary>
         /// Indicates whether to show debug logs.
         /// </summary>
@@ -53,7 +53,9 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// Indicates whether the maximum number of charges has been reached.
         /// </summary>
         [Tooltip("Indicates whether the maximum number of charges has been reached.")]
+#pragma warning disable IDE0052 // Quitar miembros privados no leídos
         [SerializeField, ReadOnly] private bool _isMaxCharged = false;
+#pragma warning restore IDE0052 // Quitar miembros privados no leídos
 
 
         /// <summary>
@@ -63,7 +65,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// <summary>
         /// Gets or sets whether the charging behavior is active.
         /// </summary>
-        public bool IsActive { get => _isActive; set => _isActive = value; }
+        public bool IsEnabled { get => _isEnabled; set => _isEnabled = value; }
         /// <summary>
         /// Gets the current number of charges.
         /// </summary>
@@ -145,6 +147,12 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         [Tooltip("Invoked on each discharge.")]
         public UnityEvent<int> DischargeReached = new UnityEvent<int>();
 
+        /// <summary>
+        /// Toggles the behaviour on or off.
+        /// </summary>
+        public void ToggleBehaviour() => _isEnabled = !_isEnabled;
+
+
         // Charge
         /// <summary>
         /// Gets the next charge value.
@@ -161,7 +169,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// </summary>
         private void Update()
         {
-            Charge();
+            ExecuteBehaviour();
         }
 
 
@@ -172,7 +180,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// <returns>True if charging started successfully, false otherwise.</returns>
         public bool StartCharging()
         {
-            if (!_isActive) { return false; }
+            if (!_isEnabled) { return false; }
             if (_isCharging)
             {
                 // Its already in charging state
@@ -196,7 +204,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// <returns>True if charging stopped successfully, false otherwise.</returns>
         public bool StopCharging()
         {
-            if (!_isActive) { return false; }
+            if (!_isEnabled) { return false; }
             if (!_isCharging)
             {
                 // Its already stopped
@@ -225,7 +233,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         public ChargeBehaviourResult UseCharges()
         {
             ChargeBehaviourResult result = new ChargeBehaviourResult();
-            if (!_isActive) { return result; }
+            if (!_isEnabled) { return result; }
 
             result.Charges = _charges;
             result.TotalCharge = _totalCharge;
@@ -254,16 +262,16 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// <summary>
         /// Handles the charging behavior based on the configured parameters.
         /// </summary>
-        private void Charge()
+        public void ExecuteBehaviour()
         {
-            if (!_isActive) { return; }
+            if (!_isEnabled) { return; }
 
             // Check if the data required is assinged, if not stop running the script
             if (_data == null)
             {
                 Debug.LogError($"Behaviour data missing!", this);
                 enabled = false;
-                _isActive = false;
+                _isEnabled = false;
                 return;
             }
 
