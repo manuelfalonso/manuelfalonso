@@ -1,8 +1,8 @@
-using SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base;
+using SombraStudios.Shared.Utility.Search.AssetOrComponent.Base;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
+namespace SombraStudios.Shared.Utility.Search.AssetOrComponent
 {
     /// <summary>
     /// Custom Editor window to search for ParticleSystem components.

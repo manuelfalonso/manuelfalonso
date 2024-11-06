@@ -4,7 +4,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Shared.Editor.SearchTools.Reference
+namespace SombraStudios.Shared.Utility.Search.Reference
 {
     /// <summary>
     /// A window for finding references to a specific component or gameObject in the current scene or prefab.

@@ -4,7 +4,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor
+namespace SombraStudios.Shared.Utility
 {
 
     /// <summary>

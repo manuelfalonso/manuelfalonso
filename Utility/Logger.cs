@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Tools
+namespace SombraStudios.Shared.Utility
 {
     // Increase Unity Logger performance by disabling "Use Player Log" in Resolution and Presentation Player Settings
     // This is the file that Debug Log writes to when it’s called.

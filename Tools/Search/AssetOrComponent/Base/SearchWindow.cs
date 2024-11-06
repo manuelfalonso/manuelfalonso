@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
+namespace SombraStudios.Shared.Utility.Search.AssetOrComponent.Base
 {
     /// <summary>
     /// Abstract base class for creating a custom Editor window to find various assets or objects.

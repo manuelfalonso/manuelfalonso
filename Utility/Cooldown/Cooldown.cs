@@ -1,5 +1,5 @@
 using SombraStudios.Shared.Attributes;
-using SombraStudios.Shared.Tools.Coroutines;
+using SombraStudios.Shared.Utility.Coroutines;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;

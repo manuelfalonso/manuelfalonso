@@ -102,7 +102,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
                 }
 
                 ChargeReached?.Invoke(_charges);
-                Tools.Logger.Log(_showLogs, $"Charges: {_charges}", this);
+                Utility.Logger.Log(_showLogs, $"Charges: {_charges}", this);
             }
         }
         /// <summary>
@@ -191,7 +191,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
                 // Start the charge
                 _isCharging = true;
                 ChargingStarted?.Invoke();
-                Tools.Logger.Log(_showLogs, $"StartCharging", this);
+                Utility.Logger.Log(_showLogs, $"StartCharging", this);
 
                 return true;
             }
@@ -215,7 +215,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
                 // Stop the charge
                 _isCharging = false;
                 ChargingStoped?.Invoke();
-                Tools.Logger.Log(_showLogs, $"StopCharging: {_totalCharge}", this);
+                Utility.Logger.Log(_showLogs, $"StopCharging: {_totalCharge}", this);
 
                 if (!_data.MantainThresholdOnStop) { _totalCharge = Charges; }
 
@@ -241,7 +241,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
             if (_charges > 0)
             {
                 // Reset charges
-                Tools.Logger.Log(_showLogs, $"UseCharges: {_charges}", this);
+                Utility.Logger.Log(_showLogs, $"UseCharges: {_charges}", this);
                 _charges = 0;
                 _totalCharge = 0f;
                 _totalDischarge = 0f;

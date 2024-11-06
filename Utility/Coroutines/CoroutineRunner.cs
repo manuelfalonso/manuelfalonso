@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Tools.Coroutines
+namespace SombraStudios.Shared.Utility.Coroutines
 {
     /// <summary>
     /// Unity Coroutine runner that allows game object decoupled, scene 

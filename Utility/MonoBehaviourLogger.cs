@@ -1,7 +1,7 @@
 // Credits to Jason Storey
 using UnityEngine;
 
-namespace SombraStudios.Shared.Tools
+namespace SombraStudios.Shared.Utility
 {
 
     [AddComponentMenu("_SombraStudios/Services/Logger")]

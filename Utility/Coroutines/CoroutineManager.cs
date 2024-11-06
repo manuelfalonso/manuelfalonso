@@ -1,6 +1,6 @@
 using SombraStudios.Shared.Patterns.Creational.Singleton;
 
-namespace SombraStudios.Shared.Tools.Coroutines
+namespace SombraStudios.Shared.Utility.Coroutines
 {
     /// <summary>
     /// Scene persistent Singleton MonoBehaviour to run Coroutines
