@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.Animations
     /// Helper class for working with Unity's Animator component.
     /// </summary>
     [RequireComponent(typeof(Animator))]
-    public class AnimatorHelper : MonoBehaviour
+    public class AnimatorController : MonoBehaviour
     {
         [SerializeField] private Animator _myAnimator;
         [SerializeField] private int _mainLayer;
