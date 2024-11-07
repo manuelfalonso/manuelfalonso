@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  id: AutoForceSettings
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceMode
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeX
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeY
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeZ
+  langs:
+  - csharp
+  - vb
+  name: AutoForceSettings
+  nameWithType: AutoForceSettings
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoForceSettings
+    path: ../Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  summary: Settings for automatic force application.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AutoForceSettings", menuName = "Sombra Studios/Behaviours/AutoForceSettings")]
+
+      public class AutoForceSettings : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AutoForceSettings", menuName:="Sombra Studios/Behaviours/AutoForceSettings")>
+
+      Public Class AutoForceSettings Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AutoForceSettings
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/AutoForceSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeX
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeX
+  id: ForceSizeX
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  langs:
+  - csharp
+  - vb
+  name: ForceSizeX
+  nameWithType: AutoForceSettings.ForceSizeX
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeX
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceSizeX
+    path: ../Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  syntax:
+    content: >-
+      [Header("Force Settings")]
+
+      [Range(-1000, 1000)]
+
+      public float ForceSizeX
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Force Settings")>
+
+      <Range(-1000, 1000)>
+
+      Public ForceSizeX As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Force Settings
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeY
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeY
+  id: ForceSizeY
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  langs:
+  - csharp
+  - vb
+  name: ForceSizeY
+  nameWithType: AutoForceSettings.ForceSizeY
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeY
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceSizeY
+    path: ../Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  summary: Size of force along the world y-axis.
+  example: []
+  syntax:
+    content: >-
+      [Range(-1000, 1000)]
+
+      public float ForceSizeY
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(-1000, 1000)>
+
+      Public ForceSizeY As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeZ
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeZ
+  id: ForceSizeZ
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  langs:
+  - csharp
+  - vb
+  name: ForceSizeZ
+  nameWithType: AutoForceSettings.ForceSizeZ
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceSizeZ
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceSizeZ
+    path: ../Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  summary: Size of force along the world z-axis.
+  example: []
+  syntax:
+    content: >-
+      [Range(-1000, 1000)]
+
+      public float ForceSizeZ
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(-1000, 1000)>
+
+      Public ForceSizeZ As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceMode
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceMode
+  id: ForceMode
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+  langs:
+  - csharp
+  - vb
+  name: ForceMode
+  nameWithType: AutoForceSettings.ForceMode
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings.ForceMode
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceMode
+    path: ../Gameplay/Behaviours/AutoForce/AutoForceSettings.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  summary: The type of force to apply.
+  example: []
+  syntax:
+    content: public ForceMode ForceMode
+    return:
+      type: UnityEngine.ForceMode
+    content.vb: Public ForceMode As ForceMode
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+    name: AutoForce
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+    name: AutoForce
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.ForceMode
+  commentId: T:UnityEngine.ForceMode
+  parent: UnityEngine
+  isExternal: true
+  name: ForceMode
+  nameWithType: ForceMode
+  fullName: UnityEngine.ForceMode

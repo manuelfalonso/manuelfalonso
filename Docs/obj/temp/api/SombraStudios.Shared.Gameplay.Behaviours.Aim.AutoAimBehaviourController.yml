@@ -11,9 +11,12 @@ items:
   - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetLocked
   - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetRemoved
   - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Data
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour
   - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsAiming
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled
   - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
   - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.Target
+  - SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour
   langs:
   - csharp
   - vb
@@ -35,14 +38,16 @@ items:
   summary: Controls the auto-aim behaviour of a game object.
   example: []
   syntax:
-    content: 'public class AutoAimBehaviourController : MonoBehaviour'
-    content.vb: Public Class AutoAimBehaviourController Inherits MonoBehaviour
+    content: 'public class AutoAimBehaviourController : MonoBehaviour, IBehaviour'
+    content.vb: Public Class AutoAimBehaviourController Inherits MonoBehaviour Implements IBehaviour
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.AimTargetChanged
@@ -63,7 +68,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AimTargetChanged
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 29
+    startLine: 31
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -102,7 +107,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AimTargetRemoved
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 30
+    startLine: 32
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -129,7 +134,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AimTargetLocked
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -156,7 +161,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AimStarted
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 32
+    startLine: 34
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -183,7 +188,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AimStopped
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 33
+    startLine: 35
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -210,7 +215,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Target
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 38
+    startLine: 40
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -241,7 +246,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Data
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -272,7 +277,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IsAiming
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -303,7 +308,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IsInDeadzone
     path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
-    startLine: 94
+    startLine: 96
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -316,6 +321,99 @@ items:
       type: System.Boolean
     content.vb: Public Property IsInDeadzone As Boolean
   overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone*
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled
+  id: IsEnabled
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled
+  nameWithType: AutoAimBehaviourController.IsEnabled
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsEnabled
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 119
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Indicates whether the behavior is enabled.
+  example: []
+  syntax:
+    content: public bool IsEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsEnabled As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled*
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour
+  id: ToggleBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: ToggleBehaviour()
+  nameWithType: AutoAimBehaviourController.ToggleBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ToggleBehaviour
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 121
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Toggles the state of the behavior.
+  example: []
+  syntax:
+    content: public void ToggleBehaviour()
+    content.vb: Public Sub ToggleBehaviour()
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour*
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour
+  id: ExecuteBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController
+  langs:
+  - csharp
+  - vb
+  name: ExecuteBehaviour()
+  nameWithType: AutoAimBehaviourController.ExecuteBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExecuteBehaviour
+    path: ../Gameplay/Behaviours/Aim/AutoAimBehaviourController.cs
+    startLine: 202
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Aim
+  summary: Handles the auto-aim logic.
+  example: []
+  syntax:
+    content: public void ExecuteBehaviour()
+    content.vb: Public Sub ExecuteBehaviour()
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour*
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
 references:
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
   commentId: N:SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -402,6 +500,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html
+  name: IBehaviour
+  nameWithType: IBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
 - uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
@@ -460,6 +565,44 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: SombraStudios.Shared.Gameplay.Behaviours
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours
+  fullName: SombraStudios.Shared.Gameplay.Behaviours
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
 - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   isExternal: true
@@ -619,3 +762,66 @@ references:
   name: IsInDeadzone
   nameWithType: AutoAimBehaviourController.IsInDeadzone
   fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsInDeadzone
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_IsEnabled
+  name: IsEnabled
+  nameWithType: AutoAimBehaviourController.IsEnabled
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.IsEnabled
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+  parent: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_IsEnabled
+  name: IsEnabled
+  nameWithType: IBehaviour.IsEnabled
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_ToggleBehaviour
+  name: ToggleBehaviour
+  nameWithType: AutoAimBehaviourController.ToggleBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ToggleBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ToggleBehaviour
+  name: ToggleBehaviour()
+  nameWithType: IBehaviour.ToggleBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+    name: ToggleBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ToggleBehaviour
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+    name: ToggleBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ToggleBehaviour
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.html#SombraStudios_Shared_Gameplay_Behaviours_Aim_AutoAimBehaviourController_ExecuteBehaviour
+  name: ExecuteBehaviour
+  nameWithType: AutoAimBehaviourController.ExecuteBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourController.ExecuteBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ExecuteBehaviour
+  name: ExecuteBehaviour()
+  nameWithType: IBehaviour.ExecuteBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+    name: ExecuteBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ExecuteBehaviour
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+    name: ExecuteBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ExecuteBehaviour
+  - name: (
+  - name: )

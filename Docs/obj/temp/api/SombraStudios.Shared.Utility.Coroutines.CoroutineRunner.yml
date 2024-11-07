@@ -1,0 +1,540 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  commentId: T:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  id: CoroutineRunner
+  parent: SombraStudios.Shared.Utility.Coroutines
+  children:
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.#ctor(UnityEngine.MonoBehaviour,System.Boolean,System.Boolean)
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine(System.Collections.IEnumerator,System.Single,System.Single)
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished(System.Action)
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted(System.Action)
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished(System.Action)
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: CoroutineRunner
+  nameWithType: CoroutineRunner
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  type: Class
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CoroutineRunner
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: >-
+    Unity Coroutine runner that allows game object decoupled, scene 
+
+    persistent and single or multi coroutine execution.
+
+
+    Events:
+
+    OnCoroutineStarted
+
+    OnCoroutineFinished
+  example: []
+  syntax:
+    content: public class CoroutineRunner
+    content.vb: Public Class CoroutineRunner
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.#ctor(UnityEngine.MonoBehaviour,System.Boolean,System.Boolean)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.#ctor(UnityEngine.MonoBehaviour,System.Boolean,System.Boolean)
+  id: '#ctor(UnityEngine.MonoBehaviour,System.Boolean,System.Boolean)'
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: CoroutineRunner(MonoBehaviour, bool, bool)
+  nameWithType: CoroutineRunner.CoroutineRunner(MonoBehaviour, bool, bool)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.CoroutineRunner(UnityEngine.MonoBehaviour, bool, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 66
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Initializes a new instance of the CoroutineRunner class.
+  example: []
+  syntax:
+    content: public CoroutineRunner(MonoBehaviour myMonobehaviour, bool isGameObjectDecoupled = false, bool isMultiExecution = false)
+    parameters:
+    - id: myMonobehaviour
+      type: UnityEngine.MonoBehaviour
+      description: The client script.
+    - id: isGameObjectDecoupled
+      type: System.Boolean
+      description: >-
+        Determines whether the coroutine starts from an external object that 
+            will not stop the coroutine if the client GameObject is deactivated or destroyed.
+    - id: isMultiExecution
+      type: System.Boolean
+      description: >-
+        Determines whether the StartCoroutine method lets run different routines 
+            simultaneously.
+    content.vb: Public Sub New(myMonobehaviour As MonoBehaviour, isGameObjectDecoupled As Boolean = False, isMultiExecution As Boolean = False)
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.#ctor*
+  nameWithType.vb: CoroutineRunner.New(MonoBehaviour, Boolean, Boolean)
+  fullName.vb: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.New(UnityEngine.MonoBehaviour, Boolean, Boolean)
+  name.vb: New(MonoBehaviour, Boolean, Boolean)
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine(System.Collections.IEnumerator,System.Single,System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine(System.Collections.IEnumerator,System.Single,System.Single)
+  id: StartCoroutine(System.Collections.IEnumerator,System.Single,System.Single)
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: StartCoroutine(IEnumerator, float, float)
+  nameWithType: CoroutineRunner.StartCoroutine(IEnumerator, float, float)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine(System.Collections.IEnumerator, float, float)
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartCoroutine
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 83
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Starts a coroutine with optional pre and post wait times.
+  example: []
+  syntax:
+    content: public void StartCoroutine(IEnumerator routine, float preWaitTime = 0, float postWaitTime = 0)
+    parameters:
+    - id: routine
+      type: System.Collections.IEnumerator
+    - id: preWaitTime
+      type: System.Single
+    - id: postWaitTime
+      type: System.Single
+    content.vb: Public Sub StartCoroutine(routine As IEnumerator, preWaitTime As Single = 0, postWaitTime As Single = 0)
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine*
+  nameWithType.vb: CoroutineRunner.StartCoroutine(IEnumerator, Single, Single)
+  fullName.vb: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine(System.Collections.IEnumerator, Single, Single)
+  name.vb: StartCoroutine(IEnumerator, Single, Single)
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine
+  id: TryStopCoroutine
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: TryStopCoroutine()
+  nameWithType: CoroutineRunner.TryStopCoroutine()
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine()
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryStopCoroutine
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 96
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Attempts to stop the current coroutine.
+  example: []
+  syntax:
+    content: public bool TryStopCoroutine()
+    return:
+      type: System.Boolean
+      description: Returns true if the coroutine was successfully stopped; otherwise, false.
+    content.vb: Public Function TryStopCoroutine() As Boolean
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine*
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll
+  id: StopAll
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: StopAll()
+  nameWithType: CoroutineRunner.StopAll()
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll()
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopAll
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 109
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Stops all coroutines.
+  example: []
+  syntax:
+    content: public void StopAll()
+    content.vb: Public Sub StopAll()
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll*
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart
+  id: TryRestart
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: TryRestart()
+  nameWithType: CoroutineRunner.TryRestart()
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart()
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryRestart
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 126
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Attempts to restart the coroutine.
+  example: []
+  syntax:
+    content: public bool TryRestart()
+    return:
+      type: System.Boolean
+      description: Returns true if the coroutine was successfully restarted; otherwise, false.
+    content.vb: Public Function TryRestart() As Boolean
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart*
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted(System.Action)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted(System.Action)
+  id: SubscribeOnCoroutineStarted(System.Action)
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: SubscribeOnCoroutineStarted(Action)
+  nameWithType: CoroutineRunner.SubscribeOnCoroutineStarted(Action)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SubscribeOnCoroutineStarted
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 139
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Subscribes to the coroutine started event.
+  example: []
+  syntax:
+    content: public void SubscribeOnCoroutineStarted(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+    content.vb: Public Sub SubscribeOnCoroutineStarted(callback As Action)
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted*
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted(System.Action)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted(System.Action)
+  id: UnsubscribeOnCoroutineStarted(System.Action)
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: UnsubscribeOnCoroutineStarted(Action)
+  nameWithType: CoroutineRunner.UnsubscribeOnCoroutineStarted(Action)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnsubscribeOnCoroutineStarted
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 148
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Unsubscribes from the coroutine started event.
+  example: []
+  syntax:
+    content: public void UnsubscribeOnCoroutineStarted(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+    content.vb: Public Sub UnsubscribeOnCoroutineStarted(callback As Action)
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted*
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished(System.Action)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished(System.Action)
+  id: SubscribeOnCoroutineFinished(System.Action)
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: SubscribeOnCoroutineFinished(Action)
+  nameWithType: CoroutineRunner.SubscribeOnCoroutineFinished(Action)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SubscribeOnCoroutineFinished
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 156
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Subscribes to the coroutine finished event.
+  example: []
+  syntax:
+    content: public void SubscribeOnCoroutineFinished(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+    content.vb: Public Sub SubscribeOnCoroutineFinished(callback As Action)
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished*
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished(System.Action)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished(System.Action)
+  id: UnsubscribeOnCoroutineFinished(System.Action)
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+  langs:
+  - csharp
+  - vb
+  name: UnsubscribeOnCoroutineFinished(Action)
+  nameWithType: CoroutineRunner.UnsubscribeOnCoroutineFinished(Action)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineRunner.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnsubscribeOnCoroutineFinished
+    path: ../Utility/Coroutines/CoroutineRunner.cs
+    startLine: 165
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: Unsubscribes from the coroutine finished event.
+  example: []
+  syntax:
+    content: public void UnsubscribeOnCoroutineFinished(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+    content.vb: Public Sub UnsubscribeOnCoroutineFinished(callback As Action)
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished*
+references:
+- uid: SombraStudios.Shared.Utility.Coroutines
+  commentId: N:SombraStudios.Shared.Utility.Coroutines
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Coroutines
+  nameWithType: SombraStudios.Shared.Utility.Coroutines
+  fullName: SombraStudios.Shared.Utility.Coroutines
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Coroutines
+    name: Coroutines
+    href: SombraStudios.Shared.Utility.Coroutines.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Coroutines
+    name: Coroutines
+    href: SombraStudios.Shared.Utility.Coroutines.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.#ctor*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.#ctor
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner__ctor_UnityEngine_MonoBehaviour_System_Boolean_System_Boolean_
+  name: CoroutineRunner
+  nameWithType: CoroutineRunner.CoroutineRunner
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.CoroutineRunner
+  nameWithType.vb: CoroutineRunner.New
+  fullName.vb: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.New
+  name.vb: New
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_StartCoroutine_System_Collections_IEnumerator_System_Single_System_Single_
+  name: StartCoroutine
+  nameWithType: CoroutineRunner.StartCoroutine
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StartCoroutine
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_TryStopCoroutine
+  name: TryStopCoroutine
+  nameWithType: CoroutineRunner.TryStopCoroutine
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryStopCoroutine
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_StopAll
+  name: StopAll
+  nameWithType: CoroutineRunner.StopAll
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.StopAll
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_TryRestart
+  name: TryRestart
+  nameWithType: CoroutineRunner.TryRestart
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.TryRestart
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_SubscribeOnCoroutineStarted_System_Action_
+  name: SubscribeOnCoroutineStarted
+  nameWithType: CoroutineRunner.SubscribeOnCoroutineStarted
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineStarted
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_UnsubscribeOnCoroutineStarted_System_Action_
+  name: UnsubscribeOnCoroutineStarted
+  nameWithType: CoroutineRunner.UnsubscribeOnCoroutineStarted
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineStarted
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_SubscribeOnCoroutineFinished_System_Action_
+  name: SubscribeOnCoroutineFinished
+  nameWithType: CoroutineRunner.SubscribeOnCoroutineFinished
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.SubscribeOnCoroutineFinished
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.html#SombraStudios_Shared_Utility_Coroutines_CoroutineRunner_UnsubscribeOnCoroutineFinished_System_Action_
+  name: UnsubscribeOnCoroutineFinished
+  nameWithType: CoroutineRunner.UnsubscribeOnCoroutineFinished
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner.UnsubscribeOnCoroutineFinished

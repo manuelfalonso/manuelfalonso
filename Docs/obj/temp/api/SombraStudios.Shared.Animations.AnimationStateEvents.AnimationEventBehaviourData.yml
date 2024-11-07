@@ -1,0 +1,314 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  id: AnimationEventBehaviourData
+  parent: SombraStudios.Shared.Animations.AnimationStateEvents
+  children:
+  - SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.Event
+  - SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.HasTriggered
+  - SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.ResetTriggerOnLoop
+  - SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.TriggerTime
+  langs:
+  - csharp
+  - vb
+  name: AnimationEventBehaviourData
+  nameWithType: AnimationEventBehaviourData
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  type: Class
+  source:
+    remote:
+      path: Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AnimationEventBehaviourData
+    path: ../Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+    startLine: 68
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.AnimationStateEvents
+  summary: Data class for animation event behaviour.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class AnimationEventBehaviourData
+    content.vb: >-
+      <Serializable>
+
+      Public Class AnimationEventBehaviourData
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.Event
+  commentId: F:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.Event
+  id: Event
+  parent: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: AnimationEventBehaviourData.Event
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.Event
+  type: Field
+  source:
+    remote:
+      path: Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Event
+    path: ../Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+    startLine: 75
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.AnimationStateEvents
+  summary: The event data associated with the animation event.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("The event data associated with the animation event.")]
+
+      public AnimationEventData Event
+    return:
+      type: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
+    content.vb: >-
+      <Tooltip("The event data associated with the animation event.")>
+
+      Public [Event] As AnimationEventData
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The event data associated with the animation event.
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.TriggerTime
+  commentId: F:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.TriggerTime
+  id: TriggerTime
+  parent: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: TriggerTime
+  nameWithType: AnimationEventBehaviourData.TriggerTime
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.TriggerTime
+  type: Field
+  source:
+    remote:
+      path: Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TriggerTime
+    path: ../Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+    startLine: 82
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.AnimationStateEvents
+  summary: The time at which the event should be triggered, normalized between 0 and 1.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("The time at which the event should be triggered, normalized between 0 and 1.")]
+
+      [Range(0, 1)]
+
+      public float TriggerTime
+    return:
+      type: System.Single
+    content.vb: >-
+      <Tooltip("The time at which the event should be triggered, normalized between 0 and 1.")>
+
+      <Range(0, 1)>
+
+      Public TriggerTime As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The time at which the event should be triggered, normalized between 0 and 1.
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.ResetTriggerOnLoop
+  commentId: F:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.ResetTriggerOnLoop
+  id: ResetTriggerOnLoop
+  parent: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: ResetTriggerOnLoop
+  nameWithType: AnimationEventBehaviourData.ResetTriggerOnLoop
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.ResetTriggerOnLoop
+  type: Field
+  source:
+    remote:
+      path: Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetTriggerOnLoop
+    path: ../Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+    startLine: 88
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.AnimationStateEvents
+  summary: Whether the event trigger should be reset on each loop.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Whether the event trigger should be reset on each loop.")]
+
+      public bool ResetTriggerOnLoop
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("Whether the event trigger should be reset on each loop.")>
+
+      Public ResetTriggerOnLoop As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether the event trigger should be reset on each loop.
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.HasTriggered
+  commentId: F:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.HasTriggered
+  id: HasTriggered
+  parent: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+  langs:
+  - csharp
+  - vb
+  name: HasTriggered
+  nameWithType: AnimationEventBehaviourData.HasTriggered
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData.HasTriggered
+  type: Field
+  source:
+    remote:
+      path: Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasTriggered
+    path: ../Animations/AnimationStateEvents/StateMachineBehaviour/AnimationStateEventBehaviour.cs
+    startLine: 95
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.AnimationStateEvents
+  summary: Whether the event has been triggered.
+  example: []
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      [Tooltip("Whether the event has been triggered.")]
+
+      public bool HasTriggered
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HideInInspector>
+
+      <Tooltip("Whether the event has been triggered.")>
+
+      Public HasTriggered As Boolean
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether the event has been triggered.
+references:
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents
+  commentId: N:SombraStudios.Shared.Animations.AnimationStateEvents
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Animations.AnimationStateEvents
+  nameWithType: SombraStudios.Shared.Animations.AnimationStateEvents
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations
+    name: Animations
+    href: SombraStudios.Shared.Animations.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents
+    name: AnimationStateEvents
+    href: SombraStudios.Shared.Animations.AnimationStateEvents.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations
+    name: Animations
+    href: SombraStudios.Shared.Animations.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents
+    name: AnimationStateEvents
+    href: SombraStudios.Shared.Animations.AnimationStateEvents.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
+  commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
+  parent: SombraStudios.Shared.Animations.AnimationStateEvents
+  href: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData.html
+  name: AnimationEventData
+  nameWithType: AnimationEventData
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

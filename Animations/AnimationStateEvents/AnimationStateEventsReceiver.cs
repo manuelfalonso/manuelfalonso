@@ -27,6 +27,10 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         [SerializeField]
         private List<AnimationEvent> _animationStateExitEvents = new();
 
+        [Header("Debug")]
+        [SerializeField]
+        private bool _showLogs;
+
         /// <summary>
         /// Called when an animation state begins.
         /// </summary>
@@ -39,7 +43,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
 
             matchingEvent.EventAction?.Invoke(test);
 
-            Debug.Log($"Event Enter triggered: {eventData.EventName}");
+            if (_showLogs) Debug.Log($"Event Enter triggered: {eventData.EventName}");
         }
 
         /// <summary>
@@ -54,7 +58,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
 
             matchingEvent.EventAction?.Invoke(test);
 
-            Debug.Log($"Event triggered: {eventData.EventName}");
+            if (_showLogs) Debug.Log($"Event triggered: {eventData.EventName}");
         }
 
         /// <summary>
@@ -69,7 +73,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
 
             matchingEvent.EventAction?.Invoke(test);
 
-            Debug.Log($"Event Exit triggered: {eventData.EventName}");
+            if (_showLogs) Debug.Log($"Event Exit triggered: {eventData.EventName}");
         }
 
         /// <summary>

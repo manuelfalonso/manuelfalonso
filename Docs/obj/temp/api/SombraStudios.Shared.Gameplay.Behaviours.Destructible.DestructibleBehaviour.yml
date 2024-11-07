@@ -5,8 +5,10 @@ items:
   id: DestructibleBehaviour
   parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible
   children:
-  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy
   - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroyed
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled
+  - SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour
   langs:
   - csharp
   - vb
@@ -33,14 +35,16 @@ items:
     fields provided.
   example: []
   syntax:
-    content: 'public class DestructibleBehaviour : MonoBehaviour'
-    content.vb: Public Class DestructibleBehaviour Inherits MonoBehaviour
+    content: 'public class DestructibleBehaviour : MonoBehaviour, IBehaviour'
+    content.vb: Public Class DestructibleBehaviour Inherits MonoBehaviour Implements IBehaviour
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroyed
@@ -61,7 +65,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Destroyed
     path: ../Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
-    startLine: 28
+    startLine: 31
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
@@ -74,34 +78,99 @@ items:
       type: System.Boolean
     content.vb: Public Property Destroyed As Boolean
   overload: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroyed*
-- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy
-  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy
-  id: Destroy
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled
+  id: IsEnabled
   parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour
   langs:
   - csharp
   - vb
-  name: Destroy()
-  nameWithType: DestructibleBehaviour.Destroy()
-  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy()
+  name: IsEnabled
+  nameWithType: DestructibleBehaviour.IsEnabled
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled
+  type: Property
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsEnabled
+    path: ../Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  summary: Indicates whether the behavior is enabled.
+  example: []
+  syntax:
+    content: public bool IsEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsEnabled As Boolean
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled*
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour
+  id: ToggleBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour
+  langs:
+  - csharp
+  - vb
+  name: ToggleBehaviour()
+  nameWithType: DestructibleBehaviour.ToggleBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour()
   type: Method
   source:
     remote:
       path: Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: Destroy
+    id: ToggleBehaviour
     path: ../Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
     startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
+  summary: Toggles the state of the behavior.
+  example: []
+  syntax:
+    content: public void ToggleBehaviour()
+    content.vb: Public Sub ToggleBehaviour()
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour*
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour
+  id: ExecuteBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour
+  langs:
+  - csharp
+  - vb
+  name: ExecuteBehaviour()
+  nameWithType: DestructibleBehaviour.ExecuteBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExecuteBehaviour
+    path: ../Gameplay/Behaviours/Destructible/DestructibleBehaviour.cs
+    startLine: 40
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.Behaviours.Destructible
   summary: Destroys the object and spawns the destroyed version.
   example: []
   syntax:
-    content: public virtual void Destroy()
-    content.vb: Public Overridable Sub Destroy()
-  overload: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy*
+    content: public virtual void ExecuteBehaviour()
+    content.vb: Public Overridable Sub ExecuteBehaviour()
+  overload: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour*
+  implements:
+  - SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
 references:
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible
   commentId: N:SombraStudios.Shared.Gameplay.Behaviours.Destructible
@@ -188,6 +257,13 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html
+  name: IBehaviour
+  nameWithType: IBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
 - uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
@@ -246,6 +322,44 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: SombraStudios.Shared.Gameplay.Behaviours
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours
+  fullName: SombraStudios.Shared.Gameplay.Behaviours
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
 - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   isExternal: true
@@ -344,9 +458,66 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy*
-  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy
-  href: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_Destructible_DestructibleBehaviour_Destroy
-  name: Destroy
-  nameWithType: DestructibleBehaviour.Destroy
-  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.Destroy
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled
+  href: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_Destructible_DestructibleBehaviour_IsEnabled
+  name: IsEnabled
+  nameWithType: DestructibleBehaviour.IsEnabled
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.IsEnabled
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+  commentId: P:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+  parent: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_IsEnabled
+  name: IsEnabled
+  nameWithType: IBehaviour.IsEnabled
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.IsEnabled
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_Destructible_DestructibleBehaviour_ToggleBehaviour
+  name: ToggleBehaviour
+  nameWithType: DestructibleBehaviour.ToggleBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ToggleBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ToggleBehaviour
+  name: ToggleBehaviour()
+  nameWithType: IBehaviour.ToggleBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+    name: ToggleBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ToggleBehaviour
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ToggleBehaviour
+    name: ToggleBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ToggleBehaviour
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_Destructible_DestructibleBehaviour_ExecuteBehaviour
+  name: ExecuteBehaviour
+  nameWithType: DestructibleBehaviour.ExecuteBehaviour
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviour.ExecuteBehaviour
+- uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+  commentId: M:SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+  parent: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+  href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ExecuteBehaviour
+  name: ExecuteBehaviour()
+  nameWithType: IBehaviour.ExecuteBehaviour()
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+    name: ExecuteBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ExecuteBehaviour
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.ExecuteBehaviour
+    name: ExecuteBehaviour
+    href: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour.html#SombraStudios_Shared_Gameplay_Behaviours_IBehaviour_ExecuteBehaviour
+  - name: (
+  - name: )

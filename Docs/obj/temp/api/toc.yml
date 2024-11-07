@@ -25,18 +25,31 @@ items:
   items:
   - uid: SombraStudios.Shared.Animations.AnimationController
     name: AnimationController
-  - uid: SombraStudios.Shared.Animations.AnimationEventActionBegin
-    name: AnimationEventActionBegin
-  - uid: SombraStudios.Shared.Animations.AnimationEventActionFinished
-    name: AnimationEventActionFinished
-  - uid: SombraStudios.Shared.Animations.AnimatorHelper
-    name: AnimatorHelper
-  - uid: SombraStudios.Shared.Animations.IAnimationEventActionBegin
-    name: IAnimationEventActionBegin
-  - uid: SombraStudios.Shared.Animations.IAnimationEventActionFinished
-    name: IAnimationEventActionFinished
-  - uid: SombraStudios.Shared.Animations.OnAnimationEvent
-    name: OnAnimationEvent
+  - uid: SombraStudios.Shared.Animations.AnimatorController
+    name: AnimatorController
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents
+  name: SombraStudios.Shared.Animations.AnimationStateEvents
+  items:
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEvent
+    name: AnimationEvent
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventBehaviourData
+    name: AnimationEventBehaviourData
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
+    name: AnimationEventData
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationStateEnterEventBehaviour
+    name: AnimationStateEnterEventBehaviour
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationStateEventBehaviour
+    name: AnimationStateEventBehaviour
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationStateEventsReceiver
+    name: AnimationStateEventsReceiver
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationStateExitEventBehaviour
+    name: AnimationStateExitEventBehaviour
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver
+    name: IAnimationStateEventEnterReceiver
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver
+    name: IAnimationStateEventExitReceiver
+  - uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver
+    name: IAnimationStateEventReceiver
 - uid: SombraStudios.Shared.Attributes
   name: SombraStudios.Shared.Attributes
   items:
@@ -128,46 +141,11 @@ items:
     name: Readme.Section
   - uid: SombraStudios.Shared.Editor.ReadmeEditor
     name: ReadmeEditor
-  - uid: SombraStudios.Shared.Editor.ScreenshotTaker
-    name: ScreenshotTaker
 - uid: SombraStudios.Shared.Editor.ScriptableObjects
   name: SombraStudios.Shared.Editor.ScriptableObjects
   items:
   - uid: SombraStudios.Shared.Editor.ScriptableObjects.ScriptableObjectChecker
     name: ScriptableObjectChecker
-- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
-  name: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent
-  items:
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.GameobjectWithTagOrLayerComponentSearchWindow
-    name: GameobjectWithTagOrLayerComponentSearchWindow
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.MaterialsAssetSearchWindow
-    name: MaterialsAssetSearchWindow
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.MaterialsAssetSearchWindow.MaterialAdditionalInfo
-    name: MaterialsAssetSearchWindow.MaterialAdditionalInfo
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.ParticleSystemComponentSearchWindow
-    name: ParticleSystemComponentSearchWindow
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.TargetType
-    name: TargetType
-- uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
-  name: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base
-  items:
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.AssetSearchWindow`1
-    name: AssetSearchWindow<T>
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.ComponentSearchWindow`1
-    name: ComponentSearchWindow<T>
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchOptions
-    name: SearchOptions
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1
-    name: SearchWindow<T>
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
-    name: SearchWindow<T>.ResultsAdditionalInfo
-  - uid: SombraStudios.Shared.Editor.SearchTools.AssetOrComponent.Base.SearchWindow`1.SearchResults
-    name: SearchWindow<T>.SearchResults
-- uid: SombraStudios.Shared.Editor.SearchTools.Reference
-  name: SombraStudios.Shared.Editor.SearchTools.Reference
-  items:
-  - uid: SombraStudios.Shared.Editor.SearchTools.Reference.ReferenceSearchWindow
-    name: ReferenceSearchWindow
 - uid: SombraStudios.Shared.Editor.UnityGizmos
   name: SombraStudios.Shared.Editor.UnityGizmos
   items:
@@ -192,6 +170,8 @@ items:
 - uid: SombraStudios.Shared.Enums
   name: SombraStudios.Shared.Enums
   items:
+  - uid: SombraStudios.Shared.Enums.Axis
+    name: Axis
   - uid: SombraStudios.Shared.Enums.HandSide
     name: HandSide
   - uid: SombraStudios.Shared.Enums.HandTarget
@@ -316,14 +296,8 @@ items:
 - uid: SombraStudios.Shared.Gameplay
   name: SombraStudios.Shared.Gameplay
   items:
-  - uid: SombraStudios.Shared.Gameplay.GravityScript
-    name: GravityScript
   - uid: SombraStudios.Shared.Gameplay.LaunchProjectile
     name: LaunchProjectile
-  - uid: SombraStudios.Shared.Gameplay.LookAt
-    name: LookAt
-  - uid: SombraStudios.Shared.Gameplay.MoveTowards
-    name: MoveTowards
   - uid: SombraStudios.Shared.Gameplay.OnInteract
     name: OnInteract
   - uid: SombraStudios.Shared.Gameplay.OnTilt
@@ -338,8 +312,6 @@ items:
     name: SelectionWithRaycast
   - uid: SombraStudios.Shared.Gameplay.SimpleObjectPathing
     name: SimpleObjectPathing
-  - uid: SombraStudios.Shared.Gameplay.Spinner
-    name: Spinner
   - uid: SombraStudios.Shared.Gameplay.TileSelection
     name: TileSelection
   - uid: SombraStudios.Shared.Gameplay.TiltObject
@@ -352,6 +324,11 @@ items:
     name: Unbreakable
   - uid: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
     name: Unbreakable.RestoreEvent
+- uid: SombraStudios.Shared.Gameplay.Behaviours
+  name: SombraStudios.Shared.Gameplay.Behaviours
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.IBehaviour
+    name: IBehaviour
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim
   name: SombraStudios.Shared.Gameplay.Behaviours.Aim
   items:
@@ -359,6 +336,34 @@ items:
     name: AutoAimBehaviourController
   - uid: SombraStudios.Shared.Gameplay.Behaviours.Aim.AutoAimBehaviourSettings
     name: AutoAimBehaviourSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoForce
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceController
+    name: AutoForceController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoForce.AutoForceSettings
+    name: AutoForceSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveController
+    name: AutoMoveController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSettings
+    name: AutoMoveSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateController
+    name: AutoRotateController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSettings
+    name: AutoRotateSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueController
+    name: AutoTorqueController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSettings
+    name: AutoTorqueSettings
 - uid: SombraStudios.Shared.Gameplay.Behaviours.Charge
   name: SombraStudios.Shared.Gameplay.Behaviours.Charge
   items:
@@ -375,13 +380,27 @@ items:
     name: DestructibleBehaviour
   - uid: SombraStudios.Shared.Gameplay.Behaviours.Destructible.DestructibleBehaviourData
     name: DestructibleBehaviourData
-- uid: SombraStudios.Shared.Gameplay.Behaviours.Homing
-  name: SombraStudios.Shared.Gameplay.Behaviours.Homing
+- uid: SombraStudios.Shared.Gameplay.Behaviours.LookAt
+  name: SombraStudios.Shared.Gameplay.Behaviours.LookAt
   items:
-  - uid: SombraStudios.Shared.Gameplay.Behaviours.Homing.HomingBehaviourController
-    name: HomingBehaviourController
-  - uid: SombraStudios.Shared.Gameplay.Behaviours.Homing.HomingBehaviourData
-    name: HomingBehaviourData
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.LookAt.LookAtController
+    name: LookAtController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.LookAt.LookAtSettings
+    name: LookAtSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.LookWithLerp
+  name: SombraStudios.Shared.Gameplay.Behaviours.LookWithLerp
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.LookWithLerp.LookWithLerpController
+    name: LookWithLerpController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.LookWithLerp.LookWithLerpSettings
+    name: LookWithLerpSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  name: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  items:
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsController
+    name: MoveTowardsController
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSettings
+    name: MoveTowardsSettings
 - uid: SombraStudios.Shared.Gameplay.Drag
   name: SombraStudios.Shared.Gameplay.Drag
   items:
@@ -793,35 +812,6 @@ items:
     name: Teleporter
   - uid: SombraStudios.Shared.Systems.Teleport.TeleporterTrigger
     name: TeleporterTrigger
-- uid: SombraStudios.Shared.Tools
-  name: SombraStudios.Shared.Tools
-  items:
-  - uid: SombraStudios.Shared.Tools.Logger
-    name: Logger
-  - uid: SombraStudios.Shared.Tools.MonoBehaviourLogger
-    name: MonoBehaviourLogger
-- uid: SombraStudios.Shared.Tools.Coroutines
-  name: SombraStudios.Shared.Tools.Coroutines
-  items:
-  - uid: SombraStudios.Shared.Tools.Coroutines.CoroutineManager
-    name: CoroutineManager
-  - uid: SombraStudios.Shared.Tools.Coroutines.CoroutineRunner
-    name: CoroutineRunner
-- uid: SombraStudios.Shared.Tools.Lerp
-  name: SombraStudios.Shared.Tools.Lerp
-  items:
-  - uid: SombraStudios.Shared.Tools.Lerp.LerpColorData
-    name: LerpColorData
-  - uid: SombraStudios.Shared.Tools.Lerp.LerpQuaternionData
-    name: LerpQuaternionData
-  - uid: SombraStudios.Shared.Tools.Lerp.LerpTool
-    name: LerpTool
-  - uid: SombraStudios.Shared.Tools.Lerp.LerpValueData
-    name: LerpValueData
-  - uid: SombraStudios.Shared.Tools.Lerp.LerpVectorData
-    name: LerpVectorData
-  - uid: SombraStudios.Shared.Tools.Lerp.Lerper
-    name: Lerper
 - uid: SombraStudios.Shared.TutorialSystem
   name: SombraStudios.Shared.TutorialSystem
   items:
@@ -917,6 +907,10 @@ items:
     name: GetRemoteTexture
   - uid: SombraStudios.Shared.Utility.HexToRGBA
     name: HexToRGBA
+  - uid: SombraStudios.Shared.Utility.Logger
+    name: Logger
+  - uid: SombraStudios.Shared.Utility.MonoBehaviourLogger
+    name: MonoBehaviourLogger
   - uid: SombraStudios.Shared.Utility.NoInternetController
     name: NoInternetController
   - uid: SombraStudios.Shared.Utility.ObjectInCameraFrustum
@@ -937,6 +931,8 @@ items:
     name: SavePersistentData
   - uid: SombraStudios.Shared.Utility.ScreenBounds
     name: ScreenBounds
+  - uid: SombraStudios.Shared.Utility.ScreenshotTaker
+    name: ScreenshotTaker
   - uid: SombraStudios.Shared.Utility.StringEncodingUtil
     name: StringEncodingUtil
   - uid: SombraStudios.Shared.Utility.Tolerance
@@ -952,6 +948,13 @@ items:
     name: Cooldown
   - uid: SombraStudios.Shared.Utility.Cooldown.ICooldown
     name: ICooldown
+- uid: SombraStudios.Shared.Utility.Coroutines
+  name: SombraStudios.Shared.Utility.Coroutines
+  items:
+  - uid: SombraStudios.Shared.Utility.Coroutines.CoroutineManager
+    name: CoroutineManager
+  - uid: SombraStudios.Shared.Utility.Coroutines.CoroutineRunner
+    name: CoroutineRunner
 - uid: SombraStudios.Shared.Utility.Destroyer
   name: SombraStudios.Shared.Utility.Destroyer
   items:
@@ -966,6 +969,30 @@ items:
     name: FrameRateCommand
   - uid: SombraStudios.Shared.Utility.FrameRate.FrameRateLimiter
     name: FrameRateLimiter
+- uid: SombraStudios.Shared.Utility.Lerp
+  name: SombraStudios.Shared.Utility.Lerp
+  items:
+  - uid: SombraStudios.Shared.Utility.Lerp.LerpColorData
+    name: LerpColorData
+  - uid: SombraStudios.Shared.Utility.Lerp.LerpQuaternionData
+    name: LerpQuaternionData
+  - uid: SombraStudios.Shared.Utility.Lerp.LerpTool
+    name: LerpTool
+  - uid: SombraStudios.Shared.Utility.Lerp.LerpValueData
+    name: LerpValueData
+  - uid: SombraStudios.Shared.Utility.Lerp.LerpVectorData
+    name: LerpVectorData
+  - uid: SombraStudios.Shared.Utility.Lerp.Lerper
+    name: Lerper
+- uid: SombraStudios.Shared.Utility.Mirror
+  name: SombraStudios.Shared.Utility.Mirror
+  items:
+  - uid: SombraStudios.Shared.Utility.Mirror.MirrorTransformPosition
+    name: MirrorTransformPosition
+  - uid: SombraStudios.Shared.Utility.Mirror.MirrorTransformRotation
+    name: MirrorTransformRotation
+  - uid: SombraStudios.Shared.Utility.Mirror.MirrorTransformScale
+    name: MirrorTransformScale
 - uid: SombraStudios.Shared.Utility.Mobile
   name: SombraStudios.Shared.Utility.Mobile
   items:
@@ -990,6 +1017,39 @@ items:
   items:
   - uid: SombraStudios.Shared.Utility.ScriptableObjects.ScriptableObjectWithId
     name: ScriptableObjectWithId
+- uid: SombraStudios.Shared.Utility.Search.AssetOrComponent
+  name: SombraStudios.Shared.Utility.Search.AssetOrComponent
+  items:
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.GameobjectWithTagOrLayerComponentSearchWindow
+    name: GameobjectWithTagOrLayerComponentSearchWindow
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.MaterialsAssetSearchWindow
+    name: MaterialsAssetSearchWindow
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.MaterialsAssetSearchWindow.MaterialAdditionalInfo
+    name: MaterialsAssetSearchWindow.MaterialAdditionalInfo
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.ParticleSystemComponentSearchWindow
+    name: ParticleSystemComponentSearchWindow
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.TargetType
+    name: TargetType
+- uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base
+  name: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base
+  items:
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base.AssetSearchWindow`1
+    name: AssetSearchWindow<T>
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base.ComponentSearchWindow`1
+    name: ComponentSearchWindow<T>
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base.SearchOptions
+    name: SearchOptions
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base.SearchWindow`1
+    name: SearchWindow<T>
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base.SearchWindow`1.ResultsAdditionalInfo
+    name: SearchWindow<T>.ResultsAdditionalInfo
+  - uid: SombraStudios.Shared.Utility.Search.AssetOrComponent.Base.SearchWindow`1.SearchResults
+    name: SearchWindow<T>.SearchResults
+- uid: SombraStudios.Shared.Utility.Search.Reference
+  name: SombraStudios.Shared.Utility.Search.Reference
+  items:
+  - uid: SombraStudios.Shared.Utility.Search.Reference.ReferenceSearchWindow
+    name: ReferenceSearchWindow
 - uid: SombraStudios.Shared.Utility.TimeScale
   name: SombraStudios.Shared.Utility.TimeScale
   items:

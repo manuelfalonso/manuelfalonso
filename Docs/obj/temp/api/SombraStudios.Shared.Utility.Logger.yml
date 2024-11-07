@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Logger
+  commentId: T:SombraStudios.Shared.Utility.Logger
+  id: Logger
+  parent: SombraStudios.Shared.Utility
+  children:
+  - SombraStudios.Shared.Utility.Logger.Log(System.Boolean,System.Object,UnityEngine.Object)
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: Logger
+  fullName: SombraStudios.Shared.Utility.Logger
+  type: Class
+  source:
+    remote:
+      path: Utility/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Logger
+    path: ../Utility/Logger.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  syntax:
+    content: public static class Logger
+    content.vb: Public Module Logger
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Utility.Logger.Log(System.Boolean,System.Object,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Logger.Log(System.Boolean,System.Object,UnityEngine.Object)
+  id: Log(System.Boolean,System.Object,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Logger
+  langs:
+  - csharp
+  - vb
+  name: Log(bool, object, Object)
+  nameWithType: Logger.Log(bool, object, Object)
+  fullName: SombraStudios.Shared.Utility.Logger.Log(bool, object, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Log
+    path: ../Utility/Logger.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  syntax:
+    content: >-
+      [Conditional("UNITY_EDITOR")]
+
+      public static void Log(bool verbose, object message, Object sender = null)
+    parameters:
+    - id: verbose
+      type: System.Boolean
+    - id: message
+      type: System.Object
+    - id: sender
+      type: UnityEngine.Object
+    content.vb: >-
+      <Conditional("UNITY_EDITOR")>
+
+      Public Shared Sub Log(verbose As Boolean, message As Object, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Logger.Log*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: UNITY_EDITOR
+  nameWithType.vb: Logger.Log(Boolean, Object, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Logger.Log(Boolean, Object, UnityEngine.Object)
+  name.vb: Log(Boolean, Object, Object)
+references:
+- uid: SombraStudios.Shared.Utility
+  commentId: N:SombraStudios.Shared.Utility
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility
+  nameWithType: SombraStudios.Shared.Utility
+  fullName: SombraStudios.Shared.Utility
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.Logger.Log*
+  commentId: Overload:SombraStudios.Shared.Utility.Logger.Log
+  href: SombraStudios.Shared.Utility.Logger.html#SombraStudios_Shared_Utility_Logger_Log_System_Boolean_System_Object_UnityEngine_Object_
+  name: Log
+  nameWithType: Logger.Log
+  fullName: SombraStudios.Shared.Utility.Logger.Log
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
