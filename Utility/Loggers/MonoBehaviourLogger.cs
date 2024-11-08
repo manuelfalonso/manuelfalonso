@@ -4,7 +4,7 @@ using UnityEngine;
 namespace SombraStudios.Shared.Utility.Loggers
 {
     [AddComponentMenu("_SombraStudios/Services/Logger")]
-    public class MonoBehaviourLogger : MonoBehaviour
+    public class MonoBehaviourLogger : MonoBehaviour, ILoggerService
     {
         [Header("Settings")]
         [SerializeField]
@@ -23,7 +23,7 @@ namespace SombraStudios.Shared.Utility.Loggers
         }
 
 
-        public void Log(object message, Object sender)
+        public void Log(object message, Object sender = null)
         {
             if (!_showLogs) return;
             Debug.Log($"<color={_hexColor}>{_prefix}</color> {message}", sender);

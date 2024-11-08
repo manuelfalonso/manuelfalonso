@@ -27,6 +27,9 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         [SerializeField]
         private List<AnimationEvent> _animationStateExitEvents = new();
 
+        /// <summary>
+        /// Whether to show debug logs.
+        /// </summary>
         [Header("Debug")]
         [SerializeField]
         private bool _showLogs;
@@ -39,7 +42,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         {
             TriggerEvent(_animationStateEnterEvents, eventData);
 
-            if (_showLogs) 
+            if (_showLogs)
                 Utility.Loggers.Logger.Log($"Event Enter triggered: {eventData.EventName}", this);
         }
 
@@ -51,7 +54,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         {
             TriggerEvent(_animationStateEvents, eventData);
 
-            if (_showLogs) 
+            if (_showLogs)
                 Utility.Loggers.Logger.Log($"Event triggered: {eventData.EventName}", this);
         }
 
@@ -63,17 +66,27 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         {
             TriggerEvent(_animationStateExitEvents, eventData);
 
-            if (_showLogs) 
+            if (_showLogs)
                 Utility.Loggers.Logger.Log($"Event Exit triggered: {eventData.EventName}", this);
         }
 
-
+        /// <summary>
+        /// Triggers the matching event from the provided list.
+        /// </summary>
+        /// <param name="eventsList">The list of animation events.</param>
+        /// <param name="eventData">The data associated with the animation event.</param>
         private void TriggerEvent(List<AnimationEvent> eventsList, AnimationEventData eventData)
         {
             AnimationEvent matchingEvent = FindMatchingEvent(eventsList, eventData);
             matchingEvent.EventAction?.Invoke(eventData);
         }
 
+        /// <summary>
+        /// Finds the matching event from the provided list.
+        /// </summary>
+        /// <param name="eventsList">The list of animation events.</param>
+        /// <param name="eventData">The data associated with the animation event.</param>
+        /// <returns>The matching animation event.</returns>
         private AnimationEvent FindMatchingEvent(List<AnimationEvent> eventsList, AnimationEventData eventData)
         {
             return eventsList.Find(e => e.EventName.Value == eventData.EventName.Value);
