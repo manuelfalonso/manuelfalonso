@@ -33,20 +33,24 @@ namespace SombraStudios.Shared.TutorialSystem
         {
             if (!_isActive) { yield break; }
 
-            Utility.Logger.Log(_showLogs, $"{_name} Step Started");
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"{_name} Step Started");
 
             for (int i = 0; i < _actions.Count; i++)
             {
-                Utility.Logger.Log(_showLogs, $"{_actions[i].name} Started");
+                if (_showLogs)
+                    Utility.Loggers.Logger.Log($"{_actions[i].name} Started");
 
                 yield return _actions[i].ExecuteAction();
 
-                Utility.Logger.Log(_showLogs, $"{_actions[i].name} Finished");
+                if (_showLogs)
+                    Utility.Loggers.Logger.Log($"{_actions[i].name} Finished");
             }
 
             _completed = true;
 
-            Utility.Logger.Log(_showLogs, $"{_name} Step Finished");
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"{_name} Step Finished");
 
             yield return null;
         }

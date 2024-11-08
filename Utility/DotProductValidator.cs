@@ -129,7 +129,9 @@ namespace SombraStudios.Shared.Utility
             var vectorOneDirection = GetVectorFromDirection(_directionOne);
             if (vectorOneDirection == Vector3.zero) { return dotProduct; }
             var vectorOne = _transformOne.TransformDirection(vectorOneDirection);
-            Utility.Logger.Log(_showLogs, $"Vector One: {vectorOne}", this);
+            
+            if (_showLogs)
+                Loggers.Logger.Log($"Vector One: {vectorOne}", this);
 
             var vectorTwoDirection = GetVectorFromDirection(_directionTwo);
             if (vectorTwoDirection == Vector3.zero) { return dotProduct; }
@@ -142,14 +144,17 @@ namespace SombraStudios.Shared.Utility
             {
                 vectorTwo = GetVectorFromDirection(_directionTwo);
             }
-            Utility.Logger.Log(_showLogs, $"Vector Two: {vectorTwo}", this);
+            
+            if (_showLogs)
+                Loggers.Logger.Log($"Vector Two: {vectorTwo}", this);
 
             SetLineGizmos(_directionOneGizmo, vectorOne);
             SetLineGizmos(_directionTwoGizmo, vectorTwo);
 
-            //CurrentDotProduct = Mathf.Round(Vector3.Dot(vectorOne, vectorTwo) * 100f) / 100f;
             CurrentDotProduct = Vector3.Dot(vectorOne, vectorTwo);
-            Utility.Logger.Log(_showLogs, $"Current Dot Product: {_currentDotProduct}", this);
+            
+            if (_showLogs)
+                Loggers.Logger.Log($"Current Dot Product: {_currentDotProduct}", this);
 
             dotProduct = CurrentDotProduct;
             return dotProduct;

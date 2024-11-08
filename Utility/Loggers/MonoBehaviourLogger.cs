@@ -1,9 +1,8 @@
 // Credits to Jason Storey
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.Loggers
 {
-
     [AddComponentMenu("_SombraStudios/Services/Logger")]
     public class MonoBehaviourLogger : MonoBehaviour
     {

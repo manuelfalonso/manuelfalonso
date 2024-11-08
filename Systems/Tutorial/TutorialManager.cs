@@ -53,11 +53,13 @@ namespace SombraStudios.Shared.TutorialSystem
         {
             if (_tutorialSteps.Count == 0)
             {
-                Utility.Logger.Log(_showLogs, $"No Tutorial found", this );
+                if (_showLogs)
+                    Utility.Loggers.Logger.Log($"No Tutorial found", this );
                 yield break;
             }
 
-            Utility.Logger.Log(_showLogs, $"Tutorial Started", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"Tutorial Started", this);
 
             for (_currentStepIndex = TutorialStepIndex(); _currentStepIndex < _tutorialSteps.Count; _currentStepIndex++)
             {
@@ -66,7 +68,8 @@ namespace SombraStudios.Shared.TutorialSystem
                 SaveProgression();
             }
 
-            Utility.Logger.Log(_showLogs, $"Tutorial Finished", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"Tutorial Finished", this);
 
             SaveCompletion();
 
@@ -94,7 +97,8 @@ namespace SombraStudios.Shared.TutorialSystem
         {
             PlayerPrefs.DeleteKey(PlayerPrefsKeys.TUTORIAL_COMPLETED);
             PlayerPrefs.DeleteKey(PlayerPrefsKeys.TUTORIAL_STEP);
-            Utility.Logger.Log(_showLogs, $"TUTORIAL_COMPLETED and TUTORIAL_STEP keys deleted", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"TUTORIAL_COMPLETED and TUTORIAL_STEP keys deleted", this);
         }
 
         private void ResumeProgression()

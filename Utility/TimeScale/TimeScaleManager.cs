@@ -104,7 +104,9 @@ namespace SombraStudios.Shared.Utility.TimeScale
             {
                 Time.timeScale = newValue;
             }
-            Utility.Logger.Log(_showLogs, $"New Time Scale setted: {Time.timeScale}", this);
+            
+            if (_showLogs)
+                Loggers.Logger.Log($"New Time Scale setted: {Time.timeScale}", this);
         }
     }
 }

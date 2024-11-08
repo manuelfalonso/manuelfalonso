@@ -26,7 +26,8 @@ namespace SombraStudios.Shared.Systems.GameState
                 if (currentState != value)
                 {
                     currentState = value;
-                    Utility.Logger.Log(_showLogs, $"Game State Changed: {value.name}", this);
+                    if (_showLogs)
+                        Utility.Loggers.Logger.Log($"Game State Changed: {value.name}", this);
                     GameStateChanged?.Invoke(currentState);
                 }
             }

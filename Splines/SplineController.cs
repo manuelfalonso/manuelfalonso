@@ -132,14 +132,16 @@ namespace SombraStudios.Shared.Splines
         private void OnAnimationStarted()
         {
             AnimationStarted?.Invoke();
-            Utility.Logger.Log(_showLogs, $"AnimationStarted", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"AnimationStarted", this);
         }
 
         private void OnAnimationUpdated(Vector3 position, Quaternion rotation)
         {
             UpdateScale();
             AnimationUpdated?.Invoke(position, rotation, transform.localScale);
-            Utility.Logger.Log(_showLogs, $"AnimationUpdated", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"AnimationUpdated", this);
 
             if (_splineAnimation.NormalizedTime == 1f) { OnAnimationCompleted(); }
         }
@@ -147,19 +149,22 @@ namespace SombraStudios.Shared.Splines
         private void OnAnimationStopped()
         {
             AnimationStopped?.Invoke();
-            Utility.Logger.Log(_showLogs, $"AnimationStopped", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"AnimationStopped", this);
         }
 
         private void OnAnimationReseted()
         {
             AnimationReseted?.Invoke();
-            Utility.Logger.Log(_showLogs, $"AnimationReseted", this);
+            if (_showLogs)
+            Utility.Loggers.Logger.Log($"AnimationReseted", this);
         }
 
         private void OnAnimationCompleted()
         {
             AnimationCompleted?.Invoke();
-            Utility.Logger.Log(_showLogs, $"AnimationCompleted", this);
+            if (_showLogs)
+                Utility.Loggers.Logger.Log($"AnimationCompleted", this);
         }
         #endregion
     }
