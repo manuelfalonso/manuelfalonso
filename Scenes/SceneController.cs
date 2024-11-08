@@ -4,7 +4,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Scenes
 {
     /// <summary>
     /// Singleton Scene Manager Script for some common SceneManager uses.
