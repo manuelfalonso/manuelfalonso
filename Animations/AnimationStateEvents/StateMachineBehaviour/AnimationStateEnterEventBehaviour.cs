@@ -30,7 +30,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
 
             if (animator.TryGetComponent(out IAnimationStateEventEnterReceiver receiver))
             {
-                receiver.OnAnimationStateBegan(eventData);
+                receiver.OnEnterAnimationState(eventData);
             }
         }
     }

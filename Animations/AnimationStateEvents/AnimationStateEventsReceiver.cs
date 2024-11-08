@@ -35,62 +35,48 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         /// Called when an animation state begins.
         /// </summary>
         /// <param name="eventData">The data associated with the animation event.</param>
-        public void OnAnimationStateBegan(AnimationEventData eventData)
+        public void OnEnterAnimationState(AnimationEventData eventData)
         {
-            AnimationEvent matchingEvent = _animationStateEnterEvents.Find(e => e.EventName.Value == eventData.EventName.Value);
+            TriggerEvent(_animationStateEnterEvents, eventData);
 
-            AnimationEventData test = CreateAnimationEventData(eventData);
-
-            matchingEvent.EventAction?.Invoke(test);
-
-            if (_showLogs) Debug.Log($"Event Enter triggered: {eventData.EventName}");
+            if (_showLogs) 
+                Utility.Loggers.Logger.Log($"Event Enter triggered: {eventData.EventName}", this);
         }
 
         /// <summary>
         /// Called when an animation state event is triggered.
         /// </summary>
         /// <param name="eventData">The data associated with the animation event.</param>
-        public void OnAnimationStateEventTriggered(AnimationEventData eventData)
+        public void OnTriggerAnimationStateEvent(AnimationEventData eventData)
         {
-            AnimationEvent matchingEvent = _animationStateEvents.Find(e => e.EventName.Value == eventData.EventName.Value);
+            TriggerEvent(_animationStateEvents, eventData);
 
-            AnimationEventData test = CreateAnimationEventData(eventData);
-
-            matchingEvent.EventAction?.Invoke(test);
-
-            if (_showLogs) Debug.Log($"Event triggered: {eventData.EventName}");
+            if (_showLogs) 
+                Utility.Loggers.Logger.Log($"Event triggered: {eventData.EventName}", this);
         }
 
         /// <summary>
         /// Called when an animation state exits.
         /// </summary>
         /// <param name="eventData">The data associated with the animation event.</param>
-        public void OnAnimationStateExited(AnimationEventData eventData)
+        public void OnExitAnimationState(AnimationEventData eventData)
         {
-            AnimationEvent matchingEvent = _animationStateExitEvents.Find(e => e.EventName.Value == eventData.EventName.Value);
+            TriggerEvent(_animationStateExitEvents, eventData);
 
-            AnimationEventData test = CreateAnimationEventData(eventData);
-
-            matchingEvent.EventAction?.Invoke(test);
-
-            if (_showLogs) Debug.Log($"Event Exit triggered: {eventData.EventName}");
+            if (_showLogs) 
+                Utility.Loggers.Logger.Log($"Event Exit triggered: {eventData.EventName}", this);
         }
 
-        /// <summary>
-        /// Creates a new instance of AnimationEventData based on the provided event data.
-        /// </summary>
-        /// <param name="eventData">The data associated with the animation event.</param>
-        /// <returns>A new instance of AnimationEventData.</returns>
-        private static AnimationEventData CreateAnimationEventData(AnimationEventData eventData)
+
+        private void TriggerEvent(List<AnimationEvent> eventsList, AnimationEventData eventData)
         {
-            return new AnimationEventData
-            {
-                EventName = eventData.EventName,
-                FloatParameter = eventData.FloatParameter,
-                IntParameter = eventData.IntParameter,
-                StringParameter = eventData.StringParameter,
-                ObjectReferenceParameter = eventData.ObjectReferenceParameter,
-            };
+            AnimationEvent matchingEvent = FindMatchingEvent(eventsList, eventData);
+            matchingEvent.EventAction?.Invoke(eventData);
+        }
+
+        private AnimationEvent FindMatchingEvent(List<AnimationEvent> eventsList, AnimationEventData eventData)
+        {
+            return eventsList.Find(e => e.EventName.Value == eventData.EventName.Value);
         }
     }
 }

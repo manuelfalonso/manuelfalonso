@@ -14,8 +14,19 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         /// </summary>  
         public List<AnimationEventBehaviourData> AnimationEvents = new();
 
+        /// <summary>
+        /// The current time of the animation state.
+        /// </summary>
         private float _currentTime = 0f;
+
+        /// <summary>
+        /// The current loop count of the animation state.
+        /// </summary>
         private int _currentLoop = 0;
+
+        /// <summary>
+        /// The previous loop count of the animation state.
+        /// </summary>
         private int _previousLoop = 0;
 
         /// <inheritdoc />  
@@ -58,7 +69,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
 
             if (animator.TryGetComponent(out IAnimationStateEventReceiver receiver))
             {
-                receiver.OnAnimationStateEventTriggered(eventData.Event);
+                receiver.OnTriggerAnimationStateEvent(eventData.Event);
             }
         }
     }

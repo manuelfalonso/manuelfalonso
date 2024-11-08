@@ -9,6 +9,6 @@
         /// Method to be called when an animation state event is triggered.
         /// </summary>
         /// <param name="eventData">The data associated with the animation event.</param>
-        void OnAnimationStateEventTriggered(AnimationEventData eventData);
+        void OnTriggerAnimationStateEvent(AnimationEventData eventData);
     }
 }

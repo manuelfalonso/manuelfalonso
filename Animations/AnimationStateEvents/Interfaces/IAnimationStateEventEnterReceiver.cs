@@ -10,7 +10,6 @@
         /// Called when the target animation begins.
         /// </summary>
         /// <param name="label">A label identifying the animation that has began</param>
-        //void OnAnimationStateBegan(string label);
-        void OnAnimationStateBegan(AnimationEventData eventData);
+        void OnEnterAnimationState(AnimationEventData eventData);
     }
 }

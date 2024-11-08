@@ -10,7 +10,6 @@
         /// Called when the target animation exits.
         /// </summary>
         /// <param name="label">A label identifying the animation that has finished</param>
-        //void OnAnimationStateExited(string label);
-        void OnAnimationStateExited(AnimationEventData eventData);
+        void OnExitAnimationState(AnimationEventData eventData);
     }
 }
