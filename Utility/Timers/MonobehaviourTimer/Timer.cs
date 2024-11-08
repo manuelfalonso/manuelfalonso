@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using System;
 
-namespace SombraStudios.Shared.Utility.Timer
+namespace SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
 {
     /// <summary>
     /// Timer Main Class: Manges time settings and runs timer
