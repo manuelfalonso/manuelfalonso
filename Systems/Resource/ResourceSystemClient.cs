@@ -3,85 +3,66 @@ using UnityEngine;
 
 namespace SombraStudios.Shared.Systems.Resource
 {
-
     /// <summary>
     /// Example client script testing a Player Health
     /// </summary>
-    public class ResourceSystemClient : MonoBehaviour
+    public class ResourceSystemClient : FloatResourceSystem
     {
-        [SerializeField] private IResourceSystem _playerHealthSystem = null;
-
-
         IEnumerator Start()
         {
             // Life Resource example
-            _playerHealthSystem.AmountEmptied.AddListener(PlayerHealthSystem_OnEmptyResource);
-            _playerHealthSystem.AmountChanged.AddListener(PlayerHealthSystem_OnResourceChanged);
-            _playerHealthSystem.AmountRestored.AddListener(PlayerHealthSystem_OnRestoreResource);
-            _playerHealthSystem.AmountMaxed.AddListener(PlayerHealthSystem_OnMaxResource);
-            _playerHealthSystem.AmountLow.AddListener(PlayerHealthSystem_OnLowResource);
+            AmountEmptied.AddListener(PlayerHealthSystem_OnEmptyResource);
+            AmountChanged.AddListener(PlayerHealthSystem_OnResourceChanged);
+            AmountRestored.AddListener(PlayerHealthSystem_OnRestoreResource);
+            AmountMaxed.AddListener(PlayerHealthSystem_OnMaxResource);
 
             // Get data
-            Log($"* Player Initial life: {_playerHealthSystem.Amount}", this);
-            Log($"* Player Max life: {_playerHealthSystem.MaxAmount}", this);
-            Log($"* Player has {_playerHealthSystem.ResourcePercent * 100f}% of life", this);
+            Utility.Loggers.Logger.Log($"* Player Initial life: {Amount}", this);
+            Utility.Loggers.Logger.Log($"* Player Max life: {MaxAmount}", this);
+            Utility.Loggers.Logger.Log($"* Player has {ResourcePercent * 100f}% of life", this);
 
             // Methods
-            Log($"* Damage Player", this);
-            _playerHealthSystem.DecreaseAmountWithResult(80f);
-            Log($"* Heal Player to max Health", this);
-            _playerHealthSystem.IncreaseAmountWithResult(9999f);
-            Log($"* Tree fall and killed the Player", this);
-            _playerHealthSystem.ClearAmountWithResult();
-            Log($"* Revive Player by half of this life", this);
-            _playerHealthSystem.RestoreAmountWithResult(0.5f);
-            Log($"* Player health now is immutable", this);
-            _playerHealthSystem.Immutable = true;
-            Log($"* Tring to damage the Player", this);
-            _playerHealthSystem.DecreaseAmountWithResult(10f);
-            Log($"* Player health now is not immutable", this);
-            _playerHealthSystem.Immutable = false;
-            Log($"* Killed the Player, AGAIN!", this);
-            _playerHealthSystem.ClearAmountWithResult();
-            Log($"* But now reset it to initial amount", this);
-            _playerHealthSystem.ResetAmountWithResult();
+            Utility.Loggers.Logger.Log($"* Damage Player", this);
+            TryDecreaseAmount(80f, out _);
+            Utility.Loggers.Logger.Log($"* Heal Player to max Health", this);
+            TryIncreaseAmount(9999f, out _);
+            Utility.Loggers.Logger.Log($"* Tree fall and killed the Player", this);
+            TryClearAmount(out _);
+            Utility.Loggers.Logger.Log($"* Revive Player by half of this life", this);
+            TryRestoreAmount(out _, 0.5f);
+            Utility.Loggers.Logger.Log($"* Player health now is immutable", this);
+            IsImmutable = true;
+            Utility.Loggers.Logger.Log($"* Tring to damage the Player", this);
+            TryDecreaseAmount(10f, out _);
+            Utility.Loggers.Logger.Log($"* Player health now is not immutable", this);
+            IsImmutable = false;
+            Utility.Loggers.Logger.Log($"* Killed the Player, AGAIN!", this);
+            TryClearAmount(out _);
+            Utility.Loggers.Logger.Log($"* But now reset it to initial amount", this);
+            TryResetAmount(out _);
 
             yield break;
         }
 
 
-        private void PlayerHealthSystem_OnLowResource(float healthAmount)
+        private void PlayerHealthSystem_OnMaxResource(ResourceSystemData data)
         {
-            Log($"Player OnLowResource", this);
+            Utility.Loggers.Logger.Log($"Player OnMaxResource", this);
         }
 
-        private void PlayerHealthSystem_OnMaxResource(float healthAmount)
+        private void PlayerHealthSystem_OnRestoreResource(ResourceSystemData data)
         {
-            Log($"Player OnMaxResource", this);
+            Utility.Loggers.Logger.Log($"Player OnRestoreResource", this);
         }
 
-        private void PlayerHealthSystem_OnRestoreResource(float healthAmount)
+        private void PlayerHealthSystem_OnResourceChanged(ResourceSystemData data)
         {
-            Log($"Player OnRestoreResource", this);
+            Utility.Loggers.Logger.Log($"Player OnResourceChanged: {Amount}", this);
         }
 
-        private void PlayerHealthSystem_OnResourceChanged(float healthAmount)
+        private void PlayerHealthSystem_OnEmptyResource(ResourceSystemData data)
         {
-            Log($"Player OnResourceChanged: {_playerHealthSystem.Amount}", this);
-        }
-
-        private void PlayerHealthSystem_OnEmptyResource(float healthAmount)
-        {
-            Log($"Player OnEmptyResource", this);
-        }
-
-
-        public void Log(object message, Object sender = null)
-        {
-            if (sender != null)
-                Debug.Log($"{this} => {message}", sender);
-            else
-                Debug.Log($"{this} => {message}");
+            Utility.Loggers.Logger.Log($"Player OnEmptyResource", this);
         }
     }
 }
