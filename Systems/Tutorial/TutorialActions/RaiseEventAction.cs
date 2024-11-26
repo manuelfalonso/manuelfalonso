@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.TutorialSystem
     public class RaiseEventAction : TutorialAction
     {
         [Header("Event Data")]
-        [SerializeField] protected GameEvent _gameEvent;
+        [SerializeField] protected VoidEventChannelSO _gameEvent;
 
 
         public override IEnumerator ExecuteAction()
@@ -22,7 +22,7 @@ namespace SombraStudios.Shared.TutorialSystem
             if (_gameEvent == null)
                 throw new MissingReferenceException();
 
-            _gameEvent.Raise();
+            _gameEvent.RaiseEvent();
 
             IsCompleted = true;
         }

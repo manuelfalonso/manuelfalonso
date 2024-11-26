@@ -21,7 +21,7 @@ namespace SombraStudios.Shared.TutorialSystem
                 throw new MissingReferenceException();
             }
 
-            _gameEvent.Raise(); // Set the Audio Source Here if necessary
+            _gameEvent.RaiseEvent(); // Set the Audio Source Here if necessary
 
             yield return null; 
 

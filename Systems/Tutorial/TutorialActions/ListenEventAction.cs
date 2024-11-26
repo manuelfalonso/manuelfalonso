@@ -11,8 +11,8 @@ namespace SombraStudios.Shared.TutorialSystem
     public class ListenEventAction : TutorialAction
     {
         [Header("Event Data")]
-        [SerializeField] private GameEvent _gameEvent;
-        [SerializeField] private GameEventScriptableObjectListener _gameEventListener;
+        [SerializeField] private VoidEventChannelSO _gameEvent;
+        [SerializeField] private VoidEventChannelSOListener _gameEventListener;
 
 
         public override IEnumerator ExecuteAction()
