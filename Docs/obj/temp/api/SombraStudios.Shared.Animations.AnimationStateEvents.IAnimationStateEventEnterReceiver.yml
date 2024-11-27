@@ -5,7 +5,7 @@ items:
   id: IAnimationStateEventEnterReceiver
   parent: SombraStudios.Shared.Animations.AnimationStateEvents
   children:
-  - SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  - SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   langs:
   - csharp
   - vb
@@ -32,37 +32,37 @@ items:
   seealso:
   - linkId: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver
     commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver
-- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
-  commentId: M:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
-  id: OnAnimationStateBegan(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  commentId: M:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  id: OnEnterAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   parent: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver
   langs:
   - csharp
   - vb
-  name: OnAnimationStateBegan(AnimationEventData)
-  nameWithType: IAnimationStateEventEnterReceiver.OnAnimationStateBegan(AnimationEventData)
-  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  name: OnEnterAnimationState(AnimationEventData)
+  nameWithType: IAnimationStateEventEnterReceiver.OnEnterAnimationState(AnimationEventData)
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   type: Method
   source:
     remote:
       path: Animations/AnimationStateEvents/Interfaces/IAnimationStateEventEnterReceiver.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: OnAnimationStateBegan
+    id: OnEnterAnimationState
     path: ../Animations/AnimationStateEvents/Interfaces/IAnimationStateEventEnterReceiver.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - SombraStudios.Shared.Animations
   namespace: SombraStudios.Shared.Animations.AnimationStateEvents
   summary: Called when the target animation begins.
   example: []
   syntax:
-    content: void OnAnimationStateBegan(AnimationEventData eventData)
+    content: void OnEnterAnimationState(AnimationEventData eventData)
     parameters:
     - id: eventData
       type: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
-    content.vb: Sub OnAnimationStateBegan(eventData As AnimationEventData)
-  overload: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan*
+    content.vb: Sub OnEnterAnimationState(eventData As AnimationEventData)
+  overload: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState*
 references:
 - uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver
   commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver
@@ -109,12 +109,12 @@ references:
   - uid: SombraStudios.Shared.Animations.AnimationStateEvents
     name: AnimationStateEvents
     href: SombraStudios.Shared.Animations.AnimationStateEvents.html
-- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan*
-  commentId: Overload:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan
-  href: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.html#SombraStudios_Shared_Animations_AnimationStateEvents_IAnimationStateEventEnterReceiver_OnAnimationStateBegan_SombraStudios_Shared_Animations_AnimationStateEvents_AnimationEventData_
-  name: OnAnimationStateBegan
-  nameWithType: IAnimationStateEventEnterReceiver.OnAnimationStateBegan
-  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnAnimationStateBegan
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState*
+  commentId: Overload:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState
+  href: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.html#SombraStudios_Shared_Animations_AnimationStateEvents_IAnimationStateEventEnterReceiver_OnEnterAnimationState_SombraStudios_Shared_Animations_AnimationStateEvents_AnimationEventData_
+  name: OnEnterAnimationState
+  nameWithType: IAnimationStateEventEnterReceiver.OnEnterAnimationState
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver.OnEnterAnimationState
 - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
   commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
   parent: SombraStudios.Shared.Animations.AnimationStateEvents

@@ -1,0 +1,607 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  commentId: T:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  id: FrequencyTimer
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  children:
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.#ctor(System.Int32)
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.OnTick
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset(System.Int32)
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond
+  langs:
+  - csharp
+  - vb
+  name: FrequencyTimer
+  nameWithType: FrequencyTimer
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  type: Class
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FrequencyTimer
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Timer that ticks at a specific frequency. (N times per second)
+  example: []
+  syntax:
+    content: 'public class FrequencyTimer : Timer'
+    content.vb: Public Class FrequencyTimer Inherits Timer
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  inheritedMembers:
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.CurrentTime
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsRunning
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.initialTime
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Progress
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStart
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStop
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Start
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Stop
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Resume
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Pause
+  - SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(System.Single)
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond
+  commentId: P:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond
+  id: TicksPerSecond
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: TicksPerSecond
+  nameWithType: FrequencyTimer.TicksPerSecond
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TicksPerSecond
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Gets the number of ticks per second.
+  example: []
+  syntax:
+    content: public int TicksPerSecond { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property TicksPerSecond As Integer
+  overload: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond*
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.OnTick
+  commentId: F:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.OnTick
+  id: OnTick
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: OnTick
+  nameWithType: FrequencyTimer.OnTick
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.OnTick
+  type: Field
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTick
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Event triggered on each tick.
+  example: []
+  syntax:
+    content: public Action OnTick
+    return:
+      type: System.Action
+    content.vb: Public OnTick As Action
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.#ctor(System.Int32)
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: FrequencyTimer(int)
+  nameWithType: FrequencyTimer.FrequencyTimer(int)
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.FrequencyTimer(int)
+  type: Constructor
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Initializes a new instance of the <xref href="SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public FrequencyTimer(int ticksPerSecond)
+    parameters:
+    - id: ticksPerSecond
+      type: System.Int32
+      description: The number of ticks per second.
+    content.vb: Public Sub New(ticksPerSecond As Integer)
+  overload: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.#ctor*
+  nameWithType.vb: FrequencyTimer.New(Integer)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.New(Integer)
+  name.vb: New(Integer)
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick
+  id: Tick
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: FrequencyTimer.Tick()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Tick
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Updates the timer and triggers the tick event if the time threshold is reached.
+  example: []
+  syntax:
+    content: public override void Tick()
+    content.vb: Public Overrides Sub Tick()
+  overridden: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Tick
+  overload: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick*
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished
+  id: IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: FrequencyTimer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsFinished
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Gets a value indicating whether the timer has finished.
+  example: []
+  syntax:
+    content: public override bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property IsFinished As Boolean
+  overridden: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsFinished
+  overload: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished*
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset
+  id: Reset
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: FrequencyTimer.Reset()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reset
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Resets the timer to zero.
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset
+  overload: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset*
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset(System.Int32)
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset(System.Int32)
+  id: Reset(System.Int32)
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: Reset(int)
+  nameWithType: FrequencyTimer.Reset(int)
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset(int)
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/CsharpTimer/FrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reset
+    path: ../Utility/Timers/CsharpTimer/FrequencyTimer.cs
+    startLine: 65
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  summary: Resets the timer to zero and sets a new tick frequency.
+  example: []
+  syntax:
+    content: public void Reset(int newTicksPerSecond)
+    parameters:
+    - id: newTicksPerSecond
+      type: System.Int32
+      description: The new number of ticks per second.
+    content.vb: Public Sub Reset(newTicksPerSecond As Integer)
+  overload: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset*
+  nameWithType.vb: FrequencyTimer.Reset(Integer)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset(Integer)
+  name.vb: Reset(Integer)
+references:
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  commentId: N:SombraStudios.Shared.Utility.Timers.CsharpTimer
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  nameWithType: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer
+    name: CsharpTimer
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer
+    name: CsharpTimer
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  commentId: T:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html
+  name: Timer
+  nameWithType: Timer
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.CurrentTime
+  commentId: P:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.CurrentTime
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_CurrentTime
+  name: CurrentTime
+  nameWithType: Timer.CurrentTime
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.CurrentTime
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsRunning
+  commentId: P:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsRunning
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_IsRunning
+  name: IsRunning
+  nameWithType: Timer.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsRunning
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.initialTime
+  commentId: F:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.initialTime
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_initialTime
+  name: initialTime
+  nameWithType: Timer.initialTime
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.initialTime
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Progress
+  commentId: P:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Progress
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Progress
+  name: Progress
+  nameWithType: Timer.Progress
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Progress
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStart
+  commentId: F:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStart
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_OnTimerStart
+  name: OnTimerStart
+  nameWithType: Timer.OnTimerStart
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStart
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStop
+  commentId: F:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStop
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_OnTimerStop
+  name: OnTimerStop
+  nameWithType: Timer.OnTimerStop
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.OnTimerStop
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Start
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Start
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Start
+  name: Start()
+  nameWithType: Timer.Start()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Start()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Start
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Stop
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Stop
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Stop
+  name: Stop()
+  nameWithType: Timer.Stop()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Stop()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Stop
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Resume
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Resume
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Resume
+  name: Resume()
+  nameWithType: Timer.Resume()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Resume()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Resume
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Pause
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Pause
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Pause
+  name: Pause()
+  nameWithType: Timer.Pause()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Pause()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Pause
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  isExternal: true
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Reset_System_Single_
+  name: Reset(float)
+  nameWithType: Timer.Reset(float)
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(float)
+  nameWithType.vb: Timer.Reset(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(Single)
+  name.vb: Reset(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_FrequencyTimer_TicksPerSecond
+  name: TicksPerSecond
+  nameWithType: FrequencyTimer.TicksPerSecond
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.TicksPerSecond
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  commentId: T:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.html
+  name: FrequencyTimer
+  nameWithType: FrequencyTimer
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.#ctor*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.#ctor
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_FrequencyTimer__ctor_System_Int32_
+  name: FrequencyTimer
+  nameWithType: FrequencyTimer.FrequencyTimer
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.FrequencyTimer
+  nameWithType.vb: FrequencyTimer.New
+  fullName.vb: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.New
+  name.vb: New
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Tick
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Tick
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Tick
+  name: Tick()
+  nameWithType: Timer.Tick()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Tick()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Tick
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Tick
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_FrequencyTimer_Tick
+  name: Tick
+  nameWithType: FrequencyTimer.Tick
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Tick
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_IsFinished
+  name: IsFinished
+  nameWithType: Timer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.IsFinished
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_FrequencyTimer_IsFinished
+  name: IsFinished
+  nameWithType: FrequencyTimer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset
+  commentId: M:SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset
+  parent: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Reset
+  name: Reset()
+  nameWithType: Timer.Reset()
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_Timer_Reset
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset
+  href: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.html#SombraStudios_Shared_Utility_Timers_CsharpTimer_FrequencyTimer_Reset
+  name: Reset
+  nameWithType: FrequencyTimer.Reset
+  fullName: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer.Reset

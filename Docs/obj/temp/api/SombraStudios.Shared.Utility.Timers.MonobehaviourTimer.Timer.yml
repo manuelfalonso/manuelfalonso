@@ -1,0 +1,919 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  commentId: T:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  id: Timer
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  children:
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerButtonsCheck
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerModified
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerReached
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerRestarted
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStarted
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStopped
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerTick
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer
+  - SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer
+  langs:
+  - csharp
+  - vb
+  name: Timer
+  nameWithType: Timer
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  type: Class
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Timer
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  summary: 'Timer Main Class: Manges time settings and runs timer'
+  example: []
+  syntax:
+    content: 'public class Timer : MonoBehaviour'
+    content.vb: Public Class Timer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStarted
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStarted
+  id: OnTimerStarted
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerStarted
+  nameWithType: Timer.OnTimerStarted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStarted
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerStarted
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerStarted
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerStarted As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStopped
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStopped
+  id: OnTimerStopped
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerStopped
+  nameWithType: Timer.OnTimerStopped
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerStopped
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerStopped
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerStopped
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerStopped As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerRestarted
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerRestarted
+  id: OnTimerRestarted
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerRestarted
+  nameWithType: Timer.OnTimerRestarted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerRestarted
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerRestarted
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerRestarted
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerRestarted As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerTick
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerTick
+  id: OnTimerTick
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerTick
+  nameWithType: Timer.OnTimerTick
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerTick
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerTick
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerTick
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerTick As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerModified
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerModified
+  id: OnTimerModified
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerModified
+  nameWithType: Timer.OnTimerModified
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerModified
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerModified
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerModified
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerModified As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerButtonsCheck
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerButtonsCheck
+  id: OnTimerButtonsCheck
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerButtonsCheck
+  nameWithType: Timer.OnTimerButtonsCheck
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerButtonsCheck
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerButtonsCheck
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerButtonsCheck
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerButtonsCheck As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerReached
+  commentId: E:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerReached
+  id: OnTimerReached
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: OnTimerReached
+  nameWithType: Timer.OnTimerReached
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.OnTimerReached
+  type: Event
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTimerReached
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public event Action OnTimerReached
+    return:
+      type: System.Action
+    content.vb: Public Event OnTimerReached As Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning
+  id: IsRunning
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: IsRunning
+  nameWithType: Timer.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsRunning
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public bool IsRunning { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRunning As Boolean
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds
+  id: Seconds
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Seconds
+  nameWithType: Timer.Seconds
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Seconds
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public int Seconds { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Seconds As Integer
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes
+  id: Minutes
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Minutes
+  nameWithType: Timer.Minutes
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Minutes
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 47
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public int Minutes { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Minutes As Integer
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours
+  id: Hours
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: Hours
+  nameWithType: Timer.Hours
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Hours
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 60
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public int Hours { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Hours As Integer
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted
+  id: SecondsSetted
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: SecondsSetted
+  nameWithType: Timer.SecondsSetted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SecondsSetted
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 73
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public int SecondsSetted { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SecondsSetted As Integer
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted
+  id: MinutesSetted
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: MinutesSetted
+  nameWithType: Timer.MinutesSetted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MinutesSetted
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 81
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public int MinutesSetted { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MinutesSetted As Integer
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted
+  commentId: P:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted
+  id: HoursSetted
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: HoursSetted
+  nameWithType: Timer.HoursSetted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HoursSetted
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 89
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  syntax:
+    content: public int HoursSetted { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HoursSetted As Integer
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached
+  commentId: M:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached
+  id: IsTimerReached
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: IsTimerReached()
+  nameWithType: Timer.IsTimerReached()
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsTimerReached
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 191
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  summary: Check time reaches 0
+  example: []
+  syntax:
+    content: public bool IsTimerReached()
+    return:
+      type: System.Boolean
+      description: If Hours, minutes and seconds reaches 0
+    content.vb: Public Function IsTimerReached() As Boolean
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer
+  id: CheckTimer
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: CheckTimer()
+  nameWithType: Timer.CheckTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CheckTimer
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 202
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  summary: Invoke onTimerButtonsCheck action
+  example: []
+  syntax:
+    content: public void CheckTimer()
+    content.vb: Public Sub CheckTimer()
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer
+  id: StartTimer
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: StartTimer()
+  nameWithType: Timer.StartTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartTimer
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 210
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  summary: Start timer countdown and update UI
+  example: []
+  syntax:
+    content: public void StartTimer()
+    content.vb: Public Sub StartTimer()
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer
+  id: StopTimer
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: StopTimer()
+  nameWithType: Timer.StopTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopTimer
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 227
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  summary: Stop timer countdown and update UI
+  example: []
+  syntax:
+    content: public void StopTimer()
+    content.vb: Public Sub StopTimer()
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer*
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer
+  id: RestartTimer
+  parent: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+  langs:
+  - csharp
+  - vb
+  name: RestartTimer()
+  nameWithType: Timer.RestartTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/MonobehaviourTimer/Timer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RestartTimer
+    path: ../Utility/Timers/MonobehaviourTimer/Timer.cs
+    startLine: 247
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  summary: Restart timer countdown to initial set time and update UI
+  example: []
+  syntax:
+    content: public void RestartTimer()
+    content.vb: Public Sub RestartTimer()
+  overload: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer*
+references:
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  commentId: N:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  nameWithType: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+    name: MonobehaviourTimer
+    href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+    name: MonobehaviourTimer
+    href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_IsRunning
+  name: IsRunning
+  nameWithType: Timer.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_Seconds
+  name: Seconds
+  nameWithType: Timer.Seconds
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Seconds
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_Minutes
+  name: Minutes
+  nameWithType: Timer.Minutes
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Minutes
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_Hours
+  name: Hours
+  nameWithType: Timer.Hours
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.Hours
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_SecondsSetted
+  name: SecondsSetted
+  nameWithType: Timer.SecondsSetted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.SecondsSetted
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_MinutesSetted
+  name: MinutesSetted
+  nameWithType: Timer.MinutesSetted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.MinutesSetted
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_HoursSetted
+  name: HoursSetted
+  nameWithType: Timer.HoursSetted
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.HoursSetted
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_IsTimerReached
+  name: IsTimerReached
+  nameWithType: Timer.IsTimerReached
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.IsTimerReached
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_CheckTimer
+  name: CheckTimer
+  nameWithType: Timer.CheckTimer
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.CheckTimer
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_StartTimer
+  name: StartTimer
+  nameWithType: Timer.StartTimer
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StartTimer
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_StopTimer
+  name: StopTimer
+  nameWithType: Timer.StopTimer
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.StopTimer
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer
+  href: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.html#SombraStudios_Shared_Utility_Timers_MonobehaviourTimer_Timer_RestartTimer
+  name: RestartTimer
+  nameWithType: Timer.RestartTimer
+  fullName: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer.RestartTimer

@@ -4,8 +4,7 @@ items:
   commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystemClient
   id: ResourceSystemClient
   parent: SombraStudios.Shared.Systems.Resource
-  children:
-  - SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log(System.Object,UnityEngine.Object)
+  children: []
   langs:
   - csharp
   - vb
@@ -27,50 +26,55 @@ items:
   summary: Example client script testing a Player Health
   example: []
   syntax:
-    content: 'public class ResourceSystemClient : MonoBehaviour'
-    content.vb: Public Class ResourceSystemClient Inherits MonoBehaviour
+    content: 'public class ResourceSystemClient : FloatResourceSystem'
+    content.vb: Public Class ResourceSystemClient Inherits FloatResourceSystem
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IncreaseCooldownDuration
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DecreaseCooldownDuration
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Amount
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.ResourcePercent
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsMaxAmount
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsEmptyAmount
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsImmutable
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInIncreaseCooldown
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInDecreaseCooldown
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInitialized
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountChanged
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountRestored
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountMaxed
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountEmptied
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.OnDisable
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(SombraStudios.Shared.Systems.Resource.FloatResourceSystemData)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(System.Single,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(System.Single,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(System.Single)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoResetAmount
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanClearAmount
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoClearAmount
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-- uid: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log(System.Object,UnityEngine.Object)
-  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log(System.Object,UnityEngine.Object)
-  id: Log(System.Object,UnityEngine.Object)
-  parent: SombraStudios.Shared.Systems.Resource.ResourceSystemClient
-  langs:
-  - csharp
-  - vb
-  name: Log(object, Object)
-  nameWithType: ResourceSystemClient.Log(object, Object)
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log(object, UnityEngine.Object)
-  type: Method
-  source:
-    remote:
-      path: Systems/Resource/ResourceSystemClient.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: Log
-    path: ../Systems/Resource/ResourceSystemClient.cs
-    startLine: 77
-  assemblies:
-  - SombraStudios.Shared.Systems
-  namespace: SombraStudios.Shared.Systems.Resource
-  syntax:
-    content: public void Log(object message, Object sender = null)
-    parameters:
-    - id: message
-      type: System.Object
-    - id: sender
-      type: UnityEngine.Object
-    content.vb: Public Sub Log(message As Object, sender As [Object] = Nothing)
-  overload: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log*
-  nameWithType.vb: ResourceSystemClient.Log(Object, Object)
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log(Object, UnityEngine.Object)
-  name.vb: Log(Object, Object)
 references:
 - uid: SombraStudios.Shared.Systems.Resource
   commentId: N:SombraStudios.Shared.Systems.Resource
@@ -149,6 +153,1109 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}
+  parent: SombraStudios.Shared.Systems.Resource
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  name: ResourceSystem<float>
+  nameWithType: ResourceSystem<float>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<float>
+  nameWithType.vb: ResourceSystem(Of Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of Single)
+  name.vb: ResourceSystem(Of Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  commentId: T:SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  parent: SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html
+  name: FloatResourceSystem
+  nameWithType: FloatResourceSystem
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IncreaseCooldownDuration
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IncreaseCooldownDuration
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IncreaseCooldownDuration
+  name: IncreaseCooldownDuration
+  nameWithType: FloatResourceSystem.IncreaseCooldownDuration
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IncreaseCooldownDuration
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DecreaseCooldownDuration
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DecreaseCooldownDuration
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DecreaseCooldownDuration
+  name: DecreaseCooldownDuration
+  nameWithType: FloatResourceSystem.DecreaseCooldownDuration
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DecreaseCooldownDuration
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Amount
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Amount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Amount
+  name: Amount
+  nameWithType: FloatResourceSystem.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Amount
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.MaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_MaxAmount
+  name: MaxAmount
+  nameWithType: FloatResourceSystem.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.ResourcePercent
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.ResourcePercent
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_ResourcePercent
+  name: ResourcePercent
+  nameWithType: FloatResourceSystem.ResourcePercent
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.ResourcePercent
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsMaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsMaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IsMaxAmount
+  name: IsMaxAmount
+  nameWithType: FloatResourceSystem.IsMaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsMaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsEmptyAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsEmptyAmount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IsEmptyAmount
+  name: IsEmptyAmount
+  nameWithType: FloatResourceSystem.IsEmptyAmount
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsEmptyAmount
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsImmutable
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsImmutable
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IsImmutable
+  name: IsImmutable
+  nameWithType: FloatResourceSystem.IsImmutable
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsImmutable
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInIncreaseCooldown
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInIncreaseCooldown
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IsInIncreaseCooldown
+  name: IsInIncreaseCooldown
+  nameWithType: FloatResourceSystem.IsInIncreaseCooldown
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInIncreaseCooldown
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInDecreaseCooldown
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInDecreaseCooldown
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IsInDecreaseCooldown
+  name: IsInDecreaseCooldown
+  nameWithType: FloatResourceSystem.IsInDecreaseCooldown
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInDecreaseCooldown
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInitialized
+  commentId: P:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInitialized
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_IsInitialized
+  name: IsInitialized
+  nameWithType: FloatResourceSystem.IsInitialized
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.IsInitialized
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountChanged
+  commentId: F:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountChanged
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_AmountChanged
+  name: AmountChanged
+  nameWithType: FloatResourceSystem.AmountChanged
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountChanged
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountRestored
+  commentId: F:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountRestored
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_AmountRestored
+  name: AmountRestored
+  nameWithType: FloatResourceSystem.AmountRestored
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountRestored
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountMaxed
+  commentId: F:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountMaxed
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_AmountMaxed
+  name: AmountMaxed
+  nameWithType: FloatResourceSystem.AmountMaxed
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountMaxed
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountEmptied
+  commentId: F:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountEmptied
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_AmountEmptied
+  name: AmountEmptied
+  nameWithType: FloatResourceSystem.AmountEmptied
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.AmountEmptied
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.OnDisable
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.OnDisable
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_OnDisable
+  name: OnDisable()
+  nameWithType: FloatResourceSystem.OnDisable()
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.OnDisable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_OnDisable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_OnDisable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_GetResourceAmountBasedOnPercentage_System_Single_
+  name: GetResourceAmountBasedOnPercentage(float)
+  nameWithType: FloatResourceSystem.GetResourceAmountBasedOnPercentage(float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(float)
+  nameWithType.vb: FloatResourceSystem.GetResourceAmountBasedOnPercentage(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(Single)
+  name.vb: GetResourceAmountBasedOnPercentage(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(System.Single)
+    name: GetResourceAmountBasedOnPercentage
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_GetResourceAmountBasedOnPercentage_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.GetResourceAmountBasedOnPercentage(System.Single)
+    name: GetResourceAmountBasedOnPercentage
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_GetResourceAmountBasedOnPercentage_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Setup_System_String_System_String_System_Single_System_Single_System_Single_System_Single_System_Single_
+  name: Setup(string, string, float, float, float, float, float)
+  nameWithType: FloatResourceSystem.Setup(string, string, float, float, float, float, float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(string, string, float, float, float, float, float)
+  nameWithType.vb: FloatResourceSystem.Setup(String, String, Single, Single, Single, Single, Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(String, String, Single, Single, Single, Single, Single)
+  name.vb: Setup(String, String, Single, Single, Single, Single, Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: Setup
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Setup_System_String_System_String_System_Single_System_Single_System_Single_System_Single_System_Single_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Single)
+    name: Setup
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Setup_System_String_System_String_System_Single_System_Single_System_Single_System_Single_System_Single_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(SombraStudios.Shared.Systems.Resource.FloatResourceSystemData)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(SombraStudios.Shared.Systems.Resource.FloatResourceSystemData)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Setup_SombraStudios_Shared_Systems_Resource_FloatResourceSystemData_
+  name: Setup(FloatResourceSystemData)
+  nameWithType: FloatResourceSystem.Setup(FloatResourceSystemData)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(SombraStudios.Shared.Systems.Resource.FloatResourceSystemData)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(SombraStudios.Shared.Systems.Resource.FloatResourceSystemData)
+    name: Setup
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Setup_SombraStudios_Shared_Systems_Resource_FloatResourceSystemData_
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystemData
+    name: FloatResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystemData.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.Setup(SombraStudios.Shared.Systems.Resource.FloatResourceSystemData)
+    name: Setup
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_Setup_SombraStudios_Shared_Systems_Resource_FloatResourceSystemData_
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystemData
+    name: FloatResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystemData.html
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryIncreaseAmount_System_Single_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  name: TryIncreaseAmount(float, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  nameWithType: FloatResourceSystem.TryIncreaseAmount(float, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(float, out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), bool)
+  nameWithType.vb: FloatResourceSystem.TryIncreaseAmount(Single, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(Single, (previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Boolean)
+  name.vb: TryIncreaseAmount(Single, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+    name: TryIncreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryIncreaseAmount_System_Single_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryIncreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+    name: TryIncreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryIncreaseAmount_System_Single_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryDecreaseAmount_System_Single_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  name: TryDecreaseAmount(float, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  nameWithType: FloatResourceSystem.TryDecreaseAmount(float, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(float, out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), bool)
+  nameWithType.vb: FloatResourceSystem.TryDecreaseAmount(Single, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(Single, (previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Boolean)
+  name.vb: TryDecreaseAmount(Single, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+    name: TryDecreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryDecreaseAmount_System_Single_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryDecreaseAmount(System.Single,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+    name: TryDecreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryDecreaseAmount_System_Single_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryRestoreAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Single_
+  name: TryRestoreAmount(out (ResourceSystemData previous, ResourceSystemData current), float)
+  nameWithType: FloatResourceSystem.TryRestoreAmount(out (ResourceSystemData previous, ResourceSystemData current), float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount(out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), float)
+  nameWithType.vb: FloatResourceSystem.TryRestoreAmount((previous As ResourceSystemData, current As ResourceSystemData), Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount((previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Single)
+  name.vb: TryRestoreAmount((previous As ResourceSystemData, current As ResourceSystemData), Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+    name: TryRestoreAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryRestoreAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Single_
+  - name: (
+  - name: out
+  - name: " "
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+    name: TryRestoreAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryRestoreAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Single_
+  - name: (
+  - name: (
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryResetAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  name: TryResetAmount(out (ResourceSystemData previous, ResourceSystemData current), bool)
+  nameWithType: FloatResourceSystem.TryResetAmount(out (ResourceSystemData previous, ResourceSystemData current), bool)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount(out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), bool)
+  nameWithType.vb: FloatResourceSystem.TryResetAmount((previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount((previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Boolean)
+  name.vb: TryResetAmount((previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+    name: TryResetAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryResetAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  - name: (
+  - name: out
+  - name: " "
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+    name: TryResetAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryResetAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  - name: (
+  - name: (
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryClearAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___
+  name: TryClearAmount(out (ResourceSystemData previous, ResourceSystemData current))
+  nameWithType: FloatResourceSystem.TryClearAmount(out (ResourceSystemData previous, ResourceSystemData current))
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount(out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current))
+  nameWithType.vb: FloatResourceSystem.TryClearAmount((previous As ResourceSystemData, current As ResourceSystemData))
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount((previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData))
+  name.vb: TryClearAmount((previous As ResourceSystemData, current As ResourceSystemData))
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+    name: TryClearAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryClearAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___
+  - name: (
+  - name: out
+  - name: " "
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: )
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+    name: TryClearAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_TryClearAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___
+  - name: (
+  - name: (
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_StartRegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem_System_Single__RegenerationData_System_Single__
+  name: StartRegeneration(RegenerationData<float>)
+  nameWithType: FloatResourceSystem.StartRegeneration(ResourceSystem<float>.RegenerationData<float>)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem<float>.RegenerationData<float>)
+  nameWithType.vb: FloatResourceSystem.StartRegeneration(ResourceSystem(Of Single).RegenerationData(Of Single))
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem(Of Single).RegenerationData(Of Single))
+  name.vb: StartRegeneration(RegenerationData(Of Single))
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+    name: StartRegeneration
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_StartRegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem_System_Single__RegenerationData_System_Single__
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+    name: StartRegeneration
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_StartRegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem_System_Single__RegenerationData_System_Single__
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_StartDegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem_System_Single__RegenerationData_System_Single__
+  name: StartDegeneration(RegenerationData<float>)
+  nameWithType: FloatResourceSystem.StartDegeneration(ResourceSystem<float>.RegenerationData<float>)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem<float>.RegenerationData<float>)
+  nameWithType.vb: FloatResourceSystem.StartDegeneration(ResourceSystem(Of Single).RegenerationData(Of Single))
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem(Of Single).RegenerationData(Of Single))
+  name.vb: StartDegeneration(RegenerationData(Of Single))
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+    name: StartDegeneration
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_StartDegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem_System_Single__RegenerationData_System_Single__
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData{System.Single})
+    name: StartDegeneration
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_StartDegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem_System_Single__RegenerationData_System_Single__
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem{System.Single}.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(System.Single,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(System.Single,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanIncreaseAmount_System_Single_System_Boolean_
+  name: CanIncreaseAmount(float, bool)
+  nameWithType: FloatResourceSystem.CanIncreaseAmount(float, bool)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(float, bool)
+  nameWithType.vb: FloatResourceSystem.CanIncreaseAmount(Single, Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(Single, Boolean)
+  name.vb: CanIncreaseAmount(Single, Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(System.Single,System.Boolean)
+    name: CanIncreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanIncreaseAmount_System_Single_System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanIncreaseAmount(System.Single,System.Boolean)
+    name: CanIncreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanIncreaseAmount_System_Single_System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoIncreaseAmount_System_Single_
+  name: DoIncreaseAmount(float)
+  nameWithType: FloatResourceSystem.DoIncreaseAmount(float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(float)
+  nameWithType.vb: FloatResourceSystem.DoIncreaseAmount(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(Single)
+  name.vb: DoIncreaseAmount(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(System.Single)
+    name: DoIncreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoIncreaseAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoIncreaseAmount(System.Single)
+    name: DoIncreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoIncreaseAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(System.Single,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(System.Single,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanDecreaseAmount_System_Single_System_Boolean_
+  name: CanDecreaseAmount(float, bool)
+  nameWithType: FloatResourceSystem.CanDecreaseAmount(float, bool)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(float, bool)
+  nameWithType.vb: FloatResourceSystem.CanDecreaseAmount(Single, Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(Single, Boolean)
+  name.vb: CanDecreaseAmount(Single, Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(System.Single,System.Boolean)
+    name: CanDecreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanDecreaseAmount_System_Single_System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanDecreaseAmount(System.Single,System.Boolean)
+    name: CanDecreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanDecreaseAmount_System_Single_System_Boolean_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoDecreaseAmount_System_Single_
+  name: DoDecreaseAmount(float)
+  nameWithType: FloatResourceSystem.DoDecreaseAmount(float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(float)
+  nameWithType.vb: FloatResourceSystem.DoDecreaseAmount(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(Single)
+  name.vb: DoDecreaseAmount(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(System.Single)
+    name: DoDecreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoDecreaseAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoDecreaseAmount(System.Single)
+    name: DoDecreaseAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoDecreaseAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanRestoreAmount_System_Single_
+  name: CanRestoreAmount(float)
+  nameWithType: FloatResourceSystem.CanRestoreAmount(float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(float)
+  nameWithType.vb: FloatResourceSystem.CanRestoreAmount(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(Single)
+  name.vb: CanRestoreAmount(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(System.Single)
+    name: CanRestoreAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanRestoreAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanRestoreAmount(System.Single)
+    name: CanRestoreAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanRestoreAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoRestoreAmount_System_Single_
+  name: DoRestoreAmount(float)
+  nameWithType: FloatResourceSystem.DoRestoreAmount(float)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(float)
+  nameWithType.vb: FloatResourceSystem.DoRestoreAmount(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(Single)
+  name.vb: DoRestoreAmount(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(System.Single)
+    name: DoRestoreAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoRestoreAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoRestoreAmount(System.Single)
+    name: DoRestoreAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoRestoreAmount_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanResetAmount_System_Boolean_
+  name: CanResetAmount(bool)
+  nameWithType: FloatResourceSystem.CanResetAmount(bool)
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(bool)
+  nameWithType.vb: FloatResourceSystem.CanResetAmount(Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(Boolean)
+  name.vb: CanResetAmount(Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(System.Boolean)
+    name: CanResetAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanResetAmount_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanResetAmount(System.Boolean)
+    name: CanResetAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanResetAmount_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoResetAmount
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoResetAmount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoResetAmount
+  name: DoResetAmount()
+  nameWithType: FloatResourceSystem.DoResetAmount()
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoResetAmount()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoResetAmount
+    name: DoResetAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoResetAmount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoResetAmount
+    name: DoResetAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoResetAmount
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanClearAmount
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanClearAmount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanClearAmount
+  name: CanClearAmount()
+  nameWithType: FloatResourceSystem.CanClearAmount()
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanClearAmount()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanClearAmount
+    name: CanClearAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanClearAmount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.CanClearAmount
+    name: CanClearAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_CanClearAmount
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoClearAmount
+  commentId: M:SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoClearAmount
+  parent: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoClearAmount
+  name: DoClearAmount()
+  nameWithType: FloatResourceSystem.DoClearAmount()
+  fullName: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoClearAmount()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoClearAmount
+    name: DoClearAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoClearAmount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.DoClearAmount
+    name: DoClearAmount
+    href: SombraStudios.Shared.Systems.Resource.FloatResourceSystem.html#SombraStudios_Shared_Systems_Resource_FloatResourceSystem_DoClearAmount
+  - name: (
+  - name: )
 - uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
@@ -207,6 +1314,31 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  name: ResourceSystem<T>
+  nameWithType: ResourceSystem<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>
+  nameWithType.vb: ResourceSystem(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T)
+  name.vb: ResourceSystem(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   isExternal: true
@@ -288,9 +1420,3 @@ references:
   - uid: SombraStudios.Shared.Extensions
     name: Extensions
     href: SombraStudios.Shared.Extensions.html
-- uid: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log*
-  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log
-  href: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.html#SombraStudios_Shared_Systems_Resource_ResourceSystemClient_Log_System_Object_UnityEngine_Object_
-  name: Log
-  nameWithType: ResourceSystemClient.Log
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystemClient.Log

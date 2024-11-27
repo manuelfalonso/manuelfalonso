@@ -1,0 +1,793 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.IntResource
+  commentId: T:SombraStudios.Shared.Systems.Resource.IntResource
+  id: IntResource
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.IntResource.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32)
+  - SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized
+  - SombraStudios.Shared.Systems.Resource.IntResource.ClearResource
+  - SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource(System.Int32)
+  - SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource(System.Int32)
+  - SombraStudios.Shared.Systems.Resource.IntResource.ResetResource
+  langs:
+  - csharp
+  - vb
+  name: IntResource
+  nameWithType: IntResource
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IntResource
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Serializable class representing an int resource.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class IntResource : Resource<int>
+    content.vb: >-
+      <Serializable>
+
+      Public Class IntResource Inherits Resource(Of Integer)
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Name
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Description
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Amount
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.MinAmount
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.InitialAmount
+  - SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized
+  commentId: P:SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized
+  id: AmountNormalized
+  parent: SombraStudios.Shared.Systems.Resource.IntResource
+  langs:
+  - csharp
+  - vb
+  name: AmountNormalized
+  nameWithType: IntResource.AmountNormalized
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AmountNormalized
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the normalized amount of the resource (amount / maxAmount).
+  example: []
+  syntax:
+    content: public int AmountNormalized { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property AmountNormalized As Integer
+  overload: SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized*
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32)
+  commentId: M:SombraStudios.Shared.Systems.Resource.IntResource.#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.String,System.String,System.Int32,System.Int32,System.Int32)'
+  parent: SombraStudios.Shared.Systems.Resource.IntResource
+  langs:
+  - csharp
+  - vb
+  name: IntResource(string, string, int, int, int)
+  nameWithType: IntResource.IntResource(string, string, int, int, int)
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.IntResource(string, string, int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Creates a new instance of the Resource class.
+  example: []
+  syntax:
+    content: public IntResource(string name, string description, int minAmount, int maxAmount, int initialAmount)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the resource.
+    - id: description
+      type: System.String
+      description: The description of the resource.
+    - id: minAmount
+      type: System.Int32
+      description: The minimum amount of the resource.
+    - id: maxAmount
+      type: System.Int32
+      description: The maximum amount the resource can have.
+    - id: initialAmount
+      type: System.Int32
+      description: The initial amount of the resource.
+    content.vb: Public Sub New(name As String, description As String, minAmount As Integer, maxAmount As Integer, initialAmount As Integer)
+  overload: SombraStudios.Shared.Systems.Resource.IntResource.#ctor*
+  nameWithType.vb: IntResource.New(String, String, Integer, Integer, Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.IntResource.New(String, String, Integer, Integer, Integer)
+  name.vb: New(String, String, Integer, Integer, Integer)
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource(System.Int32)
+  commentId: M:SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource(System.Int32)
+  id: IncreaseResource(System.Int32)
+  parent: SombraStudios.Shared.Systems.Resource.IntResource
+  langs:
+  - csharp
+  - vb
+  name: IncreaseResource(int)
+  nameWithType: IntResource.IncreaseResource(int)
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource(int)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IncreaseResource
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Increases the resource amount by the specified value.
+  example: []
+  syntax:
+    content: public override int IncreaseResource(int amountToIncrease)
+    parameters:
+    - id: amountToIncrease
+      type: System.Int32
+      description: The amount to increase.
+    return:
+      type: System.Int32
+      description: The new amount.
+    content.vb: Public Overrides Function IncreaseResource(amountToIncrease As Integer) As Integer
+  overridden: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.IncreaseResource(System.Int32)
+  overload: SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource*
+  nameWithType.vb: IntResource.IncreaseResource(Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource(Integer)
+  name.vb: IncreaseResource(Integer)
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource(System.Int32)
+  commentId: M:SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource(System.Int32)
+  id: DecreaseResource(System.Int32)
+  parent: SombraStudios.Shared.Systems.Resource.IntResource
+  langs:
+  - csharp
+  - vb
+  name: DecreaseResource(int)
+  nameWithType: IntResource.DecreaseResource(int)
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource(int)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseResource
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Decreases the resource amount by the specified value.
+  example: []
+  syntax:
+    content: public override int DecreaseResource(int amountToDecrease)
+    parameters:
+    - id: amountToDecrease
+      type: System.Int32
+      description: The amount to decrease.
+    return:
+      type: System.Int32
+      description: The new amount.
+    content.vb: Public Overrides Function DecreaseResource(amountToDecrease As Integer) As Integer
+  overridden: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.DecreaseResource(System.Int32)
+  overload: SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource*
+  nameWithType.vb: IntResource.DecreaseResource(Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource(Integer)
+  name.vb: DecreaseResource(Integer)
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.ClearResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.IntResource.ClearResource
+  id: ClearResource
+  parent: SombraStudios.Shared.Systems.Resource.IntResource
+  langs:
+  - csharp
+  - vb
+  name: ClearResource()
+  nameWithType: IntResource.ClearResource()
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.ClearResource()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ClearResource
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 62
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Clears the resource amount, setting it to zero.
+  example: []
+  syntax:
+    content: public override int ClearResource()
+    return:
+      type: System.Int32
+      description: The new amount.
+    content.vb: Public Overrides Function ClearResource() As Integer
+  overridden: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ClearResource
+  overload: SombraStudios.Shared.Systems.Resource.IntResource.ClearResource*
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.ResetResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.IntResource.ResetResource
+  id: ResetResource
+  parent: SombraStudios.Shared.Systems.Resource.IntResource
+  langs:
+  - csharp
+  - vb
+  name: ResetResource()
+  nameWithType: IntResource.ResetResource()
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.ResetResource()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Implementations/IntResource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetResource
+    path: ../Systems/Resource/Implementations/IntResource.cs
+    startLine: 72
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Resets the amount to the initial amount.
+  example: []
+  syntax:
+    content: public override int ResetResource()
+    return:
+      type: System.Int32
+      description: The new amount.
+    content.vb: Public Overrides Function ResetResource() As Integer
+  overridden: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ResetResource
+  overload: SombraStudios.Shared.Systems.Resource.IntResource.ResetResource*
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  commentId: T:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  parent: SombraStudios.Shared.Systems.Resource
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html
+  name: Resource<int>
+  nameWithType: Resource<int>
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>
+  nameWithType.vb: Resource(Of Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer)
+  name.vb: Resource(Of Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Name
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Name
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Name
+  name: Name
+  nameWithType: Resource<int>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.Name
+  nameWithType.vb: Resource(Of Integer).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).Name
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Description
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Description
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Description
+  name: Description
+  nameWithType: Resource<int>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.Description
+  nameWithType.vb: Resource(Of Integer).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).Description
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Amount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.Amount
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Amount
+  name: Amount
+  nameWithType: Resource<int>.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.Amount
+  nameWithType.vb: Resource(Of Integer).Amount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).Amount
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.MinAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.MinAmount
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_MinAmount
+  name: MinAmount
+  nameWithType: Resource<int>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.MinAmount
+  nameWithType.vb: Resource(Of Integer).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.MaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_MaxAmount
+  name: MaxAmount
+  nameWithType: Resource<int>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.MaxAmount
+  nameWithType.vb: Resource(Of Integer).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.InitialAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.InitialAmount
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_InitialAmount
+  name: InitialAmount
+  nameWithType: Resource<int>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.InitialAmount
+  nameWithType.vb: Resource(Of Integer).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).InitialAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ToString
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ToString
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  name: ToString()
+  nameWithType: Resource<int>.ToString()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.ToString()
+  nameWithType.vb: Resource(Of Integer).ToString()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).ToString()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ToString
+    name: ToString
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ToString
+    name: ToString
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.Resource`1
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html
+  name: Resource<T>
+  nameWithType: Resource<T>
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>
+  nameWithType.vb: Resource(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T)
+  name.vb: Resource(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Name
+  name: Name
+  nameWithType: Resource<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Name
+  nameWithType.vb: Resource(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Description
+  name: Description
+  nameWithType: Resource<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Description
+  nameWithType.vb: Resource(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Amount
+  name: Amount
+  nameWithType: Resource<T>.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Amount
+  nameWithType.vb: Resource(Of T).Amount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Amount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_MinAmount
+  name: MinAmount
+  nameWithType: Resource<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.MinAmount
+  nameWithType.vb: Resource(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_MaxAmount
+  name: MaxAmount
+  nameWithType: Resource<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.MaxAmount
+  nameWithType.vb: Resource(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_InitialAmount
+  name: InitialAmount
+  nameWithType: Resource<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.InitialAmount
+  nameWithType.vb: Resource(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).InitialAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  name: ToString()
+  nameWithType: Resource<T>.ToString()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ToString()
+  nameWithType.vb: Resource(Of T).ToString()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ToString()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+    name: ToString
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+    name: ToString
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized
+  href: SombraStudios.Shared.Systems.Resource.IntResource.html#SombraStudios_Shared_Systems_Resource_IntResource_AmountNormalized
+  name: AmountNormalized
+  nameWithType: IntResource.AmountNormalized
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.AmountNormalized
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.IntResource.#ctor
+  href: SombraStudios.Shared.Systems.Resource.IntResource.html#SombraStudios_Shared_Systems_Resource_IntResource__ctor_System_String_System_String_System_Int32_System_Int32_System_Int32_
+  name: IntResource
+  nameWithType: IntResource.IntResource
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.IntResource
+  nameWithType.vb: IntResource.New
+  fullName.vb: SombraStudios.Shared.Systems.Resource.IntResource.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.IncreaseResource(System.Int32)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.IncreaseResource(System.Int32)
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  name: IncreaseResource(int)
+  nameWithType: Resource<int>.IncreaseResource(int)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.IncreaseResource(int)
+  nameWithType.vb: Resource(Of Integer).IncreaseResource(Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).IncreaseResource(Integer)
+  name.vb: IncreaseResource(Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.IncreaseResource(System.Int32)
+    name: IncreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.IncreaseResource(System.Int32)
+    name: IncreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource
+  href: SombraStudios.Shared.Systems.Resource.IntResource.html#SombraStudios_Shared_Systems_Resource_IntResource_IncreaseResource_System_Int32_
+  name: IncreaseResource
+  nameWithType: IntResource.IncreaseResource
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.IncreaseResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  name: IncreaseResource(T)
+  nameWithType: Resource<T>.IncreaseResource(T)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.IncreaseResource(T)
+  nameWithType.vb: Resource(Of T).IncreaseResource(T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).IncreaseResource(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+    name: IncreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+    name: IncreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.DecreaseResource(System.Int32)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.DecreaseResource(System.Int32)
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  name: DecreaseResource(int)
+  nameWithType: Resource<int>.DecreaseResource(int)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.DecreaseResource(int)
+  nameWithType.vb: Resource(Of Integer).DecreaseResource(Integer)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).DecreaseResource(Integer)
+  name.vb: DecreaseResource(Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.DecreaseResource(System.Int32)
+    name: DecreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.DecreaseResource(System.Int32)
+    name: DecreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource
+  href: SombraStudios.Shared.Systems.Resource.IntResource.html#SombraStudios_Shared_Systems_Resource_IntResource_DecreaseResource_System_Int32_
+  name: DecreaseResource
+  nameWithType: IntResource.DecreaseResource
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.DecreaseResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  name: DecreaseResource(T)
+  nameWithType: Resource<T>.DecreaseResource(T)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.DecreaseResource(T)
+  nameWithType.vb: Resource(Of T).DecreaseResource(T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).DecreaseResource(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+    name: DecreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+    name: DecreaseResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ClearResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ClearResource
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  name: ClearResource()
+  nameWithType: Resource<int>.ClearResource()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.ClearResource()
+  nameWithType.vb: Resource(Of Integer).ClearResource()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).ClearResource()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ClearResource
+    name: ClearResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ClearResource
+    name: ClearResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.ClearResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.IntResource.ClearResource
+  href: SombraStudios.Shared.Systems.Resource.IntResource.html#SombraStudios_Shared_Systems_Resource_IntResource_ClearResource
+  name: ClearResource
+  nameWithType: IntResource.ClearResource
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.ClearResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  name: ClearResource()
+  nameWithType: Resource<T>.ClearResource()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ClearResource()
+  nameWithType.vb: Resource(Of T).ClearResource()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ClearResource()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+    name: ClearResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+    name: ClearResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ResetResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ResetResource
+  parent: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}
+  definition: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  name: ResetResource()
+  nameWithType: Resource<int>.ResetResource()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<int>.ResetResource()
+  nameWithType.vb: Resource(Of Integer).ResetResource()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of Integer).ResetResource()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ResetResource
+    name: ResetResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource{System.Int32}.ResetResource
+    name: ResetResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.IntResource.ResetResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.IntResource.ResetResource
+  href: SombraStudios.Shared.Systems.Resource.IntResource.html#SombraStudios_Shared_Systems_Resource_IntResource_ResetResource
+  name: ResetResource
+  nameWithType: IntResource.ResetResource
+  fullName: SombraStudios.Shared.Systems.Resource.IntResource.ResetResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  name: ResetResource()
+  nameWithType: Resource<T>.ResetResource()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ResetResource()
+  nameWithType.vb: Resource(Of T).ResetResource()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ResetResource()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+    name: ResetResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+    name: ResetResource
+    href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  - name: (
+  - name: )

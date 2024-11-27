@@ -4,11 +4,20 @@ items:
   commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   id: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   children:
-  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
-  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
-  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
-  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameObjectEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.IntEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.SOEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSOListener
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListener
   langs:
   - csharp
   - vb
@@ -19,56 +28,126 @@ items:
   assemblies:
   - SombraStudios.Shared.Patterns
 references:
-- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
-  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.html
-  name: GameEventMonoBehaviourListListener
-  nameWithType: GameEventMonoBehaviourListListener
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
-  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.html
-  name: GameEventMonoBehaviourListListener.GameEventResponsePair
-  nameWithType: GameEventMonoBehaviourListListener.GameEventResponsePair
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO-1.html
+  name: GenericEventChannelSO<T>
+  nameWithType: GenericEventChannelSO<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO<T>
+  nameWithType.vb: GenericEventChannelSO(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO(Of T)
+  name.vb: GenericEventChannelSO(Of T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-    name: GameEventMonoBehaviourListListener
-    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.html
-  - name: .
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
-    name: GameEventResponsePair
-    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair.html
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+    name: GenericEventChannelSO
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
   spec.vb:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-    name: GameEventMonoBehaviourListListener
-    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.html
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+    name: GenericEventChannelSO
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO.html
+  name: StringEventChannelSO
+  nameWithType: StringEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.IntEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.IntEventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.IntEventChannelSO.html
+  name: IntEventChannelSO
+  nameWithType: IntEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.IntEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.html
+  name: VoidEventChannelSO
+  nameWithType: VoidEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO.html
+  name: BoolEventChannelSO
+  nameWithType: BoolEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameObjectEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameObjectEventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameObjectEventChannelSO.html
+  name: GameObjectEventChannelSO
+  nameWithType: GameObjectEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameObjectEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.html
+  name: VoidEventMonoBehaviourListListener
+  nameWithType: VoidEventMonoBehaviourListListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.html
+  name: VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  nameWithType: VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+    name: VoidEventMonoBehaviourListListener
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.html
   - name: .
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
-    name: GameEventResponsePair
-    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair.html
-- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
-  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
-  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener.html
-  name: GameEventMonoBehaviourListener
-  nameWithType: GameEventMonoBehaviourListener
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
-- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
-  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
-  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener.html
-  name: GameEventScriptableObjectListener
-  nameWithType: GameEventScriptableObjectListener
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
-- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
-  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
-  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent.html
-  name: GameEvent
-  nameWithType: GameEvent
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+    name: EventChannelResponsePair
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+    name: VoidEventMonoBehaviourListListener
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+    name: EventChannelResponsePair
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO.html
+  name: FloatEventChannelSO
+  nameWithType: FloatEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO.html
+  name: Vector3EventChannelSO
+  nameWithType: Vector3EventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListener
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListener.html
+  name: VoidEventMonoBehaviourListener
+  nameWithType: VoidEventMonoBehaviourListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListener
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO.html
+  name: Vector2EventChannelSO
+  nameWithType: Vector2EventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.SOEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.SOEventChannelSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.SOEventChannelSO.html
+  name: SOEventChannelSO
+  nameWithType: SOEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.SOEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSOListener
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSOListener
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSOListener.html
+  name: VoidEventChannelSOListener
+  nameWithType: VoidEventChannelSOListener
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSOListener
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   href: SombraStudios.html

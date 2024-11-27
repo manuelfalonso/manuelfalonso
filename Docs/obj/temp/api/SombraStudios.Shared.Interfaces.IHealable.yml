@@ -16,14 +16,14 @@ items:
   type: Interface
   source:
     remote:
-      path: Interfaces/IHealable.cs
+      path: Systems/Heal/IHealable.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IHealable
-    path: ../Interfaces/IHealable.cs
+    path: ../Systems/Heal/IHealable.cs
     startLine: 5
   assemblies:
-  - SombraStudios.Shared.Interfaces
+  - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Interfaces
   syntax:
     content: public interface IHealable
@@ -41,14 +41,14 @@ items:
   type: Property
   source:
     remote:
-      path: Interfaces/IHealable.cs
+      path: Systems/Heal/IHealable.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Healed
-    path: ../Interfaces/IHealable.cs
+    path: ../Systems/Heal/IHealable.cs
     startLine: 7
   assemblies:
-  - SombraStudios.Shared.Interfaces
+  - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Interfaces
   syntax:
     content: Action<HealData> Healed { get; set; }
@@ -70,14 +70,14 @@ items:
   type: Method
   source:
     remote:
-      path: Interfaces/IHealable.cs
+      path: Systems/Heal/IHealable.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TryHeal
-    path: ../Interfaces/IHealable.cs
+    path: ../Systems/Heal/IHealable.cs
     startLine: 9
   assemblies:
-  - SombraStudios.Shared.Interfaces
+  - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Interfaces
   syntax:
     content: bool TryHeal(HealData data)
@@ -144,6 +144,7 @@ references:
   - name: <
   - uid: SombraStudios.Shared.Systems.Resource.Data.HealData
     name: HealData
+    href: SombraStudios.Shared.Systems.Resource.Data.HealData.html
   - name: '>'
   spec.vb:
   - uid: System.Action`1
@@ -155,6 +156,7 @@ references:
   - name: " "
   - uid: SombraStudios.Shared.Systems.Resource.Data.HealData
     name: HealData
+    href: SombraStudios.Shared.Systems.Resource.Data.HealData.html
   - name: )
 - uid: System.Action`1
   commentId: T:System.Action`1

@@ -1,16 +1,5 @@
 ### YamlMime:TableOfContent
 items:
-- uid: SombraStudios.Shared
-  name: SombraStudios.Shared
-  items:
-  - uid: SombraStudios.Shared.CountdownTimer
-    name: CountdownTimer
-  - uid: SombraStudios.Shared.FrequencyTimer
-    name: FrequencyTimer
-  - uid: SombraStudios.Shared.StopwatchTimer
-    name: StopwatchTimer
-  - uid: SombraStudios.Shared.Timer
-    name: Timer
 - uid: SombraStudios.Shared.AI
   name: SombraStudios.Shared.AI
   items:
@@ -50,6 +39,11 @@ items:
     name: IAnimationStateEventExitReceiver
   - uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver
     name: IAnimationStateEventReceiver
+- uid: SombraStudios.Shared.Animations.Editor
+  name: SombraStudios.Shared.Animations.Editor
+  items:
+  - uid: SombraStudios.Shared.Animations.Editor.AnimationStateEventMigrator
+    name: AnimationStateEventMigrator
 - uid: SombraStudios.Shared.Attributes
   name: SombraStudios.Shared.Attributes
   items:
@@ -208,21 +202,6 @@ items:
     name: LambdaExample.BoolIntParameterDelegate
   - uid: SombraStudios.Shared.Examples.Delegates.LambdaExample.VoidNoParameterDelegate
     name: LambdaExample.VoidNoParameterDelegate
-- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command
-  name: SombraStudios.Shared.Examples.Patterns.Behavioural.Command
-  items:
-  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command.CommandClient
-    name: CommandClient
-  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command.CommandInvoker
-    name: CommandInvoker
-  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command.CommandReceiver
-    name: CommandReceiver
-  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command.ComplexCommand
-    name: ComplexCommand
-  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command.ICommand
-    name: ICommand
-  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Command.SimpleCommand
-    name: SimpleCommand
 - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Observer
   name: SombraStudios.Shared.Examples.Patterns.Behavioural.Observer
   items:
@@ -296,8 +275,6 @@ items:
 - uid: SombraStudios.Shared.Gameplay
   name: SombraStudios.Shared.Gameplay
   items:
-  - uid: SombraStudios.Shared.Gameplay.LaunchProjectile
-    name: LaunchProjectile
   - uid: SombraStudios.Shared.Gameplay.OnInteract
     name: OnInteract
   - uid: SombraStudios.Shared.Gameplay.OnTilt
@@ -318,12 +295,6 @@ items:
     name: TiltObject
   - uid: SombraStudios.Shared.Gameplay.TimedSelfDestruct
     name: TimedSelfDestruct
-  - uid: SombraStudios.Shared.Gameplay.ToggleComponentZone
-    name: ToggleComponentZone
-  - uid: SombraStudios.Shared.Gameplay.Unbreakable
-    name: Unbreakable
-  - uid: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
-    name: Unbreakable.RestoreEvent
 - uid: SombraStudios.Shared.Gameplay.Behaviours
   name: SombraStudios.Shared.Gameplay.Behaviours
   items:
@@ -514,19 +485,39 @@ items:
   items:
   - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
     name: CommandScriptableObject
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject`1
+    name: CommandScriptableObject<T>
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   name: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   items:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEvent
-    name: GameEvent
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener
-    name: GameEventMonoBehaviourListListener
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListListener.GameEventResponsePair
-    name: GameEventMonoBehaviourListListener.GameEventResponsePair
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventMonoBehaviourListener
-    name: GameEventMonoBehaviourListener
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameEventScriptableObjectListener
-    name: GameEventScriptableObjectListener
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO
+    name: BoolEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO
+    name: FloatEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GameObjectEventChannelSO
+    name: GameObjectEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+    name: GenericEventChannelSO<T>
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.IntEventChannelSO
+    name: IntEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.SOEventChannelSO
+    name: SOEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO
+    name: StringEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO
+    name: Vector2EventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO
+    name: Vector3EventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+    name: VoidEventChannelSO
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSOListener
+    name: VoidEventChannelSOListener
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener
+    name: VoidEventMonoBehaviourListListener
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+    name: VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListener
+    name: VoidEventMonoBehaviourListener
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.StaticRegistry
   name: SombraStudios.Shared.Patterns.Behavioural.Observer.StaticRegistry
   items:
@@ -724,20 +715,30 @@ items:
 - uid: SombraStudios.Shared.Systems.Resource
   name: SombraStudios.Shared.Systems.Resource
   items:
-  - uid: SombraStudios.Shared.Systems.Resource.Resource
-    name: Resource
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceBase
-    name: ResourceBase
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceData
-    name: ResourceData
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem
-    name: ResourceSystem
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResource
+    name: FloatResource
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+    name: FloatResourceSystem
+  - uid: SombraStudios.Shared.Systems.Resource.FloatResourceSystemData
+    name: FloatResourceSystemData
+  - uid: SombraStudios.Shared.Systems.Resource.IntResource
+    name: IntResource
+  - uid: SombraStudios.Shared.Systems.Resource.IntResourceSystemData
+    name: IntResourceSystemData
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
+    name: ResourceData<T>
   - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemClient
     name: ResourceSystemClient
   - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
     name: ResourceSystemData
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemResult
-    name: ResourceSystemResult
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1
+    name: ResourceSystemDataSO<T>
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem<T>
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+    name: ResourceSystem<T>.RegenerationData<T>
+  - uid: SombraStudios.Shared.Systems.Resource.Resource`1
+    name: Resource<T>
 - uid: SombraStudios.Shared.Systems.Resource.Data
   name: SombraStudios.Shared.Systems.Resource.Data
   items:
@@ -745,25 +746,6 @@ items:
     name: DamageData
   - uid: SombraStudios.Shared.Systems.Resource.Data.HealData
     name: HealData
-- uid: SombraStudios.Shared.Systems.SceneMaganement
-  name: SombraStudios.Shared.Systems.SceneMaganement
-  items:
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.AsyncOperationGroup
-    name: AsyncOperationGroup
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.BootstrapSceneLoader
-    name: BootstrapSceneLoader
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.LoadingProgress
-    name: LoadingProgress
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneData
-    name: SceneData
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroup
-    name: SceneGroup
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneGroupManager
-    name: SceneGroupManager
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneLoader
-    name: SceneLoader
-  - uid: SombraStudios.Shared.Systems.SceneMaganement.SceneType
-    name: SceneType
 - uid: SombraStudios.Shared.Systems.Stats
   name: SombraStudios.Shared.Systems.Stats
   items:
@@ -907,10 +889,6 @@ items:
     name: GetRemoteTexture
   - uid: SombraStudios.Shared.Utility.HexToRGBA
     name: HexToRGBA
-  - uid: SombraStudios.Shared.Utility.Logger
-    name: Logger
-  - uid: SombraStudios.Shared.Utility.MonoBehaviourLogger
-    name: MonoBehaviourLogger
   - uid: SombraStudios.Shared.Utility.NoInternetController
     name: NoInternetController
   - uid: SombraStudios.Shared.Utility.ObjectInCameraFrustum
@@ -984,6 +962,15 @@ items:
     name: LerpVectorData
   - uid: SombraStudios.Shared.Utility.Lerp.Lerper
     name: Lerper
+- uid: SombraStudios.Shared.Utility.Loggers
+  name: SombraStudios.Shared.Utility.Loggers
+  items:
+  - uid: SombraStudios.Shared.Utility.Loggers.ILoggerService
+    name: ILoggerService
+  - uid: SombraStudios.Shared.Utility.Loggers.Logger
+    name: Logger
+  - uid: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger
+    name: MonoBehaviourLogger
 - uid: SombraStudios.Shared.Utility.Mirror
   name: SombraStudios.Shared.Utility.Mirror
   items:
@@ -1057,14 +1044,25 @@ items:
     name: TimeScaleClient
   - uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
     name: TimeScaleManager
-- uid: SombraStudios.Shared.Utility.Timer
-  name: SombraStudios.Shared.Utility.Timer
+- uid: SombraStudios.Shared.Utility.Timers.CsharpTimer
+  name: SombraStudios.Shared.Utility.Timers.CsharpTimer
   items:
-  - uid: SombraStudios.Shared.Utility.Timer.Timer
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.CountdownTimer
+    name: CountdownTimer
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.FrequencyTimer
+    name: FrequencyTimer
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.StopwatchTimer
+    name: StopwatchTimer
+  - uid: SombraStudios.Shared.Utility.Timers.CsharpTimer.Timer
     name: Timer
-  - uid: SombraStudios.Shared.Utility.Timer.TimerButtons
+- uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  name: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer
+  items:
+  - uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.Timer
+    name: Timer
+  - uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.TimerButtons
     name: TimerButtons
-  - uid: SombraStudios.Shared.Utility.Timer.TimerInput
+  - uid: SombraStudios.Shared.Utility.Timers.MonobehaviourTimer.TimerInput
     name: TimerInput
 - uid: SombraStudios.Shared.Utility.UnityGizmos.Interfaces
   name: SombraStudios.Shared.Utility.UnityGizmos.Interfaces

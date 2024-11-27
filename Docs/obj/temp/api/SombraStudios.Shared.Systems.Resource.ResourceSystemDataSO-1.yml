@@ -1,0 +1,368 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1
+  id: ResourceSystemDataSO`1
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1.DecreaseCooldownDuration
+  - SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1.IncreaseCooldownDuration
+  langs:
+  - csharp
+  - vb
+  name: ResourceSystemDataSO<T>
+  nameWithType: ResourceSystemDataSO<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystemDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResourceSystemDataSO
+    path: ../Systems/Resource/Generics/ResourceSystemDataSO.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: ScriptableObject class to hold resource system data with cooldown durations.
+  example: []
+  syntax:
+    content: 'public class ResourceSystemDataSO<T> : ResourceData<T> where T : struct'
+    typeParameters:
+    - id: T
+      description: The type of the resource amount.
+    content.vb: Public Class ResourceSystemDataSO(Of T As Structure) Inherits ResourceData(Of T)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystemData
+  - SombraStudios.Shared.Systems.Resource.IntResourceSystemData
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Name
+  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Description
+  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MinAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.InitialAmount
+  nameWithType.vb: ResourceSystemDataSO(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO(Of T)
+  name.vb: ResourceSystemDataSO(Of T)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1.IncreaseCooldownDuration
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1.IncreaseCooldownDuration
+  id: IncreaseCooldownDuration
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1
+  langs:
+  - csharp
+  - vb
+  name: IncreaseCooldownDuration
+  nameWithType: ResourceSystemDataSO<T>.IncreaseCooldownDuration
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO<T>.IncreaseCooldownDuration
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystemDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IncreaseCooldownDuration
+    path: ../Systems/Resource/Generics/ResourceSystemDataSO.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The cooldown duration after increasing the resource.
+  example: []
+  syntax:
+    content: >-
+      [Min(0)]
+
+      public float IncreaseCooldownDuration
+    return:
+      type: System.Single
+    content.vb: >-
+      <Min(0)>
+
+      Public IncreaseCooldownDuration As Single
+  attributes:
+  - type: UnityEngine.MinAttribute
+    ctor: UnityEngine.MinAttribute.#ctor(System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+  nameWithType.vb: ResourceSystemDataSO(Of T).IncreaseCooldownDuration
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO(Of T).IncreaseCooldownDuration
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1.DecreaseCooldownDuration
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1.DecreaseCooldownDuration
+  id: DecreaseCooldownDuration
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1
+  langs:
+  - csharp
+  - vb
+  name: DecreaseCooldownDuration
+  nameWithType: ResourceSystemDataSO<T>.DecreaseCooldownDuration
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO<T>.DecreaseCooldownDuration
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystemDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseCooldownDuration
+    path: ../Systems/Resource/Generics/ResourceSystemDataSO.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The cooldown duration after decreasing the resource.
+  example: []
+  syntax:
+    content: >-
+      [Min(0)]
+
+      public float DecreaseCooldownDuration
+    return:
+      type: System.Single
+    content.vb: >-
+      <Min(0)>
+
+      Public DecreaseCooldownDuration As Single
+  attributes:
+  - type: UnityEngine.MinAttribute
+    ctor: UnityEngine.MinAttribute.#ctor(System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+  nameWithType.vb: ResourceSystemDataSO(Of T).DecreaseCooldownDuration
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO(Of T).DecreaseCooldownDuration
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceData{`0}
+  parent: SombraStudios.Shared.Systems.Resource
+  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  name: ResourceData<T>
+  nameWithType: ResourceData<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>
+  nameWithType.vb: ResourceData(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T)
+  name.vb: ResourceData(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
+    name: ResourceData
+    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
+    name: ResourceData
+    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Name
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.Name
+  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.Name
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Name
+  name: Name
+  nameWithType: ResourceData<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Name
+  nameWithType.vb: ResourceData(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Description
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.Description
+  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.Description
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Description
+  name: Description
+  nameWithType: ResourceData<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Description
+  nameWithType.vb: ResourceData(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MinAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.MinAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MinAmount
+  name: MinAmount
+  nameWithType: ResourceData<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MinAmount
+  nameWithType.vb: ResourceData(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MaxAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MaxAmount
+  name: MaxAmount
+  nameWithType: ResourceData<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MaxAmount
+  nameWithType.vb: ResourceData(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.InitialAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.InitialAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_InitialAmount
+  name: InitialAmount
+  nameWithType: ResourceData<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.InitialAmount
+  nameWithType.vb: ResourceData(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).InitialAmount
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceData`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  name: ResourceData<T>
+  nameWithType: ResourceData<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>
+  nameWithType.vb: ResourceData(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T)
+  name.vb: ResourceData(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
+    name: ResourceData
+    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
+    name: ResourceData
+    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.Name
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.Name
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Name
+  name: Name
+  nameWithType: ResourceData<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Name
+  nameWithType.vb: ResourceData(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.Description
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.Description
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Description
+  name: Description
+  nameWithType: ResourceData<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Description
+  nameWithType.vb: ResourceData(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.MinAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MinAmount
+  name: MinAmount
+  nameWithType: ResourceData<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MinAmount
+  nameWithType.vb: ResourceData(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.MaxAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MaxAmount
+  name: MaxAmount
+  nameWithType: ResourceData<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MaxAmount
+  nameWithType.vb: ResourceData(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.InitialAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_InitialAmount
+  name: InitialAmount
+  nameWithType: ResourceData<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.InitialAmount
+  nameWithType.vb: ResourceData(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).InitialAmount
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

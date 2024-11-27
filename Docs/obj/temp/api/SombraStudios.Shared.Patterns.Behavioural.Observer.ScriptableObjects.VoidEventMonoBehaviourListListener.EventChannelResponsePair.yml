@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  id: VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.EventChannel
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.Response
+  langs:
+  - csharp
+  - vb
+  name: VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  nameWithType: VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/Listeners/VoidEventMonoBehaviourListListener.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EventChannelResponsePair
+    path: ../Patterns/Behavioural/Observer/ScriptableObjects/Listeners/VoidEventMonoBehaviourListListener.cs
+    startLine: 59
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Represents a pair of EventChannel and UnityEvent response.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class VoidEventMonoBehaviourListListener.EventChannelResponsePair
+    content.vb: >-
+      <Serializable>
+
+      Public Class VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.EventChannel
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.EventChannel
+  id: EventChannel
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  langs:
+  - csharp
+  - vb
+  name: EventChannel
+  nameWithType: VoidEventMonoBehaviourListListener.EventChannelResponsePair.EventChannel
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.EventChannel
+  type: Field
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/Listeners/VoidEventMonoBehaviourListListener.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EventChannel
+    path: ../Patterns/Behavioural/Observer/ScriptableObjects/Listeners/VoidEventMonoBehaviourListListener.cs
+    startLine: 66
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: The ScriptableObject EventChannel.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("The ScriptableObject EventChannel.")]
+
+      public VoidEventChannelSO EventChannel
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+    content.vb: >-
+      <Tooltip("The ScriptableObject EventChannel.")>
+
+      Public EventChannel As VoidEventChannelSO
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The ScriptableObject EventChannel.
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.Response
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.Response
+  id: Response
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: VoidEventMonoBehaviourListListener.EventChannelResponsePair.Response
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventMonoBehaviourListListener.EventChannelResponsePair.Response
+  type: Field
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/Listeners/VoidEventMonoBehaviourListListener.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Response
+    path: ../Patterns/Behavioural/Observer/ScriptableObjects/Listeners/VoidEventMonoBehaviourListListener.cs
+    startLine: 74
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  syntax:
+    content: >-
+      [Space]
+
+      [Tooltip("The UnityEvent response associated with the EventChannel.")]
+
+      public UnityEvent Response
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Space>
+
+      <Tooltip("The UnityEvent response associated with the EventChannel.")>
+
+      Public Response As UnityEvent
+  attributes:
+  - type: UnityEngine.SpaceAttribute
+    ctor: UnityEngine.SpaceAttribute.#ctor
+    arguments: []
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The UnityEvent response associated with the EventChannel.
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.html
+  name: VoidEventChannelSO
+  nameWithType: VoidEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true

@@ -5,7 +5,7 @@ items:
   id: IAnimationStateEventReceiver
   parent: SombraStudios.Shared.Animations.AnimationStateEvents
   children:
-  - SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  - SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   langs:
   - csharp
   - vb
@@ -29,23 +29,23 @@ items:
   syntax:
     content: public interface IAnimationStateEventReceiver
     content.vb: Public Interface IAnimationStateEventReceiver
-- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
-  commentId: M:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
-  id: OnAnimationStateEventTriggered(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  commentId: M:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  id: OnTriggerAnimationStateEvent(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   parent: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver
   langs:
   - csharp
   - vb
-  name: OnAnimationStateEventTriggered(AnimationEventData)
-  nameWithType: IAnimationStateEventReceiver.OnAnimationStateEventTriggered(AnimationEventData)
-  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  name: OnTriggerAnimationStateEvent(AnimationEventData)
+  nameWithType: IAnimationStateEventReceiver.OnTriggerAnimationStateEvent(AnimationEventData)
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   type: Method
   source:
     remote:
       path: Animations/AnimationStateEvents/Interfaces/IAnimationStateEventReceiver.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: OnAnimationStateEventTriggered
+    id: OnTriggerAnimationStateEvent
     path: ../Animations/AnimationStateEvents/Interfaces/IAnimationStateEventReceiver.cs
     startLine: 11
   assemblies:
@@ -54,13 +54,13 @@ items:
   summary: Method to be called when an animation state event is triggered.
   example: []
   syntax:
-    content: void OnAnimationStateEventTriggered(AnimationEventData eventData)
+    content: void OnTriggerAnimationStateEvent(AnimationEventData eventData)
     parameters:
     - id: eventData
       type: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
       description: The data associated with the animation event.
-    content.vb: Sub OnAnimationStateEventTriggered(eventData As AnimationEventData)
-  overload: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered*
+    content.vb: Sub OnTriggerAnimationStateEvent(eventData As AnimationEventData)
+  overload: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent*
 references:
 - uid: SombraStudios.Shared.Animations.AnimationStateEvents
   commentId: N:SombraStudios.Shared.Animations.AnimationStateEvents
@@ -100,12 +100,12 @@ references:
   - uid: SombraStudios.Shared.Animations.AnimationStateEvents
     name: AnimationStateEvents
     href: SombraStudios.Shared.Animations.AnimationStateEvents.html
-- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered*
-  commentId: Overload:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered
-  href: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.html#SombraStudios_Shared_Animations_AnimationStateEvents_IAnimationStateEventReceiver_OnAnimationStateEventTriggered_SombraStudios_Shared_Animations_AnimationStateEvents_AnimationEventData_
-  name: OnAnimationStateEventTriggered
-  nameWithType: IAnimationStateEventReceiver.OnAnimationStateEventTriggered
-  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnAnimationStateEventTriggered
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent*
+  commentId: Overload:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent
+  href: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.html#SombraStudios_Shared_Animations_AnimationStateEvents_IAnimationStateEventReceiver_OnTriggerAnimationStateEvent_SombraStudios_Shared_Animations_AnimationStateEvents_AnimationEventData_
+  name: OnTriggerAnimationStateEvent
+  nameWithType: IAnimationStateEventReceiver.OnTriggerAnimationStateEvent
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventReceiver.OnTriggerAnimationStateEvent
 - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
   commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
   parent: SombraStudios.Shared.Animations.AnimationStateEvents

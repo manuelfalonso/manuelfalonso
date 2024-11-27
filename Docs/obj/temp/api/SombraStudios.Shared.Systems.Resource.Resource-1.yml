@@ -1,0 +1,685 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.Resource`1
+  id: Resource`1
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.Resource`1.#ctor(System.String,System.String,`0,`0,`0)
+  - SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  - SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  - SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+  - SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  - SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+  - SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  - SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  - SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  - SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  - SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: Resource<T>
+  nameWithType: Resource<T>
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Resource
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: >-
+    Base class for all resources.
+
+    A Resource has a Name and description and it can be
+
+    increased, decreased, cleared or resetted.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class Resource<T> where T : struct
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class Resource(Of T As Structure)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Resource.FloatResource
+  - SombraStudios.Shared.Systems.Resource.IntResource
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: Resource(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T)
+  name.vb: Resource(Of T)
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  id: Name
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Resource<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Name
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Name
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the name of the resource.
+  example: []
+  syntax:
+    content: public string Name { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.Name*
+  nameWithType.vb: Resource(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  id: Description
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Resource<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Description
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the description of the resource.
+  example: []
+  syntax:
+    content: public string Description { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.Description*
+  nameWithType.vb: Resource(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  id: Amount
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: Resource<T>.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Amount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Amount
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the current amount of the resource.
+  example: []
+  syntax:
+    content: public T Amount { get; protected set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property Amount As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.Amount*
+  nameWithType.vb: Resource(Of T).Amount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Amount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  id: MinAmount
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: MinAmount
+  nameWithType: Resource<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.MinAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MinAmount
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the minimum amount that the resource can have.
+  example: []
+  syntax:
+    content: public T MinAmount { get; protected set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property MinAmount As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount*
+  nameWithType.vb: Resource(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  id: MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: MaxAmount
+  nameWithType: Resource<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.MaxAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxAmount
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the maximum amount that the resource can have.
+  example: []
+  syntax:
+    content: public T MaxAmount { get; protected set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property MaxAmount As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount*
+  nameWithType.vb: Resource(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  commentId: P:SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  id: InitialAmount
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: InitialAmount
+  nameWithType: Resource<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.InitialAmount
+  type: Property
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InitialAmount
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 46
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Gets the initial amount of the resource.
+  example: []
+  syntax:
+    content: public T InitialAmount { get; protected set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property InitialAmount As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount*
+  nameWithType.vb: Resource(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).InitialAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.#ctor(System.String,System.String,`0,`0,`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.#ctor(System.String,System.String,`0,`0,`0)
+  id: '#ctor(System.String,System.String,`0,`0,`0)'
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: Resource(string, string, T, T, T)
+  nameWithType: Resource<T>.Resource(string, string, T, T, T)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Resource(string, string, T, T, T)
+  type: Constructor
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 57
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Initializes a new instance of the Resource class.
+  example: []
+  syntax:
+    content: protected Resource(string name, string description, T minAmount, T maxAmount, T initialAmount)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the resource.
+    - id: description
+      type: System.String
+      description: The description of the resource.
+    - id: minAmount
+      type: '{T}'
+      description: The minimum amount of the resource.
+    - id: maxAmount
+      type: '{T}'
+      description: The maximum amount of the resource.
+    - id: initialAmount
+      type: '{T}'
+      description: The initial amount of the resource.
+    content.vb: Protected Sub New(name As String, description As String, minAmount As T, maxAmount As T, initialAmount As T)
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.#ctor*
+  nameWithType.vb: Resource(Of T).New(String, String, T, T, T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).New(String, String, T, T, T)
+  name.vb: New(String, String, T, T, T)
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  id: ToString
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Resource<T>.ToString()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ToString
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 71
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Returns a string representation of the resource.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string representing the resource.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.ToString*
+  nameWithType.vb: Resource(Of T).ToString()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ToString()
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource(`0)
+  id: IncreaseResource(`0)
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: IncreaseResource(T)
+  nameWithType: Resource<T>.IncreaseResource(T)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.IncreaseResource(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IncreaseResource
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 81
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Increases the resource by the specified amount.
+  example: []
+  syntax:
+    content: public abstract T IncreaseResource(T amountToIncrease)
+    parameters:
+    - id: amountToIncrease
+      type: '{T}'
+      description: The amount to increase the resource by.
+    return:
+      type: '{T}'
+      description: The new amount of the resource.
+    content.vb: Public MustOverride Function IncreaseResource(amountToIncrease As T) As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource*
+  nameWithType.vb: Resource(Of T).IncreaseResource(T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).IncreaseResource(T)
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource(`0)
+  id: DecreaseResource(`0)
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: DecreaseResource(T)
+  nameWithType: Resource<T>.DecreaseResource(T)
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.DecreaseResource(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseResource
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 88
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Decreases the resource by the specified amount.
+  example: []
+  syntax:
+    content: public abstract T DecreaseResource(T amountToDecrease)
+    parameters:
+    - id: amountToDecrease
+      type: '{T}'
+      description: The amount to decrease the resource by.
+    return:
+      type: '{T}'
+      description: The new amount of the resource.
+    content.vb: Public MustOverride Function DecreaseResource(amountToDecrease As T) As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource*
+  nameWithType.vb: Resource(Of T).DecreaseResource(T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).DecreaseResource(T)
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  id: ClearResource
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: ClearResource()
+  nameWithType: Resource<T>.ClearResource()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ClearResource()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ClearResource
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 94
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Clears the resource amount, setting it to zero.
+  example: []
+  syntax:
+    content: public abstract T ClearResource()
+    return:
+      type: '{T}'
+      description: The new amount of the resource.
+    content.vb: Public MustOverride Function ClearResource() As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource*
+  nameWithType.vb: Resource(Of T).ClearResource()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ClearResource()
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  commentId: M:SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  id: ResetResource
+  parent: SombraStudios.Shared.Systems.Resource.Resource`1
+  langs:
+  - csharp
+  - vb
+  name: ResetResource()
+  nameWithType: Resource<T>.ResetResource()
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ResetResource()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/Resource.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetResource
+    path: ../Systems/Resource/Generics/Resource.cs
+    startLine: 100
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Resets the amount to the initial amount.
+  example: []
+  syntax:
+    content: public abstract T ResetResource()
+    return:
+      type: '{T}'
+      description: The new amount of the resource.
+    content.vb: Public MustOverride Function ResetResource() As T
+  overload: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource*
+  nameWithType.vb: Resource(Of T).ResetResource()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ResetResource()
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Name*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.Name
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Name
+  name: Name
+  nameWithType: Resource<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Name
+  nameWithType.vb: Resource(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Description*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.Description
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Description
+  name: Description
+  nameWithType: Resource<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Description
+  nameWithType.vb: Resource(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.Amount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.Amount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_Amount
+  name: Amount
+  nameWithType: Resource<T>.Amount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Amount
+  nameWithType.vb: Resource(Of T).Amount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).Amount
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_MinAmount
+  name: MinAmount
+  nameWithType: Resource<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.MinAmount
+  nameWithType.vb: Resource(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_MaxAmount
+  name: MaxAmount
+  nameWithType: Resource<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.MaxAmount
+  nameWithType.vb: Resource(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_InitialAmount
+  name: InitialAmount
+  nameWithType: Resource<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.InitialAmount
+  nameWithType.vb: Resource(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).InitialAmount
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.#ctor*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.#ctor
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1__ctor_System_String_System_String__0__0__0_
+  name: Resource
+  nameWithType: Resource<T>.Resource
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.Resource
+  nameWithType.vb: Resource(Of T).New
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).New
+  name.vb: New
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ToString*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.ToString
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ToString
+  name: ToString
+  nameWithType: Resource<T>.ToString
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ToString
+  nameWithType.vb: Resource(Of T).ToString
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ToString
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.IncreaseResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_IncreaseResource__0_
+  name: IncreaseResource
+  nameWithType: Resource<T>.IncreaseResource
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.IncreaseResource
+  nameWithType.vb: Resource(Of T).IncreaseResource
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).IncreaseResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.DecreaseResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_DecreaseResource__0_
+  name: DecreaseResource
+  nameWithType: Resource<T>.DecreaseResource
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.DecreaseResource
+  nameWithType.vb: Resource(Of T).DecreaseResource
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).DecreaseResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.ClearResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ClearResource
+  name: ClearResource
+  nameWithType: Resource<T>.ClearResource
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ClearResource
+  nameWithType.vb: Resource(Of T).ClearResource
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ClearResource
+- uid: SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.Resource`1.ResetResource
+  href: SombraStudios.Shared.Systems.Resource.Resource-1.html#SombraStudios_Shared_Systems_Resource_Resource_1_ResetResource
+  name: ResetResource
+  nameWithType: Resource<T>.ResetResource
+  fullName: SombraStudios.Shared.Systems.Resource.Resource<T>.ResetResource
+  nameWithType.vb: Resource(Of T).ResetResource
+  fullName.vb: SombraStudios.Shared.Systems.Resource.Resource(Of T).ResetResource

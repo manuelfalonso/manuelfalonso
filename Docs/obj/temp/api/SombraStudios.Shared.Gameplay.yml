@@ -4,7 +4,6 @@ items:
   commentId: N:SombraStudios.Shared.Gameplay
   id: SombraStudios.Shared.Gameplay
   children:
-  - SombraStudios.Shared.Gameplay.LaunchProjectile
   - SombraStudios.Shared.Gameplay.OnInteract
   - SombraStudios.Shared.Gameplay.OnTilt
   - SombraStudios.Shared.Gameplay.OnTriggerEvent
@@ -15,9 +14,6 @@ items:
   - SombraStudios.Shared.Gameplay.TileSelection
   - SombraStudios.Shared.Gameplay.TiltObject
   - SombraStudios.Shared.Gameplay.TimedSelfDestruct
-  - SombraStudios.Shared.Gameplay.ToggleComponentZone
-  - SombraStudios.Shared.Gameplay.Unbreakable
-  - SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
   langs:
   - csharp
   - vb
@@ -46,12 +42,6 @@ references:
   name: OnTilt
   nameWithType: OnTilt
   fullName: SombraStudios.Shared.Gameplay.OnTilt
-- uid: SombraStudios.Shared.Gameplay.LaunchProjectile
-  commentId: T:SombraStudios.Shared.Gameplay.LaunchProjectile
-  href: SombraStudios.Shared.Gameplay.LaunchProjectile.html
-  name: LaunchProjectile
-  nameWithType: LaunchProjectile
-  fullName: SombraStudios.Shared.Gameplay.LaunchProjectile
 - uid: SombraStudios.Shared.Gameplay.TiltObject
   commentId: T:SombraStudios.Shared.Gameplay.TiltObject
   href: SombraStudios.Shared.Gameplay.TiltObject.html
@@ -82,12 +72,6 @@ references:
   name: SimpleObjectPathing
   nameWithType: SimpleObjectPathing
   fullName: SombraStudios.Shared.Gameplay.SimpleObjectPathing
-- uid: SombraStudios.Shared.Gameplay.ToggleComponentZone
-  commentId: T:SombraStudios.Shared.Gameplay.ToggleComponentZone
-  href: SombraStudios.Shared.Gameplay.ToggleComponentZone.html
-  name: ToggleComponentZone
-  nameWithType: ToggleComponentZone
-  fullName: SombraStudios.Shared.Gameplay.ToggleComponentZone
 - uid: SombraStudios.Shared.Gameplay.OnInteract
   commentId: T:SombraStudios.Shared.Gameplay.OnInteract
   href: SombraStudios.Shared.Gameplay.OnInteract.html
@@ -100,62 +84,3 @@ references:
   name: Ragdoll
   nameWithType: Ragdoll
   fullName: SombraStudios.Shared.Gameplay.Ragdoll
-- uid: SombraStudios.Shared.Gameplay.Unbreakable
-  commentId: T:SombraStudios.Shared.Gameplay.Unbreakable
-  href: SombraStudios.Shared.Gameplay.Unbreakable.html
-  name: Unbreakable
-  nameWithType: Unbreakable
-  fullName: SombraStudios.Shared.Gameplay.Unbreakable
-- uid: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
-  commentId: T:SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
-  parent: SombraStudios.Shared.Gameplay
-  href: SombraStudios.Shared.Gameplay.Unbreakable.html
-  name: Unbreakable.RestoreEvent
-  nameWithType: Unbreakable.RestoreEvent
-  fullName: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
-  spec.csharp:
-  - uid: SombraStudios.Shared.Gameplay.Unbreakable
-    name: Unbreakable
-    href: SombraStudios.Shared.Gameplay.Unbreakable.html
-  - name: .
-  - uid: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
-    name: RestoreEvent
-    href: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent.html
-  spec.vb:
-  - uid: SombraStudios.Shared.Gameplay.Unbreakable
-    name: Unbreakable
-    href: SombraStudios.Shared.Gameplay.Unbreakable.html
-  - name: .
-  - uid: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent
-    name: RestoreEvent
-    href: SombraStudios.Shared.Gameplay.Unbreakable.RestoreEvent.html
-- uid: SombraStudios.Shared.Gameplay
-  commentId: N:SombraStudios.Shared.Gameplay
-  href: SombraStudios.html
-  name: SombraStudios.Shared.Gameplay
-  nameWithType: SombraStudios.Shared.Gameplay
-  fullName: SombraStudios.Shared.Gameplay
-  spec.csharp:
-  - uid: SombraStudios
-    name: SombraStudios
-    href: SombraStudios.html
-  - name: .
-  - uid: SombraStudios.Shared
-    name: Shared
-    href: SombraStudios.Shared.html
-  - name: .
-  - uid: SombraStudios.Shared.Gameplay
-    name: Gameplay
-    href: SombraStudios.Shared.Gameplay.html
-  spec.vb:
-  - uid: SombraStudios
-    name: SombraStudios
-    href: SombraStudios.html
-  - name: .
-  - uid: SombraStudios.Shared
-    name: Shared
-    href: SombraStudios.Shared.html
-  - name: .
-  - uid: SombraStudios.Shared.Gameplay
-    name: Gameplay
-    href: SombraStudios.Shared.Gameplay.html

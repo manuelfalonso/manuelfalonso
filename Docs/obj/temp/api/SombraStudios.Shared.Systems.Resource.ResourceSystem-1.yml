@@ -1,0 +1,1236 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  id: ResourceSystem`1
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanClearAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanDecreaseAmount(`0,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanIncreaseAmount(`0,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanResetAmount(System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanRestoreAmount(System.Single)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoClearAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoDecreaseAmount(`0)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoIncreaseAmount(`0)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoResetAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoRestoreAmount(System.Single)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryDecreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryIncreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  - SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: ResourceSystem<T>
+  nameWithType: ResourceSystem<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResourceSystem
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Abstract base class for resource systems.
+  example: []
+  syntax:
+    content: 'public abstract class ResourceSystem<T> : MonoBehaviour where T : struct'
+    typeParameters:
+    - id: T
+      description: The type of the resource amount.
+    content.vb: Public MustInherit Class ResourceSystem(Of T As Structure) Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Resource.FloatResourceSystem
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  nameWithType.vb: ResourceSystem(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T)
+  name.vb: ResourceSystem(Of T)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryIncreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryIncreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  id: TryIncreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: TryIncreaseAmount(T, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  nameWithType: ResourceSystem<T>.TryIncreaseAmount(T, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryIncreaseAmount(T, out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryIncreaseAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Tries to increase the resource amount.
+  example: []
+  syntax:
+    content: protected abstract bool TryIncreaseAmount(T amountToIncrease, out (ResourceSystemData previous, ResourceSystemData current) result, bool considerCooldowns = true)
+    parameters:
+    - id: amountToIncrease
+      type: '{T}'
+      description: The amount to increase.
+    - id: result
+      type: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+      description: The result of the operation.
+    - id: considerCooldowns
+      type: System.Boolean
+      description: Whether to consider cooldowns.
+    return:
+      type: System.Boolean
+      description: True if the operation is successful, otherwise false.
+    content.vb: Protected MustOverride Function TryIncreaseAmount(amountToIncrease As T, result As (previous As ResourceSystemData, current As ResourceSystemData), considerCooldowns As Boolean = True) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryIncreaseAmount*
+  nameWithType.vb: ResourceSystem(Of T).TryIncreaseAmount(T, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryIncreaseAmount(T, (previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Boolean)
+  name.vb: TryIncreaseAmount(T, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryDecreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryDecreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  id: TryDecreaseAmount(`0,System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: TryDecreaseAmount(T, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  nameWithType: ResourceSystem<T>.TryDecreaseAmount(T, out (ResourceSystemData previous, ResourceSystemData current), bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryDecreaseAmount(T, out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryDecreaseAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Tries to decrease the resource amount.
+  example: []
+  syntax:
+    content: protected abstract bool TryDecreaseAmount(T amountToDecrease, out (ResourceSystemData previous, ResourceSystemData current) result, bool considerCooldowns = true)
+    parameters:
+    - id: amountToDecrease
+      type: '{T}'
+      description: The amount to decrease.
+    - id: result
+      type: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+      description: The result of the operation.
+    - id: considerCooldowns
+      type: System.Boolean
+      description: Whether to consider cooldowns.
+    return:
+      type: System.Boolean
+      description: True if the operation is successful, otherwise false.
+    content.vb: Protected MustOverride Function TryDecreaseAmount(amountToDecrease As T, result As (previous As ResourceSystemData, current As ResourceSystemData), considerCooldowns As Boolean = True) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryDecreaseAmount*
+  nameWithType.vb: ResourceSystem(Of T).TryDecreaseAmount(T, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryDecreaseAmount(T, (previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Boolean)
+  name.vb: TryDecreaseAmount(T, (previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  id: TryRestoreAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: TryRestoreAmount(out (ResourceSystemData previous, ResourceSystemData current), float)
+  nameWithType: ResourceSystem<T>.TryRestoreAmount(out (ResourceSystemData previous, ResourceSystemData current), float)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryRestoreAmount(out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), float)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryRestoreAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: If emptied, tries to restore the resource amount to a certain percentage.
+  example: []
+  syntax:
+    content: protected abstract bool TryRestoreAmount(out (ResourceSystemData previous, ResourceSystemData current) result, float restorePercentage = 1)
+    parameters:
+    - id: result
+      type: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+      description: The result of the operation.
+    - id: restorePercentage
+      type: System.Single
+      description: The percentage to restore.
+    return:
+      type: System.Boolean
+      description: True if the operation is successful, otherwise false.
+    content.vb: Protected MustOverride Function TryRestoreAmount(result As (previous As ResourceSystemData, current As ResourceSystemData), restorePercentage As Single = 1) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryRestoreAmount*
+  nameWithType.vb: ResourceSystem(Of T).TryRestoreAmount((previous As ResourceSystemData, current As ResourceSystemData), Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryRestoreAmount((previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Single)
+  name.vb: TryRestoreAmount((previous As ResourceSystemData, current As ResourceSystemData), Single)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  id: TryResetAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: TryResetAmount(out (ResourceSystemData previous, ResourceSystemData current), bool)
+  nameWithType: ResourceSystem<T>.TryResetAmount(out (ResourceSystemData previous, ResourceSystemData current), bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryResetAmount(out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current), bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryResetAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Tries to reset the resource amount to it's initial amount.
+  example: []
+  syntax:
+    content: protected abstract bool TryResetAmount(out (ResourceSystemData previous, ResourceSystemData current) result, bool validateEmpty = false)
+    parameters:
+    - id: result
+      type: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+      description: The result of the operation.
+    - id: validateEmpty
+      type: System.Boolean
+      description: Whether to validate if the resource is empty.
+    return:
+      type: System.Boolean
+      description: True if the operation is successful, otherwise false.
+    content.vb: Protected MustOverride Function TryResetAmount(result As (previous As ResourceSystemData, current As ResourceSystemData), validateEmpty As Boolean = False) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryResetAmount*
+  nameWithType.vb: ResourceSystem(Of T).TryResetAmount((previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryResetAmount((previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData), Boolean)
+  name.vb: TryResetAmount((previous As ResourceSystemData, current As ResourceSystemData), Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  id: TryClearAmount(System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}@)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: TryClearAmount(out (ResourceSystemData previous, ResourceSystemData current))
+  nameWithType: ResourceSystem<T>.TryClearAmount(out (ResourceSystemData previous, ResourceSystemData current))
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryClearAmount(out (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current))
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryClearAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 52
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Tries to clear the resource amount.
+  example: []
+  syntax:
+    content: protected abstract bool TryClearAmount(out (ResourceSystemData previous, ResourceSystemData current) result)
+    parameters:
+    - id: result
+      type: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+      description: The result of the operation.
+    return:
+      type: System.Boolean
+      description: True if the operation is successful, otherwise false.
+    content.vb: Protected MustOverride Function TryClearAmount(result As (previous As ResourceSystemData, current As ResourceSystemData)) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryClearAmount*
+  nameWithType.vb: ResourceSystem(Of T).TryClearAmount((previous As ResourceSystemData, current As ResourceSystemData))
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryClearAmount((previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData))
+  name.vb: TryClearAmount((previous As ResourceSystemData, current As ResourceSystemData))
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanIncreaseAmount(`0,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanIncreaseAmount(`0,System.Boolean)
+  id: CanIncreaseAmount(`0,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: CanIncreaseAmount(T, bool)
+  nameWithType: ResourceSystem<T>.CanIncreaseAmount(T, bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanIncreaseAmount(T, bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanIncreaseAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 62
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Determines whether the resource amount can be increased.
+  example: []
+  syntax:
+    content: protected abstract bool CanIncreaseAmount(T amountToIncrease, bool considerCooldowns)
+    parameters:
+    - id: amountToIncrease
+      type: '{T}'
+      description: The amount to increase.
+    - id: considerCooldowns
+      type: System.Boolean
+      description: Whether to consider cooldowns.
+    return:
+      type: System.Boolean
+      description: True if the amount can be increased, otherwise false.
+    content.vb: Protected MustOverride Function CanIncreaseAmount(amountToIncrease As T, considerCooldowns As Boolean) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanIncreaseAmount*
+  nameWithType.vb: ResourceSystem(Of T).CanIncreaseAmount(T, Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanIncreaseAmount(T, Boolean)
+  name.vb: CanIncreaseAmount(T, Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanDecreaseAmount(`0,System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanDecreaseAmount(`0,System.Boolean)
+  id: CanDecreaseAmount(`0,System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: CanDecreaseAmount(T, bool)
+  nameWithType: ResourceSystem<T>.CanDecreaseAmount(T, bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanDecreaseAmount(T, bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanDecreaseAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 70
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Determines whether the resource amount can be decreased.
+  example: []
+  syntax:
+    content: protected abstract bool CanDecreaseAmount(T amountToDecrease, bool considerCooldowns)
+    parameters:
+    - id: amountToDecrease
+      type: '{T}'
+      description: The amount to decrease.
+    - id: considerCooldowns
+      type: System.Boolean
+      description: Whether to consider cooldowns.
+    return:
+      type: System.Boolean
+      description: True if the amount can be decreased, otherwise false.
+    content.vb: Protected MustOverride Function CanDecreaseAmount(amountToDecrease As T, considerCooldowns As Boolean) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanDecreaseAmount*
+  nameWithType.vb: ResourceSystem(Of T).CanDecreaseAmount(T, Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanDecreaseAmount(T, Boolean)
+  name.vb: CanDecreaseAmount(T, Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanRestoreAmount(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanRestoreAmount(System.Single)
+  id: CanRestoreAmount(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: CanRestoreAmount(float)
+  nameWithType: ResourceSystem<T>.CanRestoreAmount(float)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanRestoreAmount(float)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanRestoreAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 77
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Determines whether the resource amount can be restored.
+  example: []
+  syntax:
+    content: protected abstract bool CanRestoreAmount(float restorePercentage)
+    parameters:
+    - id: restorePercentage
+      type: System.Single
+      description: The percentage to restore.
+    return:
+      type: System.Boolean
+      description: True if the amount can be restored, otherwise false.
+    content.vb: Protected MustOverride Function CanRestoreAmount(restorePercentage As Single) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanRestoreAmount*
+  nameWithType.vb: ResourceSystem(Of T).CanRestoreAmount(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanRestoreAmount(Single)
+  name.vb: CanRestoreAmount(Single)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanResetAmount(System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanResetAmount(System.Boolean)
+  id: CanResetAmount(System.Boolean)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: CanResetAmount(bool)
+  nameWithType: ResourceSystem<T>.CanResetAmount(bool)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanResetAmount(bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanResetAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 84
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Determines whether the resource amount can be reset.
+  example: []
+  syntax:
+    content: protected abstract bool CanResetAmount(bool validateEmpty)
+    parameters:
+    - id: validateEmpty
+      type: System.Boolean
+      description: Whether to validate if the resource is empty.
+    return:
+      type: System.Boolean
+      description: True if the amount can be reset, otherwise false.
+    content.vb: Protected MustOverride Function CanResetAmount(validateEmpty As Boolean) As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanResetAmount*
+  nameWithType.vb: ResourceSystem(Of T).CanResetAmount(Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanResetAmount(Boolean)
+  name.vb: CanResetAmount(Boolean)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanClearAmount
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanClearAmount
+  id: CanClearAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: CanClearAmount()
+  nameWithType: ResourceSystem<T>.CanClearAmount()
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanClearAmount()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanClearAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 90
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Determines whether the resource amount can be cleared.
+  example: []
+  syntax:
+    content: protected abstract bool CanClearAmount()
+    return:
+      type: System.Boolean
+      description: True if the amount can be cleared, otherwise false.
+    content.vb: Protected MustOverride Function CanClearAmount() As Boolean
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanClearAmount*
+  nameWithType.vb: ResourceSystem(Of T).CanClearAmount()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanClearAmount()
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoIncreaseAmount(`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoIncreaseAmount(`0)
+  id: DoIncreaseAmount(`0)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: DoIncreaseAmount(T)
+  nameWithType: ResourceSystem<T>.DoIncreaseAmount(T)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoIncreaseAmount(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoIncreaseAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 98
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Increases the resource amount.
+  example: []
+  syntax:
+    content: protected abstract void DoIncreaseAmount(T amountToIncrease)
+    parameters:
+    - id: amountToIncrease
+      type: '{T}'
+      description: The amount to increase.
+    content.vb: Protected MustOverride Sub DoIncreaseAmount(amountToIncrease As T)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoIncreaseAmount*
+  nameWithType.vb: ResourceSystem(Of T).DoIncreaseAmount(T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoIncreaseAmount(T)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoDecreaseAmount(`0)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoDecreaseAmount(`0)
+  id: DoDecreaseAmount(`0)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: DoDecreaseAmount(T)
+  nameWithType: ResourceSystem<T>.DoDecreaseAmount(T)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoDecreaseAmount(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoDecreaseAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 104
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Decreases the resource amount.
+  example: []
+  syntax:
+    content: protected abstract void DoDecreaseAmount(T amountToDecrease)
+    parameters:
+    - id: amountToDecrease
+      type: '{T}'
+      description: The amount to decrease.
+    content.vb: Protected MustOverride Sub DoDecreaseAmount(amountToDecrease As T)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoDecreaseAmount*
+  nameWithType.vb: ResourceSystem(Of T).DoDecreaseAmount(T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoDecreaseAmount(T)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoRestoreAmount(System.Single)
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoRestoreAmount(System.Single)
+  id: DoRestoreAmount(System.Single)
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: DoRestoreAmount(float)
+  nameWithType: ResourceSystem<T>.DoRestoreAmount(float)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoRestoreAmount(float)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoRestoreAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 110
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Restores the resource amount.
+  example: []
+  syntax:
+    content: protected abstract void DoRestoreAmount(float restorePercentage)
+    parameters:
+    - id: restorePercentage
+      type: System.Single
+      description: The percentage to restore.
+    content.vb: Protected MustOverride Sub DoRestoreAmount(restorePercentage As Single)
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoRestoreAmount*
+  nameWithType.vb: ResourceSystem(Of T).DoRestoreAmount(Single)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoRestoreAmount(Single)
+  name.vb: DoRestoreAmount(Single)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoResetAmount
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoResetAmount
+  id: DoResetAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: DoResetAmount()
+  nameWithType: ResourceSystem<T>.DoResetAmount()
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoResetAmount()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoResetAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 115
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Resets the resource amount.
+  example: []
+  syntax:
+    content: protected abstract void DoResetAmount()
+    content.vb: Protected MustOverride Sub DoResetAmount()
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoResetAmount*
+  nameWithType.vb: ResourceSystem(Of T).DoResetAmount()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoResetAmount()
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoClearAmount
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoClearAmount
+  id: DoClearAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: DoClearAmount()
+  nameWithType: ResourceSystem<T>.DoClearAmount()
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoClearAmount()
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DoClearAmount
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 120
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Clears the resource amount.
+  example: []
+  syntax:
+    content: protected abstract void DoClearAmount()
+    content.vb: Protected MustOverride Sub DoClearAmount()
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoClearAmount*
+  nameWithType.vb: ResourceSystem(Of T).DoClearAmount()
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoClearAmount()
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  id: StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: StartRegeneration(RegenerationData<T>)
+  nameWithType: ResourceSystem<T>.StartRegeneration(ResourceSystem<T>.RegenerationData<T>)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.RegenerationData<T>)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartRegeneration
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 127
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Starts the regeneration process.
+  example: []
+  syntax:
+    content: protected abstract void StartRegeneration(ResourceSystem<T>.RegenerationData<T> data)
+    parameters:
+    - id: data
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData{{T}}
+      description: The regeneration data.
+    content.vb: Protected MustOverride Sub StartRegeneration(data As ResourceSystem(Of T).RegenerationData(Of T))
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartRegeneration*
+  nameWithType.vb: ResourceSystem(Of T).StartRegeneration(ResourceSystem(Of T).RegenerationData(Of T))
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).StartRegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).RegenerationData(Of T))
+  name.vb: StartRegeneration(RegenerationData(Of T))
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  commentId: M:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  id: StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem{`0}.RegenerationData{`0})
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+  langs:
+  - csharp
+  - vb
+  name: StartDegeneration(RegenerationData<T>)
+  nameWithType: ResourceSystem<T>.StartDegeneration(ResourceSystem<T>.RegenerationData<T>)
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.RegenerationData<T>)
+  type: Method
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSystem.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartDegeneration
+    path: ../Systems/Resource/Generics/ResourceSystem.cs
+    startLine: 133
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: Starts the degeneration process.
+  example: []
+  syntax:
+    content: protected abstract void StartDegeneration(ResourceSystem<T>.RegenerationData<T> data)
+    parameters:
+    - id: data
+      type: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData{{T}}
+      description: The degeneration data.
+    content.vb: Protected MustOverride Sub StartDegeneration(data As ResourceSystem(Of T).RegenerationData(Of T))
+  overload: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartDegeneration*
+  nameWithType.vb: ResourceSystem(Of T).StartDegeneration(ResourceSystem(Of T).RegenerationData(Of T))
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).StartDegeneration(SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).RegenerationData(Of T))
+  name.vb: StartDegeneration(RegenerationData(Of T))
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryIncreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryIncreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_TryIncreaseAmount__0_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  name: TryIncreaseAmount
+  nameWithType: ResourceSystem<T>.TryIncreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryIncreaseAmount
+  nameWithType.vb: ResourceSystem(Of T).TryIncreaseAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryIncreaseAmount
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+  commentId: T:System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}
+  parent: System
+  definition: System.ValueTuple`2
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  name: (ResourceSystemData previous, ResourceSystemData current)
+  nameWithType: (ResourceSystemData previous, ResourceSystemData current)
+  fullName: (SombraStudios.Shared.Systems.Resource.ResourceSystemData previous, SombraStudios.Shared.Systems.Resource.ResourceSystemData current)
+  nameWithType.vb: (previous As ResourceSystemData, current As ResourceSystemData)
+  fullName.vb: (previous As SombraStudios.Shared.Systems.Resource.ResourceSystemData, current As SombraStudios.Shared.Systems.Resource.ResourceSystemData)
+  name.vb: (previous As ResourceSystemData, current As ResourceSystemData)
+  spec.csharp:
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: ','
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.previous
+    name: previous
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.previous
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{SombraStudios.Shared.Systems.Resource.ResourceSystemData,SombraStudios.Shared.Systems.Resource.ResourceSystemData}.current
+    name: current
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-sombrastudios.shared.systems.resource.resourcesystemdata,sombrastudios.shared.systems.resource.resourcesystemdata-.current
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystemData
+    name: ResourceSystemData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystemData.html
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryDecreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryDecreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_TryDecreaseAmount__0_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  name: TryDecreaseAmount
+  nameWithType: ResourceSystem<T>.TryDecreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryDecreaseAmount
+  nameWithType.vb: ResourceSystem(Of T).TryDecreaseAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryDecreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryRestoreAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryRestoreAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_TryRestoreAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Single_
+  name: TryRestoreAmount
+  nameWithType: ResourceSystem<T>.TryRestoreAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryRestoreAmount
+  nameWithType.vb: ResourceSystem(Of T).TryRestoreAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryRestoreAmount
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryResetAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryResetAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_TryResetAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___System_Boolean_
+  name: TryResetAmount
+  nameWithType: ResourceSystem<T>.TryResetAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryResetAmount
+  nameWithType.vb: ResourceSystem(Of T).TryResetAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryResetAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryClearAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.TryClearAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_TryClearAmount_System_ValueTuple_SombraStudios_Shared_Systems_Resource_ResourceSystemData_SombraStudios_Shared_Systems_Resource_ResourceSystemData___
+  name: TryClearAmount
+  nameWithType: ResourceSystem<T>.TryClearAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.TryClearAmount
+  nameWithType.vb: ResourceSystem(Of T).TryClearAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).TryClearAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanIncreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanIncreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_CanIncreaseAmount__0_System_Boolean_
+  name: CanIncreaseAmount
+  nameWithType: ResourceSystem<T>.CanIncreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanIncreaseAmount
+  nameWithType.vb: ResourceSystem(Of T).CanIncreaseAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanIncreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanDecreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanDecreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_CanDecreaseAmount__0_System_Boolean_
+  name: CanDecreaseAmount
+  nameWithType: ResourceSystem<T>.CanDecreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanDecreaseAmount
+  nameWithType.vb: ResourceSystem(Of T).CanDecreaseAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanDecreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanRestoreAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanRestoreAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_CanRestoreAmount_System_Single_
+  name: CanRestoreAmount
+  nameWithType: ResourceSystem<T>.CanRestoreAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanRestoreAmount
+  nameWithType.vb: ResourceSystem(Of T).CanRestoreAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanRestoreAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanResetAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanResetAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_CanResetAmount_System_Boolean_
+  name: CanResetAmount
+  nameWithType: ResourceSystem<T>.CanResetAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanResetAmount
+  nameWithType.vb: ResourceSystem(Of T).CanResetAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanResetAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanClearAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.CanClearAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_CanClearAmount
+  name: CanClearAmount
+  nameWithType: ResourceSystem<T>.CanClearAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.CanClearAmount
+  nameWithType.vb: ResourceSystem(Of T).CanClearAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).CanClearAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoIncreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoIncreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_DoIncreaseAmount__0_
+  name: DoIncreaseAmount
+  nameWithType: ResourceSystem<T>.DoIncreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoIncreaseAmount
+  nameWithType.vb: ResourceSystem(Of T).DoIncreaseAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoIncreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoDecreaseAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoDecreaseAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_DoDecreaseAmount__0_
+  name: DoDecreaseAmount
+  nameWithType: ResourceSystem<T>.DoDecreaseAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoDecreaseAmount
+  nameWithType.vb: ResourceSystem(Of T).DoDecreaseAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoDecreaseAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoRestoreAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoRestoreAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_DoRestoreAmount_System_Single_
+  name: DoRestoreAmount
+  nameWithType: ResourceSystem<T>.DoRestoreAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoRestoreAmount
+  nameWithType.vb: ResourceSystem(Of T).DoRestoreAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoRestoreAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoResetAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoResetAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_DoResetAmount
+  name: DoResetAmount
+  nameWithType: ResourceSystem<T>.DoResetAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoResetAmount
+  nameWithType.vb: ResourceSystem(Of T).DoResetAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoResetAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoClearAmount*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.DoClearAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_DoClearAmount
+  name: DoClearAmount
+  nameWithType: ResourceSystem<T>.DoClearAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.DoClearAmount
+  nameWithType.vb: ResourceSystem(Of T).DoClearAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).DoClearAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartRegeneration*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartRegeneration
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_StartRegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem__0__RegenerationData__0__
+  name: StartRegeneration
+  nameWithType: ResourceSystem<T>.StartRegeneration
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.StartRegeneration
+  nameWithType.vb: ResourceSystem(Of T).StartRegeneration
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).StartRegeneration
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData{{T}}
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData{`0}
+  parent: SombraStudios.Shared.Systems.Resource
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  name: ResourceSystem<T>.RegenerationData<T>
+  nameWithType: ResourceSystem<T>.RegenerationData<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.RegenerationData<T>
+  nameWithType.vb: ResourceSystem(Of T).RegenerationData(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).RegenerationData(Of T)
+  name.vb: ResourceSystem(Of T).RegenerationData(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  name: ResourceSystem<T>.RegenerationData<T>
+  nameWithType: ResourceSystem<T>.RegenerationData<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.RegenerationData<T>
+  nameWithType.vb: ResourceSystem(Of T).RegenerationData(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).RegenerationData(Of T)
+  name.vb: ResourceSystem(Of T).RegenerationData(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1
+    name: ResourceSystem
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.RegenerationData`1
+    name: RegenerationData
+    href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.RegenerationData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartDegeneration*
+  commentId: Overload:SombraStudios.Shared.Systems.Resource.ResourceSystem`1.StartDegeneration
+  href: SombraStudios.Shared.Systems.Resource.ResourceSystem-1.html#SombraStudios_Shared_Systems_Resource_ResourceSystem_1_StartDegeneration_SombraStudios_Shared_Systems_Resource_ResourceSystem__0__RegenerationData__0__
+  name: StartDegeneration
+  nameWithType: ResourceSystem<T>.StartDegeneration
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSystem<T>.StartDegeneration
+  nameWithType.vb: ResourceSystem(Of T).StartDegeneration
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystem(Of T).StartDegeneration

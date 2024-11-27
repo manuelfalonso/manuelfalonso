@@ -16,14 +16,14 @@ items:
   type: Interface
   source:
     remote:
-      path: Interfaces/IDamageable.cs
+      path: Systems/Damage/IDamageable.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IDamageable
-    path: ../Interfaces/IDamageable.cs
+    path: ../Systems/Damage/IDamageable.cs
     startLine: 5
   assemblies:
-  - SombraStudios.Shared.Interfaces
+  - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Interfaces
   syntax:
     content: public interface IDamageable
@@ -41,14 +41,14 @@ items:
   type: Property
   source:
     remote:
-      path: Interfaces/IDamageable.cs
+      path: Systems/Damage/IDamageable.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Damaged
-    path: ../Interfaces/IDamageable.cs
+    path: ../Systems/Damage/IDamageable.cs
     startLine: 7
   assemblies:
-  - SombraStudios.Shared.Interfaces
+  - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Interfaces
   syntax:
     content: Action<DamageData> Damaged { get; set; }
@@ -70,14 +70,14 @@ items:
   type: Method
   source:
     remote:
-      path: Interfaces/IDamageable.cs
+      path: Systems/Damage/IDamageable.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TryTakeDamage
-    path: ../Interfaces/IDamageable.cs
+    path: ../Systems/Damage/IDamageable.cs
     startLine: 9
   assemblies:
-  - SombraStudios.Shared.Interfaces
+  - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Interfaces
   syntax:
     content: bool TryTakeDamage(DamageData data)
@@ -144,6 +144,7 @@ references:
   - name: <
   - uid: SombraStudios.Shared.Systems.Resource.Data.DamageData
     name: DamageData
+    href: SombraStudios.Shared.Systems.Resource.Data.DamageData.html
   - name: '>'
   spec.vb:
   - uid: System.Action`1
@@ -155,6 +156,7 @@ references:
   - name: " "
   - uid: SombraStudios.Shared.Systems.Resource.Data.DamageData
     name: DamageData
+    href: SombraStudios.Shared.Systems.Resource.Data.DamageData.html
   - name: )
 - uid: System.Action`1
   commentId: T:System.Action`1

@@ -5,7 +5,7 @@ items:
   id: IAnimationStateEventExitReceiver
   parent: SombraStudios.Shared.Animations.AnimationStateEvents
   children:
-  - SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  - SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   langs:
   - csharp
   - vb
@@ -32,37 +32,37 @@ items:
   seealso:
   - linkId: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver
     commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver
-- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
-  commentId: M:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
-  id: OnAnimationStateExited(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  commentId: M:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  id: OnExitAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   parent: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver
   langs:
   - csharp
   - vb
-  name: OnAnimationStateExited(AnimationEventData)
-  nameWithType: IAnimationStateEventExitReceiver.OnAnimationStateExited(AnimationEventData)
-  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
+  name: OnExitAnimationState(AnimationEventData)
+  nameWithType: IAnimationStateEventExitReceiver.OnExitAnimationState(AnimationEventData)
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState(SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData)
   type: Method
   source:
     remote:
       path: Animations/AnimationStateEvents/Interfaces/IAnimationStateEventExitReceiver.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: OnAnimationStateExited
+    id: OnExitAnimationState
     path: ../Animations/AnimationStateEvents/Interfaces/IAnimationStateEventExitReceiver.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - SombraStudios.Shared.Animations
   namespace: SombraStudios.Shared.Animations.AnimationStateEvents
   summary: Called when the target animation exits.
   example: []
   syntax:
-    content: void OnAnimationStateExited(AnimationEventData eventData)
+    content: void OnExitAnimationState(AnimationEventData eventData)
     parameters:
     - id: eventData
       type: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
-    content.vb: Sub OnAnimationStateExited(eventData As AnimationEventData)
-  overload: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited*
+    content.vb: Sub OnExitAnimationState(eventData As AnimationEventData)
+  overload: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState*
 references:
 - uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver
   commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventEnterReceiver
@@ -109,12 +109,12 @@ references:
   - uid: SombraStudios.Shared.Animations.AnimationStateEvents
     name: AnimationStateEvents
     href: SombraStudios.Shared.Animations.AnimationStateEvents.html
-- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited*
-  commentId: Overload:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited
-  href: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.html#SombraStudios_Shared_Animations_AnimationStateEvents_IAnimationStateEventExitReceiver_OnAnimationStateExited_SombraStudios_Shared_Animations_AnimationStateEvents_AnimationEventData_
-  name: OnAnimationStateExited
-  nameWithType: IAnimationStateEventExitReceiver.OnAnimationStateExited
-  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnAnimationStateExited
+- uid: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState*
+  commentId: Overload:SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState
+  href: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.html#SombraStudios_Shared_Animations_AnimationStateEvents_IAnimationStateEventExitReceiver_OnExitAnimationState_SombraStudios_Shared_Animations_AnimationStateEvents_AnimationEventData_
+  name: OnExitAnimationState
+  nameWithType: IAnimationStateEventExitReceiver.OnExitAnimationState
+  fullName: SombraStudios.Shared.Animations.AnimationStateEvents.IAnimationStateEventExitReceiver.OnExitAnimationState
 - uid: SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
   commentId: T:SombraStudios.Shared.Animations.AnimationStateEvents.AnimationEventData
   parent: SombraStudios.Shared.Animations.AnimationStateEvents
