@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.StateMachine
+namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
 {
     /// <summary>
     /// Represents a finite state machine.

@@ -1,4 +1,4 @@
-﻿namespace SombraStudios.Shared.Patterns.Behavioural.StateMachine
+﻿namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
 {
     /// <summary>
     /// Implementation of a transition between states in a state machine using condition predicates.

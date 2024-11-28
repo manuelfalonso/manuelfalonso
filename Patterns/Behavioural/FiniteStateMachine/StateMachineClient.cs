@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.StateMachine
+namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
 {
     /// <summary>
     /// Base class for objects that use a state machine.

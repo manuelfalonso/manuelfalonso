@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.StateMachine
+namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
 {
     /// <summary>
     /// Predicate based on a function delegate.
