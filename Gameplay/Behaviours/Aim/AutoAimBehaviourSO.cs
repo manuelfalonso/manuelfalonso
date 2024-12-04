@@ -9,7 +9,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
     /// Settings for the auto-aim behaviour.
     /// </summary>
     [CreateAssetMenu(fileName = "AutoAimSettings", menuName = "Sombra Studios/Behaviours/AutoAimSettings")]
-    public class AutoAimBehaviourSettings : ScriptableObject
+    public class AutoAimBehaviourSO : ScriptableObject
     {
         [Header("Aim")]
         [Tooltip("Speed at which the aim moves.")]

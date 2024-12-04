@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoMove
         /// The settings for the automatic movement.
         /// </summary>
         [Tooltip("The settings for the automatic movement.")]
-        [SerializeField] private AutoMoveSettings _settings = null;
+        [SerializeField] private AutoMoveSO _settings = null;
 
         /// <summary>
         /// This Transform overrides the Space settings. Pairs the relative to movement to another transform.
@@ -28,7 +28,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoMove
         /// <summary>
         /// Gets or sets the auto-move settings.
         /// </summary>
-        public AutoMoveSettings Settings { get => _settings; set => _settings = value; }
+        public AutoMoveSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>
         /// Gets or sets the transform to use as a override to the Space settings.

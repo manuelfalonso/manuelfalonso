@@ -9,7 +9,7 @@ namespace SombraStudios.Shared.Utility.ScriptableObjects
     /// <summary>
     /// Base class for ScriptableObjects with an ID.
     /// </summary>
-    public class ScriptableObjectWithId : ScriptableObject, IEquatable<ScriptableObjectWithId>
+    public class SOWithId : ScriptableObject, IEquatable<SOWithId>
     {
         /// <summary>
         /// The ID of the ScriptableObject.
@@ -22,7 +22,7 @@ namespace SombraStudios.Shared.Utility.ScriptableObjects
         /// </summary>
         /// <param name="other">The other ScriptableObject to compare with the current ScriptableObject.</param>
         /// <returns>true if the current ScriptableObject is equal to the other parameter; otherwise, false.</returns>
-        public bool Equals(ScriptableObjectWithId other)
+        public bool Equals(SOWithId other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -34,7 +34,7 @@ namespace SombraStudios.Shared.Utility.ScriptableObjects
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != GetType()) return false;
-            return Equals((ScriptableObjectWithId)obj);
+            return Equals((SOWithId)obj);
         }
 
         public override int GetHashCode()
@@ -43,12 +43,12 @@ namespace SombraStudios.Shared.Utility.ScriptableObjects
             return HashCode.Combine(Id);
         }
 
-        public static bool operator ==(ScriptableObjectWithId left, ScriptableObjectWithId right)
+        public static bool operator ==(SOWithId left, SOWithId right)
         {
             return Equals(left, right);
         }
 
-        public static bool operator !=(ScriptableObjectWithId left, ScriptableObjectWithId right)
+        public static bool operator !=(SOWithId left, SOWithId right)
         {
             return !Equals(left, right);
         }

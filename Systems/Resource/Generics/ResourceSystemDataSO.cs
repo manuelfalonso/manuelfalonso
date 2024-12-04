@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Systems.Resource
     /// ScriptableObject class to hold resource system data with cooldown durations.
     /// </summary>
     /// <typeparam name="T">The type of the resource amount.</typeparam>
-    public class ResourceSystemDataSO<T> : ResourceData<T> where T : struct
+    public class ResourceSystemDataSO<T> : ResourceSO<T> where T : struct
     {
         /// <summary>
         /// The cooldown duration after increasing the resource.

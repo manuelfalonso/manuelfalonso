@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
     /// editor time to ensure data consistency.
     /// </summary>
     [CreateAssetMenu(fileName = "Charge Behaviour", menuName = "Sombra Studios/Behaviours/Charge Behaviour", order = 0)]
-    public class ChargeBehaviourData : ScriptableObject
+    public class ChargeBehaviourSO : ScriptableObject
     {
         [Header("Main")]
         /// <summary>

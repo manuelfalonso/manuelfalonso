@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Systems.LootBox
     {
         [Header("Common Parameters")]
 
-        [SerializeField] private List<Item> _items;    
+        [SerializeField] private List<ItemSO> _items;    
         [SerializeField] private Animation _openAnimation;
 
         [Tooltip("Enables modified Items Rarety and Items in LootBoxes during gameplay")]
@@ -48,26 +48,26 @@ namespace SombraStudios.Shared.Systems.LootBox
 
         private void CalculateTotalRarety()
         {
-            foreach (Item item in _items)
+            foreach (ItemSO item in _items)
             {
                 _totalRarety += item.Rarety;
             }
         }
 
-        private Item OpenBox()
+        private ItemSO OpenBox()
         {
             if (_testMode)
             {
                 CalculateTotalRarety();
             }
                 
-            Item itemToReturn = null;
+            ItemSO itemToReturn = null;
 
             float raretyItemToReturn = Random.Range(0, _totalRarety);        
 
             float accumulatedRarety = 0f;
 
-            foreach (Item item in _items)
+            foreach (ItemSO item in _items)
             {
                 accumulatedRarety += item.Rarety;
 

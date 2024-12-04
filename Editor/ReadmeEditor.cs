@@ -8,11 +8,11 @@ namespace SombraStudios.Shared.Editor
     /// Editor script for the readme scriptable object
     /// Credits to: rich-joslin-unity
     /// </summary>
-    [CustomEditor(typeof(Readme))]
+    [CustomEditor(typeof(ReadmeSO))]
     [InitializeOnLoad]
     public class ReadmeEditor : UnityEditor.Editor
     {
-        Readme m_Readme;
+        ReadmeSO _readmeSO;
         const float k_SectionSpacer = 16f;
         const float k_HeaderSpacer = 8f;
         const float k_BulletItemSpacer = 2f;
@@ -36,7 +36,7 @@ namespace SombraStudios.Shared.Editor
 
         void OnEnable()
         {
-            m_Readme = target as Readme;
+            _readmeSO = target as ReadmeSO;
         }
 
         static ReadmeEditor()
@@ -130,10 +130,10 @@ namespace SombraStudios.Shared.Editor
             var title = "";
             var iconWidth = Mathf.Min(EditorGUIUtility.currentViewWidth / 3f - 20f, 128f);
 
-            if (m_Readme != null && m_Readme.header != null)
+            if (_readmeSO != null && _readmeSO.header != null)
             {
-                icon = m_Readme.header.icon;
-                title = m_Readme.header.title;
+                icon = _readmeSO.header.icon;
+                title = _readmeSO.header.title;
             }
 
             using (new EditorGUILayout.HorizontalScope("In BigTitle"))
@@ -150,12 +150,12 @@ namespace SombraStudios.Shared.Editor
         {
             InitStyles();
 
-            if (m_Readme == null || m_Readme.sections == null)
+            if (_readmeSO == null || _readmeSO.sections == null)
             {
                 return;
             }
 
-            foreach (var section in m_Readme.sections)
+            foreach (var section in _readmeSO.sections)
             {
                 if (!string.IsNullOrEmpty(section.subHeader1))
                 {
@@ -202,7 +202,7 @@ namespace SombraStudios.Shared.Editor
             GUILayout.Space(k_HeaderSpacer);
         }
 
-        void DisplayFormattedBodyText(string text, Readme.FontFormat format)
+        void DisplayFormattedBodyText(string text, ReadmeSO.FontFormat format)
         {
             GUILayout.Label(text, GetStyle(format));
         }
@@ -212,7 +212,7 @@ namespace SombraStudios.Shared.Editor
             EditorGUILayout.HelpBox(text, MessageType.Info);
         }
 
-        void DisplayFormattedBulletItemLevel1List(Readme.BulletItemLevel1[] list)
+        void DisplayFormattedBulletItemLevel1List(ReadmeSO.BulletItemLevel1[] list)
         {
             var previousLabelWidth = StartListFormatting(k_BulletLevel1LabelWidth);
 
@@ -234,7 +234,7 @@ namespace SombraStudios.Shared.Editor
             EndListFormatting(previousLabelWidth);
         }
 
-        void DisplayFormattedBulletItemLevel2List(Readme.BulletItemLevel2[] list)
+        void DisplayFormattedBulletItemLevel2List(ReadmeSO.BulletItemLevel2[] list)
         {
             var previousLabelWidth = StartListFormatting(k_BulletLevel2LabelWidth);
 
@@ -251,7 +251,7 @@ namespace SombraStudios.Shared.Editor
             EndListFormatting(previousLabelWidth);
         }
 
-        void DisplayFormattedBulletItemLevel3List(Readme.BulletItemLevel3[] list)
+        void DisplayFormattedBulletItemLevel3List(ReadmeSO.BulletItemLevel3[] list)
         {
             var previousLabelWidth = StartListFormatting(k_BulletLevel3LabelWidth);
 
@@ -274,20 +274,20 @@ namespace SombraStudios.Shared.Editor
 
             foreach (var item in list)
             {
-                DisplayFormattedBulletListItem(item, Readme.FontFormat.Regular);
+                DisplayFormattedBulletListItem(item, ReadmeSO.FontFormat.Regular);
             }
 
             EndListFormatting(previousLabelWidth);
         }
 
-        void DisplayFormattedBulletListItem(string text, Readme.FontFormat format)
+        void DisplayFormattedBulletListItem(string text, ReadmeSO.FontFormat format)
         {
             EditorGUILayout.LabelField("*", text, GetStyle(format));
 
             GUILayout.Space(k_BulletItemSpacer);
         }
 
-        void DisplayFormattedLinkList(Readme.LinkListItem[] list)
+        void DisplayFormattedLinkList(ReadmeSO.LinkListItem[] list)
         {
             var previousLabelWidth = StartListFormatting(k_BulletLevel1LabelWidth);
 
@@ -327,12 +327,12 @@ namespace SombraStudios.Shared.Editor
             EditorGUI.indentLevel--;
         }
 
-        GUIStyle GetStyle(Readme.FontFormat format)
+        GUIStyle GetStyle(ReadmeSO.FontFormat format)
         {
             return format switch
             {
-                Readme.FontFormat.Bold => m_BoldStyle,
-                Readme.FontFormat.Italic => m_ItalicsStyle,
+                ReadmeSO.FontFormat.Bold => m_BoldStyle,
+                ReadmeSO.FontFormat.Italic => m_ItalicsStyle,
                 _ => m_BodyStyle
             };
         }

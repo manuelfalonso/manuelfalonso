@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 namespace SombraStudios.Shared.TutorialSystem
 {
     [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Wait Scene Action", order = 2)]
-    public class WaitSceneAction : TutorialAction
+    public class WaitSceneAction : TutorialActionSO
     {
         [Header("Data")]
         [SerializeField]

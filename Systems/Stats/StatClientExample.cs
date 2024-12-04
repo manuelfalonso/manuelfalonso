@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.Systems.Stats
         [SerializeField] private IntStat _intStat = new IntStat(0, "Int Test");
         [SerializeField] private FloatStat _floatStat = new(0f, "Float Test");
 
-        [SerializeField] private StatSheet _statSheet;
+        [SerializeField] private StatSheetSO _statSheet;
 
         private StatContainer _statContainer;
 
@@ -96,7 +96,7 @@ namespace SombraStudios.Shared.Systems.Stats
         {
             Debug.Log($"=== Stat Sheet ===");
             // Instead of using a reference, an instance can be used
-            _statSheet = (StatSheet)ScriptableObject.CreateInstance(nameof(StatSheet));
+            _statSheet = (StatSheetSO)ScriptableObject.CreateInstance(nameof(StatSheetSO));
             // Add Stats on runtime
             _statSheet.AddStat(_boolStat);
             _statSheet.AddStat(_intStat);

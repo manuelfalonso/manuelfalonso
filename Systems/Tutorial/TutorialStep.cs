@@ -14,14 +14,14 @@ namespace SombraStudios.Shared.TutorialSystem
         [SerializeField] private string _name;
         [SerializeField] private bool _isActive;
         [SerializeField] private bool _showLogs;
-        [SerializeField] private List<TutorialAction> _actions;
+        [SerializeField] private List<TutorialActionSO> _actions;
         
         private bool _completed;
 
         public bool Completed { get => _completed; private set => _completed = value; }
 
 
-        public TutorialStep(string name, List<TutorialAction> actions)
+        public TutorialStep(string name, List<TutorialActionSO> actions)
         {
             _actions = actions;
             _name = name;

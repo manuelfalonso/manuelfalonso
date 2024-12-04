@@ -4,7 +4,7 @@ namespace SombraStudios.Shared.Utility.TimeScale
 {
     public class TimeScaleClient : MonoBehaviour
     {
-        [SerializeField] private AnimationCurveValue _curve;
+        [SerializeField] private AnimationCurveValueSO _curve;
 
 
         private void Start()

@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
         /// The settings for the automatic rotation.
         /// </summary>
         [Tooltip("The settings for the automatic rotation.")]
-        [SerializeField] private AutoRotateSettings _settings;
+        [SerializeField] private AutoRotateSO _settings;
 
         /// <summary>
         /// Indicates whether the rotation is enabled.
@@ -22,7 +22,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
         /// <summary>
         /// Gets or sets the auto-rotate settings.
         /// </summary>
-        public AutoRotateSettings Settings { get => _settings; set => _settings = value; }
+        public AutoRotateSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>
         /// Gets or sets a value indicating whether the rotation is enabled.

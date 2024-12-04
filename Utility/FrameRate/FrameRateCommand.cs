@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.Utility.FrameRate
     /// Command to set the target frame rate of the application.
     /// </summary>
     [CreateAssetMenu(fileName = "FrameRateCommand", menuName = "Sombra Studios/Commands/Frame Rate Command")]
-    public class FrameRateCommand : CommandScriptableObject
+    public class FrameRateCommand : CommandSO
     {
         /// <summary>
         /// The target frame rate to set.

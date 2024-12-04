@@ -6,9 +6,9 @@ namespace SombraStudios.Shared.Gameplay.Spawners.Wave
 {
     public class WaveSpawner : MonoBehaviour
     {
-        [SerializeField] List<WaveConfig> waveConfigs;
-        [SerializeField] int startingWave = 0;
-        [SerializeField] bool looping = false;
+        [SerializeField] List<WaveConfigSO> _waveConfigs;
+        [SerializeField] int _startingWave = 0;
+        [SerializeField] bool _looping = false;
 
         IEnumerator Start()
         {
@@ -16,27 +16,27 @@ namespace SombraStudios.Shared.Gameplay.Spawners.Wave
             {
                 yield return StartCoroutine(SpawnAllWaves());
             }
-            while (looping);
+            while (_looping);
         }
 
         private IEnumerator SpawnAllWaves()
         {
-            for (int waveIndex = startingWave; waveIndex < waveConfigs.Count; waveIndex++)
+            for (int waveIndex = _startingWave; waveIndex < _waveConfigs.Count; waveIndex++)
             {
-                var currentWave = waveConfigs[waveIndex];
+                var currentWave = _waveConfigs[waveIndex];
                 yield return StartCoroutine(SpawnWave(currentWave));
             }
         }
 
-        private IEnumerator SpawnWave(WaveConfig waveConfig)
+        private IEnumerator SpawnWave(WaveConfigSO waveConfigSo)
         {
-            for (int count = 0; count < waveConfig.GetQuantity(); count++)
+            for (int count = 0; count < waveConfigSo.GetQuantity(); count++)
             {
                 Instantiate(
-                    waveConfig.GetPrefab(),
+                    waveConfigSo.GetPrefab(),
                     transform.position,
                     Quaternion.identity);
-                yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
+                yield return new WaitForSeconds(waveConfigSo.GetTimeBetweenSpawns());
             }
         }
     }

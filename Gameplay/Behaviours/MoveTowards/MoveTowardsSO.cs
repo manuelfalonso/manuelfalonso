@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
     /// ScriptableObject to store settings for the Move Towards functionality.  
     /// </summary>  
     [CreateAssetMenu(fileName = "MoveTowardsSettings", menuName = "Sombra Studios/Behaviours/MoveTowardsSettings")]
-    public class MoveTowardsSettings : ScriptableObject
+    public class MoveTowardsSO : ScriptableObject
     {
         [Header("Move Towards Settings")]
 

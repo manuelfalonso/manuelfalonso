@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Utility
     /// Scriptable object to use Animation Curves as values
     /// </summary>
     [CreateAssetMenu(fileName = "New Animation Curve Value", menuName = "Sombra Studios/Curve Value", order = 51)]
-    public class AnimationCurveValue : ScriptableObject
+    public class AnimationCurveValueSO : ScriptableObject
     {
         [SerializeField] private AnimationCurve _curve;
 

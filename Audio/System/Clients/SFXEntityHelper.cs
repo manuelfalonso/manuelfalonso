@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace SombraStudios.Shared.Audio.System.Clients
 {
@@ -10,25 +11,26 @@ namespace SombraStudios.Shared.Audio.System.Clients
         /// <summary>
         /// The scriptable data containing SFX and voice racks.
         /// </summary>
+        [FormerlySerializedAs("_audioData")]
         [Tooltip("The scriptable data containing SFX and voice racks.")]
-        [SerializeField] private SFXScriptableData _audioData;
+        [SerializeField] private SFXScriptableSO _audioSo;
 
 
         #region Unity Messages
         private void Awake()
         {
-            if (_audioData == null) { return; }
+            if (_audioSo == null) { return; }
 
             // Creating a runtime version so it wont be overwritten for each entity.
-            _audioData = Instantiate(_audioData);
+            _audioSo = Instantiate(_audioSo);
         }
 
         private void Start()
         {
-            if (_audioData == null) return;
+            if (_audioSo == null) return;
 
-            _audioData.SFXRack.InstantiateAll(transform);
-            _audioData.VoiceRack.InstantiateAll(transform);
+            _audioSo.SFXRack.InstantiateAll(transform);
+            _audioSo.VoiceRack.InstantiateAll(transform);
         }
         #endregion
 
@@ -93,31 +95,31 @@ namespace SombraStudios.Shared.Audio.System.Clients
         #region Private Methods
         private void PlayAudio(string audio)
         {
-            if (_audioData == null) return;
+            if (_audioSo == null) return;
 
-            _audioData.SFXRack.Play(audio);
+            _audioSo.SFXRack.Play(audio);
         }
 
         private void PlayVoice(string voice)
         {
-            if (_audioData == null) return;
+            if (_audioSo == null) return;
 
-            _audioData.VoiceRack.Play(voice);
+            _audioSo.VoiceRack.Play(voice);
         }
 
         private void PlayLoopAudio(string audio)
         {
-            if (_audioData == null) return;
+            if (_audioSo == null) return;
 
-            _audioData.SFXRack[audio].AudioInstance.loop = true;
-            _audioData.SFXRack.Play(audio);
+            _audioSo.SFXRack[audio].AudioInstance.loop = true;
+            _audioSo.SFXRack.Play(audio);
         }
 
         private void StopLoopAudio(string audio)
         {
-            if (_audioData == null) return;
+            if (_audioSo == null) return;
 
-            _audioData.SFXRack.Stop(audio);
+            _audioSo.SFXRack.Stop(audio);
         }
         #endregion
     }

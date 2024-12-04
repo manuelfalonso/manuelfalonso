@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Systems.Stats
     /// Represents a collection of stats.
     /// </summary>
     [CreateAssetMenu(fileName = "New Stat Sheet", menuName = "Sombra Studios/Stat Sheet")]
-    public class StatSheet : ScriptableObject
+    public class StatSheetSO : ScriptableObject
     {
         /// <summary>
         /// List of float stats.

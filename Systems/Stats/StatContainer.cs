@@ -16,7 +16,7 @@ namespace SombraStudios.Shared.Systems.Stats
         /// <summary>
         /// The stat sheet associated with this container.
         /// </summary>
-        private StatSheet _myStatSheet;
+        private StatSheetSO _myStatSheet;
 
         /// <summary>
         /// Gets the dictionary of stats.
@@ -28,7 +28,7 @@ namespace SombraStudios.Shared.Systems.Stats
         /// Constructs a new stat container with a stat sheet.
         /// </summary>
         /// <param name="statSheet">The stat sheet to use for initializing the container.</param>
-        public StatContainer(StatSheet statSheet)
+        public StatContainer(StatSheetSO statSheet)
         {
             Initialize(statSheet);
         }
@@ -61,7 +61,7 @@ namespace SombraStudios.Shared.Systems.Stats
         /// Initializes the stat container with a stat sheet.
         /// </summary>
         /// <param name="statSheet">The stat sheet to use for initializing the container.</param>
-        private void Initialize(StatSheet statSheet)
+        private void Initialize(StatSheetSO statSheet)
         {
             _myStatSheet = ScriptableObject.Instantiate(statSheet);
             foreach (var stat in _myStatSheet.Stats)

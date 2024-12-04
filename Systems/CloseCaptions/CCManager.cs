@@ -13,7 +13,7 @@ namespace SombraStudios.Shared.Systems.CloseCaptions
         static CCManager s_Instance;
         public static CCManager Instance => s_Instance;
 
-        public CCDatabase Database;
+        public CCDatabaseSO DatabaseSO;
         public Canvas IndicatorCanvas;
         public GameObject IndicatorPrefab;
 
@@ -38,7 +38,7 @@ namespace SombraStudios.Shared.Systems.CloseCaptions
         void Start()
         {
             m_Camera = Camera.main;
-            Database.BuildMap();
+            DatabaseSO.BuildMap();
 
             const int indicatorPool = 8;
             for(int i = 0; i < indicatorPool; ++i)
@@ -83,7 +83,7 @@ namespace SombraStudios.Shared.Systems.CloseCaptions
                     if (distance <= m_Sources[i].MaxDistance && angle > 0.6f)
                     {
                         // facing camera
-                        m_Sources[i].Display(toObject, Database);
+                        m_Sources[i].Display(toObject, DatabaseSO);
 
                         if (m_Sources[i].AlwaysTracked)
                         {

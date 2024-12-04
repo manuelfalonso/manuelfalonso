@@ -4,7 +4,7 @@ using UnityEngine;
 namespace SombraStudios.Shared.XR.KeyLockSystem
 {
     /// <summary>
-    /// A generic Keychain component that holds the <see cref="Key"/>s to open a <see cref="Lock"/>.
+    /// A generic Keychain component that holds the <see cref="KeySO"/>s to open a <see cref="Lock"/>.
     /// Attach a Keychain component to an Interactable and assign to it the same Keys of an <see cref="SocketInteractor.XRLockSocketInteractor"/>
     /// or an <see cref="SocketInteractor.XRLockGridSocketInteractor"/> to open (or interact with) them.
     /// </summary>
@@ -13,7 +13,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
     {
         [Tooltip("The keys on this keychain" +
             "Create new keys by selecting \"Assets/Create/XR/Key Lock System/Key\"")]
-        [SerializeField] private List<Key> _keys;
+        [SerializeField] private List<KeySO> _keys;
 
         private HashSet<int> _keysHashSet = new HashSet<int>();
 
@@ -43,7 +43,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
         /// Adds the supplied key to this keychain
         /// </summary>
         /// <param name="key">The key to be added to the keychain</param>
-        public void AddKey(Key key)
+        public void AddKey(KeySO key)
         {
             if (key == null || Contains(key)) { return; }
 
@@ -55,7 +55,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
         /// Adds the supplied key from this keychain
         /// </summary>
         /// <param name="key">The key to be removed from the keychain</param>
-        public void RemoveKey(Key key)
+        public void RemoveKey(KeySO key)
         {
             _keys.Remove(key);
 
@@ -63,7 +63,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
         }
 
         /// <inheritdoc />
-        public bool Contains(Key key)
+        public bool Contains(KeySO key)
         {
             return key != null && _keysHashSet.Contains(key.GetInstanceID());
         }

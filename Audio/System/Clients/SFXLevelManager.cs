@@ -1,7 +1,6 @@
 #if NAUGHTY_ATTRIBUTES
 using NaughtyAttributes;
 using SombraStudios.Shared.Patterns.Creational.Singleton;
-using System;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Audio.System.Clients
@@ -11,7 +10,7 @@ namespace SombraStudios.Shared.Audio.System.Clients
     /// </summary>
     public class SFXLevelManager : Singleton<SFXLevelManager>
     {
-        [SerializeField] private SFXScriptableData _audioData;
+        [SerializeField] private SFXScriptableSO _audioSo;
         [Header("General Properties")]
         /// <summary>
         /// Determines whether level data configurations can be overwritten.
@@ -67,7 +66,7 @@ namespace SombraStudios.Shared.Audio.System.Clients
         /// <param name="position">The position at which to play the audio.</param>
         public void PlayOneShotAudio(string audioEvent, Vector3 position)
         {
-            AudioSource.PlayClipAtPoint(_audioData.SFXRack[audioEvent].AudioData.Clip, position);
+            AudioSource.PlayClipAtPoint(_audioSo.SFXRack[audioEvent].AudioData.Clip, position);
         }
         #endregion
 
@@ -77,7 +76,7 @@ namespace SombraStudios.Shared.Audio.System.Clients
         {
             if (_canLevelDataConfigOvewritten)
             {
-                foreach (var rack in _audioData.SFXRack)
+                foreach (var rack in _audioSo.SFXRack)
                 {
                     rack.Value.AudioInstance.volume = volume;
                 }
@@ -88,7 +87,7 @@ namespace SombraStudios.Shared.Audio.System.Clients
         {
             if (_canLevelDataConfigOvewritten)
             {
-                foreach (var rack in _audioData.VoiceRack)
+                foreach (var rack in _audioSo.VoiceRack)
                 {
                     rack.Value.AudioInstance.volume = volume;
                 }
@@ -99,7 +98,7 @@ namespace SombraStudios.Shared.Audio.System.Clients
         {
             if (_canLevelDataConfigOvewritten)
             {
-                foreach (var rack in _audioData.SFXRack)
+                foreach (var rack in _audioSo.SFXRack)
                 {
                     rack.Value.AudioInstance.mute = mute;
                 }
@@ -110,7 +109,7 @@ namespace SombraStudios.Shared.Audio.System.Clients
         {
             if (_canLevelDataConfigOvewritten)
             {
-                foreach (var rack in _audioData.VoiceRack)
+                foreach (var rack in _audioSo.VoiceRack)
                 {
                     rack.Value.AudioInstance.mute = mute;
                 }
@@ -119,10 +118,10 @@ namespace SombraStudios.Shared.Audio.System.Clients
 
         private void InitializeRackInstances()
         {
-            if (_audioData == null) { return; }
+            if (_audioSo == null) { return; }
 
-            _audioData.SFXRack.InstantiateAll(transform);
-            _audioData.VoiceRack.InstantiateAll(transform);
+            _audioSo.SFXRack.InstantiateAll(transform);
+            _audioSo.VoiceRack.InstantiateAll(transform);
         }
         #endregion
 

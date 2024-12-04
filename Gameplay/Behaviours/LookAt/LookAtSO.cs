@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.LookAt
     /// ScriptableObject to store settings for the "Look At" functionality.  
     /// </summary>  
     [CreateAssetMenu(fileName = "LookAtSettings", menuName = "Sombra Studios/Behaviours/LookAtSettings")]
-    public class LookAtSettings : ScriptableObject
+    public class LookAtSO : ScriptableObject
     {
         [Header("LookAt Settings")]
 

@@ -21,11 +21,11 @@ namespace SombraStudios.Shared.Editor.ScriptableObjects
         {
             var ids = new HashSet<string>();
 
-            var guids = AssetDatabase.FindAssets("t:" + typeof(ScriptableObjectWithId));
+            var guids = AssetDatabase.FindAssets("t:" + typeof(SOWithId));
             foreach (var guid in guids)
             {
                 var path = AssetDatabase.GUIDToAssetPath(guid);
-                var so = AssetDatabase.LoadAssetAtPath<ScriptableObjectWithId>(path);
+                var so = AssetDatabase.LoadAssetAtPath<SOWithId>(path);
                 if (string.IsNullOrEmpty(so.Id))
                 {
                     Debug.LogError("ScriptableObject doesn't have ID", so);

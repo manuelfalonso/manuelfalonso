@@ -3,7 +3,7 @@ using UnityEngine;
 namespace SombraStudios.Shared.Gameplay.Behaviours.Destructible
 {
     [CreateAssetMenu(fileName = "Destructible Data", menuName = "Sombra Studios/Behaviours/Destructible Data", order = 0)]
-    public class DestructibleBehaviourData : ScriptableObject
+    public class DestructibleBehaviourSO : ScriptableObject
     {
         [Header("Explosion")]
         /// <summary>

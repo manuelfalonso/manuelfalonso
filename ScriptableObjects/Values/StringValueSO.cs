@@ -6,7 +6,7 @@ namespace SombraStudios.ScriptableObjects.Values
     /// ScriptableObject that stores a string value.
     /// </summary>
     [CreateAssetMenu(fileName = "StringValue", menuName = "Sombra Studios/Values/String")]
-    public class StringValue : ScriptableObject
+    public class StringValueSO : ScriptableObject
     {
         /// <summary>
         /// The stored string value.

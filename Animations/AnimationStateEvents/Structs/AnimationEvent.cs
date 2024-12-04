@@ -13,7 +13,7 @@ namespace SombraStudios.Shared.Animations.AnimationStateEvents
         /// <summary>  
         /// The name of the event.  
         /// </summary>  
-        public StringValue EventName;
+        public StringValueSO EventName;
 
         /// <summary>  
         /// The action to be invoked when the event is triggered.  

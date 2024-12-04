@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
         /// The settings for the automatic torque.
         /// </summary>
         [Tooltip("The settings for the automatic torque.")]
-        [SerializeField] private AutoTorqueSettings _settings;
+        [SerializeField] private AutoTorqueSO _settings;
 
         /// <summary>
         /// The Rigidbody to which the torque will be applied.
@@ -28,7 +28,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
         /// <summary>
         /// Gets or sets the auto-torque settings.
         /// </summary>
-        public AutoTorqueSettings Settings { get => _settings; set => _settings = value; }
+        public AutoTorqueSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>
         /// Gets or sets the Rigidbody to which the torque will be applied.

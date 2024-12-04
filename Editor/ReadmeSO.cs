@@ -10,7 +10,7 @@ namespace SombraStudios.Shared.Editor
     /// Credits to: rich-joslin-unity
     /// </summary>
     [CreateAssetMenu(fileName = "New Readme", menuName = "Readme file", order = 51)]
-    public class Readme : ScriptableObject
+    public class ReadmeSO : ScriptableObject
     {
         public Header header;
         public Section[] sections;

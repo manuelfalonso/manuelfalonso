@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Systems.Resource
     /// ScriptableObject class to hold resource data.
     /// </summary>
     /// <typeparam name="T">The type of the resource amount.</typeparam>
-    public class ResourceData<T> : ScriptableObject where T : struct
+    public class ResourceSO<T> : ScriptableObject where T : struct
     {
         /// <summary>
         /// The name of the resource.

@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Audio.System
     /// </summary>
     [Serializable]
     [CreateAssetMenu(fileName = "New SFX Data", menuName = "Sombra Studios/Audio/SFX Data")]
-    public class SFXScriptableData : ScriptableObject
+    public class SFXScriptableSO : ScriptableObject
     {
         /// <summary>
         /// Dictionary mapping string keys to SFXRack instances.
@@ -16,9 +16,9 @@ namespace SombraStudios.Shared.Audio.System
         [Tooltip("Dictionary mapping string keys to SFXRack instances.")]
         [SerializeField] private SFXStringDictionary _sfxRack = new ();
         /// <summary>
-        /// Dictionary mapping string keys to SFXInterruptable instances.
+        /// Dictionary mapping string keys to SFX Interruptable instances.
         /// </summary>
-        [Tooltip("Dictionary mapping string keys to SFXInterruptable instances.")]
+        [Tooltip("Dictionary mapping string keys to SFX Interruptable instances.")]
         [SerializeField] private SFXInterruptableDictionary _voiceRack = new ();
 
         /// <summary>

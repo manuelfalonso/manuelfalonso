@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoMove
     /// Settings for automatic movement of a GameObject.
     /// </summary>
     [CreateAssetMenu(fileName = "AutoMoveSettings", menuName = "Sombra Studios/Behaviours/AutoMoveSettings")]
-    public class AutoMoveSettings : ScriptableObject
+    public class AutoMoveSO : ScriptableObject
     {
         [Header("Movement Settings")]
 

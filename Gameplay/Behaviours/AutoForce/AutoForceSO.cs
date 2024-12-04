@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoForce
     /// Settings for automatic force application.
     /// </summary>
     [CreateAssetMenu(fileName = "AutoForceSettings", menuName = "Sombra Studios/Behaviours/AutoForceSettings")]
-    public class AutoForceSettings : ScriptableObject
+    public class AutoForceSO : ScriptableObject
     {
         [Header("Force Settings")]
 

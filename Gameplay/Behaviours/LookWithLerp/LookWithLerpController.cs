@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.LookWithLerp
     public class LookWithLerpController : MonoBehaviour, IBehaviour
     {
         [Tooltip("Settings for the behavior.")]
-        [SerializeField] private LookWithLerpSettings _settings = null;
+        [SerializeField] private LookWithLerpSO _settings = null;
         [Tooltip("Override the Forward Vector with a target Tranform.")]
         [SerializeField] private Transform _targetOverride = null;
         [Tooltip("Offset for the target override position.")]
@@ -19,7 +19,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.LookWithLerp
         /// <summary>  
         /// Settings for the behavior.  
         /// </summary>  
-        public LookWithLerpSettings Settings { get => _settings; set => _settings = value; }
+        public LookWithLerpSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>  
         /// Override the Forward Vector with a target Tranform.

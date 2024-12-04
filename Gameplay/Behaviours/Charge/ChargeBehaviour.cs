@@ -16,7 +16,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// Holds the data configuration for the charging behavior.
         /// </summary>
         [Tooltip("Holds the data configuration for the charging behavior.")]
-        [SerializeField] private ChargeBehaviourData _data;
+        [SerializeField] private ChargeBehaviourSO _data;
 
         [Header("Debug")]
         /// <summary>
@@ -53,15 +53,15 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// Indicates whether the maximum number of charges has been reached.
         /// </summary>
         [Tooltip("Indicates whether the maximum number of charges has been reached.")]
-#pragma warning disable IDE0052 // Quitar miembros privados no leídos
+#pragma warning disable IDE0052 // Quitar miembros privados no leï¿½dos
         [SerializeField, ReadOnly] private bool _isMaxCharged = false;
-#pragma warning restore IDE0052 // Quitar miembros privados no leídos
+#pragma warning restore IDE0052 // Quitar miembros privados no leï¿½dos
 
 
         /// <summary>
         /// Gets or sets the charging behavior data.
         /// </summary>
-        public ChargeBehaviourData Data { get => _data; set => _data = value; }
+        public ChargeBehaviourSO Data { get => _data; set => _data = value; }
         /// <summary>
         /// Gets or sets whether the charging behavior is active.
         /// </summary>

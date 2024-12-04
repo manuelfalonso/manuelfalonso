@@ -21,7 +21,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Destructible
         /// The data defining the destructible behavior.
         /// </summary>
         [Tooltip("The data defining the destructible behavior.")]
-        [SerializeField] private DestructibleBehaviourData _data;
+        [SerializeField] private DestructibleBehaviourSO _data;
 
         [Header("Debug")]
         [SerializeField] private bool _isEnabled;

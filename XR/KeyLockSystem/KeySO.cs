@@ -7,5 +7,5 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
     /// (<see cref="SocketInteractor.XRLockSocketInteractor"/> and <see cref="Keychain"/>)
     /// </summary>
     [CreateAssetMenuAttribute(menuName = "XR/Key Lock System/Key")]
-    public class Key : ScriptableObject { }
+    public class KeySO : ScriptableObject { }
 }

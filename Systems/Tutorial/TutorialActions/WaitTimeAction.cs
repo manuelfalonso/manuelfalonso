@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.TutorialSystem
     /// Action for waiting time in seconds
     /// </summary>
     [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Wait Time Action", order = 1)]
-    public class WaitTimeAction : TutorialAction
+    public class WaitTimeAction : TutorialActionSO
     {
         [Header("Data")]
         [SerializeField]

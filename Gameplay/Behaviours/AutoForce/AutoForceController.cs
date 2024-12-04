@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoForce
         /// The settings for the automatic force.
         /// </summary>
         [Tooltip("The settings for the automatic force.")]
-        [SerializeField] private AutoForceSettings _settings;
+        [SerializeField] private AutoForceSO _settings;
 
         /// <summary>
         /// The Rigidbody to which the force will be applied.
@@ -28,7 +28,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoForce
         /// <summary>
         /// Gets or sets the auto-force settings.
         /// </summary>
-        public AutoForceSettings Settings { get => _settings; set => _settings = value; }
+        public AutoForceSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>
         /// Gets or sets the Rigidbody to which the force will be applied.

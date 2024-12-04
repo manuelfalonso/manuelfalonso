@@ -51,7 +51,7 @@ namespace SombraStudios.Shared.Utility.TimeScale
         /// </summary>
         /// <param name="timeScaleData">TimeScale changed succesfully</param>
         /// <returns></returns>
-        public bool SetTimeScale(AnimationCurveValue timeScaleData)
+        public bool SetTimeScale(AnimationCurveValueSO timeScaleData)
         {
             var timeScaleSetted = false;
 
@@ -69,7 +69,7 @@ namespace SombraStudios.Shared.Utility.TimeScale
         }
 
 
-        private IEnumerator RunTimeScale(AnimationCurveValue data)
+        private IEnumerator RunTimeScale(AnimationCurveValueSO data)
         {
             //float progression = 0f;
             float firstKeyTime = data.Curve.keys[0].time;
@@ -93,7 +93,7 @@ namespace SombraStudios.Shared.Utility.TimeScale
             TimeScaleChanged?.Invoke(Time.timeScale);
         }
 
-        private void UpdateTimeScale(AnimationCurveValue data, float progression)
+        private void UpdateTimeScale(AnimationCurveValueSO data, float progression)
         {
             var newValue = data.GetValueExact(progression);
             if (newValue <= 0)

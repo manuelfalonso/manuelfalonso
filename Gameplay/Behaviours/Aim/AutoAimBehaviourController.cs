@@ -16,7 +16,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
 
         [Header("Settings")]
         [Tooltip("Settings for the auto-aim behaviour.")]
-        [SerializeField] private AutoAimBehaviourSettings _data;
+        [SerializeField] private AutoAimBehaviourSO _data;
         [Tooltip("Show debug rays in the editor.")]
         [SerializeField] private bool _showDebugRays = false;
 
@@ -64,7 +64,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         /// <summary>
         /// Gets or sets the auto-aim behaviour settings.
         /// </summary>
-        public AutoAimBehaviourSettings Data { get => _data; set => _data = value; }
+        public AutoAimBehaviourSO Data { get => _data; set => _data = value; }
 
         /// <summary>
         /// Gets a value indicating whether the object is currently aiming.

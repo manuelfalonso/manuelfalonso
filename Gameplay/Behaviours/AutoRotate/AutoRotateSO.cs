@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
     /// Settings for automatic rotation of a GameObject.
     /// </summary>
     [CreateAssetMenu(fileName = "AutoRotateSettings", menuName = "Sombra Studios/Behaviours/AutoRotateSettings")]
-    public class AutoRotateSettings : ScriptableObject
+    public class AutoRotateSO : ScriptableObject
     {
         [Header("Rotation Settings")]
 

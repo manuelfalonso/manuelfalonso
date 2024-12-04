@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
     /// Settings for automatic torque application.
     /// </summary>
     [CreateAssetMenu(fileName = "AutoTorqueSettings", menuName = "Sombra Studios/Behaviours/AutoTorqueSettings")]
-    public class AutoTorqueSettings : ScriptableObject
+    public class AutoTorqueSO : ScriptableObject
     {
         [Header("Torque Settings")]
 

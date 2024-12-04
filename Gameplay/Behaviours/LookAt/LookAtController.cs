@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.LookAt
     public class LookAtController : MonoBehaviour, IBehaviour
     {
         [Tooltip("Settings for the 'Look At' behavior.")]
-        [SerializeField] private LookAtSettings _settings = null;
+        [SerializeField] private LookAtSO _settings = null;
         [Tooltip("Override target for the 'Look At' target.")]
         [SerializeField] private Transform _targetOverride = null;
         [Tooltip("Indicates whether the 'Look At' functionality is enabled.")]
@@ -17,7 +17,7 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.LookAt
         /// <summary>
         /// Settings for the "Look At" behavior.
         /// </summary>
-        public LookAtSettings Settings { get => _settings; set => _settings = value; }
+        public LookAtSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>  
         /// Override target for the "Look At" target. 

@@ -7,14 +7,14 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
     /// </summary>
     public class MoveTowardsController : MonoBehaviour
     {
-        [SerializeField] private MoveTowardsSettings _settings;
+        [SerializeField] private MoveTowardsSO _settings;
         [SerializeField] private Transform _targetOverride = null;
         [SerializeField] private bool _isEnabled = false;
 
         /// <summary>
         /// Settings for the behavior.
         /// </summary>
-        public MoveTowardsSettings Settings { get => _settings; set => _settings = value; }
+        public MoveTowardsSO Settings { get => _settings; set => _settings = value; }
 
         /// <summary>
         /// Override target for the functionality.

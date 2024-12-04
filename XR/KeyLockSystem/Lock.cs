@@ -16,12 +16,12 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
     {        
         [Tooltip("The required keys to unlock this lock" +
             "Create new keys by selecting \"Assets/Create/XR/Key Lock System/Key\"")]
-        [SerializeField] private List<Key> m_RequiredKeys;
+        [SerializeField] private List<KeySO> m_RequiredKeys;
 
         /// <summary>
         /// Returns the required keys to unlock this lock.
         /// </summary>
-        public List<Key> RequiredKeys => m_RequiredKeys;
+        public List<KeySO> RequiredKeys => m_RequiredKeys;
 
 
         /// <summary>

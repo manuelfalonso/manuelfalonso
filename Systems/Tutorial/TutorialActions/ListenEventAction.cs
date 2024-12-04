@@ -8,7 +8,7 @@ namespace SombraStudios.Shared.TutorialSystem
         fileName = "New Tutorial Action", 
         menuName = "Sombra Studios/Tutorial/Listen Event Action", 
         order = 6)]
-    public class ListenEventAction : TutorialAction
+    public class ListenEventAction : TutorialActionSO
     {
         [Header("Event Data")]
         [SerializeField] private VoidEventChannelSO _gameEvent;

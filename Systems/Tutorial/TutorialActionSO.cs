@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.TutorialSystem
     /// <summary>
     /// Base class for all tutorial actions
     /// </summary>
-    public abstract class TutorialAction : ScriptableObject, ISerializationCallbackReceiver
+    public abstract class TutorialActionSO : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField] protected bool _active = true;
 

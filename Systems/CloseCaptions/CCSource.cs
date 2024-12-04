@@ -41,7 +41,7 @@ namespace SombraStudios.Shared.Systems.CloseCaptions
             CCManager.RemoveSource(this);
         }
 
-        public void Display(Vector3 toCamera, CCDatabase database)
+        public void Display(Vector3 toCamera, CCDatabaseSO databaseSo)
         {
             if (m_Source.clip == null)
                 return;
@@ -54,7 +54,7 @@ namespace SombraStudios.Shared.Systems.CloseCaptions
 
             m_Canvas.transform.forward = toCamera;
 
-            string entry = database.GetTextEntry(m_Source.clip, m_Source.time);
+            string entry = databaseSo.GetTextEntry(m_Source.clip, m_Source.time);
             m_Canvas.CCText.text = entry;
         }
 

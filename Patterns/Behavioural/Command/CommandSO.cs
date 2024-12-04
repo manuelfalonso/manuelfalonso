@@ -5,7 +5,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Command
     /// <summary>
     /// Abstract base class for command pattern implementation using ScriptableObject.
     /// </summary>
-    public abstract class CommandScriptableObject : ScriptableObject
+    public abstract class CommandSO : ScriptableObject
     {
         /// <summary>
         /// Tries to execute the command if it can be executed.

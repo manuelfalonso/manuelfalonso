@@ -11,6 +11,6 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
         /// </summary>
         /// <param name="key">the key to be checked</param>
         /// <returns>True if this keychain has the supplied key; false otherwise</returns>
-        bool Contains(Key key);
+        bool Contains(KeySO key);
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 namespace SombraStudios.Shared.Systems.LootBox
 {
     [CreateAssetMenu(fileName = "New Item Data", menuName = "Item Data", order = 51)]
-    public class Item : ScriptableObject
+    public class ItemSO : ScriptableObject
     {
         [SerializeField] private string _name;
         [SerializeField, Multiline] private string _description;
