@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
     /// <summary>  
     /// MonoBehaviour-based listener for multiple ScriptableObject events using Unity Events.  
     /// </summary>  
-    public class VoidEventMonoBehaviourListListener : MonoBehaviour
+    public class VoidEventChannelListListener : MonoBehaviour
     {
         [Header("Listen to Event Channels")]
 

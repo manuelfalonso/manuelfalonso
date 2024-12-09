@@ -10,7 +10,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
     /// - UnityEvents in the Editor don't support multi-parameters unless they are dynamic.  
     /// - If the object is disabled, it will stop listening.  
     /// </summary>  
-    public class VoidEventMonoBehaviourListener : MonoBehaviour
+    public class VoidEventChannelListener : MonoBehaviour
     {
         [Header("Listen to Event Channels")]
 
