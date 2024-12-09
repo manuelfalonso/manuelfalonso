@@ -100,9 +100,10 @@ namespace StyleSheet
     // - Name ScriptableObjects with the suffix "SO".
     // - Use Pascal case.
     // - Use the CreateAssetMenu attribute to create a menu item in the Unity Editor.
-    // - Use "SombraStudios" as the first part of the menuName.
-    [CreateAssetMenu(fileName = "New Item Data", menuName = "SombraStudios/Item Data")]
-    public class ItemSO : ScriptableObject
+    // - Use "Sombra Studios" as the first part of the menuName.
+    // - fileName without spaces
+    [CreateAssetMenu(fileName = "NewItemData", menuName = "Sombra Studios/Item Data")]
+    public class TestSO : ScriptableObject
     {
         [SerializeField] private string _name;
         [SerializeField, Multiline] private string _description;

@@ -12,7 +12,6 @@ namespace SombraStudios.Shared.TutorialSystem
     {
         [Header("Event Data")]
         [SerializeField] private VoidEventChannelSO _gameEvent;
-        [SerializeField] private VoidEventChannelSOListener _gameEventListener;
 
 
         public override IEnumerator ExecuteAction()
@@ -20,14 +19,15 @@ namespace SombraStudios.Shared.TutorialSystem
             if (!_active)
                 yield break;
 
-            if (_gameEvent == null || _gameEventListener == null)
+            if (_gameEvent == null)
                 throw new UnassignedReferenceException();
 
-            _gameEventListener.Response.AddListener(SetIsCompleted);
+            _gameEvent.OnEventRaised -= SetIsCompleted;
+            _gameEvent.OnEventRaised += SetIsCompleted;
 
             yield return new WaitUntil(() => IsCompleted);
-
-            _gameEventListener.Response.RemoveListener(SetIsCompleted);
+            
+            _gameEvent.OnEventRaised -= SetIsCompleted;
         }
 
         private void SetIsCompleted() => IsCompleted = true;

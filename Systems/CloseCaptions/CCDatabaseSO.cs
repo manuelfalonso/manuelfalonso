@@ -6,7 +6,7 @@ namespace SombraStudios.Shared.Systems.CloseCaptions
     /// <summary>
     /// Closed Caption Database is an asset that map given AudioClip to a list of lines and time used by the CCManager
     /// </summary>
-    [CreateAssetMenu(fileName = "CCDatabase", menuName = "ClosedCaption/CCDatabase")]
+    [CreateAssetMenu(fileName = "CCDatabase", menuName = "Sombra Studios/Closed Caption/CCDatabase")]
     public class CCDatabaseSO : ScriptableObject
     {
         [System.Serializable]
