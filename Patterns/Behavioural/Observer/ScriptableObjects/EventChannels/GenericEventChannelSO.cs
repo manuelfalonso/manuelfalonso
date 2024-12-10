@@ -14,7 +14,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
         /// The action to perform. Listeners subscribe to this UnityAction.
         /// </summary>
         [Tooltip("The action to perform. Listeners subscribe to this UnityAction")]
-        public event UnityAction<T> OnEventRaised;
+        public UnityAction<T> OnEventRaised;
 
         /// <summary>
         /// Raises the event with the specified parameter.

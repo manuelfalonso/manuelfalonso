@@ -1,19 +1,21 @@
 using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.UIElements;
+using UnityEditor.UIElements;
 
 namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Editor
 {
     /// <summary>
-    /// Custom editor for the VoidEventChannelSO scriptable object.
+    /// This Editor class creates a custom Inspector for event channels that carry a payload
+    /// (e.g., BoolEventChannelSO, FloatEventChannelSO, etc.). A ListView shows the subscribed
+    /// listeners in the scene. Click each item to ping it in the Hierarchy.
     /// </summary>
-    [CustomEditor(typeof(VoidEventChannelSO))]
-    public class VoidEventChannelSOEditor : UnityEditor.Editor
+    /// <typeparam name="T"></typeparam>
+    [CustomEditor(typeof(GenericEventChannelSO<>), true)]
+    public abstract class GenericEventChannelSOEditor<T> : UnityEditor.Editor
     {
-        // Reference to the original event channel (to set up button callback)
-        private VoidEventChannelSO m_EventChannel;
+        private GenericEventChannelSO<T> m_EventChannel;
 
         // Label and counter for items in the list
         private Label m_ListenersLabel;
@@ -23,7 +25,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.E
         private void OnEnable()
         {
             if (m_EventChannel == null)
-                m_EventChannel = target as VoidEventChannelSO;
+                m_EventChannel = target as GenericEventChannelSO<T>;
         }
 
         public override VisualElement CreateInspectorGUI()
@@ -52,7 +54,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.E
             // Button to test event
             m_RaiseEventButton = new Button();
             m_RaiseEventButton.text = "Raise Event";
-            m_RaiseEventButton.RegisterCallback<ClickEvent>(evt => m_EventChannel.RaiseEvent());
+            m_RaiseEventButton.RegisterCallback<ClickEvent>(evt => m_EventChannel.RaiseEvent(default(T)));
             m_RaiseEventButton.style.marginBottom = 20;
             m_RaiseEventButton.style.marginTop = 20;
             root.Add(m_RaiseEventButton);
