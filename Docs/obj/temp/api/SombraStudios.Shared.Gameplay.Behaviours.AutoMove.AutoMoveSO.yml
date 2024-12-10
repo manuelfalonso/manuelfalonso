@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  id: AutoMoveSO
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedX
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedY
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedZ
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.Space
+  langs:
+  - csharp
+  - vb
+  name: AutoMoveSO
+  nameWithType: AutoMoveSO
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoMoveSO
+    path: ../Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  summary: Settings for automatic movement of a GameObject.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AutoMoveSettings", menuName = "Sombra Studios/Behaviours/AutoMoveSettings")]
+
+      public class AutoMoveSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AutoMoveSettings", menuName:="Sombra Studios/Behaviours/AutoMoveSettings")>
+
+      Public Class AutoMoveSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AutoMoveSettings
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/AutoMoveSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedX
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedX
+  id: MovementSpeedX
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  langs:
+  - csharp
+  - vb
+  name: MovementSpeedX
+  nameWithType: AutoMoveSO.MovementSpeedX
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedX
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MovementSpeedX
+    path: ../Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  syntax:
+    content: >-
+      [Header("Movement Settings")]
+
+      public float MovementSpeedX
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Movement Settings")>
+
+      Public MovementSpeedX As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Movement Settings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedY
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedY
+  id: MovementSpeedY
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  langs:
+  - csharp
+  - vb
+  name: MovementSpeedY
+  nameWithType: AutoMoveSO.MovementSpeedY
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedY
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MovementSpeedY
+    path: ../Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  summary: The speed of movement along the Y axis.
+  example: []
+  syntax:
+    content: public float MovementSpeedY
+    return:
+      type: System.Single
+    content.vb: Public MovementSpeedY As Single
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedZ
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedZ
+  id: MovementSpeedZ
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  langs:
+  - csharp
+  - vb
+  name: MovementSpeedZ
+  nameWithType: AutoMoveSO.MovementSpeedZ
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.MovementSpeedZ
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MovementSpeedZ
+    path: ../Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  summary: The speed of movement along the Z axis.
+  example: []
+  syntax:
+    content: public float MovementSpeedZ
+    return:
+      type: System.Single
+    content.vb: Public MovementSpeedZ As Single
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.Space
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.Space
+  id: Space
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: AutoMoveSO.Space
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.AutoMoveSO.Space
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Space
+    path: ../Gameplay/Behaviours/AutoMove/AutoMoveSO.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  summary: The space in which the movement is applied (Self or World).
+  example: []
+  syntax:
+    content: public Space Space
+    return:
+      type: UnityEngine.Space
+    content.vb: Public Space As Space
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+    name: AutoMove
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoMove
+    name: AutoMove
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoMove.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Space
+  commentId: T:UnityEngine.Space
+  parent: UnityEngine
+  isExternal: true
+  name: Space
+  nameWithType: Space
+  fullName: UnityEngine.Space

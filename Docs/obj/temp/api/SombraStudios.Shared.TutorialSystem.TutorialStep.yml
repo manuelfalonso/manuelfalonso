@@ -5,7 +5,7 @@ items:
   id: TutorialStep
   parent: SombraStudios.Shared.TutorialSystem
   children:
-  - SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction})
+  - SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO})
   - SombraStudios.Shared.TutorialSystem.TutorialStep.Completed
   - SombraStudios.Shared.TutorialSystem.TutorialStep.ExecuteActions
   langs:
@@ -72,16 +72,16 @@ items:
       type: System.Boolean
     content.vb: Public Property Completed As Boolean
   overload: SombraStudios.Shared.TutorialSystem.TutorialStep.Completed*
-- uid: SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction})
-  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction})
-  id: '#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction})'
+- uid: SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO})
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO})
+  id: '#ctor(System.String,System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO})'
   parent: SombraStudios.Shared.TutorialSystem.TutorialStep
   langs:
   - csharp
   - vb
-  name: TutorialStep(string, List<TutorialAction>)
-  nameWithType: TutorialStep.TutorialStep(string, List<TutorialAction>)
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialStep.TutorialStep(string, System.Collections.Generic.List<SombraStudios.Shared.TutorialSystem.TutorialAction>)
+  name: TutorialStep(string, List<TutorialActionSO>)
+  nameWithType: TutorialStep.TutorialStep(string, List<TutorialActionSO>)
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialStep.TutorialStep(string, System.Collections.Generic.List<SombraStudios.Shared.TutorialSystem.TutorialActionSO>)
   type: Constructor
   source:
     remote:
@@ -95,17 +95,17 @@ items:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.TutorialSystem
   syntax:
-    content: public TutorialStep(string name, List<TutorialAction> actions)
+    content: public TutorialStep(string name, List<TutorialActionSO> actions)
     parameters:
     - id: name
       type: System.String
     - id: actions
-      type: System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction}
-    content.vb: Public Sub New(name As String, actions As List(Of TutorialAction))
+      type: System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO}
+    content.vb: Public Sub New(name As String, actions As List(Of TutorialActionSO))
   overload: SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor*
-  nameWithType.vb: TutorialStep.New(String, List(Of TutorialAction))
-  fullName.vb: SombraStudios.Shared.TutorialSystem.TutorialStep.New(String, System.Collections.Generic.List(Of SombraStudios.Shared.TutorialSystem.TutorialAction))
-  name.vb: New(String, List(Of TutorialAction))
+  nameWithType.vb: TutorialStep.New(String, List(Of TutorialActionSO))
+  fullName.vb: SombraStudios.Shared.TutorialSystem.TutorialStep.New(String, System.Collections.Generic.List(Of SombraStudios.Shared.TutorialSystem.TutorialActionSO))
+  name.vb: New(String, List(Of TutorialActionSO))
 - uid: SombraStudios.Shared.TutorialSystem.TutorialStep.ExecuteActions
   commentId: M:SombraStudios.Shared.TutorialSystem.TutorialStep.ExecuteActions
   id: ExecuteActions
@@ -202,7 +202,7 @@ references:
   name.vb: Boolean
 - uid: SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor*
   commentId: Overload:SombraStudios.Shared.TutorialSystem.TutorialStep.#ctor
-  href: SombraStudios.Shared.TutorialSystem.TutorialStep.html#SombraStudios_Shared_TutorialSystem_TutorialStep__ctor_System_String_System_Collections_Generic_List_SombraStudios_Shared_TutorialSystem_TutorialAction__
+  href: SombraStudios.Shared.TutorialSystem.TutorialStep.html#SombraStudios_Shared_TutorialSystem_TutorialStep__ctor_System_String_System_Collections_Generic_List_SombraStudios_Shared_TutorialSystem_TutorialActionSO__
   name: TutorialStep
   nameWithType: TutorialStep.TutorialStep
   fullName: SombraStudios.Shared.TutorialSystem.TutorialStep.TutorialStep
@@ -220,26 +220,26 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction}
-  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialAction}
+- uid: System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO}
+  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.TutorialSystem.TutorialActionSO}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<TutorialAction>
-  nameWithType: List<TutorialAction>
-  fullName: System.Collections.Generic.List<SombraStudios.Shared.TutorialSystem.TutorialAction>
-  nameWithType.vb: List(Of TutorialAction)
-  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.TutorialSystem.TutorialAction)
-  name.vb: List(Of TutorialAction)
+  name: List<TutorialActionSO>
+  nameWithType: List<TutorialActionSO>
+  fullName: System.Collections.Generic.List<SombraStudios.Shared.TutorialSystem.TutorialActionSO>
+  nameWithType.vb: List(Of TutorialActionSO)
+  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.TutorialSystem.TutorialActionSO)
+  name.vb: List(Of TutorialActionSO)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction
-    name: TutorialAction
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+    name: TutorialActionSO
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -249,9 +249,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction
-    name: TutorialAction
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+    name: TutorialActionSO
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1

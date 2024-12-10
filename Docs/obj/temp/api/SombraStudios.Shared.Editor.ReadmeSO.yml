@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Editor.ReadmeSO
+  commentId: T:SombraStudios.Shared.Editor.ReadmeSO
+  id: ReadmeSO
+  parent: SombraStudios.Shared.Editor
+  children:
+  - SombraStudios.Shared.Editor.ReadmeSO.header
+  - SombraStudios.Shared.Editor.ReadmeSO.sections
+  langs:
+  - csharp
+  - vb
+  name: ReadmeSO
+  nameWithType: ReadmeSO
+  fullName: SombraStudios.Shared.Editor.ReadmeSO
+  type: Class
+  source:
+    remote:
+      path: Editor/ReadmeSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReadmeSO
+    path: ../Editor/ReadmeSO.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  summary: >-
+    SO used for the Editor Readme Script
+
+    It supports Title, icon, headers, body, format, boxes, bullet list and links
+
+    Credits to: rich-joslin-unity
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Readme", menuName = "Readme file", order = 51)]
+
+      public class ReadmeSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Readme", menuName:="Readme file", order:=51)>
+
+      Public Class ReadmeSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Readme
+    - name: menuName
+      type: System.String
+      value: Readme file
+    - name: order
+      type: System.Int32
+      value: 51
+- uid: SombraStudios.Shared.Editor.ReadmeSO.header
+  commentId: F:SombraStudios.Shared.Editor.ReadmeSO.header
+  id: header
+  parent: SombraStudios.Shared.Editor.ReadmeSO
+  langs:
+  - csharp
+  - vb
+  name: header
+  nameWithType: ReadmeSO.header
+  fullName: SombraStudios.Shared.Editor.ReadmeSO.header
+  type: Field
+  source:
+    remote:
+      path: Editor/ReadmeSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: header
+    path: ../Editor/ReadmeSO.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  syntax:
+    content: public ReadmeSO.Header header
+    return:
+      type: SombraStudios.Shared.Editor.ReadmeSO.Header
+    content.vb: Public header As ReadmeSO.Header
+- uid: SombraStudios.Shared.Editor.ReadmeSO.sections
+  commentId: F:SombraStudios.Shared.Editor.ReadmeSO.sections
+  id: sections
+  parent: SombraStudios.Shared.Editor.ReadmeSO
+  langs:
+  - csharp
+  - vb
+  name: sections
+  nameWithType: ReadmeSO.sections
+  fullName: SombraStudios.Shared.Editor.ReadmeSO.sections
+  type: Field
+  source:
+    remote:
+      path: Editor/ReadmeSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: sections
+    path: ../Editor/ReadmeSO.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Editor
+  namespace: SombraStudios.Shared.Editor
+  syntax:
+    content: public ReadmeSO.Section[] sections
+    return:
+      type: SombraStudios.Shared.Editor.ReadmeSO.Section[]
+    content.vb: Public sections As ReadmeSO.Section()
+references:
+- uid: SombraStudios.Shared.Editor
+  commentId: N:SombraStudios.Shared.Editor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Editor
+  nameWithType: SombraStudios.Shared.Editor
+  fullName: SombraStudios.Shared.Editor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor
+    name: Editor
+    href: SombraStudios.Shared.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Editor.ReadmeSO.Header
+  commentId: T:SombraStudios.Shared.Editor.ReadmeSO.Header
+  parent: SombraStudios.Shared.Editor
+  href: SombraStudios.Shared.Editor.ReadmeSO.html
+  name: ReadmeSO.Header
+  nameWithType: ReadmeSO.Header
+  fullName: SombraStudios.Shared.Editor.ReadmeSO.Header
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.ReadmeSO
+    name: ReadmeSO
+    href: SombraStudios.Shared.Editor.ReadmeSO.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.ReadmeSO.Header
+    name: Header
+    href: SombraStudios.Shared.Editor.ReadmeSO.Header.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.ReadmeSO
+    name: ReadmeSO
+    href: SombraStudios.Shared.Editor.ReadmeSO.html
+  - name: .
+  - uid: SombraStudios.Shared.Editor.ReadmeSO.Header
+    name: Header
+    href: SombraStudios.Shared.Editor.ReadmeSO.Header.html
+- uid: SombraStudios.Shared.Editor.ReadmeSO.Section[]
+  isExternal: true
+  href: SombraStudios.Shared.Editor.ReadmeSO.Section.html
+  name: Section[]
+  nameWithType: ReadmeSO.Section[]
+  fullName: SombraStudios.Shared.Editor.ReadmeSO.Section[]
+  nameWithType.vb: ReadmeSO.Section()
+  fullName.vb: SombraStudios.Shared.Editor.ReadmeSO.Section()
+  name.vb: Section()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Editor.ReadmeSO.Section
+    name: Section
+    href: SombraStudios.Shared.Editor.ReadmeSO.Section.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SombraStudios.Shared.Editor.ReadmeSO.Section
+    name: Section
+    href: SombraStudios.Shared.Editor.ReadmeSO.Section.html
+  - name: (
+  - name: )

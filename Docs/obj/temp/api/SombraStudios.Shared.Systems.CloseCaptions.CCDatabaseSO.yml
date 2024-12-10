@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  id: CCDatabaseSO
+  parent: SombraStudios.Shared.Systems.CloseCaptions
+  children:
+  - SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap
+  - SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.DatabaseEntries
+  - SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry(UnityEngine.AudioClip,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: CCDatabaseSO
+  nameWithType: CCDatabaseSO
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  type: Class
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCDatabaseSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CCDatabaseSO
+    path: ../Systems/CloseCaptions/CCDatabaseSO.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  summary: Closed Caption Database is an asset that map given AudioClip to a list of lines and time used by the CCManager
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "CCDatabase", menuName = "Sombra Studios/Closed Caption/CCDatabase")]
+
+      public class CCDatabaseSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="CCDatabase", menuName:="Sombra Studios/Closed Caption/CCDatabase")>
+
+      Public Class CCDatabaseSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: CCDatabase
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Closed Caption/CCDatabase
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.DatabaseEntries
+  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.DatabaseEntries
+  id: DatabaseEntries
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  langs:
+  - csharp
+  - vb
+  name: DatabaseEntries
+  nameWithType: CCDatabaseSO.DatabaseEntries
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.DatabaseEntries
+  type: Field
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCDatabaseSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DatabaseEntries
+    path: ../Systems/CloseCaptions/CCDatabaseSO.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public CCDatabaseSO.Entry[] DatabaseEntries
+    return:
+      type: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry[]
+    content.vb: Public DatabaseEntries As CCDatabaseSO.Entry()
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap
+  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap
+  id: BuildMap
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  langs:
+  - csharp
+  - vb
+  name: BuildMap()
+  nameWithType: CCDatabaseSO.BuildMap()
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap()
+  type: Method
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCDatabaseSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BuildMap
+    path: ../Systems/CloseCaptions/CCDatabaseSO.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public void BuildMap()
+    content.vb: Public Sub BuildMap()
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap*
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry(UnityEngine.AudioClip,System.Single)
+  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry(UnityEngine.AudioClip,System.Single)
+  id: GetTextEntry(UnityEngine.AudioClip,System.Single)
+  parent: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  langs:
+  - csharp
+  - vb
+  name: GetTextEntry(AudioClip, float)
+  nameWithType: CCDatabaseSO.GetTextEntry(AudioClip, float)
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry(UnityEngine.AudioClip, float)
+  type: Method
+  source:
+    remote:
+      path: Systems/CloseCaptions/CCDatabaseSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetTextEntry
+    path: ../Systems/CloseCaptions/CCDatabaseSO.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.CloseCaptions
+  syntax:
+    content: public string GetTextEntry(AudioClip clip, float time)
+    parameters:
+    - id: clip
+      type: UnityEngine.AudioClip
+    - id: time
+      type: System.Single
+    return:
+      type: System.String
+    content.vb: Public Function GetTextEntry(clip As AudioClip, time As Single) As String
+  overload: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry*
+  nameWithType.vb: CCDatabaseSO.GetTextEntry(AudioClip, Single)
+  fullName.vb: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry(UnityEngine.AudioClip, Single)
+  name.vb: GetTextEntry(AudioClip, Single)
+references:
+- uid: SombraStudios.Shared.Systems.CloseCaptions
+  commentId: N:SombraStudios.Shared.Systems.CloseCaptions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.CloseCaptions
+  nameWithType: SombraStudios.Shared.Systems.CloseCaptions
+  fullName: SombraStudios.Shared.Systems.CloseCaptions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.CloseCaptions
+    name: CloseCaptions
+    href: SombraStudios.Shared.Systems.CloseCaptions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.CloseCaptions
+    name: CloseCaptions
+    href: SombraStudios.Shared.Systems.CloseCaptions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry[]
+  isExternal: true
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry.html
+  name: Entry[]
+  nameWithType: CCDatabaseSO.Entry[]
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry[]
+  nameWithType.vb: CCDatabaseSO.Entry()
+  fullName.vb: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry()
+  name.vb: Entry()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry
+    name: Entry
+    href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry
+    name: Entry
+    href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.Entry.html
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.html#SombraStudios_Shared_Systems_CloseCaptions_CCDatabaseSO_BuildMap
+  name: BuildMap
+  nameWithType: CCDatabaseSO.BuildMap
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.BuildMap
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry*
+  commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.html#SombraStudios_Shared_Systems_CloseCaptions_CCDatabaseSO_GetTextEntry_UnityEngine_AudioClip_System_Single_
+  name: GetTextEntry
+  nameWithType: CCDatabaseSO.GetTextEntry
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.GetTextEntry
+- uid: UnityEngine.AudioClip
+  commentId: T:UnityEngine.AudioClip
+  parent: UnityEngine
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: UnityEngine.AudioClip
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

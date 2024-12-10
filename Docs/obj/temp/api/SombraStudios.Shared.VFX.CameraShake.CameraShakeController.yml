@@ -5,8 +5,8 @@ items:
   id: CameraShakeController
   parent: SombraStudios.Shared.VFX.CameraShake
   children:
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
   langs:
   - csharp
   - vb
@@ -38,16 +38,16 @@ items:
   - UnityEngine.MonoBehaviour
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
-  commentId: M:SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
-  id: ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
+  commentId: M:SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
+  id: ShakeCamera(UnityEngine.Camera,SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
   parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeController
   langs:
   - csharp
   - vb
-  name: ShakeCamera(Camera, CameraShakeData)
-  nameWithType: CameraShakeController.ShakeCamera(Camera, CameraShakeData)
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera, SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
+  name: ShakeCamera(Camera, CameraShakeDataSO)
+  nameWithType: CameraShakeController.ShakeCamera(Camera, CameraShakeDataSO)
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(UnityEngine.Camera, SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
   type: Method
   source:
     remote:
@@ -61,24 +61,24 @@ items:
   - SombraStudios.Shared.VFX
   namespace: SombraStudios.Shared.VFX.CameraShake
   syntax:
-    content: public void ShakeCamera(Camera camera, CameraShakeData shakeData)
+    content: public void ShakeCamera(Camera camera, CameraShakeDataSO shakeData)
     parameters:
     - id: camera
       type: UnityEngine.Camera
     - id: shakeData
-      type: SombraStudios.Shared.VFX.CameraShake.CameraShakeData
-    content.vb: Public Sub ShakeCamera(camera As Camera, shakeData As CameraShakeData)
+      type: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+    content.vb: Public Sub ShakeCamera(camera As Camera, shakeData As CameraShakeDataSO)
   overload: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera*
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
-  commentId: M:SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
-  id: ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
+  commentId: M:SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
+  id: ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
   parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeController
   langs:
   - csharp
   - vb
-  name: ShakeCamera(CameraShakeData)
-  nameWithType: CameraShakeController.ShakeCamera(CameraShakeData)
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeData)
+  name: ShakeCamera(CameraShakeDataSO)
+  nameWithType: CameraShakeController.ShakeCamera(CameraShakeDataSO)
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera(SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO)
   type: Method
   source:
     remote:
@@ -92,11 +92,11 @@ items:
   - SombraStudios.Shared.VFX
   namespace: SombraStudios.Shared.VFX.CameraShake
   syntax:
-    content: public void ShakeCamera(CameraShakeData shakeData)
+    content: public void ShakeCamera(CameraShakeDataSO shakeData)
     parameters:
     - id: shakeData
-      type: SombraStudios.Shared.VFX.CameraShake.CameraShakeData
-    content.vb: Public Sub ShakeCamera(shakeData As CameraShakeData)
+      type: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+    content.vb: Public Sub ShakeCamera(shakeData As CameraShakeDataSO)
   overload: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera*
 references:
 - uid: SombraStudios.Shared.VFX.CameraShake
@@ -317,7 +317,7 @@ references:
     href: SombraStudios.Shared.Extensions.html
 - uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera*
   commentId: Overload:SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera
-  href: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.html#SombraStudios_Shared_VFX_CameraShake_CameraShakeController_ShakeCamera_UnityEngine_Camera_SombraStudios_Shared_VFX_CameraShake_CameraShakeData_
+  href: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.html#SombraStudios_Shared_VFX_CameraShake_CameraShakeController_ShakeCamera_UnityEngine_Camera_SombraStudios_Shared_VFX_CameraShake_CameraShakeDataSO_
   name: ShakeCamera
   nameWithType: CameraShakeController.ShakeCamera
   fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeController.ShakeCamera
@@ -328,10 +328,10 @@ references:
   name: Camera
   nameWithType: Camera
   fullName: UnityEngine.Camera
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeData
-  commentId: T:SombraStudios.Shared.VFX.CameraShake.CameraShakeData
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  commentId: T:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
   parent: SombraStudios.Shared.VFX.CameraShake
-  href: SombraStudios.Shared.VFX.CameraShake.CameraShakeData.html
-  name: CameraShakeData
-  nameWithType: CameraShakeData
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeData
+  href: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.html
+  name: CameraShakeDataSO
+  nameWithType: CameraShakeDataSO
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO

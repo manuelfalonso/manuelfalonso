@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  id: CommandSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+  langs:
+  - csharp
+  - vb
+  name: CommandSO
+  nameWithType: CommandSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CommandSO
+    path: ../Patterns/Behavioural/Command/CommandSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: Abstract base class for command pattern implementation using ScriptableObject.
+  example: []
+  syntax:
+    content: 'public abstract class CommandSO : ScriptableObject'
+    content.vb: Public MustInherit Class CommandSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  derivedClasses:
+  - SombraStudios.Shared.Utility.FrameRate.FrameRateCommand
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+  id: TryExecute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  langs:
+  - csharp
+  - vb
+  name: TryExecute()
+  nameWithType: CommandSO.TryExecute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryExecute
+    path: ../Patterns/Behavioural/Command/CommandSO.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: Tries to execute the command if it can be executed.
+  example: []
+  syntax:
+    content: public void TryExecute()
+    content.vb: Public Sub TryExecute()
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+  id: CanExecute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  langs:
+  - csharp
+  - vb
+  name: CanExecute()
+  nameWithType: CommandSO.CanExecute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanExecute
+    path: ../Patterns/Behavioural/Command/CommandSO.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: Determines whether the command can be executed.
+  example: []
+  syntax:
+    content: protected abstract bool CanExecute()
+    return:
+      type: System.Boolean
+      description: True if the command can be executed, otherwise false.
+    content.vb: Protected MustOverride Function CanExecute() As Boolean
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
+  id: Execute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: CommandSO.Execute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Execute
+    path: ../Patterns/Behavioural/Command/CommandSO.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: Executes the command.
+  example: []
+  syntax:
+    content: protected abstract void Execute()
+    content.vb: Protected MustOverride Sub Execute()
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Command
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Command
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Command
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandSO_TryExecute
+  name: TryExecute
+  nameWithType: CommandSO.TryExecute
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandSO_CanExecute
+  name: CanExecute
+  nameWithType: CommandSO.CanExecute
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandSO_Execute
+  name: Execute
+  nameWithType: CommandSO.Execute
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute

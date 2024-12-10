@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  id: AutoTorqueSO
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.ForceMode
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeX
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeY
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeZ
+  langs:
+  - csharp
+  - vb
+  name: AutoTorqueSO
+  nameWithType: AutoTorqueSO
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoTorqueSO
+    path: ../Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  summary: Settings for automatic torque application.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AutoTorqueSettings", menuName = "Sombra Studios/Behaviours/AutoTorqueSettings")]
+
+      public class AutoTorqueSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AutoTorqueSettings", menuName:="Sombra Studios/Behaviours/AutoTorqueSettings")>
+
+      Public Class AutoTorqueSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AutoTorqueSettings
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/AutoTorqueSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeX
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeX
+  id: TorqueSizeX
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  langs:
+  - csharp
+  - vb
+  name: TorqueSizeX
+  nameWithType: AutoTorqueSO.TorqueSizeX
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeX
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TorqueSizeX
+    path: ../Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  syntax:
+    content: >-
+      [Header("Torque Settings")]
+
+      [Range(-1000, 1000)]
+
+      public float TorqueSizeX
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Torque Settings")>
+
+      <Range(-1000, 1000)>
+
+      Public TorqueSizeX As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Torque Settings
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeY
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeY
+  id: TorqueSizeY
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  langs:
+  - csharp
+  - vb
+  name: TorqueSizeY
+  nameWithType: AutoTorqueSO.TorqueSizeY
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeY
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TorqueSizeY
+    path: ../Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  summary: Size of torque along the world y-axis.
+  example: []
+  syntax:
+    content: >-
+      [Range(-1000, 1000)]
+
+      public float TorqueSizeY
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(-1000, 1000)>
+
+      Public TorqueSizeY As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeZ
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeZ
+  id: TorqueSizeZ
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  langs:
+  - csharp
+  - vb
+  name: TorqueSizeZ
+  nameWithType: AutoTorqueSO.TorqueSizeZ
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.TorqueSizeZ
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TorqueSizeZ
+    path: ../Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  summary: Size of torque along the world z-axis.
+  example: []
+  syntax:
+    content: >-
+      [Range(-1000, 1000)]
+
+      public float TorqueSizeZ
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(-1000, 1000)>
+
+      Public TorqueSizeZ As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.ForceMode
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.ForceMode
+  id: ForceMode
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO
+  langs:
+  - csharp
+  - vb
+  name: ForceMode
+  nameWithType: AutoTorqueSO.ForceMode
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.AutoTorqueSO.ForceMode
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceMode
+    path: ../Gameplay/Behaviours/AutoTorque/AutoTorqueSO.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  summary: The type of torque to apply.
+  example: []
+  syntax:
+    content: public ForceMode ForceMode
+    return:
+      type: UnityEngine.ForceMode
+    content.vb: Public ForceMode As ForceMode
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+    name: AutoTorque
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque
+    name: AutoTorque
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoTorque.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.ForceMode
+  commentId: T:UnityEngine.ForceMode
+  parent: UnityEngine
+  isExternal: true
+  name: ForceMode
+  nameWithType: ForceMode
+  fullName: UnityEngine.ForceMode

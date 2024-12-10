@@ -7,7 +7,7 @@ items:
   children:
   - SombraStudios.Shared.Systems.CloseCaptions.CCSource.AlwaysTracked
   - SombraStudios.Shared.Systems.CloseCaptions.CCSource.CanvasPrefab
-  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO)
   - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Displayed
   - SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
   - SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
@@ -226,16 +226,16 @@ items:
       type: System.Boolean
     content.vb: Public ReadOnly Property IsPlaying As Boolean
   overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying*
-- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
-  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
-  id: Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO)
+  commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO)
+  id: Display(UnityEngine.Vector3,SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO)
   parent: SombraStudios.Shared.Systems.CloseCaptions.CCSource
   langs:
   - csharp
   - vb
-  name: Display(Vector3, CCDatabase)
-  nameWithType: CCSource.Display(Vector3, CCDatabase)
-  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3, SombraStudios.Shared.Systems.CloseCaptions.CCDatabase)
+  name: Display(Vector3, CCDatabaseSO)
+  nameWithType: CCSource.Display(Vector3, CCDatabaseSO)
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display(UnityEngine.Vector3, SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO)
   type: Method
   source:
     remote:
@@ -249,13 +249,13 @@ items:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.CloseCaptions
   syntax:
-    content: public void Display(Vector3 toCamera, CCDatabase database)
+    content: public void Display(Vector3 toCamera, CCDatabaseSO databaseSo)
     parameters:
     - id: toCamera
       type: UnityEngine.Vector3
-    - id: database
-      type: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
-    content.vb: Public Sub Display(toCamera As Vector3, database As CCDatabase)
+    - id: databaseSo
+      type: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+    content.vb: Public Sub Display(toCamera As Vector3, databaseSo As CCDatabaseSO)
   overload: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display*
 - uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
   commentId: M:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
@@ -575,7 +575,7 @@ references:
   fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.IsPlaying
 - uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display*
   commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display
-  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_Display_UnityEngine_Vector3_SombraStudios_Shared_Systems_CloseCaptions_CCDatabase_
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_Display_UnityEngine_Vector3_SombraStudios_Shared_Systems_CloseCaptions_CCDatabaseSO_
   name: Display
   nameWithType: CCSource.Display
   fullName: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Display
@@ -586,13 +586,13 @@ references:
   name: Vector3
   nameWithType: Vector3
   fullName: UnityEngine.Vector3
-- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
-  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
   parent: SombraStudios.Shared.Systems.CloseCaptions
-  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase.html
-  name: CCDatabase
-  nameWithType: CCDatabase
-  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.html
+  name: CCDatabaseSO
+  nameWithType: CCDatabaseSO
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
 - uid: SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide*
   commentId: Overload:SombraStudios.Shared.Systems.CloseCaptions.CCSource.Hide
   href: SombraStudios.Shared.Systems.CloseCaptions.CCSource.html#SombraStudios_Shared_Systems_CloseCaptions_CCSource_Hide

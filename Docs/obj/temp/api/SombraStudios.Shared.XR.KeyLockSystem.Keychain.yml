@@ -5,9 +5,9 @@ items:
   id: Keychain
   parent: SombraStudios.Shared.XR.KeyLockSystem
   children:
-  - SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  - SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  - SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  - SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  - SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  - SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   langs:
   - csharp
   - vb
@@ -27,7 +27,7 @@ items:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR.KeyLockSystem
   summary: >-
-    A generic Keychain component that holds the <xref href="SombraStudios.Shared.XR.KeyLockSystem.Key" data-throw-if-not-resolved="false"></xref>s to open a <xref href="SombraStudios.Shared.XR.KeyLockSystem.Lock" data-throw-if-not-resolved="false"></xref>.
+    A generic Keychain component that holds the <xref href="SombraStudios.Shared.XR.KeyLockSystem.KeySO" data-throw-if-not-resolved="false"></xref>s to open a <xref href="SombraStudios.Shared.XR.KeyLockSystem.Lock" data-throw-if-not-resolved="false"></xref>.
 
     Attach a Keychain component to an Interactable and assign to it the same Keys of an <xref href="SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor" data-throw-if-not-resolved="false"></xref>
 
@@ -56,16 +56,16 @@ items:
   - type: UnityEngine.DisallowMultipleComponent
     ctor: UnityEngine.DisallowMultipleComponent.#ctor
     arguments: []
-- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  id: AddKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  id: AddKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   parent: SombraStudios.Shared.XR.KeyLockSystem.Keychain
   langs:
   - csharp
   - vb
-  name: AddKey(Key)
-  nameWithType: Keychain.AddKey(Key)
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  name: AddKey(KeySO)
+  nameWithType: Keychain.AddKey(KeySO)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   type: Method
   source:
     remote:
@@ -81,23 +81,23 @@ items:
   summary: Adds the supplied key to this keychain
   example: []
   syntax:
-    content: public void AddKey(Key key)
+    content: public void AddKey(KeySO key)
     parameters:
     - id: key
-      type: SombraStudios.Shared.XR.KeyLockSystem.Key
+      type: SombraStudios.Shared.XR.KeyLockSystem.KeySO
       description: The key to be added to the keychain
-    content.vb: Public Sub AddKey(key As Key)
+    content.vb: Public Sub AddKey(key As KeySO)
   overload: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey*
-- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  id: RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  id: RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   parent: SombraStudios.Shared.XR.KeyLockSystem.Keychain
   langs:
   - csharp
   - vb
-  name: RemoveKey(Key)
-  nameWithType: Keychain.RemoveKey(Key)
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  name: RemoveKey(KeySO)
+  nameWithType: Keychain.RemoveKey(KeySO)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   type: Method
   source:
     remote:
@@ -113,23 +113,23 @@ items:
   summary: Adds the supplied key from this keychain
   example: []
   syntax:
-    content: public void RemoveKey(Key key)
+    content: public void RemoveKey(KeySO key)
     parameters:
     - id: key
-      type: SombraStudios.Shared.XR.KeyLockSystem.Key
+      type: SombraStudios.Shared.XR.KeyLockSystem.KeySO
       description: The key to be removed from the keychain
-    content.vb: Public Sub RemoveKey(key As Key)
+    content.vb: Public Sub RemoveKey(key As KeySO)
   overload: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey*
-- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  id: Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+- uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  id: Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   parent: SombraStudios.Shared.XR.KeyLockSystem.Keychain
   langs:
   - csharp
   - vb
-  name: Contains(Key)
-  nameWithType: Keychain.Contains(Key)
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  name: Contains(KeySO)
+  nameWithType: Keychain.Contains(KeySO)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   type: Method
   source:
     remote:
@@ -145,26 +145,26 @@ items:
   summary: This callback is used to check if this keychain has a specific <code>Key</code><xref href="SombraStudios.Shared.XR.KeyLockSystem.Lock" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
-    content: public bool Contains(Key key)
+    content: public bool Contains(KeySO key)
     parameters:
     - id: key
-      type: SombraStudios.Shared.XR.KeyLockSystem.Key
+      type: SombraStudios.Shared.XR.KeyLockSystem.KeySO
       description: the key to be checked
     return:
       type: System.Boolean
       description: True if this keychain has the supplied key; false otherwise
-    content.vb: Public Function Contains(key As Key) As Boolean
+    content.vb: Public Function Contains(key As KeySO) As Boolean
   overload: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains*
   implements:
-  - SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  - SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
 references:
-- uid: SombraStudios.Shared.XR.KeyLockSystem.Key
-  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.Key
+- uid: SombraStudios.Shared.XR.KeyLockSystem.KeySO
+  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.KeySO
   parent: SombraStudios.Shared.XR.KeyLockSystem
-  href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
-  name: Key
-  nameWithType: Key
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.Key
+  href: SombraStudios.Shared.XR.KeyLockSystem.KeySO.html
+  name: KeySO
+  nameWithType: KeySO
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.KeySO
 - uid: SombraStudios.Shared.XR.KeyLockSystem.Lock
   commentId: T:SombraStudios.Shared.XR.KeyLockSystem.Lock
   parent: SombraStudios.Shared.XR.KeyLockSystem
@@ -409,46 +409,46 @@ references:
     href: SombraStudios.Shared.Extensions.html
 - uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey*
   commentId: Overload:SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey
-  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html#SombraStudios_Shared_XR_KeyLockSystem_Keychain_AddKey_SombraStudios_Shared_XR_KeyLockSystem_Key_
+  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html#SombraStudios_Shared_XR_KeyLockSystem_Keychain_AddKey_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
   name: AddKey
   nameWithType: Keychain.AddKey
   fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.AddKey
 - uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey*
   commentId: Overload:SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey
-  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html#SombraStudios_Shared_XR_KeyLockSystem_Keychain_RemoveKey_SombraStudios_Shared_XR_KeyLockSystem_Key_
+  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html#SombraStudios_Shared_XR_KeyLockSystem_Keychain_RemoveKey_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
   name: RemoveKey
   nameWithType: Keychain.RemoveKey
   fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.RemoveKey
 - uid: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains*
   commentId: Overload:SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains
-  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html#SombraStudios_Shared_XR_KeyLockSystem_Keychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_Key_
+  href: SombraStudios.Shared.XR.KeyLockSystem.Keychain.html#SombraStudios_Shared_XR_KeyLockSystem_Keychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
   name: Contains
   nameWithType: Keychain.Contains
   fullName: SombraStudios.Shared.XR.KeyLockSystem.Keychain.Contains
-- uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+- uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   parent: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
-  href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_Key_
-  name: Contains(Key)
-  nameWithType: IKeychain.Contains(Key)
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
+  name: Contains(KeySO)
+  nameWithType: IKeychain.Contains(KeySO)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   spec.csharp:
-  - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
     name: Contains
-    href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_Key_
+    href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
   - name: (
-  - uid: SombraStudios.Shared.XR.KeyLockSystem.Key
-    name: Key
-    href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.KeySO
+    name: KeySO
+    href: SombraStudios.Shared.XR.KeyLockSystem.KeySO.html
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
     name: Contains
-    href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_Key_
+    href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
   - name: (
-  - uid: SombraStudios.Shared.XR.KeyLockSystem.Key
-    name: Key
-    href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.KeySO
+    name: KeySO
+    href: SombraStudios.Shared.XR.KeyLockSystem.KeySO.html
   - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean

@@ -30,23 +30,23 @@ items:
     content: >-
       [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Checkpoint Action", order = 3)]
 
-      public class CheckpointAction : TutorialAction, ISerializationCallbackReceiver
+      public class CheckpointAction : TutorialActionSO, ISerializationCallbackReceiver
     content.vb: >-
       <CreateAssetMenu(fileName:="New Tutorial Action", menuName:="Sombra Studios/Tutorial/Checkpoint Action", order:=3)>
 
-      Public Class CheckpointAction Inherits TutorialAction Implements ISerializationCallbackReceiver
+      Public Class CheckpointAction Inherits TutorialActionSO Implements ISerializationCallbackReceiver
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
-  - SombraStudios.Shared.TutorialSystem.TutorialAction
+  - SombraStudios.Shared.TutorialSystem.TutorialActionSO
   implements:
   - UnityEngine.ISerializationCallbackReceiver
   inheritedMembers:
-  - SombraStudios.Shared.TutorialSystem.TutorialAction._active
-  - SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
-  - SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
-  - SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+  - SombraStudios.Shared.TutorialSystem.TutorialActionSO._active
+  - SombraStudios.Shared.TutorialSystem.TutorialActionSO._isCompletedInitialValue
+  - SombraStudios.Shared.TutorialSystem.TutorialActionSO.IsCompleted
+  - SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnBeforeSerialize
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -89,7 +89,7 @@ items:
     return:
       type: System.Collections.IEnumerator
     content.vb: Public Overrides Function ExecuteAction() As IEnumerator
-  overridden: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+  overridden: SombraStudios.Shared.TutorialSystem.TutorialActionSO.ExecuteAction
   overload: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction*
 - uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
   commentId: M:SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize
@@ -118,7 +118,7 @@ items:
   syntax:
     content: public override void OnAfterDeserialize()
     content.vb: Public Overrides Sub OnAfterDeserialize()
-  overridden: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+  overridden: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnAfterDeserialize
   overload: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize*
 - uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached
   commentId: M:SombraStudios.Shared.TutorialSystem.CheckpointAction.SetCheckpointReached
@@ -202,13 +202,13 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction
-  commentId: T:SombraStudios.Shared.TutorialSystem.TutorialAction
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  commentId: T:SombraStudios.Shared.TutorialSystem.TutorialActionSO
   parent: SombraStudios.Shared.TutorialSystem
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html
-  name: TutorialAction
-  nameWithType: TutorialAction
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html
+  name: TutorialActionSO
+  nameWithType: TutorialActionSO
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO
 - uid: UnityEngine.ISerializationCallbackReceiver
   commentId: T:UnityEngine.ISerializationCallbackReceiver
   parent: UnityEngine
@@ -216,44 +216,44 @@ references:
   name: ISerializationCallbackReceiver
   nameWithType: ISerializationCallbackReceiver
   fullName: UnityEngine.ISerializationCallbackReceiver
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction._active
-  commentId: F:SombraStudios.Shared.TutorialSystem.TutorialAction._active
-  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction__active
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO._active
+  commentId: F:SombraStudios.Shared.TutorialSystem.TutorialActionSO._active
+  parent: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO__active
   name: _active
-  nameWithType: TutorialAction._active
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction._active
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
-  commentId: F:SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
-  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction__isCompletedInitialValue
+  nameWithType: TutorialActionSO._active
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO._active
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO._isCompletedInitialValue
+  commentId: F:SombraStudios.Shared.TutorialSystem.TutorialActionSO._isCompletedInitialValue
+  parent: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO__isCompletedInitialValue
   name: _isCompletedInitialValue
-  nameWithType: TutorialAction._isCompletedInitialValue
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction._isCompletedInitialValue
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
-  commentId: P:SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
-  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_IsCompleted
+  nameWithType: TutorialActionSO._isCompletedInitialValue
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO._isCompletedInitialValue
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.IsCompleted
+  commentId: P:SombraStudios.Shared.TutorialSystem.TutorialActionSO.IsCompleted
+  parent: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_IsCompleted
   name: IsCompleted
-  nameWithType: TutorialAction.IsCompleted
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.IsCompleted
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
-  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
-  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnBeforeSerialize
+  nameWithType: TutorialActionSO.IsCompleted
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO.IsCompleted
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnBeforeSerialize
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnBeforeSerialize
+  parent: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_OnBeforeSerialize
   name: OnBeforeSerialize()
-  nameWithType: TutorialAction.OnBeforeSerialize()
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize()
+  nameWithType: TutorialActionSO.OnBeforeSerialize()
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnBeforeSerialize()
   spec.csharp:
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnBeforeSerialize
     name: OnBeforeSerialize
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnBeforeSerialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_OnBeforeSerialize
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnBeforeSerialize
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnBeforeSerialize
     name: OnBeforeSerialize
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnBeforeSerialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_OnBeforeSerialize
   - name: (
   - name: )
 - uid: System
@@ -269,23 +269,23 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
-  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
-  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_ExecuteAction
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.ExecuteAction
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialActionSO.ExecuteAction
+  parent: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_ExecuteAction
   name: ExecuteAction()
-  nameWithType: TutorialAction.ExecuteAction()
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction()
+  nameWithType: TutorialActionSO.ExecuteAction()
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO.ExecuteAction()
   spec.csharp:
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.ExecuteAction
     name: ExecuteAction
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_ExecuteAction
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_ExecuteAction
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.ExecuteAction
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.ExecuteAction
     name: ExecuteAction
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_ExecuteAction
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_ExecuteAction
   - name: (
   - name: )
 - uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.ExecuteAction*
@@ -329,23 +329,23 @@ references:
     name: Collections
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections
-- uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
-  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
-  parent: SombraStudios.Shared.TutorialSystem.TutorialAction
-  href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnAfterDeserialize
+- uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnAfterDeserialize
+  parent: SombraStudios.Shared.TutorialSystem.TutorialActionSO
+  href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_OnAfterDeserialize
   name: OnAfterDeserialize()
-  nameWithType: TutorialAction.OnAfterDeserialize()
-  fullName: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize()
+  nameWithType: TutorialActionSO.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnAfterDeserialize()
   spec.csharp:
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnAfterDeserialize
     name: OnAfterDeserialize
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnAfterDeserialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_OnAfterDeserialize
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.TutorialSystem.TutorialAction.OnAfterDeserialize
+  - uid: SombraStudios.Shared.TutorialSystem.TutorialActionSO.OnAfterDeserialize
     name: OnAfterDeserialize
-    href: SombraStudios.Shared.TutorialSystem.TutorialAction.html#SombraStudios_Shared_TutorialSystem_TutorialAction_OnAfterDeserialize
+    href: SombraStudios.Shared.TutorialSystem.TutorialActionSO.html#SombraStudios_Shared_TutorialSystem_TutorialActionSO_OnAfterDeserialize
   - name: (
   - name: )
 - uid: SombraStudios.Shared.TutorialSystem.CheckpointAction.OnAfterDeserialize*

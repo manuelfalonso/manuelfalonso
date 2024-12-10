@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition
+  id: ITransition
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
+  langs:
+  - csharp
+  - vb
+  name: ITransition
+  nameWithType: ITransition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition
+  type: Interface
+  source:
+    remote:
+      path: Patterns/Behavioural/FiniteStateMachine/ITransition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ITransition
+    path: ../Patterns/Behavioural/FiniteStateMachine/ITransition.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  summary: Interface for a transition between states in a state machine.
+  example: []
+  syntax:
+    content: public interface ITransition
+    content.vb: Public Interface ITransition
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
+  id: To
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: ITransition.To
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/FiniteStateMachine/ITransition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: To
+    path: ../Patterns/Behavioural/FiniteStateMachine/ITransition.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  summary: The state to transition to.
+  example: []
+  syntax:
+    content: IState To { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
+    content.vb: ReadOnly Property [To] As IState
+  overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To*
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
+  id: Condition
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: ITransition.Condition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/FiniteStateMachine/ITransition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Condition
+    path: ../Patterns/Behavioural/FiniteStateMachine/ITransition.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  summary: The condition predicate for the transition.
+  example: []
+  syntax:
+    content: IPredicate Condition { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+    content.vb: ReadOnly Property Condition As IPredicate
+  overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+    name: FiniteStateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+    name: FiniteStateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_ITransition_To
+  name: To
+  nameWithType: ITransition.To
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState.html
+  name: IState
+  nameWithType: IState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_ITransition_Condition
+  name: Condition
+  nameWithType: ITransition.Condition
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html
+  name: IPredicate
+  nameWithType: IPredicate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate

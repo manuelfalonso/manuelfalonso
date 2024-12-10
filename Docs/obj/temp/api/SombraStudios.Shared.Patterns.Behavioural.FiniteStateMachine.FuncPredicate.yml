@@ -1,0 +1,281 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate
+  id: FuncPredicate
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.#ctor(System.Func{System.Boolean})
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate
+  langs:
+  - csharp
+  - vb
+  name: FuncPredicate
+  nameWithType: FuncPredicate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/FiniteStateMachine/FuncPredicate.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FuncPredicate
+    path: ../Patterns/Behavioural/FiniteStateMachine/FuncPredicate.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  summary: Predicate based on a function delegate.
+  example: []
+  syntax:
+    content: 'public class FuncPredicate : IPredicate'
+    content.vb: Public Class FuncPredicate Implements IPredicate
+  inheritance:
+  - System.Object
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.#ctor(System.Func{System.Boolean})
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.#ctor(System.Func{System.Boolean})
+  id: '#ctor(System.Func{System.Boolean})'
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate
+  langs:
+  - csharp
+  - vb
+  name: FuncPredicate(Func<bool>)
+  nameWithType: FuncPredicate.FuncPredicate(Func<bool>)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.FuncPredicate(System.Func<bool>)
+  type: Constructor
+  source:
+    remote:
+      path: Patterns/Behavioural/FiniteStateMachine/FuncPredicate.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Patterns/Behavioural/FiniteStateMachine/FuncPredicate.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  syntax:
+    content: public FuncPredicate(Func<bool> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{System.Boolean}
+    content.vb: Public Sub New(predicate As Func(Of Boolean))
+  overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.#ctor*
+  nameWithType.vb: FuncPredicate.New(Func(Of Boolean))
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.New(System.Func(Of Boolean))
+  name.vb: New(Func(Of Boolean))
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate
+  id: Evaluate
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate
+  langs:
+  - csharp
+  - vb
+  name: Evaluate()
+  nameWithType: FuncPredicate.Evaluate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/FiniteStateMachine/FuncPredicate.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Evaluate
+    path: ../Patterns/Behavioural/FiniteStateMachine/FuncPredicate.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  summary: Evaluates the condition and returns the result.
+  example: []
+  syntax:
+    content: public bool Evaluate()
+    return:
+      type: System.Boolean
+      description: True if the condition is met, otherwise false.
+    content.vb: Public Function Evaluate() As Boolean
+  overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.Evaluate
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+    name: FiniteStateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+    name: FiniteStateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html
+  name: IPredicate
+  nameWithType: IPredicate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.#ctor*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.#ctor
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_FuncPredicate__ctor_System_Func_System_Boolean__
+  name: FuncPredicate
+  nameWithType: FuncPredicate.FuncPredicate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.FuncPredicate
+  nameWithType.vb: FuncPredicate.New
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.New
+  name.vb: New
+- uid: System.Func{System.Boolean}
+  commentId: T:System.Func{System.Boolean}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<bool>
+  nameWithType: Func<bool>
+  fullName: System.Func<bool>
+  nameWithType.vb: Func(Of Boolean)
+  fullName.vb: System.Func(Of Boolean)
+  name.vb: Func(Of Boolean)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_FuncPredicate_Evaluate
+  name: Evaluate
+  nameWithType: FuncPredicate.Evaluate
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.FuncPredicate.Evaluate
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.Evaluate
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.Evaluate
+  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IPredicate_Evaluate
+  name: Evaluate()
+  nameWithType: IPredicate.Evaluate()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.Evaluate()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.Evaluate
+    name: Evaluate
+    href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IPredicate_Evaluate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.Evaluate
+    name: Evaluate
+    href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IPredicate_Evaluate
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

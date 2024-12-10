@@ -1,0 +1,263 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO
+  commentId: T:SombraStudios.Shared.Utility.AnimationCurveValueSO
+  id: AnimationCurveValueSO
+  parent: SombraStudios.Shared.Utility
+  children:
+  - SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve
+  - SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact(System.Single)
+  - SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: AnimationCurveValueSO
+  nameWithType: AnimationCurveValueSO
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO
+  type: Class
+  source:
+    remote:
+      path: Utility/AnimationCurveValueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AnimationCurveValueSO
+    path: ../Utility/AnimationCurveValueSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  summary: Scriptable object to use Animation Curves as values
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Animation Curve Value", menuName = "Sombra Studios/Curve Value", order = 51)]
+
+      public class AnimationCurveValueSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Animation Curve Value", menuName:="Sombra Studios/Curve Value", order:=51)>
+
+      Public Class AnimationCurveValueSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Animation Curve Value
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Curve Value
+    - name: order
+      type: System.Int32
+      value: 51
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve
+  commentId: P:SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve
+  id: Curve
+  parent: SombraStudios.Shared.Utility.AnimationCurveValueSO
+  langs:
+  - csharp
+  - vb
+  name: Curve
+  nameWithType: AnimationCurveValueSO.Curve
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve
+  type: Property
+  source:
+    remote:
+      path: Utility/AnimationCurveValueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Curve
+    path: ../Utility/AnimationCurveValueSO.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  syntax:
+    content: public AnimationCurve Curve { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.AnimationCurve
+    content.vb: Public Property Curve As AnimationCurve
+  overload: SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve*
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact(System.Single)
+  id: GetValueExact(System.Single)
+  parent: SombraStudios.Shared.Utility.AnimationCurveValueSO
+  langs:
+  - csharp
+  - vb
+  name: GetValueExact(float)
+  nameWithType: AnimationCurveValueSO.GetValueExact(float)
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact(float)
+  type: Method
+  source:
+    remote:
+      path: Utility/AnimationCurveValueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetValueExact
+    path: ../Utility/AnimationCurveValueSO.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  syntax:
+    content: public float GetValueExact(float time)
+    parameters:
+    - id: time
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function GetValueExact(time As Single) As Single
+  overload: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact*
+  nameWithType.vb: AnimationCurveValueSO.GetValueExact(Single)
+  fullName.vb: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact(Single)
+  name.vb: GetValueExact(Single)
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized(System.Single)
+  id: GetValueNormalized(System.Single)
+  parent: SombraStudios.Shared.Utility.AnimationCurveValueSO
+  langs:
+  - csharp
+  - vb
+  name: GetValueNormalized(float)
+  nameWithType: AnimationCurveValueSO.GetValueNormalized(float)
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized(float)
+  type: Method
+  source:
+    remote:
+      path: Utility/AnimationCurveValueSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetValueNormalized
+    path: ../Utility/AnimationCurveValueSO.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility
+  summary: Get value from the curve by a normalized time parameter 0 to 1.
+  example: []
+  syntax:
+    content: public float GetValueNormalized(float normalizedTime)
+    parameters:
+    - id: normalizedTime
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetValueNormalized(normalizedTime As Single) As Single
+  overload: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized*
+  nameWithType.vb: AnimationCurveValueSO.GetValueNormalized(Single)
+  fullName.vb: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized(Single)
+  name.vb: GetValueNormalized(Single)
+references:
+- uid: SombraStudios.Shared.Utility
+  commentId: N:SombraStudios.Shared.Utility
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility
+  nameWithType: SombraStudios.Shared.Utility
+  fullName: SombraStudios.Shared.Utility
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve*
+  commentId: Overload:SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve
+  href: SombraStudios.Shared.Utility.AnimationCurveValueSO.html#SombraStudios_Shared_Utility_AnimationCurveValueSO_Curve
+  name: Curve
+  nameWithType: AnimationCurveValueSO.Curve
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO.Curve
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact*
+  commentId: Overload:SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact
+  href: SombraStudios.Shared.Utility.AnimationCurveValueSO.html#SombraStudios_Shared_Utility_AnimationCurveValueSO_GetValueExact_System_Single_
+  name: GetValueExact
+  nameWithType: AnimationCurveValueSO.GetValueExact
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueExact
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized*
+  commentId: Overload:SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized
+  href: SombraStudios.Shared.Utility.AnimationCurveValueSO.html#SombraStudios_Shared_Utility_AnimationCurveValueSO_GetValueNormalized_System_Single_
+  name: GetValueNormalized
+  nameWithType: AnimationCurveValueSO.GetValueNormalized
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO.GetValueNormalized

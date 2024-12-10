@@ -33,18 +33,18 @@ items:
     content: >-
       [CreateAssetMenu(fileName = "FrameRateCommand", menuName = "Sombra Studios/Commands/Frame Rate Command")]
 
-      public class FrameRateCommand : CommandScriptableObject
+      public class FrameRateCommand : CommandSO
     content.vb: >-
       <CreateAssetMenu(fileName:="FrameRateCommand", menuName:="Sombra Studios/Commands/Frame Rate Command")>
 
-      Public Class FrameRateCommand Inherits CommandScriptableObject
+      Public Class FrameRateCommand Inherits CommandSO
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
-  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
   inheritedMembers:
-  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -168,7 +168,7 @@ items:
       type: System.Boolean
       description: True if the command can be executed, otherwise false.
     content.vb: Protected Overrides Function CanExecute() As Boolean
-  overridden: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+  overridden: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
   overload: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute*
 - uid: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute
   commentId: M:SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute
@@ -197,7 +197,7 @@ items:
   syntax:
     content: protected override void Execute()
     content.vb: Protected Overrides Sub Execute()
-  overridden: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+  overridden: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
   overload: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.Execute*
 references:
 - uid: SombraStudios.Shared.Utility.FrameRate
@@ -263,26 +263,26 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
-- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
   parent: SombraStudios.Shared.Patterns.Behavioural.Command
-  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.html
-  name: CommandScriptableObject
-  nameWithType: CommandScriptableObject
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
-- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
-  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
-  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.html
+  name: CommandSO
+  nameWithType: CommandSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
   name: TryExecute()
-  nameWithType: CommandScriptableObject.TryExecute()
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute()
+  nameWithType: CommandSO.TryExecute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute()
   spec.csharp:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
     name: TryExecute
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.TryExecute
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.TryExecute
     name: TryExecute
   - name: (
   - name: )
@@ -367,19 +367,19 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
-  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
-  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
   name: CanExecute()
-  nameWithType: CommandScriptableObject.CanExecute()
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute()
+  nameWithType: CommandSO.CanExecute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute()
   spec.csharp:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
     name: CanExecute
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.CanExecute
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.CanExecute
     name: CanExecute
   - name: (
   - name: )
@@ -389,19 +389,19 @@ references:
   name: CanExecute
   nameWithType: FrameRateCommand.CanExecute
   fullName: SombraStudios.Shared.Utility.FrameRate.FrameRateCommand.CanExecute
-- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
-  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
-  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
   name: Execute()
-  nameWithType: CommandScriptableObject.Execute()
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute()
+  nameWithType: CommandSO.Execute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute()
   spec.csharp:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
     name: Execute
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject.Execute
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.Execute
     name: Execute
   - name: (
   - name: )

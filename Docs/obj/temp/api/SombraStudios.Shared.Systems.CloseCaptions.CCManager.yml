@@ -5,7 +5,7 @@ items:
   id: CCManager
   parent: SombraStudios.Shared.Systems.CloseCaptions
   children:
-  - SombraStudios.Shared.Systems.CloseCaptions.CCManager.Database
+  - SombraStudios.Shared.Systems.CloseCaptions.CCManager.DatabaseSO
   - SombraStudios.Shared.Systems.CloseCaptions.CCManager.IndicatorCanvas
   - SombraStudios.Shared.Systems.CloseCaptions.CCManager.IndicatorPrefab
   - SombraStudios.Shared.Systems.CloseCaptions.CCManager.Instance
@@ -86,33 +86,33 @@ items:
       type: SombraStudios.Shared.Systems.CloseCaptions.CCManager
     content.vb: Public Shared ReadOnly Property Instance As CCManager
   overload: SombraStudios.Shared.Systems.CloseCaptions.CCManager.Instance*
-- uid: SombraStudios.Shared.Systems.CloseCaptions.CCManager.Database
-  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCManager.Database
-  id: Database
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCManager.DatabaseSO
+  commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCManager.DatabaseSO
+  id: DatabaseSO
   parent: SombraStudios.Shared.Systems.CloseCaptions.CCManager
   langs:
   - csharp
   - vb
-  name: Database
-  nameWithType: CCManager.Database
-  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCManager.Database
+  name: DatabaseSO
+  nameWithType: CCManager.DatabaseSO
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCManager.DatabaseSO
   type: Field
   source:
     remote:
       path: Systems/CloseCaptions/CCManager.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: Database
+    id: DatabaseSO
     path: ../Systems/CloseCaptions/CCManager.cs
     startLine: 15
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.CloseCaptions
   syntax:
-    content: public CCDatabase Database
+    content: public CCDatabaseSO DatabaseSO
     return:
-      type: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
-    content.vb: Public Database As CCDatabase
+      type: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+    content.vb: Public DatabaseSO As CCDatabaseSO
 - uid: SombraStudios.Shared.Systems.CloseCaptions.CCManager.IndicatorCanvas
   commentId: F:SombraStudios.Shared.Systems.CloseCaptions.CCManager.IndicatorCanvas
   id: IndicatorCanvas
@@ -455,13 +455,13 @@ references:
   name: CCManager
   nameWithType: CCManager
   fullName: SombraStudios.Shared.Systems.CloseCaptions.CCManager
-- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
-  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+- uid: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
+  commentId: T:SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
   parent: SombraStudios.Shared.Systems.CloseCaptions
-  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase.html
-  name: CCDatabase
-  nameWithType: CCDatabase
-  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabase
+  href: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO.html
+  name: CCDatabaseSO
+  nameWithType: CCDatabaseSO
+  fullName: SombraStudios.Shared.Systems.CloseCaptions.CCDatabaseSO
 - uid: UnityEngine.Canvas
   commentId: T:UnityEngine.Canvas
   parent: UnityEngine

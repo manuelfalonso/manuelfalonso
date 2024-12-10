@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  id: AutoRotateSO
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedX
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedY
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedZ
+  - SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.Space
+  langs:
+  - csharp
+  - vb
+  name: AutoRotateSO
+  nameWithType: AutoRotateSO
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoRotateSO
+    path: ../Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  summary: Settings for automatic rotation of a GameObject.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AutoRotateSettings", menuName = "Sombra Studios/Behaviours/AutoRotateSettings")]
+
+      public class AutoRotateSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AutoRotateSettings", menuName:="Sombra Studios/Behaviours/AutoRotateSettings")>
+
+      Public Class AutoRotateSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AutoRotateSettings
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/AutoRotateSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedX
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedX
+  id: RotationSpeedX
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  langs:
+  - csharp
+  - vb
+  name: RotationSpeedX
+  nameWithType: AutoRotateSO.RotationSpeedX
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedX
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RotationSpeedX
+    path: ../Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  syntax:
+    content: >-
+      [Header("Rotation Settings")]
+
+      [Range(-1000, 1000)]
+
+      public float RotationSpeedX
+    return:
+      type: System.Single
+    content.vb: >-
+      <Header("Rotation Settings")>
+
+      <Range(-1000, 1000)>
+
+      Public RotationSpeedX As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Rotation Settings
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedY
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedY
+  id: RotationSpeedY
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  langs:
+  - csharp
+  - vb
+  name: RotationSpeedY
+  nameWithType: AutoRotateSO.RotationSpeedY
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedY
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RotationSpeedY
+    path: ../Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  summary: The speed of rotation around the Y axis.
+  example: []
+  syntax:
+    content: >-
+      [Range(-1000, 1000)]
+
+      public float RotationSpeedY
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(-1000, 1000)>
+
+      Public RotationSpeedY As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedZ
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedZ
+  id: RotationSpeedZ
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  langs:
+  - csharp
+  - vb
+  name: RotationSpeedZ
+  nameWithType: AutoRotateSO.RotationSpeedZ
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.RotationSpeedZ
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RotationSpeedZ
+    path: ../Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  summary: The speed of rotation around the Z axis.
+  example: []
+  syntax:
+    content: >-
+      [Range(-1000, 1000)]
+
+      public float RotationSpeedZ
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(-1000, 1000)>
+
+      Public RotationSpeedZ As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: -1000
+    - type: System.Single
+      value: 1000
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.Space
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.Space
+  id: Space
+  parent: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: AutoRotateSO.Space
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.AutoRotateSO.Space
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Space
+    path: ../Gameplay/Behaviours/AutoRotate/AutoRotateSO.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  summary: The space in which the rotation is applied (Self or World).
+  example: []
+  syntax:
+    content: public Space Space
+    return:
+      type: UnityEngine.Space
+    content.vb: Public Space As Space
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+    name: AutoRotate
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate
+    name: AutoRotate
+    href: SombraStudios.Shared.Gameplay.Behaviours.AutoRotate.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Space
+  commentId: T:UnityEngine.Space
+  parent: UnityEngine
+  isExternal: true
+  name: Space
+  nameWithType: Space
+  fullName: UnityEngine.Space

@@ -53,7 +53,7 @@ items:
   fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO(Of T)
   name.vb: GenericEventChannelSO(Of T)
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.OnEventRaised
-  commentId: E:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.OnEventRaised
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.OnEventRaised
   id: OnEventRaised
   parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
   langs:
@@ -62,7 +62,7 @@ items:
   name: OnEventRaised
   nameWithType: GenericEventChannelSO<T>.OnEventRaised
   fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO<T>.OnEventRaised
-  type: Event
+  type: Field
   source:
     remote:
       path: Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/GenericEventChannelSO.cs
@@ -80,13 +80,13 @@ items:
     content: >-
       [Tooltip("The action to perform. Listeners subscribe to this UnityAction")]
 
-      public event UnityAction<T> OnEventRaised
+      public UnityAction<T> OnEventRaised
     return:
       type: UnityEngine.Events.UnityAction{{T}}
     content.vb: >-
       <Tooltip("The action to perform. Listeners subscribe to this UnityAction")>
 
-      Public Event OnEventRaised As UnityAction(Of T)
+      Public OnEventRaised As UnityAction(Of T)
   attributes:
   - type: UnityEngine.TooltipAttribute
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)

@@ -1,0 +1,310 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  id: ResourceSO`1
+  parent: SombraStudios.Shared.Systems.Resource
+  children:
+  - SombraStudios.Shared.Systems.Resource.ResourceSO`1.Description
+  - SombraStudios.Shared.Systems.Resource.ResourceSO`1.InitialAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSO`1.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSO`1.MinAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSO`1.Name
+  langs:
+  - csharp
+  - vb
+  name: ResourceSO<T>
+  nameWithType: ResourceSO<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResourceSO
+    path: ../Systems/Resource/Generics/ResourceSO.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: ScriptableObject class to hold resource data.
+  example: []
+  syntax:
+    content: 'public class ResourceSO<T> : ScriptableObject where T : struct'
+    typeParameters:
+    - id: T
+      description: The type of the resource amount.
+    content.vb: Public Class ResourceSO(Of T As Structure) Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO`1
+  nameWithType.vb: ResourceSO(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T)
+  name.vb: ResourceSO(Of T)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.Name
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.Name
+  id: Name
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ResourceSO<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.Name
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Name
+    path: ../Systems/Resource/Generics/ResourceSO.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The name of the resource.
+  example: []
+  syntax:
+    content: public string Name
+    return:
+      type: System.String
+    content.vb: Public Name As String
+  nameWithType.vb: ResourceSO(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.Description
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.Description
+  id: Description
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: ResourceSO<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.Description
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../Systems/Resource/Generics/ResourceSO.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The description of the resource.
+  example: []
+  syntax:
+    content: >-
+      [Multiline]
+
+      public string Description
+    return:
+      type: System.String
+    content.vb: >-
+      <Multiline>
+
+      Public Description As String
+  attributes:
+  - type: UnityEngine.MultilineAttribute
+    ctor: UnityEngine.MultilineAttribute.#ctor
+    arguments: []
+  nameWithType.vb: ResourceSO(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.MinAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.MinAmount
+  id: MinAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  langs:
+  - csharp
+  - vb
+  name: MinAmount
+  nameWithType: ResourceSO<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.MinAmount
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MinAmount
+    path: ../Systems/Resource/Generics/ResourceSO.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The minimum amount of the resource.
+  example: []
+  syntax:
+    content: public T MinAmount
+    return:
+      type: '{T}'
+    content.vb: Public MinAmount As T
+  nameWithType.vb: ResourceSO(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.MaxAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.MaxAmount
+  id: MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  langs:
+  - csharp
+  - vb
+  name: MaxAmount
+  nameWithType: ResourceSO<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.MaxAmount
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxAmount
+    path: ../Systems/Resource/Generics/ResourceSO.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The maximum amount of the resource.
+  example: []
+  syntax:
+    content: public T MaxAmount
+    return:
+      type: '{T}'
+    content.vb: Public MaxAmount As T
+  nameWithType.vb: ResourceSO(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.InitialAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.InitialAmount
+  id: InitialAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  langs:
+  - csharp
+  - vb
+  name: InitialAmount
+  nameWithType: ResourceSO<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.InitialAmount
+  type: Field
+  source:
+    remote:
+      path: Systems/Resource/Generics/ResourceSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InitialAmount
+    path: ../Systems/Resource/Generics/ResourceSO.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Resource
+  summary: The initial amount of the resource.
+  example: []
+  syntax:
+    content: public T InitialAmount
+    return:
+      type: '{T}'
+    content.vb: Public InitialAmount As T
+  nameWithType.vb: ResourceSO(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).InitialAmount
+references:
+- uid: SombraStudios.Shared.Systems.Resource
+  commentId: N:SombraStudios.Shared.Systems.Resource
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Resource
+  nameWithType: SombraStudios.Shared.Systems.Resource
+  fullName: SombraStudios.Shared.Systems.Resource
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Resource
+    name: Resource
+    href: SombraStudios.Shared.Systems.Resource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

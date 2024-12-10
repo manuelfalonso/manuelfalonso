@@ -5,7 +5,7 @@ items:
   id: IKeychain
   parent: SombraStudios.Shared.XR.KeyLockSystem
   children:
-  - SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  - SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   langs:
   - csharp
   - vb
@@ -29,16 +29,16 @@ items:
   syntax:
     content: public interface IKeychain
     content.vb: Public Interface IKeychain
-- uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
-  id: Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+- uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  commentId: M:SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  id: Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   parent: SombraStudios.Shared.XR.KeyLockSystem.IKeychain
   langs:
   - csharp
   - vb
-  name: Contains(Key)
-  nameWithType: IKeychain.Contains(Key)
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.Key)
+  name: Contains(KeySO)
+  nameWithType: IKeychain.Contains(KeySO)
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains(SombraStudios.Shared.XR.KeyLockSystem.KeySO)
   type: Method
   source:
     remote:
@@ -57,15 +57,15 @@ items:
     <xref href="SombraStudios.Shared.XR.KeyLockSystem.Lock" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
-    content: bool Contains(Key key)
+    content: bool Contains(KeySO key)
     parameters:
     - id: key
-      type: SombraStudios.Shared.XR.KeyLockSystem.Key
+      type: SombraStudios.Shared.XR.KeyLockSystem.KeySO
       description: the key to be checked
     return:
       type: System.Boolean
       description: True if this keychain has the supplied key; false otherwise
-    content.vb: Function Contains(key As Key) As Boolean
+    content.vb: Function Contains(key As KeySO) As Boolean
   overload: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains*
 references:
 - uid: SombraStudios.Shared.XR.KeyLockSystem
@@ -115,17 +115,17 @@ references:
   fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock
 - uid: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains*
   commentId: Overload:SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains
-  href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_Key_
+  href: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.html#SombraStudios_Shared_XR_KeyLockSystem_IKeychain_Contains_SombraStudios_Shared_XR_KeyLockSystem_KeySO_
   name: Contains
   nameWithType: IKeychain.Contains
   fullName: SombraStudios.Shared.XR.KeyLockSystem.IKeychain.Contains
-- uid: SombraStudios.Shared.XR.KeyLockSystem.Key
-  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.Key
+- uid: SombraStudios.Shared.XR.KeyLockSystem.KeySO
+  commentId: T:SombraStudios.Shared.XR.KeyLockSystem.KeySO
   parent: SombraStudios.Shared.XR.KeyLockSystem
-  href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
-  name: Key
-  nameWithType: Key
-  fullName: SombraStudios.Shared.XR.KeyLockSystem.Key
+  href: SombraStudios.Shared.XR.KeyLockSystem.KeySO.html
+  name: KeySO
+  nameWithType: KeySO
+  fullName: SombraStudios.Shared.XR.KeyLockSystem.KeySO
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

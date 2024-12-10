@@ -12,7 +12,7 @@ items:
   - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Paused
   - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
   - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resumed
-  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValueSO)
   - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.TimeScaleChanged
   - SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.UpdatesPerSecond
   langs:
@@ -308,16 +308,16 @@ items:
     content: public void Resume()
     content.vb: Public Sub [Resume]()
   overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume*
-- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
-  commentId: M:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
-  id: SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+- uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValueSO)
+  commentId: M:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValueSO)
+  id: SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValueSO)
   parent: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager
   langs:
   - csharp
   - vb
-  name: SetTimeScale(AnimationCurveValue)
-  nameWithType: TimeScaleManager.SetTimeScale(AnimationCurveValue)
-  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValue)
+  name: SetTimeScale(AnimationCurveValueSO)
+  nameWithType: TimeScaleManager.SetTimeScale(AnimationCurveValueSO)
+  fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale(SombraStudios.Shared.Utility.AnimationCurveValueSO)
   type: Method
   source:
     remote:
@@ -333,15 +333,15 @@ items:
   summary: ''
   example: []
   syntax:
-    content: public bool SetTimeScale(AnimationCurveValue timeScaleData)
+    content: public bool SetTimeScale(AnimationCurveValueSO timeScaleData)
     parameters:
     - id: timeScaleData
-      type: SombraStudios.Shared.Utility.AnimationCurveValue
+      type: SombraStudios.Shared.Utility.AnimationCurveValueSO
       description: TimeScale changed succesfully
     return:
       type: System.Boolean
       description: ''
-    content.vb: Public Function SetTimeScale(timeScaleData As AnimationCurveValue) As Boolean
+    content.vb: Public Function SetTimeScale(timeScaleData As AnimationCurveValueSO) As Boolean
   overload: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale*
 references:
 - uid: SombraStudios.Shared.Utility.TimeScale
@@ -976,17 +976,17 @@ references:
   fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.Resume
 - uid: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale*
   commentId: Overload:SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale
-  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_SetTimeScale_SombraStudios_Shared_Utility_AnimationCurveValue_
+  href: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.html#SombraStudios_Shared_Utility_TimeScale_TimeScaleManager_SetTimeScale_SombraStudios_Shared_Utility_AnimationCurveValueSO_
   name: SetTimeScale
   nameWithType: TimeScaleManager.SetTimeScale
   fullName: SombraStudios.Shared.Utility.TimeScale.TimeScaleManager.SetTimeScale
-- uid: SombraStudios.Shared.Utility.AnimationCurveValue
-  commentId: T:SombraStudios.Shared.Utility.AnimationCurveValue
+- uid: SombraStudios.Shared.Utility.AnimationCurveValueSO
+  commentId: T:SombraStudios.Shared.Utility.AnimationCurveValueSO
   parent: SombraStudios.Shared.Utility
-  href: SombraStudios.Shared.Utility.AnimationCurveValue.html
-  name: AnimationCurveValue
-  nameWithType: AnimationCurveValue
-  fullName: SombraStudios.Shared.Utility.AnimationCurveValue
+  href: SombraStudios.Shared.Utility.AnimationCurveValueSO.html
+  name: AnimationCurveValueSO
+  nameWithType: AnimationCurveValueSO
+  fullName: SombraStudios.Shared.Utility.AnimationCurveValueSO
 - uid: SombraStudios.Shared.Utility
   commentId: N:SombraStudios.Shared.Utility
   href: SombraStudios.html

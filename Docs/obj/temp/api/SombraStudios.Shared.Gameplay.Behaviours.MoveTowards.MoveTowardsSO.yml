@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO
+  commentId: T:SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO
+  id: MoveTowardsSO
+  parent: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  children:
+  - SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.MaxDistanceDelta
+  - SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.TargetPosition
+  langs:
+  - csharp
+  - vb
+  name: MoveTowardsSO
+  nameWithType: MoveTowardsSO
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Behaviours/MoveTowards/MoveTowardsSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MoveTowardsSO
+    path: ../Gameplay/Behaviours/MoveTowards/MoveTowardsSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  summary: ScriptableObject to store settings for the Move Towards functionality.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "MoveTowardsSettings", menuName = "Sombra Studios/Behaviours/MoveTowardsSettings")]
+
+      public class MoveTowardsSO : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="MoveTowardsSettings", menuName:="Sombra Studios/Behaviours/MoveTowardsSettings")>
+
+      Public Class MoveTowardsSO Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: MoveTowardsSettings
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Behaviours/MoveTowardsSettings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.TargetPosition
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.TargetPosition
+  id: TargetPosition
+  parent: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO
+  langs:
+  - csharp
+  - vb
+  name: TargetPosition
+  nameWithType: MoveTowardsSO.TargetPosition
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.TargetPosition
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/MoveTowards/MoveTowardsSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TargetPosition
+    path: ../Gameplay/Behaviours/MoveTowards/MoveTowardsSO.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  syntax:
+    content: >-
+      [Header("Move Towards Settings")]
+
+      public Vector3 TargetPosition
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Header("Move Towards Settings")>
+
+      Public TargetPosition As Vector3
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Move Towards Settings
+- uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.MaxDistanceDelta
+  commentId: F:SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.MaxDistanceDelta
+  id: MaxDistanceDelta
+  parent: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO
+  langs:
+  - csharp
+  - vb
+  name: MaxDistanceDelta
+  nameWithType: MoveTowardsSO.MaxDistanceDelta
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.MoveTowardsSO.MaxDistanceDelta
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Behaviours/MoveTowards/MoveTowardsSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxDistanceDelta
+    path: ../Gameplay/Behaviours/MoveTowards/MoveTowardsSO.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  summary: >-
+    The maximum distance to move towards the target per frame. Can be negtive to move away in opposite 
+
+    direction from target.
+  example: []
+  syntax:
+    content: public float MaxDistanceDelta
+    return:
+      type: System.Single
+    content.vb: Public MaxDistanceDelta As Single
+references:
+- uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  commentId: N:SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  nameWithType: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  fullName: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+    name: MoveTowards
+    href: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours
+    name: Behaviours
+    href: SombraStudios.Shared.Gameplay.Behaviours.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards
+    name: MoveTowards
+    href: SombraStudios.Shared.Gameplay.Behaviours.MoveTowards.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

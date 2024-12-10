@@ -5,7 +5,7 @@ items:
   id: StatContainer
   parent: SombraStudios.Shared.Systems.Stats
   children:
-  - SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)
+  - SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheetSO)
   - SombraStudios.Shared.Systems.Stats.StatContainer.Stats
   - SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue``1(System.String,``0@)
   langs:
@@ -74,16 +74,16 @@ items:
       type: System.Collections.Generic.Dictionary{System.String,SombraStudios.Shared.Systems.Stats.IBaseStat}
     content.vb: Public ReadOnly Property Stats As Dictionary(Of String, IBaseStat)
   overload: SombraStudios.Shared.Systems.Stats.StatContainer.Stats*
-- uid: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)
-  commentId: M:SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)
-  id: '#ctor(SombraStudios.Shared.Systems.Stats.StatSheet)'
+- uid: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheetSO)
+  commentId: M:SombraStudios.Shared.Systems.Stats.StatContainer.#ctor(SombraStudios.Shared.Systems.Stats.StatSheetSO)
+  id: '#ctor(SombraStudios.Shared.Systems.Stats.StatSheetSO)'
   parent: SombraStudios.Shared.Systems.Stats.StatContainer
   langs:
   - csharp
   - vb
-  name: StatContainer(StatSheet)
-  nameWithType: StatContainer.StatContainer(StatSheet)
-  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.StatContainer(SombraStudios.Shared.Systems.Stats.StatSheet)
+  name: StatContainer(StatSheetSO)
+  nameWithType: StatContainer.StatContainer(StatSheetSO)
+  fullName: SombraStudios.Shared.Systems.Stats.StatContainer.StatContainer(SombraStudios.Shared.Systems.Stats.StatSheetSO)
   type: Constructor
   source:
     remote:
@@ -99,16 +99,16 @@ items:
   summary: Constructs a new stat container with a stat sheet.
   example: []
   syntax:
-    content: public StatContainer(StatSheet statSheet)
+    content: public StatContainer(StatSheetSO statSheet)
     parameters:
     - id: statSheet
-      type: SombraStudios.Shared.Systems.Stats.StatSheet
+      type: SombraStudios.Shared.Systems.Stats.StatSheetSO
       description: The stat sheet to use for initializing the container.
-    content.vb: Public Sub New(statSheet As StatSheet)
+    content.vb: Public Sub New(statSheet As StatSheetSO)
   overload: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor*
-  nameWithType.vb: StatContainer.New(StatSheet)
-  fullName.vb: SombraStudios.Shared.Systems.Stats.StatContainer.New(SombraStudios.Shared.Systems.Stats.StatSheet)
-  name.vb: New(StatSheet)
+  nameWithType.vb: StatContainer.New(StatSheetSO)
+  fullName.vb: SombraStudios.Shared.Systems.Stats.StatContainer.New(SombraStudios.Shared.Systems.Stats.StatSheetSO)
+  name.vb: New(StatSheetSO)
 - uid: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue``1(System.String,``0@)
   commentId: M:SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue``1(System.String,``0@)
   id: TryGetValue``1(System.String,``0@)
@@ -333,20 +333,20 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: SombraStudios.Shared.Systems.Stats.StatContainer.#ctor*
   commentId: Overload:SombraStudios.Shared.Systems.Stats.StatContainer.#ctor
-  href: SombraStudios.Shared.Systems.Stats.StatContainer.html#SombraStudios_Shared_Systems_Stats_StatContainer__ctor_SombraStudios_Shared_Systems_Stats_StatSheet_
+  href: SombraStudios.Shared.Systems.Stats.StatContainer.html#SombraStudios_Shared_Systems_Stats_StatContainer__ctor_SombraStudios_Shared_Systems_Stats_StatSheetSO_
   name: StatContainer
   nameWithType: StatContainer.StatContainer
   fullName: SombraStudios.Shared.Systems.Stats.StatContainer.StatContainer
   nameWithType.vb: StatContainer.New
   fullName.vb: SombraStudios.Shared.Systems.Stats.StatContainer.New
   name.vb: New
-- uid: SombraStudios.Shared.Systems.Stats.StatSheet
-  commentId: T:SombraStudios.Shared.Systems.Stats.StatSheet
+- uid: SombraStudios.Shared.Systems.Stats.StatSheetSO
+  commentId: T:SombraStudios.Shared.Systems.Stats.StatSheetSO
   parent: SombraStudios.Shared.Systems.Stats
-  href: SombraStudios.Shared.Systems.Stats.StatSheet.html
-  name: StatSheet
-  nameWithType: StatSheet
-  fullName: SombraStudios.Shared.Systems.Stats.StatSheet
+  href: SombraStudios.Shared.Systems.Stats.StatSheetSO.html
+  name: StatSheetSO
+  nameWithType: StatSheetSO
+  fullName: SombraStudios.Shared.Systems.Stats.StatSheetSO
 - uid: SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue*
   commentId: Overload:SombraStudios.Shared.Systems.Stats.StatContainer.TryGetValue
   href: SombraStudios.Shared.Systems.Stats.StatContainer.html#SombraStudios_Shared_Systems_Stats_StatContainer_TryGetValue__1_System_String___0__

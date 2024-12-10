@@ -28,25 +28,25 @@ items:
   summary: ScriptableObject class to hold resource system data with cooldown durations.
   example: []
   syntax:
-    content: 'public class ResourceSystemDataSO<T> : ResourceData<T> where T : struct'
+    content: 'public class ResourceSystemDataSO<T> : ResourceSO<T> where T : struct'
     typeParameters:
     - id: T
       description: The type of the resource amount.
-    content.vb: Public Class ResourceSystemDataSO(Of T As Structure) Inherits ResourceData(Of T)
+    content.vb: Public Class ResourceSystemDataSO(Of T As Structure) Inherits ResourceSO(Of T)
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
-  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
+  - SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
   derivedClasses:
   - SombraStudios.Shared.Systems.Resource.FloatResourceSystemData
   - SombraStudios.Shared.Systems.Resource.IntResourceSystemData
   inheritedMembers:
-  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Name
-  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Description
-  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MinAmount
-  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MaxAmount
-  - SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.InitialAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.Name
+  - SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.Description
+  - SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.MinAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.MaxAmount
+  - SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.InitialAmount
   nameWithType.vb: ResourceSystemDataSO(Of T)
   fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSystemDataSO(Of T)
   name.vb: ResourceSystemDataSO(Of T)
@@ -200,83 +200,83 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
-  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceData{`0}
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSO{`0}
   parent: SombraStudios.Shared.Systems.Resource
-  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
-  name: ResourceData<T>
-  nameWithType: ResourceData<T>
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>
-  nameWithType.vb: ResourceData(Of T)
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T)
-  name.vb: ResourceData(Of T)
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html
+  name: ResourceSO<T>
+  nameWithType: ResourceSO<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>
+  nameWithType.vb: ResourceSO(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T)
+  name.vb: ResourceSO(Of T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
-    name: ResourceData
-    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+    name: ResourceSO
+    href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
-    name: ResourceData
-    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+    name: ResourceSO
+    href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Name
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.Name
-  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
-  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.Name
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.Name
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO{`0}.Name
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSO`1.Name
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_Name
   name: Name
-  nameWithType: ResourceData<T>.Name
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Name
-  nameWithType.vb: ResourceData(Of T).Name
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Name
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.Description
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.Description
-  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
-  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.Description
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Description
+  nameWithType: ResourceSO<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.Name
+  nameWithType.vb: ResourceSO(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.Description
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO{`0}.Description
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSO`1.Description
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_Description
   name: Description
-  nameWithType: ResourceData<T>.Description
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Description
-  nameWithType.vb: ResourceData(Of T).Description
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Description
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MinAmount
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.MinAmount
-  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
-  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.MinAmount
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MinAmount
+  nameWithType: ResourceSO<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.Description
+  nameWithType.vb: ResourceSO(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.MinAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO{`0}.MinAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSO`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_MinAmount
   name: MinAmount
-  nameWithType: ResourceData<T>.MinAmount
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MinAmount
-  nameWithType.vb: ResourceData(Of T).MinAmount
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MinAmount
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.MaxAmount
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.MaxAmount
-  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
-  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.MaxAmount
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MaxAmount
+  nameWithType: ResourceSO<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.MinAmount
+  nameWithType.vb: ResourceSO(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.MaxAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO{`0}.MaxAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSO`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_MaxAmount
   name: MaxAmount
-  nameWithType: ResourceData<T>.MaxAmount
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MaxAmount
-  nameWithType.vb: ResourceData(Of T).MaxAmount
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MaxAmount
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}.InitialAmount
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData{`0}.InitialAmount
-  parent: SombraStudios.Shared.Systems.Resource.ResourceData{{T}}
-  definition: SombraStudios.Shared.Systems.Resource.ResourceData`1.InitialAmount
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_InitialAmount
+  nameWithType: ResourceSO<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.MaxAmount
+  nameWithType.vb: ResourceSO(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}.InitialAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO{`0}.InitialAmount
+  parent: SombraStudios.Shared.Systems.Resource.ResourceSO{{T}}
+  definition: SombraStudios.Shared.Systems.Resource.ResourceSO`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_InitialAmount
   name: InitialAmount
-  nameWithType: ResourceData<T>.InitialAmount
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.InitialAmount
-  nameWithType.vb: ResourceData(Of T).InitialAmount
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).InitialAmount
+  nameWithType: ResourceSO<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.InitialAmount
+  nameWithType.vb: ResourceSO(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).InitialAmount
 - uid: System
   commentId: N:System
   isExternal: true
@@ -290,71 +290,71 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
-  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceData`1
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
-  name: ResourceData<T>
-  nameWithType: ResourceData<T>
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>
-  nameWithType.vb: ResourceData(Of T)
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T)
-  name.vb: ResourceData(Of T)
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  commentId: T:SombraStudios.Shared.Systems.Resource.ResourceSO`1
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html
+  name: ResourceSO<T>
+  nameWithType: ResourceSO<T>
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>
+  nameWithType.vb: ResourceSO(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T)
+  name.vb: ResourceSO(Of T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
-    name: ResourceData
-    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+    name: ResourceSO
+    href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: SombraStudios.Shared.Systems.Resource.ResourceData`1
-    name: ResourceData
-    href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html
+  - uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1
+    name: ResourceSO
+    href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.Name
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.Name
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.Name
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.Name
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_Name
   name: Name
-  nameWithType: ResourceData<T>.Name
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Name
-  nameWithType.vb: ResourceData(Of T).Name
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Name
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.Description
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.Description
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_Description
+  nameWithType: ResourceSO<T>.Name
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.Name
+  nameWithType.vb: ResourceSO(Of T).Name
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).Name
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.Description
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.Description
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_Description
   name: Description
-  nameWithType: ResourceData<T>.Description
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.Description
-  nameWithType.vb: ResourceData(Of T).Description
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).Description
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.MinAmount
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.MinAmount
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MinAmount
+  nameWithType: ResourceSO<T>.Description
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.Description
+  nameWithType.vb: ResourceSO(Of T).Description
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).Description
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.MinAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.MinAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_MinAmount
   name: MinAmount
-  nameWithType: ResourceData<T>.MinAmount
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MinAmount
-  nameWithType.vb: ResourceData(Of T).MinAmount
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MinAmount
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.MaxAmount
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.MaxAmount
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_MaxAmount
+  nameWithType: ResourceSO<T>.MinAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.MinAmount
+  nameWithType.vb: ResourceSO(Of T).MinAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).MinAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.MaxAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.MaxAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_MaxAmount
   name: MaxAmount
-  nameWithType: ResourceData<T>.MaxAmount
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.MaxAmount
-  nameWithType.vb: ResourceData(Of T).MaxAmount
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).MaxAmount
-- uid: SombraStudios.Shared.Systems.Resource.ResourceData`1.InitialAmount
-  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceData`1.InitialAmount
-  href: SombraStudios.Shared.Systems.Resource.ResourceData-1.html#SombraStudios_Shared_Systems_Resource_ResourceData_1_InitialAmount
+  nameWithType: ResourceSO<T>.MaxAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.MaxAmount
+  nameWithType.vb: ResourceSO(Of T).MaxAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).MaxAmount
+- uid: SombraStudios.Shared.Systems.Resource.ResourceSO`1.InitialAmount
+  commentId: F:SombraStudios.Shared.Systems.Resource.ResourceSO`1.InitialAmount
+  href: SombraStudios.Shared.Systems.Resource.ResourceSO-1.html#SombraStudios_Shared_Systems_Resource_ResourceSO_1_InitialAmount
   name: InitialAmount
-  nameWithType: ResourceData<T>.InitialAmount
-  fullName: SombraStudios.Shared.Systems.Resource.ResourceData<T>.InitialAmount
-  nameWithType.vb: ResourceData(Of T).InitialAmount
-  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceData(Of T).InitialAmount
+  nameWithType: ResourceSO<T>.InitialAmount
+  fullName: SombraStudios.Shared.Systems.Resource.ResourceSO<T>.InitialAmount
+  nameWithType.vb: ResourceSO(Of T).InitialAmount
+  fullName.vb: SombraStudios.Shared.Systems.Resource.ResourceSO(Of T).InitialAmount
 - uid: System.Single
   commentId: T:System.Single
   parent: System

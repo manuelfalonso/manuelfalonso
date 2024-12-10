@@ -77,11 +77,11 @@ items:
   summary: Returns the required keys to unlock this lock.
   example: []
   syntax:
-    content: public List<Key> RequiredKeys { get; }
+    content: public List<KeySO> RequiredKeys { get; }
     parameters: []
     return:
-      type: System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.Key}
-    content.vb: Public ReadOnly Property RequiredKeys As List(Of Key)
+      type: System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.KeySO}
+    content.vb: Public ReadOnly Property RequiredKeys As List(Of KeySO)
   overload: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys*
 - uid: SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
   commentId: M:SombraStudios.Shared.XR.KeyLockSystem.Lock.CanUnlock(SombraStudios.Shared.XR.KeyLockSystem.IKeychain)
@@ -223,26 +223,26 @@ references:
   name: RequiredKeys
   nameWithType: Lock.RequiredKeys
   fullName: SombraStudios.Shared.XR.KeyLockSystem.Lock.RequiredKeys
-- uid: System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.Key}
-  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.Key}
+- uid: System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.KeySO}
+  commentId: T:System.Collections.Generic.List{SombraStudios.Shared.XR.KeyLockSystem.KeySO}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<Key>
-  nameWithType: List<Key>
-  fullName: System.Collections.Generic.List<SombraStudios.Shared.XR.KeyLockSystem.Key>
-  nameWithType.vb: List(Of Key)
-  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.XR.KeyLockSystem.Key)
-  name.vb: List(Of Key)
+  name: List<KeySO>
+  nameWithType: List<KeySO>
+  fullName: System.Collections.Generic.List<SombraStudios.Shared.XR.KeyLockSystem.KeySO>
+  nameWithType.vb: List(Of KeySO)
+  fullName.vb: System.Collections.Generic.List(Of SombraStudios.Shared.XR.KeyLockSystem.KeySO)
+  name.vb: List(Of KeySO)
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-  - uid: SombraStudios.Shared.XR.KeyLockSystem.Key
-    name: Key
-    href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.KeySO
+    name: KeySO
+    href: SombraStudios.Shared.XR.KeyLockSystem.KeySO.html
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
@@ -252,9 +252,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: SombraStudios.Shared.XR.KeyLockSystem.Key
-    name: Key
-    href: SombraStudios.Shared.XR.KeyLockSystem.Key.html
+  - uid: SombraStudios.Shared.XR.KeyLockSystem.KeySO
+    name: KeySO
+    href: SombraStudios.Shared.XR.KeyLockSystem.KeySO.html
   - name: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
