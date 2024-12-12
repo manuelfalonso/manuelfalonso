@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.UnityGizmos.MonoBehaviours
+namespace SombraStudios.Shared.Utility.UnityGizmos
 {
     /// <summary>
     /// Draws a line starting at from towards to

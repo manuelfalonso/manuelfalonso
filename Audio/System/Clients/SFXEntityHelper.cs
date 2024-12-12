@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace SombraStudios.Shared.Audio.System.Clients
+namespace SombraStudios.Shared.Audio.System
 {
     /// <summary>
     /// Helper class for managing SFX and voice playback for entities.

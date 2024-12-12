@@ -1,8 +1,7 @@
-using SombraStudios.Shared.Utility.UnityGizmos.Interfaces;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos.Editor
 {
     /// <summary>
     /// Custom editor for IGizmoGrid objects.

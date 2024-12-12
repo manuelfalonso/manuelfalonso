@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using SombraStudios.Shared.Utility.ScriptableObjects;
+using SombraStudios.Shared.ScriptableObjects;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.Build;

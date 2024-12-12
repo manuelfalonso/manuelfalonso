@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Gameplay.Spawners.Wave
+namespace SombraStudios.Shared.Gameplay.Spawners
 {
     public class WaveSpawner : MonoBehaviour
     {

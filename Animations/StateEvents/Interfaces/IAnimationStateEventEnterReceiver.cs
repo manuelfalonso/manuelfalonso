@@ -1,4 +1,4 @@
-﻿namespace SombraStudios.Shared.Animations.AnimationStateEvents
+﻿namespace SombraStudios.Shared.Animations.StateEvents
 {
     /// <summary>
     /// Enables a component to react to the 'ActionBegin' animation event.

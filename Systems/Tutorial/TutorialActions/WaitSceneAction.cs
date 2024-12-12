@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Shared.TutorialSystem
+namespace SombraStudios.Shared.Systems.Tutorial
 {
     [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Wait Scene Action", order = 2)]
     public class WaitSceneAction : TutorialActionSO

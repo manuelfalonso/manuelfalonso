@@ -1,20 +1,19 @@
-using SombraStudios.Shared.Utility.UnityGizmos.Interfaces;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos.Editor
 {
     /// <summary>
-    /// Custom editor for IGizmoSphere objects.
+    /// Custom editor for IGizmoMesh objects.
     /// </summary>
-    [CustomEditor(typeof(IGizmoSphere))]
-    public class GizmoSphereEditor : UnityEditor.Editor
+    [CustomEditor(typeof(IGizmoMesh))]
+    public class GizmoMeshEditor : UnityEditor.Editor
     {
         /// <summary>
-        /// Draws gizmos for IGizmoSphere objects.
+        /// Draws gizmos for IGizmoMesh objects.
         /// </summary>
         [DrawGizmo(GizmoType.Selected | GizmoType.Active)]
-        private static void DrawGizmos(IGizmoSphere gizmo, GizmoType gizmoType)
+        private static void DrawGizmos(IGizmoMesh gizmo, GizmoType gizmoType)
         {
             if (!gizmo.GizmosEnabled) { return; }
             if (gizmo.ShowOnlyInPlayMode && !Application.isPlaying) { return; }
@@ -25,7 +24,7 @@ namespace SombraStudios.Shared.Editor.UnityGizmos
         /// <summary>
         /// Sets up the gizmo for drawing.
         /// </summary>
-        private static void SetupGizmo(IGizmoSphere gizmo)
+        private static void SetupGizmo(IGizmoMesh gizmo)
         {
             if (gizmo.IsLocalPosition) { Gizmos.matrix = gizmo.MonoBehaviour.transform.localToWorldMatrix; }
             Gizmos.color = gizmo.GizmosColor;
@@ -34,23 +33,23 @@ namespace SombraStudios.Shared.Editor.UnityGizmos
         /// <summary>
         /// Draws the gizmo.
         /// </summary>
-        private static void DrawGizmo(IGizmoSphere gizmo)
+        private static void DrawGizmo(IGizmoMesh gizmo)
         {
-            DrawSphere(gizmo);
+            DrawMesh(gizmo);
         }
 
         /// <summary>
-        /// Draws the sphere gizmo.
+        /// Draws the mesh gizmo.
         /// </summary>
-        private static void DrawSphere(IGizmoSphere gizmo)
+        private static void DrawMesh(IGizmoMesh gizmo)
         {
-            if (gizmo.IsWireSphere)
+            if (gizmo.IsWireMesh)
             {
-                Gizmos.DrawWireSphere(gizmo.Center, gizmo.Radius);
+                Gizmos.DrawWireMesh(gizmo.Mesh, gizmo.Position, gizmo.Rotation, gizmo.Scale);
             }
             else
             {
-                Gizmos.DrawSphere(gizmo.Center, gizmo.Radius);
+                Gizmos.DrawMesh(gizmo.Mesh, gizmo.Position, gizmo.Rotation, gizmo.Scale);
             }
         }
     }

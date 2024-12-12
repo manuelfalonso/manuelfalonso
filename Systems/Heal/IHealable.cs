@@ -1,7 +1,6 @@
-using SombraStudios.Shared.Systems.Resource.Data;
 using System;
 
-namespace SombraStudios.Shared.Interfaces
+namespace SombraStudios.Shared.Systems.Heal
 {
     public interface IHealable
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-namespace SombraStudios.Shared.Gameplay
+namespace SombraStudios.Shared.Tilemaps
 {
     /// <summary>
     /// Required: Tilemap must have a Collider2D

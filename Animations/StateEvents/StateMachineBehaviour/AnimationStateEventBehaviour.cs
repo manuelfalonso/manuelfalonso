@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Animations.AnimationStateEvents
+namespace SombraStudios.Shared.Animations.StateEvents
 {
     /// <summary>  
     /// StateMachineBehaviour that handles animation state events.  

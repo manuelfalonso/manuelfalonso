@@ -1,4 +1,3 @@
-using SombraStudios.Shared.Audio.Footsteps.Abstract;
 using System.Collections;
 using UnityEngine;
 

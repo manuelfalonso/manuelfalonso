@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SombraStudios.Shared.Utility.Search.AssetOrComponent.Base
+namespace SombraStudios.Shared.Tools.Search.AssetOrComponent
 {
     /// <summary>  
     /// Abstract class for creating a custom Editor window to search for assets of type T.  

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Shared.TutorialSystem
+namespace SombraStudios.Shared.Systems.Tutorial
 {
     [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Audio Event Action", order = 4)]
     public class AudioEventAction : RaiseEventAction

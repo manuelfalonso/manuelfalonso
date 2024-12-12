@@ -1,4 +1,4 @@
-﻿namespace SombraStudios.Shared.Animations.AnimationStateEvents
+﻿namespace SombraStudios.Shared.Animations.StateEvents
 {
     /// <summary>
     /// Interface for receiving animation state events.

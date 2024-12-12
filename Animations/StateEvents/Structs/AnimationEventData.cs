@@ -1,8 +1,8 @@
-﻿using SombraStudios.ScriptableObjects.Values;
+﻿using SombraStudios.Shared.ScriptableObjects.Values;
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Animations.AnimationStateEvents
+namespace SombraStudios.Shared.Animations.StateEvents
 {
     /// <summary>
     /// Struct representing the data associated with an animation event.

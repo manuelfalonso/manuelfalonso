@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Gameplay.Spawners.Wave
+namespace SombraStudios.Shared.Gameplay.Spawners
 {
     [CreateAssetMenu(menuName = "Wave Config")]
     public class WaveConfigSO : ScriptableObject

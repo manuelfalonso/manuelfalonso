@@ -1,4 +1,3 @@
-using SombraStudios.Shared.Audio.Footsteps.Abstract;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Audio.Footsteps

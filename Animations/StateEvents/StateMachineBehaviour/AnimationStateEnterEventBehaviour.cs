@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Animations.AnimationStateEvents
+namespace SombraStudios.Shared.Animations.StateEvents
 {
     /// <summary>
     /// Calls the 'OnAnimationStateBegan' function on any supported component when the target animation begins.

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.ScriptableObjects.Values
+namespace SombraStudios.Shared.ScriptableObjects.Values
 {
     /// <summary>
     /// ScriptableObject that stores a string value.

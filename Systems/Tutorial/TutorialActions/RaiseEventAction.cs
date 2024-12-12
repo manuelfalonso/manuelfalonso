@@ -2,7 +2,7 @@ using SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Shared.TutorialSystem
+namespace SombraStudios.Shared.Systems.Tutorial
 {
     [CreateAssetMenu(
         fileName = "New Tutorial Action", 

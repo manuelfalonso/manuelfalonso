@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Animations.AnimationStateEvents
+namespace SombraStudios.Shared.Animations.StateEvents
 {
     /// <summary>
     /// Receives and handles animation state events.

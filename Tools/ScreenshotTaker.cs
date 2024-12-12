@@ -4,9 +4,8 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Tools
 {
-
     /// <summary>
     /// Utility Class for taking a screenshot from the editor using a menu item.
     /// </summary>

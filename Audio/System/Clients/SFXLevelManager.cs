@@ -3,7 +3,7 @@ using NaughtyAttributes;
 using SombraStudios.Shared.Patterns.Creational.Singleton;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Audio.System.Clients
+namespace SombraStudios.Shared.Audio.System
 {
     /// <summary>
     /// Manages audio levels and playback in the game.

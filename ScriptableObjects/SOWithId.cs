@@ -4,7 +4,7 @@ using UnityEngine;
 #if UNITY_EDITOR
 #endif
 
-namespace SombraStudios.Shared.Utility.ScriptableObjects
+namespace SombraStudios.Shared.ScriptableObjects
 {
     /// <summary>
     /// Base class for ScriptableObjects with an ID.

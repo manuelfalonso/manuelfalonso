@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using SombraStudios.Shared.Utility;
 using UnityEngine;
 
-namespace SombraStudios.Shared.TutorialSystem
+namespace SombraStudios.Shared.Systems.Tutorial
 {
     /// <summary>
     /// Manager for tutorial steps and its actions

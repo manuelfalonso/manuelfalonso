@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.UnityGizmos.MonoBehaviours
+namespace SombraStudios.Shared.Utility.UnityGizmos
 {
     /// <summary>
     /// DrawIcon can be used to allow important objects in your game to be selected quickly.

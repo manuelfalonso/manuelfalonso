@@ -1,5 +1,5 @@
 using SombraStudios.Shared.Attributes;
-using SombraStudios.Shared.Utility.UnityGizmos.MonoBehaviours;
+using SombraStudios.Shared.Utility.UnityGizmos;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;

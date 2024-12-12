@@ -1,20 +1,19 @@
-using SombraStudios.Shared.Utility.UnityGizmos.Interfaces;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos.Editor
 {
     /// <summary>
-    /// Custom editor for IGizmoFrustum objects.
+    /// Custom editor for IGizmoSphere objects.
     /// </summary>
-    [CustomEditor(typeof(IGizmoFrustum))]
-    public class GizmoFrustumEditor : UnityEditor.Editor
+    [CustomEditor(typeof(IGizmoSphere))]
+    public class GizmoSphereEditor : UnityEditor.Editor
     {
         /// <summary>
-        /// Draws gizmos for IGizmoFrustum objects.
+        /// Draws gizmos for IGizmoSphere objects.
         /// </summary>
         [DrawGizmo(GizmoType.Selected | GizmoType.Active)]
-        private static void DrawGizmos(IGizmoFrustum gizmo, GizmoType gizmoType)
+        private static void DrawGizmos(IGizmoSphere gizmo, GizmoType gizmoType)
         {
             if (!gizmo.GizmosEnabled) { return; }
             if (gizmo.ShowOnlyInPlayMode && !Application.isPlaying) { return; }
@@ -25,7 +24,7 @@ namespace SombraStudios.Shared.Editor.UnityGizmos
         /// <summary>
         /// Sets up the gizmo for drawing.
         /// </summary>
-        private static void SetupGizmo(IGizmoFrustum gizmo)
+        private static void SetupGizmo(IGizmoSphere gizmo)
         {
             if (gizmo.IsLocalPosition) { Gizmos.matrix = gizmo.MonoBehaviour.transform.localToWorldMatrix; }
             Gizmos.color = gizmo.GizmosColor;
@@ -34,17 +33,24 @@ namespace SombraStudios.Shared.Editor.UnityGizmos
         /// <summary>
         /// Draws the gizmo.
         /// </summary>
-        private static void DrawGizmo(IGizmoFrustum gizmo)
+        private static void DrawGizmo(IGizmoSphere gizmo)
         {
-            DrawFrustum(gizmo);
+            DrawSphere(gizmo);
         }
 
         /// <summary>
-        /// Draws the frustum gizmo.
+        /// Draws the sphere gizmo.
         /// </summary>
-        private static void DrawFrustum(IGizmoFrustum gizmo)
+        private static void DrawSphere(IGizmoSphere gizmo)
         {
-            Gizmos.DrawFrustum(gizmo.FrustumCenter, gizmo.FrustumFov, gizmo.FrustumMaxRange, gizmo.FrustumMinRange, gizmo.FrustumAspect);
+            if (gizmo.IsWireSphere)
+            {
+                Gizmos.DrawWireSphere(gizmo.Center, gizmo.Radius);
+            }
+            else
+            {
+                Gizmos.DrawSphere(gizmo.Center, gizmo.Radius);
+            }
         }
     }
 }

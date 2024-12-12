@@ -1,20 +1,19 @@
-using SombraStudios.Shared.Utility.UnityGizmos.Interfaces;
 using UnityEditor;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Editor.UnityGizmos
+namespace SombraStudios.Shared.Utility.UnityGizmos.Editor
 {
     /// <summary>
-    /// Custom editor for IGizmoLine objects.
+    /// Custom editor for IGizmoFrustum objects.
     /// </summary>
-    [CustomEditor(typeof(IGizmoLine))]
-    public class GizmoLineEditor : UnityEditor.Editor
+    [CustomEditor(typeof(IGizmoFrustum))]
+    public class GizmoFrustumEditor : UnityEditor.Editor
     {
         /// <summary>
-        /// Draws gizmos for IGizmoLine objects.
+        /// Draws gizmos for IGizmoFrustum objects.
         /// </summary>
         [DrawGizmo(GizmoType.Selected | GizmoType.Active)]
-        private static void DrawGizmos(IGizmoLine gizmo, GizmoType gizmoType)
+        private static void DrawGizmos(IGizmoFrustum gizmo, GizmoType gizmoType)
         {
             if (!gizmo.GizmosEnabled) { return; }
             if (gizmo.ShowOnlyInPlayMode && !Application.isPlaying) { return; }
@@ -25,7 +24,7 @@ namespace SombraStudios.Shared.Editor.UnityGizmos
         /// <summary>
         /// Sets up the gizmo for drawing.
         /// </summary>
-        private static void SetupGizmo(IGizmoLine gizmo)
+        private static void SetupGizmo(IGizmoFrustum gizmo)
         {
             if (gizmo.IsLocalPosition) { Gizmos.matrix = gizmo.MonoBehaviour.transform.localToWorldMatrix; }
             Gizmos.color = gizmo.GizmosColor;
@@ -34,17 +33,17 @@ namespace SombraStudios.Shared.Editor.UnityGizmos
         /// <summary>
         /// Draws the gizmo.
         /// </summary>
-        private static void DrawGizmo(IGizmoLine gizmo)
+        private static void DrawGizmo(IGizmoFrustum gizmo)
         {
-            DrawLine(gizmo);
+            DrawFrustum(gizmo);
         }
 
         /// <summary>
-        /// Draws the line gizmo.
+        /// Draws the frustum gizmo.
         /// </summary>
-        private static void DrawLine(IGizmoLine gizmo)
+        private static void DrawFrustum(IGizmoFrustum gizmo)
         {
-            Gizmos.DrawLine(gizmo.From, gizmo.To);
+            Gizmos.DrawFrustum(gizmo.FrustumCenter, gizmo.FrustumFov, gizmo.FrustumMaxRange, gizmo.FrustumMinRange, gizmo.FrustumAspect);
         }
     }
 }
