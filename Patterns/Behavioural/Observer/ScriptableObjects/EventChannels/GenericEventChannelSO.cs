@@ -1,4 +1,4 @@
-using SombraStudios.Shared.ScriptableObjects;
+using SombraStudios.Shared.Interfaces;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,13 +8,17 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
     /// A generic event channel scriptable object that allows raising events with a parameter of type T.
     /// </summary>
     /// <typeparam name="T">The type of the parameter for the event.</typeparam>
-    public abstract class GenericEventChannelSO<T> : DescriptionSO
+    public abstract class GenericEventChannelSO<T> : ScriptableObject, IDescribable
     {
         /// <summary>
         /// The action to perform. Listeners subscribe to this UnityAction.
         /// </summary>
         [Tooltip("The action to perform. Listeners subscribe to this UnityAction")]
         public UnityAction<T> OnEventRaised;
+
+        [SerializeField] private string _description;
+        
+        public string Description { get => _description; set => _description = value; }
 
         /// <summary>
         /// Raises the event with the specified parameter.
