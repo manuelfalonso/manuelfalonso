@@ -13,23 +13,25 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
         /// The list of items in the runtime set.
         /// </summary>
         private readonly List<T> _items = new();
+        
+        /// <summary>
+        /// Get the list of items in the runtime set.
+        /// </summary>
+        public List<T> Items => _items;
 
         /// <summary>
         /// Adds an item to the runtime set if it is not already present.
         /// </summary>
         /// <param name="item">The item to add.</param>
         /// <returns>True if the item was added; otherwise, false.</returns>
-        public bool Add(T item)
+        public virtual bool Add(T item)
         {
             if (!_items.Contains(item))
             {
                 _items.Add(item);
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
 
         /// <summary>
@@ -37,17 +39,14 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
         /// </summary>
         /// <param name="item">The item to remove.</param>
         /// <returns>True if the item was removed; otherwise, false.</returns>
-        public bool Remove(T item)
+        public virtual bool Remove(T item)
         {
             if (_items.Contains(item))
             {
                 _items.Remove(item);
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
     }
 }
