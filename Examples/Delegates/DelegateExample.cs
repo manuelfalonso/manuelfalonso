@@ -2,24 +2,23 @@ using UnityEngine;
 
 namespace SombraStudios.Shared.Examples.Delegates
 {
-
     /// <summary>
     /// Store a function in a variable with Delegate
     /// </summary>
     public class DelegateExample : MonoBehaviour
     {
         // Delegate
-        public delegate void VoidNoParameterDelegate();
-        public delegate bool BoolIntParameterDelegate(int i);
+        private delegate void VoidNoParameterDelegate();
+        private delegate bool BoolIntParameterDelegate(int i);
 
         // Fields
-        private VoidNoParameterDelegate myVoidNoParameterDelegate;
-        private BoolIntParameterDelegate myBoolIntParameterDelegate;
+        private VoidNoParameterDelegate _myVoidNoParameterDelegate;
+        private BoolIntParameterDelegate _myBoolIntParameterDelegate;
 
         #region Unity Methods
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             TestVoidNoParameterDelegate();
             TestBoolIntParameterDelegate();
@@ -40,23 +39,23 @@ namespace SombraStudios.Shared.Examples.Delegates
         
             // SINGLE CAST
             // Sign function
-            myVoidNoParameterDelegate = MyVoidNoParameterDelegateFunction;
+            _myVoidNoParameterDelegate = MyVoidNoParameterDelegateFunction;
             // Invoke delegate
-            myVoidNoParameterDelegate();
+            _myVoidNoParameterDelegate();
 
             // Sign function
-            myVoidNoParameterDelegate = MySecondVoidNoParameterDelegateFunction;
+            _myVoidNoParameterDelegate = MySecondVoidNoParameterDelegateFunction;
             // Invoke delegate
-            myVoidNoParameterDelegate();
+            _myVoidNoParameterDelegate();
 
             // ---------
 
             // MULTICAST
             // Sign function
-            myVoidNoParameterDelegate = MyVoidNoParameterDelegateFunction;
-            myVoidNoParameterDelegate += MySecondVoidNoParameterDelegateFunction;
+            _myVoidNoParameterDelegate = MyVoidNoParameterDelegateFunction;
+            _myVoidNoParameterDelegate += MySecondVoidNoParameterDelegateFunction;
             // Invoke delegate
-            myVoidNoParameterDelegate();
+            _myVoidNoParameterDelegate();
         }
 
         /// <summary>
@@ -67,9 +66,9 @@ namespace SombraStudios.Shared.Examples.Delegates
             Debug.Log("===============================");
             Debug.Log("TEST BOOLEAN INTEGER PARAMETER DELEGATE");
         
-            myBoolIntParameterDelegate += MyBoolIntDelegateFunction;
-            myBoolIntParameterDelegate += MySecondBoolIntDelegateFunction;
-            myBoolIntParameterDelegate(5);
+            _myBoolIntParameterDelegate += MyBoolIntDelegateFunction;
+            _myBoolIntParameterDelegate += MySecondBoolIntDelegateFunction;
+            _myBoolIntParameterDelegate(5);
         }
 
         /// <summary>
@@ -81,10 +80,12 @@ namespace SombraStudios.Shared.Examples.Delegates
             Debug.Log("TEST EXPLICIT CREATE DELEGATE");
         
             // Explicit create delegate
-            myVoidNoParameterDelegate = 
+            _myVoidNoParameterDelegate = 
                 new VoidNoParameterDelegate(MyVoidNoParameterDelegateFunction);
+            _myVoidNoParameterDelegate();
             // Anonymous method
-            myVoidNoParameterDelegate = delegate () { Debug.Log("Anonymous method"); };
+            _myVoidNoParameterDelegate = delegate () { Debug.Log("Anonymous method"); };
+            _myVoidNoParameterDelegate();
         }
 
         #endregion
@@ -94,7 +95,7 @@ namespace SombraStudios.Shared.Examples.Delegates
         /// <summary>
         /// Test a void with no parameter functions
         /// </summary>
-        void MyVoidNoParameterDelegateFunction()
+        private void MyVoidNoParameterDelegateFunction()
         {
             Debug.Log("MyVoidNoParameterDelegateFunction");
         }
@@ -102,7 +103,7 @@ namespace SombraStudios.Shared.Examples.Delegates
         /// <summary>
         /// Test a void with no parameter functions
         /// </summary>
-        void MySecondVoidNoParameterDelegateFunction()
+        private void MySecondVoidNoParameterDelegateFunction()
         {
             Debug.Log("MySecondVoidNoParameterDelegateFunction");
         }
@@ -112,7 +113,7 @@ namespace SombraStudios.Shared.Examples.Delegates
         /// </summary>
         /// <param name="number">Number to check if its positive</param>
         /// <returns></returns>
-        bool MyBoolIntDelegateFunction(int number)
+        private bool MyBoolIntDelegateFunction(int number)
         {
             bool result = number > 0;
             Debug.Log("MyBoolIntDelegateFunction return " + result);
@@ -124,7 +125,7 @@ namespace SombraStudios.Shared.Examples.Delegates
         /// </summary>
         /// <param name="number">Number to check if its negative</param>
         /// <returns></returns>
-        bool MySecondBoolIntDelegateFunction(int number)
+        private bool MySecondBoolIntDelegateFunction(int number)
         {
             bool result = number < 0;
             Debug.Log("MySecondBoolIntDelegateFunction return " + result);

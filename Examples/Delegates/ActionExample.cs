@@ -3,17 +3,16 @@ using System;
 
 namespace SombraStudios.Shared.Examples.Delegates
 {
-
     /// <summary>
     /// Action is a void return value Delegate
     /// </summary>
     public class ActionExample : MonoBehaviour
     {
         // It's equal to "delegate void VoidNoParameterDelegate()"
-        private Action voidNoParameterAction;
+        private Action _voidNoParameterAction;
 
         // It's equal to "delegate void VoidIntParameterDelegate(int i)"
-        private Action<int> voidIntegerParameterAction;
+        private Action<int> _voidIntegerParameterAction;
 
         // Start is called before the first frame update
         void Start()
@@ -27,17 +26,17 @@ namespace SombraStudios.Shared.Examples.Delegates
             Debug.Log("====================================");
             Debug.Log("LAMBDA EXPRESSION WITH ACTION VOID DELEGATE");
             // Lambda expression with Action void delegate
-            voidNoParameterAction += () => { Debug.Log("Action delegate"); };
-            voidNoParameterAction();
+            _voidNoParameterAction += () => { Debug.Log("Action delegate"); };
+            _voidNoParameterAction();
         }
 
         private void TestVoidIntegerParameterAction()
         {
             Debug.Log("====================================");
             Debug.Log("LAMBDA EXPRESSION WITH ACTION INTEGER DELEGATE");
-            voidIntegerParameterAction +=
-                (int number) => { Debug.Log("Action inte delegate: " + number); };
-            voidIntegerParameterAction(5);
+            _voidIntegerParameterAction +=
+                (int number) => { Debug.Log("Action int delegate: " + number); };
+            _voidIntegerParameterAction(5);
         }
     }
 }
