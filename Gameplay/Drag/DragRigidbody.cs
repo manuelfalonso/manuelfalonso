@@ -59,7 +59,11 @@ namespace SombraStudios.Shared.Gameplay.Drag
             if (restartIt)
             {
                 _rb3d.isKinematic = false;
+#if UNITY_6000_0_OR_NEWER
+                _rb3d.linearVelocity = new Vector3(0f, 0f, 0f);
+#else
                 _rb3d.velocity = new Vector3(0f, 0f, 0f);
+#endif
                 _rb3d.angularVelocity = Vector3.zero;
             }
             else
@@ -77,7 +81,11 @@ namespace SombraStudios.Shared.Gameplay.Drag
                     foreach (var rb in rigidbodies)
                     {
                         rb.isKinematic = false;
+#if UNITY_6000_0_OR_NEWER
+                        rb.linearVelocity = new Vector3(0f, 0f, 0f);
+#else
                         rb.velocity = new Vector3(0f, 0f, 0f);
+#endif
                         rb.angularVelocity = Vector3.zero;
                     }
                 }

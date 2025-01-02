@@ -42,7 +42,11 @@ namespace SombraStudios.Shared.Gameplay.PlayerMovement3D
                     );
                 if (_playerRb != null)
                 {
+#if UNITY_6000_0_OR_NEWER
+                    _playerRb.linearVelocity = Vector3.zero;
+#else
                     _playerRb.velocity = Vector3.zero;
+#endif
                 }
             }
         }

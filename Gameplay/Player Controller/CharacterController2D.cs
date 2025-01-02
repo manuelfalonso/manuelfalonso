@@ -199,14 +199,25 @@ namespace SombraStudios.Shared.Gameplay.PlayerController
 				}
 
 				// Move the character by finding the target velocity
+#if UNITY_6000_0_OR_NEWER
+				Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.linearVelocity.y);
+#else
 				Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+#endif
 				// And then smoothing it out and applying it to the character
+#if UNITY_6000_0_OR_NEWER
+				m_Rigidbody2D.linearVelocity = Vector3.SmoothDamp(
+					m_Rigidbody2D.linearVelocity, 
+					targetVelocity, 
+					ref m_Velocity, 
+					m_MovementSmoothing);
+#else
 				m_Rigidbody2D.velocity = Vector3.SmoothDamp(
 					m_Rigidbody2D.velocity, 
 					targetVelocity, 
 					ref m_Velocity, 
 					m_MovementSmoothing);
-
+#endif
 				// If the input is moving the player right and the player is facing left...
 				if (move > 0 && !m_FacingRight)
 				{
@@ -231,7 +242,11 @@ namespace SombraStudios.Shared.Gameplay.PlayerController
 			}
 		
 			// Clamp velocity to avoid accumulate Jump forces
+#if UNITY_6000_0_OR_NEWER
+			m_Rigidbody2D.linearVelocity = Vector2.ClampMagnitude(m_Rigidbody2D.linearVelocity, 12f);
+#else
 			m_Rigidbody2D.velocity = Vector2.ClampMagnitude(m_Rigidbody2D.velocity, 12f);
+#endif
 
 			if (m_InputBuffer.Count <= 0)
 				return;
@@ -248,7 +263,11 @@ namespace SombraStudios.Shared.Gameplay.PlayerController
 				return;
 			}
 
+#if UNITY_6000_0_OR_NEWER
+			if (m_AirTime < m_CoyoteTime && m_Rigidbody2D.linearVelocity.y <= 0f)
+#else
 			if (m_AirTime < m_CoyoteTime && m_Rigidbody2D.velocity.y <= 0f)
+#endif
 			{
 				// Add a vertical force to the player.
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
@@ -283,7 +302,11 @@ namespace SombraStudios.Shared.Gameplay.PlayerController
 				DrawDebugCornerCorrectionRays(leftRaycast, rightRaycast);
 
 			// Modify object position obly if its jumping
+#if UNITY_6000_0_OR_NEWER
+			if (m_Rigidbody2D.linearVelocity.y <= 1f)
+#else
 			if (m_Rigidbody2D.velocity.y <= 1f)
+#endif 
 				return;
 
 			// If left raycast is hitting and not the right one

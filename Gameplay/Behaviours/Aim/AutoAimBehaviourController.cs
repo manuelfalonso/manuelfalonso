@@ -236,7 +236,11 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
 
             if (_targetRigidbody != null)
             {
+#if UNITY_6000_0_OR_NEWER
+                _targetPosition += _targetRigidbody.linearVelocity * _data.PredictionVelocityFactor;
+#else
                 _targetPosition += _targetRigidbody.velocity * _data.PredictionVelocityFactor;
+#endif
             }
         }
 

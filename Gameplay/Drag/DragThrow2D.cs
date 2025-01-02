@@ -85,13 +85,21 @@ namespace SombraStudios.Shared.Gameplay.Drag
         private void RestartPhysics()
         {
             _rb2d.simulated = true;
+#if UNITY_6000_0_OR_NEWER
+            _rb2d.linearVelocity = new Vector3(0f, 0f, 0f);
+#else
             _rb2d.velocity = new Vector3(0f, 0f, 0f);
+#endif
             _rb2d.angularVelocity = 0f;
 
             foreach (var rb in _childRb2d)
             {
                 rb.simulated = true;
+#if UNITY_6000_0_OR_NEWER
+                rb.linearVelocity = new Vector3(0f, 0f, 0f);
+#else
                 rb.velocity = new Vector3(0f, 0f, 0f);
+#endif
                 rb.angularVelocity = 0f;
             }
         }

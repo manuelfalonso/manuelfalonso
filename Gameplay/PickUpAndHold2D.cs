@@ -46,7 +46,11 @@ namespace SombraStudios.Shared.Gameplay
 			if (rb2d != null)
 			{
 				rb2d.bodyType = RigidbodyType2D.Dynamic;
+#if UNITY_6000_0_OR_NEWER
+				rb2d.linearVelocity = Vector2.zero;
+#else
 				rb2d.velocity = Vector2.zero;
+#endif
 			}
 			// Unparenting
 			carriedObject.parent = null;

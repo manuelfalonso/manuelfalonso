@@ -12,29 +12,25 @@ namespace SombraStudios.Shared.Physics
         /// <summary>
         /// The speed that will trigger the begin event.
         /// </summary>
-        [SerializeField]
-        [Tooltip("The speed that will trigger the begin event.")]
+        [SerializeField] [Tooltip("The speed that will trigger the begin event.")]
         private float _beginThreshold = 1.25f;
 
         /// <summary>
         /// The speed that will trigger the end event.
         /// </summary>
-        [SerializeField]
-        [Tooltip("The speed that will trigger the end event.")]
+        [SerializeField] [Tooltip("The speed that will trigger the end event.")]
         private float _endThreshold = 0.25f;
 
         /// <summary>
         /// Event that triggers when speed meets the begin threshold
         /// </summary>
-        [SerializeField]
-        [Tooltip("Event that triggers when speed meets the begin threshold.")]
+        [SerializeField] [Tooltip("Event that triggers when speed meets the begin threshold.")]
         private UnityEvent _onBegin = new UnityEvent();
 
         /// <summary>
         /// Event that triggers when the speed dips below the end threshold.
         /// </summary>
-        [SerializeField]
-        [Tooltip("Event that triggers when the speed dips below the end threshold.")]
+        [SerializeField] [Tooltip("Event that triggers when the speed dips below the end threshold.")]
         private UnityEvent _onEnd = new UnityEvent();
 
         /// <summary>
@@ -52,6 +48,7 @@ namespace SombraStudios.Shared.Physics
 
 
         #region Unity Messages
+
         void Awake()
         {
             _rigidBody = GetComponent<Rigidbody>();
@@ -61,13 +58,19 @@ namespace SombraStudios.Shared.Physics
         {
             CheckVelocity();
         }
+
         #endregion
 
 
         #region Private Methods
+
         private void CheckVelocity()
         {
+#if UNITY_6000_0_OR_NEWER
+            var speed = _rigidBody.linearVelocity.magnitude;
+#else
             var speed = _rigidBody.velocity.magnitude;
+#endif
             _hasBegun = HasVelocityBegun(speed);
 
             if (HasVelocityEnded(speed))
@@ -99,6 +102,7 @@ namespace SombraStudios.Shared.Physics
 
             return endCheck;
         }
+
         #endregion
     }
 }
