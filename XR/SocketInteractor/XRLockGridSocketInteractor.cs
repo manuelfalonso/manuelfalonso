@@ -1,7 +1,11 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
 using SombraStudios.Shared.XR.KeyLockSystem;
 using UnityEngine;
+#if UNITY_6000_0_OR_NEWER
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+#else
 using UnityEngine.XR.Interaction.Toolkit;
+#endif
 
 namespace SombraStudios.Shared.XR.SocketInteractor
 {

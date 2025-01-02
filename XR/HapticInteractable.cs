@@ -1,7 +1,10 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
-using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+#if UNITY_6000_0_OR_NEWER
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+#endif
 
 namespace SombraStudios.Shared.XR
 {
@@ -64,7 +67,7 @@ namespace SombraStudios.Shared.XR
         /// <returns>True if the haptic feedback was successfully triggered; otherwise, false.</returns>
         public bool TryTriggerHaptic()
         {
-            if (CanTriggerHaptic(out XRBaseControllerInteractor controller))
+            if (CanTriggerHaptic(out XRBaseInputInteractor controller))
             {
                 _hapticOnDemand.TriggerHaptic(controller);
                 return true;
@@ -83,7 +86,7 @@ namespace SombraStudios.Shared.XR
             _hapticOnDemand.Intensity = intensity;
             _hapticOnDemand.Duration = duration;
 
-            if (CanTriggerHaptic(out XRBaseControllerInteractor controller))
+            if (CanTriggerHaptic(out XRBaseInputInteractor controller))
             {
                 _hapticOnDemand.TriggerHaptic(controller);
                 return true;
@@ -97,9 +100,9 @@ namespace SombraStudios.Shared.XR
         /// </summary>
         /// <param name="controller">The controller interactor if haptic feedback can be triggered; otherwise, null.</param>
         /// <returns>True if haptic feedback can be triggered; otherwise, false.</returns>
-        private bool CanTriggerHaptic(out XRBaseControllerInteractor controller)
+        private bool CanTriggerHaptic(out XRBaseInputInteractor controller)
         {
-            if (_interactable.firstInteractorSelecting is XRBaseControllerInteractor hand)
+            if (_interactable.firstInteractorSelecting is XRBaseInputInteractor hand)
             {
                 controller = hand;
                 return true;
@@ -167,7 +170,7 @@ namespace SombraStudios.Shared.XR
         /// <param name="baseInteractionEventArgs">The interaction event arguments.</param>
         public void TriggerHaptic(BaseInteractionEventArgs baseInteractionEventArgs)
         {
-            if (baseInteractionEventArgs.interactorObject is XRBaseControllerInteractor xRBaseControllerInteractor)
+            if (baseInteractionEventArgs.interactorObject is XRBaseInputInteractor xRBaseControllerInteractor)
             {
                 TriggerHaptic(xRBaseControllerInteractor);
             }
@@ -177,7 +180,7 @@ namespace SombraStudios.Shared.XR
         /// Triggers haptic feedback on the provided controller interactor.
         /// </summary>
         /// <param name="xRBaseControllerInteractor">The controller interactor to trigger haptic feedback on.</param>
-        public void TriggerHaptic(XRBaseControllerInteractor xRBaseControllerInteractor)
+        public void TriggerHaptic(XRBaseInputInteractor xRBaseControllerInteractor)
         {
             if (Intensity > 0f && Duration > 0f)
             {

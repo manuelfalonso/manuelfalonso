@@ -1,6 +1,10 @@
 #if UNITY_XR_INTERACTION_TOOLKIT
 using UnityEngine;
+#if UNITY_6000_0_OR_NEWER
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+#else
 using UnityEngine.XR.Interaction.Toolkit;
+#endif
 
 namespace SombraStudios.Shared.XR
 {
@@ -9,14 +13,16 @@ namespace SombraStudios.Shared.XR
     /// </summary>
     public class AutoSocketAttach : MonoBehaviour
     {
-        [SerializeField]
-        [Tooltip("The Socket Interactor that controls this socket attach point.")]
+        [SerializeField] [Tooltip("The Socket Interactor that controls this socket attach point.")]
         XRSocketInteractor _controllingInteractor;
 
         void Start()
         {
             // If there is an existing interactable, we match its position so the object does not move
-            if (_controllingInteractor == null) { _controllingInteractor = GetComponentInParent<XRSocketInteractor>(); }                
+            if (_controllingInteractor == null)
+            {
+                _controllingInteractor = GetComponentInParent<XRSocketInteractor>();
+            }
 
             if (_controllingInteractor == null)
             {
@@ -26,11 +32,13 @@ namespace SombraStudios.Shared.XR
 
             if (_controllingInteractor.startingSelectedInteractable == null)
             {
-                Debug.Log("AutoSocketAttach does not have a starting selected interactable to match its position.", this);
+                Debug.Log("AutoSocketAttach does not have a starting selected interactable to match its position.",
+                    this);
                 return;
             }
 
-            var targetTransform = _controllingInteractor.startingSelectedInteractable.GetAttachTransform(_controllingInteractor);
+            var targetTransform =
+                _controllingInteractor.startingSelectedInteractable.GetAttachTransform(_controllingInteractor);
             transform.SetPositionAndRotation(targetTransform.position, targetTransform.rotation);
         }
     }

@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+#if UNITY_6000_0_OR_NEWER
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+#endif
 
 namespace SombraStudios.Shared.XR.SocketInteractor
 {
@@ -169,7 +173,8 @@ namespace SombraStudios.Shared.XR.SocketInteractor
             if (m_UsedAttachTransformByInteractable.TryGetValue(interactable, out var interactableAttachTransform))
                 return interactableAttachTransform;
 
-            var interactableLocalPosition = attachTransform.InverseTransformPoint(interactable.GetAttachTransform(this).position);
+            var interactableLocalPosition 
+                = attachTransform.InverseTransformPoint(interactable.GetAttachTransform(this).position);
             var i = Mathf.RoundToInt(interactableLocalPosition.y / m_CellOffset.y);
             var j = Mathf.RoundToInt(interactableLocalPosition.x / m_CellOffset.x);
             i = Mathf.Clamp(i, 0, m_GridHeight - 1);

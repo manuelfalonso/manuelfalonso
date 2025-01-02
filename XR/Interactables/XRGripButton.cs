@@ -2,6 +2,9 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+#if UNITY_6000_0_OR_NEWER
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+#endif
 
 namespace SombraStudios.Shared.XR.Interactables
 {

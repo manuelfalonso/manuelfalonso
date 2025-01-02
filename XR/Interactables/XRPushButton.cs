@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
+#if UNITY_6000_0_OR_NEWER
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+#endif
 
 namespace SombraStudios.Shared.XR.Interactables
 {
@@ -53,7 +57,7 @@ namespace SombraStudios.Shared.XR.Interactables
         private float _value = 0f;
         private Vector3 _baseButtonPosition = Vector3.zero;
 
-        private Dictionary<IXRHoverInteractor, PressInfo> m_HoveringInteractors = new Dictionary<IXRHoverInteractor, PressInfo>();
+        private Dictionary<IXRHoverInteractor, PressInfo> m_HoveringInteractors = new ();
 
         /// <summary>
         /// The object that is visually pressed down
