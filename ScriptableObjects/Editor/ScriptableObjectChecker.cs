@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using SombraStudios.Shared.ScriptableObjects;
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.Build;
 #endif
 
-namespace SombraStudios.Shared.Editor.ScriptableObjects
+namespace SombraStudios.Shared.ScriptableObjects.Editor
 {
 #if UNITY_EDITOR
     /// <summary>
