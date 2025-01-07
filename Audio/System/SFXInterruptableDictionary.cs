@@ -1,3 +1,4 @@
+#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS
 using System;
 
 namespace SombraStudios.Shared.Audio.System
@@ -31,3 +32,4 @@ namespace SombraStudios.Shared.Audio.System
         }
     }
 }
+#endif
