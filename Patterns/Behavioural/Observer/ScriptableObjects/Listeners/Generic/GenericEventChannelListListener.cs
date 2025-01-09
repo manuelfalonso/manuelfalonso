@@ -66,7 +66,9 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
         /// A class representing a pair of an event channel and its corresponding UnityEvent response.
         /// </summary>
         [System.Serializable]
+#pragma warning disable CS0693 // Type parameter has the same name as the type parameter from outer type
         public class EventChannelResponsePair<T>
+#pragma warning restore CS0693 // Type parameter has the same name as the type parameter from outer type
         {
             /// <summary>
             /// The event channel that will raise events of type T.

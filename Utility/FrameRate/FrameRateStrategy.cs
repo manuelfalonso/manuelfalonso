@@ -1,4 +1,4 @@
-using SombraStudios.Shared.Patterns.Behavioural.Command;
+using SombraStudios.Shared.Patterns.Behavioural.Strategy;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Utility.FrameRate
@@ -6,9 +6,10 @@ namespace SombraStudios.Shared.Utility.FrameRate
     /// <summary>
     /// Command to set the target frame rate of the application.
     /// </summary>
-    [CreateAssetMenu(fileName = "FrameRateCommand", menuName = "Sombra Studios/Commands/Frame Rate Command")]
-    public class FrameRateCommand : CommandSO
+    [CreateAssetMenu(fileName = "FrameRateStrategy", menuName = "Sombra Studios/Strategies/Frame Rate Strategy")]
+    public class FrameRateStrategy : StrategySO
     {
+        [Header(PROPERTIES_TITLE)]
         /// <summary>
         /// The target frame rate to set.
         /// </summary>
@@ -16,16 +17,10 @@ namespace SombraStudios.Shared.Utility.FrameRate
         public int TargetFrameRate;
 
         /// <summary>
-        /// Whether to show logs when the frame rate is set.
-        /// </summary>
-        [Tooltip("Whether to show logs when the frame rate is set.")]
-        public bool ShowLogs;
-
-        /// <summary>
         /// Determines whether the command can be executed.
         /// </summary>
         /// <returns>True if the command can be executed, otherwise false.</returns>
-        protected override bool CanExecute()
+        public override bool CanExecute()
         {
             if (Application.targetFrameRate == TargetFrameRate)
             {
@@ -48,11 +43,11 @@ namespace SombraStudios.Shared.Utility.FrameRate
         /// <summary>
         /// Executes the command to set the target frame rate.
         /// </summary>
-        protected override void Execute()
+        public override void Execute()
         {
             Application.targetFrameRate = TargetFrameRate;
 
-            if (ShowLogs)
+            if (_showLogs)
             {
                 Debug.Log($"Frame rate set to {TargetFrameRate}");
             }
