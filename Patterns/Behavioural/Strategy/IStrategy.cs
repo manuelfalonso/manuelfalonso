@@ -8,19 +8,19 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
         /// <summary>
         /// Executes the strategy.
         /// </summary>
-        public void Execute();
+        void Execute();
 
         /// <summary>
         /// Checks if the strategy can be executed.
         /// </summary>
         /// <returns>True if the strategy can be executed; otherwise, false.</returns>
-        public bool CanExecute();
+        bool CanExecute();
 
         /// <summary>
         /// Attempts to execute the strategy.
         /// </summary>
         /// <returns>True if the strategy was executed successfully; otherwise, false.</returns>
-        public bool TryToExecute();
+        bool TryToExecute();
     }
     
     /// <summary>
@@ -33,20 +33,20 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
         /// Executes the strategy using the provided data.
         /// </summary>
         /// <param name="data">The data needed for the strategy execution.</param>
-        public void Execute(T data);
+        void Execute(T data);
 
         /// <summary>
         /// Checks if the strategy can be executed with the provided data.
         /// </summary>
         /// <param name="data">The data to check for strategy execution eligibility.</param>
         /// <returns>True if the strategy can be executed; otherwise, false.</returns>
-        public bool CanExecute(T data);
+        bool CanExecute(T data);
 
         /// <summary>
         /// Attempts to execute the strategy with the provided data.
         /// </summary>
         /// <param name="data">The data needed for the strategy execution.</param>
         /// <returns>True if the strategy was executed successfully; otherwise, false.</returns>
-        public bool TryToExecute(T data);
+        bool TryToExecute(T data);
     }
 }

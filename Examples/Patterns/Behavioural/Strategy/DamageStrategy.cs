@@ -8,5 +8,5 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
     /// 
     /// This example is for executing a Weapon damage type
     /// </summary>
-    public interface IStrategy : IStrategy<int> { }
+    public interface IDamageStrategy : IStrategy<int> { }
 }

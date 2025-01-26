@@ -6,9 +6,9 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
     /// Concrete Strategies implement different variations 
     /// of an algorithm the context uses.
     /// 
-    /// Example for a Fire damage type
+    /// Example for a Ice damage type
     /// </summary>
-    public class ConcreteStrategyB : IStrategy
+    public class ConcreteDamageStrategyA : IDamageStrategy
     {
         public bool CanExecute(int damage)
         {
@@ -17,18 +17,15 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
 
         public void Execute(int damage)
         {
-            // Do Fire damage
-            Debug.Log($"{this} => Do {damage} fire damage");
+            // Do Ice damage
+            Debug.Log($"{this} => Do {damage} ice damage");
         }
 
         public bool TryToExecute(int damage)
         {
             if (!CanExecute(damage)) { return false; }
-            else
-            {
-                Execute(damage);
-                return true;
-            }
+            Execute(damage);
+            return true;
         }
     }
 }

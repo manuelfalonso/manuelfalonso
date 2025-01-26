@@ -7,13 +7,13 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
     /// The context exposes a setter which lets clients replace the strategy 
     /// associated with the context at runtime.
     /// 
-    /// In this example we create a Ice Damage and used it with the context weapon.
-    /// On runtime we change its damage to Fire.
+    /// In this example we create an Ice Damage and used it with the context weapon.
+    /// On runtime, we change its damage to Fire.
     /// </summary>
-    public class StrategyClient : MonoBehaviour
+    public class DamageStrategyClient : MonoBehaviour
     {
         [SerializeField]
-        private StrategyContext _context = default(StrategyContext);
+        private DamageStrategyContext _context;
 
 
         void Start()
@@ -25,12 +25,12 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
         private void UseWeapon()
         {
             // Do attack with Ice Damage
-            var iceDamageType = new ConcreteStrategyA();
+            var iceDamageType = new ConcreteDamageStrategyA();
             _context.SetStrategy(iceDamageType);
             _context.TryDoAttack();
 
             // Use same weapon but now deal Fire Damage
-            var fireDamageType = new ConcreteStrategyB();
+            var fireDamageType = new ConcreteDamageStrategyB();
             _context.SetStrategy(fireDamageType);
             _context.TryDoAttack();
         }

@@ -9,16 +9,15 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
     /// 
     /// This example is for a weapon. It can be a base class for other
     /// types of weapons.
-    /// Also you can combine different Damage types as shown below.
+    /// Also, you can combine different Damage types as shown below.
     /// It can also not be a MonoBehaviour and initialize its data
     /// on the constructor in a Client class.
     /// </summary>
-    public class StrategyContext : MonoBehaviour
+    public class DamageStrategyContext : MonoBehaviour
     {
-        [SerializeField]
-        private int _damage = 0;
+        [SerializeField] private int _damage = 0;
 
-        private IStrategy _strategy;
+        private IDamageStrategy _damageStrategy;
 
 
         /// <summary>
@@ -26,35 +25,34 @@ namespace SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
         /// </summary>
         public void TryDoAttack()
         {
-            _strategy?.Execute(_damage);
+            _damageStrategy?.Execute(_damage);
         }
 
         /// <summary>
         /// Switch strategy on runtime
         /// </summary>
-        /// <param name="strategy"></param>
-        public void SetStrategy(IStrategy strategy)
+        /// <param name="damageStrategy"></param>
+        public void SetStrategy(IDamageStrategy damageStrategy)
         {
-            if (strategy != null)
-                _strategy = strategy;
+            if (damageStrategy != null)
+                _damageStrategy = damageStrategy;
         }
 
 
         // Combine Strategies
-        [SerializeField]
-        private List<IStrategy> _strategyList = new List<IStrategy>();
+        [SerializeField] private List<IDamageStrategy> _strategyList = new();
 
         public void TryDoCombineAttack()
         {
-            foreach (IStrategy strategy in _strategyList)
+            foreach (IDamageStrategy strategy in _strategyList)
             {
                 strategy?.Execute(_damage);
             }
         }
 
-        public void AddDamageType(IStrategy newStrategy)
+        public void AddDamageType(IDamageStrategy newDamageStrategy)
         {
-            _strategyList.Add(newStrategy);
+            _strategyList.Add(newDamageStrategy);
         }
     }
 }

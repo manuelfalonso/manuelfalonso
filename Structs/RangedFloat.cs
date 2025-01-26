@@ -22,5 +22,11 @@ namespace SombraStudios.Shared.Structs
         /// Gets a random value within the range [MinValue, MaxValue].
         /// </summary>
         public float RandomValue => UnityEngine.Random.Range(MinValue, MaxValue);
+        
+        public RangedFloat (float minValue, float maxValue)
+        {
+            MinValue = minValue;
+            MaxValue = maxValue;
+        }
     }
 }
