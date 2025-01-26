@@ -1,5 +1,5 @@
-#if DEVELOPMENT_BUILD || UNITY_EDITOR
-#define DEBUG
+#if !DEVELOPMENT_BUILD && !UNITY_EDITOR
+#define RELEASE_BUILD
 #endif
 
 using UnityEngine;
@@ -7,14 +7,13 @@ using UnityEngine;
 namespace SombraStudios.Shared.Utility.Destroyer
 {
     /// <summary>
-    /// Destroys the GameObject this script is attached to if the build is 
-    /// not a development build or if not running in the Unity editor.
+    /// Destroys the GameObject this script is attached to if the build is a release build.
     /// </summary>
     public class ReleaseBuildGameObjectDestroyer : MonoBehaviour
     {
         private void Awake()
         {
-#if !DEBUG
+#if RELEASE_BUILD
             // Destroy the GameObject if not in debug mode.
             Destroy(gameObject);
 #endif

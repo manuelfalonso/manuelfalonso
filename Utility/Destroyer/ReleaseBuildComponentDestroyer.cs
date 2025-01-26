@@ -1,5 +1,5 @@
-#if DEVELOPMENT_BUILD || UNITY_EDITOR
-#define DEBUG
+#if !DEVELOPMENT_BUILD && !UNITY_EDITOR
+#define RELEASE_BUILD
 #endif
 
 using UnityEngine;
@@ -7,20 +7,19 @@ using UnityEngine;
 namespace SombraStudios.Shared.Utility.Destroyer
 {
     /// <summary>
-    /// Destroys specified script components if the build is not a development 
-    /// build or if not running in the Unity editor.
+    /// Destroys specified script components if the build is a release build.
     /// </summary>
-    public class ReleaseBuildScriptDestroyer : MonoBehaviour
+    public class ReleaseBuildComponentDestroyer : MonoBehaviour
     {
         /// <summary>
         /// An array of script components to be destroyed in release builds.
         /// </summary>
         [Tooltip("An array of script components to be destroyed in release builds.")]
-        [SerializeField] private Component[] _scriptsToDestroy; 
+        [SerializeField] private Component[] _componentsToDestroy; 
 
         private void Awake()
         {
-#if !DEBUG
+#if RELEASE_BUILD
             foreach (var item in _scriptsToDestroy)
             {
                 if (item != null)
