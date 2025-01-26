@@ -137,7 +137,9 @@ namespace SombraStudios.Shared.Systems.Resource
         /// Data structure for resource regeneration.
         /// </summary>
         /// <typeparam name="T">The type of the resource amount.</typeparam>
+#pragma warning disable CS0693 // Type parameter has the same name as the type parameter from outer type
         public struct RegenerationData<T> where T : struct
+#pragma warning restore CS0693 // Type parameter has the same name as the type parameter from outer type
         {
             /// <summary>
             /// Gets or sets the regeneration time.

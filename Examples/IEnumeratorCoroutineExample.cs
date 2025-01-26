@@ -216,9 +216,11 @@ namespace SombraStudios.Shared.Examples
             // yield break stops coroutine
             Log($"yield break; stops coroutine", this);
             yield break;
-
+            
+#pragma warning disable CS0162 // Disable warning about unreachable code detected
             // Innacesible code
             Log("RoutineOne: This message should not be printed", this);
+#pragma warning restore CS0162 // Re-enable warning for unreachable code detected
         }
         #endregion
 
