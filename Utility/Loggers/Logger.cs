@@ -136,7 +136,38 @@ namespace SombraStudios.Shared.Utility.Loggers
                 Debug.LogWarning(FormatMessageWithCategory(WARNING_COLOR, category, message));
         }
 
-        // Additional methods follow the same pattern...
+        /// <summary>
+        /// Logs a warning formatted message with optional sender information.
+        /// </summary>
+        /// <param name="format">The message format string.</param>
+        /// <param name="sender">The object that sends the log (optional).</param>
+        /// <param name="args">Arguments for formatting the message.</param>
+        [Conditional(DEBUG_CONDITION)]
+        public static void LogWarningFormat(string format, Object sender = null, params object[] args)
+        {
+            if (sender != null)
+                Debug.LogWarningFormat(FormatMessage(WARNING_COLOR, string.Format(format, args)), sender);
+            else
+                Debug.LogWarningFormat(FormatMessage(WARNING_COLOR, string.Format(format, args)));
+        }
+
+        /// <summary>
+        /// Logs a categorized and formatted warning message with optional sender information.
+        /// </summary>
+        /// <param name="category">The category of the log.</param>
+        /// <param name="format">The message format string.</param>
+        /// <param name="sender">The object that sends the log (optional).</param>
+        /// <param name="args">Arguments for formatting the message.</param>
+        [Conditional(DEBUG_CONDITION)]
+        public static void LogWarningFormat(string category, string format, Object sender = null, params object[] args)
+        {
+            if (sender != null)
+                Debug.LogWarningFormat(
+                    FormatMessageWithCategory(WARNING_COLOR, category, string.Format(format, args)), sender);
+            else
+                Debug.LogWarningFormat(
+                    FormatMessageWithCategory(WARNING_COLOR, category, string.Format(format, args)));
+        }
         #endregion
 
         #region Log Error
@@ -155,7 +186,53 @@ namespace SombraStudios.Shared.Utility.Loggers
                 Debug.LogError(FormatMessage(ERROR_COLOR, message));
         }
 
-        // Additional methods for error logging...
+        /// <summary>
+        /// Logs a categorized error message with optional sender information.
+        /// </summary>
+        /// <param name="category">The category of the warning.</param>
+        /// <param name="message">The warning message to log.</param>
+        /// <param name="sender">The object that sends the warning (optional).</param>
+        [Conditional(DEBUG_CONDITION)]
+        public static void LogError(string category, object message, Object sender = null)
+        {
+            if (sender != null)
+                Debug.LogError(FormatMessageWithCategory(ERROR_COLOR, category, message), sender);
+            else
+                Debug.LogError(FormatMessageWithCategory(ERROR_COLOR, category, message));
+        }
+
+        /// <summary>
+        /// Logs a formatted error message with optional sender information.
+        /// </summary>
+        /// <param name="format">The message format string.</param>
+        /// <param name="sender">The object that sends the log (optional).</param>
+        /// <param name="args">Arguments for formatting the message.</param>
+        [Conditional(DEBUG_CONDITION)]
+        public static void LogErrorFormat(string format, Object sender = null, params object[] args)
+        {
+            if (sender != null)
+                Debug.LogErrorFormat(FormatMessage(ERROR_COLOR, string.Format(format, args)), sender);
+            else
+                Debug.LogErrorFormat(FormatMessage(ERROR_COLOR, string.Format(format, args)));
+        }
+
+        /// <summary>
+        /// Logs a categorized and formatted error message with optional sender information.
+        /// </summary>
+        /// <param name="category">The category of the log.</param>
+        /// <param name="format">The message format string.</param>
+        /// <param name="sender">The object that sends the log (optional).</param>
+        /// <param name="args">Arguments for formatting the message.</param>
+        [Conditional(DEBUG_CONDITION)]
+        public static void LogErrorFormat(string category, string format, Object sender = null, params object[] args)
+        {
+            if (sender != null)
+                Debug.LogErrorFormat(
+                    FormatMessageWithCategory(ERROR_COLOR, category, string.Format(format, args)), sender);
+            else
+                Debug.LogErrorFormat(
+                    FormatMessageWithCategory(ERROR_COLOR, category, string.Format(format, args)));
+        }
 
         #endregion
 

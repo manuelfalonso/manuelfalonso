@@ -9,6 +9,17 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
     /// <typeparam name="T">The type of items in the runtime set.</typeparam>
     public abstract class RuntimeSetSO<T> : ScriptableObject
     {
+        protected const string LOG_CATEGORY = "[ConditionSO]";
+        protected const string DEBUG_TITLE = "Debug";
+        protected const string PROPERTIES_TITLE = "Properties";
+        
+        [Header(DEBUG_TITLE)] 
+        /// <summary>
+        /// Show debug logs.
+        /// </summary>
+        [Tooltip("Show debug logs.")]
+        [SerializeField] protected bool _showLogs;
+        
         /// <summary>
         /// The list of items in the runtime set.
         /// </summary>
