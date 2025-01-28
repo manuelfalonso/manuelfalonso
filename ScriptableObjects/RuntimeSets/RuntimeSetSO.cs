@@ -10,8 +10,8 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
     public abstract class RuntimeSetSO<T> : ScriptableObject
     {
         protected const string LOG_CATEGORY = "[ConditionSO]";
-        protected const string DEBUG_TITLE = "Debug";
         protected const string PROPERTIES_TITLE = "Properties";
+        protected const string DEBUG_TITLE = "Debug";
         
         [Header(DEBUG_TITLE)] 
         /// <summary>
