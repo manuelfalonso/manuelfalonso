@@ -7,25 +7,25 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Command
     public class CommandManager : MonoBehaviour
     {
         [Tooltip("Predetermined list of commands to execute in order")]
-        [SerializeField] private List<ICommand> m_CommandSequence = new ();
+        [SerializeField] private List<ICommand> _commandSequence = new ();
         [Tooltip("Delay between command execution")]
-        [SerializeField] private float m_DelayBetweenCommands = 0.0f;
+        [SerializeField] private float _delayBetweenCommands = 0.0f;
 
         // The next index to execute from command sequence
-        private int m_CurrentIndex = 0;
-        private WaitForSeconds m_WaitForSeconds;
+        private int _currentIndex = 0;
+        private WaitForSeconds _waitForSeconds;
 
         private void Awake()
         {
-            m_WaitForSeconds = new WaitForSeconds(m_DelayBetweenCommands);
+            _waitForSeconds = new WaitForSeconds(_delayBetweenCommands);
         }
 
         public virtual void Execute()
         {
-            if (m_CurrentIndex >= m_CommandSequence.Count)
+            if (_currentIndex >= _commandSequence.Count)
                 return;
 
-            var activeCommand = m_CommandSequence[m_CurrentIndex];
+            var activeCommand = _commandSequence[_currentIndex];
 
             if (activeCommand == null)
                 return;
@@ -35,10 +35,10 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Command
 
         public virtual void Undo()
         {
-            if (m_CurrentIndex <= 0)
+            if (_currentIndex <= 0)
                 return;
 
-            var activeCommand = m_CommandSequence[m_CurrentIndex - 1];
+            var activeCommand = _commandSequence[_currentIndex - 1];
 
             if (activeCommand == null)
                 return;
@@ -48,22 +48,22 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Command
 
         protected virtual IEnumerator ExecuteRoutine(ICommand commandToExecute)
         {
-            yield return m_WaitForSeconds;
+            yield return _waitForSeconds;
 
             if (commandToExecute != null)
                 commandToExecute.Execute();
 
-            m_CurrentIndex++;
+            _currentIndex++;
         }
 
         protected virtual IEnumerator UndoRoutine(ICommand commandToUndo)
         {
-            yield return m_WaitForSeconds;
+            yield return _waitForSeconds;
 
             if (commandToUndo != null)
                 commandToUndo.Undo();
 
-            m_CurrentIndex--;
+            _currentIndex--;
         }
     }
 }
