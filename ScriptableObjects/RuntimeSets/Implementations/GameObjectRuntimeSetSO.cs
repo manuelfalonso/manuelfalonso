@@ -27,7 +27,6 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
                 ItemsChanged();
         }
 
-        // Adds one GameObject to the Items
         public override bool Add(GameObject thingToAdd)
         {
             bool success = false;
@@ -47,7 +46,6 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
             return success;
         }
 
-        // Removes one GameObject from the Items
         public override bool Remove(GameObject thingToRemove)
         {
             bool success = false;
