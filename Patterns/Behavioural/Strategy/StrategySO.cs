@@ -33,11 +33,9 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
         
         /// <summary>
         /// Tries to execute the strategy if it can be executed.
-        /// Don't have return value to be able to use with UnityEvents depending on the T data type to be
-        /// serializable by Unity.
         /// </summary>
         /// <param name="data">The data that the strategy operates on.</param>
-        public virtual void TryToExecuteWithUnityEvent(T data)
+        public virtual void TryExecute(T data)
         {
             TryToExecute(data);
         }
@@ -73,6 +71,18 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
         }
 
         public override bool TryToExecute(VoidStruct data) => TryToExecute();
+
+        /// <summary>
+        /// Tries to execute the strategy if it can be executed.
+        /// </summary>
+        public virtual void TryExecute()
+        {
+            if (!CanExecute()) return;
+            Execute();
+            return;
+        }
+
+        public override void TryExecute(VoidStruct data) => TryExecute();
 
         /// <summary>
         /// Determines whether the strategy can be executed.
