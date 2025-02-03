@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
     /// <typeparam name="T">The type of data used by the condition.</typeparam>
     public abstract class ConditionSO<T> : ScriptableObject, ICondition<T>
     {
-        protected const string LOG_CATEGORY = "[ConditionSO]";
+        protected const string LOG_CATEGORY = "ConditionSO";
         protected const string DEBUG_TITLE = "Debug";
         protected const string PROPERTIES_TITLE = "Properties";
         
