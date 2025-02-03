@@ -9,15 +9,16 @@ namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
     /// <typeparam name="T">The type of data that the strategy operates on.</typeparam>
     public abstract class StrategySO<T> : ScriptableObject, IStrategy<T>
     {
+        protected const string LOG_CATEGORY = "StrategySO";
+        protected const string PROPERTIES_TITLE = "Properties";
+        protected const string DEBUG_TITLE = "Debug";
+
         [Header(DEBUG_TITLE)]
         /// <summary>
         /// Whether to show logs.
         /// </summary>
         [Tooltip("Whether to show logs.")]
         [SerializeField] protected bool _showLogs;
-
-        protected const string PROPERTIES_TITLE = "Properties";
-        protected const string DEBUG_TITLE = "Debug";
 
         /// <summary>
         /// Tries to execute the strategy if it can be executed.

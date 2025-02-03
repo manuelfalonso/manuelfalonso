@@ -1,4 +1,5 @@
 using SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects;
+using SombraStudios.Shared.ScriptableObjects;
 using SombraStudios.Shared.ScriptableObjects.Conditions;
 using SombraStudios.Shared.ScriptableObjects.RuntimeSets;
 using UnityEngine;
@@ -11,13 +12,13 @@ namespace SombraStudios.Shared.Systems.Unlock
     /// Each unlockable object can have a condition to determine its unlocked state.
     /// </summary>
     [CreateAssetMenu(fileName = "UnlockableItem", menuName = "Sombra Studios/Unlockable/Unlockable")]
-    public class UnlockableSO : ScriptableObject, IRuntimeSetItem<UnlockableSO>
+    public class UnlockableSO : SOWithId, IRuntimeSetItem<UnlockableSO>
     {
         protected const string LOG_CATEGORY = "[UnlockableSO]";
         protected const string PROPERTIES_TITLE = "Properties";
         protected const string EVENT_TITLE = "Events";
         protected const string DEBUG_TITLE = "Debug";
-        
+
         [Header(PROPERTIES_TITLE)]
         /// <summary>
         /// Condition required to unlock this object.
@@ -46,14 +47,14 @@ namespace SombraStudios.Shared.Systems.Unlock
         /// </summary>
         [Tooltip("Event triggered when the object is unlocked.")]
         public VoidEventChannelSO OnUnlockedTrigger;
-        
+
         [Header(DEBUG_TITLE)]
         [Tooltip("Show debug logs.")]
         /// <summary>
         /// Show debug logs.
         /// </summary>
         [SerializeField] private bool _showLogs;
-        
+
         /// <summary>
         /// Gets or sets the runtime set this object belongs to.
         /// </summary>
@@ -72,17 +73,17 @@ namespace SombraStudios.Shared.Systems.Unlock
             {
                 if (_isUnlocked)
                     return _isUnlocked;
-                
+
                 if (_unlockCondition == null)
                 {
                     Logger.LogError(LOG_CATEGORY, "Unlock condition is null.", this);
                     return _isUnlocked;
                 }
-                
+
                 _isUnlocked = _unlockCondition.IsValid();
-                
+
                 // Check if the object is unlocked and trigger the event if it hasn't been triggered yet
-                if (_isUnlocked) 
+                if (_isUnlocked)
                 {
                     if (!_unlockedEventTriggered)
                     {
@@ -94,20 +95,20 @@ namespace SombraStudios.Shared.Systems.Unlock
                 {
                     _unlockedEventTriggered = false;
                 }
-                
+
                 if (_showLogs)
                 {
                     Logger.Log(LOG_CATEGORY, $"{_unlockCondition.name} is valid: {_isUnlocked}", this);
                 }
-                
+
                 return _isUnlocked;
             }
             protected set => _isUnlocked = value;
         }
-        
+
         private bool _unlockedEventTriggered;
 
-        
+
         #region Unity Messages
 
         private void OnEnable()
@@ -123,21 +124,29 @@ namespace SombraStudios.Shared.Systems.Unlock
             RemoveFromRuntimeSet();
             RemoveListener();
         }
-        
+
         #endregion
 
-        
+
         #region Public Methods
 
         /// <summary>
         /// Adds the object to the runtime set.
         /// </summary>
-        public void AddToRuntimeSet() => RuntimeSet?.Add(this);
+        public void AddToRuntimeSet()
+        {
+            if (RuntimeSet == null) return;
+            RuntimeSet.Add(this);
+        }
 
         /// <summary>
         /// Removes the object from the runtime set.
         /// </summary>
-        public void RemoveFromRuntimeSet() => RuntimeSet?.Remove(this);
+        public void RemoveFromRuntimeSet()
+        {
+            if (RuntimeSet == null) return;
+            RuntimeSet.Remove(this);
+        }
 
         /// <summary>
         /// Forcefully sets the unlock state of the object.
@@ -150,7 +159,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         }
 
         #endregion
-        
+
 
         #region Private Methods
 
@@ -160,13 +169,13 @@ namespace SombraStudios.Shared.Systems.Unlock
             CheckUnlockConditionListener.OnEventRaised -= EvaluateUnlockCondition;
             CheckUnlockConditionListener.OnEventRaised += EvaluateUnlockCondition;
         }
-        
+
         private void RemoveListener()
         {
             if (CheckUnlockConditionListener == null) return;
             CheckUnlockConditionListener.OnEventRaised -= EvaluateUnlockCondition;
         }
-        
+
         private void EvaluateUnlockCondition() => _ = IsUnlocked;
 
         #endregion
