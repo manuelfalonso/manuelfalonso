@@ -77,5 +77,16 @@ namespace SombraStudios.Shared.Extensions
                     throw new ArgumentOutOfRangeException(nameof(axis), axis, null);
             }
         }
+
+        /// <summary>
+        /// Resets the position, rotation and scale of the transform to default values.
+        /// </summary>
+        /// <param name="trans">The transform to reset its position, rotation and scale.</param>
+        public static void ResetTransform(this Transform trans)
+        {
+            trans.position = Vector3.zero;
+            trans.localRotation = Quaternion.identity;
+            trans.localScale = new Vector3(1, 1, 1);
+        }
     }
 }
