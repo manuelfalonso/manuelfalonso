@@ -1,4 +1,4 @@
-﻿using SombraStudios.Shared.Patterns.Behavioural.Strategy;
+﻿using SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy;
 
 namespace SombraStudios.Shared.Scenes.Strategies
 {
@@ -11,7 +11,7 @@ namespace SombraStudios.Shared.Scenes.Strategies
         /// <summary>
         /// Log category identifier for scene strategy logs.
         /// </summary>
-        protected static readonly string LOG_CATEGORY = nameof(SceneStrategy);
+        protected new static readonly string LOG_CATEGORY = nameof(SceneStrategy);
     }
 
     /// <summary>
@@ -24,6 +24,6 @@ namespace SombraStudios.Shared.Scenes.Strategies
         /// <summary>
         /// Log category identifier for scene strategy logs.
         /// </summary>
-        protected static readonly string LOG_CATEGORY = nameof(SceneStrategy);
+        protected new static readonly string LOG_CATEGORY = nameof(SceneStrategy);
     }
 }

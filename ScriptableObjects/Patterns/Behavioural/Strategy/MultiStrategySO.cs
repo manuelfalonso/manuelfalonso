@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
+namespace SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
 {
     /// <summary>
     /// Represents a strategy that consists of multiple strategies to be executed sequentially.

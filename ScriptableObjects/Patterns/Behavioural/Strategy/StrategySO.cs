@@ -1,13 +1,14 @@
+using SombraStudios.Shared.Patterns.Behavioural.Strategy;
 using SombraStudios.Shared.Structs;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Behavioural.Strategy
+namespace SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
 {
     /// <summary>
     /// Abstract base class for strategy pattern implementation using ScriptableObject.
     /// </summary>
     /// <typeparam name="T">The type of data that the strategy operates on.</typeparam>
-    public abstract class StrategySO<T> : ScriptableObject, IStrategy<T>
+    public abstract class StrategySO<T> : SOWithId, IStrategy<T>
     {
         protected const string LOG_CATEGORY = "StrategySO";
         protected const string PROPERTIES_TITLE = "Properties";

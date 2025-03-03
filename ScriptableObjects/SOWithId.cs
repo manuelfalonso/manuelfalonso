@@ -1,4 +1,5 @@
 using SombraStudios.Shared.Attributes;
+using SombraStudios.Shared.Interfaces;
 using System;
 using UnityEngine;
 #if UNITY_EDITOR
@@ -9,7 +10,7 @@ namespace SombraStudios.Shared.ScriptableObjects
     /// <summary>
     /// Base class for ScriptableObjects with an ID.
     /// </summary>
-    public class SOWithId : ScriptableObject, IEquatable<SOWithId>
+    public class SOWithId : ScriptableObject, IEquatable<SOWithId>, IIdentifiable
     {
         /// <summary>
         /// The ID of the ScriptableObject.

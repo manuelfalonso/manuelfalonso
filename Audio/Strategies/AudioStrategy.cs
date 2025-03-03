@@ -1,4 +1,4 @@
-using SombraStudios.Shared.Patterns.Behavioural.Strategy;
+using SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy;
 using SombraStudios.Shared.Structs;
 using UnityEngine;
 using Random = UnityEngine.Random;

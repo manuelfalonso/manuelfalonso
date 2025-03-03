@@ -1,7 +1,7 @@
-using SombraStudios.Shared.Patterns.Behavioural.Strategy;
+using SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.FrameRate
+namespace SombraStudios.Shared.Optimization.FrameRate
 {
     /// <summary>
     /// Command to set the target frame rate of the application.

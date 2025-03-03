@@ -1,4 +1,4 @@
-using SombraStudios.Shared.Patterns.Behavioural.Strategy;
+using SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy;
 using UnityEngine;
 using Logger = SombraStudios.Shared.Utility.Loggers.Logger;
 
