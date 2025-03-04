@@ -2,6 +2,9 @@
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Integer property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetInteger", menuName = "Sombra Studios/VFX/Material Property Block/Set Integer")]
     public class MPBSetIntegerVFXSO : MaterialPropertyBlockPropertyVFXSO<int>
     {

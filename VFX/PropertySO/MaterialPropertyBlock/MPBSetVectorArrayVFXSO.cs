@@ -2,6 +2,9 @@
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Vector Array property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetVectorArray", menuName = "Sombra Studios/VFX/Material Property Block/Set Vector Array")]
     public class MPBSetVectorArrayVFXSO : MaterialPropertyBlockPropertyVFXSO<Vector4[]>
     {

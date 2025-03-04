@@ -2,6 +2,9 @@
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Texture property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetTexture", menuName = "Sombra Studios/VFX/Material Property Block/Set Texture")]
     public class MPBSetTextureVFXSO : MaterialPropertyBlockPropertyVFXSO<Texture>
     {

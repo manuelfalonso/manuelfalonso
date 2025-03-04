@@ -2,6 +2,9 @@
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Vector property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetVector", menuName = "Sombra Studios/VFX/Material Property Block/Set Vector")]
     public class MPBSetVectorVFXSO : MaterialPropertyBlockPropertyVFXSO<Vector4>
     {

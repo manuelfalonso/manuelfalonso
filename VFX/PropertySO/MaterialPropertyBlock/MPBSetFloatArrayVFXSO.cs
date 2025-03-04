@@ -2,6 +2,9 @@
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Float Array property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetFloatArray", menuName = "Sombra Studios/VFX/Material Property Block/Set Float Array")]
     public class MPBSetFloatArrayVFXSO : MaterialPropertyBlockPropertyVFXSO<float[]>
     {

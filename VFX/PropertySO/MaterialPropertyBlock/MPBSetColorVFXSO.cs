@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Color property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetColor", menuName = "Sombra Studios/VFX/Material Property Block/Set Color")]
     public class MPBSetColorVFXSO : MaterialPropertyBlockPropertyVFXSO<Color>
     {

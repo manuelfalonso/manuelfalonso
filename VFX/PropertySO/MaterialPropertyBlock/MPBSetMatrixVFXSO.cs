@@ -2,6 +2,9 @@
 
 namespace SombraStudios.Shared.VFX.PropertySO
 {
+    /// <summary>
+    /// ScriptableObject for setting a Matrix property in a MaterialPropertyBlock.
+    /// </summary>
     [CreateAssetMenu(fileName = "NewMPBSetMatrix", menuName = "Sombra Studios/VFX/Material Property Block/Set Matrix")]
     public class MPBSetMatrixVFXSO : MaterialPropertyBlockPropertyVFXSO<Matrix4x4>
     {
