@@ -10,6 +10,9 @@ namespace SombraStudios.Shared.VFX.PropertySO
     [CreateAssetMenu(fileName = "NewSetBlendShape", menuName = "Sombra Studios/VFX/Blend Shape/Set Blend Shape")]
     public class SetBlendShapeVFXSO : VFXPropertySO, IBlendShapeProperty
     {
+        private const float MIN_WEIGHT = 0f;
+        private const float MAX_WEIGHT = 100f;
+
         [Header(PROPERTIES_TITLE)]
         [SerializeField] private int _rendererIndex;
         [SerializeField] private string _blendShapeName;
@@ -18,8 +21,7 @@ namespace SombraStudios.Shared.VFX.PropertySO
         public string BlendShapeName => _blendShapeName;
         public float Weight => _weight;
 
-        private static readonly Dictionary<(SkinnedMeshRenderer, int), float> _originalWeights = new();
-        private Renderer _renderer;
+        private static readonly Dictionary<(string, BaseVFXController), float> _originalProperties = new();
 
         public override bool CanExecute(BaseVFXController vFXController)
         {
@@ -32,40 +34,41 @@ namespace SombraStudios.Shared.VFX.PropertySO
 
             if (vFXController.Renderers[_rendererIndex] is not SkinnedMeshRenderer skinnedMeshRenderer) return false;
 
-            var index = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(_blendShapeName);
-            return index >= 0 && index < skinnedMeshRenderer.sharedMesh.blendShapeCount;
+            var blendShapeIndex = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(_blendShapeName);
+            return blendShapeIndex >= 0 && blendShapeIndex < skinnedMeshRenderer.sharedMesh.blendShapeCount;
         }
 
         public override void Execute(BaseVFXController vFXController)
         {
-            _renderer = vFXController.Renderers[_rendererIndex];
+            var renderer = vFXController.Renderers[_rendererIndex];
 
-            if (_renderer is SkinnedMeshRenderer skinnedMeshRenderer)
+            if (renderer is SkinnedMeshRenderer skinnedMeshRenderer)
             {
-                int index = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(_blendShapeName);
-                _originalWeights[(skinnedMeshRenderer, index)] = skinnedMeshRenderer.GetBlendShapeWeight(index);
-                skinnedMeshRenderer.SetBlendShapeWeight(index, Mathf.Clamp(_weight, 0f, 100f));
+                var blendShapeIndex = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(_blendShapeName);
+                _originalProperties[(Id, vFXController)] = 
+                    skinnedMeshRenderer.GetBlendShapeWeight(blendShapeIndex);
+                skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, Mathf.Clamp(_weight, MIN_WEIGHT, MAX_WEIGHT));
             }
 
-            vFXController.AddToCurrentVFXProperties(this);
+            base.Execute(vFXController);
         }
 
         public override void RevertVFX(BaseVFXController vFXController)
         {
-            _renderer = vFXController.Renderers[_rendererIndex];
+            Renderer renderer = vFXController.Renderers[_rendererIndex];
 
-            if (_renderer is SkinnedMeshRenderer skinnedMeshRenderer)
+            if (renderer is SkinnedMeshRenderer skinnedMeshRenderer)
             {
-                var index = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(_blendShapeName);
-                var key = (skinnedMeshRenderer, index);
-                if (_originalWeights.TryGetValue(key, out float originalWeight))
+                var blendShapeIndex = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(_blendShapeName);
+                var key = (Id, vFXController);
+                if (_originalProperties.TryGetValue(key, out float originalWeight))
                 {
-                    skinnedMeshRenderer.SetBlendShapeWeight(index, originalWeight);
-                    _originalWeights.Remove(key);
+                    skinnedMeshRenderer.SetBlendShapeWeight(blendShapeIndex, originalWeight);
+                    _originalProperties.Remove(key);
                 }
             }
 
-            vFXController.RemoveFromCurrentVFXProperties(this);
+            base.RevertVFX(vFXController);
         }
     }
 }

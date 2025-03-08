@@ -10,23 +10,21 @@ namespace SombraStudios.Shared.VFX.PropertySO
     {
         protected override void StoreOriginalValue(MaterialPropertyBlock mpb)
         {
-            var key = (_renderer, Id);
-            if (!_originalProperties.ContainsKey(key))
-            {
-                if (_showLogs)
-                {
-                    Debug.Log($"Storing original value for key: {key}", this);
-                }
+            var key = (Id, _vFXController);
 
-                _originalProperties[key] = mpb;
+            if (_showLogs)
+            {
+                Debug.Log($"Storing original value for key: {key}", this);
             }
+
+            _originalProperties[key] = mpb;
         }
 
         protected override void ApplyNewValue(MaterialPropertyBlock mpb)
         {
             if (_showLogs)
             {
-                Debug.Log($"Applying new value for key: {(_renderer, Id)}", this);
+                Debug.Log($"Applying new value for key: {(Id, _vFXController)}", this);
             }
 
             mpb.Clear();

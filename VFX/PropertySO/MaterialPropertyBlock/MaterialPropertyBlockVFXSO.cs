@@ -13,40 +13,58 @@ namespace SombraStudios.Shared.VFX.PropertySO
     /// <typeparam name="T">The type of the property value.</typeparam>
     public abstract class MaterialPropertyBlockVFXSO<T> : VFXPropertySO
     {
-        [Header(PROPERTIES_TITLE)]
-        [SerializeField] protected int _rendererIndex;
+        [Tooltip("The index of the renderer in the VFX controller to apply the property to.")]
+        [SerializeField, Min(0)] protected int _rendererIndex;
+        [Tooltip("Determines whether the property should be applied only to a specific material of the Renderer.")]
         [SerializeField] protected bool _applyOnlyToSpecificMaterial;
-        [SerializeField] protected int _materialIndex;
+        [Tooltip("The index of the material in the Renderer to apply the property to.")]
+        [SerializeField, Min(0)] protected int _materialIndex;
 
-        protected Renderer _renderer;
+        protected static readonly Dictionary<(string, BaseVFXController), T> _originalProperties = new();
 
-        protected static readonly Dictionary<(Renderer, string), T> _originalProperties = new();
+        protected BaseVFXController _vFXController;
 
         public override bool CanExecute(BaseVFXController vFXController)
         {
             if (!base.CanExecute(vFXController)) return false;
 
+            // If there are no renderers, return false
             if (vFXController.Renderers.Count == 0) return false;
 
+            // If the renderer index is out of bounds or the renderer is null, return false
             if (_rendererIndex >= vFXController.Renderers.Count || vFXController.Renderers[_rendererIndex] == null)
                 return false;
+
+            var renderer = vFXController.Renderers[_rendererIndex];
+            if (_applyOnlyToSpecificMaterial)
+            {
+                // If the material index is out of bounds or the material is null, return false
+                if (_materialIndex >= renderer.materials.Length || renderer.materials[_materialIndex] == null)
+                    return false;
+            }
+            else
+            {
+                // If the renderer has no materials, return false
+                if (renderer.materials.Length == 0) return false;
+            }
 
             return true;
         }
 
         public override void Execute(BaseVFXController vFXController)
         {
-            _renderer = vFXController.Renderers[_rendererIndex];
+            var renderer = vFXController.Renderers[_rendererIndex];
+            _vFXController = vFXController;
 
             // Get the current material property block
             var mpb = new MaterialPropertyBlock();
             if (_applyOnlyToSpecificMaterial)
             {
-                _renderer.GetPropertyBlock(mpb, _materialIndex);
+                renderer.GetPropertyBlock(mpb, _materialIndex);
             }
             else
             {
-                _renderer.GetPropertyBlock(mpb);
+                renderer.GetPropertyBlock(mpb);
             }
 
             // Store the original value before applying the new one
@@ -54,38 +72,38 @@ namespace SombraStudios.Shared.VFX.PropertySO
 
             // Apply the new value
             ApplyNewValue(mpb);
-            _renderer.SetPropertyBlock(mpb);
+            renderer.SetPropertyBlock(mpb);
 
-            vFXController.AddToCurrentVFXProperties(this);
+            base.Execute(vFXController);
         }
 
         public override void RevertVFX(BaseVFXController vFXController)
         {
-            _renderer = vFXController.Renderers[_rendererIndex];
+            var renderer = vFXController.Renderers[_rendererIndex];
 
-            var key = (_renderer, Id);
+            var key = (Id, vFXController);
             if (_originalProperties.TryGetValue(key, out T originalValue))
             {
                 // Get the current material property block
                 var mpb = new MaterialPropertyBlock();
                 if (_applyOnlyToSpecificMaterial)
                 {
-                    _renderer.GetPropertyBlock(mpb, _materialIndex);
+                    renderer.GetPropertyBlock(mpb, _materialIndex);
                 }
                 else
                 {
-                    _renderer.GetPropertyBlock(mpb);
+                    renderer.GetPropertyBlock(mpb);
                 }
 
                 // Restore the original property
                 RestoreOriginalValue(mpb, originalValue);
-                _renderer.SetPropertyBlock(mpb);
+                renderer.SetPropertyBlock(mpb);
 
                 // Remove the stored value to prevent memory leaks
                 _originalProperties.Remove(key);
             }
 
-            vFXController.RemoveFromCurrentVFXProperties(this);
+            base.RevertVFX(vFXController);
         }
 
         /// <summary>
@@ -116,6 +134,7 @@ namespace SombraStudios.Shared.VFX.PropertySO
     {
         [Tooltip("The name of the material shader property to be set. It will be cached OnEnable.")]
         [SerializeField] protected string _propertyName;
+        [Tooltip("The value of the material shader property to be set.")]
         [SerializeField] protected T _property;
 
         protected int _propertyID;
@@ -132,17 +151,14 @@ namespace SombraStudios.Shared.VFX.PropertySO
         {
             if (!base.CanExecute(vFXController)) return false;
 
-            _renderer = vFXController.Renderers[_rendererIndex];
+            var renderer = vFXController.Renderers[_rendererIndex];
             if (_applyOnlyToSpecificMaterial)
             {
-                if (_materialIndex >= _renderer.sharedMaterials.Length || _renderer.sharedMaterials[_materialIndex] == null)
-                    return false;
-
-                if (!_renderer.sharedMaterials[_materialIndex].HasProperty(_propertyID)) return false;
+                if (!renderer.sharedMaterials[_materialIndex].HasProperty(_propertyID)) return false;
             }
             else
             {
-                if (!_renderer.sharedMaterial.HasProperty(_propertyID)) return false;
+                if (!renderer.sharedMaterial.HasProperty(_propertyID)) return false;
             }
 
             return true;
@@ -152,11 +168,8 @@ namespace SombraStudios.Shared.VFX.PropertySO
         {
             if (HasProperty(mpb))
             {
-                var key = (_renderer, Id);
-                if (!_originalProperties.ContainsKey(key))
-                {
-                    _originalProperties[key] = GetProperty(mpb);
-                }
+                var key = (Id, _vFXController);
+                _originalProperties[key] = GetProperty(mpb);
             }
         }
 

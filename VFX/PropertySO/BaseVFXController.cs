@@ -90,6 +90,15 @@ namespace SombraStudios.Shared.VFX.PropertySO
                 vfx.RevertVFX(this);
             }
         }
+
+        public virtual void RevertVFXOnAnimationEnd()
+        {
+            var vfxToRevert = _currentVfxProperties.FindAll(vfx => vfx.RevertOnAnimationEnd);
+            foreach (var vfx in vfxToRevert)
+            {
+                vfx.RevertVFX(this);
+            }
+        }
         #endregion
 
         #region Testing Methods
