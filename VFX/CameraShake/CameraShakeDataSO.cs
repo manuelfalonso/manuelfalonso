@@ -5,7 +5,7 @@ namespace SombraStudios.Shared.VFX.CameraShake
     /// <summary>
     /// Store Shake Data to be used with DoTween DOShakePosition method
     /// </summary>
-    [CreateAssetMenu(fileName = "Shake Data", menuName = "Sombra Studios/Camera/Shake", order = 51)]
+    [CreateAssetMenu(fileName = "ShakeData", menuName = "Sombra Studios/Camera/Shake")]
     public class CameraShakeDataSO : ScriptableObject
     {
         public new string name;
