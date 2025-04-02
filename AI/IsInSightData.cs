@@ -38,6 +38,11 @@ namespace SombraStudios.Shared.AI
             /// The tag to ignore.
             /// </summary>
             public string TagToIgnore;
+
+            /// <summary>
+            /// If the sight check is 2D use Vector3.right, otherwise use Vector3.forward.
+            /// </summary>
+            public bool Is2D;
         }
     }
 }
