@@ -33,7 +33,7 @@ namespace SombraStudios.Shared.AI
                 return false;
             }
 
-            return IsInFieldOfView(data.StartPoint, data.EndPoint, viewAngle)
+            return IsInFieldOfView(data.StartPoint, data.EndPoint, viewAngle, data.Is2D)
                 && IsInSight(data);
         }
 
@@ -45,7 +45,7 @@ namespace SombraStudios.Shared.AI
         /// <param name="target">The transform of the target.</param>
         /// <param name="viewAngle">The half-field of view angle (in degrees).</param>
         /// <returns>Returns true if the target is within the field of view, otherwise false.</returns>
-        public static bool IsInFieldOfView(Transform entity, Transform target, float viewAngle)
+        public static bool IsInFieldOfView(Transform entity, Transform target, float viewAngle, bool is2D)
         {
             if (target == null || entity == null)
             {
@@ -54,7 +54,7 @@ namespace SombraStudios.Shared.AI
             }
 
             Vector3 directionToTarget = target.position - entity.position;
-            return Vector3.Angle(entity.forward, directionToTarget) < viewAngle / 2;
+            return Vector3.Angle(is2D ? entity.right : entity.forward, directionToTarget) < viewAngle / 2;
         }
 
         /// <summary>
