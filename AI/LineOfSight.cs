@@ -45,7 +45,7 @@ namespace SombraStudios.Shared.AI
         /// <param name="target">The transform of the target.</param>
         /// <param name="viewAngle">The half-field of view angle (in degrees).</param>
         /// <returns>Returns true if the target is within the field of view, otherwise false.</returns>
-        public static bool IsInFieldOfView(Transform entity, Transform target, float viewAngle, bool is2D)
+        public static bool IsInFieldOfView(Transform entity, Transform target, float viewAngle, bool is2D = false)
         {
             if (target == null || entity == null)
             {
