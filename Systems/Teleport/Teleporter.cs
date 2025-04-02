@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
-using UnityEditor;
 
 namespace SombraStudios.Shared.Systems.Teleport
 {
@@ -12,7 +11,7 @@ namespace SombraStudios.Shared.Systems.Teleport
     public class Teleporter : MonoBehaviour
     {
         //[SerializeField] private Object DestinationScene;
-        [SerializeField] private SceneAsset DestinationScene;
+        [SerializeField] private string DestinationScene;
         [SerializeField] private string DestinationSpawnPointName;
 
         [Header("Events")]
@@ -31,13 +30,13 @@ namespace SombraStudios.Shared.Systems.Teleport
 
             OnTeleporting();
 
-            if (SceneManager.GetActiveScene().name == DestinationScene.name)
+            if (SceneManager.GetActiveScene().name == DestinationScene)
             {
                 TeleportToDestination(teleportable);
             }
             else
             {
-                StartCoroutine(TeleportToNewScene(DestinationScene.name, teleportable));
+                StartCoroutine(TeleportToNewScene(DestinationScene, teleportable));
             }
         }
 
@@ -45,7 +44,7 @@ namespace SombraStudios.Shared.Systems.Teleport
         private IEnumerator TeleportToNewScene(string sceneName, ITeleportable teleportable)
         {
             Scene currentScene = SceneManager.GetActiveScene();
-            AsyncOperation newSceneAsyncLoad = SceneManager.LoadSceneAsync(DestinationScene.name, LoadSceneMode.Additive);
+            AsyncOperation newSceneAsyncLoad = SceneManager.LoadSceneAsync(DestinationScene, LoadSceneMode.Additive);
 
             while (!newSceneAsyncLoad.isDone)
             {
