@@ -85,10 +85,10 @@ namespace SombraStudios.Shared.AI
                 hits,
                 directionToTarget.magnitude,
                 data.ObstaclesMask);
-            hit = hits[0];
 
             if (hitCount > 0)
             {
+                hit = hits[0];
 #if UNITY_EDITOR
                 Debug.DrawLine(start,
                     hits[0].point,
