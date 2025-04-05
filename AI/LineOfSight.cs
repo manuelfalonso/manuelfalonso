@@ -9,12 +9,15 @@ namespace SombraStudios.Shared.AI
         /// </summary>
         /// <param name="data">The data for the sight check.</param>
         /// <param name="viewAngle">The field of view angle.</param>
+        /// <param name="hit">The RaycastHit information if an obstacle is detected.</param>
         /// <returns>True if the target is inside the specified angle and the "InSight" condition is met; 
         /// otherwise, false.</returns>
         public static bool IsInFieldOfViewAndInSight(
             IsInSightData data,
-            float viewAngle)
+            float viewAngle,
+            out RaycastHit hit)
         {
+            hit = new RaycastHit();
             if (data.StartPoint == null)
             {
                 Debug.LogError("Target is null");
@@ -34,7 +37,7 @@ namespace SombraStudios.Shared.AI
             }
 
             return IsInFieldOfView(data.StartPoint, data.EndPoint, viewAngle, data.Is2D)
-                && IsInSight(data);
+                && IsInSight(data, out hit);
         }
 
         /// <summary>
@@ -62,11 +65,12 @@ namespace SombraStudios.Shared.AI
         /// Returns true if there is no obstacle (except the specified target), otherwise, false.
         /// </summary>
         /// <param name="data">The data for the sight check.</param>
+        /// <param name="hit">The RaycastHit information if an obstacle is detected.</param>
         /// <returns>True if there is a direct line of sight without obstacles (except the target), otherwise, false.
         /// </returns>
-        public static bool IsInSight(
-            IsInSightData data)
+        public static bool IsInSight(IsInSightData data, out RaycastHit hit)
         {
+            hit = new RaycastHit();
             if (data.StartPoint == null || data.EndPoint == null) { return false; }
 
             var start = data.StartPoint.position + data.StartPointOffset;
@@ -81,6 +85,7 @@ namespace SombraStudios.Shared.AI
                 hits,
                 directionToTarget.magnitude,
                 data.ObstaclesMask);
+            hit = hits[0];
 
             if (hitCount > 0)
             {
