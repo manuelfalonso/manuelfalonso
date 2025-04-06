@@ -57,7 +57,7 @@ namespace SombraStudios.Shared.AI
             }
 
             Vector3 directionToTarget = target.position - entity.position;
-            return Vector3.Angle(is2D ? entity.right : entity.forward, directionToTarget) < viewAngle / 2;
+            return Vector3.Angle(is2D ? entity.up : entity.forward, directionToTarget) < viewAngle / 2;
         }
 
         /// <summary>
