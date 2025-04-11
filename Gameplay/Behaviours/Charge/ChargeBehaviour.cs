@@ -53,9 +53,9 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Charge
         /// Indicates whether the maximum number of charges has been reached.
         /// </summary>
         [Tooltip("Indicates whether the maximum number of charges has been reached.")]
-#pragma warning disable IDE0052 // Quitar miembros privados no le�dos
+#pragma warning disable IDE0052, CS0414 // Quitar miembros privados no le�dos
         [SerializeField, ReadOnly] private bool _isMaxCharged = false;
-#pragma warning restore IDE0052 // Quitar miembros privados no le�dos
+#pragma warning restore IDE0052, CS0414 // Quitar miembros privados no le�dos
 
 
         /// <summary>

@@ -13,22 +13,36 @@ namespace SombraStudios.Shared.Utility
         [SerializeField] private WrapMode _preWrapMode = WrapMode.PingPong;
         [SerializeField] private WrapMode _postWrapMode = WrapMode.PingPong;
 
-        [Range(-1f, 1f)]
-        [SerializeField] private float _curveSpeed = 0f;
+        //[Range(-1f, 1f)]
+        //[SerializeField] private float _curveSpeed = 0f;
 
-        public AnimationCurve Curve { get => _curve; set => _curve = value; }
-
+        public AnimationCurve Curve
+        {
+            get => _curve;
+            set
+            {
+                _curve = value;
+                ApplyWrapModes();
+            }
+        }
 
         private void OnValidate()
         {
-            _curve.preWrapMode = _preWrapMode;
-            _curve.postWrapMode = _postWrapMode;
+            ApplyWrapModes();
         }
 
+        private void ApplyWrapModes()
+        {
+            if (_curve != null)
+            {
+                _curve.preWrapMode = _preWrapMode;
+                _curve.postWrapMode = _postWrapMode;
+            }
+        }
 
         public float GetValueExact(float time)
         {
-            return _curve.Evaluate(time);
+            return _curve?.Evaluate(time) ?? 0f;
         }
 
         /// <summary>
@@ -38,14 +52,15 @@ namespace SombraStudios.Shared.Utility
         /// <returns></returns>
         public float GetValueNormalized(float normalizedTime)
         {
-            if (normalizedTime < 0f || normalizedTime > 1f)
+            if (_curve == null || normalizedTime < 0f || normalizedTime > 1f)
             {
                 return 0f;
             }
-            else
-            {
-                return _curve.Evaluate((_curve.keys[_curve.length - 1].time - _curve.keys[0].time) * normalizedTime + _curve.keys[0].time);
-            }
+
+            float startTime = _curve.keys[0].time;
+            float endTime = _curve.keys[_curve.length - 1].time;
+            float evaluatedTime = Mathf.Lerp(startTime, endTime, normalizedTime);
+            return _curve.Evaluate(evaluatedTime);
         }
     }
 }

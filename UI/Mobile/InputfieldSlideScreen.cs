@@ -1,3 +1,4 @@
+#if UNITY_IOS || UNITY_ANDROID
 using TMPro;
 using UnityEngine;
 
@@ -21,7 +22,6 @@ namespace SombraStudios.Shared.UI.Mobile
             StartAnchoredPosition = RectToSlide.anchoredPosition;
         }
 
-    #if UNITY_IOS || UNITY_ANDROID
         void LateUpdate()
         {
             if (Input.isFocused && TouchScreenKeyboard.visible)
@@ -37,6 +37,6 @@ namespace SombraStudios.Shared.UI.Mobile
                 RectToSlide.anchoredPosition = StartAnchoredPosition;
             }
         }
-    #endif
     }
 }
+#endif
