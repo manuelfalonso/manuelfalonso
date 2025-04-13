@@ -1,3 +1,4 @@
+#if !UNITY_WEBGL
 using System;
 using System.Text;
 using UnityEngine;
@@ -95,3 +96,4 @@ namespace SombraStudios.Shared.Audio
 
     }
 }
+#endif

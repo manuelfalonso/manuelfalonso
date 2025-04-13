@@ -20,7 +20,7 @@ namespace SombraStudios.Shared.Utility.Destroyer
         private void Awake()
         {
 #if RELEASE_BUILD
-            foreach (var item in _scriptsToDestroy)
+            foreach (var item in _componentsToDestroy)
             {
                 if (item != null)
                 {

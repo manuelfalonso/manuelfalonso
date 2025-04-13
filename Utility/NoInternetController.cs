@@ -1,3 +1,4 @@
+#if !UNITY_WEBGL
 using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System;
 using System.Collections;
@@ -37,3 +38,4 @@ namespace SombraStudios.Shared.Utility
         }
     }
 }
+#endif
