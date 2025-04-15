@@ -4,61 +4,50 @@ using UnityEngine.AI;
 namespace SombraStudios.Shared.Systems.Teleport
 {
     /// <summary>
-    /// Example NavMeshAgent component availbale to teleport
+    /// Example NavMeshAgent component available to teleport.
     /// </summary>
     [RequireComponent(typeof(NavMeshAgent))]
     public class TeleportableNavMeshAgent : MonoBehaviour, ITeleportable
     {
+        [Header("References")]
         [SerializeField] private NavMeshAgent _agent;
+
+        [Header("Settings")]
         [SerializeField] private bool _canTeleport;
         [SerializeField] private bool _preserveRotation;
 
         public bool CanTeleport
         {
-            get
-            {
-                return _canTeleport;
-            }
-            set
-            {
-                _canTeleport = value;
-            }
+            get => _canTeleport;
+            set => _canTeleport = value;
         }
-        public GameObject GameObject { get; set; }
 
+        public GameObject GameObject => gameObject;
 
-        private void Start()
+        /// <summary>
+        /// Initializes the component.
+        /// </summary>
+        private void Awake()
         {
-            GameObject = gameObject;
-
-            if (_agent == null)
+            if (_agent == null && !TryGetComponent(out _agent))
             {
-                if (TryGetComponent(out NavMeshAgent agent))
-                {
-                    _agent = agent;
-                }
-                else
-                {
-                    Debug.LogError($"Missing NavMeshAgent", this);
-                    enabled = false;
-                }
+                Debug.LogError("Missing NavMeshAgent", this);
+                enabled = false;
             }
         }
 
-
-        // ITeleportable
         public void TeleportTo(Transform destination)
         {
             StopAgent();
-            transform.position = destination.position;
-            if (!_preserveRotation) 
-            {
-                transform.rotation = destination.rotation;
-            }
+            transform.SetPositionAndRotation(
+                destination.position,
+                _preserveRotation ? transform.rotation : destination.rotation);
             EnableAgent();
         }
 
-
+        /// <summary>
+        /// Stops the NavMeshAgent.
+        /// </summary>
         private void StopAgent()
         {
             _agent.isStopped = true;
@@ -66,6 +55,9 @@ namespace SombraStudios.Shared.Systems.Teleport
             _agent.enabled = false;
         }
 
+        /// <summary>
+        /// Enables the NavMeshAgent.
+        /// </summary>
         private void EnableAgent()
         {
             _agent.enabled = true;

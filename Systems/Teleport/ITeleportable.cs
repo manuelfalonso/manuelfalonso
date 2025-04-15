@@ -3,14 +3,25 @@ using UnityEngine;
 namespace SombraStudios.Shared.Systems.Teleport
 {
     /// <summary>
-    /// Implent this to create a teleportable object.
-    /// For example a physical object that need to considers velocity when teleporting
+    /// Interface for creating a teleportable object.
+    /// For example, a physical object that needs to consider velocity when teleporting.
     /// </summary>
     public interface ITeleportable
     {
-        public bool CanTeleport { get; set; }
-        public GameObject GameObject { get; set; }
+        /// <summary>
+        /// Gets or sets a value indicating whether the object can teleport.
+        /// </summary>
+        bool CanTeleport { get; set; }
 
-        public abstract void TeleportTo(Transform destination);
+        /// <summary>
+        /// Gets the GameObject associated with the teleportable object.
+        /// </summary>
+        GameObject GameObject { get; }
+
+        /// <summary>
+        /// Teleports the object to the specified destination.
+        /// </summary>
+        /// <param name="destination">The destination transform to teleport to.</param>
+        void TeleportTo(Transform destination);
     }
 }
