@@ -8,38 +8,27 @@ namespace SombraStudios.Shared.Utility.Destroyer
     /// </summary>
     public class GameObjectDestroyer : MonoBehaviour
     {
-#if UNITY_EDITOR
+#pragma warning disable CS0414
         [Header("Platform selection")]
         [Tooltip("Destroy the GameObject if running in the Unity editor.")]
-        [SerializeField]
-        private bool _destroyInEditor = false;
-#endif
+        [SerializeField] private bool _destroyInEditor = false;
 
-#if UNITY_STANDALONE
         [Tooltip("Destroy the GameObject if running on a standalone platform (Mac OS X, Windows or Linux).")]
-        [SerializeField]
-        private bool _destroyOnStandalone = false;
-#endif
+        [SerializeField] private bool _destroyOnStandalone = false;
 
-#if UNITY_ANDROID
-        [Tooltip("Destroy the GameObject if running on an Android platform.")] [SerializeField]
-        private bool _destroyOnAndroid = false;
-#endif
+        [Tooltip("Destroy the GameObject if running on an Android platform.")] 
+        [SerializeField] private bool _destroyOnAndroid = false;
 
-#if UNITY_IOS
-        [Tooltip("Destroy the GameObject if running on an iOS platform.")] [SerializeField]
-        private bool _destroyOnIOS = false;
-#endif
+        [Tooltip("Destroy the GameObject if running on an iOS platform.")] 
+        [SerializeField] private bool _destroyOnIOS = false;
 
-#if UNITY_WEBGL
-        [Tooltip("Destroy the GameObject if running on a WebGL platform.")] [SerializeField]
-        private bool _destroyOnWebGL = false;
-#endif
+        [Tooltip("Destroy the GameObject if running on a WebGL platform.")] 
+        [SerializeField] private bool _destroyOnWebGL = false;
 
-#if DEVELOPMENT_BUILD
-        [Header("Others")] [Tooltip("Destroy the GameObject if running on a development build.")] [SerializeField]
-        private bool _destroyOnDevelopmentBuild = false;
-#endif
+        [Header("Others")] 
+        [Tooltip("Destroy the GameObject if running on a development build.")] 
+        [SerializeField] private bool _destroyOnDevelopmentBuild = false;
+#pragma warning restore CS0414
 
         private void Awake()
         {

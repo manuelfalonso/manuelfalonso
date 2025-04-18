@@ -20,8 +20,8 @@ namespace SombraStudios.Shared.Structs
         public int MaxValue;
 
         /// <summary>
-        /// Gets a random value within the range MinValue inclusive and MaxValue exclusive.
+        /// Gets a random value within the range MinValue and MaxValue.
         /// </summary>
-        public float RandomValue => Random.Range(MinValue, MaxValue);
+        public readonly float RandomValue => Random.Range(MinValue, MaxValue + 1);
     }
 }
