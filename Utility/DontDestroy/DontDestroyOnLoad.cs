@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility
+namespace SombraStudios.Shared.Utility.DontDestroy
 {
     /// <summary>
     /// MonoBehaviour to preserve objects on scene loads. This can be useful
