@@ -1,7 +1,6 @@
 using SombraStudios.Shared.Patterns.Creational.Singleton;
 using System.Collections;
 using System.Collections.Generic;
-using SombraStudios.Shared.Utility;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Systems.Tutorial
@@ -24,9 +23,12 @@ namespace SombraStudios.Shared.Systems.Tutorial
         [Header("Debug")]
         [SerializeField] private bool _showLogs = false;
 
+        private const string TUTORIAL_COMPLETED = "TUTORIAL_COMPLETED";
+        private const string TUTORIAL_STEP = "TUTORIAL_STEP";
+
         public int TutorialStepIndex() => _currentStepIndex;
-        public bool IsTutorialCompleted() => _showTutorial && PlayerPrefs.GetInt(PlayerPrefsKeys.TUTORIAL_COMPLETED) == 1;
-        public bool IsTutorialActive() => _showTutorial && PlayerPrefs.GetInt(PlayerPrefsKeys.TUTORIAL_COMPLETED) != 1;
+        public bool IsTutorialCompleted() => _showTutorial && PlayerPrefs.GetInt(TUTORIAL_COMPLETED) == 1;
+        public bool IsTutorialActive() => _showTutorial && PlayerPrefs.GetInt(TUTORIAL_COMPLETED) != 1;
 
         private int _currentStepIndex = 0;
 
@@ -81,7 +83,7 @@ namespace SombraStudios.Shared.Systems.Tutorial
         {
             if (_saveProgression)
             {
-                PlayerPrefs.SetInt(PlayerPrefsKeys.TUTORIAL_COMPLETED, 1);
+                PlayerPrefs.SetInt(TUTORIAL_COMPLETED, 1);
             }
         }
 
@@ -89,21 +91,21 @@ namespace SombraStudios.Shared.Systems.Tutorial
         {
             if (_saveProgression)
             {
-                PlayerPrefs.SetInt(PlayerPrefsKeys.TUTORIAL_STEP, TutorialStepIndex());
+                PlayerPrefs.SetInt(TUTORIAL_STEP, TutorialStepIndex());
             }
         }
 
         private void ResetProgression()
         {
-            PlayerPrefs.DeleteKey(PlayerPrefsKeys.TUTORIAL_COMPLETED);
-            PlayerPrefs.DeleteKey(PlayerPrefsKeys.TUTORIAL_STEP);
+            PlayerPrefs.DeleteKey(TUTORIAL_COMPLETED);
+            PlayerPrefs.DeleteKey(TUTORIAL_STEP);
             if (_showLogs)
                 Utility.Loggers.Logger.Log($"TUTORIAL_COMPLETED and TUTORIAL_STEP keys deleted", this);
         }
 
         private void ResumeProgression()
         {
-            _currentStepIndex = PlayerPrefs.GetInt(PlayerPrefsKeys.TUTORIAL_STEP);
+            _currentStepIndex = PlayerPrefs.GetInt(TUTORIAL_STEP);
         }
     }
 }
