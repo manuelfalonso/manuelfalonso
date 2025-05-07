@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace SombraStudios.Shared.Gameplay.Spawners
 {
-    [CreateAssetMenu(menuName = "Wave Config")]
+    [CreateAssetMenu(fileName = "WaveConfigSO", menuName = "Sombra Studios/Gameplay/Spawners/Wave Config")]
     public class WaveConfigSO : ScriptableObject
     {
         [SerializeField] GameObject prefab;
