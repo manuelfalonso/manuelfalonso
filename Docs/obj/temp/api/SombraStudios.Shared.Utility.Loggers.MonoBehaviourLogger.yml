@@ -5,6 +5,7 @@ items:
   id: MonoBehaviourLogger
   parent: SombraStudios.Shared.Utility.Loggers
   children:
+  - SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(System.Object)
   - SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(System.Object,UnityEngine.Object)
   langs:
   - csharp
@@ -20,10 +21,13 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: MonoBehaviourLogger
     path: ../Utility/Loggers/MonoBehaviourLogger.cs
-    startLine: 5
+    startLine: 11
   assemblies:
   - SombraStudios.Shared.Utility
   namespace: SombraStudios.Shared.Utility.Loggers
+  summary: A MonoBehaviour-based logger service that logs messages to the Unity console with optional color-coded prefixes.
+  remarks: This logger allows enabling or disabling logs and supports custom prefixes with color formatting.
+  example: []
   syntax:
     content: >-
       [AddComponentMenu("_SombraStudios/Services/Logger")]
@@ -49,6 +53,41 @@ items:
     arguments:
     - type: System.String
       value: _SombraStudios/Services/Logger
+- uid: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(System.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(System.Object)
+  id: Log(System.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger
+  langs:
+  - csharp
+  - vb
+  name: Log(object)
+  nameWithType: MonoBehaviourLogger.Log(object)
+  fullName: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/MonoBehaviourLogger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Log
+    path: ../Utility/Loggers/MonoBehaviourLogger.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a message to the Unity console.
+  example: []
+  syntax:
+    content: public void Log(object message)
+    parameters:
+    - id: message
+      type: System.Object
+      description: The message to log.
+    content.vb: Public Sub Log(message As Object)
+  overload: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log*
+  nameWithType.vb: MonoBehaviourLogger.Log(Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(Object)
+  name.vb: Log(Object)
 - uid: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(System.Object,UnityEngine.Object)
   commentId: M:SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log(System.Object,UnityEngine.Object)
   id: Log(System.Object,UnityEngine.Object)
@@ -67,18 +106,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Log
     path: ../Utility/Loggers/MonoBehaviourLogger.cs
-    startLine: 25
+    startLine: 61
   assemblies:
   - SombraStudios.Shared.Utility
   namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a message to the Unity console with an optional sender reference.
   example: []
   syntax:
     content: public void Log(object message, Object sender = null)
     parameters:
     - id: message
       type: System.Object
+      description: The message to log.
     - id: sender
       type: UnityEngine.Object
+      description: 'The object that sent the log message (default: this logger).'
     content.vb: Public Sub Log(message As Object, sender As [Object] = Nothing)
   overload: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log*
   implements:
@@ -312,7 +354,7 @@ references:
     href: SombraStudios.Shared.Extensions.html
 - uid: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log*
   commentId: Overload:SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log
-  href: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.html#SombraStudios_Shared_Utility_Loggers_MonoBehaviourLogger_Log_System_Object_UnityEngine_Object_
+  href: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.html#SombraStudios_Shared_Utility_Loggers_MonoBehaviourLogger_Log_System_Object_
   name: Log
   nameWithType: MonoBehaviourLogger.Log
   fullName: SombraStudios.Shared.Utility.Loggers.MonoBehaviourLogger.Log

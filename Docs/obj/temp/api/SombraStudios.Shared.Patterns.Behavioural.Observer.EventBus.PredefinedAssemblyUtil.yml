@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil
+  id: PredefinedAssemblyUtil
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: PredefinedAssemblyUtil
+  nameWithType: PredefinedAssemblyUtil
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/EventBus/PredefinedAssemblyUtil.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PredefinedAssemblyUtil
+    path: ../Patterns/Behavioural/Observer/EventBus/PredefinedAssemblyUtil.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  summary: >-
+    A utility class, PredefinedAssemblyUtil, provides methods to interact with predefined assemblies.
+
+    It allows to get all types in the current AppDomain that implement from a specific Interface type.
+
+    For more details,
+
+    <a href="https://docs.unity3d.com/2023.3/Documentation/Manual/ScriptCompileOrderFolders.html">visit Unity
+
+    Documentation</a>
+  example: []
+  syntax:
+    content: public static class PredefinedAssemblyUtil
+    content.vb: Public Module PredefinedAssemblyUtil
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes(System.Type)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes(System.Type)
+  id: GetTypes(System.Type)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil
+  langs:
+  - csharp
+  - vb
+  name: GetTypes(Type)
+  nameWithType: PredefinedAssemblyUtil.GetTypes(Type)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/EventBus/PredefinedAssemblyUtil.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetTypes
+    path: ../Patterns/Behavioural/Observer/EventBus/PredefinedAssemblyUtil.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  summary: Gets all Types from all assemblies in the current AppDomain that implement the provided interface type.
+  example: []
+  syntax:
+    content: public static List<Type> GetTypes(Type interfaceType)
+    parameters:
+    - id: interfaceType
+      type: System.Type
+      description: Interface type to get all the Types for.
+    return:
+      type: System.Collections.Generic.List{System.Type}
+      description: List of Types implementing the provided interface type.
+    content.vb: Public Shared Function GetTypes(interfaceType As Type) As List(Of Type)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+    name: EventBus
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+    name: EventBus
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.html#SombraStudios_Shared_Patterns_Behavioural_Observer_EventBus_PredefinedAssemblyUtil_GetTypes_System_Type_
+  name: GetTypes
+  nameWithType: PredefinedAssemblyUtil.GetTypes
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.PredefinedAssemblyUtil.GetTypes
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Collections.Generic.List{System.Type}
+  commentId: T:System.Collections.Generic.List{System.Type}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Type>
+  nameWithType: List<Type>
+  fullName: System.Collections.Generic.List<System.Type>
+  nameWithType.vb: List(Of Type)
+  fullName.vb: System.Collections.Generic.List(Of System.Type)
+  name.vb: List(Of Type)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

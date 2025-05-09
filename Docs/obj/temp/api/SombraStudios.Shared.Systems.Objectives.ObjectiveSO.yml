@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  commentId: T:SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  id: ObjectiveSO
+  parent: SombraStudios.Shared.Systems.Objectives
+  children:
+  - SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective
+  - SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective
+  - SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted
+  - SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete
+  - SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveSO
+  nameWithType: ObjectiveSO
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  type: Class
+  source:
+    remote:
+      path: Systems/Objectives/ObjectiveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ObjectiveSO
+    path: ../Systems/Objectives/ObjectiveSO.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Objectives
+  summary: >-
+    Base class for a ScriptableObject-based game objective.
+
+    Implement the logic within each concrete class and customize the win/lose conditions.
+
+    Combine them in the ObjectiveManager for more interesting results (e.g., pick up x number of items within n seconds).
+  example: []
+  syntax:
+    content: 'public class ObjectiveSO : ScriptableObject, IDescribable'
+    content.vb: Public Class ObjectiveSO Inherits ScriptableObject Implements IDescribable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted
+  commentId: P:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted
+  id: IsCompleted
+  parent: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: ObjectiveSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: Systems/Objectives/ObjectiveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsCompleted
+    path: ../Systems/Objectives/ObjectiveSO.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Objectives
+  summary: Indicates whether the objective has been completed.
+  example: []
+  syntax:
+    content: public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+  overload: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted*
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete
+  commentId: P:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete
+  id: ObjectiveComplete
+  parent: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveComplete
+  nameWithType: ObjectiveSO.ObjectiveComplete
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete
+  type: Property
+  source:
+    remote:
+      path: Systems/Objectives/ObjectiveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ObjectiveComplete
+    path: ../Systems/Objectives/ObjectiveSO.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Objectives
+  summary: Reference to the event channel that triggers when the objective is completed.
+  example: []
+  syntax:
+    content: public VoidEventChannelSO ObjectiveComplete { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+    content.vb: Public ReadOnly Property ObjectiveComplete As VoidEventChannelSO
+  overload: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete*
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective
+  commentId: M:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective
+  id: ResetObjective
+  parent: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  langs:
+  - csharp
+  - vb
+  name: ResetObjective()
+  nameWithType: ObjectiveSO.ResetObjective()
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective()
+  type: Method
+  source:
+    remote:
+      path: Systems/Objectives/ObjectiveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetObjective
+    path: ../Systems/Objectives/ObjectiveSO.cs
+    startLine: 60
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Objectives
+  summary: Resets the objective to its initial state (not completed).
+  example: []
+  syntax:
+    content: public void ResetObjective()
+    content.vb: Public Sub ResetObjective()
+  overload: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective*
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective
+  commentId: M:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective
+  id: CompleteObjective
+  parent: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  langs:
+  - csharp
+  - vb
+  name: CompleteObjective()
+  nameWithType: ObjectiveSO.CompleteObjective()
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective()
+  type: Method
+  source:
+    remote:
+      path: Systems/Objectives/ObjectiveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CompleteObjective
+    path: ../Systems/Objectives/ObjectiveSO.cs
+    startLine: 68
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Objectives
+  summary: Marks the objective as completed and triggers the completion event.
+  example: []
+  syntax:
+    content: protected virtual void CompleteObjective()
+    content.vb: Protected Overridable Sub CompleteObjective()
+  overload: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective*
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective
+  commentId: M:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective
+  id: FailObjective
+  parent: SombraStudios.Shared.Systems.Objectives.ObjectiveSO
+  langs:
+  - csharp
+  - vb
+  name: FailObjective()
+  nameWithType: ObjectiveSO.FailObjective()
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective()
+  type: Method
+  source:
+    remote:
+      path: Systems/Objectives/ObjectiveSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FailObjective
+    path: ../Systems/Objectives/ObjectiveSO.cs
+    startLine: 78
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Objectives
+  summary: Marks the objective as failed and triggers the failure event if assigned.
+  example: []
+  syntax:
+    content: protected virtual void FailObjective()
+    content.vb: Protected Overridable Sub FailObjective()
+  overload: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective*
+references:
+- uid: SombraStudios.Shared.Systems.Objectives
+  commentId: N:SombraStudios.Shared.Systems.Objectives
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Objectives
+  nameWithType: SombraStudios.Shared.Systems.Objectives
+  fullName: SombraStudios.Shared.Systems.Objectives
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Objectives
+    name: Objectives
+    href: SombraStudios.Shared.Systems.Objectives.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Objectives
+    name: Objectives
+    href: SombraStudios.Shared.Systems.Objectives.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Interfaces.IDescribable
+  commentId: T:SombraStudios.Shared.Interfaces.IDescribable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IDescribable.html
+  name: IDescribable
+  nameWithType: IDescribable
+  fullName: SombraStudios.Shared.Interfaces.IDescribable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted*
+  commentId: Overload:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted
+  href: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.html#SombraStudios_Shared_Systems_Objectives_ObjectiveSO_IsCompleted
+  name: IsCompleted
+  nameWithType: ObjectiveSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.IsCompleted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete*
+  commentId: Overload:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete
+  href: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.html#SombraStudios_Shared_Systems_Objectives_ObjectiveSO_ObjectiveComplete
+  name: ObjectiveComplete
+  nameWithType: ObjectiveSO.ObjectiveComplete
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ObjectiveComplete
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.html
+  name: VoidEventChannelSO
+  nameWithType: VoidEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective*
+  commentId: Overload:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective
+  href: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.html#SombraStudios_Shared_Systems_Objectives_ObjectiveSO_ResetObjective
+  name: ResetObjective
+  nameWithType: ObjectiveSO.ResetObjective
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.ResetObjective
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective*
+  commentId: Overload:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective
+  href: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.html#SombraStudios_Shared_Systems_Objectives_ObjectiveSO_CompleteObjective
+  name: CompleteObjective
+  nameWithType: ObjectiveSO.CompleteObjective
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.CompleteObjective
+- uid: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective*
+  commentId: Overload:SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective
+  href: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.html#SombraStudios_Shared_Systems_Objectives_ObjectiveSO_FailObjective
+  name: FailObjective
+  nameWithType: ObjectiveSO.FailObjective
+  fullName: SombraStudios.Shared.Systems.Objectives.ObjectiveSO.FailObjective

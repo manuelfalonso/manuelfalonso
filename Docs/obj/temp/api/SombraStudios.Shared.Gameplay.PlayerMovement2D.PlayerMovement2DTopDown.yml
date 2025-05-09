@@ -19,15 +19,24 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: PlayerMovement2DTopDown
     path: ../Gameplay/PlayerMovement2D/PlayerMovement2DTopDown.cs
-    startLine: 7
+    startLine: 12
   assemblies:
   - SombraStudios.Shared.Gameplay
   namespace: SombraStudios.Shared.Gameplay.PlayerMovement2D
-  summary: Top down player movement 2d with boundaries limits
+  summary: >-
+    Handles top-down 2D player movement, supporting both legacy and new input systems.  
+
+    Includes smooth movement and optional rotation towards movement direction.
   example: []
   syntax:
-    content: 'public class PlayerMovement2DTopDown : MonoBehaviour'
-    content.vb: Public Class PlayerMovement2DTopDown Inherits MonoBehaviour
+    content: >-
+      [RequireComponent(typeof(Rigidbody2D))]
+
+      public class PlayerMovement2DTopDown : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(Rigidbody2D))>
+
+      Public Class PlayerMovement2DTopDown Inherits MonoBehaviour
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -36,6 +45,12 @@ items:
   - UnityEngine.MonoBehaviour
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.Rigidbody2D
 references:
 - uid: SombraStudios.Shared.Gameplay.PlayerMovement2D
   commentId: N:SombraStudios.Shared.Gameplay.PlayerMovement2D

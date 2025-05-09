@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  id: StackStateMachine`1
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.#ctor(`0)
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Context
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.CurrentState
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PopState
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PushState(SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{`0})
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.SetContext(`0)
+  - SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Update
+  langs:
+  - csharp
+  - vb
+  name: StackStateMachine<TContext>
+  nameWithType: StackStateMachine<TContext>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StackStateMachine
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: >-
+    Implements a stack-based state machine. Aka Pushdown Automata.
+
+    1- Create a Context struct to hold the data that the states need to share.
+
+    2- Called the constructor with this context.
+
+    3- Push the initial state 
+
+    Credits to: git-ammend
+  example: []
+  syntax:
+    content: 'public class StackStateMachine<TContext> where TContext : struct'
+    typeParameters:
+    - id: TContext
+    content.vb: Public Class StackStateMachine(Of TContext As Structure)
+  inheritance:
+  - System.Object
+  nameWithType.vb: StackStateMachine(Of TContext)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext)
+  name.vb: StackStateMachine(Of TContext)
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.CurrentState
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.CurrentState
+  id: CurrentState
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: StackStateMachine<TContext>.CurrentState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.CurrentState
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CurrentState
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Gets the current state of the state machine.
+  example: []
+  syntax:
+    content: public State<TContext> CurrentState { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{{TContext}}
+    content.vb: Public ReadOnly Property CurrentState As State(Of TContext)
+  overload: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.CurrentState*
+  nameWithType.vb: StackStateMachine(Of TContext).CurrentState
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).CurrentState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Context
+  commentId: F:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Context
+  id: Context
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: StackStateMachine<TContext>.Context
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.Context
+  type: Field
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Context
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Context of the state machine.
+  example: []
+  syntax:
+    content: public TContext Context
+    return:
+      type: '{TContext}'
+    content.vb: Public Context As TContext
+  nameWithType.vb: StackStateMachine(Of TContext).Context
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).Context
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.#ctor(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: StackStateMachine(TContext)
+  nameWithType: StackStateMachine<TContext>.StackStateMachine(TContext)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.StackStateMachine(TContext)
+  type: Constructor
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Constructor to initialize the state machine with a context.
+  example: []
+  syntax:
+    content: public StackStateMachine(TContext context)
+    parameters:
+    - id: context
+      type: '{TContext}'
+      description: The initial context.
+    content.vb: Public Sub New(context As TContext)
+  overload: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.#ctor*
+  nameWithType.vb: StackStateMachine(Of TContext).New(TContext)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).New(TContext)
+  name.vb: New(TContext)
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PushState(SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{`0})
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PushState(SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{`0})
+  id: PushState(SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{`0})
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: PushState(State<TContext>)
+  nameWithType: StackStateMachine<TContext>.PushState(State<TContext>)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.PushState(SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State<TContext>)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PushState
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 41
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Pushes a new state onto the stack and calls its Enter method.
+  example: []
+  syntax:
+    content: public void PushState(State<TContext> newState)
+    parameters:
+    - id: newState
+      type: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{{TContext}}
+      description: The new state to push.
+    content.vb: Public Sub PushState(newState As State(Of TContext))
+  overload: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PushState*
+  nameWithType.vb: StackStateMachine(Of TContext).PushState(State(Of TContext))
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).PushState(SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State(Of TContext))
+  name.vb: PushState(State(Of TContext))
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PopState
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PopState
+  id: PopState
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: PopState()
+  nameWithType: StackStateMachine<TContext>.PopState()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.PopState()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PopState
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Pops the current state off the stack and calls its Exit method.
+  example: []
+  syntax:
+    content: public void PopState()
+    content.vb: Public Sub PopState()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PopState*
+  nameWithType.vb: StackStateMachine(Of TContext).PopState()
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).PopState()
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Update
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Update
+  id: Update
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: StackStateMachine<TContext>.Update()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.Update()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Update
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 63
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Calls the Update method of the current state.
+  example: []
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Update*
+  nameWithType.vb: StackStateMachine(Of TContext).Update()
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).Update()
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.SetContext(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.SetContext(`0)
+  id: SetContext(`0)
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1
+  langs:
+  - csharp
+  - vb
+  name: SetContext(TContext)
+  nameWithType: StackStateMachine<TContext>.SetContext(TContext)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.SetContext(TContext)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetContext
+    path: ../Patterns/Behavioural/StackStateMachine/StackStateMachine.cs
+    startLine: 69
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  summary: Sets a new context for the state machine.
+  example: []
+  syntax:
+    content: public void SetContext(TContext context)
+    parameters:
+    - id: context
+      type: '{TContext}'
+      description: The new context.
+    content.vb: Public Sub SetContext(context As TContext)
+  overload: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.SetContext*
+  nameWithType.vb: StackStateMachine(Of TContext).SetContext(TContext)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).SetContext(TContext)
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+    name: StackStateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+    name: StackStateMachine
+    href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.CurrentState*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.CurrentState
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine-1.html#SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_StackStateMachine_1_CurrentState
+  name: CurrentState
+  nameWithType: StackStateMachine<TContext>.CurrentState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.CurrentState
+  nameWithType.vb: StackStateMachine(Of TContext).CurrentState
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).CurrentState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{{TContext}}
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State{`0}
+  parent: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine
+  definition: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State-1.html
+  name: State<TContext>
+  nameWithType: State<TContext>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State<TContext>
+  nameWithType.vb: State(Of TContext)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State(Of TContext)
+  name.vb: State(Of TContext)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+    name: State
+    href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+    name: State
+    href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State-1.html
+  name: State<TContext>
+  nameWithType: State<TContext>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State<TContext>
+  nameWithType.vb: State(Of TContext)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State(Of TContext)
+  name.vb: State(Of TContext)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+    name: State
+    href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State`1
+    name: State
+    href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.State-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: '{TContext}'
+  commentId: '!:TContext'
+  definition: TContext
+  name: TContext
+  nameWithType: TContext
+  fullName: TContext
+- uid: TContext
+  name: TContext
+  nameWithType: TContext
+  fullName: TContext
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.#ctor*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.#ctor
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine-1.html#SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_StackStateMachine_1__ctor__0_
+  name: StackStateMachine
+  nameWithType: StackStateMachine<TContext>.StackStateMachine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.StackStateMachine
+  nameWithType.vb: StackStateMachine(Of TContext).New
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).New
+  name.vb: New
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PushState*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PushState
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine-1.html#SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_StackStateMachine_1_PushState_SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_State__0__
+  name: PushState
+  nameWithType: StackStateMachine<TContext>.PushState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.PushState
+  nameWithType.vb: StackStateMachine(Of TContext).PushState
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).PushState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PopState*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.PopState
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine-1.html#SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_StackStateMachine_1_PopState
+  name: PopState
+  nameWithType: StackStateMachine<TContext>.PopState
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.PopState
+  nameWithType.vb: StackStateMachine(Of TContext).PopState
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).PopState
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Update*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.Update
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine-1.html#SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_StackStateMachine_1_Update
+  name: Update
+  nameWithType: StackStateMachine<TContext>.Update
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.Update
+  nameWithType.vb: StackStateMachine(Of TContext).Update
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).Update
+- uid: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.SetContext*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine`1.SetContext
+  href: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine-1.html#SombraStudios_Shared_Patterns_Behavioural_StackStateMachine_StackStateMachine_1_SetContext__0_
+  name: SetContext
+  nameWithType: StackStateMachine<TContext>.SetContext
+  fullName: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine<TContext>.SetContext
+  nameWithType.vb: StackStateMachine(Of TContext).SetContext
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.StackStateMachine.StackStateMachine(Of TContext).SetContext

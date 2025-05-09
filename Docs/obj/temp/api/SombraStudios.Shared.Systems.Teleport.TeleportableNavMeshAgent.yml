@@ -26,7 +26,7 @@ items:
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
-  summary: Example NavMeshAgent component availbale to teleport
+  summary: Example NavMeshAgent component available to teleport.
   example: []
   syntax:
     content: >-
@@ -71,10 +71,11 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: CanTeleport
     path: ../Systems/Teleport/TeleportableNavMeshAgent.cs
-    startLine: 15
+    startLine: 18
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Gets or sets a value indicating whether the object can teleport.
   example: []
   syntax:
     content: public bool CanTeleport { get; set; }
@@ -103,17 +104,18 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GameObject
     path: ../Systems/Teleport/TeleportableNavMeshAgent.cs
-    startLine: 26
+    startLine: 24
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Gets the GameObject associated with the teleportable object.
   example: []
   syntax:
-    content: public GameObject GameObject { get; set; }
+    content: public GameObject GameObject { get; }
     parameters: []
     return:
       type: UnityEngine.GameObject
-    content.vb: Public Property GameObject As GameObject
+    content.vb: Public ReadOnly Property GameObject As GameObject
   overload: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.GameObject*
   implements:
   - SombraStudios.Shared.Systems.Teleport.ITeleportable.GameObject
@@ -135,16 +137,18 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TeleportTo
     path: ../Systems/Teleport/TeleportableNavMeshAgent.cs
-    startLine: 49
+    startLine: 38
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Teleports the object to the specified destination.
   example: []
   syntax:
     content: public void TeleportTo(Transform destination)
     parameters:
     - id: destination
       type: UnityEngine.Transform
+      description: The destination transform to teleport to.
     content.vb: Public Sub TeleportTo(destination As Transform)
   overload: SombraStudios.Shared.Systems.Teleport.TeleportableNavMeshAgent.TeleportTo*
   implements:

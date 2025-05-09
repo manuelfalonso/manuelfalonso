@@ -4,9 +4,16 @@ items:
   commentId: N:SombraStudios.Shared.Gameplay.Spawners
   id: SombraStudios.Shared.Gameplay.Spawners
   children:
-  - SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea2D
-  - SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea3D
+  - SombraStudios.Shared.Gameplay.Spawners.GridSpawner
   - SombraStudios.Shared.Gameplay.Spawners.ObjectShooter2D
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerArea2D
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerArea3D
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  - SombraStudios.Shared.Gameplay.Spawners.WaveConfigSO
+  - SombraStudios.Shared.Gameplay.Spawners.WaveSpawner
   langs:
   - csharp
   - vb
@@ -17,21 +24,120 @@ items:
   assemblies:
   - SombraStudios.Shared.Gameplay
 references:
-- uid: SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea2D
-  commentId: T:SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea2D
-  href: SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea2D.html
-  name: ObjectCreatorArea2D
-  nameWithType: ObjectCreatorArea2D
-  fullName: SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea2D
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerArea3D
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerArea3D
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerArea3D.html
+  name: SpawnerArea3D
+  nameWithType: SpawnerArea3D
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerArea3D
+- uid: SombraStudios.Shared.Gameplay.Spawners.WaveSpawner
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.WaveSpawner
+  href: SombraStudios.Shared.Gameplay.Spawners.WaveSpawner.html
+  name: WaveSpawner
+  nameWithType: WaveSpawner
+  fullName: SombraStudios.Shared.Gameplay.Spawners.WaveSpawner
+- uid: SombraStudios.Shared.Gameplay.Spawners.GridSpawner
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.GridSpawner
+  href: SombraStudios.Shared.Gameplay.Spawners.GridSpawner.html
+  name: GridSpawner
+  nameWithType: GridSpawner
+  fullName: SombraStudios.Shared.Gameplay.Spawners.GridSpawner
+- uid: SombraStudios.Shared.Gameplay.Spawners.WaveConfigSO
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.WaveConfigSO
+  href: SombraStudios.Shared.Gameplay.Spawners.WaveConfigSO.html
+  name: WaveConfigSO
+  nameWithType: WaveConfigSO
+  fullName: SombraStudios.Shared.Gameplay.Spawners.WaveConfigSO
 - uid: SombraStudios.Shared.Gameplay.Spawners.ObjectShooter2D
   commentId: T:SombraStudios.Shared.Gameplay.Spawners.ObjectShooter2D
   href: SombraStudios.Shared.Gameplay.Spawners.ObjectShooter2D.html
   name: ObjectShooter2D
   nameWithType: ObjectShooter2D
   fullName: SombraStudios.Shared.Gameplay.Spawners.ObjectShooter2D
-- uid: SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea3D
-  commentId: T:SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea3D
-  href: SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea3D.html
-  name: ObjectCreatorArea3D
-  nameWithType: ObjectCreatorArea3D
-  fullName: SombraStudios.Shared.Gameplay.Spawners.ObjectCreatorArea3D
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerArea2D
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerArea2D
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerArea2D.html
+  name: SpawnerArea2D
+  nameWithType: SpawnerArea2D
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerArea2D
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.html
+  name: SpawnerAreaBase
+  nameWithType: SpawnerAreaBase
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  name: SpawnerPosition
+  nameWithType: SpawnerPosition
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  name: SpawnerPosition.ActiveSpawn
+  nameWithType: SpawnerPosition.ActiveSpawn
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  spec.csharp:
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+    name: SpawnerPosition
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+    name: ActiveSpawn
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+    name: SpawnerPosition
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+    name: ActiveSpawn
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.html
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnData.html
+  name: SpawnData
+  nameWithType: SpawnData
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+- uid: SombraStudios.Shared.Gameplay.Spawners
+  commentId: N:SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Spawners
+  nameWithType: SombraStudios.Shared.Gameplay.Spawners
+  fullName: SombraStudios.Shared.Gameplay.Spawners
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html

@@ -5,6 +5,7 @@ items:
   id: TransformExtensions
   parent: SombraStudios.Shared.Extensions
   children:
+  - SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
   - SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue(UnityEngine.Transform,SombraStudios.Shared.Extensions.TransformExtensions.Axis,UnityEngine.Vector3)
   langs:
   - csharp
@@ -70,6 +71,39 @@ items:
       description: The value to set for the axis.
     content.vb: Public Shared Sub SetAxisValue(trans As Transform, axis As TransformExtensions.Axis, value As Vector3)
   overload: SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue*
+- uid: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
+  commentId: M:SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
+  id: ResetTransform(UnityEngine.Transform)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.TransformExtensions
+  langs:
+  - csharp
+  - vb
+  name: ResetTransform(Transform)
+  nameWithType: TransformExtensions.ResetTransform(Transform)
+  fullName: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
+  type: Method
+  source:
+    remote:
+      path: Extensions/TransformExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetTransform
+    path: ../Extensions/TransformExtensions.cs
+    startLine: 84
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Resets the position, rotation and scale of the transform to default values.
+  example: []
+  syntax:
+    content: public static void ResetTransform(this Transform trans)
+    parameters:
+    - id: trans
+      type: UnityEngine.Transform
+      description: The transform to reset its position, rotation and scale.
+    content.vb: Public Shared Sub ResetTransform(trans As Transform)
+  overload: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform*
 references:
 - uid: SombraStudios.Shared.Extensions
   commentId: N:SombraStudios.Shared.Extensions
@@ -168,3 +202,9 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform*
+  commentId: Overload:SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform
+  href: SombraStudios.Shared.Extensions.TransformExtensions.html#SombraStudios_Shared_Extensions_TransformExtensions_ResetTransform_UnityEngine_Transform_
+  name: ResetTransform
+  nameWithType: TransformExtensions.ResetTransform
+  fullName: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform

@@ -6,6 +6,7 @@ items:
   children:
   - SombraStudios.Shared.Utility.AnimationCurveValueSO
   - SombraStudios.Shared.Utility.DebugLogPanel
+  - SombraStudios.Shared.Utility.Description
   - SombraStudios.Shared.Utility.Direction
   - SombraStudios.Shared.Utility.DotProductValidator
   - SombraStudios.Shared.Utility.GetRemoteTexture
@@ -15,12 +16,8 @@ items:
   - SombraStudios.Shared.Utility.ObjectInCameraViewport
   - SombraStudios.Shared.Utility.ObservedList`1
   - SombraStudios.Shared.Utility.ObservedList`1.ChangedDelegate
-  - SombraStudios.Shared.Utility.PlayerPrefsController
-  - SombraStudios.Shared.Utility.PlayerPrefsKeys
-  - SombraStudios.Shared.Utility.RandomAssemblySprites
-  - SombraStudios.Shared.Utility.SavePersistentData
+  - SombraStudios.Shared.Utility.ParentSetter
   - SombraStudios.Shared.Utility.ScreenBounds
-  - SombraStudios.Shared.Utility.ScreenshotTaker
   - SombraStudios.Shared.Utility.StringEncodingUtil
   - SombraStudios.Shared.Utility.Tolerance
   - SombraStudios.Shared.Utility.UnixTimestampConverter
@@ -33,39 +30,32 @@ items:
   fullName: SombraStudios.Shared.Utility
   type: Namespace
   assemblies:
-  - SombraStudios.Shared.Tools
+  - SombraStudios.Shared.Utility
 references:
-- uid: SombraStudios.Shared.Utility.ScreenshotTaker
-  commentId: T:SombraStudios.Shared.Utility.ScreenshotTaker
-  href: SombraStudios.Shared.Utility.ScreenshotTaker.html
-  name: ScreenshotTaker
-  nameWithType: ScreenshotTaker
-  fullName: SombraStudios.Shared.Utility.ScreenshotTaker
-- uid: SombraStudios.Shared.Utility.RandomAssemblySprites
-  commentId: T:SombraStudios.Shared.Utility.RandomAssemblySprites
-  href: SombraStudios.Shared.Utility.RandomAssemblySprites.html
-  name: RandomAssemblySprites
-  nameWithType: RandomAssemblySprites
-  fullName: SombraStudios.Shared.Utility.RandomAssemblySprites
-- uid: SombraStudios.Shared.Utility.StringEncodingUtil
-  commentId: T:SombraStudios.Shared.Utility.StringEncodingUtil
-  parent: SombraStudios.Shared.Utility
-  href: SombraStudios.Shared.Utility.StringEncodingUtil.html
-  name: StringEncodingUtil
-  nameWithType: StringEncodingUtil
-  fullName: SombraStudios.Shared.Utility.StringEncodingUtil
-- uid: SombraStudios.Shared.Utility.PlayerPrefsController
-  commentId: T:SombraStudios.Shared.Utility.PlayerPrefsController
-  href: SombraStudios.Shared.Utility.PlayerPrefsController.html
-  name: PlayerPrefsController
-  nameWithType: PlayerPrefsController
-  fullName: SombraStudios.Shared.Utility.PlayerPrefsController
-- uid: SombraStudios.Shared.Utility.HexToRGBA
-  commentId: T:SombraStudios.Shared.Utility.HexToRGBA
-  href: SombraStudios.Shared.Utility.HexToRGBA.html
-  name: HexToRGBA
-  nameWithType: HexToRGBA
-  fullName: SombraStudios.Shared.Utility.HexToRGBA
+- uid: SombraStudios.Shared.Utility.UsingLineRendererForDebugging
+  commentId: T:SombraStudios.Shared.Utility.UsingLineRendererForDebugging
+  href: SombraStudios.Shared.Utility.UsingLineRendererForDebugging.html
+  name: UsingLineRendererForDebugging
+  nameWithType: UsingLineRendererForDebugging
+  fullName: SombraStudios.Shared.Utility.UsingLineRendererForDebugging
+- uid: SombraStudios.Shared.Utility.DebugLogPanel
+  commentId: T:SombraStudios.Shared.Utility.DebugLogPanel
+  href: SombraStudios.Shared.Utility.DebugLogPanel.html
+  name: DebugLogPanel
+  nameWithType: DebugLogPanel
+  fullName: SombraStudios.Shared.Utility.DebugLogPanel
+- uid: SombraStudios.Shared.Utility.Tolerance
+  commentId: T:SombraStudios.Shared.Utility.Tolerance
+  href: SombraStudios.Shared.Utility.Tolerance.html
+  name: Tolerance
+  nameWithType: Tolerance
+  fullName: SombraStudios.Shared.Utility.Tolerance
+- uid: SombraStudios.Shared.Utility.ObjectInCameraFrustum
+  commentId: T:SombraStudios.Shared.Utility.ObjectInCameraFrustum
+  href: SombraStudios.Shared.Utility.ObjectInCameraFrustum.html
+  name: ObjectInCameraFrustum
+  nameWithType: ObjectInCameraFrustum
+  fullName: SombraStudios.Shared.Utility.ObjectInCameraFrustum
 - uid: SombraStudios.Shared.Utility.ObservedList`1
   commentId: T:SombraStudios.Shared.Utility.ObservedList`1
   href: SombraStudios.Shared.Utility.ObservedList-1.html
@@ -125,6 +115,43 @@ references:
   - uid: SombraStudios.Shared.Utility.ObservedList`1.ChangedDelegate
     name: ChangedDelegate
     href: SombraStudios.Shared.Utility.ObservedList-1.ChangedDelegate.html
+- uid: SombraStudios.Shared.Utility.GetRemoteTexture
+  commentId: T:SombraStudios.Shared.Utility.GetRemoteTexture
+  href: SombraStudios.Shared.Utility.GetRemoteTexture.html
+  name: GetRemoteTexture
+  nameWithType: GetRemoteTexture
+  fullName: SombraStudios.Shared.Utility.GetRemoteTexture
+- uid: SombraStudios.Shared.Utility.ScreenBounds
+  commentId: T:SombraStudios.Shared.Utility.ScreenBounds
+  href: SombraStudios.Shared.Utility.ScreenBounds.html
+  name: ScreenBounds
+  nameWithType: ScreenBounds
+  fullName: SombraStudios.Shared.Utility.ScreenBounds
+- uid: SombraStudios.Shared.Utility.NoInternetController
+  commentId: T:SombraStudios.Shared.Utility.NoInternetController
+  href: SombraStudios.Shared.Utility.NoInternetController.html
+  name: NoInternetController
+  nameWithType: NoInternetController
+  fullName: SombraStudios.Shared.Utility.NoInternetController
+- uid: SombraStudios.Shared.Utility.UnixTimestampConverter
+  commentId: T:SombraStudios.Shared.Utility.UnixTimestampConverter
+  href: SombraStudios.Shared.Utility.UnixTimestampConverter.html
+  name: UnixTimestampConverter
+  nameWithType: UnixTimestampConverter
+  fullName: SombraStudios.Shared.Utility.UnixTimestampConverter
+- uid: SombraStudios.Shared.Utility.StringEncodingUtil
+  commentId: T:SombraStudios.Shared.Utility.StringEncodingUtil
+  parent: SombraStudios.Shared.Utility
+  href: SombraStudios.Shared.Utility.StringEncodingUtil.html
+  name: StringEncodingUtil
+  nameWithType: StringEncodingUtil
+  fullName: SombraStudios.Shared.Utility.StringEncodingUtil
+- uid: SombraStudios.Shared.Utility.HexToRGBA
+  commentId: T:SombraStudios.Shared.Utility.HexToRGBA
+  href: SombraStudios.Shared.Utility.HexToRGBA.html
+  name: HexToRGBA
+  nameWithType: HexToRGBA
+  fullName: SombraStudios.Shared.Utility.HexToRGBA
 - uid: SombraStudios.Shared.Utility.DotProductValidator
   commentId: T:SombraStudios.Shared.Utility.DotProductValidator
   href: SombraStudios.Shared.Utility.DotProductValidator.html
@@ -138,42 +165,12 @@ references:
   name: Direction
   nameWithType: Direction
   fullName: SombraStudios.Shared.Utility.Direction
-- uid: SombraStudios.Shared.Utility.UsingLineRendererForDebugging
-  commentId: T:SombraStudios.Shared.Utility.UsingLineRendererForDebugging
-  href: SombraStudios.Shared.Utility.UsingLineRendererForDebugging.html
-  name: UsingLineRendererForDebugging
-  nameWithType: UsingLineRendererForDebugging
-  fullName: SombraStudios.Shared.Utility.UsingLineRendererForDebugging
-- uid: SombraStudios.Shared.Utility.DebugLogPanel
-  commentId: T:SombraStudios.Shared.Utility.DebugLogPanel
-  href: SombraStudios.Shared.Utility.DebugLogPanel.html
-  name: DebugLogPanel
-  nameWithType: DebugLogPanel
-  fullName: SombraStudios.Shared.Utility.DebugLogPanel
-- uid: SombraStudios.Shared.Utility.Tolerance
-  commentId: T:SombraStudios.Shared.Utility.Tolerance
-  href: SombraStudios.Shared.Utility.Tolerance.html
-  name: Tolerance
-  nameWithType: Tolerance
-  fullName: SombraStudios.Shared.Utility.Tolerance
-- uid: SombraStudios.Shared.Utility.ObjectInCameraFrustum
-  commentId: T:SombraStudios.Shared.Utility.ObjectInCameraFrustum
-  href: SombraStudios.Shared.Utility.ObjectInCameraFrustum.html
-  name: ObjectInCameraFrustum
-  nameWithType: ObjectInCameraFrustum
-  fullName: SombraStudios.Shared.Utility.ObjectInCameraFrustum
-- uid: SombraStudios.Shared.Utility.GetRemoteTexture
-  commentId: T:SombraStudios.Shared.Utility.GetRemoteTexture
-  href: SombraStudios.Shared.Utility.GetRemoteTexture.html
-  name: GetRemoteTexture
-  nameWithType: GetRemoteTexture
-  fullName: SombraStudios.Shared.Utility.GetRemoteTexture
-- uid: SombraStudios.Shared.Utility.NoInternetController
-  commentId: T:SombraStudios.Shared.Utility.NoInternetController
-  href: SombraStudios.Shared.Utility.NoInternetController.html
-  name: NoInternetController
-  nameWithType: NoInternetController
-  fullName: SombraStudios.Shared.Utility.NoInternetController
+- uid: SombraStudios.Shared.Utility.Description
+  commentId: T:SombraStudios.Shared.Utility.Description
+  href: SombraStudios.Shared.Utility.Description.html
+  name: Description
+  nameWithType: Description
+  fullName: SombraStudios.Shared.Utility.Description
 - uid: SombraStudios.Shared.Utility.AnimationCurveValueSO
   commentId: T:SombraStudios.Shared.Utility.AnimationCurveValueSO
   parent: SombraStudios.Shared.Utility
@@ -187,30 +184,12 @@ references:
   name: ObjectInCameraViewport
   nameWithType: ObjectInCameraViewport
   fullName: SombraStudios.Shared.Utility.ObjectInCameraViewport
-- uid: SombraStudios.Shared.Utility.UnixTimestampConverter
-  commentId: T:SombraStudios.Shared.Utility.UnixTimestampConverter
-  href: SombraStudios.Shared.Utility.UnixTimestampConverter.html
-  name: UnixTimestampConverter
-  nameWithType: UnixTimestampConverter
-  fullName: SombraStudios.Shared.Utility.UnixTimestampConverter
-- uid: SombraStudios.Shared.Utility.ScreenBounds
-  commentId: T:SombraStudios.Shared.Utility.ScreenBounds
-  href: SombraStudios.Shared.Utility.ScreenBounds.html
-  name: ScreenBounds
-  nameWithType: ScreenBounds
-  fullName: SombraStudios.Shared.Utility.ScreenBounds
-- uid: SombraStudios.Shared.Utility.SavePersistentData
-  commentId: T:SombraStudios.Shared.Utility.SavePersistentData
-  href: SombraStudios.Shared.Utility.SavePersistentData.html
-  name: SavePersistentData
-  nameWithType: SavePersistentData
-  fullName: SombraStudios.Shared.Utility.SavePersistentData
-- uid: SombraStudios.Shared.Utility.PlayerPrefsKeys
-  commentId: T:SombraStudios.Shared.Utility.PlayerPrefsKeys
-  href: SombraStudios.Shared.Utility.PlayerPrefsKeys.html
-  name: PlayerPrefsKeys
-  nameWithType: PlayerPrefsKeys
-  fullName: SombraStudios.Shared.Utility.PlayerPrefsKeys
+- uid: SombraStudios.Shared.Utility.ParentSetter
+  commentId: T:SombraStudios.Shared.Utility.ParentSetter
+  href: SombraStudios.Shared.Utility.ParentSetter.html
+  name: ParentSetter
+  nameWithType: ParentSetter
+  fullName: SombraStudios.Shared.Utility.ParentSetter
 - uid: SombraStudios.Shared.Utility
   commentId: N:SombraStudios.Shared.Utility
   href: SombraStudios.html

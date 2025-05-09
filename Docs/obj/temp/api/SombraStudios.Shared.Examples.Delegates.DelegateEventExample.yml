@@ -20,22 +20,26 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: DelegateEventExample
     path: ../Examples/Delegates/DelegateEventExample.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - SombraStudios.Shared.Examples
   namespace: SombraStudios.Shared.Examples.Delegates
   summary: >-
     Example Class using delegate and event.
 
-    The static event - Subscription, Unsubscription and ChangeColor method
+    The static event - Subscription, Unsubscription and ChangeColor method can be on any other script.
 
-    can be on any other script.
-
-    Also events support multiple subscriptions
+    Also, events support multiple subscriptions.
   example: []
   syntax:
-    content: 'public class DelegateEventExample : MonoBehaviour'
-    content.vb: Public Class DelegateEventExample Inherits MonoBehaviour
+    content: >-
+      [RequireComponent(typeof(MeshRenderer))]
+
+      public class DelegateEventExample : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(MeshRenderer))>
+
+      Public Class DelegateEventExample Inherits MonoBehaviour
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -44,6 +48,12 @@ items:
   - UnityEngine.MonoBehaviour
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEngine.MeshRenderer
 - uid: SombraStudios.Shared.Examples.Delegates.DelegateEventExample.OnClick
   commentId: E:SombraStudios.Shared.Examples.Delegates.DelegateEventExample.OnClick
   id: OnClick

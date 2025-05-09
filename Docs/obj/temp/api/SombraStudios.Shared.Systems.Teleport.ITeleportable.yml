@@ -27,9 +27,9 @@ items:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
   summary: >-
-    Implent this to create a teleportable object.
+    Interface for creating a teleportable object.
 
-    For example a physical object that need to considers velocity when teleporting
+    For example, a physical object that needs to consider velocity when teleporting.
   example: []
   syntax:
     content: public interface ITeleportable
@@ -52,10 +52,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: CanTeleport
     path: ../Systems/Teleport/ITeleportable.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Gets or sets a value indicating whether the object can teleport.
+  example: []
   syntax:
     content: bool CanTeleport { get; set; }
     parameters: []
@@ -81,16 +83,18 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GameObject
     path: ../Systems/Teleport/ITeleportable.cs
-    startLine: 11
+    startLine: 18
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Gets the GameObject associated with the teleportable object.
+  example: []
   syntax:
-    content: GameObject GameObject { get; set; }
+    content: GameObject GameObject { get; }
     parameters: []
     return:
       type: UnityEngine.GameObject
-    content.vb: Property GameObject As GameObject
+    content.vb: ReadOnly Property GameObject As GameObject
   overload: SombraStudios.Shared.Systems.Teleport.ITeleportable.GameObject*
 - uid: SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
   commentId: M:SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo(UnityEngine.Transform)
@@ -110,15 +114,18 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TeleportTo
     path: ../Systems/Teleport/ITeleportable.cs
-    startLine: 13
+    startLine: 24
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Teleports the object to the specified destination.
+  example: []
   syntax:
     content: void TeleportTo(Transform destination)
     parameters:
     - id: destination
       type: UnityEngine.Transform
+      description: The destination transform to teleport to.
     content.vb: Sub TeleportTo(destination As Transform)
   overload: SombraStudios.Shared.Systems.Teleport.ITeleportable.TeleportTo*
 references:

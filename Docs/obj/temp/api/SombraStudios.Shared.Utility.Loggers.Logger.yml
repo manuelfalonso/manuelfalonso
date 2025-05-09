@@ -6,6 +6,19 @@ items:
   parent: SombraStudios.Shared.Utility.Loggers
   children:
   - SombraStudios.Shared.Utility.Loggers.Logger.Log(System.Object,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.Log(System.String,System.Object,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogError(System.Object,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogError(System.String,System.Object,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(System.String,UnityEngine.Object,System.Object[])
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.Exception,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.String,System.Exception,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(System.String,UnityEngine.Object,System.Object[])
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(System.Object,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(System.String,System.Object,UnityEngine.Object)
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  - SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(System.String,UnityEngine.Object,System.Object[])
   langs:
   - csharp
   - vb
@@ -20,10 +33,15 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Logger
     path: ../Utility/Loggers/Logger.cs
-    startLine: 7
+    startLine: 16
   assemblies:
   - SombraStudios.Shared.Utility
   namespace: SombraStudios.Shared.Utility.Loggers
+  summary: >-
+    A utility class for logging messages in Unity with support for categories and colors.
+
+    It will only log messages when the DEBUG condition is met. (UNITY_EDITOR || DEVELOPMENT_BUILD)
+  example: []
   syntax:
     content: public static class Logger
     content.vb: Public Module Logger
@@ -47,22 +65,26 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Log
     path: ../Utility/Loggers/Logger.cs
-    startLine: 10
+    startLine: 50
   assemblies:
   - SombraStudios.Shared.Utility
   namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a message with optional sender information.
+  example: []
   syntax:
     content: >-
-      [Conditional("UNITY_EDITOR")]
+      [Conditional("DEBUG")]
 
       public static void Log(object message, Object sender = null)
     parameters:
     - id: message
       type: System.Object
+      description: The message to log.
     - id: sender
       type: UnityEngine.Object
+      description: The object that sends the log (optional).
     content.vb: >-
-      <Conditional("UNITY_EDITOR")>
+      <Conditional("DEBUG")>
 
       Public Shared Sub Log(message As Object, sender As [Object] = Nothing)
   overload: SombraStudios.Shared.Utility.Loggers.Logger.Log*
@@ -71,10 +93,696 @@ items:
     ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: UNITY_EDITOR
+      value: DEBUG
   nameWithType.vb: Logger.Log(Object, Object)
   fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.Log(Object, UnityEngine.Object)
   name.vb: Log(Object, Object)
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.Log(System.String,System.Object,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.Log(System.String,System.Object,UnityEngine.Object)
+  id: Log(System.String,System.Object,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: Log(string, object, Object)
+  nameWithType: Logger.Log(string, object, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.Log(string, object, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Log
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 65
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void Log(string category, object message, Object sender = null)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the log.
+    - id: message
+      type: System.Object
+      description: The message to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub Log(category As String, message As Object, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.Log*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.Log(String, Object, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.Log(String, Object, UnityEngine.Object)
+  name.vb: Log(String, Object, Object)
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(System.String,UnityEngine.Object,System.Object[])
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(System.String,UnityEngine.Object,System.Object[])
+  id: LogFormat(System.String,UnityEngine.Object,System.Object[])
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogFormat(string, Object, params object[])
+  nameWithType: Logger.LogFormat(string, Object, params object[])
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(string, UnityEngine.Object, params object[])
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogFormat
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 80
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a formatted message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogFormat(string format, Object sender = null, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    - id: args
+      type: System.Object[]
+      description: Arguments for formatting the message.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogFormat(format As String, sender As [Object] = Nothing, ParamArray args As Object())
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogFormat(String, Object, ParamArray Object())
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(String, UnityEngine.Object, ParamArray Object())
+  name.vb: LogFormat(String, Object, ParamArray Object())
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  id: LogFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogFormat(string, string, Object, params object[])
+  nameWithType: Logger.LogFormat(string, string, Object, params object[])
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(string, string, UnityEngine.Object, params object[])
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogFormat
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 96
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized and formatted message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogFormat(string category, string format, Object sender = null, params object[] args)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the log.
+    - id: format
+      type: System.String
+      description: The message format string.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    - id: args
+      type: System.Object[]
+      description: Arguments for formatting the message.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogFormat(category As String, format As String, sender As [Object] = Nothing, ParamArray args As Object())
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogFormat(String, String, Object, ParamArray Object())
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat(String, String, UnityEngine.Object, ParamArray Object())
+  name.vb: LogFormat(String, String, Object, ParamArray Object())
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(System.Object,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(System.Object,UnityEngine.Object)
+  id: LogWarning(System.Object,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogWarning(object, Object)
+  nameWithType: Logger.LogWarning(object, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(object, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogWarning
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 114
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a warning message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogWarning(object message, Object sender = null)
+    parameters:
+    - id: message
+      type: System.Object
+      description: The warning message to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the warning (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogWarning(message As Object, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogWarning(Object, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(Object, UnityEngine.Object)
+  name.vb: LogWarning(Object, Object)
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(System.String,System.Object,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(System.String,System.Object,UnityEngine.Object)
+  id: LogWarning(System.String,System.Object,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogWarning(string, object, Object)
+  nameWithType: Logger.LogWarning(string, object, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(string, object, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogWarning
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 129
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized warning message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogWarning(string category, object message, Object sender = null)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the warning.
+    - id: message
+      type: System.Object
+      description: The warning message to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the warning (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogWarning(category As String, message As Object, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogWarning(String, Object, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning(String, Object, UnityEngine.Object)
+  name.vb: LogWarning(String, Object, Object)
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(System.String,UnityEngine.Object,System.Object[])
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(System.String,UnityEngine.Object,System.Object[])
+  id: LogWarningFormat(System.String,UnityEngine.Object,System.Object[])
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogWarningFormat(string, Object, params object[])
+  nameWithType: Logger.LogWarningFormat(string, Object, params object[])
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(string, UnityEngine.Object, params object[])
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogWarningFormat
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 144
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a warning formatted message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogWarningFormat(string format, Object sender = null, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    - id: args
+      type: System.Object[]
+      description: Arguments for formatting the message.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogWarningFormat(format As String, sender As [Object] = Nothing, ParamArray args As Object())
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogWarningFormat(String, Object, ParamArray Object())
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(String, UnityEngine.Object, ParamArray Object())
+  name.vb: LogWarningFormat(String, Object, ParamArray Object())
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  id: LogWarningFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogWarningFormat(string, string, Object, params object[])
+  nameWithType: Logger.LogWarningFormat(string, string, Object, params object[])
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(string, string, UnityEngine.Object, params object[])
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogWarningFormat
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 160
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized and formatted warning message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogWarningFormat(string category, string format, Object sender = null, params object[] args)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the log.
+    - id: format
+      type: System.String
+      description: The message format string.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    - id: args
+      type: System.Object[]
+      description: Arguments for formatting the message.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogWarningFormat(category As String, format As String, sender As [Object] = Nothing, ParamArray args As Object())
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogWarningFormat(String, String, Object, ParamArray Object())
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat(String, String, UnityEngine.Object, ParamArray Object())
+  name.vb: LogWarningFormat(String, String, Object, ParamArray Object())
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogError(System.Object,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogError(System.Object,UnityEngine.Object)
+  id: LogError(System.Object,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogError(object, Object)
+  nameWithType: Logger.LogError(object, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogError(object, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogError
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 179
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs an error message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogError(object message, Object sender = null)
+    parameters:
+    - id: message
+      type: System.Object
+      description: The error message to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the error (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogError(message As Object, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogError*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogError(Object, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogError(Object, UnityEngine.Object)
+  name.vb: LogError(Object, Object)
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogError(System.String,System.Object,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogError(System.String,System.Object,UnityEngine.Object)
+  id: LogError(System.String,System.Object,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogError(string, object, Object)
+  nameWithType: Logger.LogError(string, object, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogError(string, object, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogError
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 194
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized error message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogError(string category, object message, Object sender = null)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the warning.
+    - id: message
+      type: System.Object
+      description: The warning message to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the warning (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogError(category As String, message As Object, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogError*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogError(String, Object, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogError(String, Object, UnityEngine.Object)
+  name.vb: LogError(String, Object, Object)
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(System.String,UnityEngine.Object,System.Object[])
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(System.String,UnityEngine.Object,System.Object[])
+  id: LogErrorFormat(System.String,UnityEngine.Object,System.Object[])
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogErrorFormat(string, Object, params object[])
+  nameWithType: Logger.LogErrorFormat(string, Object, params object[])
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(string, UnityEngine.Object, params object[])
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogErrorFormat
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 209
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a formatted error message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogErrorFormat(string format, Object sender = null, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+      description: The message format string.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    - id: args
+      type: System.Object[]
+      description: Arguments for formatting the message.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogErrorFormat(format As String, sender As [Object] = Nothing, ParamArray args As Object())
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogErrorFormat(String, Object, ParamArray Object())
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(String, UnityEngine.Object, ParamArray Object())
+  name.vb: LogErrorFormat(String, Object, ParamArray Object())
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  id: LogErrorFormat(System.String,System.String,UnityEngine.Object,System.Object[])
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogErrorFormat(string, string, Object, params object[])
+  nameWithType: Logger.LogErrorFormat(string, string, Object, params object[])
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(string, string, UnityEngine.Object, params object[])
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogErrorFormat
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 225
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized and formatted error message with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogErrorFormat(string category, string format, Object sender = null, params object[] args)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the log.
+    - id: format
+      type: System.String
+      description: The message format string.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the log (optional).
+    - id: args
+      type: System.Object[]
+      description: Arguments for formatting the message.
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogErrorFormat(category As String, format As String, sender As [Object] = Nothing, ParamArray args As Object())
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogErrorFormat(String, String, Object, ParamArray Object())
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat(String, String, UnityEngine.Object, ParamArray Object())
+  name.vb: LogErrorFormat(String, String, Object, ParamArray Object())
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.Exception,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.Exception,UnityEngine.Object)
+  id: LogException(System.Exception,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogException(Exception, Object)
+  nameWithType: Logger.LogException(Exception, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.Exception, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogException
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 245
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs an exception with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogException(Exception exception, Object sender = null)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the exception log (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogException(exception As Exception, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogException*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.String,System.Exception,UnityEngine.Object)
+  commentId: M:SombraStudios.Shared.Utility.Loggers.Logger.LogException(System.String,System.Exception,UnityEngine.Object)
+  id: LogException(System.String,System.Exception,UnityEngine.Object)
+  parent: SombraStudios.Shared.Utility.Loggers.Logger
+  langs:
+  - csharp
+  - vb
+  name: LogException(string, Exception, Object)
+  nameWithType: Logger.LogException(string, Exception, Object)
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogException(string, System.Exception, UnityEngine.Object)
+  type: Method
+  source:
+    remote:
+      path: Utility/Loggers/Logger.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LogException
+    path: ../Utility/Loggers/Logger.cs
+    startLine: 260
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Loggers
+  summary: Logs a categorized exception with optional sender information.
+  example: []
+  syntax:
+    content: >-
+      [Conditional("DEBUG")]
+
+      public static void LogException(string category, Exception exception, Object sender = null)
+    parameters:
+    - id: category
+      type: System.String
+      description: The category of the exception.
+    - id: exception
+      type: System.Exception
+      description: The exception to log.
+    - id: sender
+      type: UnityEngine.Object
+      description: The object that sends the exception log (optional).
+    content.vb: >-
+      <Conditional("DEBUG")>
+
+      Public Shared Sub LogException(category As String, exception As Exception, sender As [Object] = Nothing)
+  overload: SombraStudios.Shared.Utility.Loggers.Logger.LogException*
+  attributes:
+  - type: System.Diagnostics.ConditionalAttribute
+    ctor: System.Diagnostics.ConditionalAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEBUG
+  nameWithType.vb: Logger.LogException(String, Exception, Object)
+  fullName.vb: SombraStudios.Shared.Utility.Loggers.Logger.LogException(String, System.Exception, UnityEngine.Object)
+  name.vb: LogException(String, Exception, Object)
 references:
 - uid: SombraStudios.Shared.Utility.Loggers
   commentId: N:SombraStudios.Shared.Utility.Loggers
@@ -151,3 +859,81 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat*
+  commentId: Overload:SombraStudios.Shared.Utility.Loggers.Logger.LogFormat
+  href: SombraStudios.Shared.Utility.Loggers.Logger.html#SombraStudios_Shared_Utility_Loggers_Logger_LogFormat_System_String_UnityEngine_Object_System_Object___
+  name: LogFormat
+  nameWithType: Logger.LogFormat
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogFormat
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning*
+  commentId: Overload:SombraStudios.Shared.Utility.Loggers.Logger.LogWarning
+  href: SombraStudios.Shared.Utility.Loggers.Logger.html#SombraStudios_Shared_Utility_Loggers_Logger_LogWarning_System_Object_UnityEngine_Object_
+  name: LogWarning
+  nameWithType: Logger.LogWarning
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogWarning
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat*
+  commentId: Overload:SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat
+  href: SombraStudios.Shared.Utility.Loggers.Logger.html#SombraStudios_Shared_Utility_Loggers_Logger_LogWarningFormat_System_String_UnityEngine_Object_System_Object___
+  name: LogWarningFormat
+  nameWithType: Logger.LogWarningFormat
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogWarningFormat
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogError*
+  commentId: Overload:SombraStudios.Shared.Utility.Loggers.Logger.LogError
+  href: SombraStudios.Shared.Utility.Loggers.Logger.html#SombraStudios_Shared_Utility_Loggers_Logger_LogError_System_Object_UnityEngine_Object_
+  name: LogError
+  nameWithType: Logger.LogError
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogError
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat*
+  commentId: Overload:SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat
+  href: SombraStudios.Shared.Utility.Loggers.Logger.html#SombraStudios_Shared_Utility_Loggers_Logger_LogErrorFormat_System_String_UnityEngine_Object_System_Object___
+  name: LogErrorFormat
+  nameWithType: Logger.LogErrorFormat
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogErrorFormat
+- uid: SombraStudios.Shared.Utility.Loggers.Logger.LogException*
+  commentId: Overload:SombraStudios.Shared.Utility.Loggers.Logger.LogException
+  href: SombraStudios.Shared.Utility.Loggers.Logger.html#SombraStudios_Shared_Utility_Loggers_Logger_LogException_System_Exception_UnityEngine_Object_
+  name: LogException
+  nameWithType: Logger.LogException
+  fullName: SombraStudios.Shared.Utility.Loggers.Logger.LogException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  id: CommandManager
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  langs:
+  - csharp
+  - vb
+  name: CommandManager
+  nameWithType: CommandManager
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CommandManager
+    path: ../Patterns/Behavioural/Command/CommandManager.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  syntax:
+    content: 'public class CommandManager : MonoBehaviour'
+    content.vb: Public Class CommandManager Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute
+  id: Execute
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: CommandManager.Execute()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Execute
+    path: ../Patterns/Behavioural/Command/CommandManager.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  syntax:
+    content: public virtual void Execute()
+    content.vb: Public Overridable Sub Execute()
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo
+  id: Undo
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: CommandManager.Undo()
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo()
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Undo
+    path: ../Patterns/Behavioural/Command/CommandManager.cs
+    startLine: 35
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  syntax:
+    content: public virtual void Undo()
+    content.vb: Public Overridable Sub Undo()
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  id: ExecuteRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  langs:
+  - csharp
+  - vb
+  name: ExecuteRoutine(ICommand)
+  nameWithType: CommandManager.ExecuteRoutine(ICommand)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExecuteRoutine
+    path: ../Patterns/Behavioural/Command/CommandManager.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  syntax:
+    content: protected virtual IEnumerator ExecuteRoutine(ICommand commandToExecute)
+    parameters:
+    - id: commandToExecute
+      type: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Protected Overridable Function ExecuteRoutine(commandToExecute As ICommand) As IEnumerator
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine*
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  id: UndoRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  langs:
+  - csharp
+  - vb
+  name: UndoRoutine(ICommand)
+  nameWithType: CommandManager.UndoRoutine(ICommand)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine(SombraStudios.Shared.Patterns.Behavioural.Command.ICommand)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/CommandManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UndoRoutine
+    path: ../Patterns/Behavioural/Command/CommandManager.cs
+    startLine: 58
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  syntax:
+    content: protected virtual IEnumerator UndoRoutine(ICommand commandToUndo)
+    parameters:
+    - id: commandToUndo
+      type: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Protected Overridable Function UndoRoutine(commandToUndo As ICommand) As IEnumerator
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Command
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Command
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Command
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandManager_Execute
+  name: Execute
+  nameWithType: CommandManager.Execute
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Execute
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandManager_Undo
+  name: Undo
+  nameWithType: CommandManager.Undo
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.Undo
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandManager_ExecuteRoutine_SombraStudios_Shared_Patterns_Behavioural_Command_ICommand_
+  name: ExecuteRoutine
+  nameWithType: CommandManager.ExecuteRoutine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.ExecuteRoutine
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.html#SombraStudios_Shared_Patterns_Behavioural_Command_CommandManager_UndoRoutine_SombraStudios_Shared_Patterns_Behavioural_Command_ICommand_
+  name: UndoRoutine
+  nameWithType: CommandManager.UndoRoutine
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.UndoRoutine

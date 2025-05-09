@@ -1,0 +1,1857 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO
+  id: MPBSetVectorArrayVFXSO
+  parent: SombraStudios.Shared.VFX.PropertySO
+  children:
+  - SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty(UnityEngine.MaterialPropertyBlock)
+  - SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty(UnityEngine.MaterialPropertyBlock)
+  - SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  langs:
+  - csharp
+  - vb
+  name: MPBSetVectorArrayVFXSO
+  nameWithType: MPBSetVectorArrayVFXSO
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO
+  type: Class
+  source:
+    remote:
+      path: VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MPBSetVectorArrayVFXSO
+    path: ../VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: ScriptableObject for setting a Vector Array property in a MaterialPropertyBlock.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "NewMPBSetVectorArray", menuName = "Sombra Studios/VFX/Material Property Block/Set Vector Array")]
+
+      public class MPBSetVectorArrayVFXSO : MaterialPropertyBlockPropertyVFXSO<Vector4[]>, IEquatable<SOWithId>, IIdentifiable, IStrategy<BaseVFXController>, IMPBProperty<Vector4[]>
+    content.vb: >-
+      <CreateAssetMenu(fileName:="NewMPBSetVectorArray", menuName:="Sombra Studios/VFX/Material Property Block/Set Vector Array")>
+
+      Public Class MPBSetVectorArrayVFXSO Inherits MaterialPropertyBlockPropertyVFXSO(Of Vector4()) Implements IEquatable(Of SOWithId), IIdentifiable, IStrategy(Of BaseVFXController), IMPBProperty(Of Vector4())
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.ScriptableObjects.SOWithId
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  implements:
+  - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  - SombraStudios.Shared.Interfaces.IIdentifiable
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  - SombraStudios.Shared.VFX.PropertySO.IMPBProperty{UnityEngine.Vector4[]}
+  inheritedMembers:
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._propertyName
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._property
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._propertyID
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.HasProperty(UnityEngine.MaterialPropertyBlock)
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.GetProperty(UnityEngine.MaterialPropertyBlock)
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._rendererIndex
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._applyOnlyToSpecificMaterial
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._materialIndex
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._originalProperties
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._vFXController
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.LOG_CATEGORY
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}._showLogs
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: NewMPBSetVectorArray
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/VFX/Material Property Block/Set Vector Array
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty(UnityEngine.MaterialPropertyBlock)
+  id: HasProperty(UnityEngine.MaterialPropertyBlock)
+  parent: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO
+  langs:
+  - csharp
+  - vb
+  name: HasProperty(MaterialPropertyBlock)
+  nameWithType: MPBSetVectorArrayVFXSO.HasProperty(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty(UnityEngine.MaterialPropertyBlock)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasProperty
+    path: ../VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Determines whether the material property block has the property.
+  example: []
+  syntax:
+    content: public override bool HasProperty(MaterialPropertyBlock mpb)
+    parameters:
+    - id: mpb
+      type: UnityEngine.MaterialPropertyBlock
+      description: The material property block.
+    return:
+      type: System.Boolean
+      description: True if the material property block has the property; otherwise, false.
+    content.vb: Public Overrides Function HasProperty(mpb As MaterialPropertyBlock) As Boolean
+  overridden: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.HasProperty(UnityEngine.MaterialPropertyBlock)
+  overload: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty*
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty(UnityEngine.MaterialPropertyBlock)
+  id: GetProperty(UnityEngine.MaterialPropertyBlock)
+  parent: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(MaterialPropertyBlock)
+  nameWithType: MPBSetVectorArrayVFXSO.GetProperty(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty(UnityEngine.MaterialPropertyBlock)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetProperty
+    path: ../VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Gets the value of the property from the material property block.
+  example: []
+  syntax:
+    content: public override Vector4[] GetProperty(MaterialPropertyBlock mpb)
+    parameters:
+    - id: mpb
+      type: UnityEngine.MaterialPropertyBlock
+      description: The material property block.
+    return:
+      type: UnityEngine.Vector4[]
+      description: The value of the property.
+    content.vb: Public Overrides Function GetProperty(mpb As MaterialPropertyBlock) As Vector4()
+  overridden: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.GetProperty(UnityEngine.MaterialPropertyBlock)
+  overload: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty*
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  id: SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  parent: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO
+  langs:
+  - csharp
+  - vb
+  name: SetProperty(MaterialPropertyBlock, Vector4[])
+  nameWithType: MPBSetVectorArrayVFXSO.SetProperty(MaterialPropertyBlock, Vector4[])
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty(UnityEngine.MaterialPropertyBlock, UnityEngine.Vector4[])
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetProperty
+    path: ../VFX/PropertySO/MaterialPropertyBlock/MPBSetVectorArrayVFXSO.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Sets the value of the property in the material property block.
+  example: []
+  syntax:
+    content: public override void SetProperty(MaterialPropertyBlock mpb, Vector4[] value)
+    parameters:
+    - id: mpb
+      type: UnityEngine.MaterialPropertyBlock
+      description: The material property block.
+    - id: value
+      type: UnityEngine.Vector4[]
+      description: The value of the property.
+    content.vb: Public Overrides Sub SetProperty(mpb As MaterialPropertyBlock, value As Vector4())
+  overridden: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  overload: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty*
+  nameWithType.vb: MPBSetVectorArrayVFXSO.SetProperty(MaterialPropertyBlock, Vector4())
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty(UnityEngine.MaterialPropertyBlock, UnityEngine.Vector4())
+  name.vb: SetProperty(MaterialPropertyBlock, Vector4())
+references:
+- uid: SombraStudios.Shared.VFX.PropertySO
+  commentId: N:SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.html
+  name: SombraStudios.Shared.VFX.PropertySO
+  nameWithType: SombraStudios.Shared.VFX.PropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+  commentId: T:SombraStudios.Shared.ScriptableObjects.SOWithId
+  parent: SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  name: SOWithId
+  nameWithType: SOWithId
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: StrategySO<BaseVFXController>
+  nameWithType: StrategySO<BaseVFXController>
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>
+  nameWithType.vb: StrategySO(Of BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  name.vb: StrategySO(Of BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+  - name: <
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  parent: SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html
+  name: VFXPropertySO
+  nameWithType: VFXPropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  parent: SombraStudios.Shared.VFX.PropertySO
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html
+  name: MaterialPropertyBlockVFXSO<Vector4[]>
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4())
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4())
+  name.vb: MaterialPropertyBlockVFXSO(Of Vector4())
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+    name: MaterialPropertyBlockVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html
+  - name: <
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+    name: MaterialPropertyBlockVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  parent: SombraStudios.Shared.VFX.PropertySO
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html
+  name: MaterialPropertyBlockPropertyVFXSO<Vector4[]>
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4())
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4())
+  name.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4())
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+    name: MaterialPropertyBlockPropertyVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html
+  - name: <
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+    name: MaterialPropertyBlockPropertyVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  commentId: T:System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SOWithId>
+  nameWithType: IEquatable<SOWithId>
+  fullName: System.IEquatable<SombraStudios.Shared.ScriptableObjects.SOWithId>
+  nameWithType.vb: IEquatable(Of SOWithId)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: IEquatable(Of SOWithId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.IIdentifiable
+  commentId: T:SombraStudios.Shared.Interfaces.IIdentifiable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IIdentifiable.html
+  name: IIdentifiable
+  nameWithType: IIdentifiable
+  fullName: SombraStudios.Shared.Interfaces.IIdentifiable
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  commentId: '!:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}'
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: IStrategy<BaseVFXController>
+  nameWithType: IStrategy<BaseVFXController>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>
+  nameWithType.vb: IStrategy(Of BaseVFXController)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  name.vb: IStrategy(Of BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    isExternal: true
+  - name: <
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.IMPBProperty{UnityEngine.Vector4[]}
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.IMPBProperty{UnityEngine.Vector4[]}
+  parent: SombraStudios.Shared.VFX.PropertySO
+  definition: SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+  href: SombraStudios.Shared.VFX.PropertySO.IMPBProperty-1.html
+  name: IMPBProperty<Vector4[]>
+  nameWithType: IMPBProperty<Vector4[]>
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMPBProperty<UnityEngine.Vector4[]>
+  nameWithType.vb: IMPBProperty(Of Vector4())
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMPBProperty(Of UnityEngine.Vector4())
+  name.vb: IMPBProperty(Of Vector4())
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+    name: IMPBProperty
+    href: SombraStudios.Shared.VFX.PropertySO.IMPBProperty-1.html
+  - name: <
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+    name: IMPBProperty
+    href: SombraStudios.Shared.VFX.PropertySO.IMPBProperty-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._propertyName
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._propertyName
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._propertyName
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1__propertyName
+  name: _propertyName
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>._propertyName
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>._propertyName
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4())._propertyName
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4())._propertyName
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._property
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._property
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._property
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1__property
+  name: _property
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>._property
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>._property
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4())._property
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4())._property
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._propertyID
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}._propertyID
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._propertyID
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1__propertyID
+  name: _propertyID
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>._propertyID
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>._propertyID
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4())._propertyID
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4())._propertyID
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: CanExecute(BaseVFXController)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.CanExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).CanExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_StoreOriginalValue_UnityEngine_MaterialPropertyBlock_
+  name: StoreOriginalValue(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.StoreOriginalValue(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).StoreOriginalValue(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+    name: StoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_StoreOriginalValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+    name: StoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_StoreOriginalValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_ApplyNewValue_UnityEngine_MaterialPropertyBlock_
+  name: ApplyNewValue(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.ApplyNewValue(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).ApplyNewValue(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+    name: ApplyNewValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_ApplyNewValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+    name: ApplyNewValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_ApplyNewValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,`0)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_RestoreOriginalValue_UnityEngine_MaterialPropertyBlock__0_
+  name: RestoreOriginalValue(MaterialPropertyBlock, Vector4[])
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.RestoreOriginalValue(MaterialPropertyBlock, Vector4[])
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock, UnityEngine.Vector4[])
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).RestoreOriginalValue(MaterialPropertyBlock, Vector4())
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).RestoreOriginalValue(UnityEngine.MaterialPropertyBlock, UnityEngine.Vector4())
+  name.vb: RestoreOriginalValue(MaterialPropertyBlock, Vector4())
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+    name: RestoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_RestoreOriginalValue_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+    name: RestoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_RestoreOriginalValue_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.HasProperty(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.HasProperty(UnityEngine.MaterialPropertyBlock)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.HasProperty(UnityEngine.MaterialPropertyBlock)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_HasProperty_UnityEngine_MaterialPropertyBlock_
+  name: HasProperty(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.HasProperty(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.HasProperty(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).HasProperty(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).HasProperty(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.HasProperty(UnityEngine.MaterialPropertyBlock)
+    name: HasProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_HasProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.HasProperty(UnityEngine.MaterialPropertyBlock)
+    name: HasProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_HasProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.GetProperty(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.GetProperty(UnityEngine.MaterialPropertyBlock)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.GetProperty(UnityEngine.MaterialPropertyBlock)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_GetProperty_UnityEngine_MaterialPropertyBlock_
+  name: GetProperty(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.GetProperty(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.GetProperty(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).GetProperty(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).GetProperty(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.GetProperty(UnityEngine.MaterialPropertyBlock)
+    name: GetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_GetProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.GetProperty(UnityEngine.MaterialPropertyBlock)
+    name: GetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_GetProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.SetProperty(UnityEngine.MaterialPropertyBlock,`0)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_SetProperty_UnityEngine_MaterialPropertyBlock__0_
+  name: SetProperty(MaterialPropertyBlock, Vector4[])
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<Vector4[]>.SetProperty(MaterialPropertyBlock, Vector4[])
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<UnityEngine.Vector4[]>.SetProperty(UnityEngine.MaterialPropertyBlock, UnityEngine.Vector4[])
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of Vector4()).SetProperty(MaterialPropertyBlock, Vector4())
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of UnityEngine.Vector4()).SetProperty(UnityEngine.MaterialPropertyBlock, UnityEngine.Vector4())
+  name.vb: SetProperty(MaterialPropertyBlock, Vector4())
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+    name: SetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_SetProperty_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO{UnityEngine.Vector4[]}.SetProperty(UnityEngine.MaterialPropertyBlock,UnityEngine.Vector4[])
+    name: SetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_SetProperty_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._rendererIndex
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._rendererIndex
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._rendererIndex
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__rendererIndex
+  name: _rendererIndex
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>._rendererIndex
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>._rendererIndex
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4())._rendererIndex
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4())._rendererIndex
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._applyOnlyToSpecificMaterial
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._applyOnlyToSpecificMaterial
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._applyOnlyToSpecificMaterial
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__applyOnlyToSpecificMaterial
+  name: _applyOnlyToSpecificMaterial
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>._applyOnlyToSpecificMaterial
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>._applyOnlyToSpecificMaterial
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4())._applyOnlyToSpecificMaterial
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4())._applyOnlyToSpecificMaterial
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._materialIndex
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._materialIndex
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._materialIndex
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__materialIndex
+  name: _materialIndex
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>._materialIndex
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>._materialIndex
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4())._materialIndex
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4())._materialIndex
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._originalProperties
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._originalProperties
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._originalProperties
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__originalProperties
+  name: _originalProperties
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>._originalProperties
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>._originalProperties
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4())._originalProperties
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4())._originalProperties
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._vFXController
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}._vFXController
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._vFXController
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__vFXController
+  name: _vFXController
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>._vFXController
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>._vFXController
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4())._vFXController
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4())._vFXController
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: Execute(BaseVFXController)
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>.Execute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4()).Execute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4()).Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}
+  definition: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: RevertVFX(BaseVFXController)
+  nameWithType: MaterialPropertyBlockVFXSO<Vector4[]>.RevertVFX(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<UnityEngine.Vector4[]>.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of Vector4()).RevertVFX(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of UnityEngine.Vector4()).RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: RevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO{UnityEngine.Vector4[]}.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: RevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  commentId: P:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_RevertOnAnimationEnd
+  name: RevertOnAnimationEnd
+  nameWithType: VFXPropertySO.RevertOnAnimationEnd
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: CanExecute(BaseVFXController)
+  nameWithType: VFXPropertySO.CanExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: Execute(BaseVFXController)
+  nameWithType: VFXPropertySO.Execute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_TryRevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: TryRevertVFX(BaseVFXController)
+  nameWithType: VFXPropertySO.TryRevertVFX(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryRevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_TryRevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryRevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_TryRevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: RevertVFX(BaseVFXController)
+  nameWithType: VFXPropertySO.RevertVFX(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: RevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: RevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.LOG_CATEGORY
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: StrategySO<BaseVFXController>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.LOG_CATEGORY
+  nameWithType.vb: StrategySO(Of BaseVFXController).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: StrategySO<BaseVFXController>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.PROPERTIES_TITLE
+  nameWithType.vb: StrategySO(Of BaseVFXController).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: StrategySO<BaseVFXController>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.DEBUG_TITLE
+  nameWithType.vb: StrategySO(Of BaseVFXController).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}._showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  name: _showLogs
+  nameWithType: StrategySO<BaseVFXController>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>._showLogs
+  nameWithType.vb: StrategySO(Of BaseVFXController)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: TryToExecute(BaseVFXController)
+  nameWithType: StrategySO<BaseVFXController>.TryToExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: StrategySO(Of BaseVFXController).TryToExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryToExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryToExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: TryExecute(BaseVFXController)
+  nameWithType: StrategySO<BaseVFXController>.TryExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: StrategySO(Of BaseVFXController).TryExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  commentId: P:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Id
+  name: Id
+  nameWithType: SOWithId.Id
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  name: Equals(SOWithId)
+  nameWithType: SOWithId.Equals(SOWithId)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  isExternal: true
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: SOWithId.Equals(object)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(object)
+  nameWithType.vb: SOWithId.Equals(Object)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  name: GetHashCode()
+  nameWithType: SOWithId.GetHashCode()
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode()
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+    name: GetHashCode
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+    name: GetHashCode
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.ScriptableObjects
+  commentId: N:SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects
+  nameWithType: SombraStudios.Shared.ScriptableObjects
+  fullName: SombraStudios.Shared.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  name: StrategySO<T>
+  nameWithType: StrategySO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>
+  nameWithType.vb: StrategySO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)
+  name.vb: StrategySO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.html
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html
+  name: MaterialPropertyBlockVFXSO<T>
+  nameWithType: MaterialPropertyBlockVFXSO<T>
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T)
+  name.vb: MaterialPropertyBlockVFXSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+    name: MaterialPropertyBlockVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+    name: MaterialPropertyBlockVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html
+  name: MaterialPropertyBlockPropertyVFXSO<T>
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T)
+  name.vb: MaterialPropertyBlockPropertyVFXSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+    name: MaterialPropertyBlockPropertyVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1
+    name: MaterialPropertyBlockPropertyVFXSO
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  name: IStrategy<T>
+  nameWithType: IStrategy<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>
+  nameWithType.vb: IStrategy(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T)
+  name.vb: IStrategy(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+  href: SombraStudios.Shared.VFX.PropertySO.IMPBProperty-1.html
+  name: IMPBProperty<T>
+  nameWithType: IMPBProperty<T>
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMPBProperty<T>
+  nameWithType.vb: IMPBProperty(Of T)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMPBProperty(Of T)
+  name.vb: IMPBProperty(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+    name: IMPBProperty
+    href: SombraStudios.Shared.VFX.PropertySO.IMPBProperty-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.IMPBProperty`1
+    name: IMPBProperty
+    href: SombraStudios.Shared.VFX.PropertySO.IMPBProperty-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._propertyName
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._propertyName
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1__propertyName
+  name: _propertyName
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>._propertyName
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>._propertyName
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T)._propertyName
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T)._propertyName
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._property
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._property
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1__property
+  name: _property
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>._property
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>._property
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T)._property
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T)._property
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._propertyID
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1._propertyID
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1__propertyID
+  name: _propertyID
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>._propertyID
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>._propertyID
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T)._propertyID
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T)._propertyID
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: CanExecute(BaseVFXController)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.CanExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).CanExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  isExternal: true
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_StoreOriginalValue_UnityEngine_MaterialPropertyBlock_
+  name: StoreOriginalValue(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.StoreOriginalValue(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).StoreOriginalValue(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+    name: StoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_StoreOriginalValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.StoreOriginalValue(UnityEngine.MaterialPropertyBlock)
+    name: StoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_StoreOriginalValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  isExternal: true
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_ApplyNewValue_UnityEngine_MaterialPropertyBlock_
+  name: ApplyNewValue(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.ApplyNewValue(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).ApplyNewValue(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+    name: ApplyNewValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_ApplyNewValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.ApplyNewValue(UnityEngine.MaterialPropertyBlock)
+    name: ApplyNewValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_ApplyNewValue_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,`0)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,`0)
+  isExternal: true
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_RestoreOriginalValue_UnityEngine_MaterialPropertyBlock__0_
+  name: RestoreOriginalValue(MaterialPropertyBlock, T)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.RestoreOriginalValue(MaterialPropertyBlock, T)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock, T)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).RestoreOriginalValue(MaterialPropertyBlock, T)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).RestoreOriginalValue(UnityEngine.MaterialPropertyBlock, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,`0)
+    name: RestoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_RestoreOriginalValue_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.RestoreOriginalValue(UnityEngine.MaterialPropertyBlock,`0)
+    name: RestoreOriginalValue
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_RestoreOriginalValue_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.HasProperty(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.HasProperty(UnityEngine.MaterialPropertyBlock)
+  isExternal: true
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_HasProperty_UnityEngine_MaterialPropertyBlock_
+  name: HasProperty(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.HasProperty(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.HasProperty(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).HasProperty(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).HasProperty(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.HasProperty(UnityEngine.MaterialPropertyBlock)
+    name: HasProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_HasProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.HasProperty(UnityEngine.MaterialPropertyBlock)
+    name: HasProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_HasProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.GetProperty(UnityEngine.MaterialPropertyBlock)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.GetProperty(UnityEngine.MaterialPropertyBlock)
+  isExternal: true
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_GetProperty_UnityEngine_MaterialPropertyBlock_
+  name: GetProperty(MaterialPropertyBlock)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.GetProperty(MaterialPropertyBlock)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.GetProperty(UnityEngine.MaterialPropertyBlock)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).GetProperty(MaterialPropertyBlock)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).GetProperty(UnityEngine.MaterialPropertyBlock)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.GetProperty(UnityEngine.MaterialPropertyBlock)
+    name: GetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_GetProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.GetProperty(UnityEngine.MaterialPropertyBlock)
+    name: GetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_GetProperty_UnityEngine_MaterialPropertyBlock_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.SetProperty(UnityEngine.MaterialPropertyBlock,`0)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.SetProperty(UnityEngine.MaterialPropertyBlock,`0)
+  isExternal: true
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_SetProperty_UnityEngine_MaterialPropertyBlock__0_
+  name: SetProperty(MaterialPropertyBlock, T)
+  nameWithType: MaterialPropertyBlockPropertyVFXSO<T>.SetProperty(MaterialPropertyBlock, T)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO<T>.SetProperty(UnityEngine.MaterialPropertyBlock, T)
+  nameWithType.vb: MaterialPropertyBlockPropertyVFXSO(Of T).SetProperty(MaterialPropertyBlock, T)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO(Of T).SetProperty(UnityEngine.MaterialPropertyBlock, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.SetProperty(UnityEngine.MaterialPropertyBlock,`0)
+    name: SetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_SetProperty_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO`1.SetProperty(UnityEngine.MaterialPropertyBlock,`0)
+    name: SetProperty
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockPropertyVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockPropertyVFXSO_1_SetProperty_UnityEngine_MaterialPropertyBlock__0_
+  - name: (
+  - uid: UnityEngine.MaterialPropertyBlock
+    name: MaterialPropertyBlock
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._rendererIndex
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._rendererIndex
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__rendererIndex
+  name: _rendererIndex
+  nameWithType: MaterialPropertyBlockVFXSO<T>._rendererIndex
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>._rendererIndex
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T)._rendererIndex
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T)._rendererIndex
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._applyOnlyToSpecificMaterial
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._applyOnlyToSpecificMaterial
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__applyOnlyToSpecificMaterial
+  name: _applyOnlyToSpecificMaterial
+  nameWithType: MaterialPropertyBlockVFXSO<T>._applyOnlyToSpecificMaterial
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>._applyOnlyToSpecificMaterial
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T)._applyOnlyToSpecificMaterial
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T)._applyOnlyToSpecificMaterial
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._materialIndex
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._materialIndex
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__materialIndex
+  name: _materialIndex
+  nameWithType: MaterialPropertyBlockVFXSO<T>._materialIndex
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>._materialIndex
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T)._materialIndex
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T)._materialIndex
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._originalProperties
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._originalProperties
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__originalProperties
+  name: _originalProperties
+  nameWithType: MaterialPropertyBlockVFXSO<T>._originalProperties
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>._originalProperties
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T)._originalProperties
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T)._originalProperties
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._vFXController
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1._vFXController
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1__vFXController
+  name: _vFXController
+  nameWithType: MaterialPropertyBlockVFXSO<T>._vFXController
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>._vFXController
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T)._vFXController
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T)._vFXController
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: Execute(BaseVFXController)
+  nameWithType: MaterialPropertyBlockVFXSO<T>.Execute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T).Execute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T).Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: RevertVFX(BaseVFXController)
+  nameWithType: MaterialPropertyBlockVFXSO<T>.RevertVFX(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO<T>.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: MaterialPropertyBlockVFXSO(Of T).RevertVFX(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO(Of T).RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: RevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: RevertVFX
+    href: SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO-1.html#SombraStudios_Shared_VFX_PropertySO_MaterialPropertyBlockVFXSO_1_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: StrategySO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.LOG_CATEGORY
+  nameWithType.vb: StrategySO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: StrategySO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.PROPERTIES_TITLE
+  nameWithType.vb: StrategySO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: StrategySO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.DEBUG_TITLE
+  nameWithType.vb: StrategySO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1__showLogs
+  name: _showLogs
+  nameWithType: StrategySO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>._showLogs
+  nameWithType.vb: StrategySO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  name: TryToExecute(T)
+  nameWithType: StrategySO<T>.TryToExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryToExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryToExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryToExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  name: TryExecute(T)
+  nameWithType: StrategySO<T>.TryExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty
+  href: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.html#SombraStudios_Shared_VFX_PropertySO_MPBSetVectorArrayVFXSO_HasProperty_UnityEngine_MaterialPropertyBlock_
+  name: HasProperty
+  nameWithType: MPBSetVectorArrayVFXSO.HasProperty
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.HasProperty
+- uid: UnityEngine.MaterialPropertyBlock
+  commentId: T:UnityEngine.MaterialPropertyBlock
+  parent: UnityEngine
+  isExternal: true
+  name: MaterialPropertyBlock
+  nameWithType: MaterialPropertyBlock
+  fullName: UnityEngine.MaterialPropertyBlock
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty
+  href: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.html#SombraStudios_Shared_VFX_PropertySO_MPBSetVectorArrayVFXSO_GetProperty_UnityEngine_MaterialPropertyBlock_
+  name: GetProperty
+  nameWithType: MPBSetVectorArrayVFXSO.GetProperty
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.GetProperty
+- uid: UnityEngine.Vector4[]
+  isExternal: true
+  name: Vector4[]
+  nameWithType: Vector4[]
+  fullName: UnityEngine.Vector4[]
+  nameWithType.vb: Vector4()
+  fullName.vb: UnityEngine.Vector4()
+  name.vb: Vector4()
+  spec.csharp:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty
+  href: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.html#SombraStudios_Shared_VFX_PropertySO_MPBSetVectorArrayVFXSO_SetProperty_UnityEngine_MaterialPropertyBlock_UnityEngine_Vector4___
+  name: SetProperty
+  nameWithType: MPBSetVectorArrayVFXSO.SetProperty
+  fullName: SombraStudios.Shared.VFX.PropertySO.MPBSetVectorArrayVFXSO.SetProperty

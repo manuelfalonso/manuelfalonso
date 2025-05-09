@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  id: SpawnerPosition
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  children:
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn(SombraStudios.Shared.Gameplay.Spawners.SpawnData)
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn(SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn)
+  langs:
+  - csharp
+  - vb
+  name: SpawnerPosition
+  nameWithType: SpawnerPosition
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SpawnerPosition
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: >-
+    Handles spawning objects at predefined positions with specific settings.  
+
+    Supports multiple spawn configurations and spawn points.
+  example: []
+  syntax:
+    content: 'public class SpawnerPosition : MonoBehaviour'
+    content.vb: Public Class SpawnerPosition Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn(SombraStudios.Shared.Gameplay.Spawners.SpawnData)
+  commentId: M:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn(SombraStudios.Shared.Gameplay.Spawners.SpawnData)
+  id: DecreaseSpawn(SombraStudios.Shared.Gameplay.Spawners.SpawnData)
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  langs:
+  - csharp
+  - vb
+  name: DecreaseSpawn(SpawnData)
+  nameWithType: SpawnerPosition.DecreaseSpawn(SpawnData)
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn(SombraStudios.Shared.Gameplay.Spawners.SpawnData)
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DecreaseSpawn
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 63
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: Decreases the current spawn count for a specific spawn configuration.
+  example: []
+  syntax:
+    content: public void DecreaseSpawn(SpawnData spawnToDecrease)
+    parameters:
+    - id: spawnToDecrease
+      type: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+      description: The spawn configuration to decrease.
+    content.vb: Public Sub DecreaseSpawn(spawnToDecrease As SpawnData)
+  overload: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn*
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn(SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn)
+  commentId: M:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn(SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn)
+  id: Spawn(SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn)
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+  langs:
+  - csharp
+  - vb
+  name: Spawn(ActiveSpawn)
+  nameWithType: SpawnerPosition.Spawn(SpawnerPosition.ActiveSpawn)
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn(SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn)
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Spawn
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 80
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: Spawns an object based on the provided spawn configuration.
+  example: []
+  syntax:
+    content: public void Spawn(SpawnerPosition.ActiveSpawn spawn)
+    parameters:
+    - id: spawn
+      type: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+      description: The spawn configuration to use.
+    content.vb: Public Sub Spawn(spawn As SpawnerPosition.ActiveSpawn)
+  overload: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn*
+references:
+- uid: SombraStudios.Shared.Gameplay.Spawners
+  commentId: N:SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Spawners
+  nameWithType: SombraStudios.Shared.Gameplay.Spawners
+  fullName: SombraStudios.Shared.Gameplay.Spawners
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html#SombraStudios_Shared_Gameplay_Spawners_SpawnerPosition_DecreaseSpawn_SombraStudios_Shared_Gameplay_Spawners_SpawnData_
+  name: DecreaseSpawn
+  nameWithType: SpawnerPosition.DecreaseSpawn
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.DecreaseSpawn
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnData.html
+  name: SpawnData
+  nameWithType: SpawnData
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html#SombraStudios_Shared_Gameplay_Spawners_SpawnerPosition_Spawn_SombraStudios_Shared_Gameplay_Spawners_SpawnerPosition_ActiveSpawn_
+  name: Spawn
+  nameWithType: SpawnerPosition.Spawn
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.Spawn
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  name: SpawnerPosition.ActiveSpawn
+  nameWithType: SpawnerPosition.ActiveSpawn
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  spec.csharp:
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+    name: SpawnerPosition
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+    name: ActiveSpawn
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.html
+  spec.vb:
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition
+    name: SpawnerPosition
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+    name: ActiveSpawn
+    href: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.html

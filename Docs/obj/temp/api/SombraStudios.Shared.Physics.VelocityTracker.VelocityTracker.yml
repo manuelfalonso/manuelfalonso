@@ -1,0 +1,411 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker
+  commentId: T:SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker
+  id: VelocityTracker
+  parent: SombraStudios.Shared.Physics.VelocityTracker
+  children:
+  - SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity
+  - SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource
+  langs:
+  - csharp
+  - vb
+  name: VelocityTracker
+  nameWithType: VelocityTracker
+  fullName: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker
+  type: Class
+  source:
+    remote:
+      path: Physics/VelocityTracker/VelocityTracker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: VelocityTracker
+    path: ../Physics/VelocityTracker/VelocityTracker.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Physics
+  namespace: SombraStudios.Shared.Physics.VelocityTracker
+  summary: Tracks and smooths velocity over a specified duration using a sampling interval.
+  example: []
+  syntax:
+    content: 'public class VelocityTracker : MonoBehaviour'
+    content.vb: Public Class VelocityTracker Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource
+  commentId: P:SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource
+  id: VelocitySource
+  parent: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker
+  langs:
+  - csharp
+  - vb
+  name: VelocitySource
+  nameWithType: VelocityTracker.VelocitySource
+  fullName: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource
+  type: Property
+  source:
+    remote:
+      path: Physics/VelocityTracker/VelocityTracker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: VelocitySource
+    path: ../Physics/VelocityTracker/VelocityTracker.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Physics
+  namespace: SombraStudios.Shared.Physics.VelocityTracker
+  summary: >-
+    A function that provides the current velocity.  
+
+    Must be assigned by the user.
+  example: []
+  syntax:
+    content: public Func<Vector3> VelocitySource { get; set; }
+    parameters: []
+    return:
+      type: System.Func{UnityEngine.Vector3}
+    content.vb: Public Property VelocitySource As Func(Of Vector3)
+  overload: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource*
+- uid: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity
+  commentId: P:SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity
+  id: AverageVelocity
+  parent: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker
+  langs:
+  - csharp
+  - vb
+  name: AverageVelocity
+  nameWithType: VelocityTracker.AverageVelocity
+  fullName: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity
+  type: Property
+  source:
+    remote:
+      path: Physics/VelocityTracker/VelocityTracker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AverageVelocity
+    path: ../Physics/VelocityTracker/VelocityTracker.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared.Physics
+  namespace: SombraStudios.Shared.Physics.VelocityTracker
+  summary: >-
+    Gets the average velocity based on the historical data.  
+
+    If no data is available, returns <xref href="UnityEngine.Vector3.zero" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Vector3 AverageVelocity { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public ReadOnly Property AverageVelocity As Vector3
+  overload: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity*
+references:
+- uid: SombraStudios.Shared.Physics.VelocityTracker
+  commentId: N:SombraStudios.Shared.Physics.VelocityTracker
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Physics.VelocityTracker
+  nameWithType: SombraStudios.Shared.Physics.VelocityTracker
+  fullName: SombraStudios.Shared.Physics.VelocityTracker
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Physics
+    name: Physics
+    href: SombraStudios.Shared.Physics.html
+  - name: .
+  - uid: SombraStudios.Shared.Physics.VelocityTracker
+    name: VelocityTracker
+    href: SombraStudios.Shared.Physics.VelocityTracker.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Physics
+    name: Physics
+    href: SombraStudios.Shared.Physics.html
+  - name: .
+  - uid: SombraStudios.Shared.Physics.VelocityTracker
+    name: VelocityTracker
+    href: SombraStudios.Shared.Physics.VelocityTracker.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource*
+  commentId: Overload:SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource
+  href: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.html#SombraStudios_Shared_Physics_VelocityTracker_VelocityTracker_VelocitySource
+  name: VelocitySource
+  nameWithType: VelocityTracker.VelocitySource
+  fullName: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.VelocitySource
+- uid: System.Func{UnityEngine.Vector3}
+  commentId: T:System.Func{UnityEngine.Vector3}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<Vector3>
+  nameWithType: Func<Vector3>
+  fullName: System.Func<UnityEngine.Vector3>
+  nameWithType.vb: Func(Of Vector3)
+  fullName.vb: System.Func(Of UnityEngine.Vector3)
+  name.vb: Func(Of Vector3)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UnityEngine.Vector3.zero
+  commentId: P:UnityEngine.Vector3.zero
+  isExternal: true
+  name: zero
+  nameWithType: Vector3.zero
+  fullName: UnityEngine.Vector3.zero
+- uid: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity*
+  commentId: Overload:SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity
+  href: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.html#SombraStudios_Shared_Physics_VelocityTracker_VelocityTracker_AverageVelocity
+  name: AverageVelocity
+  nameWithType: VelocityTracker.AverageVelocity
+  fullName: SombraStudios.Shared.Physics.VelocityTracker.VelocityTracker.AverageVelocity
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3

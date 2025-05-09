@@ -123,15 +123,18 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Teleport
     path: ../Systems/Teleport/Teleporter.cs
-    startLine: 22
+    startLine: 25
   assemblies:
   - SombraStudios.Shared.Systems
   namespace: SombraStudios.Shared.Systems.Teleport
+  summary: Initiates the teleportation process.
+  example: []
   syntax:
     content: public void Teleport(ITeleportable teleportable)
     parameters:
     - id: teleportable
       type: SombraStudios.Shared.Systems.Teleport.ITeleportable
+      description: The object to teleport.
     content.vb: Public Sub Teleport(teleportable As ITeleportable)
   overload: SombraStudios.Shared.Systems.Teleport.Teleporter.Teleport*
 references:

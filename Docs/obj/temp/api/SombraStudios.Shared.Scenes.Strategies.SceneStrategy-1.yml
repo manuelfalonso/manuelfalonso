@@ -1,0 +1,842 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Scenes.Strategies.SceneStrategy`1
+  commentId: T:SombraStudios.Shared.Scenes.Strategies.SceneStrategy`1
+  id: SceneStrategy`1
+  parent: SombraStudios.Shared.Scenes.Strategies
+  children:
+  - SombraStudios.Shared.Scenes.Strategies.SceneStrategy`1.LOG_CATEGORY
+  langs:
+  - csharp
+  - vb
+  name: SceneStrategy<T>
+  nameWithType: SceneStrategy<T>
+  fullName: SombraStudios.Shared.Scenes.Strategies.SceneStrategy<T>
+  type: Class
+  source:
+    remote:
+      path: Scenes/Strategies/SceneStrategy.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SceneStrategy
+    path: ../Scenes/Strategies/SceneStrategy.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Scenes
+  namespace: SombraStudios.Shared.Scenes.Strategies
+  summary: >-
+    Abstract generic base class for defining scene-related strategies with a specific type.
+
+    Inherits from <xref href="SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public abstract class SceneStrategy<T> : StrategySO<T>, IEquatable<SOWithId>, IIdentifiable, IStrategy<T>'
+    typeParameters:
+    - id: T
+      description: The type parameter for the strategy.
+    content.vb: Public MustInherit Class SceneStrategy(Of T) Inherits StrategySO(Of T) Implements IEquatable(Of SOWithId), IIdentifiable, IStrategy(Of T)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.ScriptableObjects.SOWithId
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  derivedClasses:
+  - SombraStudios.Shared.Scenes.Strategies.LoadSceneByIndexStrategy
+  - SombraStudios.Shared.Scenes.Strategies.LoadSceneByPathStrategy
+  - SombraStudios.Shared.Scenes.Strategies.UnloadSceneByIndexStrategy
+  - SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy
+  implements:
+  - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  - SombraStudios.Shared.Interfaces.IIdentifiable
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{{T}}
+  inheritedMembers:
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}._showLogs
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.TryToExecute({T})
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.TryExecute({T})
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.CanExecute({T})
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.Execute({T})
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  nameWithType.vb: SceneStrategy(Of T)
+  fullName.vb: SombraStudios.Shared.Scenes.Strategies.SceneStrategy(Of T)
+  name.vb: SceneStrategy(Of T)
+- uid: SombraStudios.Shared.Scenes.Strategies.SceneStrategy`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.Scenes.Strategies.SceneStrategy`1.LOG_CATEGORY
+  id: LOG_CATEGORY
+  parent: SombraStudios.Shared.Scenes.Strategies.SceneStrategy`1
+  langs:
+  - csharp
+  - vb
+  name: LOG_CATEGORY
+  nameWithType: SceneStrategy<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.Scenes.Strategies.SceneStrategy<T>.LOG_CATEGORY
+  type: Field
+  source:
+    remote:
+      path: Scenes/Strategies/SceneStrategy.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LOG_CATEGORY
+    path: ../Scenes/Strategies/SceneStrategy.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Scenes
+  namespace: SombraStudios.Shared.Scenes.Strategies
+  summary: Log category identifier for scene strategy logs.
+  example: []
+  syntax:
+    content: protected static readonly string LOG_CATEGORY
+    return:
+      type: System.String
+    content.vb: Protected Shared ReadOnly LOG_CATEGORY As String
+  nameWithType.vb: SceneStrategy(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.Scenes.Strategies.SceneStrategy(Of T).LOG_CATEGORY
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  name: StrategySO<T>
+  nameWithType: StrategySO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>
+  nameWithType.vb: StrategySO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)
+  name.vb: StrategySO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Scenes.Strategies
+  commentId: N:SombraStudios.Shared.Scenes.Strategies
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Scenes.Strategies
+  nameWithType: SombraStudios.Shared.Scenes.Strategies
+  fullName: SombraStudios.Shared.Scenes.Strategies
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Scenes
+    name: Scenes
+    href: SombraStudios.Shared.Scenes.html
+  - name: .
+  - uid: SombraStudios.Shared.Scenes.Strategies
+    name: Strategies
+    href: SombraStudios.Shared.Scenes.Strategies.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Scenes
+    name: Scenes
+    href: SombraStudios.Shared.Scenes.html
+  - name: .
+  - uid: SombraStudios.Shared.Scenes.Strategies
+    name: Strategies
+    href: SombraStudios.Shared.Scenes.Strategies.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+  commentId: T:SombraStudios.Shared.ScriptableObjects.SOWithId
+  parent: SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  name: SOWithId
+  nameWithType: SOWithId
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  name: StrategySO<T>
+  nameWithType: StrategySO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>
+  nameWithType.vb: StrategySO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)
+  name.vb: StrategySO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  commentId: T:System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SOWithId>
+  nameWithType: IEquatable<SOWithId>
+  fullName: System.IEquatable<SombraStudios.Shared.ScriptableObjects.SOWithId>
+  nameWithType.vb: IEquatable(Of SOWithId)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: IEquatable(Of SOWithId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.IIdentifiable
+  commentId: T:SombraStudios.Shared.Interfaces.IIdentifiable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IIdentifiable.html
+  name: IIdentifiable
+  nameWithType: IIdentifiable
+  fullName: SombraStudios.Shared.Interfaces.IIdentifiable
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{{T}}
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{`0}
+  parent: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  name: IStrategy<T>
+  nameWithType: IStrategy<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>
+  nameWithType.vb: IStrategy(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T)
+  name.vb: IStrategy(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: StrategySO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.PROPERTIES_TITLE
+  nameWithType.vb: StrategySO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: StrategySO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.DEBUG_TITLE
+  nameWithType.vb: StrategySO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}._showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1__showLogs
+  name: _showLogs
+  nameWithType: StrategySO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>._showLogs
+  nameWithType.vb: StrategySO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.TryToExecute({T})
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.TryToExecute(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  name: TryToExecute(T)
+  nameWithType: StrategySO<T>.TryToExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryToExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryToExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryToExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.TryExecute({T})
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.TryExecute(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  name: TryExecute(T)
+  nameWithType: StrategySO<T>.TryExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.CanExecute({T})
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.CanExecute(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  name: CanExecute(T)
+  nameWithType: StrategySO<T>.CanExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.CanExecute(T)
+  nameWithType.vb: StrategySO(Of T).CanExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).CanExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.CanExecute(`0)
+    name: CanExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.CanExecute(`0)
+    name: CanExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}.Execute({T})
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.Execute(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  name: Execute(T)
+  nameWithType: StrategySO<T>.Execute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.Execute(T)
+  nameWithType.vb: StrategySO(Of T).Execute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).Execute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.Execute(`0)
+    name: Execute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{`0}.Execute(`0)
+    name: Execute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  commentId: P:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Id
+  name: Id
+  nameWithType: SOWithId.Id
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  name: Equals(SOWithId)
+  nameWithType: SOWithId.Equals(SOWithId)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  isExternal: true
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: SOWithId.Equals(object)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(object)
+  nameWithType.vb: SOWithId.Equals(Object)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  name: GetHashCode()
+  nameWithType: SOWithId.GetHashCode()
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode()
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+    name: GetHashCode
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+    name: GetHashCode
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.ScriptableObjects
+  commentId: N:SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects
+  nameWithType: SombraStudios.Shared.ScriptableObjects
+  fullName: SombraStudios.Shared.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  name: IStrategy<T>
+  nameWithType: IStrategy<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>
+  nameWithType.vb: IStrategy(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T)
+  name.vb: IStrategy(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Strategy
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.html
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: StrategySO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.PROPERTIES_TITLE
+  nameWithType.vb: StrategySO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: StrategySO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.DEBUG_TITLE
+  nameWithType.vb: StrategySO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1__showLogs
+  name: _showLogs
+  nameWithType: StrategySO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>._showLogs
+  nameWithType.vb: StrategySO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  name: TryToExecute(T)
+  nameWithType: StrategySO<T>.TryToExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryToExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryToExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryToExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  name: TryExecute(T)
+  nameWithType: StrategySO<T>.TryExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  name: CanExecute(T)
+  nameWithType: StrategySO<T>.CanExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.CanExecute(T)
+  nameWithType.vb: StrategySO(Of T).CanExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).CanExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+    name: CanExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+    name: CanExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  name: Execute(T)
+  nameWithType: StrategySO<T>.Execute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.Execute(T)
+  nameWithType.vb: StrategySO(Of T).Execute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).Execute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+    name: Execute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+    name: Execute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker
+  commentId: T:SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker
+  id: NullReferenceChecker
+  parent: SombraStudios.Shared.Utility.NullReferenceChecker
+  children:
+  - SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: NullReferenceChecker
+  nameWithType: NullReferenceChecker
+  fullName: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker
+  type: Class
+  source:
+    remote:
+      path: Utility/NullReferenceChecker/NullReferenceChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: NullReferenceChecker
+    path: ../Utility/NullReferenceChecker/NullReferenceChecker.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.NullReferenceChecker
+  summary: >-
+    Utility class to check for unassigned required fields in MonoBehaviours and ScriptableObjects.
+
+    Logs an error if a <xref href="UnityEngine.SerializeField" data-throw-if-not-resolved="false"></xref> is not assigned in the Inspector.
+
+    Ignores fields marked with the <xref href="SombraStudios.Shared.Utility.NullReferenceChecker.OptionalAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class NullReferenceChecker
+    content.vb: Public Module NullReferenceChecker
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate(System.Object)
+  commentId: M:SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate(System.Object)
+  id: Validate(System.Object)
+  parent: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker
+  langs:
+  - csharp
+  - vb
+  name: Validate(object)
+  nameWithType: NullReferenceChecker.Validate(object)
+  fullName: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate(object)
+  type: Method
+  source:
+    remote:
+      path: Utility/NullReferenceChecker/NullReferenceChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Validate
+    path: ../Utility/NullReferenceChecker/NullReferenceChecker.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.NullReferenceChecker
+  summary: Validates all serialized fields in the given instance and logs errors for unassigned fields.
+  example: []
+  syntax:
+    content: public static void Validate(object instance)
+    parameters:
+    - id: instance
+      type: System.Object
+      description: >-
+        The object to validate. Can be a MonoBehaviour, ScriptableObject, 
+            or other class.
+    content.vb: Public Shared Sub Validate(instance As Object)
+  overload: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate*
+  nameWithType.vb: NullReferenceChecker.Validate(Object)
+  fullName.vb: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate(Object)
+  name.vb: Validate(Object)
+references:
+- uid: UnityEngine.SerializeField
+  commentId: T:UnityEngine.SerializeField
+  parent: UnityEngine
+  isExternal: true
+  name: SerializeField
+  nameWithType: SerializeField
+  fullName: UnityEngine.SerializeField
+- uid: SombraStudios.Shared.Utility.NullReferenceChecker.OptionalAttribute
+  commentId: T:SombraStudios.Shared.Utility.NullReferenceChecker.OptionalAttribute
+  href: SombraStudios.Shared.Utility.NullReferenceChecker.OptionalAttribute.html
+  name: OptionalAttribute
+  nameWithType: OptionalAttribute
+  fullName: SombraStudios.Shared.Utility.NullReferenceChecker.OptionalAttribute
+- uid: SombraStudios.Shared.Utility.NullReferenceChecker
+  commentId: N:SombraStudios.Shared.Utility.NullReferenceChecker
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.NullReferenceChecker
+  nameWithType: SombraStudios.Shared.Utility.NullReferenceChecker
+  fullName: SombraStudios.Shared.Utility.NullReferenceChecker
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.NullReferenceChecker
+    name: NullReferenceChecker
+    href: SombraStudios.Shared.Utility.NullReferenceChecker.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.NullReferenceChecker
+    name: NullReferenceChecker
+    href: SombraStudios.Shared.Utility.NullReferenceChecker.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate*
+  commentId: Overload:SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate
+  href: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.html#SombraStudios_Shared_Utility_NullReferenceChecker_NullReferenceChecker_Validate_System_Object_
+  name: Validate
+  nameWithType: NullReferenceChecker.Validate
+  fullName: SombraStudios.Shared.Utility.NullReferenceChecker.NullReferenceChecker.Validate

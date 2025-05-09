@@ -7,6 +7,7 @@ items:
   children:
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
+  - SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
@@ -208,6 +209,35 @@ items:
     return:
       type: System.String
     content.vb: Public TagToIgnore As String
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
+  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
+  id: Is2D
+  parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+  langs:
+  - csharp
+  - vb
+  name: Is2D
+  nameWithType: LineOfSight.IsInSightData.Is2D
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
+  type: Field
+  source:
+    remote:
+      path: AI/IsInSightData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Is2D
+    path: ../AI/IsInSightData.cs
+    startLine: 44
+  assemblies:
+  - SombraStudios.Shared.AI
+  namespace: SombraStudios.Shared.AI
+  summary: If the sight check is 2D use Vector3.right, otherwise use Vector3.forward.
+  example: []
+  syntax:
+    content: public bool Is2D
+    return:
+      type: System.Boolean
+    content.vb: Public Is2D As Boolean
 references:
 - uid: SombraStudios.Shared.AI
   commentId: N:SombraStudios.Shared.AI
@@ -284,3 +314,14 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -1,0 +1,951 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+  id: RevertVFXOnStateExit
+  parent: SombraStudios.Shared.VFX.PropertySO
+  children:
+  - SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: RevertVFXOnStateExit
+  nameWithType: RevertVFXOnStateExit
+  fullName: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+  type: Class
+  source:
+    remote:
+      path: VFX/PropertySO/RevertVFXOnStateExit.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertVFXOnStateExit
+    path: ../VFX/PropertySO/RevertVFXOnStateExit.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: StateMachineBehaviour that reverts VFX properties on state exit.
+  example: []
+  syntax:
+    content: 'public class RevertVFXOnStateExit : StateMachineBehaviour'
+    content.vb: Public Class RevertVFXOnStateExit Inherits StateMachineBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEngine.StateMachineBehaviour
+  inheritedMembers:
+  - UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  - UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  - UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  - UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  - UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)
+  - UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32)
+  - UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  - UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  - UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  - UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  - UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  - UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  - UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+- uid: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  id: OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+  langs:
+  - csharp
+  - vb
+  name: OnStateExit(Animator, AnimatorStateInfo, int)
+  nameWithType: RevertVFXOnStateExit.OnStateExit(Animator, AnimatorStateInfo, int)
+  fullName: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/RevertVFXOnStateExit.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnStateExit
+    path: ../VFX/PropertySO/RevertVFXOnStateExit.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Called when a transition ends and the state machine finishes evaluating this state.
+  example: []
+  syntax:
+    content: public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    parameters:
+    - id: animator
+      type: UnityEngine.Animator
+      description: The Animator that is playing the animation.
+    - id: stateInfo
+      type: UnityEngine.AnimatorStateInfo
+      description: Information about the current animator state.
+    - id: layerIndex
+      type: System.Int32
+      description: Index of the layer where the state is played.
+    content.vb: Public Overrides Sub OnStateExit(animator As Animator, stateInfo As AnimatorStateInfo, layerIndex As Integer)
+  overridden: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  overload: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit*
+  nameWithType.vb: RevertVFXOnStateExit.OnStateExit(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateExit(Animator, AnimatorStateInfo, Integer)
+references:
+- uid: SombraStudios.Shared.VFX.PropertySO
+  commentId: N:SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.html
+  name: SombraStudios.Shared.VFX.PropertySO
+  nameWithType: SombraStudios.Shared.VFX.PropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.StateMachineBehaviour
+  commentId: T:UnityEngine.StateMachineBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: StateMachineBehaviour
+  nameWithType: StateMachineBehaviour
+  fullName: UnityEngine.StateMachineBehaviour
+- uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateEnter(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateEnter(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateEnter(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateEnter(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateUpdate(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateUpdate(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateUpdate(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateUpdate(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateUpdate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateUpdate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateMove(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateMove(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateMove(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateMove(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateMove
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateMove
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateIK(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateIK(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateIK(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateIK(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateIK
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateIK
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateMachineEnter(Animator, int)
+  nameWithType: StateMachineBehaviour.OnStateMachineEnter(Animator, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateMachineEnter(Animator, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator, Integer)
+  name.vb: OnStateMachineEnter(Animator, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)
+    name: OnStateMachineEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)
+    name: OnStateMachineEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateMachineExit(Animator, int)
+  nameWithType: StateMachineBehaviour.OnStateMachineExit(Animator, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateMachineExit(Animator, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator, Integer)
+  name.vb: OnStateMachineExit(Animator, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32)
+    name: OnStateMachineExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32)
+    name: OnStateMachineExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateEnter(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateEnter(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateEnter(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateEnter(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateUpdate(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateUpdate(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateUpdate(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateUpdate(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateUpdate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateUpdate
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateExit(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateExit(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateExit(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateExit(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateMove(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateMove(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateMove(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateMove(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateMove
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateMove
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateIK(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateIK(Animator, AnimatorStateInfo, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateIK(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateIK(Animator, AnimatorStateInfo, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateIK
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateIK
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateMachineEnter(Animator, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateMachineEnter(Animator, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateMachineEnter(Animator, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateMachineEnter(Animator, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateMachineEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateMachineEnter
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateMachineExit(Animator, int, AnimatorControllerPlayable)
+  nameWithType: StateMachineBehaviour.OnStateMachineExit(Animator, int, AnimatorControllerPlayable)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator, int, UnityEngine.Animations.AnimatorControllerPlayable)
+  nameWithType.vb: StateMachineBehaviour.OnStateMachineExit(Animator, Integer, AnimatorControllerPlayable)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator, Integer, UnityEngine.Animations.AnimatorControllerPlayable)
+  name.vb: OnStateMachineExit(Animator, Integer, AnimatorControllerPlayable)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateMachineExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)
+    name: OnStateMachineExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Animations.AnimatorControllerPlayable
+    name: AnimatorControllerPlayable
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  commentId: M:UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+  parent: UnityEngine.StateMachineBehaviour
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: OnStateExit(Animator, AnimatorStateInfo, int)
+  nameWithType: StateMachineBehaviour.OnStateExit(Animator, AnimatorStateInfo, int)
+  fullName: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, int)
+  nameWithType.vb: StateMachineBehaviour.OnStateExit(Animator, AnimatorStateInfo, Integer)
+  fullName.vb: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator, UnityEngine.AnimatorStateInfo, Integer)
+  name.vb: OnStateExit(Animator, AnimatorStateInfo, Integer)
+  spec.csharp:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)
+    name: OnStateExit
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Animator
+    name: Animator
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.AnimatorStateInfo
+    name: AnimatorStateInfo
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit
+  href: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.html#SombraStudios_Shared_VFX_PropertySO_RevertVFXOnStateExit_OnStateExit_UnityEngine_Animator_UnityEngine_AnimatorStateInfo_System_Int32_
+  name: OnStateExit
+  nameWithType: RevertVFXOnStateExit.OnStateExit
+  fullName: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.OnStateExit
+- uid: UnityEngine.Animator
+  commentId: T:UnityEngine.Animator
+  parent: UnityEngine
+  isExternal: true
+  name: Animator
+  nameWithType: Animator
+  fullName: UnityEngine.Animator
+- uid: UnityEngine.AnimatorStateInfo
+  commentId: T:UnityEngine.AnimatorStateInfo
+  parent: UnityEngine
+  isExternal: true
+  name: AnimatorStateInfo
+  nameWithType: AnimatorStateInfo
+  fullName: UnityEngine.AnimatorStateInfo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

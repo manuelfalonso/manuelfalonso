@@ -1,0 +1,262 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Animations.StateEvents.AnimationEvent
+  commentId: T:SombraStudios.Shared.Animations.StateEvents.AnimationEvent
+  id: AnimationEvent
+  parent: SombraStudios.Shared.Animations.StateEvents
+  children:
+  - SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventAction
+  - SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventName
+  langs:
+  - csharp
+  - vb
+  name: AnimationEvent
+  nameWithType: AnimationEvent
+  fullName: SombraStudios.Shared.Animations.StateEvents.AnimationEvent
+  type: Struct
+  source:
+    remote:
+      path: Animations/StateEvents/Structs/AnimationEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AnimationEvent
+    path: ../Animations/StateEvents/Structs/AnimationEvent.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.StateEvents
+  summary: Struct representing an animation event.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct AnimationEvent
+    content.vb: >-
+      <Serializable>
+
+      Public Structure AnimationEvent
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventName
+  commentId: F:SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventName
+  id: EventName
+  parent: SombraStudios.Shared.Animations.StateEvents.AnimationEvent
+  langs:
+  - csharp
+  - vb
+  name: EventName
+  nameWithType: AnimationEvent.EventName
+  fullName: SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventName
+  type: Field
+  source:
+    remote:
+      path: Animations/StateEvents/Structs/AnimationEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EventName
+    path: ../Animations/StateEvents/Structs/AnimationEvent.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.StateEvents
+  summary: The name of the event.
+  example: []
+  syntax:
+    content: public StringValueSO EventName
+    return:
+      type: SombraStudios.Shared.ScriptableObjects.Values.StringValueSO
+    content.vb: Public EventName As StringValueSO
+- uid: SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventAction
+  commentId: F:SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventAction
+  id: EventAction
+  parent: SombraStudios.Shared.Animations.StateEvents.AnimationEvent
+  langs:
+  - csharp
+  - vb
+  name: EventAction
+  nameWithType: AnimationEvent.EventAction
+  fullName: SombraStudios.Shared.Animations.StateEvents.AnimationEvent.EventAction
+  type: Field
+  source:
+    remote:
+      path: Animations/StateEvents/Structs/AnimationEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EventAction
+    path: ../Animations/StateEvents/Structs/AnimationEvent.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations.StateEvents
+  summary: The action to be invoked when the event is triggered.
+  example: []
+  syntax:
+    content: public UnityEvent<AnimationEventData> EventAction
+    return:
+      type: UnityEngine.Events.UnityEvent{SombraStudios.Shared.Animations.StateEvents.AnimationEventData}
+    content.vb: Public EventAction As UnityEvent(Of AnimationEventData)
+references:
+- uid: SombraStudios.Shared.Animations.StateEvents
+  commentId: N:SombraStudios.Shared.Animations.StateEvents
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Animations.StateEvents
+  nameWithType: SombraStudios.Shared.Animations.StateEvents
+  fullName: SombraStudios.Shared.Animations.StateEvents
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations
+    name: Animations
+    href: SombraStudios.Shared.Animations.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations.StateEvents
+    name: StateEvents
+    href: SombraStudios.Shared.Animations.StateEvents.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations
+    name: Animations
+    href: SombraStudios.Shared.Animations.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations.StateEvents
+    name: StateEvents
+    href: SombraStudios.Shared.Animations.StateEvents.html
+- uid: SombraStudios.Shared.ScriptableObjects.Values.StringValueSO
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Values.StringValueSO
+  parent: SombraStudios.Shared.ScriptableObjects.Values
+  href: SombraStudios.Shared.ScriptableObjects.Values.StringValueSO.html
+  name: StringValueSO
+  nameWithType: StringValueSO
+  fullName: SombraStudios.Shared.ScriptableObjects.Values.StringValueSO
+- uid: SombraStudios.Shared.ScriptableObjects.Values
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Values
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Values
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Values
+  fullName: SombraStudios.Shared.ScriptableObjects.Values
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Values
+    name: Values
+    href: SombraStudios.Shared.ScriptableObjects.Values.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Values
+    name: Values
+    href: SombraStudios.Shared.ScriptableObjects.Values.html
+- uid: UnityEngine.Events.UnityEvent{SombraStudios.Shared.Animations.StateEvents.AnimationEventData}
+  commentId: T:UnityEngine.Events.UnityEvent{SombraStudios.Shared.Animations.StateEvents.AnimationEventData}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  href: SombraStudios.Shared.Animations.StateEvents.AnimationEventData.html
+  name: UnityEvent<AnimationEventData>
+  nameWithType: UnityEvent<AnimationEventData>
+  fullName: UnityEngine.Events.UnityEvent<SombraStudios.Shared.Animations.StateEvents.AnimationEventData>
+  nameWithType.vb: UnityEvent(Of AnimationEventData)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of SombraStudios.Shared.Animations.StateEvents.AnimationEventData)
+  name.vb: UnityEvent(Of AnimationEventData)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: SombraStudios.Shared.Animations.StateEvents.AnimationEventData
+    name: AnimationEventData
+    href: SombraStudios.Shared.Animations.StateEvents.AnimationEventData.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Animations.StateEvents.AnimationEventData
+    name: AnimationEventData
+    href: SombraStudios.Shared.Animations.StateEvents.AnimationEventData.html
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true

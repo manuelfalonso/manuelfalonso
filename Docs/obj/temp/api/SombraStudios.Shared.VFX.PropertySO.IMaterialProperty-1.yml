@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  id: IMaterialProperty`1
+  parent: SombraStudios.Shared.VFX.PropertySO
+  children:
+  - SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.GetProperty(System.Int32,UnityEngine.Material)
+  - SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.HasProperty(System.Int32,UnityEngine.Material)
+  - SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.Property
+  - SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.PropertyName
+  - SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.SetProperty(System.Int32,`0,UnityEngine.Material)
+  langs:
+  - csharp
+  - vb
+  name: IMaterialProperty<T>
+  nameWithType: IMaterialProperty<T>
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>
+  type: Interface
+  source:
+    remote:
+      path: VFX/PropertySO/Material/IMaterialProperty.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IMaterialProperty
+    path: ../VFX/PropertySO/Material/IMaterialProperty.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Interface for defining and manipulating material shader properties.
+  example: []
+  syntax:
+    content: public interface IMaterialProperty<T>
+    typeParameters:
+    - id: T
+      description: Type of the property value.
+    content.vb: Public Interface IMaterialProperty(Of T)
+  nameWithType.vb: IMaterialProperty(Of T)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T)
+  name.vb: IMaterialProperty(Of T)
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.PropertyName
+  commentId: P:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.PropertyName
+  id: PropertyName
+  parent: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  langs:
+  - csharp
+  - vb
+  name: PropertyName
+  nameWithType: IMaterialProperty<T>.PropertyName
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.PropertyName
+  type: Property
+  source:
+    remote:
+      path: VFX/PropertySO/Material/IMaterialProperty.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PropertyName
+    path: ../VFX/PropertySO/Material/IMaterialProperty.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Gets the name of the material shader property.
+  example: []
+  syntax:
+    content: string PropertyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property PropertyName As String
+  overload: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.PropertyName*
+  nameWithType.vb: IMaterialProperty(Of T).PropertyName
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).PropertyName
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.Property
+  commentId: P:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.Property
+  id: Property
+  parent: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  langs:
+  - csharp
+  - vb
+  name: Property
+  nameWithType: IMaterialProperty<T>.Property
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.Property
+  type: Property
+  source:
+    remote:
+      path: VFX/PropertySO/Material/IMaterialProperty.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Property
+    path: ../VFX/PropertySO/Material/IMaterialProperty.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Gets the value of the material property.
+  example: []
+  syntax:
+    content: T Property { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: ReadOnly Property [Property] As T
+  overload: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.Property*
+  nameWithType.vb: IMaterialProperty(Of T).Property
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).Property
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.HasProperty(System.Int32,UnityEngine.Material)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.HasProperty(System.Int32,UnityEngine.Material)
+  id: HasProperty(System.Int32,UnityEngine.Material)
+  parent: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  langs:
+  - csharp
+  - vb
+  name: HasProperty(int, Material)
+  nameWithType: IMaterialProperty<T>.HasProperty(int, Material)
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.HasProperty(int, UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/Material/IMaterialProperty.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasProperty
+    path: ../VFX/PropertySO/Material/IMaterialProperty.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Checks if the material has the specified shader property.
+  example: []
+  syntax:
+    content: bool HasProperty(int id, Material material)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: The property ID (hashed name).
+    - id: material
+      type: UnityEngine.Material
+      description: The material to check.
+    return:
+      type: System.Boolean
+      description: True if the property exists, otherwise false.
+    content.vb: Function HasProperty(id As Integer, material As Material) As Boolean
+  overload: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.HasProperty*
+  nameWithType.vb: IMaterialProperty(Of T).HasProperty(Integer, Material)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).HasProperty(Integer, UnityEngine.Material)
+  name.vb: HasProperty(Integer, Material)
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.GetProperty(System.Int32,UnityEngine.Material)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.GetProperty(System.Int32,UnityEngine.Material)
+  id: GetProperty(System.Int32,UnityEngine.Material)
+  parent: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(int, Material)
+  nameWithType: IMaterialProperty<T>.GetProperty(int, Material)
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.GetProperty(int, UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/Material/IMaterialProperty.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetProperty
+    path: ../VFX/PropertySO/Material/IMaterialProperty.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Retrieves the value of the specified shader property from the material.
+  example: []
+  syntax:
+    content: T GetProperty(int id, Material material)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: The property ID (hashed name).
+    - id: material
+      type: UnityEngine.Material
+      description: The material to retrieve the property from.
+    return:
+      type: '{T}'
+      description: The value of the property.
+    content.vb: Function GetProperty(id As Integer, material As Material) As T
+  overload: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.GetProperty*
+  nameWithType.vb: IMaterialProperty(Of T).GetProperty(Integer, Material)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).GetProperty(Integer, UnityEngine.Material)
+  name.vb: GetProperty(Integer, Material)
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.SetProperty(System.Int32,`0,UnityEngine.Material)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.SetProperty(System.Int32,`0,UnityEngine.Material)
+  id: SetProperty(System.Int32,`0,UnityEngine.Material)
+  parent: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1
+  langs:
+  - csharp
+  - vb
+  name: SetProperty(int, T, Material)
+  nameWithType: IMaterialProperty<T>.SetProperty(int, T, Material)
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.SetProperty(int, T, UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/Material/IMaterialProperty.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetProperty
+    path: ../VFX/PropertySO/Material/IMaterialProperty.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Sets the value of the specified shader property on the material.
+  example: []
+  syntax:
+    content: void SetProperty(int id, T value, Material material)
+    parameters:
+    - id: id
+      type: System.Int32
+      description: The property ID (hashed name).
+    - id: value
+      type: '{T}'
+      description: The value to set.
+    - id: material
+      type: UnityEngine.Material
+      description: The material to modify.
+    content.vb: Sub SetProperty(id As Integer, value As T, material As Material)
+  overload: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.SetProperty*
+  nameWithType.vb: IMaterialProperty(Of T).SetProperty(Integer, T, Material)
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).SetProperty(Integer, T, UnityEngine.Material)
+  name.vb: SetProperty(Integer, T, Material)
+references:
+- uid: SombraStudios.Shared.VFX.PropertySO
+  commentId: N:SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.html
+  name: SombraStudios.Shared.VFX.PropertySO
+  nameWithType: SombraStudios.Shared.VFX.PropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.PropertyName*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.PropertyName
+  href: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty-1.html#SombraStudios_Shared_VFX_PropertySO_IMaterialProperty_1_PropertyName
+  name: PropertyName
+  nameWithType: IMaterialProperty<T>.PropertyName
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.PropertyName
+  nameWithType.vb: IMaterialProperty(Of T).PropertyName
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).PropertyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.Property*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.Property
+  href: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty-1.html#SombraStudios_Shared_VFX_PropertySO_IMaterialProperty_1_Property
+  name: Property
+  nameWithType: IMaterialProperty<T>.Property
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.Property
+  nameWithType.vb: IMaterialProperty(Of T).Property
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).Property
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.HasProperty*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.HasProperty
+  href: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty-1.html#SombraStudios_Shared_VFX_PropertySO_IMaterialProperty_1_HasProperty_System_Int32_UnityEngine_Material_
+  name: HasProperty
+  nameWithType: IMaterialProperty<T>.HasProperty
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.HasProperty
+  nameWithType.vb: IMaterialProperty(Of T).HasProperty
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).HasProperty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.GetProperty*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.GetProperty
+  href: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty-1.html#SombraStudios_Shared_VFX_PropertySO_IMaterialProperty_1_GetProperty_System_Int32_UnityEngine_Material_
+  name: GetProperty
+  nameWithType: IMaterialProperty<T>.GetProperty
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.GetProperty
+  nameWithType.vb: IMaterialProperty(Of T).GetProperty
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).GetProperty
+- uid: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.SetProperty*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.IMaterialProperty`1.SetProperty
+  href: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty-1.html#SombraStudios_Shared_VFX_PropertySO_IMaterialProperty_1_SetProperty_System_Int32__0_UnityEngine_Material_
+  name: SetProperty
+  nameWithType: IMaterialProperty<T>.SetProperty
+  fullName: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty<T>.SetProperty
+  nameWithType.vb: IMaterialProperty(Of T).SetProperty
+  fullName.vb: SombraStudios.Shared.VFX.PropertySO.IMaterialProperty(Of T).SetProperty

@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Extensions.Vector2Extensions
+  commentId: T:SombraStudios.Shared.Extensions.Vector2Extensions
+  id: Vector2Extensions
+  parent: SombraStudios.Shared.Extensions
+  children:
+  - SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos(UnityEngine.Vector2,UnityEngine.Camera,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Vector2Extensions
+  nameWithType: Vector2Extensions
+  fullName: SombraStudios.Shared.Extensions.Vector2Extensions
+  type: Class
+  source:
+    remote:
+      path: Extensions/Vector2Extensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Vector2Extensions
+    path: ../Extensions/Vector2Extensions.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Provides extension methods for the <xref href="UnityEngine.Vector2" data-throw-if-not-resolved="false"></xref> struct.
+  example: []
+  syntax:
+    content: public static class Vector2Extensions
+    content.vb: Public Module Vector2Extensions
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos(UnityEngine.Vector2,UnityEngine.Camera,System.Single)
+  commentId: M:SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos(UnityEngine.Vector2,UnityEngine.Camera,System.Single)
+  id: ScreenPosToWorldPos(UnityEngine.Vector2,UnityEngine.Camera,System.Single)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.Vector2Extensions
+  langs:
+  - csharp
+  - vb
+  name: ScreenPosToWorldPos(Vector2, Camera, float)
+  nameWithType: Vector2Extensions.ScreenPosToWorldPos(Vector2, Camera, float)
+  fullName: SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos(UnityEngine.Vector2, UnityEngine.Camera, float)
+  type: Method
+  source:
+    remote:
+      path: Extensions/Vector2Extensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ScreenPosToWorldPos
+    path: ../Extensions/Vector2Extensions.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Converts a screen position from UI Toolkit (or other screen-space coordinates) to world space.
+  remarks: >-
+    This method accounts for the fact that UI Toolkit's (0,0) is at the top-left, whereas
+
+    Unity's world space uses a bottom-left origin.
+  example: []
+  syntax:
+    content: public static Vector3 ScreenPosToWorldPos(this Vector2 screenPos, Camera camera = null, float zDepth = 10)
+    parameters:
+    - id: screenPos
+      type: UnityEngine.Vector2
+      description: The screen position to convert.
+    - id: camera
+      type: UnityEngine.Camera
+      description: The camera used for conversion. If null, defaults to <xref href="UnityEngine.Camera.main" data-throw-if-not-resolved="false"></xref>.
+    - id: zDepth
+      type: System.Single
+      description: The depth at which the world position should be projected.
+    return:
+      type: UnityEngine.Vector3
+      description: The world-space position corresponding to the given screen position.
+    content.vb: Public Shared Function ScreenPosToWorldPos(screenPos As Vector2, camera As Camera = Nothing, zDepth As Single = 10) As Vector3
+  overload: SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos*
+  nameWithType.vb: Vector2Extensions.ScreenPosToWorldPos(Vector2, Camera, Single)
+  fullName.vb: SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos(UnityEngine.Vector2, UnityEngine.Camera, Single)
+  name.vb: ScreenPosToWorldPos(Vector2, Camera, Single)
+references:
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Camera.main
+  commentId: P:UnityEngine.Camera.main
+  isExternal: true
+  name: main
+  nameWithType: Camera.main
+  fullName: UnityEngine.Camera.main
+- uid: SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos*
+  commentId: Overload:SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos
+  href: SombraStudios.Shared.Extensions.Vector2Extensions.html#SombraStudios_Shared_Extensions_Vector2Extensions_ScreenPosToWorldPos_UnityEngine_Vector2_UnityEngine_Camera_System_Single_
+  name: ScreenPosToWorldPos
+  nameWithType: Vector2Extensions.ScreenPosToWorldPos
+  fullName: SombraStudios.Shared.Extensions.Vector2Extensions.ScreenPosToWorldPos
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3

@@ -19,11 +19,11 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AutoSocketAttach
     path: ../XR/AutoSocketAttach.cs
-    startLine: 9
+    startLine: 13
   assemblies:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR
-  summary: Initializes an <xref href="UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor" data-throw-if-not-resolved="false"></xref> attach point to match the initial scene position of the object it is containing.
+  summary: Initializes an <xref href="UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor" data-throw-if-not-resolved="false"></xref> attach point to match the initial scene position of the object it is containing.
   example: []
   syntax:
     content: 'public class AutoSocketAttach : MonoBehaviour'
@@ -37,13 +37,13 @@ items:
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
 references:
-- uid: UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor
-  commentId: T:UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor
-  parent: UnityEngine.XR.Interaction.Toolkit
+- uid: UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
+  parent: UnityEngine.XR.Interaction.Toolkit.Interactors
   isExternal: true
   name: XRSocketInteractor
   nameWithType: XRSocketInteractor
-  fullName: UnityEngine.XR.Interaction.Toolkit.XRSocketInteractor
+  fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
 - uid: SombraStudios.Shared.XR
   commentId: N:SombraStudios.Shared.XR
   href: SombraStudios.html
@@ -158,12 +158,12 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: UnityEngine.XR.Interaction.Toolkit
-  commentId: N:UnityEngine.XR.Interaction.Toolkit
+- uid: UnityEngine.XR.Interaction.Toolkit.Interactors
+  commentId: N:UnityEngine.XR.Interaction.Toolkit.Interactors
   isExternal: true
-  name: UnityEngine.XR.Interaction.Toolkit
-  nameWithType: UnityEngine.XR.Interaction.Toolkit
-  fullName: UnityEngine.XR.Interaction.Toolkit
+  name: UnityEngine.XR.Interaction.Toolkit.Interactors
+  nameWithType: UnityEngine.XR.Interaction.Toolkit.Interactors
+  fullName: UnityEngine.XR.Interaction.Toolkit.Interactors
   spec.csharp:
   - uid: UnityEngine
     name: UnityEngine
@@ -180,6 +180,10 @@ references:
   - uid: UnityEngine.XR.Interaction.Toolkit
     name: Toolkit
     isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit.Interactors
+    name: Interactors
+    isExternal: true
   spec.vb:
   - uid: UnityEngine
     name: UnityEngine
@@ -195,6 +199,10 @@ references:
   - name: .
   - uid: UnityEngine.XR.Interaction.Toolkit
     name: Toolkit
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit.Interactors
+    name: Interactors
     isExternal: true
 - uid: System
   commentId: N:System

@@ -1,0 +1,231 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Structs.RangedFloat
+  commentId: T:SombraStudios.Shared.Structs.RangedFloat
+  id: RangedFloat
+  parent: SombraStudios.Shared.Structs
+  children:
+  - SombraStudios.Shared.Structs.RangedFloat.#ctor(System.Single,System.Single)
+  - SombraStudios.Shared.Structs.RangedFloat.MaxValue
+  - SombraStudios.Shared.Structs.RangedFloat.MinValue
+  - SombraStudios.Shared.Structs.RangedFloat.RandomValue
+  langs:
+  - csharp
+  - vb
+  name: RangedFloat
+  nameWithType: RangedFloat
+  fullName: SombraStudios.Shared.Structs.RangedFloat
+  type: Struct
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RangedFloat
+    path: ../Structs/RangedFloat.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: Represents a range of float values with a minimum and maximum value.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct RangedFloat
+    content.vb: >-
+      <Serializable>
+
+      Public Structure RangedFloat
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Structs.RangedFloat.MinValue
+  commentId: F:SombraStudios.Shared.Structs.RangedFloat.MinValue
+  id: MinValue
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: MinValue
+  nameWithType: RangedFloat.MinValue
+  fullName: SombraStudios.Shared.Structs.RangedFloat.MinValue
+  type: Field
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MinValue
+    path: ../Structs/RangedFloat.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: The minimum value of the range.
+  example: []
+  syntax:
+    content: public float MinValue
+    return:
+      type: System.Single
+    content.vb: Public MinValue As Single
+- uid: SombraStudios.Shared.Structs.RangedFloat.MaxValue
+  commentId: F:SombraStudios.Shared.Structs.RangedFloat.MaxValue
+  id: MaxValue
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: MaxValue
+  nameWithType: RangedFloat.MaxValue
+  fullName: SombraStudios.Shared.Structs.RangedFloat.MaxValue
+  type: Field
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MaxValue
+    path: ../Structs/RangedFloat.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: The maximum value of the range.
+  example: []
+  syntax:
+    content: public float MaxValue
+    return:
+      type: System.Single
+    content.vb: Public MaxValue As Single
+- uid: SombraStudios.Shared.Structs.RangedFloat.RandomValue
+  commentId: P:SombraStudios.Shared.Structs.RangedFloat.RandomValue
+  id: RandomValue
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: RandomValue
+  nameWithType: RangedFloat.RandomValue
+  fullName: SombraStudios.Shared.Structs.RangedFloat.RandomValue
+  type: Property
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RandomValue
+    path: ../Structs/RangedFloat.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: Gets a random value within the range [MinValue, MaxValue].
+  example: []
+  syntax:
+    content: public float RandomValue { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property RandomValue As Single
+  overload: SombraStudios.Shared.Structs.RangedFloat.RandomValue*
+- uid: SombraStudios.Shared.Structs.RangedFloat.#ctor(System.Single,System.Single)
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: RangedFloat(float, float)
+  nameWithType: RangedFloat.RangedFloat(float, float)
+  fullName: SombraStudios.Shared.Structs.RangedFloat.RangedFloat(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Structs/RangedFloat.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  syntax:
+    content: public RangedFloat(float minValue, float maxValue)
+    parameters:
+    - id: minValue
+      type: System.Single
+    - id: maxValue
+      type: System.Single
+    content.vb: Public Sub New(minValue As Single, maxValue As Single)
+  overload: SombraStudios.Shared.Structs.RangedFloat.#ctor*
+  nameWithType.vb: RangedFloat.New(Single, Single)
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.New(Single, Single)
+  name.vb: New(Single, Single)
+references:
+- uid: SombraStudios.Shared.Structs
+  commentId: N:SombraStudios.Shared.Structs
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Structs
+  nameWithType: SombraStudios.Shared.Structs
+  fullName: SombraStudios.Shared.Structs
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Structs
+    name: Structs
+    href: SombraStudios.Shared.Structs.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Structs
+    name: Structs
+    href: SombraStudios.Shared.Structs.html
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Structs.RangedFloat.RandomValue*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.RandomValue
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_RandomValue
+  name: RandomValue
+  nameWithType: RangedFloat.RandomValue
+  fullName: SombraStudios.Shared.Structs.RangedFloat.RandomValue
+- uid: SombraStudios.Shared.Structs.RangedFloat.#ctor*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.#ctor
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat__ctor_System_Single_System_Single_
+  name: RangedFloat
+  nameWithType: RangedFloat.RangedFloat
+  fullName: SombraStudios.Shared.Structs.RangedFloat.RangedFloat
+  nameWithType.vb: RangedFloat.New
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.New
+  name.vb: New

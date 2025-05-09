@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  id: LazyReference`1
+  parent: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  children:
+  - SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.#ctor(System.Func{`0})
+  - SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.IsInitialized
+  - SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.Value
+  langs:
+  - csharp
+  - vb
+  name: LazyReference<T>
+  nameWithType: LazyReference<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>
+  type: Class
+  source:
+    remote:
+      path: Patterns/Creational/LazyInitialization/LazyReference.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LazyReference
+    path: ../Patterns/Creational/LazyInitialization/LazyReference.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  summary: >-
+    A generic class for lazy initialization of UnityEngine.Object types.  
+
+    The value is only initialized when accessed for the first time.
+  example: []
+  syntax:
+    content: 'public class LazyReference<T> where T : Object'
+    typeParameters:
+    - id: T
+      description: The type of UnityEngine.Object to initialize lazily.
+    content.vb: Public Class LazyReference(Of T As [Object])
+  inheritance:
+  - System.Object
+  nameWithType.vb: LazyReference(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T)
+  name.vb: LazyReference(Of T)
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.IsInitialized
+  commentId: P:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.IsInitialized
+  id: IsInitialized
+  parent: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  langs:
+  - csharp
+  - vb
+  name: IsInitialized
+  nameWithType: LazyReference<T>.IsInitialized
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>.IsInitialized
+  type: Property
+  source:
+    remote:
+      path: Patterns/Creational/LazyInitialization/LazyReference.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsInitialized
+    path: ../Patterns/Creational/LazyInitialization/LazyReference.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  summary: Indicates whether the value has been initialized.
+  example: []
+  syntax:
+    content: public bool IsInitialized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInitialized As Boolean
+  overload: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.IsInitialized*
+  nameWithType.vb: LazyReference(Of T).IsInitialized
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T).IsInitialized
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.Value
+  commentId: P:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.Value
+  id: Value
+  parent: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: LazyReference<T>.Value
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>.Value
+  type: Property
+  source:
+    remote:
+      path: Patterns/Creational/LazyInitialization/LazyReference.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Value
+    path: ../Patterns/Creational/LazyInitialization/LazyReference.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  summary: >-
+    Gets the lazily initialized value.  
+
+    If the value is not already initialized, it will be initialized using the provided initializer function.
+  example: []
+  syntax:
+    content: public T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Value As T
+  overload: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.Value*
+  nameWithType.vb: LazyReference(Of T).Value
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T).Value
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.#ctor(System.Func{`0})
+  commentId: M:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.#ctor(System.Func{`0})
+  id: '#ctor(System.Func{`0})'
+  parent: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  langs:
+  - csharp
+  - vb
+  name: LazyReference(Func<T>)
+  nameWithType: LazyReference<T>.LazyReference(Func<T>)
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>.LazyReference(System.Func<T>)
+  type: Constructor
+  source:
+    remote:
+      path: Patterns/Creational/LazyInitialization/LazyReference.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Patterns/Creational/LazyInitialization/LazyReference.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  summary: Initializes a new instance of the <xref href="SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference%601" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public LazyReference(Func<T> initializer)
+    parameters:
+    - id: initializer
+      type: System.Func{{T}}
+      description: A function that initializes the value when it is accessed for the first time.
+    content.vb: Public Sub New(initializer As Func(Of T))
+  overload: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the initializer function is null.
+  nameWithType.vb: LazyReference(Of T).New(Func(Of T))
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T).New(System.Func(Of T))
+  name.vb: New(Func(Of T))
+references:
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  commentId: N:SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  nameWithType: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+    name: LazyInitialization
+    href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+    name: LazyInitialization
+    href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.IsInitialized*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.IsInitialized
+  href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference-1.html#SombraStudios_Shared_Patterns_Creational_LazyInitialization_LazyReference_1_IsInitialized
+  name: IsInitialized
+  nameWithType: LazyReference<T>.IsInitialized
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>.IsInitialized
+  nameWithType.vb: LazyReference(Of T).IsInitialized
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T).IsInitialized
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.Value*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.Value
+  href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference-1.html#SombraStudios_Shared_Patterns_Creational_LazyInitialization_LazyReference_1_Value
+  name: Value
+  nameWithType: LazyReference<T>.Value
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>.Value
+  nameWithType.vb: LazyReference(Of T).Value
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T).Value
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+  href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference-1.html
+  name: LazyReference<T>
+  nameWithType: LazyReference<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>
+  nameWithType.vb: LazyReference(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T)
+  name.vb: LazyReference(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+    name: LazyReference
+    href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1
+    name: LazyReference
+    href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.#ctor*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference`1.#ctor
+  href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference-1.html#SombraStudios_Shared_Patterns_Creational_LazyInitialization_LazyReference_1__ctor_System_Func__0__
+  name: LazyReference
+  nameWithType: LazyReference<T>.LazyReference
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference<T>.LazyReference
+  nameWithType.vb: LazyReference(Of T).New
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyReference(Of T).New
+  name.vb: New
+- uid: System.Func{{T}}
+  commentId: T:System.Func{`0}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

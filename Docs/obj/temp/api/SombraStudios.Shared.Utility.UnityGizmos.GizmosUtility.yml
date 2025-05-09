@@ -19,11 +19,11 @@ items:
   type: Class
   source:
     remote:
-      path: Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+      path: Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GizmosUtility
-    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+    path: ../Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
     startLine: 7
   assemblies:
   - SombraStudios.Shared.Utility
@@ -49,6 +49,8 @@ items:
   - SombraStudios.Shared.Utility.UnityGizmos.GizmosMeshUtility
   - SombraStudios.Shared.Utility.UnityGizmos.GizmosRayUtility
   - SombraStudios.Shared.Utility.UnityGizmos.GizmosSphereUtility
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
 - uid: SombraStudios.Shared.Utility.UnityGizmos.GizmosUtility.GizmosEnabled
   commentId: P:SombraStudios.Shared.Utility.UnityGizmos.GizmosUtility.GizmosEnabled
   id: GizmosEnabled
@@ -62,11 +64,11 @@ items:
   type: Property
   source:
     remote:
-      path: Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+      path: Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GizmosEnabled
-    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+    path: ../Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
     startLine: 16
   assemblies:
   - SombraStudios.Shared.Utility
@@ -91,11 +93,11 @@ items:
   type: Property
   source:
     remote:
-      path: Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+      path: Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GizmosColor
-    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+    path: ../Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
     startLine: 17
   assemblies:
   - SombraStudios.Shared.Utility
@@ -120,11 +122,11 @@ items:
   type: Property
   source:
     remote:
-      path: Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+      path: Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ShowIfSelected
-    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+    path: ../Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
     startLine: 18
   assemblies:
   - SombraStudios.Shared.Utility
@@ -149,11 +151,11 @@ items:
   type: Property
   source:
     remote:
-      path: Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+      path: Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ShowOnlyInPlayMode
-    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+    path: ../Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
     startLine: 19
   assemblies:
   - SombraStudios.Shared.Utility
@@ -178,11 +180,11 @@ items:
   type: Method
   source:
     remote:
-      path: Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+      path: Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: DrawGizmo
-    path: ../Assets/Sombra Studios/Shared/Utility/UnityGizmos/Monobehaviour/GizmosUtility.cs
+    path: ../Utility/UnityGizmos/Monobehaviours/GizmosUtility.cs
     startLine: 47
   assemblies:
   - SombraStudios.Shared.Utility
@@ -269,6 +271,51 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -282,6 +329,87 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
 - uid: SombraStudios.Shared.Utility.UnityGizmos.GizmosUtility.GizmosEnabled*
   commentId: Overload:SombraStudios.Shared.Utility.UnityGizmos.GizmosUtility.GizmosEnabled
   href: SombraStudios.Shared.Utility.UnityGizmos.GizmosUtility.html#SombraStudios_Shared_Utility_UnityGizmos_GizmosUtility_GizmosEnabled

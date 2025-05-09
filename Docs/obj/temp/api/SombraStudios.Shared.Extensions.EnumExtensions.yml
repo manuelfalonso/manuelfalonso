@@ -1,0 +1,606 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Extensions.EnumExtensions
+  commentId: T:SombraStudios.Shared.Extensions.EnumExtensions
+  id: EnumExtensions
+  parent: SombraStudios.Shared.Extensions
+  children:
+  - SombraStudios.Shared.Extensions.EnumExtensions.Add``1(``0,``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags``1(``0,``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.IsNone``1(``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.Remove``1(``0,``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.Toggle``1(``0,``0)
+  langs:
+  - csharp
+  - vb
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions
+  type: Class
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EnumExtensions
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Provides extension methods for working with enums, particularly those marked with the [Flags] attribute.
+  example: []
+  syntax:
+    content: public static class EnumExtensions
+    content.vb: Public Module EnumExtensions
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
+  id: Has``1(``0,``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: Has<T>(T, T)
+  nameWithType: EnumExtensions.Has<T>(T, T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Has
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Checks if a specific flag is set in the enum value.
+  example: []
+  syntax:
+    content: 'public static bool Has<T>(this T value, T flag) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    - id: flag
+      type: '{T}'
+      description: The flag to check for.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: System.Boolean
+      description: True if the flag is set; otherwise, false.
+    content.vb: Public Shared Function Has(Of T As [Enum])(value As T, flag As T) As Boolean
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.Has*
+  nameWithType.vb: EnumExtensions.Has(Of T)(T, T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Has(Of T)(T, T)
+  name.vb: Has(Of T)(T, T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
+  id: HasAny``1(``0,``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: HasAny<T>(T, T)
+  nameWithType: EnumExtensions.HasAny<T>(T, T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.HasAny<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasAny
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Checks if at least one flag from 'other' is present in 'value'.
+  example: []
+  syntax:
+    content: 'public static bool HasAny<T>(this T value, T other) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    - id: other
+      type: '{T}'
+      description: The flags to check for.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: System.Boolean
+      description: True if at least one flag is present; otherwise, false.
+    content.vb: Public Shared Function HasAny(Of T As [Enum])(value As T, other As T) As Boolean
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.HasAny*
+  nameWithType.vb: EnumExtensions.HasAny(Of T)(T, T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.HasAny(Of T)(T, T)
+  name.vb: HasAny(Of T)(T, T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.IsNone``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.IsNone``1(``0)
+  id: IsNone``1(``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNone<T>(T)
+  nameWithType: EnumExtensions.IsNone<T>(T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.IsNone<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsNone
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 44
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Checks if the enum has no flags set (None).
+  example: []
+  syntax:
+    content: 'public static bool IsNone<T>(this T value) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: System.Boolean
+      description: True if no flags are set; otherwise, false.
+    content.vb: Public Shared Function IsNone(Of T As [Enum])(value As T) As Boolean
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.IsNone*
+  nameWithType.vb: EnumExtensions.IsNone(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.IsNone(Of T)(T)
+  name.vb: IsNone(Of T)(T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Add``1(``0,``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Add``1(``0,``0)
+  id: Add``1(``0,``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: Add<T>(T, T)
+  nameWithType: EnumExtensions.Add<T>(T, T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Add<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Add
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Adds a flag to the enum value.
+  example: []
+  syntax:
+    content: 'public static T Add<T>(this T value, T flag) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to modify.
+    - id: flag
+      type: '{T}'
+      description: The flag to add.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: '{T}'
+      description: The modified enum value with the flag added.
+    content.vb: Public Shared Function Add(Of T As [Enum])(value As T, flag As T) As T
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.Add*
+  nameWithType.vb: EnumExtensions.Add(Of T)(T, T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Add(Of T)(T, T)
+  name.vb: Add(Of T)(T, T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Remove``1(``0,``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Remove``1(``0,``0)
+  id: Remove``1(``0,``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: Remove<T>(T, T)
+  nameWithType: EnumExtensions.Remove<T>(T, T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Remove<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Remove
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 70
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Removes a flag from the enum value.
+  example: []
+  syntax:
+    content: 'public static T Remove<T>(this T value, T flag) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to modify.
+    - id: flag
+      type: '{T}'
+      description: The flag to remove.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: '{T}'
+      description: The modified enum value with the flag removed.
+    content.vb: Public Shared Function Remove(Of T As [Enum])(value As T, flag As T) As T
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.Remove*
+  nameWithType.vb: EnumExtensions.Remove(Of T)(T, T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Remove(Of T)(T, T)
+  name.vb: Remove(Of T)(T, T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Toggle``1(``0,``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Toggle``1(``0,``0)
+  id: Toggle``1(``0,``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: Toggle<T>(T, T)
+  nameWithType: EnumExtensions.Toggle<T>(T, T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Toggle<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Toggle
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 84
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Toggles a flag in the enum value.
+  example: []
+  syntax:
+    content: 'public static T Toggle<T>(this T value, T flag) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to modify.
+    - id: flag
+      type: '{T}'
+      description: The flag to toggle.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: '{T}'
+      description: The modified enum value with the flag toggled.
+    content.vb: Public Shared Function Toggle(Of T As [Enum])(value As T, flag As T) As T
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.Toggle*
+  nameWithType.vb: EnumExtensions.Toggle(Of T)(T, T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Toggle(Of T)(T, T)
+  name.vb: Toggle(Of T)(T, T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags``1(``0,``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags``1(``0,``0)
+  id: CommonFlags``1(``0,``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: CommonFlags<T>(T, T)
+  nameWithType: EnumExtensions.CommonFlags<T>(T, T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags<T>(T, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CommonFlags
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 98
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Gets the common flags between two enum values (returns only the shared flags).
+  example: []
+  syntax:
+    content: 'public static T CommonFlags<T>(this T value, T other) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The first enum value.
+    - id: other
+      type: '{T}'
+      description: The second enum value.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: '{T}'
+      description: The common flags between the two enum values.
+    content.vb: Public Shared Function CommonFlags(Of T As [Enum])(value As T, other As T) As T
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags*
+  nameWithType.vb: EnumExtensions.CommonFlags(Of T)(T, T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags(Of T)(T, T)
+  name.vb: CommonFlags(Of T)(T, T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
+  id: GetAllFlags``1(``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAllFlags<T>(T)
+  nameWithType: EnumExtensions.GetAllFlags<T>(T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetAllFlags
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 111
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Gets all active flags in an enum as a list.
+  example: []
+  syntax:
+    content: 'public static List<T> GetAllFlags<T>(this T value) where T : Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: System.Collections.Generic.List{{T}}
+      description: A list of all active flags in the enum value.
+    content.vb: Public Shared Function GetAllFlags(Of T As [Enum])(value As T) As List(Of T)
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags*
+  nameWithType.vb: EnumExtensions.GetAllFlags(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags(Of T)(T)
+  name.vb: GetAllFlags(Of T)(T)
+references:
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Has*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.Has
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
+  name: Has
+  nameWithType: EnumExtensions.Has
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.HasAny
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
+  name: HasAny
+  nameWithType: EnumExtensions.HasAny
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.HasAny
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.IsNone*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.IsNone
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_IsNone__1___0_
+  name: IsNone
+  nameWithType: EnumExtensions.IsNone
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.IsNone
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Add*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.Add
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Add__1___0___0_
+  name: Add
+  nameWithType: EnumExtensions.Add
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Add
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Remove*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.Remove
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Remove__1___0___0_
+  name: Remove
+  nameWithType: EnumExtensions.Remove
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Remove
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.Toggle*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.Toggle
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Toggle__1___0___0_
+  name: Toggle
+  nameWithType: EnumExtensions.Toggle
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Toggle
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CommonFlags__1___0___0_
+  name: CommonFlags
+  nameWithType: EnumExtensions.CommonFlags
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_GetAllFlags__1___0_
+  name: GetAllFlags
+  nameWithType: EnumExtensions.GetAllFlags
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

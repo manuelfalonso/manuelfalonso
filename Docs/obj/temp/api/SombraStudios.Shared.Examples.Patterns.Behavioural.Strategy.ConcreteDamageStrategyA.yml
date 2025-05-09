@@ -1,0 +1,524 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  commentId: T:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  id: ConcreteDamageStrategyA
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  children:
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute(System.Int32)
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute(System.Int32)
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ConcreteDamageStrategyA
+  nameWithType: ConcreteDamageStrategyA
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  type: Class
+  source:
+    remote:
+      path: Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ConcreteDamageStrategyA
+    path: ../Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Examples
+  namespace: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  summary: >-
+    Concrete Strategies implement different variations 
+
+    of an algorithm the context uses.
+
+
+    Example for a Ice damage type
+  example: []
+  syntax:
+    content: 'public class ConcreteDamageStrategyA : IDamageStrategy, IStrategy<int>'
+    content.vb: Public Class ConcreteDamageStrategyA Implements IDamageStrategy, IStrategy(Of Integer)
+  inheritance:
+  - System.Object
+  implements:
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.IDamageStrategy
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute(System.Int32)
+  commentId: M:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute(System.Int32)
+  id: CanExecute(System.Int32)
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  langs:
+  - csharp
+  - vb
+  name: CanExecute(int)
+  nameWithType: ConcreteDamageStrategyA.CanExecute(int)
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute(int)
+  type: Method
+  source:
+    remote:
+      path: Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanExecute
+    path: ../Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Examples
+  namespace: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  summary: Checks if the strategy can be executed with the provided data.
+  example: []
+  syntax:
+    content: public bool CanExecute(int damage)
+    parameters:
+    - id: damage
+      type: System.Int32
+    return:
+      type: System.Boolean
+      description: True if the strategy can be executed; otherwise, false.
+    content.vb: Public Function CanExecute(damage As Integer) As Boolean
+  overload: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.CanExecute(System.Int32)
+  nameWithType.vb: ConcreteDamageStrategyA.CanExecute(Integer)
+  fullName.vb: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute(Integer)
+  name.vb: CanExecute(Integer)
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute(System.Int32)
+  commentId: M:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute(System.Int32)
+  id: Execute(System.Int32)
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  langs:
+  - csharp
+  - vb
+  name: Execute(int)
+  nameWithType: ConcreteDamageStrategyA.Execute(int)
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute(int)
+  type: Method
+  source:
+    remote:
+      path: Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Execute
+    path: ../Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Examples
+  namespace: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  summary: Executes the strategy using the provided data.
+  example: []
+  syntax:
+    content: public void Execute(int damage)
+    parameters:
+    - id: damage
+      type: System.Int32
+    content.vb: Public Sub Execute(damage As Integer)
+  overload: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.Execute(System.Int32)
+  nameWithType.vb: ConcreteDamageStrategyA.Execute(Integer)
+  fullName.vb: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute(Integer)
+  name.vb: Execute(Integer)
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute(System.Int32)
+  commentId: M:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute(System.Int32)
+  id: TryToExecute(System.Int32)
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  langs:
+  - csharp
+  - vb
+  name: TryToExecute(int)
+  nameWithType: ConcreteDamageStrategyA.TryToExecute(int)
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute(int)
+  type: Method
+  source:
+    remote:
+      path: Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryToExecute
+    path: ../Examples/Patterns/Behavioural/Strategy/ConcreteDamageStrategyA.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Examples
+  namespace: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  summary: Attempts to execute the strategy with the provided data.
+  example: []
+  syntax:
+    content: public bool TryToExecute(int damage)
+    parameters:
+    - id: damage
+      type: System.Int32
+    return:
+      type: System.Boolean
+      description: True if the strategy was executed successfully; otherwise, false.
+    content.vb: Public Function TryToExecute(damage As Integer) As Boolean
+  overload: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute*
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.TryToExecute(System.Int32)
+  nameWithType.vb: ConcreteDamageStrategyA.TryToExecute(Integer)
+  fullName.vb: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute(Integer)
+  name.vb: TryToExecute(Integer)
+references:
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  commentId: N:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  nameWithType: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples
+    name: Examples
+    href: SombraStudios.Shared.Examples.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Examples.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples
+    name: Examples
+    href: SombraStudios.Shared.Examples.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Examples.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.IDamageStrategy
+  commentId: T:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.IDamageStrategy
+  parent: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.IDamageStrategy.html
+  name: IDamageStrategy
+  nameWithType: IDamageStrategy
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.IDamageStrategy
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}
+  parent: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: IStrategy<int>
+  nameWithType: IStrategy<int>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<int>
+  nameWithType.vb: IStrategy(Of Integer)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of Integer)
+  name.vb: IStrategy(Of Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  name: IStrategy<T>
+  nameWithType: IStrategy<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>
+  nameWithType.vb: IStrategy(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T)
+  name.vb: IStrategy(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Strategy
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.html
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute*
+  commentId: Overload:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.html#SombraStudios_Shared_Examples_Patterns_Behavioural_Strategy_ConcreteDamageStrategyA_CanExecute_System_Int32_
+  name: CanExecute
+  nameWithType: ConcreteDamageStrategyA.CanExecute
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.CanExecute
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.CanExecute(System.Int32)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.CanExecute(System.Int32)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.CanExecute(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: CanExecute(int)
+  nameWithType: IStrategy<int>.CanExecute(int)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<int>.CanExecute(int)
+  nameWithType.vb: IStrategy(Of Integer).CanExecute(Integer)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of Integer).CanExecute(Integer)
+  name.vb: CanExecute(Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.CanExecute(System.Int32)
+    name: CanExecute
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.CanExecute(System.Int32)
+    name: CanExecute
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.CanExecute(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.CanExecute(`0)
+  name: CanExecute(T)
+  nameWithType: IStrategy<T>.CanExecute(T)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>.CanExecute(T)
+  nameWithType.vb: IStrategy(Of T).CanExecute(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T).CanExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.CanExecute(`0)
+    name: CanExecute
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.CanExecute(`0)
+    name: CanExecute
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute*
+  commentId: Overload:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.html#SombraStudios_Shared_Examples_Patterns_Behavioural_Strategy_ConcreteDamageStrategyA_Execute_System_Int32_
+  name: Execute
+  nameWithType: ConcreteDamageStrategyA.Execute
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.Execute
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.Execute(System.Int32)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.Execute(System.Int32)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.Execute(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Execute(int)
+  nameWithType: IStrategy<int>.Execute(int)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<int>.Execute(int)
+  nameWithType.vb: IStrategy(Of Integer).Execute(Integer)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of Integer).Execute(Integer)
+  name.vb: Execute(Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.Execute(System.Int32)
+    name: Execute
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.Execute(System.Int32)
+    name: Execute
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.Execute(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.Execute(`0)
+  name: Execute(T)
+  nameWithType: IStrategy<T>.Execute(T)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>.Execute(T)
+  nameWithType.vb: IStrategy(Of T).Execute(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T).Execute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.Execute(`0)
+    name: Execute
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.Execute(`0)
+    name: Execute
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute*
+  commentId: Overload:SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute
+  href: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.html#SombraStudios_Shared_Examples_Patterns_Behavioural_Strategy_ConcreteDamageStrategyA_TryToExecute_System_Int32_
+  name: TryToExecute
+  nameWithType: ConcreteDamageStrategyA.TryToExecute
+  fullName: SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA.TryToExecute
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.TryToExecute(System.Int32)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.TryToExecute(System.Int32)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.TryToExecute(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: TryToExecute(int)
+  nameWithType: IStrategy<int>.TryToExecute(int)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<int>.TryToExecute(int)
+  nameWithType.vb: IStrategy(Of Integer).TryToExecute(Integer)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of Integer).TryToExecute(Integer)
+  name.vb: TryToExecute(Integer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.TryToExecute(System.Int32)
+    name: TryToExecute
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.TryToExecute(System.Int32)
+    name: TryToExecute
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.TryToExecute(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.TryToExecute(`0)
+  name: TryToExecute(T)
+  nameWithType: IStrategy<T>.TryToExecute(T)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>.TryToExecute(T)
+  nameWithType.vb: IStrategy(Of T).TryToExecute(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T).TryToExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.TryToExecute(`0)
+    name: TryToExecute
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1.TryToExecute(`0)
+    name: TryToExecute
+  - name: (
+  - name: T
+  - name: )

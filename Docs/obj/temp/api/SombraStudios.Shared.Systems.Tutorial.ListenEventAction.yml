@@ -1,0 +1,302 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Tutorial.ListenEventAction
+  commentId: T:SombraStudios.Shared.Systems.Tutorial.ListenEventAction
+  id: ListenEventAction
+  parent: SombraStudios.Shared.Systems.Tutorial
+  children:
+  - SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction
+  langs:
+  - csharp
+  - vb
+  name: ListenEventAction
+  nameWithType: ListenEventAction
+  fullName: SombraStudios.Shared.Systems.Tutorial.ListenEventAction
+  type: Class
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActions/ListenEventAction.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ListenEventAction
+    path: ../Systems/Tutorial/TutorialActions/ListenEventAction.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Listen Event Action", order = 6)]
+
+      public class ListenEventAction : TutorialActionSO, ISerializationCallbackReceiver
+    content.vb: >-
+      <CreateAssetMenu(fileName:="New Tutorial Action", menuName:="Sombra Studios/Tutorial/Listen Event Action", order:=6)>
+
+      Public Class ListenEventAction Inherits TutorialActionSO Implements ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: New Tutorial Action
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Tutorial/Listen Event Action
+    - name: order
+      type: System.Int32
+      value: 6
+- uid: SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction
+  id: ExecuteAction
+  parent: SombraStudios.Shared.Systems.Tutorial.ListenEventAction
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAction()
+  nameWithType: ListenEventAction.ExecuteAction()
+  fullName: SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActions/ListenEventAction.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExecuteAction
+    path: ../Systems/Tutorial/TutorialActions/ListenEventAction.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  example: []
+  syntax:
+    content: public override IEnumerator ExecuteAction()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Overrides Function ExecuteAction() As IEnumerator
+  overridden: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  overload: SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction*
+references:
+- uid: SombraStudios.Shared.Systems.Tutorial
+  commentId: N:SombraStudios.Shared.Systems.Tutorial
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Tutorial
+  nameWithType: SombraStudios.Shared.Systems.Tutorial
+  fullName: SombraStudios.Shared.Systems.Tutorial
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Tutorial
+    name: Tutorial
+    href: SombraStudios.Shared.Systems.Tutorial.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Tutorial
+    name: Tutorial
+    href: SombraStudios.Shared.Systems.Tutorial.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  commentId: T:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  parent: SombraStudios.Shared.Systems.Tutorial
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html
+  name: TutorialActionSO
+  nameWithType: TutorialActionSO
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  commentId: F:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO__active
+  name: _active
+  nameWithType: TutorialActionSO._active
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  commentId: F:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO__isCompletedInitialValue
+  name: _isCompletedInitialValue
+  nameWithType: TutorialActionSO._isCompletedInitialValue
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  commentId: P:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_IsCompleted
+  name: IsCompleted
+  nameWithType: TutorialActionSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnAfterDeserialize
+  name: OnAfterDeserialize()
+  nameWithType: TutorialActionSO.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+    name: OnAfterDeserialize
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnAfterDeserialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+    name: OnAfterDeserialize
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnAfterDeserialize
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnBeforeSerialize
+  name: OnBeforeSerialize()
+  nameWithType: TutorialActionSO.OnBeforeSerialize()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+    name: OnBeforeSerialize
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnBeforeSerialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+    name: OnBeforeSerialize
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnBeforeSerialize
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_ExecuteAction
+  name: ExecuteAction()
+  nameWithType: TutorialActionSO.ExecuteAction()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+    name: ExecuteAction
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_ExecuteAction
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+    name: ExecuteAction
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_ExecuteAction
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction
+  href: SombraStudios.Shared.Systems.Tutorial.ListenEventAction.html#SombraStudios_Shared_Systems_Tutorial_ListenEventAction_ExecuteAction
+  name: ExecuteAction
+  nameWithType: ListenEventAction.ExecuteAction
+  fullName: SombraStudios.Shared.Systems.Tutorial.ListenEventAction.ExecuteAction
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

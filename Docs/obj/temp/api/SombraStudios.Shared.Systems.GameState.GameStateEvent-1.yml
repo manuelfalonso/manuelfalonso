@@ -1,0 +1,595 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.GameState.GameStateEvent`1
+  commentId: T:SombraStudios.Shared.Systems.GameState.GameStateEvent`1
+  id: GameStateEvent`1
+  parent: SombraStudios.Shared.Systems.GameState
+  children:
+  - SombraStudios.Shared.Systems.GameState.GameStateEvent`1.GameStateChanged
+  - SombraStudios.Shared.Systems.GameState.GameStateEvent`1.OnGameStateChanged(`0)
+  langs:
+  - csharp
+  - vb
+  name: GameStateEvent<T>
+  nameWithType: GameStateEvent<T>
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateEvent<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/GameState/GameStateEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameStateEvent
+    path: ../Systems/GameState/GameStateEvent.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: >-
+    Base class for handling game state events.  
+
+    Listens for changes in a specific game state and invokes a UnityEvent when the target state is reached.
+  example: []
+  syntax:
+    content: 'public abstract class GameStateEvent<T> : GameStateListener<T> where T : Enum'
+    typeParameters:
+    - id: T
+      description: An Enum type representing the game states.
+    content.vb: Public MustInherit Class GameStateEvent(Of T As [Enum]) Inherits GameStateListener(Of T)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}.OnEnable
+  - SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}.OnDisable
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  nameWithType.vb: GameStateEvent(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateEvent(Of T)
+  name.vb: GameStateEvent(Of T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateEvent`1.GameStateChanged
+  commentId: F:SombraStudios.Shared.Systems.GameState.GameStateEvent`1.GameStateChanged
+  id: GameStateChanged
+  parent: SombraStudios.Shared.Systems.GameState.GameStateEvent`1
+  langs:
+  - csharp
+  - vb
+  name: GameStateChanged
+  nameWithType: GameStateEvent<T>.GameStateChanged
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateEvent<T>.GameStateChanged
+  type: Field
+  source:
+    remote:
+      path: Systems/GameState/GameStateEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameStateChanged
+    path: ../Systems/GameState/GameStateEvent.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  syntax:
+    content: >-
+      [Header("Events")]
+
+      [Tooltip("Event triggered when the game state matches the target state.")]
+
+      public UnityEvent GameStateChanged
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Header("Events")>
+
+      <Tooltip("Event triggered when the game state matches the target state.")>
+
+      Public GameStateChanged As UnityEvent
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event triggered when the game state matches the target state.
+  nameWithType.vb: GameStateEvent(Of T).GameStateChanged
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateEvent(Of T).GameStateChanged
+- uid: SombraStudios.Shared.Systems.GameState.GameStateEvent`1.OnGameStateChanged(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateEvent`1.OnGameStateChanged(`0)
+  id: OnGameStateChanged(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateEvent`1
+  langs:
+  - csharp
+  - vb
+  name: OnGameStateChanged(T)
+  nameWithType: GameStateEvent<T>.OnGameStateChanged(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateEvent<T>.OnGameStateChanged(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateEvent.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnGameStateChanged
+    path: ../Systems/GameState/GameStateEvent.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: >-
+    Called when the game state changes.  
+
+    Invokes the <xref href="SombraStudios.Shared.Systems.GameState.GameStateEvent%601.GameStateChanged" data-throw-if-not-resolved="false"></xref> event if the new game state matches the target state.
+  example: []
+  syntax:
+    content: protected override void OnGameStateChanged(T newGameState)
+    parameters:
+    - id: newGameState
+      type: '{T}'
+      description: The new game state.
+    content.vb: Protected Overrides Sub OnGameStateChanged(newGameState As T)
+  overridden: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}.OnGameStateChanged({T})
+  overload: SombraStudios.Shared.Systems.GameState.GameStateEvent`1.OnGameStateChanged*
+  nameWithType.vb: GameStateEvent(Of T).OnGameStateChanged(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateEvent(Of T).OnGameStateChanged(T)
+references:
+- uid: SombraStudios.Shared.Systems.GameState
+  commentId: N:SombraStudios.Shared.Systems.GameState
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.GameState
+  nameWithType: SombraStudios.Shared.Systems.GameState
+  fullName: SombraStudios.Shared.Systems.GameState
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.GameState
+    name: GameState
+    href: SombraStudios.Shared.Systems.GameState.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.GameState
+    name: GameState
+    href: SombraStudios.Shared.Systems.GameState.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}
+  commentId: T:SombraStudios.Shared.Systems.GameState.GameStateListener{`0}
+  parent: SombraStudios.Shared.Systems.GameState
+  definition: SombraStudios.Shared.Systems.GameState.GameStateListener`1
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html
+  name: GameStateListener<T>
+  nameWithType: GameStateListener<T>
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>
+  nameWithType.vb: GameStateListener(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T)
+  name.vb: GameStateListener(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1
+    name: GameStateListener
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1
+    name: GameStateListener
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}.OnEnable
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnEnable
+  parent: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}
+  definition: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnEnable
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnEnable
+  name: OnEnable()
+  nameWithType: GameStateListener<T>.OnEnable()
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>.OnEnable()
+  nameWithType.vb: GameStateListener(Of T).OnEnable()
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T).OnEnable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnEnable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}.OnDisable
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnDisable
+  parent: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}
+  definition: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnDisable
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnDisable
+  name: OnDisable()
+  nameWithType: GameStateListener<T>.OnDisable()
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>.OnDisable()
+  nameWithType.vb: GameStateListener(Of T).OnDisable()
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T).OnDisable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnDisable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnDisable
+  - name: (
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1
+  commentId: T:SombraStudios.Shared.Systems.GameState.GameStateListener`1
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html
+  name: GameStateListener<T>
+  nameWithType: GameStateListener<T>
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>
+  nameWithType.vb: GameStateListener(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T)
+  name.vb: GameStateListener(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1
+    name: GameStateListener
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1
+    name: GameStateListener
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnEnable
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnEnable
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnEnable
+  name: OnEnable()
+  nameWithType: GameStateListener<T>.OnEnable()
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>.OnEnable()
+  nameWithType.vb: GameStateListener(Of T).OnEnable()
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T).OnEnable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnEnable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnDisable
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnDisable
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnDisable
+  name: OnDisable()
+  nameWithType: GameStateListener<T>.OnDisable()
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>.OnDisable()
+  nameWithType.vb: GameStateListener(Of T).OnDisable()
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T).OnDisable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnDisable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnDisable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.Systems.GameState.GameStateEvent`1.GameStateChanged
+  commentId: F:SombraStudios.Shared.Systems.GameState.GameStateEvent`1.GameStateChanged
+  href: SombraStudios.Shared.Systems.GameState.GameStateEvent-1.html#SombraStudios_Shared_Systems_GameState_GameStateEvent_1_GameStateChanged
+  name: GameStateChanged
+  nameWithType: GameStateEvent<T>.GameStateChanged
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateEvent<T>.GameStateChanged
+  nameWithType.vb: GameStateEvent(Of T).GameStateChanged
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateEvent(Of T).GameStateChanged
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}.OnGameStateChanged({T})
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnGameStateChanged(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateListener{{T}}
+  definition: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnGameStateChanged(`0)
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnGameStateChanged__0_
+  name: OnGameStateChanged(T)
+  nameWithType: GameStateListener<T>.OnGameStateChanged(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>.OnGameStateChanged(T)
+  nameWithType.vb: GameStateListener(Of T).OnGameStateChanged(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T).OnGameStateChanged(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnGameStateChanged(`0)
+    name: OnGameStateChanged
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnGameStateChanged__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener{`0}.OnGameStateChanged(`0)
+    name: OnGameStateChanged
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnGameStateChanged__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Systems.GameState.GameStateEvent`1.OnGameStateChanged*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateEvent`1.OnGameStateChanged
+  href: SombraStudios.Shared.Systems.GameState.GameStateEvent-1.html#SombraStudios_Shared_Systems_GameState_GameStateEvent_1_OnGameStateChanged__0_
+  name: OnGameStateChanged
+  nameWithType: GameStateEvent<T>.OnGameStateChanged
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateEvent<T>.OnGameStateChanged
+  nameWithType.vb: GameStateEvent(Of T).OnGameStateChanged
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateEvent(Of T).OnGameStateChanged
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnGameStateChanged(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnGameStateChanged(`0)
+  href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnGameStateChanged__0_
+  name: OnGameStateChanged(T)
+  nameWithType: GameStateListener<T>.OnGameStateChanged(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateListener<T>.OnGameStateChanged(T)
+  nameWithType.vb: GameStateListener(Of T).OnGameStateChanged(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateListener(Of T).OnGameStateChanged(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnGameStateChanged(`0)
+    name: OnGameStateChanged
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnGameStateChanged__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.GameState.GameStateListener`1.OnGameStateChanged(`0)
+    name: OnGameStateChanged
+    href: SombraStudios.Shared.Systems.GameState.GameStateListener-1.html#SombraStudios_Shared_Systems_GameState_GameStateListener_1_OnGameStateChanged__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

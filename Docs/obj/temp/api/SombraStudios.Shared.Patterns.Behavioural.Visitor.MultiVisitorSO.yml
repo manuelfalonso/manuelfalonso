@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO
+  id: MultiVisitorSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  langs:
+  - csharp
+  - vb
+  name: MultiVisitorSO
+  nameWithType: MultiVisitorSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO
+  type: Class
+  source:
+    remote:
+      path: Patterns/Behavioural/Visitor/MultiVisitorSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MultiVisitorSO
+    path: ../Patterns/Behavioural/Visitor/MultiVisitorSO.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  summary: ScriptableObject that allows multiple visitors to visit a visitable element.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "NewMultiVisitor", menuName = "Sombra Studios/Patterns/Behavioural/Visitor/Multi Visitor")]
+
+      public class MultiVisitorSO : VisitorSO, IVisitor
+    content.vb: >-
+      <CreateAssetMenu(fileName:="NewMultiVisitor", menuName:="Sombra Studios/Patterns/Behavioural/Visitor/Multi Visitor")>
+
+      Public Class MultiVisitorSO Inherits VisitorSO Implements IVisitor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO
+  implements:
+  - SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitor
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: NewMultiVisitor
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Patterns/Behavioural/Visitor/Multi Visitor
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  id: Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO
+  langs:
+  - csharp
+  - vb
+  name: Visit(IVisitable)
+  nameWithType: MultiVisitorSO.Visit(IVisitable)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Visitor/MultiVisitorSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Visit
+    path: ../Patterns/Behavioural/Visitor/MultiVisitorSO.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  summary: Allows each visitor in the list to visit the provided visitable element.
+  example: []
+  syntax:
+    content: public override void Visit(IVisitable visitable)
+    parameters:
+    - id: visitable
+      type: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable
+      description: The visitable element to be visited.
+    content.vb: Public Overrides Sub Visit(visitable As IVisitable)
+  overridden: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit*
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Visitor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Visitor
+    name: Visitor
+    href: SombraStudios.Shared.Patterns.Behavioural.Visitor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Visitor
+    name: Visitor
+    href: SombraStudios.Shared.Patterns.Behavioural.Visitor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  href: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.html
+  name: VisitorSO
+  nameWithType: VisitorSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitor
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitor
+  parent: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  href: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitor.html
+  name: IVisitor
+  nameWithType: IVisitor
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.html#SombraStudios_Shared_Patterns_Behavioural_Visitor_VisitorSO_Visit_SombraStudios_Shared_Patterns_Behavioural_Visitor_IVisitable_
+  name: Visit(IVisitable)
+  nameWithType: VisitorSO.Visit(IVisitable)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+    name: Visit
+    href: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.html#SombraStudios_Shared_Patterns_Behavioural_Visitor_VisitorSO_Visit_SombraStudios_Shared_Patterns_Behavioural_Visitor_IVisitable_
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable
+    name: IVisitable
+    href: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.Visit(SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable)
+    name: Visit
+    href: SombraStudios.Shared.Patterns.Behavioural.Visitor.VisitorSO.html#SombraStudios_Shared_Patterns_Behavioural_Visitor_VisitorSO_Visit_SombraStudios_Shared_Patterns_Behavioural_Visitor_IVisitable_
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable
+    name: IVisitable
+    href: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable.html
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit
+  href: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.html#SombraStudios_Shared_Patterns_Behavioural_Visitor_MultiVisitorSO_Visit_SombraStudios_Shared_Patterns_Behavioural_Visitor_IVisitable_
+  name: Visit
+  nameWithType: MultiVisitorSO.Visit
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.MultiVisitorSO.Visit
+- uid: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable
+  parent: SombraStudios.Shared.Patterns.Behavioural.Visitor
+  href: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable.html
+  name: IVisitable
+  nameWithType: IVisitable
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Visitor.IVisitable

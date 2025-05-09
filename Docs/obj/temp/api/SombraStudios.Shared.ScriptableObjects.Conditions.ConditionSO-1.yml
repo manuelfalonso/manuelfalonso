@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  id: ConditionSO`1
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions
+  children:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.LOG_CATEGORY
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1._showLogs
+  langs:
+  - csharp
+  - vb
+  name: ConditionSO<T>
+  nameWithType: ConditionSO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ConditionSO
+    path: ../ScriptableObjects/Conditions/ConditionSO.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: >-
+    Abstract base class for condition ScriptableObjects with a parameterized type.
+
+    Implements the ICondition interface.
+  example: []
+  syntax:
+    content: 'public abstract class ConditionSO<T> : ScriptableObject, ICondition<T>'
+    typeParameters:
+    - id: T
+      description: The type of data used by the condition.
+    content.vb: Public MustInherit Class ConditionSO(Of T) Inherits ScriptableObject Implements ICondition(Of T)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  derivedClasses:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+  implements:
+  - SombraStudios.Shared.Interfaces.ICondition{{T}}
+  nameWithType.vb: ConditionSO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)
+  name.vb: ConditionSO(Of T)
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.LOG_CATEGORY
+  id: LOG_CATEGORY
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  langs:
+  - csharp
+  - vb
+  name: LOG_CATEGORY
+  nameWithType: ConditionSO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.LOG_CATEGORY
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LOG_CATEGORY
+    path: ../ScriptableObjects/Conditions/ConditionSO.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  syntax:
+    content: protected const string LOG_CATEGORY = "ConditionSO"
+    return:
+      type: System.String
+    content.vb: Protected Const LOG_CATEGORY As String = "ConditionSO"
+  nameWithType.vb: ConditionSO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.DEBUG_TITLE
+  id: DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  langs:
+  - csharp
+  - vb
+  name: DEBUG_TITLE
+  nameWithType: ConditionSO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.DEBUG_TITLE
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DEBUG_TITLE
+    path: ../ScriptableObjects/Conditions/ConditionSO.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  syntax:
+    content: protected const string DEBUG_TITLE = "Debug"
+    return:
+      type: System.String
+    content.vb: Protected Const DEBUG_TITLE As String = "Debug"
+  nameWithType.vb: ConditionSO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.PROPERTIES_TITLE
+  id: PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  langs:
+  - csharp
+  - vb
+  name: PROPERTIES_TITLE
+  nameWithType: ConditionSO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.PROPERTIES_TITLE
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PROPERTIES_TITLE
+    path: ../ScriptableObjects/Conditions/ConditionSO.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  syntax:
+    content: protected const string PROPERTIES_TITLE = "Properties"
+    return:
+      type: System.String
+    content.vb: Protected Const PROPERTIES_TITLE As String = "Properties"
+  nameWithType.vb: ConditionSO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1._showLogs
+  id: _showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  langs:
+  - csharp
+  - vb
+  name: _showLogs
+  nameWithType: ConditionSO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>._showLogs
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _showLogs
+    path: ../ScriptableObjects/Conditions/ConditionSO.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  syntax:
+    content: >-
+      [Header("Debug")]
+
+      [Tooltip("Show debug logs.")]
+
+      [SerializeField]
+
+      protected bool _showLogs
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Debug")>
+
+      <Tooltip("Show debug logs.")>
+
+      <SerializeField>
+
+      Protected _showLogs As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Debug
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Show debug logs.
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: ConditionSO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+  id: IsValid(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  langs:
+  - csharp
+  - vb
+  name: IsValid(T)
+  nameWithType: ConditionSO<T>.IsValid(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.IsValid(T)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsValid
+    path: ../ScriptableObjects/Conditions/ConditionSO.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Checks if the condition is met.
+  example: []
+  syntax:
+    content: public abstract bool IsValid(T data)
+    parameters:
+    - id: data
+      type: '{T}'
+      description: The data needed to check the condition.
+    return:
+      type: System.Boolean
+      description: True if the condition is met, false otherwise.
+    content.vb: Public MustOverride Function IsValid(data As T) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid*
+  implements:
+  - SombraStudios.Shared.Interfaces.ICondition{{T}}.IsValid({T})
+  nameWithType.vb: ConditionSO(Of T).IsValid(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).IsValid(T)
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Conditions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Conditions
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Conditions
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Interfaces.ICondition{{T}}
+  commentId: T:SombraStudios.Shared.Interfaces.ICondition{`0}
+  parent: SombraStudios.Shared.Interfaces
+  definition: SombraStudios.Shared.Interfaces.ICondition`1
+  name: ICondition<T>
+  nameWithType: ICondition<T>
+  fullName: SombraStudios.Shared.Interfaces.ICondition<T>
+  nameWithType.vb: ICondition(Of T)
+  fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T)
+  name.vb: ICondition(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Interfaces.ICondition`1
+  commentId: T:SombraStudios.Shared.Interfaces.ICondition`1
+  href: SombraStudios.Shared.Interfaces.ICondition-1.html
+  name: ICondition<T>
+  nameWithType: ICondition<T>
+  fullName: SombraStudios.Shared.Interfaces.ICondition<T>
+  nameWithType.vb: ICondition(Of T)
+  fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T)
+  name.vb: ICondition(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+    href: SombraStudios.Shared.Interfaces.ICondition-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+    href: SombraStudios.Shared.Interfaces.ICondition-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  name: IsValid
+  nameWithType: ConditionSO<T>.IsValid
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.IsValid
+  nameWithType.vb: ConditionSO(Of T).IsValid
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).IsValid
+- uid: SombraStudios.Shared.Interfaces.ICondition{{T}}.IsValid({T})
+  commentId: M:SombraStudios.Shared.Interfaces.ICondition{`0}.IsValid(`0)
+  parent: SombraStudios.Shared.Interfaces.ICondition{{T}}
+  definition: SombraStudios.Shared.Interfaces.ICondition`1.IsValid(`0)
+  name: IsValid(T)
+  nameWithType: ICondition<T>.IsValid(T)
+  fullName: SombraStudios.Shared.Interfaces.ICondition<T>.IsValid(T)
+  nameWithType.vb: ICondition(Of T).IsValid(T)
+  fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T).IsValid(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Interfaces.ICondition{`0}.IsValid(`0)
+    name: IsValid
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Interfaces.ICondition{`0}.IsValid(`0)
+    name: IsValid
+  - name: (
+  - name: T
+  - name: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Interfaces.ICondition`1.IsValid(`0)
+  commentId: M:SombraStudios.Shared.Interfaces.ICondition`1.IsValid(`0)
+  name: IsValid(T)
+  nameWithType: ICondition<T>.IsValid(T)
+  fullName: SombraStudios.Shared.Interfaces.ICondition<T>.IsValid(T)
+  nameWithType.vb: ICondition(Of T).IsValid(T)
+  fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T).IsValid(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1.IsValid(`0)
+    name: IsValid
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1.IsValid(`0)
+    name: IsValid
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

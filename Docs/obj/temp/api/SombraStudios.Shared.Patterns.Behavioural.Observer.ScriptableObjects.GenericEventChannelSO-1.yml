@@ -5,6 +5,7 @@ items:
   id: GenericEventChannelSO`1
   parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.Description
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.OnEventRaised
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.RaiseEvent(`0)
   langs:
@@ -28,16 +29,15 @@ items:
   summary: A generic event channel scriptable object that allows raising events with a parameter of type T.
   example: []
   syntax:
-    content: 'public abstract class GenericEventChannelSO<T> : DescriptionSO'
+    content: 'public abstract class GenericEventChannelSO<T> : ScriptableObject, IDescribable'
     typeParameters:
     - id: T
       description: The type of the parameter for the event.
-    content.vb: Public MustInherit Class GenericEventChannelSO(Of T) Inherits DescriptionSO
+    content.vb: Public MustInherit Class GenericEventChannelSO(Of T) Inherits ScriptableObject Implements IDescribable
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
-  - SombraStudios.Shared.ScriptableObjects.DescriptionSO
   derivedClasses:
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.BoolEventChannelSO
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.FloatEventChannelSO
@@ -47,8 +47,9 @@ items:
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.StringEventChannelSO
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector2EventChannelSO
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.Vector3EventChannelSO
-  inheritedMembers:
-  - SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
+  - SombraStudios.Shared.Systems.Objectives.ObjectiveEventChannelSO
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable
   nameWithType.vb: GenericEventChannelSO(Of T)
   fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO(Of T)
   name.vb: GenericEventChannelSO(Of T)
@@ -95,6 +96,41 @@ items:
       value: The action to perform. Listeners subscribe to this UnityAction
   nameWithType.vb: GenericEventChannelSO(Of T).OnEventRaised
   fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO(Of T).OnEventRaised
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.Description
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.Description
+  id: Description
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: GenericEventChannelSO<T>.Description
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO<T>.Description
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/GenericEventChannelSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/GenericEventChannelSO.cs
+    startLine: 20
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Gets or sets the description of the object.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.Description*
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable.Description
+  nameWithType.vb: GenericEventChannelSO(Of T).Description
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO(Of T).Description
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.RaiseEvent(`0)
   commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.RaiseEvent(`0)
   id: RaiseEvent(`0)
@@ -113,7 +149,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: RaiseEvent
     path: ../Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/GenericEventChannelSO.cs
-    startLine: 22
+    startLine: 26
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
@@ -209,18 +245,13 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
-- uid: SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  commentId: T:SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  parent: SombraStudios.Shared.ScriptableObjects
-  name: DescriptionSO
-  nameWithType: DescriptionSO
-  fullName: SombraStudios.Shared.ScriptableObjects.DescriptionSO
-- uid: SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
-  commentId: F:SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
-  parent: SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  name: m_Description
-  nameWithType: DescriptionSO.m_Description
-  fullName: SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
+- uid: SombraStudios.Shared.Interfaces.IDescribable
+  commentId: T:SombraStudios.Shared.Interfaces.IDescribable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IDescribable.html
+  name: IDescribable
+  nameWithType: IDescribable
+  fullName: SombraStudios.Shared.Interfaces.IDescribable
 - uid: System
   commentId: N:System
   isExternal: true
@@ -234,29 +265,36 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.ScriptableObjects
-  commentId: N:SombraStudios.Shared.ScriptableObjects
-  name: SombraStudios.Shared.ScriptableObjects
-  nameWithType: SombraStudios.Shared.ScriptableObjects
-  fullName: SombraStudios.Shared.ScriptableObjects
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
   spec.csharp:
   - uid: SombraStudios
     name: SombraStudios
+    href: SombraStudios.html
   - name: .
   - uid: SombraStudios.Shared
     name: Shared
+    href: SombraStudios.Shared.html
   - name: .
-  - uid: SombraStudios.Shared.ScriptableObjects
-    name: ScriptableObjects
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
   spec.vb:
   - uid: SombraStudios
     name: SombraStudios
+    href: SombraStudios.html
   - name: .
   - uid: SombraStudios.Shared
     name: Shared
+    href: SombraStudios.Shared.html
   - name: .
-  - uid: SombraStudios.Shared.ScriptableObjects
-    name: ScriptableObjects
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
 - uid: UnityEngine.Events.UnityAction{{T}}
   commentId: T:UnityEngine.Events.UnityAction{`0}
   parent: UnityEngine.Events
@@ -330,6 +368,31 @@ references:
   - uid: UnityEngine.Events
     name: Events
     isExternal: true
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.Description*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.Description
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO-1.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GenericEventChannelSO_1_Description
+  name: Description
+  nameWithType: GenericEventChannelSO<T>.Description
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO<T>.Description
+  nameWithType.vb: GenericEventChannelSO(Of T).Description
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO(Of T).Description
+- uid: SombraStudios.Shared.Interfaces.IDescribable.Description
+  commentId: P:SombraStudios.Shared.Interfaces.IDescribable.Description
+  parent: SombraStudios.Shared.Interfaces.IDescribable
+  name: Description
+  nameWithType: IDescribable.Description
+  fullName: SombraStudios.Shared.Interfaces.IDescribable.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.RaiseEvent*
   commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO`1.RaiseEvent
   href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.GenericEventChannelSO-1.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_GenericEventChannelSO_1_RaiseEvent__0_

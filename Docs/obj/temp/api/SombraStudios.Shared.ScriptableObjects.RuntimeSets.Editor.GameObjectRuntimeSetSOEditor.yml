@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor
+  commentId: T:SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor
+  id: GameObjectRuntimeSetSOEditor
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  children:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: GameObjectRuntimeSetSOEditor
+  nameWithType: GameObjectRuntimeSetSOEditor
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Editor/GameObjectRuntimeSetSOEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameObjectRuntimeSetSOEditor
+    path: ../ScriptableObjects/RuntimeSets/Editor/GameObjectRuntimeSetSOEditor.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  summary: >-
+    This class overrides the default Editor behavior to show the elements of the runtime set.
+
+    This fixes the 'Type Mismatch' that appears in the Inspector when an Asset tries to show a 
+
+    GameObject from the Hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [CustomEditor(typeof(GameObjectRuntimeSetSO))]
+
+      public class GameObjectRuntimeSetSOEditor : Editor
+    content.vb: >-
+      <CustomEditor(GetType(GameObjectRuntimeSetSO))>
+
+      Public Class GameObjectRuntimeSetSOEditor Inherits Editor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI
+  id: CreateInspectorGUI
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor
+  langs:
+  - csharp
+  - vb
+  name: CreateInspectorGUI()
+  nameWithType: GameObjectRuntimeSetSOEditor.CreateInspectorGUI()
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Editor/GameObjectRuntimeSetSOEditor.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CreateInspectorGUI
+    path: ../ScriptableObjects/RuntimeSets/Editor/GameObjectRuntimeSetSOEditor.cs
+    startLine: 41
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  summary: <p>Implement this method to make a custom UIElements inspector.</p>
+  example: []
+  syntax:
+    content: public override VisualElement CreateInspectorGUI()
+    return:
+      type: UnityEngine.UIElements.VisualElement
+    content.vb: Public Overrides Function CreateInspectorGUI() As VisualElement
+  overridden: UnityEditor.Editor.CreateInspectorGUI
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI*
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  commentId: N:SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  nameWithType: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+    name: RuntimeSets
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+    name: Editor
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+    name: RuntimeSets
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
+    name: Editor
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.Editor.CreateInspectorGUI
+  commentId: M:UnityEditor.Editor.CreateInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: CreateInspectorGUI()
+  nameWithType: Editor.CreateInspectorGUI()
+  fullName: UnityEditor.Editor.CreateInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.CreateInspectorGUI
+    name: CreateInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.CreateInspectorGUI
+    name: CreateInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_Editor_GameObjectRuntimeSetSOEditor_CreateInspectorGUI
+  name: CreateInspectorGUI
+  nameWithType: GameObjectRuntimeSetSOEditor.CreateInspectorGUI
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor.GameObjectRuntimeSetSOEditor.CreateInspectorGUI
+- uid: UnityEngine.UIElements.VisualElement
+  commentId: T:UnityEngine.UIElements.VisualElement
+  parent: UnityEngine.UIElements
+  isExternal: true
+  name: VisualElement
+  nameWithType: VisualElement
+  fullName: UnityEngine.UIElements.VisualElement
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
+  isExternal: true
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.UIElements
+    name: UIElements
+    isExternal: true

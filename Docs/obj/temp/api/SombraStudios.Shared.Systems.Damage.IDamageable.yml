@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Damage.IDamageable
+  commentId: T:SombraStudios.Shared.Systems.Damage.IDamageable
+  id: IDamageable
+  parent: SombraStudios.Shared.Systems.Damage
+  children:
+  - SombraStudios.Shared.Systems.Damage.IDamageable.Damaged
+  - SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage(SombraStudios.Shared.Systems.Damage.DamageData)
+  langs:
+  - csharp
+  - vb
+  name: IDamageable
+  nameWithType: IDamageable
+  fullName: SombraStudios.Shared.Systems.Damage.IDamageable
+  type: Interface
+  source:
+    remote:
+      path: Systems/Damage/IDamageable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IDamageable
+    path: ../Systems/Damage/IDamageable.cs
+    startLine: 4
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Damage
+  syntax:
+    content: public interface IDamageable
+    content.vb: Public Interface IDamageable
+- uid: SombraStudios.Shared.Systems.Damage.IDamageable.Damaged
+  commentId: P:SombraStudios.Shared.Systems.Damage.IDamageable.Damaged
+  id: Damaged
+  parent: SombraStudios.Shared.Systems.Damage.IDamageable
+  langs:
+  - csharp
+  - vb
+  name: Damaged
+  nameWithType: IDamageable.Damaged
+  fullName: SombraStudios.Shared.Systems.Damage.IDamageable.Damaged
+  type: Property
+  source:
+    remote:
+      path: Systems/Damage/IDamageable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Damaged
+    path: ../Systems/Damage/IDamageable.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Damage
+  syntax:
+    content: Action<DamageData> Damaged { get; set; }
+    parameters: []
+    return:
+      type: System.Action{SombraStudios.Shared.Systems.Damage.DamageData}
+    content.vb: Property Damaged As Action(Of DamageData)
+  overload: SombraStudios.Shared.Systems.Damage.IDamageable.Damaged*
+- uid: SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage(SombraStudios.Shared.Systems.Damage.DamageData)
+  commentId: M:SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage(SombraStudios.Shared.Systems.Damage.DamageData)
+  id: TryTakeDamage(SombraStudios.Shared.Systems.Damage.DamageData)
+  parent: SombraStudios.Shared.Systems.Damage.IDamageable
+  langs:
+  - csharp
+  - vb
+  name: TryTakeDamage(DamageData)
+  nameWithType: IDamageable.TryTakeDamage(DamageData)
+  fullName: SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage(SombraStudios.Shared.Systems.Damage.DamageData)
+  type: Method
+  source:
+    remote:
+      path: Systems/Damage/IDamageable.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryTakeDamage
+    path: ../Systems/Damage/IDamageable.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Damage
+  syntax:
+    content: bool TryTakeDamage(DamageData data)
+    parameters:
+    - id: data
+      type: SombraStudios.Shared.Systems.Damage.DamageData
+    return:
+      type: System.Boolean
+    content.vb: Function TryTakeDamage(data As DamageData) As Boolean
+  overload: SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage*
+references:
+- uid: SombraStudios.Shared.Systems.Damage
+  commentId: N:SombraStudios.Shared.Systems.Damage
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Damage
+  nameWithType: SombraStudios.Shared.Systems.Damage
+  fullName: SombraStudios.Shared.Systems.Damage
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Damage
+    name: Damage
+    href: SombraStudios.Shared.Systems.Damage.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Damage
+    name: Damage
+    href: SombraStudios.Shared.Systems.Damage.html
+- uid: SombraStudios.Shared.Systems.Damage.IDamageable.Damaged*
+  commentId: Overload:SombraStudios.Shared.Systems.Damage.IDamageable.Damaged
+  href: SombraStudios.Shared.Systems.Damage.IDamageable.html#SombraStudios_Shared_Systems_Damage_IDamageable_Damaged
+  name: Damaged
+  nameWithType: IDamageable.Damaged
+  fullName: SombraStudios.Shared.Systems.Damage.IDamageable.Damaged
+- uid: System.Action{SombraStudios.Shared.Systems.Damage.DamageData}
+  commentId: T:System.Action{SombraStudios.Shared.Systems.Damage.DamageData}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<DamageData>
+  nameWithType: Action<DamageData>
+  fullName: System.Action<SombraStudios.Shared.Systems.Damage.DamageData>
+  nameWithType.vb: Action(Of DamageData)
+  fullName.vb: System.Action(Of SombraStudios.Shared.Systems.Damage.DamageData)
+  name.vb: Action(Of DamageData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Damage.DamageData
+    name: DamageData
+    href: SombraStudios.Shared.Systems.Damage.DamageData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Damage.DamageData
+    name: DamageData
+    href: SombraStudios.Shared.Systems.Damage.DamageData.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage*
+  commentId: Overload:SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage
+  href: SombraStudios.Shared.Systems.Damage.IDamageable.html#SombraStudios_Shared_Systems_Damage_IDamageable_TryTakeDamage_SombraStudios_Shared_Systems_Damage_DamageData_
+  name: TryTakeDamage
+  nameWithType: IDamageable.TryTakeDamage
+  fullName: SombraStudios.Shared.Systems.Damage.IDamageable.TryTakeDamage
+- uid: SombraStudios.Shared.Systems.Damage.DamageData
+  commentId: T:SombraStudios.Shared.Systems.Damage.DamageData
+  parent: SombraStudios.Shared.Systems.Damage
+  href: SombraStudios.Shared.Systems.Damage.DamageData.html
+  name: DamageData
+  nameWithType: DamageData
+  fullName: SombraStudios.Shared.Systems.Damage.DamageData
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

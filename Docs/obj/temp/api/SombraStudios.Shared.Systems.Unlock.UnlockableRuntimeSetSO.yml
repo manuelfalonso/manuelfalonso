@@ -1,0 +1,944 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  commentId: T:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  id: UnlockableRuntimeSetSO
+  parent: SombraStudios.Shared.Systems.Unlock
+  children:
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.CheckUnlockConditionListener
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EVENT_TITLE
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.OnUnlockedTrigger
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  langs:
+  - csharp
+  - vb
+  name: UnlockableRuntimeSetSO
+  nameWithType: UnlockableRuntimeSetSO
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  type: Class
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnlockableRuntimeSetSO
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "UnlockableSet", menuName = "Sombra Studios/Unlockable/Unlockable Runtime Set")]
+
+      public class UnlockableRuntimeSetSO : RuntimeSetSO<UnlockableSO>
+    content.vb: >-
+      <CreateAssetMenu(fileName:="UnlockableSet", menuName:="Sombra Studios/Unlockable/Unlockable Runtime Set")>
+
+      Public Class UnlockableRuntimeSetSO Inherits RuntimeSetSO(Of UnlockableSO)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  inheritedMembers:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.LOG_CATEGORY
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._showLogs
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Items
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: UnlockableSet
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Unlockable/Unlockable Runtime Set
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EVENT_TITLE
+  commentId: F:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EVENT_TITLE
+  id: EVENT_TITLE
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: EVENT_TITLE
+  nameWithType: UnlockableRuntimeSetSO.EVENT_TITLE
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EVENT_TITLE
+  type: Field
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EVENT_TITLE
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  syntax:
+    content: protected const string EVENT_TITLE = "Events"
+    return:
+      type: System.String
+    content.vb: Protected Const EVENT_TITLE As String = "Events"
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.CheckUnlockConditionListener
+  commentId: F:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.CheckUnlockConditionListener
+  id: CheckUnlockConditionListener
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: CheckUnlockConditionListener
+  nameWithType: UnlockableRuntimeSetSO.CheckUnlockConditionListener
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.CheckUnlockConditionListener
+  type: Field
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CheckUnlockConditionListener
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  syntax:
+    content: >-
+      [Header("Events")]
+
+      [Tooltip("Event listener when the unlock condition of the unlockable collection should be checked.")]
+
+      public VoidEventChannelSO CheckUnlockConditionListener
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+    content.vb: >-
+      <Header("Events")>
+
+      <Tooltip("Event listener when the unlock condition of the unlockable collection should be checked.")>
+
+      Public CheckUnlockConditionListener As VoidEventChannelSO
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event listener when the unlock condition of the unlockable collection should be checked.
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.OnUnlockedTrigger
+  commentId: F:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.OnUnlockedTrigger
+  id: OnUnlockedTrigger
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: OnUnlockedTrigger
+  nameWithType: UnlockableRuntimeSetSO.OnUnlockedTrigger
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.OnUnlockedTrigger
+  type: Field
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnUnlockedTrigger
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Event triggered when the unlockable collection objects are unlocked.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("Event triggered when the unlockable collection objects are unlocked.")]
+
+      public VoidEventChannelSO OnUnlockedTrigger
+    return:
+      type: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+    content.vb: >-
+      <Tooltip("Event triggered when the unlockable collection objects are unlocked.")>
+
+      Public OnUnlockedTrigger As VoidEventChannelSO
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Event triggered when the unlockable collection objects are unlocked.
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects
+  commentId: M:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects
+  id: GetUnlockedObjects
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: GetUnlockedObjects()
+  nameWithType: UnlockableRuntimeSetSO.GetUnlockedObjects()
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects()
+  type: Method
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetUnlockedObjects
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Returns all currently unlocked objects.
+  example: []
+  syntax:
+    content: public IEnumerable<UnlockableSO> GetUnlockedObjects()
+    return:
+      type: System.Collections.Generic.IEnumerable{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+    content.vb: Public Function GetUnlockedObjects() As IEnumerable(Of UnlockableSO)
+  overload: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects*
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  id: IsUnlocked(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: IsUnlocked(UnlockableSO)
+  nameWithType: UnlockableRuntimeSetSO.IsUnlocked(UnlockableSO)
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  type: Method
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsUnlocked
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Checks if a specific unlockable is unlocked.
+  example: []
+  syntax:
+    content: public bool IsUnlocked(UnlockableSO unlockable)
+    parameters:
+    - id: unlockable
+      type: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+      description: The unlockable object to check.
+    return:
+      type: System.Boolean
+      description: True if unlocked, false otherwise.
+    content.vb: Public Function IsUnlocked(unlockable As UnlockableSO) As Boolean
+  overload: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked*
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked
+  commentId: M:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked
+  id: AreAllUnlocked
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: AreAllUnlocked()
+  nameWithType: UnlockableRuntimeSetSO.AreAllUnlocked()
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked()
+  type: Method
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AreAllUnlocked
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 59
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Checks if all unlockables are unlocked.
+  example: []
+  syntax:
+    content: public bool AreAllUnlocked()
+    return:
+      type: System.Boolean
+      description: True if all he unlockables are unlocked, false otherwise.
+    content.vb: Public Function AreAllUnlocked() As Boolean
+  overload: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked*
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked
+  commentId: M:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked
+  id: EvaluateAreAllUnlocked
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: EvaluateAreAllUnlocked()
+  nameWithType: UnlockableRuntimeSetSO.EvaluateAreAllUnlocked()
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked()
+  type: Method
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EvaluateAreAllUnlocked
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 75
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Checks if all unlockables are unlocked.
+  example: []
+  syntax:
+    content: public void EvaluateAreAllUnlocked()
+    content.vb: Public Sub EvaluateAreAllUnlocked()
+  overload: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked*
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  id: Unlock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: Unlock(UnlockableSO)
+  nameWithType: UnlockableRuntimeSetSO.Unlock(UnlockableSO)
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  type: Method
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Unlock
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 81
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Forcefully unlocks an object.
+  example: []
+  syntax:
+    content: public void Unlock(UnlockableSO unlockable)
+    parameters:
+    - id: unlockable
+      type: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+      description: The object to unlock.
+    content.vb: Public Sub Unlock(unlockable As UnlockableSO)
+  overload: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock*
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  id: Lock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: Lock(UnlockableSO)
+  nameWithType: UnlockableRuntimeSetSO.Lock(UnlockableSO)
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  type: Method
+  source:
+    remote:
+      path: Systems/Unlock/UnlockableRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Lock
+    path: ../Systems/Unlock/UnlockableRuntimeSetSO.cs
+    startLine: 92
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Unlock
+  summary: Forcefully locks an object.
+  example: []
+  syntax:
+    content: public void Lock(UnlockableSO unlockable)
+    parameters:
+    - id: unlockable
+      type: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    content.vb: Public Sub Lock(unlockable As UnlockableSO)
+  overload: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock*
+references:
+- uid: SombraStudios.Shared.Systems.Unlock
+  commentId: N:SombraStudios.Shared.Systems.Unlock
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Unlock
+  nameWithType: SombraStudios.Shared.Systems.Unlock
+  fullName: SombraStudios.Shared.Systems.Unlock
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Unlock
+    name: Unlock
+    href: SombraStudios.Shared.Systems.Unlock.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Unlock
+    name: Unlock
+    href: SombraStudios.Shared.Systems.Unlock.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  commentId: T:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: RuntimeSetSO<UnlockableSO>
+  nameWithType: RuntimeSetSO<UnlockableSO>
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  name.vb: RuntimeSetSO(Of UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.LOG_CATEGORY
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: RuntimeSetSO<UnlockableSO>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.LOG_CATEGORY
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: RuntimeSetSO<UnlockableSO>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.PROPERTIES_TITLE
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: RuntimeSetSO<UnlockableSO>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.DEBUG_TITLE
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
+  name: _showLogs
+  nameWithType: RuntimeSetSO<UnlockableSO>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>._showLogs
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Items
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Items
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  name: Items
+  nameWithType: RuntimeSetSO<UnlockableSO>.Items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Items
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Items
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: Add(UnlockableSO)
+  nameWithType: RuntimeSetSO<UnlockableSO>.Add(UnlockableSO)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Add(UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: Add
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: Add
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: Remove(UnlockableSO)
+  nameWithType: RuntimeSetSO<UnlockableSO>.Remove(UnlockableSO)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Remove(UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: Remove
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: Remove
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  name: RuntimeSetSO<T>
+  nameWithType: RuntimeSetSO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>
+  nameWithType.vb: RuntimeSetSO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)
+  name.vb: RuntimeSetSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  commentId: N:SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  nameWithType: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+    name: RuntimeSets
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+    name: RuntimeSets
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.html
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: RuntimeSetSO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.LOG_CATEGORY
+  nameWithType.vb: RuntimeSetSO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: RuntimeSetSO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.PROPERTIES_TITLE
+  nameWithType.vb: RuntimeSetSO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: RuntimeSetSO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.DEBUG_TITLE
+  nameWithType.vb: RuntimeSetSO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1__showLogs
+  name: _showLogs
+  nameWithType: RuntimeSetSO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._showLogs
+  nameWithType.vb: RuntimeSetSO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Items
+  name: Items
+  nameWithType: RuntimeSetSO<T>.Items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Items
+  nameWithType.vb: RuntimeSetSO(Of T).Items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Items
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  name: Add(T)
+  nameWithType: RuntimeSetSO<T>.Add(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Add(T)
+  nameWithType.vb: RuntimeSetSO(Of T).Add(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Add(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+    name: Add
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+    name: Add
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  name: Remove(T)
+  nameWithType: RuntimeSetSO<T>.Remove(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Remove(T)
+  nameWithType.vb: RuntimeSetSO(Of T).Remove(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Remove(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+    name: Remove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+    name: Remove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.html
+  name: VoidEventChannelSO
+  nameWithType: VoidEventChannelSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.html
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects*
+  commentId: Overload:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html#SombraStudios_Shared_Systems_Unlock_UnlockableRuntimeSetSO_GetUnlockedObjects
+  name: GetUnlockedObjects
+  nameWithType: UnlockableRuntimeSetSO.GetUnlockedObjects
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.GetUnlockedObjects
+- uid: System.Collections.Generic.IEnumerable{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  commentId: T:System.Collections.Generic.IEnumerable{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<UnlockableSO>
+  nameWithType: IEnumerable<UnlockableSO>
+  fullName: System.Collections.Generic.IEnumerable<SombraStudios.Shared.Systems.Unlock.UnlockableSO>
+  nameWithType.vb: IEnumerable(Of UnlockableSO)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  name.vb: IEnumerable(Of UnlockableSO)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked*
+  commentId: Overload:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html#SombraStudios_Shared_Systems_Unlock_UnlockableRuntimeSetSO_IsUnlocked_SombraStudios_Shared_Systems_Unlock_UnlockableSO_
+  name: IsUnlocked
+  nameWithType: UnlockableRuntimeSetSO.IsUnlocked
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.IsUnlocked
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+  commentId: T:SombraStudios.Shared.Systems.Unlock.UnlockableSO
+  parent: SombraStudios.Shared.Systems.Unlock
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: UnlockableSO
+  nameWithType: UnlockableSO
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked*
+  commentId: Overload:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html#SombraStudios_Shared_Systems_Unlock_UnlockableRuntimeSetSO_AreAllUnlocked
+  name: AreAllUnlocked
+  nameWithType: UnlockableRuntimeSetSO.AreAllUnlocked
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.AreAllUnlocked
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked*
+  commentId: Overload:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html#SombraStudios_Shared_Systems_Unlock_UnlockableRuntimeSetSO_EvaluateAreAllUnlocked
+  name: EvaluateAreAllUnlocked
+  nameWithType: UnlockableRuntimeSetSO.EvaluateAreAllUnlocked
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.EvaluateAreAllUnlocked
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock*
+  commentId: Overload:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html#SombraStudios_Shared_Systems_Unlock_UnlockableRuntimeSetSO_Unlock_SombraStudios_Shared_Systems_Unlock_UnlockableSO_
+  name: Unlock
+  nameWithType: UnlockableRuntimeSetSO.Unlock
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Unlock
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock*
+  commentId: Overload:SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html#SombraStudios_Shared_Systems_Unlock_UnlockableRuntimeSetSO_Lock_SombraStudios_Shared_Systems_Unlock_UnlockableSO_
+  name: Lock
+  nameWithType: UnlockableRuntimeSetSO.Lock
+  fullName: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.Lock

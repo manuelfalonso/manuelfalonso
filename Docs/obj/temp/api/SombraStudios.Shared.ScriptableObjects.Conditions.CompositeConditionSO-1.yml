@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1
+  id: CompositeConditionSO`1
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions
+  children:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1.IsValid(`0)
+  langs:
+  - csharp
+  - vb
+  name: CompositeConditionSO<T>
+  nameWithType: CompositeConditionSO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO<T>
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/CompositeConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CompositeConditionSO
+    path: ../ScriptableObjects/Conditions/CompositeConditionSO.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: >-
+    Abstract base class for composite condition ScriptableObjects with a parameterized type.
+
+    Inherits from ConditionSO with the same type parameter.
+  example: []
+  syntax:
+    content: 'public abstract class CompositeConditionSO<T> : ConditionSO<T>, ICondition<T>'
+    typeParameters:
+    - id: T
+      description: The type of data used by the condition.
+    content.vb: Public MustInherit Class CompositeConditionSO(Of T) Inherits ConditionSO(Of T) Implements ICondition(Of T)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  implements:
+  - SombraStudios.Shared.Interfaces.ICondition{{T}}
+  inheritedMembers:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.LOG_CATEGORY
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}._showLogs
+  nameWithType.vb: CompositeConditionSO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO(Of T)
+  name.vb: CompositeConditionSO(Of T)
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1.IsValid(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1.IsValid(`0)
+  id: IsValid(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1
+  langs:
+  - csharp
+  - vb
+  name: IsValid(T)
+  nameWithType: CompositeConditionSO<T>.IsValid(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO<T>.IsValid(T)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/CompositeConditionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsValid
+    path: ../ScriptableObjects/Conditions/CompositeConditionSO.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Checks if the composite condition is met.
+  example: []
+  syntax:
+    content: public override bool IsValid(T data)
+    parameters:
+    - id: data
+      type: '{T}'
+      description: The data needed to check the condition.
+    return:
+      type: System.Boolean
+      description: True if the composite condition is met, false otherwise.
+    content.vb: Public Overrides Function IsValid(data As T) As Boolean
+  overridden: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.IsValid({T})
+  overload: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1.IsValid*
+  nameWithType.vb: CompositeConditionSO(Of T).IsValid(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO(Of T).IsValid(T)
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Conditions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Conditions
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Conditions
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions
+  definition: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html
+  name: ConditionSO<T>
+  nameWithType: ConditionSO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>
+  nameWithType.vb: ConditionSO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)
+  name.vb: ConditionSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.ICondition{{T}}
+  commentId: T:SombraStudios.Shared.Interfaces.ICondition{`0}
+  parent: SombraStudios.Shared.Interfaces
+  definition: SombraStudios.Shared.Interfaces.ICondition`1
+  name: ICondition<T>
+  nameWithType: ICondition<T>
+  fullName: SombraStudios.Shared.Interfaces.ICondition<T>
+  nameWithType.vb: ICondition(Of T)
+  fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T)
+  name.vb: ICondition(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}.LOG_CATEGORY
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: ConditionSO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.LOG_CATEGORY
+  nameWithType.vb: ConditionSO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}.DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: ConditionSO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.DEBUG_TITLE
+  nameWithType.vb: ConditionSO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}.PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: ConditionSO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.PROPERTIES_TITLE
+  nameWithType.vb: ConditionSO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}._showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1__showLogs
+  name: _showLogs
+  nameWithType: ConditionSO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>._showLogs
+  nameWithType.vb: ConditionSO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)._showLogs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html
+  name: ConditionSO<T>
+  nameWithType: ConditionSO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>
+  nameWithType.vb: ConditionSO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)
+  name.vb: ConditionSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.ICondition`1
+  commentId: T:SombraStudios.Shared.Interfaces.ICondition`1
+  href: SombraStudios.Shared.Interfaces.ICondition-1.html
+  name: ICondition<T>
+  nameWithType: ICondition<T>
+  fullName: SombraStudios.Shared.Interfaces.ICondition<T>
+  nameWithType.vb: ICondition(Of T)
+  fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T)
+  name.vb: ICondition(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+    href: SombraStudios.Shared.Interfaces.ICondition-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Interfaces.ICondition`1
+    name: ICondition
+    href: SombraStudios.Shared.Interfaces.ICondition-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: ConditionSO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.LOG_CATEGORY
+  nameWithType.vb: ConditionSO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: ConditionSO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.DEBUG_TITLE
+  nameWithType.vb: ConditionSO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: ConditionSO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.PROPERTIES_TITLE
+  nameWithType.vb: ConditionSO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1__showLogs
+  name: _showLogs
+  nameWithType: ConditionSO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>._showLogs
+  nameWithType.vb: ConditionSO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}.IsValid({T})
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}.IsValid(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{{T}}
+  definition: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  name: IsValid(T)
+  nameWithType: ConditionSO<T>.IsValid(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.IsValid(T)
+  nameWithType.vb: ConditionSO(Of T).IsValid(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).IsValid(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}.IsValid(`0)
+    name: IsValid
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{`0}.IsValid(`0)
+    name: IsValid
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1.IsValid*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1.IsValid
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_CompositeConditionSO_1_IsValid__0_
+  name: IsValid
+  nameWithType: CompositeConditionSO<T>.IsValid
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO<T>.IsValid
+  nameWithType.vb: CompositeConditionSO(Of T).IsValid
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO(Of T).IsValid
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  name: IsValid(T)
+  nameWithType: ConditionSO<T>.IsValid(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>.IsValid(T)
+  nameWithType.vb: ConditionSO(Of T).IsValid(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T).IsValid(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+    name: IsValid
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1.IsValid(`0)
+    name: IsValid
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO-1.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_1_IsValid__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+  id: ICommand`1
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Execute(`0)
+  - SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Undo(`0)
+  langs:
+  - csharp
+  - vb
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand<T>
+  type: Interface
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/ICommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ICommand
+    path: ../Patterns/Behavioural/Command/ICommand.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: >-
+    This interface defines the minimum functionality for creating the command design pattern
+
+    with a parameterized type.
+
+
+    In the concrete class implementing the functionality, the Undo method contains the logic
+
+    to restore the object's state after running the Execute method.
+  example: []
+  syntax:
+    content: public interface ICommand<T>
+    typeParameters:
+    - id: T
+      description: The type of data used by the command.
+    content.vb: Public Interface ICommand(Of T)
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand(Of T)
+  name.vb: ICommand(Of T)
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Execute(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Execute(`0)
+  id: Execute(`0)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: Execute(T)
+  nameWithType: ICommand<T>.Execute(T)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand<T>.Execute(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/ICommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Execute
+    path: ../Patterns/Behavioural/Command/ICommand.cs
+    startLine: 36
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: Executes the command with the provided data.
+  example: []
+  syntax:
+    content: void Execute(T data)
+    parameters:
+    - id: data
+      type: '{T}'
+      description: The data needed for the command execution.
+    content.vb: Sub Execute(data As T)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Execute*
+  nameWithType.vb: ICommand(Of T).Execute(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand(Of T).Execute(T)
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Undo(`0)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Undo(`0)
+  id: Undo(`0)
+  parent: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: Undo(T)
+  nameWithType: ICommand<T>.Undo(T)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand<T>.Undo(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Behavioural/Command/ICommand.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Undo
+    path: ../Patterns/Behavioural/Command/ICommand.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Command
+  summary: Undoes the command with the provided data, restoring the object's state.
+  example: []
+  syntax:
+    content: void Undo(T data)
+    parameters:
+    - id: data
+      type: '{T}'
+      description: The data needed for the command undo operation.
+    content.vb: Sub Undo(data As T)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Undo*
+  nameWithType.vb: ICommand(Of T).Undo(T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand(Of T).Undo(T)
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Command
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Command
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Command
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command
+    name: Command
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Execute*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Execute
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand-1.html#SombraStudios_Shared_Patterns_Behavioural_Command_ICommand_1_Execute__0_
+  name: Execute
+  nameWithType: ICommand<T>.Execute
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand<T>.Execute
+  nameWithType.vb: ICommand(Of T).Execute
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand(Of T).Execute
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Undo*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1.Undo
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand-1.html#SombraStudios_Shared_Patterns_Behavioural_Command_ICommand_1_Undo__0_
+  name: Undo
+  nameWithType: ICommand<T>.Undo
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand<T>.Undo
+  nameWithType.vb: ICommand(Of T).Undo
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand(Of T).Undo

@@ -1,0 +1,644 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  commentId: T:SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  id: GameStateSO`1
+  parent: SombraStudios.Shared.Systems.GameState
+  children:
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.AddGameState(`0)
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameState
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameStateChanged
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasAnyGameState(`0)
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasGameState(`0)
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.IsEqualGameState(`0)
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.RemoveGameState(`0)
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetGameState
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetOnEnable
+  - SombraStudios.Shared.Systems.GameState.GameStateSO`1.SetGameState(`0)
+  langs:
+  - csharp
+  - vb
+  name: GameStateSO<T>
+  nameWithType: GameStateSO<T>
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>
+  type: Class
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameStateSO
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Abstract base class for managing game states using a ScriptableObject.
+  example: []
+  syntax:
+    content: 'public abstract class GameStateSO<T> : ScriptableObject where T : Enum'
+    typeParameters:
+    - id: T
+      description: An Enum type representing the game states.
+    content.vb: Public MustInherit Class GameStateSO(Of T As [Enum]) Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  nameWithType.vb: GameStateSO(Of T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T)
+  name.vb: GameStateSO(Of T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameState
+  commentId: P:SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameState
+  id: GameState
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: GameState
+  nameWithType: GameStateSO<T>.GameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.GameState
+  type: Property
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 27
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: >-
+    Gets or sets the current game state.  
+
+    Triggers the <xref href="SombraStudios.Shared.Systems.GameState.GameStateSO%601.GameStateChanged" data-throw-if-not-resolved="false"></xref> event when the state changes.
+  example: []
+  syntax:
+    content: public T GameState { get; protected set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property GameState As T
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameState*
+  nameWithType.vb: GameStateSO(Of T).GameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).GameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameStateChanged
+  commentId: E:SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameStateChanged
+  id: GameStateChanged
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: GameStateChanged
+  nameWithType: GameStateSO<T>.GameStateChanged
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.GameStateChanged
+  type: Event
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameStateChanged
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 46
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Event triggered when the game state changes.
+  example: []
+  syntax:
+    content: public event UnityAction<T> GameStateChanged
+    return:
+      type: UnityEngine.Events.UnityAction{{T}}
+    content.vb: Public Event GameStateChanged As UnityAction(Of T)
+  nameWithType.vb: GameStateSO(Of T).GameStateChanged
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).GameStateChanged
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.SetGameState(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.SetGameState(`0)
+  id: SetGameState(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: SetGameState(T)
+  nameWithType: GameStateSO<T>.SetGameState(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.SetGameState(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 65
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Sets the game state to a new value.
+  example: []
+  syntax:
+    content: public void SetGameState(T newGameState)
+    parameters:
+    - id: newGameState
+      type: '{T}'
+      description: The new game state to set.
+    content.vb: Public Sub SetGameState(newGameState As T)
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.SetGameState*
+  nameWithType.vb: GameStateSO(Of T).SetGameState(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).SetGameState(T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetGameState
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetGameState
+  id: ResetGameState
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: ResetGameState()
+  nameWithType: GameStateSO<T>.ResetGameState()
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.ResetGameState()
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 70
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Resets the game state to its default value.
+  example: []
+  syntax:
+    content: public void ResetGameState()
+    content.vb: Public Sub ResetGameState()
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetGameState*
+  nameWithType.vb: GameStateSO(Of T).ResetGameState()
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).ResetGameState()
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.AddGameState(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.AddGameState(`0)
+  id: AddGameState(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: AddGameState(T)
+  nameWithType: GameStateSO<T>.AddGameState(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.AddGameState(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AddGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 76
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Adds a new game state to the current state.
+  example: []
+  syntax:
+    content: public void AddGameState(T newGameState)
+    parameters:
+    - id: newGameState
+      type: '{T}'
+      description: The game state to add.
+    content.vb: Public Sub AddGameState(newGameState As T)
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.AddGameState*
+  nameWithType.vb: GameStateSO(Of T).AddGameState(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).AddGameState(T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.RemoveGameState(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.RemoveGameState(`0)
+  id: RemoveGameState(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveGameState(T)
+  nameWithType: GameStateSO<T>.RemoveGameState(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.RemoveGameState(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RemoveGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 82
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Removes a specific game state from the current state.
+  example: []
+  syntax:
+    content: public void RemoveGameState(T gameStateToRemove)
+    parameters:
+    - id: gameStateToRemove
+      type: '{T}'
+      description: The game state to remove.
+    content.vb: Public Sub RemoveGameState(gameStateToRemove As T)
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.RemoveGameState*
+  nameWithType.vb: GameStateSO(Of T).RemoveGameState(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).RemoveGameState(T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasGameState(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasGameState(`0)
+  id: HasGameState(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: HasGameState(T)
+  nameWithType: GameStateSO<T>.HasGameState(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.HasGameState(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 89
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Checks if the current game state contains a specific state.
+  example: []
+  syntax:
+    content: public bool HasGameState(T gameState)
+    parameters:
+    - id: gameState
+      type: '{T}'
+      description: The game state to check.
+    return:
+      type: System.Boolean
+      description: True if the current state contains the specified state; otherwise, false.
+    content.vb: Public Function HasGameState(gameState As T) As Boolean
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasGameState*
+  nameWithType.vb: GameStateSO(Of T).HasGameState(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).HasGameState(T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasAnyGameState(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasAnyGameState(`0)
+  id: HasAnyGameState(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: HasAnyGameState(T)
+  nameWithType: GameStateSO<T>.HasAnyGameState(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.HasAnyGameState(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasAnyGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 96
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Checks if the current game state contains any of the specified states.
+  example: []
+  syntax:
+    content: public bool HasAnyGameState(T gameStates)
+    parameters:
+    - id: gameStates
+      type: '{T}'
+      description: The game states to check.
+    return:
+      type: System.Boolean
+      description: True if the current state contains any of the specified states; otherwise, false.
+    content.vb: Public Function HasAnyGameState(gameStates As T) As Boolean
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasAnyGameState*
+  nameWithType.vb: GameStateSO(Of T).HasAnyGameState(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).HasAnyGameState(T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.IsEqualGameState(`0)
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.IsEqualGameState(`0)
+  id: IsEqualGameState(`0)
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: IsEqualGameState(T)
+  nameWithType: GameStateSO<T>.IsEqualGameState(T)
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.IsEqualGameState(T)
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsEqualGameState
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 103
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: Checks if the current game state is equal to a specific state.
+  example: []
+  syntax:
+    content: public bool IsEqualGameState(T gameState)
+    parameters:
+    - id: gameState
+      type: '{T}'
+      description: The game state to compare.
+    return:
+      type: System.Boolean
+      description: True if the current state is equal to the specified state; otherwise, false.
+    content.vb: Public Function IsEqualGameState(gameState As T) As Boolean
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.IsEqualGameState*
+  nameWithType.vb: GameStateSO(Of T).IsEqualGameState(T)
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).IsEqualGameState(T)
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetOnEnable
+  commentId: M:SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetOnEnable
+  id: ResetOnEnable
+  parent: SombraStudios.Shared.Systems.GameState.GameStateSO`1
+  langs:
+  - csharp
+  - vb
+  name: ResetOnEnable()
+  nameWithType: GameStateSO<T>.ResetOnEnable()
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.ResetOnEnable()
+  type: Method
+  source:
+    remote:
+      path: Systems/GameState/GameStateSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetOnEnable
+    path: ../Systems/GameState/GameStateSO.cs
+    startLine: 111
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.GameState
+  summary: >-
+    Resets the game state when the ScriptableObject is enabled.  
+
+    Must be implemented by derived classes.
+  example: []
+  syntax:
+    content: protected abstract void ResetOnEnable()
+    content.vb: Protected MustOverride Sub ResetOnEnable()
+  overload: SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetOnEnable*
+  nameWithType.vb: GameStateSO(Of T).ResetOnEnable()
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).ResetOnEnable()
+references:
+- uid: SombraStudios.Shared.Systems.GameState
+  commentId: N:SombraStudios.Shared.Systems.GameState
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.GameState
+  nameWithType: SombraStudios.Shared.Systems.GameState
+  fullName: SombraStudios.Shared.Systems.GameState
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.GameState
+    name: GameState
+    href: SombraStudios.Shared.Systems.GameState.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.GameState
+    name: GameState
+    href: SombraStudios.Shared.Systems.GameState.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameStateChanged
+  commentId: E:SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameStateChanged
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_GameStateChanged
+  name: GameStateChanged
+  nameWithType: GameStateSO<T>.GameStateChanged
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.GameStateChanged
+  nameWithType.vb: GameStateSO(Of T).GameStateChanged
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).GameStateChanged
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.GameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_GameState
+  name: GameState
+  nameWithType: GameStateSO<T>.GameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.GameState
+  nameWithType.vb: GameStateSO(Of T).GameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).GameState
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UnityEngine.Events.UnityAction{{T}}
+  commentId: T:UnityEngine.Events.UnityAction{`0}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityAction`1
+  name: UnityAction<T>
+  nameWithType: UnityAction<T>
+  fullName: UnityEngine.Events.UnityAction<T>
+  nameWithType.vb: UnityAction(Of T)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T)
+  name.vb: UnityAction(Of T)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Events.UnityAction`1
+  commentId: T:UnityEngine.Events.UnityAction`1
+  isExternal: true
+  name: UnityAction<T0>
+  nameWithType: UnityAction<T0>
+  fullName: UnityEngine.Events.UnityAction<T0>
+  nameWithType.vb: UnityAction(Of T0)
+  fullName.vb: UnityEngine.Events.UnityAction(Of T0)
+  name.vb: UnityAction(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityAction`1
+    name: UnityAction
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.SetGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.SetGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_SetGameState__0_
+  name: SetGameState
+  nameWithType: GameStateSO<T>.SetGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.SetGameState
+  nameWithType.vb: GameStateSO(Of T).SetGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).SetGameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_ResetGameState
+  name: ResetGameState
+  nameWithType: GameStateSO<T>.ResetGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.ResetGameState
+  nameWithType.vb: GameStateSO(Of T).ResetGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).ResetGameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.AddGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.AddGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_AddGameState__0_
+  name: AddGameState
+  nameWithType: GameStateSO<T>.AddGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.AddGameState
+  nameWithType.vb: GameStateSO(Of T).AddGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).AddGameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.RemoveGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.RemoveGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_RemoveGameState__0_
+  name: RemoveGameState
+  nameWithType: GameStateSO<T>.RemoveGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.RemoveGameState
+  nameWithType.vb: GameStateSO(Of T).RemoveGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).RemoveGameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_HasGameState__0_
+  name: HasGameState
+  nameWithType: GameStateSO<T>.HasGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.HasGameState
+  nameWithType.vb: GameStateSO(Of T).HasGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).HasGameState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasAnyGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.HasAnyGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_HasAnyGameState__0_
+  name: HasAnyGameState
+  nameWithType: GameStateSO<T>.HasAnyGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.HasAnyGameState
+  nameWithType.vb: GameStateSO(Of T).HasAnyGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).HasAnyGameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.IsEqualGameState*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.IsEqualGameState
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_IsEqualGameState__0_
+  name: IsEqualGameState
+  nameWithType: GameStateSO<T>.IsEqualGameState
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.IsEqualGameState
+  nameWithType.vb: GameStateSO(Of T).IsEqualGameState
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).IsEqualGameState
+- uid: SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetOnEnable*
+  commentId: Overload:SombraStudios.Shared.Systems.GameState.GameStateSO`1.ResetOnEnable
+  href: SombraStudios.Shared.Systems.GameState.GameStateSO-1.html#SombraStudios_Shared_Systems_GameState_GameStateSO_1_ResetOnEnable
+  name: ResetOnEnable
+  nameWithType: GameStateSO<T>.ResetOnEnable
+  fullName: SombraStudios.Shared.Systems.GameState.GameStateSO<T>.ResetOnEnable
+  nameWithType.vb: GameStateSO(Of T).ResetOnEnable
+  fullName.vb: SombraStudios.Shared.Systems.GameState.GameStateSO(Of T).ResetOnEnable

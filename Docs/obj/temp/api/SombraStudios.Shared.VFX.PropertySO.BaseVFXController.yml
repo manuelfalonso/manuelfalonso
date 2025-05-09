@@ -1,0 +1,760 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  id: BaseVFXController
+  parent: SombraStudios.Shared.VFX.PropertySO
+  children:
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(UnityEngine.AnimationEvent)
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.DEBUG_TITLE
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.PROPERTIES_TITLE
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(UnityEngine.AnimationEvent)
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest
+  - SombraStudios.Shared.VFX.PropertySO.BaseVFXController.TESTING_TITLE
+  langs:
+  - csharp
+  - vb
+  name: BaseVFXController
+  nameWithType: BaseVFXController
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  type: Class
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BaseVFXController
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: 'public class BaseVFXController : MonoBehaviour'
+    content.vb: Public Class BaseVFXController Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.PROPERTIES_TITLE
+  id: PROPERTIES_TITLE
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: PROPERTIES_TITLE
+  nameWithType: BaseVFXController.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.PROPERTIES_TITLE
+  type: Field
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PROPERTIES_TITLE
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: protected const string PROPERTIES_TITLE = "Properties"
+    return:
+      type: System.String
+    content.vb: Protected Const PROPERTIES_TITLE As String = "Properties"
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.DEBUG_TITLE
+  id: DEBUG_TITLE
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: DEBUG_TITLE
+  nameWithType: BaseVFXController.DEBUG_TITLE
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.DEBUG_TITLE
+  type: Field
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DEBUG_TITLE
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: protected const string DEBUG_TITLE = "Debug"
+    return:
+      type: System.String
+    content.vb: Protected Const DEBUG_TITLE As String = "Debug"
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.TESTING_TITLE
+  commentId: F:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.TESTING_TITLE
+  id: TESTING_TITLE
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: TESTING_TITLE
+  nameWithType: BaseVFXController.TESTING_TITLE
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.TESTING_TITLE
+  type: Field
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TESTING_TITLE
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: protected const string TESTING_TITLE = "Testing"
+    return:
+      type: System.String
+    content.vb: Protected Const TESTING_TITLE As String = "Testing"
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers
+  commentId: P:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers
+  id: Renderers
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: Renderers
+  nameWithType: BaseVFXController.Renderers
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers
+  type: Property
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Renderers
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public List<Renderer> Renderers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Renderer}
+    content.vb: Public ReadOnly Property Renderers As List(Of Renderer)
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  id: ApplyVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: ApplyVFX(VFXPropertySO)
+  nameWithType: BaseVFXController.ApplyVFX(VFXPropertySO)
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ApplyVFX
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public virtual void ApplyVFX(VFXPropertySO vfx)
+    parameters:
+    - id: vfx
+      type: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+    content.vb: Public Overridable Sub ApplyVFX(vfx As VFXPropertySO)
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(UnityEngine.AnimationEvent)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(UnityEngine.AnimationEvent)
+  id: ApplyVFX(UnityEngine.AnimationEvent)
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: ApplyVFX(AnimationEvent)
+  nameWithType: BaseVFXController.ApplyVFX(AnimationEvent)
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX(UnityEngine.AnimationEvent)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ApplyVFX
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public virtual void ApplyVFX(AnimationEvent animationEvent)
+    parameters:
+    - id: animationEvent
+      type: UnityEngine.AnimationEvent
+    content.vb: Public Overridable Sub ApplyVFX(animationEvent As AnimationEvent)
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  id: RevertVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: RevertVFX(VFXPropertySO)
+  nameWithType: BaseVFXController.RevertVFX(VFXPropertySO)
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(SombraStudios.Shared.VFX.PropertySO.VFXPropertySO)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertVFX
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 61
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public virtual void RevertVFX(VFXPropertySO vfx)
+    parameters:
+    - id: vfx
+      type: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+    content.vb: Public Overridable Sub RevertVFX(vfx As VFXPropertySO)
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(UnityEngine.AnimationEvent)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(UnityEngine.AnimationEvent)
+  id: RevertVFX(UnityEngine.AnimationEvent)
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: RevertVFX(AnimationEvent)
+  nameWithType: BaseVFXController.RevertVFX(AnimationEvent)
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX(UnityEngine.AnimationEvent)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertVFX
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 73
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public virtual void RevertVFX(AnimationEvent animationEvent)
+    parameters:
+    - id: animationEvent
+      type: UnityEngine.AnimationEvent
+    content.vb: Public Overridable Sub RevertVFX(animationEvent As AnimationEvent)
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX
+  id: RevertAllVFX
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: RevertAllVFX()
+  nameWithType: BaseVFXController.RevertAllVFX()
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX()
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertAllVFX
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 85
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public virtual void RevertAllVFX()
+    content.vb: Public Overridable Sub RevertAllVFX()
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd
+  id: RevertVFXOnAnimationEnd
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: RevertVFXOnAnimationEnd()
+  nameWithType: BaseVFXController.RevertVFXOnAnimationEnd()
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd()
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertVFXOnAnimationEnd
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 93
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public virtual void RevertVFXOnAnimationEnd()
+    content.vb: Public Overridable Sub RevertVFXOnAnimationEnd()
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest
+  id: ApplyVFXToTest
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: ApplyVFXToTest()
+  nameWithType: BaseVFXController.ApplyVFXToTest()
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest()
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ApplyVFXToTest
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 104
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public void ApplyVFXToTest()
+    content.vb: Public Sub ApplyVFXToTest()
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest*
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest
+  id: RevertVFXToTest
+  parent: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  langs:
+  - csharp
+  - vb
+  name: RevertVFXToTest()
+  nameWithType: BaseVFXController.RevertVFXToTest()
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest()
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/BaseVFXController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertVFXToTest
+    path: ../VFX/PropertySO/BaseVFXController.cs
+    startLine: 109
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  syntax:
+    content: public void RevertVFXToTest()
+    content.vb: Public Sub RevertVFXToTest()
+  overload: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest*
+references:
+- uid: SombraStudios.Shared.VFX.PropertySO
+  commentId: N:SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.html
+  name: SombraStudios.Shared.VFX.PropertySO
+  nameWithType: SombraStudios.Shared.VFX.PropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_Renderers
+  name: Renderers
+  nameWithType: BaseVFXController.Renderers
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.Renderers
+- uid: System.Collections.Generic.List{UnityEngine.Renderer}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Renderer}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Renderer>
+  nameWithType: List<Renderer>
+  fullName: System.Collections.Generic.List<UnityEngine.Renderer>
+  nameWithType.vb: List(Of Renderer)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Renderer)
+  name.vb: List(Of Renderer)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Renderer
+    name: Renderer
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Renderer
+    name: Renderer
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_ApplyVFX_SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_
+  name: ApplyVFX
+  nameWithType: BaseVFXController.ApplyVFX
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFX
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  parent: SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html
+  name: VFXPropertySO
+  nameWithType: VFXPropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+- uid: UnityEngine.AnimationEvent
+  commentId: T:UnityEngine.AnimationEvent
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationEvent
+  nameWithType: AnimationEvent
+  fullName: UnityEngine.AnimationEvent
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_RevertVFX_SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_
+  name: RevertVFX
+  nameWithType: BaseVFXController.RevertVFX
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFX
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_RevertAllVFX
+  name: RevertAllVFX
+  nameWithType: BaseVFXController.RevertAllVFX
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertAllVFX
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_RevertVFXOnAnimationEnd
+  name: RevertVFXOnAnimationEnd
+  nameWithType: BaseVFXController.RevertVFXOnAnimationEnd
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXOnAnimationEnd
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_ApplyVFXToTest
+  name: ApplyVFXToTest
+  nameWithType: BaseVFXController.ApplyVFXToTest
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.ApplyVFXToTest
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html#SombraStudios_Shared_VFX_PropertySO_BaseVFXController_RevertVFXToTest
+  name: RevertVFXToTest
+  nameWithType: BaseVFXController.RevertVFXToTest
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.RevertVFXToTest

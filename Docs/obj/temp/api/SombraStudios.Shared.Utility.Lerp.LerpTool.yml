@@ -5,7 +5,11 @@ items:
   id: LerpTool
   parent: SombraStudios.Shared.Utility.Lerp
   children:
-  - SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Single@,SombraStudios.Shared.Utility.Lerp.LerpValueData)
+  - SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor(System.Action{UnityEngine.Color},SombraStudios.Shared.Utility.Lerp.LerpColorData)
+  - SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion(System.Action{UnityEngine.Quaternion},SombraStudios.Shared.Utility.Lerp.LerpQuaternionData)
+  - SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Action{System.Single},SombraStudios.Shared.Utility.Lerp.LerpValueData)
+  - SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2(System.Action{UnityEngine.Vector2},SombraStudios.Shared.Utility.Lerp.LerpVector2Data)
+  - SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3(System.Action{UnityEngine.Vector3},SombraStudios.Shared.Utility.Lerp.LerpVector3Data)
   langs:
   - csharp
   - vb
@@ -20,25 +24,27 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: LerpTool
     path: ../Utility/Lerp/LerpTool.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - SombraStudios.Shared.Utility
   namespace: SombraStudios.Shared.Utility.Lerp
+  summary: Utility class for performing various types of Lerp operations.
+  example: []
   syntax:
     content: public static class LerpTool
     content.vb: Public Module LerpTool
   inheritance:
   - System.Object
-- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Single@,SombraStudios.Shared.Utility.Lerp.LerpValueData)
-  commentId: M:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Single@,SombraStudios.Shared.Utility.Lerp.LerpValueData)
-  id: LerpValue(System.Single@,SombraStudios.Shared.Utility.Lerp.LerpValueData)
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Action{System.Single},SombraStudios.Shared.Utility.Lerp.LerpValueData)
+  commentId: M:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Action{System.Single},SombraStudios.Shared.Utility.Lerp.LerpValueData)
+  id: LerpValue(System.Action{System.Single},SombraStudios.Shared.Utility.Lerp.LerpValueData)
   parent: SombraStudios.Shared.Utility.Lerp.LerpTool
   langs:
   - csharp
   - vb
-  name: LerpValue(ref float, LerpValueData)
-  nameWithType: LerpTool.LerpValue(ref float, LerpValueData)
-  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(ref float, SombraStudios.Shared.Utility.Lerp.LerpValueData)
+  name: LerpValue(Action<float>, LerpValueData)
+  nameWithType: LerpTool.LerpValue(Action<float>, LerpValueData)
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Action<float>, SombraStudios.Shared.Utility.Lerp.LerpValueData)
   type: Method
   source:
     remote:
@@ -47,22 +53,178 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: LerpValue
     path: ../Utility/Lerp/LerpTool.cs
-    startLine: 11
+    startLine: 20
   assemblies:
   - SombraStudios.Shared.Utility
   namespace: SombraStudios.Shared.Utility.Lerp
+  summary: Performs a Lerp operation on a float value over time.
+  example: []
   syntax:
-    content: public static void LerpValue(ref float value, LerpValueData data)
+    content: public static void LerpValue(Action<float> onValueChanged, LerpValueData data)
     parameters:
-    - id: value
-      type: System.Single
+    - id: onValueChanged
+      type: System.Action{System.Single}
+      description: Callback to update the value during the Lerp.
     - id: data
       type: SombraStudios.Shared.Utility.Lerp.LerpValueData
-    content.vb: Public Shared Sub LerpValue(value As Single, data As LerpValueData)
+      description: Data containing Lerp parameters.
+    content.vb: Public Shared Sub LerpValue(onValueChanged As Action(Of Single), data As LerpValueData)
   overload: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue*
-  nameWithType.vb: LerpTool.LerpValue(Single, LerpValueData)
-  fullName.vb: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(Single, SombraStudios.Shared.Utility.Lerp.LerpValueData)
-  name.vb: LerpValue(Single, LerpValueData)
+  nameWithType.vb: LerpTool.LerpValue(Action(Of Single), LerpValueData)
+  fullName.vb: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue(System.Action(Of Single), SombraStudios.Shared.Utility.Lerp.LerpValueData)
+  name.vb: LerpValue(Action(Of Single), LerpValueData)
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2(System.Action{UnityEngine.Vector2},SombraStudios.Shared.Utility.Lerp.LerpVector2Data)
+  commentId: M:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2(System.Action{UnityEngine.Vector2},SombraStudios.Shared.Utility.Lerp.LerpVector2Data)
+  id: LerpVector2(System.Action{UnityEngine.Vector2},SombraStudios.Shared.Utility.Lerp.LerpVector2Data)
+  parent: SombraStudios.Shared.Utility.Lerp.LerpTool
+  langs:
+  - csharp
+  - vb
+  name: LerpVector2(Action<Vector2>, LerpVector2Data)
+  nameWithType: LerpTool.LerpVector2(Action<Vector2>, LerpVector2Data)
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2(System.Action<UnityEngine.Vector2>, SombraStudios.Shared.Utility.Lerp.LerpVector2Data)
+  type: Method
+  source:
+    remote:
+      path: Utility/Lerp/LerpTool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LerpVector2
+    path: ../Utility/Lerp/LerpTool.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Lerp
+  summary: Performs a Lerp operation on a Vector2 value over time.
+  example: []
+  syntax:
+    content: public static void LerpVector2(Action<Vector2> onValueChanged, LerpVector2Data data)
+    parameters:
+    - id: onValueChanged
+      type: System.Action{UnityEngine.Vector2}
+      description: Callback to update the value during the Lerp.
+    - id: data
+      type: SombraStudios.Shared.Utility.Lerp.LerpVector2Data
+      description: Data containing Lerp parameters.
+    content.vb: Public Shared Sub LerpVector2(onValueChanged As Action(Of Vector2), data As LerpVector2Data)
+  overload: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2*
+  nameWithType.vb: LerpTool.LerpVector2(Action(Of Vector2), LerpVector2Data)
+  fullName.vb: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2(System.Action(Of UnityEngine.Vector2), SombraStudios.Shared.Utility.Lerp.LerpVector2Data)
+  name.vb: LerpVector2(Action(Of Vector2), LerpVector2Data)
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3(System.Action{UnityEngine.Vector3},SombraStudios.Shared.Utility.Lerp.LerpVector3Data)
+  commentId: M:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3(System.Action{UnityEngine.Vector3},SombraStudios.Shared.Utility.Lerp.LerpVector3Data)
+  id: LerpVector3(System.Action{UnityEngine.Vector3},SombraStudios.Shared.Utility.Lerp.LerpVector3Data)
+  parent: SombraStudios.Shared.Utility.Lerp.LerpTool
+  langs:
+  - csharp
+  - vb
+  name: LerpVector3(Action<Vector3>, LerpVector3Data)
+  nameWithType: LerpTool.LerpVector3(Action<Vector3>, LerpVector3Data)
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3(System.Action<UnityEngine.Vector3>, SombraStudios.Shared.Utility.Lerp.LerpVector3Data)
+  type: Method
+  source:
+    remote:
+      path: Utility/Lerp/LerpTool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LerpVector3
+    path: ../Utility/Lerp/LerpTool.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Lerp
+  summary: Performs a Lerp operation on a Vector3 value over time.
+  example: []
+  syntax:
+    content: public static void LerpVector3(Action<Vector3> onValueChanged, LerpVector3Data data)
+    parameters:
+    - id: onValueChanged
+      type: System.Action{UnityEngine.Vector3}
+      description: Callback to update the value during the Lerp.
+    - id: data
+      type: SombraStudios.Shared.Utility.Lerp.LerpVector3Data
+      description: Data containing Lerp parameters.
+    content.vb: Public Shared Sub LerpVector3(onValueChanged As Action(Of Vector3), data As LerpVector3Data)
+  overload: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3*
+  nameWithType.vb: LerpTool.LerpVector3(Action(Of Vector3), LerpVector3Data)
+  fullName.vb: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3(System.Action(Of UnityEngine.Vector3), SombraStudios.Shared.Utility.Lerp.LerpVector3Data)
+  name.vb: LerpVector3(Action(Of Vector3), LerpVector3Data)
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor(System.Action{UnityEngine.Color},SombraStudios.Shared.Utility.Lerp.LerpColorData)
+  commentId: M:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor(System.Action{UnityEngine.Color},SombraStudios.Shared.Utility.Lerp.LerpColorData)
+  id: LerpColor(System.Action{UnityEngine.Color},SombraStudios.Shared.Utility.Lerp.LerpColorData)
+  parent: SombraStudios.Shared.Utility.Lerp.LerpTool
+  langs:
+  - csharp
+  - vb
+  name: LerpColor(Action<Color>, LerpColorData)
+  nameWithType: LerpTool.LerpColor(Action<Color>, LerpColorData)
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor(System.Action<UnityEngine.Color>, SombraStudios.Shared.Utility.Lerp.LerpColorData)
+  type: Method
+  source:
+    remote:
+      path: Utility/Lerp/LerpTool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LerpColor
+    path: ../Utility/Lerp/LerpTool.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Lerp
+  summary: Performs a Lerp operation on a Color value over time.
+  example: []
+  syntax:
+    content: public static void LerpColor(Action<Color> onValueChanged, LerpColorData data)
+    parameters:
+    - id: onValueChanged
+      type: System.Action{UnityEngine.Color}
+      description: Callback to update the value during the Lerp.
+    - id: data
+      type: SombraStudios.Shared.Utility.Lerp.LerpColorData
+      description: Data containing Lerp parameters.
+    content.vb: Public Shared Sub LerpColor(onValueChanged As Action(Of Color), data As LerpColorData)
+  overload: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor*
+  nameWithType.vb: LerpTool.LerpColor(Action(Of Color), LerpColorData)
+  fullName.vb: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor(System.Action(Of UnityEngine.Color), SombraStudios.Shared.Utility.Lerp.LerpColorData)
+  name.vb: LerpColor(Action(Of Color), LerpColorData)
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion(System.Action{UnityEngine.Quaternion},SombraStudios.Shared.Utility.Lerp.LerpQuaternionData)
+  commentId: M:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion(System.Action{UnityEngine.Quaternion},SombraStudios.Shared.Utility.Lerp.LerpQuaternionData)
+  id: LerpQuaternion(System.Action{UnityEngine.Quaternion},SombraStudios.Shared.Utility.Lerp.LerpQuaternionData)
+  parent: SombraStudios.Shared.Utility.Lerp.LerpTool
+  langs:
+  - csharp
+  - vb
+  name: LerpQuaternion(Action<Quaternion>, LerpQuaternionData)
+  nameWithType: LerpTool.LerpQuaternion(Action<Quaternion>, LerpQuaternionData)
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion(System.Action<UnityEngine.Quaternion>, SombraStudios.Shared.Utility.Lerp.LerpQuaternionData)
+  type: Method
+  source:
+    remote:
+      path: Utility/Lerp/LerpTool.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LerpQuaternion
+    path: ../Utility/Lerp/LerpTool.cs
+    startLine: 64
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Lerp
+  summary: Performs a Lerp operation on a Quaternion value over time.
+  example: []
+  syntax:
+    content: public static void LerpQuaternion(Action<Quaternion> onValueChanged, LerpQuaternionData data)
+    parameters:
+    - id: onValueChanged
+      type: System.Action{UnityEngine.Quaternion}
+      description: Callback to update the value during the Lerp.
+    - id: data
+      type: SombraStudios.Shared.Utility.Lerp.LerpQuaternionData
+      description: Data containing Lerp parameters.
+    content.vb: Public Shared Sub LerpQuaternion(onValueChanged As Action(Of Quaternion), data As LerpQuaternionData)
+  overload: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion*
+  nameWithType.vb: LerpTool.LerpQuaternion(Action(Of Quaternion), LerpQuaternionData)
+  fullName.vb: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion(System.Action(Of UnityEngine.Quaternion), SombraStudios.Shared.Utility.Lerp.LerpQuaternionData)
+  name.vb: LerpQuaternion(Action(Of Quaternion), LerpQuaternionData)
 references:
 - uid: SombraStudios.Shared.Utility.Lerp
   commentId: N:SombraStudios.Shared.Utility.Lerp
@@ -122,21 +284,45 @@ references:
   fullName: System
 - uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue*
   commentId: Overload:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue
-  href: SombraStudios.Shared.Utility.Lerp.LerpTool.html#SombraStudios_Shared_Utility_Lerp_LerpTool_LerpValue_System_Single__SombraStudios_Shared_Utility_Lerp_LerpValueData_
+  href: SombraStudios.Shared.Utility.Lerp.LerpTool.html#SombraStudios_Shared_Utility_Lerp_LerpTool_LerpValue_System_Action_System_Single__SombraStudios_Shared_Utility_Lerp_LerpValueData_
   name: LerpValue
   nameWithType: LerpTool.LerpValue
   fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpValue
-- uid: System.Single
-  commentId: T:System.Single
+- uid: System.Action{System.Single}
+  commentId: T:System.Action{System.Single}
   parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<float>
+  nameWithType: Action<float>
+  fullName: System.Action<float>
+  nameWithType.vb: Action(Of Single)
+  fullName.vb: System.Action(Of Single)
+  name.vb: Action(Of Single)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
 - uid: SombraStudios.Shared.Utility.Lerp.LerpValueData
   commentId: T:SombraStudios.Shared.Utility.Lerp.LerpValueData
   parent: SombraStudios.Shared.Utility.Lerp
@@ -144,3 +330,215 @@ references:
   name: LerpValueData
   nameWithType: LerpValueData
   fullName: SombraStudios.Shared.Utility.Lerp.LerpValueData
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2*
+  commentId: Overload:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2
+  href: SombraStudios.Shared.Utility.Lerp.LerpTool.html#SombraStudios_Shared_Utility_Lerp_LerpTool_LerpVector2_System_Action_UnityEngine_Vector2__SombraStudios_Shared_Utility_Lerp_LerpVector2Data_
+  name: LerpVector2
+  nameWithType: LerpTool.LerpVector2
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector2
+- uid: System.Action{UnityEngine.Vector2}
+  commentId: T:System.Action{UnityEngine.Vector2}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Vector2>
+  nameWithType: Action<Vector2>
+  fullName: System.Action<UnityEngine.Vector2>
+  nameWithType.vb: Action(Of Vector2)
+  fullName.vb: System.Action(Of UnityEngine.Vector2)
+  name.vb: Action(Of Vector2)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Utility.Lerp.LerpVector2Data
+  commentId: T:SombraStudios.Shared.Utility.Lerp.LerpVector2Data
+  parent: SombraStudios.Shared.Utility.Lerp
+  href: SombraStudios.Shared.Utility.Lerp.LerpVector2Data.html
+  name: LerpVector2Data
+  nameWithType: LerpVector2Data
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpVector2Data
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3*
+  commentId: Overload:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3
+  href: SombraStudios.Shared.Utility.Lerp.LerpTool.html#SombraStudios_Shared_Utility_Lerp_LerpTool_LerpVector3_System_Action_UnityEngine_Vector3__SombraStudios_Shared_Utility_Lerp_LerpVector3Data_
+  name: LerpVector3
+  nameWithType: LerpTool.LerpVector3
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpVector3
+- uid: System.Action{UnityEngine.Vector3}
+  commentId: T:System.Action{UnityEngine.Vector3}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Vector3>
+  nameWithType: Action<Vector3>
+  fullName: System.Action<UnityEngine.Vector3>
+  nameWithType.vb: Action(Of Vector3)
+  fullName.vb: System.Action(Of UnityEngine.Vector3)
+  name.vb: Action(Of Vector3)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Utility.Lerp.LerpVector3Data
+  commentId: T:SombraStudios.Shared.Utility.Lerp.LerpVector3Data
+  parent: SombraStudios.Shared.Utility.Lerp
+  href: SombraStudios.Shared.Utility.Lerp.LerpVector3Data.html
+  name: LerpVector3Data
+  nameWithType: LerpVector3Data
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpVector3Data
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor*
+  commentId: Overload:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor
+  href: SombraStudios.Shared.Utility.Lerp.LerpTool.html#SombraStudios_Shared_Utility_Lerp_LerpTool_LerpColor_System_Action_UnityEngine_Color__SombraStudios_Shared_Utility_Lerp_LerpColorData_
+  name: LerpColor
+  nameWithType: LerpTool.LerpColor
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpColor
+- uid: System.Action{UnityEngine.Color}
+  commentId: T:System.Action{UnityEngine.Color}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Color>
+  nameWithType: Action<Color>
+  fullName: System.Action<UnityEngine.Color>
+  nameWithType.vb: Action(Of Color)
+  fullName.vb: System.Action(Of UnityEngine.Color)
+  name.vb: Action(Of Color)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Utility.Lerp.LerpColorData
+  commentId: T:SombraStudios.Shared.Utility.Lerp.LerpColorData
+  parent: SombraStudios.Shared.Utility.Lerp
+  href: SombraStudios.Shared.Utility.Lerp.LerpColorData.html
+  name: LerpColorData
+  nameWithType: LerpColorData
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpColorData
+- uid: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion*
+  commentId: Overload:SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion
+  href: SombraStudios.Shared.Utility.Lerp.LerpTool.html#SombraStudios_Shared_Utility_Lerp_LerpTool_LerpQuaternion_System_Action_UnityEngine_Quaternion__SombraStudios_Shared_Utility_Lerp_LerpQuaternionData_
+  name: LerpQuaternion
+  nameWithType: LerpTool.LerpQuaternion
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpTool.LerpQuaternion
+- uid: System.Action{UnityEngine.Quaternion}
+  commentId: T:System.Action{UnityEngine.Quaternion}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Quaternion>
+  nameWithType: Action<Quaternion>
+  fullName: System.Action<UnityEngine.Quaternion>
+  nameWithType.vb: Action(Of Quaternion)
+  fullName.vb: System.Action(Of UnityEngine.Quaternion)
+  name.vb: Action(Of Quaternion)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Utility.Lerp.LerpQuaternionData
+  commentId: T:SombraStudios.Shared.Utility.Lerp.LerpQuaternionData
+  parent: SombraStudios.Shared.Utility.Lerp
+  href: SombraStudios.Shared.Utility.Lerp.LerpQuaternionData.html
+  name: LerpQuaternionData
+  nameWithType: LerpQuaternionData
+  fullName: SombraStudios.Shared.Utility.Lerp.LerpQuaternionData

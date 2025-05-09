@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  commentId: T:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  id: GameObjectRuntimeSetSO
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  children:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add(UnityEngine.GameObject)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.ItemsChanged
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: GameObjectRuntimeSetSO
+  nameWithType: GameObjectRuntimeSetSO
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameObjectRuntimeSetSO
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: >-
+    This is an example Runtime Set used for tracking one or more GameObjects or components at runtime.
+
+    This can replace using singleton instances (which tend to make testing more difficult).
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "NewGameObjectRuntimeSet", menuName = "Sombra Studios/Runtime Sets/GameObject Runtime Set")]
+
+      public class GameObjectRuntimeSetSO : RuntimeSetSO<GameObject>, IDescribable
+    content.vb: >-
+      <CreateAssetMenu(fileName:="NewGameObjectRuntimeSet", menuName:="Sombra Studios/Runtime Sets/GameObject Runtime Set")>
+
+      Public Class GameObjectRuntimeSetSO Inherits RuntimeSetSO(Of GameObject) Implements IDescribable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable
+  inheritedMembers:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.LOG_CATEGORY
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}._showLogs
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Items
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: NewGameObjectRuntimeSet
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Runtime Sets/GameObject Runtime Set
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.ItemsChanged
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.ItemsChanged
+  id: ItemsChanged
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: ItemsChanged
+  nameWithType: GameObjectRuntimeSetSO.ItemsChanged
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.ItemsChanged
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ItemsChanged
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  syntax:
+    content: public Action ItemsChanged
+    return:
+      type: System.Action
+    content.vb: Public ItemsChanged As Action
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description
+  id: Description
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: GameObjectRuntimeSetSO.Description
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Gets or sets the description of the object.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description*
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable.Description
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add(UnityEngine.GameObject)
+  id: Add(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: Add(GameObject)
+  nameWithType: GameObjectRuntimeSetSO.Add(GameObject)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Add
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Adds an item to the runtime set if it is not already present.
+  example: []
+  syntax:
+    content: public override bool Add(GameObject thingToAdd)
+    parameters:
+    - id: thingToAdd
+      type: UnityEngine.GameObject
+    return:
+      type: System.Boolean
+      description: True if the item was added; otherwise, false.
+    content.vb: Public Overrides Function Add(thingToAdd As GameObject) As Boolean
+  overridden: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Add(UnityEngine.GameObject)
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add*
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove(UnityEngine.GameObject)
+  id: Remove(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: Remove(GameObject)
+  nameWithType: GameObjectRuntimeSetSO.Remove(GameObject)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Remove
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Removes an item from the runtime set if it is present.
+  example: []
+  syntax:
+    content: public override bool Remove(GameObject thingToRemove)
+    parameters:
+    - id: thingToRemove
+      type: UnityEngine.GameObject
+    return:
+      type: System.Boolean
+      description: True if the item was removed; otherwise, false.
+    content.vb: Public Overrides Function Remove(thingToRemove As GameObject) As Boolean
+  overridden: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Remove(UnityEngine.GameObject)
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove*
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear
+  id: Clear
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: GameObjectRuntimeSetSO.Clear()
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear()
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Clear
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 70
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Reset the list of items in the runtime set.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear*
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems
+  id: DestroyItems
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
+  langs:
+  - csharp
+  - vb
+  name: DestroyItems()
+  nameWithType: GameObjectRuntimeSetSO.DestroyItems()
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems()
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DestroyItems
+    path: ../ScriptableObjects/RuntimeSets/Implementations/GameObjectRuntimeSetSO.cs
+    startLine: 84
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Clean up any items after the list is cleared.
+  example: []
+  syntax:
+    content: public void DestroyItems()
+    content.vb: Public Sub DestroyItems()
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems*
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  commentId: N:SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  nameWithType: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+    name: RuntimeSets
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+    name: RuntimeSets
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  commentId: T:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  name: RuntimeSetSO<GameObject>
+  nameWithType: RuntimeSetSO<GameObject>
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>
+  nameWithType.vb: RuntimeSetSO(Of GameObject)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject)
+  name.vb: RuntimeSetSO(Of GameObject)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.IDescribable
+  commentId: T:SombraStudios.Shared.Interfaces.IDescribable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IDescribable.html
+  name: IDescribable
+  nameWithType: IDescribable
+  fullName: SombraStudios.Shared.Interfaces.IDescribable
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.LOG_CATEGORY
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: RuntimeSetSO<GameObject>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>.LOG_CATEGORY
+  nameWithType.vb: RuntimeSetSO(Of GameObject).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: RuntimeSetSO<GameObject>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>.PROPERTIES_TITLE
+  nameWithType.vb: RuntimeSetSO(Of GameObject).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: RuntimeSetSO<GameObject>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>.DEBUG_TITLE
+  nameWithType.vb: RuntimeSetSO(Of GameObject).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}._showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1__showLogs
+  name: _showLogs
+  nameWithType: RuntimeSetSO<GameObject>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>._showLogs
+  nameWithType.vb: RuntimeSetSO(Of GameObject)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Items
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Items
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Items
+  name: Items
+  nameWithType: RuntimeSetSO<GameObject>.Items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>.Items
+  nameWithType.vb: RuntimeSetSO(Of GameObject).Items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject).Items
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  name: RuntimeSetSO<T>
+  nameWithType: RuntimeSetSO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>
+  nameWithType.vb: RuntimeSetSO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)
+  name.vb: RuntimeSetSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: RuntimeSetSO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.LOG_CATEGORY
+  nameWithType.vb: RuntimeSetSO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: RuntimeSetSO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.PROPERTIES_TITLE
+  nameWithType.vb: RuntimeSetSO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: RuntimeSetSO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.DEBUG_TITLE
+  nameWithType.vb: RuntimeSetSO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1__showLogs
+  name: _showLogs
+  nameWithType: RuntimeSetSO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._showLogs
+  nameWithType.vb: RuntimeSetSO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Items
+  name: Items
+  nameWithType: RuntimeSetSO<T>.Items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Items
+  nameWithType.vb: RuntimeSetSO(Of T).Items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Items
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_GameObjectRuntimeSetSO_Description
+  name: Description
+  nameWithType: GameObjectRuntimeSetSO.Description
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Description
+- uid: SombraStudios.Shared.Interfaces.IDescribable.Description
+  commentId: P:SombraStudios.Shared.Interfaces.IDescribable.Description
+  parent: SombraStudios.Shared.Interfaces.IDescribable
+  name: Description
+  nameWithType: IDescribable.Description
+  fullName: SombraStudios.Shared.Interfaces.IDescribable.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Add(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Add(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  name: Add(GameObject)
+  nameWithType: RuntimeSetSO<GameObject>.Add(GameObject)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>.Add(UnityEngine.GameObject)
+  nameWithType.vb: RuntimeSetSO(Of GameObject).Add(GameObject)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject).Add(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Add(UnityEngine.GameObject)
+    name: Add
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Add(UnityEngine.GameObject)
+    name: Add
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_GameObjectRuntimeSetSO_Add_UnityEngine_GameObject_
+  name: Add
+  nameWithType: GameObjectRuntimeSetSO.Add
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Add
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  name: Add(T)
+  nameWithType: RuntimeSetSO<T>.Add(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Add(T)
+  nameWithType.vb: RuntimeSetSO(Of T).Add(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Add(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+    name: Add
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+    name: Add
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Remove(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Remove(UnityEngine.GameObject)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  name: Remove(GameObject)
+  nameWithType: RuntimeSetSO<GameObject>.Remove(GameObject)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<UnityEngine.GameObject>.Remove(UnityEngine.GameObject)
+  nameWithType.vb: RuntimeSetSO(Of GameObject).Remove(GameObject)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of UnityEngine.GameObject).Remove(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Remove(UnityEngine.GameObject)
+    name: Remove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{UnityEngine.GameObject}.Remove(UnityEngine.GameObject)
+    name: Remove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_GameObjectRuntimeSetSO_Remove_UnityEngine_GameObject_
+  name: Remove
+  nameWithType: GameObjectRuntimeSetSO.Remove
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Remove
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  name: Remove(T)
+  nameWithType: RuntimeSetSO<T>.Remove(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Remove(T)
+  nameWithType.vb: RuntimeSetSO(Of T).Remove(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Remove(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+    name: Remove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+    name: Remove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_GameObjectRuntimeSetSO_Clear
+  name: Clear
+  nameWithType: GameObjectRuntimeSetSO.Clear
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.Clear
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_GameObjectRuntimeSetSO_DestroyItems
+  name: DestroyItems
+  nameWithType: GameObjectRuntimeSetSO.DestroyItems
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO.DestroyItems

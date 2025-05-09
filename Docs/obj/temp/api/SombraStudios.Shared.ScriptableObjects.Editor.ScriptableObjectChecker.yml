@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker
+  id: ScriptableObjectChecker
+  parent: SombraStudios.Shared.ScriptableObjects.Editor
+  children:
+  - SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  - SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder
+  langs:
+  - csharp
+  - vb
+  name: ScriptableObjectChecker
+  nameWithType: ScriptableObjectChecker
+  fullName: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/Editor/ScriptableObjectChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ScriptableObjectChecker
+    path: ../ScriptableObjects/Editor/ScriptableObjectChecker.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects.Editor
+  namespace: SombraStudios.Shared.ScriptableObjects.Editor
+  summary: Checks for duplicate ScriptableObject IDs before building.
+  example: []
+  syntax:
+    content: 'public class ScriptableObjectChecker : BuildPlayerProcessor, IOrderedCallback'
+    content.vb: Public Class ScriptableObjectChecker Inherits BuildPlayerProcessor Implements IOrderedCallback
+  inheritance:
+  - System.Object
+  - UnityEditor.Build.BuildPlayerProcessor
+  implements:
+  - UnityEditor.Build.IOrderedCallback
+- uid: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder
+  commentId: P:SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder
+  id: callbackOrder
+  parent: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker
+  langs:
+  - csharp
+  - vb
+  name: callbackOrder
+  nameWithType: ScriptableObjectChecker.callbackOrder
+  fullName: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/Editor/ScriptableObjectChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: callbackOrder
+    path: ../ScriptableObjects/Editor/ScriptableObjectChecker.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects.Editor
+  namespace: SombraStudios.Shared.ScriptableObjects.Editor
+  summary: <p>Returns the relative callback order for callbacks.  Callbacks with lower values are called before ones with higher values.</p>
+  example: []
+  syntax:
+    content: public override int callbackOrder { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overrides ReadOnly Property callbackOrder As Integer
+  overridden: UnityEditor.Build.BuildPlayerProcessor.callbackOrder
+  overload: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder*
+- uid: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  id: PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  parent: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker
+  langs:
+  - csharp
+  - vb
+  name: PrepareForBuild(BuildPlayerContext)
+  nameWithType: ScriptableObjectChecker.PrepareForBuild(BuildPlayerContext)
+  fullName: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/Editor/ScriptableObjectChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PrepareForBuild
+    path: ../ScriptableObjects/Editor/ScriptableObjectChecker.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects.Editor
+  namespace: SombraStudios.Shared.ScriptableObjects.Editor
+  summary: <p>Implement this function to receive a callback before a player build starts.</p>
+  example: []
+  syntax:
+    content: public override void PrepareForBuild(BuildPlayerContext buildPlayerContext)
+    parameters:
+    - id: buildPlayerContext
+      type: UnityEditor.Build.BuildPlayerContext
+      description: A context tied to the scheduled player build.
+    content.vb: Public Overrides Sub PrepareForBuild(buildPlayerContext As BuildPlayerContext)
+  overridden: UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  overload: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild*
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.Editor
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Editor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Editor
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Editor
+  fullName: SombraStudios.Shared.ScriptableObjects.Editor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Editor
+    name: Editor
+    href: SombraStudios.Shared.ScriptableObjects.Editor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Editor
+    name: Editor
+    href: SombraStudios.Shared.ScriptableObjects.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEditor.Build.BuildPlayerProcessor
+  commentId: T:UnityEditor.Build.BuildPlayerProcessor
+  parent: UnityEditor.Build
+  isExternal: true
+  name: BuildPlayerProcessor
+  nameWithType: BuildPlayerProcessor
+  fullName: UnityEditor.Build.BuildPlayerProcessor
+- uid: UnityEditor.Build.IOrderedCallback
+  commentId: T:UnityEditor.Build.IOrderedCallback
+  parent: UnityEditor.Build
+  isExternal: true
+  name: IOrderedCallback
+  nameWithType: IOrderedCallback
+  fullName: UnityEditor.Build.IOrderedCallback
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor.Build
+  commentId: N:UnityEditor.Build
+  isExternal: true
+  name: UnityEditor.Build
+  nameWithType: UnityEditor.Build
+  fullName: UnityEditor.Build
+  spec.csharp:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.Build
+    name: Build
+    isExternal: true
+  spec.vb:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.Build
+    name: Build
+    isExternal: true
+- uid: UnityEditor.Build.BuildPlayerProcessor.callbackOrder
+  commentId: P:UnityEditor.Build.BuildPlayerProcessor.callbackOrder
+  parent: UnityEditor.Build.BuildPlayerProcessor
+  isExternal: true
+  name: callbackOrder
+  nameWithType: BuildPlayerProcessor.callbackOrder
+  fullName: UnityEditor.Build.BuildPlayerProcessor.callbackOrder
+- uid: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder
+  href: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.html#SombraStudios_Shared_ScriptableObjects_Editor_ScriptableObjectChecker_callbackOrder
+  name: callbackOrder
+  nameWithType: ScriptableObjectChecker.callbackOrder
+  fullName: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.callbackOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  commentId: M:UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  parent: UnityEditor.Build.BuildPlayerProcessor
+  isExternal: true
+  name: PrepareForBuild(BuildPlayerContext)
+  nameWithType: BuildPlayerProcessor.PrepareForBuild(BuildPlayerContext)
+  fullName: UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+  spec.csharp:
+  - uid: UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+    name: PrepareForBuild
+    isExternal: true
+  - name: (
+  - uid: UnityEditor.Build.BuildPlayerContext
+    name: BuildPlayerContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
+    name: PrepareForBuild
+    isExternal: true
+  - name: (
+  - uid: UnityEditor.Build.BuildPlayerContext
+    name: BuildPlayerContext
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild
+  href: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.html#SombraStudios_Shared_ScriptableObjects_Editor_ScriptableObjectChecker_PrepareForBuild_UnityEditor_Build_BuildPlayerContext_
+  name: PrepareForBuild
+  nameWithType: ScriptableObjectChecker.PrepareForBuild
+  fullName: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild
+- uid: UnityEditor.Build.BuildPlayerContext
+  commentId: T:UnityEditor.Build.BuildPlayerContext
+  parent: UnityEditor.Build
+  isExternal: true
+  name: BuildPlayerContext
+  nameWithType: BuildPlayerContext
+  fullName: UnityEditor.Build.BuildPlayerContext

@@ -1,0 +1,531 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  id: SpawnerAreaBase
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  children:
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._prefabToSpawn
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._waitForSpawnInterval
+  langs:
+  - csharp
+  - vb
+  name: SpawnerAreaBase
+  nameWithType: SpawnerAreaBase
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SpawnerAreaBase
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: >-
+    Base class for spawning objects within a defined area.  
+
+    Handles spawning logic and provides an abstract method for custom spawn behavior.
+  example: []
+  syntax:
+    content: 'public abstract class SpawnerAreaBase : MonoBehaviour'
+    content.vb: Public MustInherit Class SpawnerAreaBase Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerArea2D
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerArea3D
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._prefabToSpawn
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._prefabToSpawn
+  id: _prefabToSpawn
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  langs:
+  - csharp
+  - vb
+  name: _prefabToSpawn
+  nameWithType: SpawnerAreaBase._prefabToSpawn
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._prefabToSpawn
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _prefabToSpawn
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: >-
+      [Header("Object creation")]
+
+      [SerializeField]
+
+      protected GameObject _prefabToSpawn
+    return:
+      type: UnityEngine.GameObject
+    content.vb: >-
+      <Header("Object creation")>
+
+      <SerializeField>
+
+      Protected _prefabToSpawn As GameObject
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Object creation
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._waitForSpawnInterval
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._waitForSpawnInterval
+  id: _waitForSpawnInterval
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  langs:
+  - csharp
+  - vb
+  name: _waitForSpawnInterval
+  nameWithType: SpawnerAreaBase._waitForSpawnInterval
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase._waitForSpawnInterval
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _waitForSpawnInterval
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: protected WaitForSeconds _waitForSpawnInterval
+    return:
+      type: UnityEngine.WaitForSeconds
+    content.vb: Protected _waitForSpawnInterval As WaitForSeconds
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake
+  commentId: M:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake
+  id: Awake
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: SpawnerAreaBase.Awake()
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Awake
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: Initializes cached variables.
+  example: []
+  syntax:
+    content: protected virtual void Awake()
+    content.vb: Protected Overridable Sub Awake()
+  overload: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake*
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects
+  commentId: M:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects
+  id: StartSpawningObjects
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  langs:
+  - csharp
+  - vb
+  name: StartSpawningObjects()
+  nameWithType: SpawnerAreaBase.StartSpawningObjects()
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartSpawningObjects
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 60
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: Starts the spawning coroutine if it is not already running.
+  example: []
+  syntax:
+    content: public void StartSpawningObjects()
+    content.vb: Public Sub StartSpawningObjects()
+  overload: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects*
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects
+  commentId: M:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects
+  id: StopSpawningObjects
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  langs:
+  - csharp
+  - vb
+  name: StopSpawningObjects()
+  nameWithType: SpawnerAreaBase.StopSpawningObjects()
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopSpawningObjects
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 69
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: Stops the currently running spawning coroutine.
+  example: []
+  syntax:
+    content: public void StopSpawningObjects()
+    content.vb: Public Sub StopSpawningObjects()
+  overload: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects*
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject
+  commentId: M:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject
+  id: SpawnObject
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase
+  langs:
+  - csharp
+  - vb
+  name: SpawnObject()
+  nameWithType: SpawnerAreaBase.SpawnObject()
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject()
+  type: Method
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerAreaBase.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SpawnObject
+    path: ../Gameplay/Spawners/SpawnerAreaBase.cs
+    startLine: 83
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: >-
+    Abstract method to define custom spawn behavior.  
+
+    Implement this method in derived classes to handle object spawning.
+  example: []
+  syntax:
+    content: protected abstract IEnumerator SpawnObject()
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator for coroutine execution.
+    content.vb: Protected MustOverride Function SpawnObject() As IEnumerator
+  overload: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject*
+references:
+- uid: SombraStudios.Shared.Gameplay.Spawners
+  commentId: N:SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Spawners
+  nameWithType: SombraStudios.Shared.Gameplay.Spawners
+  fullName: SombraStudios.Shared.Gameplay.Spawners
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.WaitForSeconds
+  commentId: T:UnityEngine.WaitForSeconds
+  parent: UnityEngine
+  isExternal: true
+  name: WaitForSeconds
+  nameWithType: WaitForSeconds
+  fullName: UnityEngine.WaitForSeconds
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.html#SombraStudios_Shared_Gameplay_Spawners_SpawnerAreaBase_Awake
+  name: Awake
+  nameWithType: SpawnerAreaBase.Awake
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.Awake
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.html#SombraStudios_Shared_Gameplay_Spawners_SpawnerAreaBase_StartSpawningObjects
+  name: StartSpawningObjects
+  nameWithType: SpawnerAreaBase.StartSpawningObjects
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StartSpawningObjects
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.html#SombraStudios_Shared_Gameplay_Spawners_SpawnerAreaBase_StopSpawningObjects
+  name: StopSpawningObjects
+  nameWithType: SpawnerAreaBase.StopSpawningObjects
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.StopSpawningObjects
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject*
+  commentId: Overload:SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.html#SombraStudios_Shared_Gameplay_Spawners_SpawnerAreaBase_SpawnObject
+  name: SpawnObject
+  nameWithType: SpawnerAreaBase.SpawnObject
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerAreaBase.SpawnObject
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections

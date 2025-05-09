@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  id: SpawnerPosition.ActiveSpawn
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  children:
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.CurrentSpawns
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.IsActive
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.PreviousSpawnPoint
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnData
+  - SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnPoints
+  langs:
+  - csharp
+  - vb
+  name: SpawnerPosition.ActiveSpawn
+  nameWithType: SpawnerPosition.ActiveSpawn
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  type: Class
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ActiveSpawn
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 117
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  summary: Represents an active spawn configuration, including settings and spawn points.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SpawnerPosition.ActiveSpawn
+    content.vb: >-
+      <Serializable>
+
+      Public Class SpawnerPosition.ActiveSpawn
+  inheritance:
+  - System.Object
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.IsActive
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.IsActive
+  id: IsActive
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: SpawnerPosition.ActiveSpawn.IsActive
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.IsActive
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsActive
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 122
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: >-
+      [Header("Spawn Settings")]
+
+      [Tooltip("Whether this spawn configuration is active.")]
+
+      public bool IsActive
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Spawn Settings")>
+
+      <Tooltip("Whether this spawn configuration is active.")>
+
+      Public IsActive As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Spawn Settings
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Whether this spawn configuration is active.
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnData
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnData
+  id: SpawnData
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  langs:
+  - csharp
+  - vb
+  name: SpawnData
+  nameWithType: SpawnerPosition.ActiveSpawn.SpawnData
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnData
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SpawnData
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 124
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: >-
+      [Tooltip("The spawn data defining the behavior of this configuration.")]
+
+      public SpawnData SpawnData
+    return:
+      type: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+    content.vb: >-
+      <Tooltip("The spawn data defining the behavior of this configuration.")>
+
+      Public SpawnData As SpawnData
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The spawn data defining the behavior of this configuration.
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnPoints
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnPoints
+  id: SpawnPoints
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  langs:
+  - csharp
+  - vb
+  name: SpawnPoints
+  nameWithType: SpawnerPosition.ActiveSpawn.SpawnPoints
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.SpawnPoints
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SpawnPoints
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 126
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: >-
+      [Tooltip("List of spawn points for this configuration.")]
+
+      public List<Transform> SpawnPoints
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Transform}
+    content.vb: >-
+      <Tooltip("List of spawn points for this configuration.")>
+
+      Public SpawnPoints As List(Of Transform)
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: List of spawn points for this configuration.
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.PreviousSpawnPoint
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.PreviousSpawnPoint
+  id: PreviousSpawnPoint
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  langs:
+  - csharp
+  - vb
+  name: PreviousSpawnPoint
+  nameWithType: SpawnerPosition.ActiveSpawn.PreviousSpawnPoint
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.PreviousSpawnPoint
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PreviousSpawnPoint
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 130
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: >-
+      [Header("Debug")]
+
+      [Tooltip("The last spawn point used for this configuration.")]
+
+      public Transform PreviousSpawnPoint
+    return:
+      type: UnityEngine.Transform
+    content.vb: >-
+      <Header("Debug")>
+
+      <Tooltip("The last spawn point used for this configuration.")>
+
+      Public PreviousSpawnPoint As Transform
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Debug
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The last spawn point used for this configuration.
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.CurrentSpawns
+  commentId: F:SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.CurrentSpawns
+  id: CurrentSpawns
+  parent: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn
+  langs:
+  - csharp
+  - vb
+  name: CurrentSpawns
+  nameWithType: SpawnerPosition.ActiveSpawn.CurrentSpawns
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnerPosition.ActiveSpawn.CurrentSpawns
+  type: Field
+  source:
+    remote:
+      path: Gameplay/Spawners/SpawnerPosition.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CurrentSpawns
+    path: ../Gameplay/Spawners/SpawnerPosition.cs
+    startLine: 132
+  assemblies:
+  - SombraStudios.Shared.Gameplay
+  namespace: SombraStudios.Shared.Gameplay.Spawners
+  syntax:
+    content: >-
+      [Tooltip("The current number of spawned objects for this configuration.")]
+
+      public int CurrentSpawns
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Tooltip("The current number of spawned objects for this configuration.")>
+
+      Public CurrentSpawns As Integer
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The current number of spawned objects for this configuration.
+references:
+- uid: SombraStudios.Shared.Gameplay.Spawners
+  commentId: N:SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Gameplay.Spawners
+  nameWithType: SombraStudios.Shared.Gameplay.Spawners
+  fullName: SombraStudios.Shared.Gameplay.Spawners
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay
+    name: Gameplay
+    href: SombraStudios.Shared.Gameplay.html
+  - name: .
+  - uid: SombraStudios.Shared.Gameplay.Spawners
+    name: Spawners
+    href: SombraStudios.Shared.Gameplay.Spawners.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  commentId: T:SombraStudios.Shared.Gameplay.Spawners.SpawnData
+  parent: SombraStudios.Shared.Gameplay.Spawners
+  href: SombraStudios.Shared.Gameplay.Spawners.SpawnData.html
+  name: SpawnData
+  nameWithType: SpawnData
+  fullName: SombraStudios.Shared.Gameplay.Spawners.SpawnData
+- uid: System.Collections.Generic.List{UnityEngine.Transform}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Transform}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Transform>
+  nameWithType: List<Transform>
+  fullName: System.Collections.Generic.List<UnityEngine.Transform>
+  nameWithType.vb: List(Of Transform)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Transform)
+  name.vb: List(Of Transform)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Transform
+    name: Transform
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

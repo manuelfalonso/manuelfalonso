@@ -5,6 +5,7 @@ items:
   id: VoidEventChannelSO
   parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
   children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.OnEventRaised
   - SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.RaiseEvent
   langs:
@@ -31,18 +32,17 @@ items:
     content: >-
       [CreateAssetMenu(fileName = "NewVoidEventChannel", menuName = "Sombra Studios/Events/Void Event Channel")]
 
-      public class VoidEventChannelSO : DescriptionSO
+      public class VoidEventChannelSO : ScriptableObject, IDescribable
     content.vb: >-
       <CreateAssetMenu(fileName:="NewVoidEventChannel", menuName:="Sombra Studios/Events/Void Event Channel")>
 
-      Public Class VoidEventChannelSO Inherits DescriptionSO
+      Public Class VoidEventChannelSO Inherits ScriptableObject Implements IDescribable
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
-  - SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  inheritedMembers:
-  - SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -83,6 +83,39 @@ items:
     return:
       type: UnityEngine.Events.UnityAction
     content.vb: Public OnEventRaised As UnityAction
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description
+  id: Description
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: VoidEventChannelSO.Description
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/VoidEventChannelSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/VoidEventChannelSO.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
+  summary: Gets or sets the description of the object.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description*
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable.Description
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.RaiseEvent
   commentId: M:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.RaiseEvent
   id: RaiseEvent
@@ -101,7 +134,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: RaiseEvent
     path: ../Patterns/Behavioural/Observer/ScriptableObjects/EventChannels/VoidEventChannelSO.cs
-    startLine: 20
+    startLine: 24
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects
@@ -191,18 +224,13 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
-- uid: SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  commentId: T:SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  parent: SombraStudios.Shared.ScriptableObjects
-  name: DescriptionSO
-  nameWithType: DescriptionSO
-  fullName: SombraStudios.Shared.ScriptableObjects.DescriptionSO
-- uid: SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
-  commentId: F:SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
-  parent: SombraStudios.Shared.ScriptableObjects.DescriptionSO
-  name: m_Description
-  nameWithType: DescriptionSO.m_Description
-  fullName: SombraStudios.Shared.ScriptableObjects.DescriptionSO.m_Description
+- uid: SombraStudios.Shared.Interfaces.IDescribable
+  commentId: T:SombraStudios.Shared.Interfaces.IDescribable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IDescribable.html
+  name: IDescribable
+  nameWithType: IDescribable
+  fullName: SombraStudios.Shared.Interfaces.IDescribable
 - uid: System
   commentId: N:System
   isExternal: true
@@ -216,29 +244,36 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.ScriptableObjects
-  commentId: N:SombraStudios.Shared.ScriptableObjects
-  name: SombraStudios.Shared.ScriptableObjects
-  nameWithType: SombraStudios.Shared.ScriptableObjects
-  fullName: SombraStudios.Shared.ScriptableObjects
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
   spec.csharp:
   - uid: SombraStudios
     name: SombraStudios
+    href: SombraStudios.html
   - name: .
   - uid: SombraStudios.Shared
     name: Shared
+    href: SombraStudios.Shared.html
   - name: .
-  - uid: SombraStudios.Shared.ScriptableObjects
-    name: ScriptableObjects
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
   spec.vb:
   - uid: SombraStudios
     name: SombraStudios
+    href: SombraStudios.html
   - name: .
   - uid: SombraStudios.Shared
     name: Shared
+    href: SombraStudios.Shared.html
   - name: .
-  - uid: SombraStudios.Shared.ScriptableObjects
-    name: ScriptableObjects
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
 - uid: UnityEngine.Events.UnityAction
   commentId: T:UnityEngine.Events.UnityAction
   parent: UnityEngine.Events
@@ -268,6 +303,29 @@ references:
   - uid: UnityEngine.Events
     name: Events
     isExternal: true
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_VoidEventChannelSO_Description
+  name: Description
+  nameWithType: VoidEventChannelSO.Description
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.Description
+- uid: SombraStudios.Shared.Interfaces.IDescribable.Description
+  commentId: P:SombraStudios.Shared.Interfaces.IDescribable.Description
+  parent: SombraStudios.Shared.Interfaces.IDescribable
+  name: Description
+  nameWithType: IDescribable.Description
+  fullName: SombraStudios.Shared.Interfaces.IDescribable.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.RaiseEvent*
   commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.RaiseEvent
   href: SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects.VoidEventChannelSO.html#SombraStudios_Shared_Patterns_Behavioural_Observer_ScriptableObjects_VoidEventChannelSO_RaiseEvent

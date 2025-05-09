@@ -5,12 +5,13 @@ items:
   id: CameraShakeDataSO
   parent: SombraStudios.Shared.VFX.CameraShake
   children:
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.description
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.duration
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.name
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.randomness
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.strength
-  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.vibrato
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Duration
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.FadeOut
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Randomness
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.ShakeRandomnessMode
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Strength
+  - SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Vibrato
   langs:
   - csharp
   - vb
@@ -25,7 +26,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: CameraShakeDataSO
     path: ../VFX/CameraShake/CameraShakeDataSO.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - SombraStudios.Shared.VFX
   namespace: SombraStudios.Shared.VFX.CameraShake
@@ -33,17 +34,19 @@ items:
   example: []
   syntax:
     content: >-
-      [CreateAssetMenu(fileName = "Shake Data", menuName = "Sombra Studios/Camera/Shake", order = 51)]
+      [CreateAssetMenu(fileName = "ShakeData", menuName = "Sombra Studios/Camera/Shake Data")]
 
-      public class CameraShakeDataSO : ScriptableObject
+      public class CameraShakeDataSO : ScriptableObject, IDescribable
     content.vb: >-
-      <CreateAssetMenu(fileName:="Shake Data", menuName:="Sombra Studios/Camera/Shake", order:=51)>
+      <CreateAssetMenu(fileName:="ShakeData", menuName:="Sombra Studios/Camera/Shake Data")>
 
-      Public Class CameraShakeDataSO Inherits ScriptableObject
+      Public Class CameraShakeDataSO Inherits ScriptableObject Implements IDescribable
   inheritance:
   - System.Object
   - UnityEngine.Object
   - UnityEngine.ScriptableObject
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -51,175 +54,27 @@ items:
     namedArguments:
     - name: fileName
       type: System.String
-      value: Shake Data
+      value: ShakeData
     - name: menuName
       type: System.String
-      value: Sombra Studios/Camera/Shake
-    - name: order
-      type: System.Int32
-      value: 51
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.name
-  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.name
-  id: name
+      value: Sombra Studios/Camera/Shake Data
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Duration
+  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Duration
+  id: Duration
   parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
   langs:
   - csharp
   - vb
-  name: name
-  nameWithType: CameraShakeDataSO.name
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.name
+  name: Duration
+  nameWithType: CameraShakeDataSO.Duration
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Duration
   type: Field
   source:
     remote:
       path: VFX/CameraShake/CameraShakeDataSO.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: name
-    path: ../VFX/CameraShake/CameraShakeDataSO.cs
-    startLine: 10
-  assemblies:
-  - SombraStudios.Shared.VFX
-  namespace: SombraStudios.Shared.VFX.CameraShake
-  syntax:
-    content: public string name
-    return:
-      type: System.String
-    content.vb: Public name As String
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.description
-  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.description
-  id: description
-  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
-  langs:
-  - csharp
-  - vb
-  name: description
-  nameWithType: CameraShakeDataSO.description
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.description
-  type: Field
-  source:
-    remote:
-      path: VFX/CameraShake/CameraShakeDataSO.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: description
-    path: ../VFX/CameraShake/CameraShakeDataSO.cs
-    startLine: 12
-  assemblies:
-  - SombraStudios.Shared.VFX
-  namespace: SombraStudios.Shared.VFX.CameraShake
-  syntax:
-    content: >-
-      [Multiline]
-
-      public string description
-    return:
-      type: System.String
-    content.vb: >-
-      <Multiline>
-
-      Public description As String
-  attributes:
-  - type: UnityEngine.MultilineAttribute
-    ctor: UnityEngine.MultilineAttribute.#ctor
-    arguments: []
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.duration
-  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.duration
-  id: duration
-  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
-  langs:
-  - csharp
-  - vb
-  name: duration
-  nameWithType: CameraShakeDataSO.duration
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.duration
-  type: Field
-  source:
-    remote:
-      path: VFX/CameraShake/CameraShakeDataSO.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: duration
-    path: ../VFX/CameraShake/CameraShakeDataSO.cs
-    startLine: 13
-  assemblies:
-  - SombraStudios.Shared.VFX
-  namespace: SombraStudios.Shared.VFX.CameraShake
-  syntax:
-    content: public float duration
-    return:
-      type: System.Single
-    content.vb: Public duration As Single
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.strength
-  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.strength
-  id: strength
-  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
-  langs:
-  - csharp
-  - vb
-  name: strength
-  nameWithType: CameraShakeDataSO.strength
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.strength
-  type: Field
-  source:
-    remote:
-      path: VFX/CameraShake/CameraShakeDataSO.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: strength
-    path: ../VFX/CameraShake/CameraShakeDataSO.cs
-    startLine: 14
-  assemblies:
-  - SombraStudios.Shared.VFX
-  namespace: SombraStudios.Shared.VFX.CameraShake
-  syntax:
-    content: public float strength
-    return:
-      type: System.Single
-    content.vb: Public strength As Single
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.vibrato
-  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.vibrato
-  id: vibrato
-  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
-  langs:
-  - csharp
-  - vb
-  name: vibrato
-  nameWithType: CameraShakeDataSO.vibrato
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.vibrato
-  type: Field
-  source:
-    remote:
-      path: VFX/CameraShake/CameraShakeDataSO.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: vibrato
-    path: ../VFX/CameraShake/CameraShakeDataSO.cs
-    startLine: 15
-  assemblies:
-  - SombraStudios.Shared.VFX
-  namespace: SombraStudios.Shared.VFX.CameraShake
-  syntax:
-    content: public int vibrato
-    return:
-      type: System.Int32
-    content.vb: Public vibrato As Integer
-- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.randomness
-  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.randomness
-  id: randomness
-  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
-  langs:
-  - csharp
-  - vb
-  name: randomness
-  nameWithType: CameraShakeDataSO.randomness
-  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.randomness
-  type: Field
-  source:
-    remote:
-      path: VFX/CameraShake/CameraShakeDataSO.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: randomness
+    id: Duration
     path: ../VFX/CameraShake/CameraShakeDataSO.cs
     startLine: 18
   assemblies:
@@ -227,19 +82,106 @@ items:
   namespace: SombraStudios.Shared.VFX.CameraShake
   syntax:
     content: >-
+      [Header("Settings")]
+
       [Min(0)]
 
-      [Tooltip("Min 0 Max 180")]
-
-      public float randomness
+      public float Duration
     return:
       type: System.Single
     content.vb: >-
+      <Header("Settings")>
+
       <Min(0)>
 
-      <Tooltip("Min 0 Max 180")>
+      Public Duration As Single
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Settings
+  - type: UnityEngine.MinAttribute
+    ctor: UnityEngine.MinAttribute.#ctor(System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Strength
+  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Strength
+  id: Strength
+  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  langs:
+  - csharp
+  - vb
+  name: Strength
+  nameWithType: CameraShakeDataSO.Strength
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Strength
+  type: Field
+  source:
+    remote:
+      path: VFX/CameraShake/CameraShakeDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Strength
+    path: ../VFX/CameraShake/CameraShakeDataSO.cs
+    startLine: 21
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.CameraShake
+  syntax:
+    content: >-
+      [Tooltip("The shake strength for each axis.")]
 
-      Public randomness As Single
+      public Vector3 Strength
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Tooltip("The shake strength for each axis.")>
+
+      Public Strength As Vector3
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The shake strength for each axis.
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Vibrato
+  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Vibrato
+  id: Vibrato
+  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  langs:
+  - csharp
+  - vb
+  name: Vibrato
+  nameWithType: CameraShakeDataSO.Vibrato
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Vibrato
+  type: Field
+  source:
+    remote:
+      path: VFX/CameraShake/CameraShakeDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Vibrato
+    path: ../VFX/CameraShake/CameraShakeDataSO.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.CameraShake
+  syntax:
+    content: >-
+      [Min(0)]
+
+      [Tooltip("How much will the shake vibrate.")]
+
+      public int Vibrato
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Min(0)>
+
+      <Tooltip("How much will the shake vibrate.")>
+
+      Public Vibrato As Integer
   attributes:
   - type: UnityEngine.MinAttribute
     ctor: UnityEngine.MinAttribute.#ctor(System.Single)
@@ -250,7 +192,168 @@ items:
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: Min 0 Max 180
+      value: How much will the shake vibrate.
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Randomness
+  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Randomness
+  id: Randomness
+  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  langs:
+  - csharp
+  - vb
+  name: Randomness
+  nameWithType: CameraShakeDataSO.Randomness
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Randomness
+  type: Field
+  source:
+    remote:
+      path: VFX/CameraShake/CameraShakeDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Randomness
+    path: ../VFX/CameraShake/CameraShakeDataSO.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.CameraShake
+  syntax:
+    content: >-
+      [Range(0, 180)]
+
+      [Tooltip("How much the shake will be random (0 to 180 - values higher than 90 kind of suck, so beware). Setting it to 0 will shake along a single direction.")]
+
+      public float Randomness
+    return:
+      type: System.Single
+    content.vb: >-
+      <Range(0, 180)>
+
+      <Tooltip("How much the shake will be random (0 to 180 - values higher than 90 kind of suck, so beware). Setting it to 0 will shake along a single direction.")>
+
+      Public Randomness As Single
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 180
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: How much the shake will be random (0 to 180 - values higher than 90 kind of suck, so beware). Setting it to 0 will shake along a single direction.
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.FadeOut
+  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.FadeOut
+  id: FadeOut
+  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  langs:
+  - csharp
+  - vb
+  name: FadeOut
+  nameWithType: CameraShakeDataSO.FadeOut
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.FadeOut
+  type: Field
+  source:
+    remote:
+      path: VFX/CameraShake/CameraShakeDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FadeOut
+    path: ../VFX/CameraShake/CameraShakeDataSO.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.CameraShake
+  syntax:
+    content: >-
+      [Tooltip("If TRUE the shake will automatically fadeOut smoothly within the tween's duration, otherwise it will not.")]
+
+      public bool FadeOut
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Tooltip("If TRUE the shake will automatically fadeOut smoothly within the tween's duration, otherwise it will not.")>
+
+      Public FadeOut As Boolean
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: If TRUE the shake will automatically fadeOut smoothly within the tween's duration, otherwise it will not.
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.ShakeRandomnessMode
+  commentId: F:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.ShakeRandomnessMode
+  id: ShakeRandomnessMode
+  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  langs:
+  - csharp
+  - vb
+  name: ShakeRandomnessMode
+  nameWithType: CameraShakeDataSO.ShakeRandomnessMode
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.ShakeRandomnessMode
+  type: Field
+  source:
+    remote:
+      path: VFX/CameraShake/CameraShakeDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ShakeRandomnessMode
+    path: ../VFX/CameraShake/CameraShakeDataSO.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.CameraShake
+  syntax:
+    content: >-
+      [Tooltip("The type of randomness to apply, Full (fully random) or Harmonic (more balanced and visually more pleasant).")]
+
+      public ShakeRandomnessMode ShakeRandomnessMode
+    return:
+      type: DG.Tweening.ShakeRandomnessMode
+    content.vb: >-
+      <Tooltip("The type of randomness to apply, Full (fully random) or Harmonic (more balanced and visually more pleasant).")>
+
+      Public ShakeRandomnessMode As ShakeRandomnessMode
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The type of randomness to apply, Full (fully random) or Harmonic (more balanced and visually more pleasant).
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description
+  commentId: P:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description
+  id: Description
+  parent: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: CameraShakeDataSO.Description
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description
+  type: Property
+  source:
+    remote:
+      path: VFX/CameraShake/CameraShakeDataSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Description
+    path: ../VFX/CameraShake/CameraShakeDataSO.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.CameraShake
+  summary: Gets or sets the description of the object.
+  example: []
+  syntax:
+    content: public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description*
+  implements:
+  - SombraStudios.Shared.Interfaces.IDescribable.Description
 references:
 - uid: SombraStudios.Shared.VFX.CameraShake
   commentId: N:SombraStudios.Shared.VFX.CameraShake
@@ -315,6 +418,13 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Interfaces.IDescribable
+  commentId: T:SombraStudios.Shared.Interfaces.IDescribable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IDescribable.html
+  name: IDescribable
+  nameWithType: IDescribable
+  fullName: SombraStudios.Shared.Interfaces.IDescribable
 - uid: System
   commentId: N:System
   isExternal: true
@@ -328,17 +438,36 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -350,6 +479,13 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -361,3 +497,66 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DG.Tweening.ShakeRandomnessMode
+  commentId: T:DG.Tweening.ShakeRandomnessMode
+  parent: DG.Tweening
+  isExternal: true
+  name: ShakeRandomnessMode
+  nameWithType: ShakeRandomnessMode
+  fullName: DG.Tweening.ShakeRandomnessMode
+- uid: DG.Tweening
+  commentId: N:DG.Tweening
+  isExternal: true
+  name: DG.Tweening
+  nameWithType: DG.Tweening
+  fullName: DG.Tweening
+  spec.csharp:
+  - uid: DG
+    name: DG
+    isExternal: true
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    isExternal: true
+  spec.vb:
+  - uid: DG
+    name: DG
+    isExternal: true
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    isExternal: true
+- uid: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description*
+  commentId: Overload:SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description
+  href: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.html#SombraStudios_Shared_VFX_CameraShake_CameraShakeDataSO_Description
+  name: Description
+  nameWithType: CameraShakeDataSO.Description
+  fullName: SombraStudios.Shared.VFX.CameraShake.CameraShakeDataSO.Description
+- uid: SombraStudios.Shared.Interfaces.IDescribable.Description
+  commentId: P:SombraStudios.Shared.Interfaces.IDescribable.Description
+  parent: SombraStudios.Shared.Interfaces.IDescribable
+  name: Description
+  nameWithType: IDescribable.Description
+  fullName: SombraStudios.Shared.Interfaces.IDescribable.Description
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

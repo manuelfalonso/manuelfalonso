@@ -1,0 +1,431 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  commentId: T:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  id: TutorialActionSO
+  parent: SombraStudios.Shared.Systems.Tutorial
+  children:
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  - SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  langs:
+  - csharp
+  - vb
+  name: TutorialActionSO
+  nameWithType: TutorialActionSO
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  type: Class
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TutorialActionSO
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  summary: Base class for all tutorial actions
+  example: []
+  syntax:
+    content: 'public abstract class TutorialActionSO : ScriptableObject, ISerializationCallbackReceiver'
+    content.vb: Public MustInherit Class TutorialActionSO Inherits ScriptableObject Implements ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  derivedClasses:
+  - SombraStudios.Shared.Systems.Tutorial.CheckpointAction
+  - SombraStudios.Shared.Systems.Tutorial.ListenEventAction
+  - SombraStudios.Shared.Systems.Tutorial.RaiseEventAction
+  - SombraStudios.Shared.Systems.Tutorial.WaitSceneAction
+  - SombraStudios.Shared.Systems.Tutorial.WaitTimeAction
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  commentId: F:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  id: _active
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  langs:
+  - csharp
+  - vb
+  name: _active
+  nameWithType: TutorialActionSO._active
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._active
+  type: Field
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _active
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: >-
+      [SerializeField]
+
+      protected bool _active
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <SerializeField>
+
+      Protected _active As Boolean
+  attributes:
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  commentId: F:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  id: _isCompletedInitialValue
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  langs:
+  - csharp
+  - vb
+  name: _isCompletedInitialValue
+  nameWithType: TutorialActionSO._isCompletedInitialValue
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO._isCompletedInitialValue
+  type: Field
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _isCompletedInitialValue
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      protected bool _isCompletedInitialValue
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <NonSerialized>
+
+      Protected _isCompletedInitialValue As Boolean
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  commentId: P:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  id: IsCompleted
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: TutorialActionSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsCompleted
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: public bool IsCompleted { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCompleted As Boolean
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted*
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  id: ExecuteAction
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAction()
+  nameWithType: TutorialActionSO.ExecuteAction()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ExecuteAction
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: public abstract IEnumerator ExecuteAction()
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public MustOverride Function ExecuteAction() As IEnumerator
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction*
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  id: OnAfterDeserialize
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  langs:
+  - csharp
+  - vb
+  name: OnAfterDeserialize()
+  nameWithType: TutorialActionSO.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnAfterDeserialize
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  summary: <p>Implement this callback to transform data back into runtime data types after an object is deserialized.</p>
+  example: []
+  syntax:
+    content: public virtual void OnAfterDeserialize()
+    content.vb: Public Overridable Sub OnAfterDeserialize()
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  id: OnBeforeSerialize
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeSerialize()
+  nameWithType: TutorialActionSO.OnBeforeSerialize()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnBeforeSerialize
+    path: ../Systems/Tutorial/TutorialActionSO.cs
+    startLine: 27
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  summary: <p>Implement this callback to transform data into serializable data types immediately before an object is serialized.</p>
+  example: []
+  syntax:
+    content: public void OnBeforeSerialize()
+    content.vb: Public Sub OnBeforeSerialize()
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+references:
+- uid: SombraStudios.Shared.Systems.Tutorial
+  commentId: N:SombraStudios.Shared.Systems.Tutorial
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Tutorial
+  nameWithType: SombraStudios.Shared.Systems.Tutorial
+  fullName: SombraStudios.Shared.Systems.Tutorial
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Tutorial
+    name: Tutorial
+    href: SombraStudios.Shared.Systems.Tutorial.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Tutorial
+    name: Tutorial
+    href: SombraStudios.Shared.Systems.Tutorial.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_IsCompleted
+  name: IsCompleted
+  nameWithType: TutorialActionSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.IsCompleted
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_ExecuteAction
+  name: ExecuteAction
+  nameWithType: TutorialActionSO.ExecuteAction
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.ExecuteAction
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnAfterDeserialize
+  name: OnAfterDeserialize
+  nameWithType: TutorialActionSO.OnAfterDeserialize
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnAfterDeserialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnAfterDeserialize()
+  nameWithType: ISerializationCallbackReceiver.OnAfterDeserialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.html#SombraStudios_Shared_Systems_Tutorial_TutorialActionSO_OnBeforeSerialize
+  name: OnBeforeSerialize
+  nameWithType: TutorialActionSO.OnBeforeSerialize
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialActionSO.OnBeforeSerialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnBeforeSerialize()
+  nameWithType: ISerializationCallbackReceiver.OnBeforeSerialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )

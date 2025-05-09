@@ -20,7 +20,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: RaycastFootstepController
     path: ../Audio/Footsteps/RaycastFootstepController.cs
-    startLine: 9
+    startLine: 8
   assemblies:
   - SombraStudios.Shared.Audio
   namespace: SombraStudios.Shared.Audio.Footsteps
@@ -35,13 +35,13 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
-  - SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
+  - SombraStudios.Shared.Audio.Footsteps.FootstepController
   inheritedMembers:
-  - SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._stepsList
-  - SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentList
-  - SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentTag
-  - SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.PlayStep
-  - SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.SelectAudioClipList(UnityEngine.Transform)
+  - SombraStudios.Shared.Audio.Footsteps.FootstepController._stepsList
+  - SombraStudios.Shared.Audio.Footsteps.FootstepController._currentList
+  - SombraStudios.Shared.Audio.Footsteps.FootstepController._currentTag
+  - SombraStudios.Shared.Audio.Footsteps.FootstepController.PlayStep
+  - SombraStudios.Shared.Audio.Footsteps.FootstepController.SelectAudioClipList(UnityEngine.Transform)
   extensionMethods:
   - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
 - uid: SombraStudios.Shared.Audio.Footsteps.RaycastFootstepController.Start
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Start
     path: ../Audio/Footsteps/RaycastFootstepController.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - SombraStudios.Shared.Audio
   namespace: SombraStudios.Shared.Audio.Footsteps
@@ -70,7 +70,7 @@ items:
   syntax:
     content: protected override void Start()
     content.vb: Protected Overrides Sub Start()
-  overridden: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.Start
+  overridden: SombraStudios.Shared.Audio.Footsteps.FootstepController.Start
   overload: SombraStudios.Shared.Audio.Footsteps.RaycastFootstepController.Start*
 references:
 - uid: SombraStudios.Shared.Audio.Footsteps
@@ -150,74 +150,74 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  commentId: T:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController
+  commentId: T:SombraStudios.Shared.Audio.Footsteps.FootstepController
+  parent: SombraStudios.Shared.Audio.Footsteps
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html
   name: FootstepController
   nameWithType: FootstepController
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._stepsList
-  commentId: F:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._stepsList
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController__stepsList
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController._stepsList
+  commentId: F:SombraStudios.Shared.Audio.Footsteps.FootstepController._stepsList
+  parent: SombraStudios.Shared.Audio.Footsteps.FootstepController
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController__stepsList
   name: _stepsList
   nameWithType: FootstepController._stepsList
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._stepsList
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentList
-  commentId: F:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentList
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController__currentList
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController._stepsList
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController._currentList
+  commentId: F:SombraStudios.Shared.Audio.Footsteps.FootstepController._currentList
+  parent: SombraStudios.Shared.Audio.Footsteps.FootstepController
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController__currentList
   name: _currentList
   nameWithType: FootstepController._currentList
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentList
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentTag
-  commentId: F:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentTag
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController__currentTag
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController._currentList
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController._currentTag
+  commentId: F:SombraStudios.Shared.Audio.Footsteps.FootstepController._currentTag
+  parent: SombraStudios.Shared.Audio.Footsteps.FootstepController
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController__currentTag
   name: _currentTag
   nameWithType: FootstepController._currentTag
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController._currentTag
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.PlayStep
-  commentId: M:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.PlayStep
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_PlayStep
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController._currentTag
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.PlayStep
+  commentId: M:SombraStudios.Shared.Audio.Footsteps.FootstepController.PlayStep
+  parent: SombraStudios.Shared.Audio.Footsteps.FootstepController
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_PlayStep
   name: PlayStep()
   nameWithType: FootstepController.PlayStep()
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.PlayStep()
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController.PlayStep()
   spec.csharp:
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.PlayStep
+  - uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.PlayStep
     name: PlayStep
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_PlayStep
+    href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_PlayStep
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.PlayStep
+  - uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.PlayStep
     name: PlayStep
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_PlayStep
+    href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_PlayStep
   - name: (
   - name: )
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.SelectAudioClipList(UnityEngine.Transform)
-  commentId: M:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.SelectAudioClipList(UnityEngine.Transform)
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.SelectAudioClipList(UnityEngine.Transform)
+  commentId: M:SombraStudios.Shared.Audio.Footsteps.FootstepController.SelectAudioClipList(UnityEngine.Transform)
+  parent: SombraStudios.Shared.Audio.Footsteps.FootstepController
   isExternal: true
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_SelectAudioClipList_UnityEngine_Transform_
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_SelectAudioClipList_UnityEngine_Transform_
   name: SelectAudioClipList(Transform)
   nameWithType: FootstepController.SelectAudioClipList(Transform)
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.SelectAudioClipList(UnityEngine.Transform)
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController.SelectAudioClipList(UnityEngine.Transform)
   spec.csharp:
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.SelectAudioClipList(UnityEngine.Transform)
+  - uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.SelectAudioClipList(UnityEngine.Transform)
     name: SelectAudioClipList
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_SelectAudioClipList_UnityEngine_Transform_
+    href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_SelectAudioClipList_UnityEngine_Transform_
   - name: (
   - uid: UnityEngine.Transform
     name: Transform
     isExternal: true
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.SelectAudioClipList(UnityEngine.Transform)
+  - uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.SelectAudioClipList(UnityEngine.Transform)
     name: SelectAudioClipList
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_SelectAudioClipList_UnityEngine_Transform_
+    href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_SelectAudioClipList_UnityEngine_Transform_
   - name: (
   - uid: UnityEngine.Transform
     name: Transform
@@ -281,52 +281,6 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract
-  commentId: N:SombraStudios.Shared.Audio.Footsteps.Abstract
-  href: SombraStudios.html
-  name: SombraStudios.Shared.Audio.Footsteps.Abstract
-  nameWithType: SombraStudios.Shared.Audio.Footsteps.Abstract
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract
-  spec.csharp:
-  - uid: SombraStudios
-    name: SombraStudios
-    href: SombraStudios.html
-  - name: .
-  - uid: SombraStudios.Shared
-    name: Shared
-    href: SombraStudios.Shared.html
-  - name: .
-  - uid: SombraStudios.Shared.Audio
-    name: Audio
-    href: SombraStudios.Shared.Audio.html
-  - name: .
-  - uid: SombraStudios.Shared.Audio.Footsteps
-    name: Footsteps
-    href: SombraStudios.Shared.Audio.Footsteps.html
-  - name: .
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract
-    name: Abstract
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.html
-  spec.vb:
-  - uid: SombraStudios
-    name: SombraStudios
-    href: SombraStudios.html
-  - name: .
-  - uid: SombraStudios.Shared
-    name: Shared
-    href: SombraStudios.Shared.html
-  - name: .
-  - uid: SombraStudios.Shared.Audio
-    name: Audio
-    href: SombraStudios.Shared.Audio.html
-  - name: .
-  - uid: SombraStudios.Shared.Audio.Footsteps
-    name: Footsteps
-    href: SombraStudios.Shared.Audio.Footsteps.html
-  - name: .
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract
-    name: Abstract
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.html
 - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
   isExternal: true
@@ -408,23 +362,23 @@ references:
   - uid: SombraStudios.Shared.Extensions
     name: Extensions
     href: SombraStudios.Shared.Extensions.html
-- uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.Start
-  commentId: M:SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.Start
-  parent: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController
-  href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_Start
+- uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.Start
+  commentId: M:SombraStudios.Shared.Audio.Footsteps.FootstepController.Start
+  parent: SombraStudios.Shared.Audio.Footsteps.FootstepController
+  href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_Start
   name: Start()
   nameWithType: FootstepController.Start()
-  fullName: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.Start()
+  fullName: SombraStudios.Shared.Audio.Footsteps.FootstepController.Start()
   spec.csharp:
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.Start
+  - uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.Start
     name: Start
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_Start
+    href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_Start
   - name: (
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.Start
+  - uid: SombraStudios.Shared.Audio.Footsteps.FootstepController.Start
     name: Start
-    href: SombraStudios.Shared.Audio.Footsteps.Abstract.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_Abstract_FootstepController_Start
+    href: SombraStudios.Shared.Audio.Footsteps.FootstepController.html#SombraStudios_Shared_Audio_Footsteps_FootstepController_Start
   - name: (
   - name: )
 - uid: SombraStudios.Shared.Audio.Footsteps.RaycastFootstepController.Start*

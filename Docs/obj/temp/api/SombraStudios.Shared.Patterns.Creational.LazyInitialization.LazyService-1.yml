@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1
+  id: LazyService`1
+  parent: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  children:
+  - SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1.Instance
+  langs:
+  - csharp
+  - vb
+  name: LazyService<T>
+  nameWithType: LazyService<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService<T>
+  type: Class
+  source:
+    remote:
+      path: Patterns/Creational/LazyInitialization/LazyService.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: LazyService
+    path: ../Patterns/Creational/LazyInitialization/LazyService.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  summary: >-
+    Provides a lazy initialization mechanism for UnityEngine.Object types.  
+
+    Ensures that the instance is only created or retrieved when accessed for the first time.
+  example: []
+  syntax:
+    content: 'public class LazyService<T> where T : Object'
+    typeParameters:
+    - id: T
+      description: The type of UnityEngine.Object to initialize lazily.
+    content.vb: Public Class LazyService(Of T As [Object])
+  inheritance:
+  - System.Object
+  nameWithType.vb: LazyService(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService(Of T)
+  name.vb: LazyService(Of T)
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1.Instance
+  id: Instance
+  parent: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: LazyService<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService<T>.Instance
+  type: Property
+  source:
+    remote:
+      path: Patterns/Creational/LazyInitialization/LazyService.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Instance
+    path: ../Patterns/Creational/LazyInitialization/LazyService.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  summary: >-
+    Gets the lazily initialized instance of the object.  
+
+    If the instance is not already initialized, it will be retrieved using Unity's FindFirstObjectByType method.
+  example: []
+  syntax:
+    content: public static T Instance { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Shared ReadOnly Property Instance As T
+  overload: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1.Instance*
+  nameWithType.vb: LazyService(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService(Of T).Instance
+references:
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  commentId: N:SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  nameWithType: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+    name: LazyInitialization
+    href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization
+    name: LazyInitialization
+    href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1.Instance*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService-1.html#SombraStudios_Shared_Patterns_Creational_LazyInitialization_LazyService_1_Instance
+  name: Instance
+  nameWithType: LazyService<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService<T>.Instance
+  nameWithType.vb: LazyService(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.LazyInitialization.LazyService(Of T).Instance
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

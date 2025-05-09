@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  commentId: T:SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  id: TutorialManager
+  parent: SombraStudios.Shared.Systems.Tutorial
+  children:
+  - SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive
+  - SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted
+  - SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData
+  - SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex
+  langs:
+  - csharp
+  - vb
+  name: TutorialManager
+  nameWithType: TutorialManager
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  type: Class
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TutorialManager
+    path: ../Systems/Tutorial/TutorialManager.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  summary: Manager for tutorial steps and its actions
+  example: []
+  syntax:
+    content: 'public class TutorialManager : Singleton<TutorialManager>'
+    content.vb: Public Class TutorialManager Inherits Singleton(Of TutorialManager)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}._instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.HasInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.TryGetInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Current
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Awake
+  - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.OnDestroy
+  extensionMethods:
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex
+  id: TutorialStepIndex
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  langs:
+  - csharp
+  - vb
+  name: TutorialStepIndex()
+  nameWithType: TutorialManager.TutorialStepIndex()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TutorialStepIndex
+    path: ../Systems/Tutorial/TutorialManager.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: public int TutorialStepIndex()
+    return:
+      type: System.Int32
+    content.vb: Public Function TutorialStepIndex() As Integer
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex*
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted
+  id: IsTutorialCompleted
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  langs:
+  - csharp
+  - vb
+  name: IsTutorialCompleted()
+  nameWithType: TutorialManager.IsTutorialCompleted()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsTutorialCompleted
+    path: ../Systems/Tutorial/TutorialManager.cs
+    startLine: 29
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: public bool IsTutorialCompleted()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTutorialCompleted() As Boolean
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted*
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive
+  id: IsTutorialActive
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  langs:
+  - csharp
+  - vb
+  name: IsTutorialActive()
+  nameWithType: TutorialManager.IsTutorialActive()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsTutorialActive
+    path: ../Systems/Tutorial/TutorialManager.cs
+    startLine: 30
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: public bool IsTutorialActive()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsTutorialActive() As Boolean
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive*
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData
+  commentId: M:SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData
+  id: ResetTutoralSaveData
+  parent: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+  langs:
+  - csharp
+  - vb
+  name: ResetTutoralSaveData()
+  nameWithType: TutorialManager.ResetTutoralSaveData()
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData()
+  type: Method
+  source:
+    remote:
+      path: Systems/Tutorial/TutorialManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetTutoralSaveData
+    path: ../Systems/Tutorial/TutorialManager.cs
+    startLine: 47
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Tutorial
+  syntax:
+    content: public void ResetTutoralSaveData()
+    content.vb: Public Sub ResetTutoralSaveData()
+  overload: SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData*
+references:
+- uid: SombraStudios.Shared.Systems.Tutorial
+  commentId: N:SombraStudios.Shared.Systems.Tutorial
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Tutorial
+  nameWithType: SombraStudios.Shared.Systems.Tutorial
+  fullName: SombraStudios.Shared.Systems.Tutorial
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Tutorial
+    name: Tutorial
+    href: SombraStudios.Shared.Systems.Tutorial.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Tutorial
+    name: Tutorial
+    href: SombraStudios.Shared.Systems.Tutorial.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<TutorialManager>
+  nameWithType: Singleton<TutorialManager>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>
+  nameWithType.vb: Singleton(Of TutorialManager)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager)
+  name.vb: Singleton(Of TutorialManager)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+    name: TutorialManager
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialManager.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager
+    name: TutorialManager
+    href: SombraStudios.Shared.Systems.Tutorial.TutorialManager.html
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}._instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<TutorialManager>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>._instance
+  nameWithType.vb: Singleton(Of TutorialManager)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.HasInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<TutorialManager>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>.HasInstance
+  nameWithType.vb: Singleton(Of TutorialManager).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.TryGetInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<TutorialManager>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>.TryGetInstance()
+  nameWithType.vb: Singleton(Of TutorialManager).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Current
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<TutorialManager>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>.Current
+  nameWithType.vb: Singleton(Of TutorialManager).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<TutorialManager>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>.Instance
+  nameWithType.vb: Singleton(Of TutorialManager).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Awake
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<TutorialManager>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>.Awake()
+  nameWithType.vb: Singleton(Of TutorialManager).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.OnDestroy
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<TutorialManager>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<SombraStudios.Shared.Systems.Tutorial.TutorialManager>.OnDestroy()
+  nameWithType.vb: Singleton(Of TutorialManager).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of SombraStudios.Shared.Systems.Tutorial.TutorialManager).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Systems.Tutorial.TutorialManager}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  name: Singleton<T>
+  nameWithType: Singleton<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)
+  name.vb: Singleton(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton
+  commentId: N:SombraStudios.Shared.Patterns.Creational.Singleton
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.Singleton
+  nameWithType: SombraStudios.Shared.Patterns.Creational.Singleton
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
+  name: _instance
+  nameWithType: Singleton<T>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>._instance
+  nameWithType.vb: Singleton(Of T)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
+  name: HasInstance
+  nameWithType: Singleton<T>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.HasInstance
+  nameWithType.vb: Singleton(Of T).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: Singleton<T>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.TryGetInstance()
+  nameWithType.vb: Singleton(Of T).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
+  name: Current
+  nameWithType: Singleton<T>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Current
+  nameWithType.vb: Singleton(Of T).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
+  name: Instance
+  nameWithType: Singleton<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  name: Awake()
+  nameWithType: Singleton<T>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: Singleton<T>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.OnDestroy()
+  nameWithType.vb: Singleton(Of T).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  name: SafeInit<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+    name: SafeInit
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialManager.html#SombraStudios_Shared_Systems_Tutorial_TutorialManager_TutorialStepIndex
+  name: TutorialStepIndex
+  nameWithType: TutorialManager.TutorialStepIndex
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.TutorialStepIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialManager.html#SombraStudios_Shared_Systems_Tutorial_TutorialManager_IsTutorialCompleted
+  name: IsTutorialCompleted
+  nameWithType: TutorialManager.IsTutorialCompleted
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialCompleted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialManager.html#SombraStudios_Shared_Systems_Tutorial_TutorialManager_IsTutorialActive
+  name: IsTutorialActive
+  nameWithType: TutorialManager.IsTutorialActive
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.IsTutorialActive
+- uid: SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData*
+  commentId: Overload:SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData
+  href: SombraStudios.Shared.Systems.Tutorial.TutorialManager.html#SombraStudios_Shared_Systems_Tutorial_TutorialManager_ResetTutoralSaveData
+  name: ResetTutoralSaveData
+  nameWithType: TutorialManager.ResetTutoralSaveData
+  fullName: SombraStudios.Shared.Systems.Tutorial.TutorialManager.ResetTutoralSaveData

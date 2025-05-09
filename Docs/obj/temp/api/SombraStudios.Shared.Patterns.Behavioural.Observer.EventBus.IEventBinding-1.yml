@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1
+  id: IEventBinding`1
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  children:
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaised
+  - SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaisedNoParams
+  langs:
+  - csharp
+  - vb
+  name: IEventBinding<T>
+  nameWithType: IEventBinding<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding<T>
+  type: Interface
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/EventBus/IEventBinding.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IEventBinding
+    path: ../Patterns/Behavioural/Observer/EventBus/IEventBinding.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  summary: Interface for event bindings in the event bus system.
+  example: []
+  syntax:
+    content: public interface IEventBinding<T>
+    typeParameters:
+    - id: T
+      description: The type of the event data.
+    content.vb: Public Interface IEventBinding(Of T)
+  nameWithType.vb: IEventBinding(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding(Of T)
+  name.vb: IEventBinding(Of T)
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaised
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaised
+  id: OnEventRaised
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaised
+  nameWithType: IEventBinding<T>.OnEventRaised
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding<T>.OnEventRaised
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/EventBus/IEventBinding.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnEventRaised
+    path: ../Patterns/Behavioural/Observer/EventBus/IEventBinding.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  summary: Gets or sets the action to be invoked when the event with parameters is raised.
+  example: []
+  syntax:
+    content: Action<T> OnEventRaised { get; set; }
+    parameters: []
+    return:
+      type: System.Action{{T}}
+    content.vb: Property OnEventRaised As Action(Of T)
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaised*
+  nameWithType.vb: IEventBinding(Of T).OnEventRaised
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding(Of T).OnEventRaised
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaisedNoParams
+  commentId: P:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaisedNoParams
+  id: OnEventRaisedNoParams
+  parent: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1
+  langs:
+  - csharp
+  - vb
+  name: OnEventRaisedNoParams
+  nameWithType: IEventBinding<T>.OnEventRaisedNoParams
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding<T>.OnEventRaisedNoParams
+  type: Property
+  source:
+    remote:
+      path: Patterns/Behavioural/Observer/EventBus/IEventBinding.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnEventRaisedNoParams
+    path: ../Patterns/Behavioural/Observer/EventBus/IEventBinding.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  summary: Gets or sets the action to be invoked when the event without parameters is raised.
+  example: []
+  syntax:
+    content: Action OnEventRaisedNoParams { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Property OnEventRaisedNoParams As Action
+  overload: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaisedNoParams*
+  nameWithType.vb: IEventBinding(Of T).OnEventRaisedNoParams
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding(Of T).OnEventRaisedNoParams
+references:
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  commentId: N:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  nameWithType: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+    name: EventBus
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer
+    name: Observer
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus
+    name: EventBus
+    href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaised*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaised
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding-1.html#SombraStudios_Shared_Patterns_Behavioural_Observer_EventBus_IEventBinding_1_OnEventRaised
+  name: OnEventRaised
+  nameWithType: IEventBinding<T>.OnEventRaised
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding<T>.OnEventRaised
+  nameWithType.vb: IEventBinding(Of T).OnEventRaised
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding(Of T).OnEventRaised
+- uid: System.Action{{T}}
+  commentId: T:System.Action{`0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaisedNoParams*
+  commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding`1.OnEventRaisedNoParams
+  href: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding-1.html#SombraStudios_Shared_Patterns_Behavioural_Observer_EventBus_IEventBinding_1_OnEventRaisedNoParams
+  name: OnEventRaisedNoParams
+  nameWithType: IEventBinding<T>.OnEventRaisedNoParams
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding<T>.OnEventRaisedNoParams
+  nameWithType.vb: IEventBinding(Of T).OnEventRaisedNoParams
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Observer.EventBus.IEventBinding(Of T).OnEventRaisedNoParams
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

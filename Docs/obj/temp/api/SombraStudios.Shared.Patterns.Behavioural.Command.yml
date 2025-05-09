@@ -4,8 +4,11 @@ items:
   commentId: N:SombraStudios.Shared.Patterns.Behavioural.Command
   id: SombraStudios.Shared.Patterns.Behavioural.Command
   children:
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
   - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
-  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject`1
+  - SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO`1
+  - SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+  - SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
   langs:
   - csharp
   - vb
@@ -16,38 +19,75 @@ items:
   assemblies:
   - SombraStudios.Shared.Patterns
 references:
-- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
   parent: SombraStudios.Shared.Patterns.Behavioural.Command
-  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.html
-  name: CommandSO
-  nameWithType: CommandSO
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
-- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject`1
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject`1
-  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject-1.html
-  name: CommandScriptableObject<T>
-  nameWithType: CommandScriptableObject<T>
-  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject<T>
-  nameWithType.vb: CommandScriptableObject(Of T)
-  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject(Of T)
-  name.vb: CommandScriptableObject(Of T)
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand.html
+  name: ICommand
+  nameWithType: ICommand
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand-1.html
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand(Of T)
+  name.vb: ICommand(Of T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject`1
-    name: CommandScriptableObject
-    href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject-1.html
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+    name: ICommand
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand-1.html
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject`1
-    name: CommandScriptableObject
-    href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandScriptableObject-1.html
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand`1
+    name: ICommand
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.ICommand-1.html
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO.html
+  name: CommandSO
+  nameWithType: CommandSO
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO-1.html
+  name: CommandSO<T>
+  nameWithType: CommandSO<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO<T>
+  nameWithType.vb: CommandSO(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO(Of T)
+  name.vb: CommandSO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO`1
+    name: CommandSO
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO`1
+    name: CommandSO
+    href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
+  href: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager.html
+  name: CommandManager
+  nameWithType: CommandManager
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Command.CommandManager
 - uid: SombraStudios.Shared.Patterns.Behavioural.Command
   commentId: N:SombraStudios.Shared.Patterns.Behavioural.Command
   href: SombraStudios.html

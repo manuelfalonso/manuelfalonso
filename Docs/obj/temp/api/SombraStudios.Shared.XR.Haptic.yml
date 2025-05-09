@@ -8,7 +8,7 @@ items:
   - SombraStudios.Shared.XR.Haptic.Duration
   - SombraStudios.Shared.XR.Haptic.Intensity
   - SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs)
-  - SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  - SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor)
   langs:
   - csharp
   - vb
@@ -23,7 +23,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Haptic
     path: ../XR/HapticInteractable.cs
-    startLine: 155
+    startLine: 158
   assemblies:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Intensity
     path: ../XR/HapticInteractable.cs
-    startLine: 159
+    startLine: 162
   assemblies:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR
@@ -103,7 +103,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Duration
     path: ../XR/HapticInteractable.cs
-    startLine: 160
+    startLine: 163
   assemblies:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR
@@ -130,7 +130,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TriggerHaptic
     path: ../XR/HapticInteractable.cs
-    startLine: 167
+    startLine: 170
   assemblies:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR
@@ -144,16 +144,16 @@ items:
       description: The interaction event arguments.
     content.vb: Public Sub TriggerHaptic(baseInteractionEventArgs As BaseInteractionEventArgs)
   overload: SombraStudios.Shared.XR.Haptic.TriggerHaptic*
-- uid: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
-  commentId: M:SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
-  id: TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+- uid: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor)
+  commentId: M:SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor)
+  id: TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor)
   parent: SombraStudios.Shared.XR.Haptic
   langs:
   - csharp
   - vb
-  name: TriggerHaptic(XRBaseControllerInteractor)
-  nameWithType: Haptic.TriggerHaptic(XRBaseControllerInteractor)
-  fullName: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor)
+  name: TriggerHaptic(XRBaseInputInteractor)
+  nameWithType: Haptic.TriggerHaptic(XRBaseInputInteractor)
+  fullName: SombraStudios.Shared.XR.Haptic.TriggerHaptic(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor)
   type: Method
   source:
     remote:
@@ -162,19 +162,19 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TriggerHaptic
     path: ../XR/HapticInteractable.cs
-    startLine: 179
+    startLine: 182
   assemblies:
   - SombraStudios.Shared.XR
   namespace: SombraStudios.Shared.XR
   summary: Triggers haptic feedback on the provided controller interactor.
   example: []
   syntax:
-    content: public void TriggerHaptic(XRBaseControllerInteractor xRBaseControllerInteractor)
+    content: public void TriggerHaptic(XRBaseInputInteractor xRBaseControllerInteractor)
     parameters:
     - id: xRBaseControllerInteractor
-      type: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
+      type: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor
       description: The controller interactor to trigger haptic feedback on.
-    content.vb: Public Sub TriggerHaptic(xRBaseControllerInteractor As XRBaseControllerInteractor)
+    content.vb: Public Sub TriggerHaptic(xRBaseControllerInteractor As XRBaseInputInteractor)
   overload: SombraStudios.Shared.XR.Haptic.TriggerHaptic*
 references:
 - uid: SombraStudios.Shared.XR
@@ -287,10 +287,56 @@ references:
   - uid: UnityEngine.XR.Interaction.Toolkit
     name: Toolkit
     isExternal: true
-- uid: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
-  commentId: T:UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
-  parent: UnityEngine.XR.Interaction.Toolkit
+- uid: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor
+  parent: UnityEngine.XR.Interaction.Toolkit.Interactors
   isExternal: true
-  name: XRBaseControllerInteractor
-  nameWithType: XRBaseControllerInteractor
-  fullName: UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
+  name: XRBaseInputInteractor
+  nameWithType: XRBaseInputInteractor
+  fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor
+- uid: UnityEngine.XR.Interaction.Toolkit.Interactors
+  commentId: N:UnityEngine.XR.Interaction.Toolkit.Interactors
+  isExternal: true
+  name: UnityEngine.XR.Interaction.Toolkit.Interactors
+  nameWithType: UnityEngine.XR.Interaction.Toolkit.Interactors
+  fullName: UnityEngine.XR.Interaction.Toolkit.Interactors
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit.Interactors
+    name: Interactors
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit.Interactors
+    name: Interactors
+    isExternal: true

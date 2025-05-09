@@ -1,0 +1,1001 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  id: VFXPropertySO
+  parent: SombraStudios.Shared.VFX.PropertySO
+  children:
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  langs:
+  - csharp
+  - vb
+  name: VFXPropertySO
+  nameWithType: VFXPropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  type: Class
+  source:
+    remote:
+      path: VFX/PropertySO/VFXPropertySO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: VFXPropertySO
+    path: ../VFX/PropertySO/VFXPropertySO.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Abstract base class for VFX properties that can be applied to a VFX controller.
+  example: []
+  syntax:
+    content: 'public abstract class VFXPropertySO : StrategySO<BaseVFXController>, IEquatable<SOWithId>, IIdentifiable, IStrategy<BaseVFXController>'
+    content.vb: Public MustInherit Class VFXPropertySO Inherits StrategySO(Of BaseVFXController) Implements IEquatable(Of SOWithId), IIdentifiable, IStrategy(Of BaseVFXController)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.ScriptableObjects.SOWithId
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  derivedClasses:
+  - SombraStudios.Shared.VFX.PropertySO.CompositeVFXPropertySO
+  - SombraStudios.Shared.VFX.PropertySO.MaterialPropertyBlockVFXSO`1
+  - SombraStudios.Shared.VFX.PropertySO.MaterialVFXSO`1
+  - SombraStudios.Shared.VFX.PropertySO.SetBlendShapeVFXSO
+  implements:
+  - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  - SombraStudios.Shared.Interfaces.IIdentifiable
+  - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  inheritedMembers:
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.LOG_CATEGORY
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.PROPERTIES_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}._showLogs
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  commentId: P:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  id: RevertOnAnimationEnd
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  langs:
+  - csharp
+  - vb
+  name: RevertOnAnimationEnd
+  nameWithType: VFXPropertySO.RevertOnAnimationEnd
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  type: Property
+  source:
+    remote:
+      path: VFX/PropertySO/VFXPropertySO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertOnAnimationEnd
+    path: ../VFX/PropertySO/VFXPropertySO.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: >-
+    Gets or sets a value indicating whether the VFX property should be reverted on animation end with the
+
+    <xref href="SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit" data-throw-if-not-resolved="false"></xref> component attached to the Animator state.
+  example: []
+  syntax:
+    content: public bool RevertOnAnimationEnd { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RevertOnAnimationEnd As Boolean
+  overload: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd*
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  id: CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  langs:
+  - csharp
+  - vb
+  name: CanExecute(BaseVFXController)
+  nameWithType: VFXPropertySO.CanExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/VFXPropertySO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanExecute
+    path: ../VFX/PropertySO/VFXPropertySO.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Determines whether the VFX property can be executed on the specified VFX controller.
+  example: []
+  syntax:
+    content: public override bool CanExecute(BaseVFXController vFXController)
+    parameters:
+    - id: vFXController
+      type: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+      description: The VFX controller to check.
+    return:
+      type: System.Boolean
+      description: True if the VFX property can be executed; otherwise, false.
+    content.vb: Public Overrides Function CanExecute(vFXController As BaseVFXController) As Boolean
+  overridden: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  overload: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute*
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  id: Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  langs:
+  - csharp
+  - vb
+  name: Execute(BaseVFXController)
+  nameWithType: VFXPropertySO.Execute(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/VFXPropertySO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Execute
+    path: ../VFX/PropertySO/VFXPropertySO.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Executes the strategy.
+  example: []
+  syntax:
+    content: public override void Execute(BaseVFXController vFXController)
+    parameters:
+    - id: vFXController
+      type: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    content.vb: Public Overrides Sub Execute(vFXController As BaseVFXController)
+  overridden: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  overload: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute*
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  id: TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  langs:
+  - csharp
+  - vb
+  name: TryRevertVFX(BaseVFXController)
+  nameWithType: VFXPropertySO.TryRevertVFX(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/VFXPropertySO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryRevertVFX
+    path: ../VFX/PropertySO/VFXPropertySO.cs
+    startLine: 41
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Tries to revert the VFX property on the specified VFX controller.
+  example: []
+  syntax:
+    content: public virtual bool TryRevertVFX(BaseVFXController vFXController)
+    parameters:
+    - id: vFXController
+      type: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+      description: The VFX controller to revert the VFX property on.
+    return:
+      type: System.Boolean
+      description: True if the VFX property was successfully reverted; otherwise, false.
+    content.vb: Public Overridable Function TryRevertVFX(vFXController As BaseVFXController) As Boolean
+  overload: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX*
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  id: RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO
+  langs:
+  - csharp
+  - vb
+  name: RevertVFX(BaseVFXController)
+  nameWithType: VFXPropertySO.RevertVFX(BaseVFXController)
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  type: Method
+  source:
+    remote:
+      path: VFX/PropertySO/VFXPropertySO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RevertVFX
+    path: ../VFX/PropertySO/VFXPropertySO.cs
+    startLine: 52
+  assemblies:
+  - SombraStudios.Shared.VFX
+  namespace: SombraStudios.Shared.VFX.PropertySO
+  summary: Reverts the VFX property on the specified VFX controller.
+  example: []
+  syntax:
+    content: public virtual void RevertVFX(BaseVFXController vFXController)
+    parameters:
+    - id: vFXController
+      type: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+      description: The VFX controller to revert the VFX property on.
+    content.vb: Public Overridable Sub RevertVFX(vFXController As BaseVFXController)
+  overload: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX*
+references:
+- uid: SombraStudios.Shared.VFX.PropertySO
+  commentId: N:SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.html
+  name: SombraStudios.Shared.VFX.PropertySO
+  nameWithType: SombraStudios.Shared.VFX.PropertySO
+  fullName: SombraStudios.Shared.VFX.PropertySO
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX
+    name: VFX
+    href: SombraStudios.Shared.VFX.html
+  - name: .
+  - uid: SombraStudios.Shared.VFX.PropertySO
+    name: PropertySO
+    href: SombraStudios.Shared.VFX.PropertySO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+  commentId: T:SombraStudios.Shared.ScriptableObjects.SOWithId
+  parent: SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  name: SOWithId
+  nameWithType: SOWithId
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: StrategySO<BaseVFXController>
+  nameWithType: StrategySO<BaseVFXController>
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>
+  nameWithType.vb: StrategySO(Of BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  name.vb: StrategySO(Of BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+  - name: <
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  commentId: T:System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SOWithId>
+  nameWithType: IEquatable<SOWithId>
+  fullName: System.IEquatable<SombraStudios.Shared.ScriptableObjects.SOWithId>
+  nameWithType.vb: IEquatable(Of SOWithId)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: IEquatable(Of SOWithId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.IIdentifiable
+  commentId: T:SombraStudios.Shared.Interfaces.IIdentifiable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IIdentifiable.html
+  name: IIdentifiable
+  nameWithType: IIdentifiable
+  fullName: SombraStudios.Shared.Interfaces.IIdentifiable
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  commentId: '!:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}'
+  definition: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: IStrategy<BaseVFXController>
+  nameWithType: IStrategy<BaseVFXController>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>
+  nameWithType.vb: IStrategy(Of BaseVFXController)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  name.vb: IStrategy(Of BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    isExternal: true
+  - name: <
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.LOG_CATEGORY
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: StrategySO<BaseVFXController>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.LOG_CATEGORY
+  nameWithType.vb: StrategySO(Of BaseVFXController).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.PROPERTIES_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: StrategySO<BaseVFXController>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.PROPERTIES_TITLE
+  nameWithType.vb: StrategySO(Of BaseVFXController).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.DEBUG_TITLE
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: StrategySO<BaseVFXController>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.DEBUG_TITLE
+  nameWithType.vb: StrategySO(Of BaseVFXController).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}._showLogs
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  name: _showLogs
+  nameWithType: StrategySO<BaseVFXController>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>._showLogs
+  nameWithType.vb: StrategySO(Of BaseVFXController)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: TryToExecute(BaseVFXController)
+  nameWithType: StrategySO<BaseVFXController>.TryToExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: StrategySO(Of BaseVFXController).TryToExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryToExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryToExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryToExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: TryExecute(BaseVFXController)
+  nameWithType: StrategySO<BaseVFXController>.TryExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: StrategySO(Of BaseVFXController).TryExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.TryExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: TryExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  commentId: P:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Id
+  name: Id
+  nameWithType: SOWithId.Id
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  name: Equals(SOWithId)
+  nameWithType: SOWithId.Equals(SOWithId)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  isExternal: true
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: SOWithId.Equals(object)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(object)
+  nameWithType.vb: SOWithId.Equals(Object)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+    name: Equals
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  name: GetHashCode()
+  nameWithType: SOWithId.GetHashCode()
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode()
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+    name: GetHashCode
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+    name: GetHashCode
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.ScriptableObjects
+  commentId: N:SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects
+  nameWithType: SombraStudios.Shared.ScriptableObjects
+  fullName: SombraStudios.Shared.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  name: StrategySO<T>
+  nameWithType: StrategySO<T>
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>
+  nameWithType.vb: StrategySO(Of T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)
+  name.vb: StrategySO(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+    name: StrategySO
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural
+    name: Behavioural
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy
+    name: Strategy
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+  href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  name: IStrategy<T>
+  nameWithType: IStrategy<T>
+  fullName: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy<T>
+  nameWithType.vb: IStrategy(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy(Of T)
+  name.vb: IStrategy(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
+    name: IStrategy
+    href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.LOG_CATEGORY
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.LOG_CATEGORY
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_LOG_CATEGORY
+  name: LOG_CATEGORY
+  nameWithType: StrategySO<T>.LOG_CATEGORY
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.LOG_CATEGORY
+  nameWithType.vb: StrategySO(Of T).LOG_CATEGORY
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).LOG_CATEGORY
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.PROPERTIES_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_PROPERTIES_TITLE
+  name: PROPERTIES_TITLE
+  nameWithType: StrategySO<T>.PROPERTIES_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.PROPERTIES_TITLE
+  nameWithType.vb: StrategySO(Of T).PROPERTIES_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).PROPERTIES_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.DEBUG_TITLE
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_DEBUG_TITLE
+  name: DEBUG_TITLE
+  nameWithType: StrategySO<T>.DEBUG_TITLE
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.DEBUG_TITLE
+  nameWithType.vb: StrategySO(Of T).DEBUG_TITLE
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1._showLogs
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1__showLogs
+  name: _showLogs
+  nameWithType: StrategySO<T>._showLogs
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>._showLogs
+  nameWithType.vb: StrategySO(Of T)._showLogs
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  name: TryToExecute(T)
+  nameWithType: StrategySO<T>.TryToExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryToExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryToExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryToExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryToExecute(`0)
+    name: TryToExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryToExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  name: TryExecute(T)
+  nameWithType: StrategySO<T>.TryExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.TryExecute(T)
+  nameWithType.vb: StrategySO(Of T).TryExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).TryExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.TryExecute(`0)
+    name: TryExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_TryExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+  href: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit.html
+  name: RevertVFXOnStateExit
+  nameWithType: RevertVFXOnStateExit
+  fullName: SombraStudios.Shared.VFX.PropertySO.RevertVFXOnStateExit
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_RevertOnAnimationEnd
+  name: RevertOnAnimationEnd
+  nameWithType: VFXPropertySO.RevertOnAnimationEnd
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertOnAnimationEnd
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: CanExecute(BaseVFXController)
+  nameWithType: StrategySO<BaseVFXController>.CanExecute(BaseVFXController)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: StrategySO(Of BaseVFXController).CanExecute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.CanExecute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: CanExecute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_CanExecute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: CanExecute
+  nameWithType: VFXPropertySO.CanExecute
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.CanExecute
+- uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  commentId: T:SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+  parent: SombraStudios.Shared.VFX.PropertySO
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: BaseVFXController
+  nameWithType: BaseVFXController
+  fullName: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  name: CanExecute(T)
+  nameWithType: StrategySO<T>.CanExecute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.CanExecute(T)
+  nameWithType.vb: StrategySO(Of T).CanExecute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).CanExecute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+    name: CanExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.CanExecute(`0)
+    name: CanExecute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_CanExecute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  parent: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}
+  definition: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+  href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  name: Execute(BaseVFXController)
+  nameWithType: StrategySO<BaseVFXController>.Execute(BaseVFXController)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<SombraStudios.Shared.VFX.PropertySO.BaseVFXController>.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  nameWithType.vb: StrategySO(Of BaseVFXController).Execute(BaseVFXController)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of SombraStudios.Shared.VFX.PropertySO.BaseVFXController).Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO{SombraStudios.Shared.VFX.PropertySO.BaseVFXController}.Execute(SombraStudios.Shared.VFX.PropertySO.BaseVFXController)
+    name: Execute
+  - name: (
+  - uid: SombraStudios.Shared.VFX.PropertySO.BaseVFXController
+    name: BaseVFXController
+    href: SombraStudios.Shared.VFX.PropertySO.BaseVFXController.html
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_Execute_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: Execute
+  nameWithType: VFXPropertySO.Execute
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.Execute
+- uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+  href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  name: Execute(T)
+  nameWithType: StrategySO<T>.Execute(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO<T>.Execute(T)
+  nameWithType.vb: StrategySO(Of T).Execute(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO(Of T).Execute(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+    name: Execute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1.Execute(`0)
+    name: Execute
+    href: SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO-1.html#SombraStudios_Shared_ScriptableObjects_Patterns_Behavioural_Strategy_StrategySO_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_TryRevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: TryRevertVFX
+  nameWithType: VFXPropertySO.TryRevertVFX
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.TryRevertVFX
+- uid: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX*
+  commentId: Overload:SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX
+  href: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.html#SombraStudios_Shared_VFX_PropertySO_VFXPropertySO_RevertVFX_SombraStudios_Shared_VFX_PropertySO_BaseVFXController_
+  name: RevertVFX
+  nameWithType: VFXPropertySO.RevertVFX
+  fullName: SombraStudios.Shared.VFX.PropertySO.VFXPropertySO.RevertVFX

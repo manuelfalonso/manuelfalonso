@@ -5,6 +5,7 @@ items:
   id: AnimationController
   parent: SombraStudios.Shared.Animations
   children:
+  - SombraStudios.Shared.Animations.AnimationController.PlayAnimation(System.String)
   - SombraStudios.Shared.Animations.AnimationController.PlayDefaultAnimation
   langs:
   - csharp
@@ -24,7 +25,7 @@ items:
   assemblies:
   - SombraStudios.Shared.Animations
   namespace: SombraStudios.Shared.Animations
-  summary: Controls animations for a GameObject.
+  summary: Controls Animation component giving extra utility methods.
   example: []
   syntax:
     content: 'public class AnimationController : MonoBehaviour'
@@ -55,7 +56,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: PlayDefaultAnimation
     path: ../Animations/AnimationController.cs
-    startLine: 26
+    startLine: 34
   assemblies:
   - SombraStudios.Shared.Animations
   namespace: SombraStudios.Shared.Animations
@@ -65,6 +66,41 @@ items:
     content: public void PlayDefaultAnimation()
     content.vb: Public Sub PlayDefaultAnimation()
   overload: SombraStudios.Shared.Animations.AnimationController.PlayDefaultAnimation*
+- uid: SombraStudios.Shared.Animations.AnimationController.PlayAnimation(System.String)
+  commentId: M:SombraStudios.Shared.Animations.AnimationController.PlayAnimation(System.String)
+  id: PlayAnimation(System.String)
+  parent: SombraStudios.Shared.Animations.AnimationController
+  langs:
+  - csharp
+  - vb
+  name: PlayAnimation(string)
+  nameWithType: AnimationController.PlayAnimation(string)
+  fullName: SombraStudios.Shared.Animations.AnimationController.PlayAnimation(string)
+  type: Method
+  source:
+    remote:
+      path: Animations/AnimationController.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PlayAnimation
+    path: ../Animations/AnimationController.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Animations
+  namespace: SombraStudios.Shared.Animations
+  summary: Plays the specified animation by name.
+  example: []
+  syntax:
+    content: public void PlayAnimation(string animationName)
+    parameters:
+    - id: animationName
+      type: System.String
+      description: The name of the animation to play.
+    content.vb: Public Sub PlayAnimation(animationName As String)
+  overload: SombraStudios.Shared.Animations.AnimationController.PlayAnimation*
+  nameWithType.vb: AnimationController.PlayAnimation(String)
+  fullName.vb: SombraStudios.Shared.Animations.AnimationController.PlayAnimation(String)
+  name.vb: PlayAnimation(String)
 references:
 - uid: SombraStudios.Shared.Animations
   commentId: N:SombraStudios.Shared.Animations
@@ -280,3 +316,20 @@ references:
   name: PlayDefaultAnimation
   nameWithType: AnimationController.PlayDefaultAnimation
   fullName: SombraStudios.Shared.Animations.AnimationController.PlayDefaultAnimation
+- uid: SombraStudios.Shared.Animations.AnimationController.PlayAnimation*
+  commentId: Overload:SombraStudios.Shared.Animations.AnimationController.PlayAnimation
+  href: SombraStudios.Shared.Animations.AnimationController.html#SombraStudios_Shared_Animations_AnimationController_PlayAnimation_System_String_
+  name: PlayAnimation
+  nameWithType: AnimationController.PlayAnimation
+  fullName: SombraStudios.Shared.Animations.AnimationController.PlayAnimation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

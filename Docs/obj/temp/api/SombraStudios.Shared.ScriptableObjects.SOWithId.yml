@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+  commentId: T:SombraStudios.Shared.ScriptableObjects.SOWithId
+  id: SOWithId
+  parent: SombraStudios.Shared.ScriptableObjects
+  children:
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  langs:
+  - csharp
+  - vb
+  name: SOWithId
+  nameWithType: SOWithId
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SOWithId
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  summary: Base class for ScriptableObjects with an ID.
+  example: []
+  syntax:
+    content: 'public class SOWithId : ScriptableObject, IEquatable<SOWithId>, IIdentifiable'
+    content.vb: Public Class SOWithId Inherits ScriptableObject Implements IEquatable(Of SOWithId), IIdentifiable
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  derivedClasses:
+  - SombraStudios.Shared.ScriptableObjects.Patterns.Behavioural.Strategy.StrategySO`1
+  - SombraStudios.Shared.Systems.Unlock.UnlockableSO
+  implements:
+  - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  - SombraStudios.Shared.Interfaces.IIdentifiable
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  commentId: P:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  id: Id
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: SOWithId.Id
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Id
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  summary: The ID of the ScriptableObject.
+  example: []
+  syntax:
+    content: >-
+      [Tooltip("The ID of the ScriptableObject.")]
+
+      public string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Tooltip("The ID of the ScriptableObject.")>
+
+      Public Property Id As String
+  overload: SombraStudios.Shared.ScriptableObjects.SOWithId.Id*
+  implements:
+  - SombraStudios.Shared.Interfaces.IIdentifiable.Id
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The ID of the ScriptableObject.
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  id: Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  langs:
+  - csharp
+  - vb
+  name: Equals(SOWithId)
+  nameWithType: SOWithId.Equals(SOWithId)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Equals
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  summary: Checks if the current ScriptableObject is equal to another ScriptableObject.
+  example: []
+  syntax:
+    content: public bool Equals(SOWithId other)
+    parameters:
+    - id: other
+      type: SombraStudios.Shared.ScriptableObjects.SOWithId
+      description: The other ScriptableObject to compare with the current ScriptableObject.
+    return:
+      type: System.Boolean
+      description: true if the current ScriptableObject is equal to the other parameter; otherwise, false.
+    content.vb: Public Function Equals(other As SOWithId) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals*
+  implements:
+  - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: SOWithId.Equals(object)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Equals
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 32
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: UnityEngine.Object.Equals(System.Object)
+  overload: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals*
+  nameWithType.vb: SOWithId.Equals(Object)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(Object)
+  name.vb: Equals(Object)
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  id: GetHashCode
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: SOWithId.GetHashCode()
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetHashCode
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: UnityEngine.Object.GetHashCode
+  overload: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode*
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  id: op_Equality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  langs:
+  - csharp
+  - vb
+  name: operator ==(SOWithId, SOWithId)
+  nameWithType: SOWithId.operator ==(SOWithId, SOWithId)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.operator ==(SombraStudios.Shared.ScriptableObjects.SOWithId, SombraStudios.Shared.ScriptableObjects.SOWithId)
+  type: Operator
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Equality
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 46
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  syntax:
+    content: public static bool operator ==(SOWithId left, SOWithId right)
+    parameters:
+    - id: left
+      type: SombraStudios.Shared.ScriptableObjects.SOWithId
+    - id: right
+      type: SombraStudios.Shared.ScriptableObjects.SOWithId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As SOWithId, right As SOWithId) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality*
+  nameWithType.vb: SOWithId.=(SOWithId, SOWithId)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.=(SombraStudios.Shared.ScriptableObjects.SOWithId, SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: =(SOWithId, SOWithId)
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  id: op_Inequality(SombraStudios.Shared.ScriptableObjects.SOWithId,SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: SombraStudios.Shared.ScriptableObjects.SOWithId
+  langs:
+  - csharp
+  - vb
+  name: operator !=(SOWithId, SOWithId)
+  nameWithType: SOWithId.operator !=(SOWithId, SOWithId)
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.operator !=(SombraStudios.Shared.ScriptableObjects.SOWithId, SombraStudios.Shared.ScriptableObjects.SOWithId)
+  type: Operator
+  source:
+    remote:
+      path: ScriptableObjects/SOWithId.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Inequality
+    path: ../ScriptableObjects/SOWithId.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects
+  syntax:
+    content: public static bool operator !=(SOWithId left, SOWithId right)
+    parameters:
+    - id: left
+      type: SombraStudios.Shared.ScriptableObjects.SOWithId
+    - id: right
+      type: SombraStudios.Shared.ScriptableObjects.SOWithId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As SOWithId, right As SOWithId) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality*
+  nameWithType.vb: SOWithId.<>(SOWithId, SOWithId)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.<>(SombraStudios.Shared.ScriptableObjects.SOWithId, SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: <>(SOWithId, SOWithId)
+references:
+- uid: SombraStudios.Shared.ScriptableObjects
+  commentId: N:SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects
+  nameWithType: SombraStudios.Shared.ScriptableObjects
+  fullName: SombraStudios.Shared.ScriptableObjects
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  commentId: T:System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SOWithId>
+  nameWithType: IEquatable<SOWithId>
+  fullName: System.IEquatable<SombraStudios.Shared.ScriptableObjects.SOWithId>
+  nameWithType.vb: IEquatable(Of SOWithId)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: IEquatable(Of SOWithId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.Interfaces.IIdentifiable
+  commentId: T:SombraStudios.Shared.Interfaces.IIdentifiable
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.IIdentifiable.html
+  name: IIdentifiable
+  nameWithType: IIdentifiable
+  fullName: SombraStudios.Shared.Interfaces.IIdentifiable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Id
+  name: Id
+  nameWithType: SOWithId.Id
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
+- uid: SombraStudios.Shared.Interfaces.IIdentifiable.Id
+  commentId: P:SombraStudios.Shared.Interfaces.IIdentifiable.Id
+  parent: SombraStudios.Shared.Interfaces.IIdentifiable
+  name: Id
+  nameWithType: IIdentifiable.Id
+  fullName: SombraStudios.Shared.Interfaces.IIdentifiable.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.SOWithId.Equals
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Equals_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  name: Equals
+  nameWithType: SOWithId.Equals
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals
+- uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  commentId: M:System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  parent: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(SOWithId)
+  nameWithType: IEquatable<SOWithId>.Equals(SOWithId)
+  fullName: System.IEquatable<SombraStudios.Shared.ScriptableObjects.SOWithId>.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  nameWithType.vb: IEquatable(Of SOWithId).Equals(SOWithId)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.ScriptableObjects.SOWithId).Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  spec.csharp:
+  - uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+  commentId: T:SombraStudios.Shared.ScriptableObjects.SOWithId
+  parent: SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  name: SOWithId
+  nameWithType: SOWithId
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.Object.Equals(System.Object)
+  commentId: M:UnityEngine.Object.Equals(System.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: Object.Equals(object)
+  fullName: UnityEngine.Object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: UnityEngine.Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UnityEngine.Object.GetHashCode
+  commentId: M:UnityEngine.Object.GetHashCode
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: UnityEngine.Object.GetHashCode()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
+  name: GetHashCode
+  nameWithType: SOWithId.GetHashCode
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_op_Equality_SombraStudios_Shared_ScriptableObjects_SOWithId_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  name: operator ==
+  nameWithType: SOWithId.operator ==
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.operator ==
+  nameWithType.vb: SOWithId.=
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Equality*
+    name: ==
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_op_Equality_SombraStudios_Shared_ScriptableObjects_SOWithId_SombraStudios_Shared_ScriptableObjects_SOWithId_
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality
+  href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_op_Inequality_SombraStudios_Shared_ScriptableObjects_SOWithId_SombraStudios_Shared_ScriptableObjects_SOWithId_
+  name: operator !=
+  nameWithType: SOWithId.operator !=
+  fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.operator !=
+  nameWithType.vb: SOWithId.<>
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.SOWithId.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.op_Inequality*
+    name: '!='
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_op_Inequality_SombraStudios_Shared_ScriptableObjects_SOWithId_SombraStudios_Shared_ScriptableObjects_SOWithId_
