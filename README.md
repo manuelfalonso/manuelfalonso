@@ -70,31 +70,44 @@ The repository is organized into the following main folders:
       - **PlayerMovement2D/**: Scripts focused on 2D player movement mechanics.
       - **PlayerMovement3D/**: Scripts for handling 3D player movement.
       - **Spawners/**: Systems for spawning objects or entities in the game world.
+   - **Inputs/**: 
    - **Interfaces/**: General-purpose interfaces for consistent API designs.
    - **Networking/**: Basic NetCode boilerplate scripts for networked functionality.
    - **Optimization/**: Scripts aimed at improving performance and resource management.
    - **Patters/**: Implementations of programming patterns, like Singleton or Factory.
    - **Physics/**: Scripts interacting with Unity's physics engine.
    - **Scenes/**: Scripts related to managing and transitioning between Unity scenes.
+      - **Editor/**: Editor scene change tool
+	  - **SceneAsset/**: Utilities for referencing and managing Unity scene assets at runtime.
+	  - **Strategies/**: Scenes strategies encapsulated with a flexible and extendable architecture.
+   - **ScriptableObjects/**: Scriptable object architecture scripts
+      - **Conditions/**: Scriptable objects representing conditional evaluations.
+	  - **Editor/**: Editor tools and custom inspectors for managing ScriptableObjects efficiently.
+	  - **Patterns/**: ScriptableObject-based implementations of common design patterns.
+	  - **RuntimeSets/**: Runtime collections of objects that update dynamically during gameplay.
+	  - **Values/**: Generic value containers using ScriptableObjects for shared, observable data.
    - **Services/**: Scripts for third-party integrations or service management.
       - **Advertisement/**: Boilerplate scripts for handling Unity Ads integration.
       - **Firebase/**: Utility scripts for integrating Firebase services.
       - **Notifications/**: Scripts for managing Unity’s notification system.
       - **WebAPI/**: Scripts demonstrating web API consumption.
    - **Splines/**: Scripts related to Unity's Spline package functionalities.
+   - **Structs/**: Generic serializable data containers designed for lightweight and efficient value types.
    - **Systems/**: Various game systems and utilities.
       - **CloseCaptions/**: Scripts for implementing closed captions in games.
+	  - **Damage/**: Handles the application, calculation, and effects of damage in gameplay.
       - **GameState/**: Scripts to manage game state transitions and logic.
+	  - **Heal/**: Encapsulates healing mechanics, including health restoration logic.
       - **LootBox/**: Systems for loot box generation and rewards.
+	  - **Objectives/**: Defines goals, milestones, and mission progress tracking.
       - **Resource/**: Systems to manage resources like health, mana, etc.
-      - **SceneManagement/**: Advanced scene management systems.
       - **Stats/**: Systems for managing character stats or game variables.
       - **Teleport/**: Scripts handling teleportation mechanics.
       - **Tutorial/**: Scripts for managing in-game tutorials and guidance.
+	  - **Unlock/**: 
    - **Tilemaps/**: Scripts related to Unity's Tilemap system.
    - **Tools/**: General-purpose tools for various tasks.
-      - **Coroutines/**: Scripts to simplify coroutine management.
-      - **Lerp/**: Linear interpolation utility scripts.
+      - **Search/**: Provides runtime and editor search tools for filtering and locating assets and references.
    - **UI/**: Scripts for managing user interface elements.
       - **ImageDrag/**: Scripts to allow dragging of UI images.
       - **InventorySystem/**: Scripts for handling inventory systems.
@@ -102,20 +115,26 @@ The repository is organized into the following main folders:
       - **PanelDragAndResize/**: Scripts for dragging and resizing UI panels.
    - **Utility/**: General utility scripts that provide common functionality.
       - **Cooldown/**: Scripts to manage cooldown timers.
+      - **Coroutines/**: Scripts to simplify coroutine management.
       - **Destroyer/**: Conditional object destruction logic.
+      - **DontDestroy/**: Ensures persistence of GameObjects across scene transitions.
+      - **Lerp/**: Linear interpolation utility scripts.
+	  - **Logger/**: Simple and customizable logging system for debugging and tracing.
       - **FrameRate/**: Scripts to manage or display frame rates.
 	  - **Mirror/**: Scripts to mirror the Transform on position, rotation or scale along a given axis.
       - **Mobile/**: Scripts for mobile-specific functionality, like touch inputs or keyboards.
+	  - **NullReferenceChecker/**: Helps identify and report missing object references.
       - **PrefabInstantiateOnLoad/**: Automatically instantiate prefabs on scene load.
       - **Resources/**: Scripts to manage resource loading and references.
-      - **ScriptableObjects/**: Utilities for managing scriptable objects.
-      - **Timer/**: Timer-related scripts for time-based actions.
+	  - **Sprites/**: Utility scripts and containers for managing sprite assignments and metadata.
+      - **Timers/**: Timer-related scripts for time-based actions.
       - **TimeScale/**: Scripts for controlling time scaling in the game.
       - **UnityGizmos/**: Custom Gizmo drawing utilities.
       - **UnityMessages/**: Scripts to handle Unity event functions, like Awake() and Start().
    - **VFX/**: Scripts for managing visual effects.
       - **CameraShake/**: Scripts for implementing camera shake effects using DoTween.
       - **Parallax/**: Parallax scrolling effects for 2D or 3D.
+      - **PropertySO/**: ScriptableObject-driven system for applying and reverting visual effects modularly.
    - **Video/**: Scripts related to video playback and controls.
    - **XR/**: Scripts related to XR (extended reality) interactions.
       - **Interactables/**: Scripts for XR interactable objects.
@@ -153,6 +172,187 @@ This repository includes a variety of features designed to enhance Unity develop
 
 - If the prefab needs to be instantiated on-demand based on user interactions (e.g., spawning enemies or items during gameplay).
 - When prefabs need to be instantiated with specific runtime data that cannot be pre-configured in a ScriptableObject.
+
+### 2. Strategy Pattern Implementation with ScriptableObjects
+
+- **Generic Strategy Interface (`IStrategy<T>`)**: A reusable, type-safe interface that defines an `Execute(T context)` method, enabling flexible behavior definition across various systems.
+- **ScriptableObject-Based Strategies**: Each strategy is implemented as a `ScriptableObject`, allowing you to create, reuse, and edit behaviors directly in the Unity Editor without modifying code.
+- **`MultiStrategy` Composition**: Compose multiple strategies into a single `MultiStrategySO`, which executes each sub-strategy sequentially, enabling modular and scalable behavior trees or action stacks.
+- **Plug-and-Play Architecture**: Integrate new behaviors at runtime or in the editor simply by creating new `StrategySO` assets and assigning them to MonoBehaviours or systems that consume `IStrategy<T>`.
+
+#### When to Use It
+
+- When designing AI, abilities, event responses, or any modular behavior that benefits from separation of concerns and reuse.
+- When you want to empower designers or non-programmers to configure behaviors in the Unity Editor without writing code.
+- In projects that require easily testable and swappable logic components following the open/closed principle.
+
+#### When Not to Use It
+
+- For performance-critical operations where `ScriptableObject` indirection might introduce unnecessary overhead.
+- When behavior logic is tightly coupled to runtime data or state that cannot be serialized or injected into a stateless strategy context.
+
+### 3. Enum Flags Utility Extensions
+
+- **Bitwise Operation Helpers**: Provides clean, readable extension methods to work with `[Flags]` enums in C#, such as `HasFlagFast`, `AddFlag`, and `RemoveFlag`.
+- **Improved Readability**: Eliminates verbose bitwise logic in your code, making conditionals involving enum flags much easier to read and maintain.
+- **Safe and Generic**: Fully generic implementation that ensures type safety across all enum flag operations using constraints.
+
+#### Example Usage
+
+```csharp
+[Flags]
+public enum UnitState
+{
+    None = 0,
+    Idle = 1 << 0,
+    Moving = 1 << 1,
+    Attacking = 1 << 2
+}
+
+// Combine flags
+UnitState state = UnitState.Idle | UnitState.Moving;
+
+// Check flag
+bool isMoving = state.HasFlagFast(UnitState.Moving);
+
+// Remove a flag
+state = state.RemoveFlag(UnitState.Idle);
+
+// Add a flag
+state = state.AddFlag(UnitState.Attacking);
+```
+
+#### When to Use It
+
+- When using [Flags] enums to represent combinations of states, permissions, toggles, or modifiers.
+- In systems where flag manipulation is frequent and needs to remain concise and highly readable (e.g., state machines, ability systems, UI settings, etc).
+
+#### When Not to Use It
+
+- If you're not using [Flags] enums, or if your enum represents mutually exclusive values.
+- In highly performance-critical sections where even the minimal overhead of an extension method might be a concern (though in most cases it's negligible).
+
+### 4. Extensible ScriptableObject Observer Pattern (Generic Event System)
+
+- **ScriptableObject-Based Event Dispatching**: A highly reusable observer pattern using `ScriptableObject` assets as event channels. Events are defined as generic base classes, supporting payloads or parameterless types.
+- **Generic and Extensible**: The system is fully generic, enabling you to create type-safe event assets with payloads (e.g., `GameEvent<T>`) or without (e.g., `VoidEvent`). This makes it easy to scale across multiple event types without duplicating logic.
+- **Runtime Listener Support**: Includes MonoBehaviour-based `EventListener<T>` and `VoidEventListener` scripts that register/unregister with the corresponding `ScriptableObject` events automatically during the object’s lifecycle.
+- **Editor Tooling Included**: Custom editor drawers and inspectors show live subscribers at runtime, allowing quick debugging and better insight into event flow across your project.
+
+#### When to Use It
+
+- For decoupling game systems like UI, audio, input, and gameplay logic using event-driven architecture.
+- In projects where designers or non-programmers need to connect logic via the Inspector without tight coupling.
+- When you want a centralized, editor-visible, and testable alternative to UnityEvents or C# delegates.
+
+#### When Not to Use It
+
+- If your project doesn't benefit from decoupling or is too small to justify the abstraction.
+- In performance-critical inner loops where event overhead could introduce latency (e.g., physics step logic).
+
+### 5. Scene Management via ScriptableObject Strategies
+
+- **Decoupled Scene Loading Logic**: This system replaces tightly coupled scene-loading code with flexible ScriptableObject strategies, enabling reusable and testable scene operations.
+- **Strategy Pattern Architecture**: Each scene-related behavior (load, unload, reload, set active, etc.) is encapsulated within a dedicated `SceneStrategySO`, following the Strategy pattern. These behaviors are pluggable and composable at runtime.
+- **Support for Multi-Strategy Composition**: Complex loading sequences can be created by composing multiple strategies via `MultiSceneStrategySO`, allowing for chainable and layered scene logic (e.g., load multiple scenes additively, then set one active).
+- **Asset-Driven Design for Reusability**: Scene strategies are defined as assets, allowing designers or developers to reuse and reference them directly in other systems like gameplay logic, UI buttons, or startup sequences without code changes.
+- **Lifecycle Awareness and Delayed Execution**: Strategies support integration with Unity’s coroutine system for asynchronous loading, and can be configured to delay, wait for conditions, or execute in order.
+
+#### When to Use It
+
+- In large or modular projects where scene loading behaviors need to be reused across multiple contexts (e.g., level management, transitions, UI-driven flows).
+- When you want to enable designers to configure and tweak scene logic without code intervention.
+- For tools, prototypes, or frameworks that require flexible, data-driven scene control.
+
+#### When Not to Use It
+
+- For simple or one-off scene transitions where the overhead of asset creation and modular logic isn’t justified.
+- If you need tight control over scene loading lifecycles in performance-critical code, where monolithic logic might be more efficient.
+
+### 6. Asset and Reference Search Tool (Editor-Only)
+
+- **Advanced Search Utility for Assets and Components**: This custom Editor tool enables deep and flexible search operations across your Unity project, including assets, components in scenes, and serialized references.
+- **Supports Asset and Scene Queries**: It can locate assets by type, name, and path, and also search scenes for components and fields that reference specific objects or types.
+- **Reference Search Functionality**: Built-in tools allow you to trace serialized references to specific ScriptableObjects, prefabs, or MonoBehaviours—ideal for refactoring and debugging.
+- **Modular Search Architecture**: The tool is organized into modular search strategies, allowing extension and customization to fit your studio or project’s asset workflow.
+- **Context Menu Integration**: Many of the search utilities can be triggered via the Unity context menu, enabling fast one-click investigation from the Project or Hierarchy views.
+
+#### When to Use It
+
+- When cleaning up unused assets or determining the impact of removing a ScriptableObject or prefab.
+- During refactors to track all references to a given type or instance.
+- For debugging unexpected behaviors linked to misplaced or redundant references in scenes or prefabs.
+
+#### When Not to Use It
+
+- If you're looking for runtime search or tracking (this tool is strictly Editor-only).
+- In very small projects where reference tracing can be managed manually.
+
+### 7. Coroutine Management Utilities
+
+- **Centralized Coroutine Handling via Static Class**: Provides a global, static entry point to start and stop coroutines without requiring a MonoBehaviour reference.
+- **Persistent Coroutine Runner**: A hidden, automatically created `MonoBehaviour` instance is used internally to run coroutines safely from any context.
+- **Safe Coroutine Lifecycle**: Ensures coroutines persist correctly through scene loads (if desired) and avoids common pitfalls with manually-managed runners or singletons.
+- **Simplified API for Non-MonoBehaviour Scripts**: Greatly improves ergonomics when triggering coroutines from ScriptableObjects, static methods, or services without tight coupling to GameObjects.
+
+#### When to Use It
+
+- When you want to decouple coroutine execution from scene objects or lifetime-bound MonoBehaviours.
+- In utility libraries, service locators, or ScriptableObject systems where coroutine support is required.
+
+#### When Not to Use It
+
+- In cases where you need more complex coroutine scheduling or time-slicing, such as a job system or task queue.
+
+### 8. Lerp Utilities for Smooth Transitions
+
+- **Generic Lerp Utility Functions**: Provides reusable linear interpolation (`Lerp`) and unclamped interpolation methods for various data types like `float`, `Vector2`, `Vector3`, and `Color`.
+- **Ease of Use in Gameplay and UI Code**: Enables smooth transitions without the boilerplate, helping with animations, UI effects, camera movement, fading, or value blending.
+- **Custom Extension Methods**: Includes intuitive and readable extension methods for applying interpolation directly on supported types, increasing code clarity.
+- **Support for Fixed and Delta Time**: Offers overloads for both unscaled and delta time, ensuring smooth performance regardless of framerate or time scaling.
+
+#### When to Use It
+
+- When you need to implement smooth transitions over time for values, visuals, or game logic.
+- For improving the readability and maintainability of any codebase with frequent interpolation needs.
+
+#### When Not to Use It
+
+- For highly complex animations or easing that require tweening libraries.
+- If transitions depend on physics-based motion or require precise physical accuracy.
+
+### 9. Unity Message Forwarding for Decoupled Callbacks
+
+- **Unity Lifecycle Event Forwarders**: Contains MonoBehaviour scripts like `UnityInitializationMessagesHandler`, `UnityDecommissioningMessagesHandler`, `UnityOnMouseMessagesHandler`, `UnityPhysicsCollisionMessagesHandler`, and `UnityPhysicsTriggerMessagesHandler` that expose Unity’s internal lifecycle messages through public C# events.
+- **UnityEvent-Based Architecture**: Each script defines one or more `UnityEvent` delegates that external components can subscribe to, enabling decoupled logic execution tied to specific Unity lifecycle events.
+- **Minimal and Reusable**: Designed to be lightweight components that can be attached to any GameObject to broadcast Unity messages without subclassing MonoBehaviour.
+
+#### When to Use It
+
+- When you want to connect Unity lifecycle events (like `Awake` or `Update`) to external systems without inheriting or modifying MonoBehaviour scripts.
+- For rapid prototyping where you need quick lifecycle event hooks in modular components.
+- To trigger effects, behaviors, or custom logic in a decoupled and testable way.
+
+#### When Not to Use It
+
+- If your project architecture already favors centralized lifecycle handling (e.g., via managers or script execution order).
+- When directly writing behavior inside MonoBehaviour methods is simpler and clearer.
+
+### 10. VFX PropertySO Management with Scriptable Objects
+
+- **Scriptable Object-Based VFX Control**: Utilize ScriptableObjects to manage and control various VFX elements like `BlendShapes`, `MaterialPropertyBlock`, and `Material` in Unity.
+- **BlendShapes**: Control mesh deformations through blend shapes, allowing for dynamic and procedural visual effects.
+- **MaterialPropertyBlock**: Use `MaterialPropertyBlock` to modify material properties at runtime, such as colors, textures, or shaders, without altering the original material.
+- **Material Scripting API**: Interface with Unity’s Material API to manipulate and manage materials efficiently during gameplay.
+
+#### When to Use It
+
+- When you want to centralize and manage your VFX logic in reusable ScriptableObject assets.
+- For large projects where VFX behaviors are complex and need to be managed across multiple objects or scenes without cluttering individual GameObjects.
+
+#### When Not to Use It
+
+- If VFX behaviors need to be very specific to a single object or require frequent, unique modifications based on gameplay.
 
 ## Contributing
 

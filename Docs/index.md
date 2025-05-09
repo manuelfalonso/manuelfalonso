@@ -12,6 +12,15 @@ Welcome to my collection of Unity scripts, a growing library designed to help Un
 5. [Getting Started](#getting-started)
 6. [Key Features](#key-features)
    - [Prefab Instantiation Management with Scriptable Objects](manual/PrefabInstantiateOnLoad.md)
+   - [Strategy Pattern Implementation with ScriptableObjects](manual/ScriptableObjectsStrategyPattern.md)
+   - [Enum Flags Utility Extensions](manual/EnumFlagExtensions.md)
+   - [Extensible ScriptableObject Observer Pattern (Generic Event System)](manual/ScriptableObjectEventChannels.md)
+   - [Scene Management via ScriptableObject Strategies](manual/SceneManagerStrategies.md)
+   - [Asset and Reference Search Tool (Editor-Only)](manual/Search.md)
+   - [Coroutine Management Utilities](manual/Coroutines.md)
+   - [Lerp Utilities for Smooth Transitions](manual/Lerp.md)
+   - [Unity Message Forwarding for Decoupled Callbacks](manual/UnityMessages.md)
+   - [VFX PropertySO Management with Scriptable Objects](manual/VFXPropertySO.md)
 7. [Contributing](#contributing)
 
 ## About Me
@@ -70,31 +79,44 @@ The repository is organized into the following main folders:
       - **PlayerMovement2D/**: Scripts focused on 2D player movement mechanics.
       - **PlayerMovement3D/**: Scripts for handling 3D player movement.
       - **Spawners/**: Systems for spawning objects or entities in the game world.
+   - **Inputs/**: 
    - **Interfaces/**: General-purpose interfaces for consistent API designs.
    - **Networking/**: Basic NetCode boilerplate scripts for networked functionality.
    - **Optimization/**: Scripts aimed at improving performance and resource management.
    - **Patters/**: Implementations of programming patterns, like Singleton or Factory.
    - **Physics/**: Scripts interacting with Unity's physics engine.
    - **Scenes/**: Scripts related to managing and transitioning between Unity scenes.
+      - **Editor/**: Editor scene change tool
+	  - **SceneAsset/**: Utilities for referencing and managing Unity scene assets at runtime.
+	  - **Strategies/**: Scenes strategies encapsulated with a flexible and extendable architecture.
+   - **ScriptableObjects/**: Scriptable object architecture scripts
+      - **Conditions/**: Scriptable objects representing conditional evaluations.
+	  - **Editor/**: Editor tools and custom inspectors for managing ScriptableObjects efficiently.
+	  - **Patterns/**: ScriptableObject-based implementations of common design patterns.
+	  - **RuntimeSets/**: Runtime collections of objects that update dynamically during gameplay.
+	  - **Values/**: Generic value containers using ScriptableObjects for shared, observable data.
    - **Services/**: Scripts for third-party integrations or service management.
       - **Advertisement/**: Boilerplate scripts for handling Unity Ads integration.
       - **Firebase/**: Utility scripts for integrating Firebase services.
       - **Notifications/**: Scripts for managing Unity’s notification system.
       - **WebAPI/**: Scripts demonstrating web API consumption.
    - **Splines/**: Scripts related to Unity's Spline package functionalities.
+   - **Structs/**: Generic serializable data containers designed for lightweight and efficient value types.
    - **Systems/**: Various game systems and utilities.
       - **CloseCaptions/**: Scripts for implementing closed captions in games.
+	  - **Damage/**: Handles the application, calculation, and effects of damage in gameplay.
       - **GameState/**: Scripts to manage game state transitions and logic.
+	  - **Heal/**: Encapsulates healing mechanics, including health restoration logic.
       - **LootBox/**: Systems for loot box generation and rewards.
+	  - **Objectives/**: Defines goals, milestones, and mission progress tracking.
       - **Resource/**: Systems to manage resources like health, mana, etc.
-      - **SceneManagement/**: Advanced scene management systems.
       - **Stats/**: Systems for managing character stats or game variables.
       - **Teleport/**: Scripts handling teleportation mechanics.
       - **Tutorial/**: Scripts for managing in-game tutorials and guidance.
+	  - **Unlock/**: 
    - **Tilemaps/**: Scripts related to Unity's Tilemap system.
    - **Tools/**: General-purpose tools for various tasks.
-      - **Coroutines/**: Scripts to simplify coroutine management.
-      - **Lerp/**: Linear interpolation utility scripts.
+      - **Search/**: Provides runtime and editor search tools for filtering and locating assets and references.
    - **UI/**: Scripts for managing user interface elements.
       - **ImageDrag/**: Scripts to allow dragging of UI images.
       - **InventorySystem/**: Scripts for handling inventory systems.
@@ -102,20 +124,26 @@ The repository is organized into the following main folders:
       - **PanelDragAndResize/**: Scripts for dragging and resizing UI panels.
    - **Utility/**: General utility scripts that provide common functionality.
       - **Cooldown/**: Scripts to manage cooldown timers.
+      - **Coroutines/**: Scripts to simplify coroutine management.
       - **Destroyer/**: Conditional object destruction logic.
+      - **DontDestroy/**: Ensures persistence of GameObjects across scene transitions.
+      - **Lerp/**: Linear interpolation utility scripts.
+	  - **Logger/**: Simple and customizable logging system for debugging and tracing.
       - **FrameRate/**: Scripts to manage or display frame rates.
 	  - **Mirror/**: Scripts to mirror the Transform on position, rotation or scale along a given axis.
       - **Mobile/**: Scripts for mobile-specific functionality, like touch inputs or keyboards.
+	  - **NullReferenceChecker/**: Helps identify and report missing object references.
       - **PrefabInstantiateOnLoad/**: Automatically instantiate prefabs on scene load.
       - **Resources/**: Scripts to manage resource loading and references.
-      - **ScriptableObjects/**: Utilities for managing scriptable objects.
-      - **Timer/**: Timer-related scripts for time-based actions.
+	  - **Sprites/**: Utility scripts and containers for managing sprite assignments and metadata.
+      - **Timers/**: Timer-related scripts for time-based actions.
       - **TimeScale/**: Scripts for controlling time scaling in the game.
       - **UnityGizmos/**: Custom Gizmo drawing utilities.
       - **UnityMessages/**: Scripts to handle Unity event functions, like Awake() and Start().
    - **VFX/**: Scripts for managing visual effects.
       - **CameraShake/**: Scripts for implementing camera shake effects using DoTween.
       - **Parallax/**: Parallax scrolling effects for 2D or 3D.
+      - **PropertySO/**: ScriptableObject-driven system for applying and reverting visual effects modularly.
    - **Video/**: Scripts related to video playback and controls.
    - **XR/**: Scripts related to XR (extended reality) interactions.
       - **Interactables/**: Scripts for XR interactable objects.
@@ -136,6 +164,15 @@ To get started with this repository:
 This repository includes a variety of features designed to enhance Unity development. Below are some of the key features:
 
 * [Prefab Instantiation Management with Scriptable Objects](manual/PrefabInstantiateOnLoad.md)
+* [Strategy Pattern Implementation with ScriptableObjects](manual/ScriptableObjectsStrategyPattern.md)
+* [Enum Flags Utility Extensions](manual/EnumFlagExtensions.md)
+* [Extensible ScriptableObject Observer Pattern (Generic Event System)](manual/ScriptableObjectEventChannels.md)
+* [Scene Management via ScriptableObject Strategies](manual/SceneManagerStrategies.md)
+* [Asset and Reference Search Tool (Editor-Only)](manual/Search.md)
+* [Coroutine Management Utilities](manual/Coroutines.md)
+* [Lerp Utilities for Smooth Transitions](manual/Lerp.md)
+* [Unity Message Forwarding for Decoupled Callbacks](manual/UnityMessages.md)
+* [VFX PropertySO Management with Scriptable Objects](manual/VFXPropertySO.md)
 
 ## Contributing
 
