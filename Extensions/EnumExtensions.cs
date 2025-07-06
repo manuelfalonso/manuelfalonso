@@ -17,8 +17,8 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>True if the flag is set; otherwise, false.</returns>
         public static bool Has<T>(this T value, T flag) where T : Enum
         {
-            int intValue = Convert.ToInt32(value);
-            int intFlag = Convert.ToInt32(flag);
+            var intValue = Convert.ToUInt64(value);
+            var intFlag = Convert.ToUInt64(flag);
             return (intValue & intFlag) == intFlag; // Must match *all* bits
         }
 
@@ -31,8 +31,8 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>True if at least one flag is present; otherwise, false.</returns>
         public static bool HasAny<T>(this T value, T other) where T : Enum
         {
-            int intValue = Convert.ToInt32(value);
-            int intOther = Convert.ToInt32(other);
+            var intValue = Convert.ToUInt64(value);
+            var intOther = Convert.ToUInt64(other);
             return (intValue & intOther) != 0;
         }
 
@@ -44,7 +44,7 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>True if no flags are set; otherwise, false.</returns>
         public static bool IsNone<T>(this T value) where T : Enum
         {
-            return Convert.ToInt32(value) == 0;
+            return Convert.ToUInt64(value) == 0;
         }
 
         /// <summary>
@@ -56,8 +56,8 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>The modified enum value with the flag added.</returns>
         public static T Add<T>(this T value, T flag) where T : Enum
         {
-            int intValue = Convert.ToInt32(value);
-            int intFlag = Convert.ToInt32(flag);
+            var intValue = Convert.ToUInt64(value);
+            var intFlag = Convert.ToUInt64(flag);
             return (T)Enum.ToObject(typeof(T), intValue | intFlag);
         }
 
@@ -70,8 +70,8 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>The modified enum value with the flag removed.</returns>
         public static T Remove<T>(this T value, T flag) where T : Enum
         {
-            int intValue = Convert.ToInt32(value);
-            int intFlag = Convert.ToInt32(flag);
+            var intValue = Convert.ToUInt64(value);
+            var intFlag = Convert.ToUInt64(flag);
             return (T)Enum.ToObject(typeof(T), intValue & ~intFlag);
         }
 
@@ -84,8 +84,8 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>The modified enum value with the flag toggled.</returns>
         public static T Toggle<T>(this T value, T flag) where T : Enum
         {
-            int intValue = Convert.ToInt32(value);
-            int intFlag = Convert.ToInt32(flag);
+            var intValue = Convert.ToUInt64(value);
+            var intFlag = Convert.ToUInt64(flag);
             return (T)Enum.ToObject(typeof(T), intValue ^ intFlag);
         }
 
@@ -98,8 +98,8 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>The common flags between the two enum values.</returns>
         public static T CommonFlags<T>(this T value, T other) where T : Enum
         {
-            int intValue = Convert.ToInt32(value);
-            int intOther = Convert.ToInt32(other);
+            var intValue = Convert.ToUInt64(value);
+            var intOther = Convert.ToUInt64(other);
             return (T)Enum.ToObject(typeof(T), intValue & intOther);
         }
 
@@ -114,12 +114,31 @@ namespace SombraStudios.Shared.Extensions
             List<T> activeFlags = new();
             foreach (T flag in Enum.GetValues(typeof(T)))
             {
-                if (value.Has(flag) && Convert.ToInt32(flag) != 0)
+                if (value.Has(flag) && Convert.ToUInt64(flag) != 0)
                 {
                     activeFlags.Add(flag);
                 }
             }
             return activeFlags;
+        }
+
+        /// <summary>
+        /// Counts the number of active flags in the enum value.
+        /// </summary>
+        /// <typeparam name="T">The enum type.</typeparam>  
+        /// <param name="value">The enum value to check.</param>  
+        /// <returns>The number of active flags in the enum value.</returns>  
+        public static int CountFlags<T>(this T value) where T : Enum
+        {
+            int count = 0;
+            foreach (T flag in value.GetAllFlags())
+            {
+                if (value.HasFlag(flag))
+                {
+                    count++;
+                }
+            }
+            return count;
         }
     }
 }
