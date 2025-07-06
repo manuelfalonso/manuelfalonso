@@ -136,7 +136,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         public void AddToRuntimeSet()
         {
             if (RuntimeSet == null) return;
-            RuntimeSet.Add(this);
+            RuntimeSet.TryAdd(this);
         }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         public void RemoveFromRuntimeSet()
         {
             if (RuntimeSet == null) return;
-            RuntimeSet.Remove(this);
+            RuntimeSet.TryRemove(this);
         }
 
         /// <summary>

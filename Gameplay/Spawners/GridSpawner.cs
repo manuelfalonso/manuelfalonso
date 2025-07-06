@@ -54,7 +54,7 @@ namespace SombraStudios.Shared.Gameplay.Spawners
         [Button]
         public void SpawnAtNextSpace()
         {
-            int nextIndex = m_RuntimeSet.Items.Count;
+            int nextIndex = m_RuntimeSet.Count;
             int maxCells = m_MaxHeight * m_MaxWidth;
 
             for (int i = 0; i < maxCells; i++)
@@ -66,20 +66,20 @@ namespace SombraStudios.Shared.Gameplay.Spawners
 
                 bool isSpaceEmpty = true;
 
-                foreach (GameObject item in m_RuntimeSet.Items)
+                for (int j = 0; j < m_RuntimeSet.Count; j++)
                 {
-                    if (item.transform.position.x == nextPosition.x && item.transform.position.y == nextPosition.y)
+                    if (m_RuntimeSet[j].transform.position.x == nextPosition.x && m_RuntimeSet[j].transform.position.y == nextPosition.y)
                     {
                         isSpaceEmpty = false;
                         break;
                     }
                 }
 
-                if (isSpaceEmpty || m_RuntimeSet.Items.Count == 0)
+                if (isSpaceEmpty || m_RuntimeSet.Count == 0)
                 {
                     GameObject instance = Instantiate(m_Prefab, nextPosition, Quaternion.identity);
                     instance.name = k_Basename + nextIndex;
-                    m_RuntimeSet.Add(instance);
+                    m_RuntimeSet.TryAdd(instance);
                     return;
                 }
             }
@@ -91,7 +91,7 @@ namespace SombraStudios.Shared.Gameplay.Spawners
         // Remove an item
         public void Despawn(GameObject instance)
         {
-            m_RuntimeSet.Remove(instance);
+            m_RuntimeSet.TryRemove(instance);
         }
 
         // Delete the elements and clear the Runtime Set's Items list.

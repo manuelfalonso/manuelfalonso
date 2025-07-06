@@ -16,10 +16,14 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
 
         [Header("Optional")]
         [Tooltip("Notify other objects this Runtime Set has changed")]
-        [SerializeField] private VoidEventChannelSO m_RuntimeSetUpdated;
+        [SerializeField] private VoidEventChannelSO _runtimeSetUpdated;
 
         [SerializeField] private string _description;
         public string Description { get => _description; set => _description = value; }
+        /// <summary>
+        /// A read-only list of items in the runtime set.
+        /// </summary>
+        public System.Collections.Generic.IReadOnlyList<GameObject> Items => _items;
 
         private void OnEnable()
         {
@@ -27,53 +31,45 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
                 ItemsChanged();
         }
 
-        public override bool Add(GameObject thingToAdd)
+        public override bool TryAdd(GameObject thingToAdd)
         {
-            bool success = false;
-
-            if (!Items.Contains(thingToAdd))
+            if (base.TryAdd(thingToAdd) == false)
             {
-                Items.Add(thingToAdd);
-                
-                if (m_RuntimeSetUpdated != null)
-                    m_RuntimeSetUpdated.RaiseEvent();
+                if (_runtimeSetUpdated != null)
+                    _runtimeSetUpdated.RaiseEvent();
 
                 if (ItemsChanged != null)
                     ItemsChanged();
-                
-                success = true;
+
+                return true;
             }
-            return success;
+            return false;
         }
 
-        public override bool Remove(GameObject thingToRemove)
+        public override bool TryRemove(GameObject thingToRemove)
         {
-            bool success = false;
-
-            if (Items.Contains(thingToRemove))
+            if (base.TryRemove(thingToRemove))
             {
-                Items.Remove(thingToRemove);
-                
-                if (m_RuntimeSetUpdated != null)
-                    m_RuntimeSetUpdated.RaiseEvent();
+                if (_runtimeSetUpdated != null)
+                    _runtimeSetUpdated.RaiseEvent();
 
                 if (ItemsChanged != null)
                     ItemsChanged();
-                
-                success = true;
+
+                return true;
             }
-            return success;
+            return false;
         }
 
         /// <summary>
         /// Reset the list of items in the runtime set.
         /// </summary>
-        public void Clear()
+        public override void Clear()
         {
-            Items.Clear();
+            base.Clear();
 
-            if (m_RuntimeSetUpdated != null)
-                m_RuntimeSetUpdated.RaiseEvent();
+            if (_runtimeSetUpdated != null)
+                _runtimeSetUpdated.RaiseEvent();
 
             if (ItemsChanged != null)
                 ItemsChanged();
@@ -84,7 +80,7 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets
         /// </summary>
         public void DestroyItems()
         {
-            foreach (GameObject item in Items)
+            foreach (GameObject item in _items)
             {
                 Destroy(item);
             }

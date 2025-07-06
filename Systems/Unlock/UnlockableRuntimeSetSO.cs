@@ -39,7 +39,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         /// </summary>
         public IEnumerable<UnlockableSO> GetUnlockedObjects()
         {
-            foreach (var unlockable in Items)
+            foreach (var unlockable in _items)
             {
                 if (unlockable.IsUnlocked)
                     yield return unlockable;
@@ -59,7 +59,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         /// <returns>True if all he unlockables are unlocked, false otherwise.</returns>
         public bool AreAllUnlocked()
         {
-            foreach (var unlockable in Items)
+            foreach (var unlockable in _items)
             {
                 if (!unlockable.IsUnlocked)
                     return false;
@@ -81,7 +81,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         /// <param name="unlockable">The object to unlock.</param>
         public void Unlock(UnlockableSO unlockable)
         {
-            if (Items.Contains(unlockable))
+            if (_items.Contains(unlockable))
             {
                 unlockable.SetUnlocked(true);
             }
@@ -92,7 +92,7 @@ namespace SombraStudios.Shared.Systems.Unlock
         /// </summary>
         public void Lock(UnlockableSO unlockable)
         {
-            if (Items.Contains(unlockable))
+            if (_items.Contains(unlockable))
             {
                 unlockable.SetUnlocked(false);
             }

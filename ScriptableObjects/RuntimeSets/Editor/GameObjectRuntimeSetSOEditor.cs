@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
+using System.Linq;
 
 namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
 {
@@ -63,7 +64,7 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
             separator.style.marginBottom = 10;
             root.Add(separator);
 
-            _itemsListView = new ListView(_runtimeSet.Items, 20, MakeItem, BindItem);
+            _itemsListView = new ListView(_runtimeSet.Items.ToList(), 20, MakeItem, BindItem);
 
             // Add the ListView to the root element
             root.Add(_itemsListView);
@@ -89,10 +90,10 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
         /// <param name="index">The integer index in the RuntimeSet Items list.</param>
         private void BindItem(VisualElement element, int index)
         {
-            if (_runtimeSet.Items.Count == 0)
+            if (_runtimeSet.Count == 0)
                 return;
 
-            var item = _runtimeSet.Items[index];
+            var item = _runtimeSet[index];
 
             Label label = (Label)element.ElementAt(0);
             label.text = item ? item.name : "<null>";
@@ -116,7 +117,7 @@ namespace SombraStudios.Shared.ScriptableObjects.RuntimeSets.Editor
             if (_listLabel != null)
             {
                 string message = "Runtime Set Items";
-                message = (_runtimeSet == null) ? message + ":" : message + " (Count " + _runtimeSet.Items.Count + "):";
+                message = (_runtimeSet == null) ? message + ":" : message + " (Count " + _runtimeSet.Count + "):";
                 _listLabel.text = message;
             }
 
