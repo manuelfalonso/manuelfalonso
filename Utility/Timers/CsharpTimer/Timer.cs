@@ -18,22 +18,22 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
         /// </summary>
         public bool IsRunning { get; private set; }
 
-        protected float initialTime;
+        protected float _initialTime;
 
         /// <summary>
         /// Gets the progress of the timer as a value between 0 and 1.
         /// </summary>
-        public float Progress => Mathf.Clamp(CurrentTime / initialTime, 0, 1);
+        public float Progress => _initialTime > 0f ? Mathf.Clamp(CurrentTime / _initialTime, 0, 1) : 0f;
 
         /// <summary>
         /// Event triggered when the timer starts.
         /// </summary>
-        public Action OnTimerStart = delegate { };
+        public Action OnTimerStart;
 
         /// <summary>
         /// Event triggered when the timer stops.
         /// </summary>
-        public Action OnTimerStop = delegate { };
+        public Action OnTimerStop;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Timer"/> class.
@@ -41,7 +41,7 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
         /// <param name="value">The initial time value for the timer.</param>
         protected Timer(float value)
         {
-            initialTime = value;
+            _initialTime = value;
         }
 
         /// <summary>
@@ -49,12 +49,11 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
         /// </summary>
         public void Start()
         {
-            CurrentTime = initialTime;
-            if (!IsRunning)
-            {
-                IsRunning = true;
-                OnTimerStart.Invoke();
-            }
+            CurrentTime = _initialTime;
+            if (IsRunning) return;
+
+            IsRunning = true;
+            OnTimerStart?.Invoke();
         }
 
         /// <summary>
@@ -62,11 +61,10 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
         /// </summary>
         public void Stop()
         {
-            if (IsRunning)
-            {
-                IsRunning = false;
-                OnTimerStop.Invoke();
-            }
+            if (!IsRunning) return;
+
+            IsRunning = false;
+            OnTimerStop?.Invoke();
         }
 
         /// <summary>
@@ -92,7 +90,7 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
         /// <summary>
         /// Resets the timer to its initial time.
         /// </summary>
-        public virtual void Reset() => CurrentTime = initialTime;
+        public virtual void Reset() => CurrentTime = _initialTime;
 
         /// <summary>
         /// Resets the timer to a new initial time.
@@ -100,8 +98,8 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
         /// <param name="newTime">The new initial time value for the timer.</param>
         public virtual void Reset(float newTime)
         {
-            initialTime = newTime;
-            Reset();
+            _initialTime = newTime;
+            CurrentTime = newTime;
         }
     }
 }

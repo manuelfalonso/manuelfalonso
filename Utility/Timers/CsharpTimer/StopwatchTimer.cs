@@ -7,25 +7,43 @@ namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
     /// </summary>
     public class StopwatchTimer : Timer
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="StopwatchTimer"/> class.
-        /// </summary>
-        public StopwatchTimer() : base(0) { }
+        public StopwatchTimer() : base(0f) { }
 
         /// <summary>
         /// Updates the timer by adding the delta time to the current time.
+        /// Only runs when the timer is active.
         /// </summary>
         public override void Tick()
         {
-            if (IsRunning)
-            {
-                CurrentTime += Time.deltaTime;
-            }
+            if (!IsRunning) return;
+
+            CurrentTime += Time.deltaTime;
+        }
+
+        public override bool IsFinished => false;
+
+        /// <summary>
+        /// Gets the elapsed time since the stopwatch was started.
+        /// This is equivalent to CurrentTime for a stopwatch timer.
+        /// </summary>
+        public float ElapsedTime => CurrentTime;
+
+        /// <summary>
+        /// Resets the stopwatch timer back to zero.
+        /// </summary>
+        public override void Reset()
+        {
+            CurrentTime = 0f;
         }
 
         /// <summary>
-        /// Gets a value indicating whether the timer has finished.
+        /// Resets the stopwatch timer to a specific starting value.
+        /// This can be useful for resuming from a previously saved time.
         /// </summary>
-        public override bool IsFinished => false;
+        /// <param name="startTime">The starting time value for the stopwatch in seconds.</param>
+        public override void Reset(float startTime)
+        {
+            CurrentTime = startTime;
+        }
     }
 }
