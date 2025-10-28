@@ -8,19 +8,18 @@ namespace SombraStudios.Shared.Enums
     [Flags]
     public enum Axis
     {
+        None = 0,
         /// <summary>
         /// The X axis.
         /// </summary>
-        X = 1,
-
+        X = 1 << 0,
         /// <summary>
         /// The Y axis.
         /// </summary>
-        Y = 2,
-
+        Y = 1 << 1,
         /// <summary>
         /// The Z axis.
         /// </summary>
-        Z = 4
+        Z = 1 << 2,
     }
 }

@@ -8,17 +8,18 @@ namespace SombraStudios.Shared.Enums
     [Flags]
     public enum Team
     {
+        None = 0,
         /// <summary>
         /// Represents its own team.
         /// </summary>
-        Self = 1,
+        Self = 1 << 0,
         /// <summary>
         /// Represents allied teams.
         /// </summary>
-        Ally = 2,
+        Ally = 1 << 1,
         /// <summary>
         /// Represents enemy teams.
         /// </summary>
-        Enemy = 4
+        Enemy = 1 << 2
     }
 }
