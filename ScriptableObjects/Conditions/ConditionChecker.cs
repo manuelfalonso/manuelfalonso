@@ -1,25 +1,24 @@
+using SombraStudios.Shared.Enums;
 using UnityEngine;
 using UnityEngine.Events;
+using Logger = SombraStudios.Shared.Utility.Loggers.Logger;
 
 namespace SombraStudios.Shared.ScriptableObjects.Conditions
 {
     /// <summary>
     /// Listens to a ConditionSO and invokes UnityEvents based on its validity.
     /// </summary>
-    public class ConditionListener : MonoBehaviour
+    public class ConditionChecker : MonoBehaviour
     {
         [Header("Settings")]
         [Tooltip("The condition to evaluate.")]
         [SerializeField] private ConditionSO _condition;
 
-        [Tooltip("Whether the listener is active.")]
+        [Tooltip("Whether the checker is active.")]
         [SerializeField] private bool _isActive = true;
 
-        [Tooltip("Check the condition on Start.")]
-        [SerializeField] private bool _checkOnStart = false;
-                
-        [Tooltip("Check the condition on OnEnable.")]
-        [SerializeField] private bool _checkOnEnable = false;
+        [Tooltip("Automatically check the condition on specified Unity MonoBehaviour messages.")]
+        [SerializeField] private UnityMonobehaviourMessages _autoCheckMessages = UnityMonobehaviourMessages.None;
 
         [Header("Events")]
         /// <summary>
@@ -46,27 +45,47 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
             set => _isActive = value;
         }
 
-        /// <summary>
-        /// Unity OnEnable callback. Checks the condition if enabled.
-        /// </summary>
-        private void OnEnable()
+        #region Unity Messages
+        private void Awake()
         {
-            if (_checkOnEnable)
+            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.Awake))
             {
                 CheckCondition();
             }
         }
 
-        /// <summary>
-        /// Unity Start callback. Checks the condition if enabled.
-        /// </summary>
-        private void Start()
+        private void OnEnable()
         {
-            if (_checkOnStart)
+            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.OnEnable))
             {
                 CheckCondition();
             }
         }
+
+        private void Start()
+        {
+            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.Start))
+            {
+                CheckCondition();
+            }
+        }
+
+        private void OnDisable()
+        {
+            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.OnDisable))
+            {
+                CheckCondition();
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.OnDestroy))
+            {
+                CheckCondition();
+            }
+        }
+        #endregion
 
         /// <summary>
         /// Checks the assigned condition and invokes the corresponding events.
@@ -78,7 +97,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
 
             if (_condition == null)
             {
-                Debug.LogError("ConditionSO is not assigned in ConditionListener.", this);
+                Logger.LogError($"ConditionSO is not assigned in {typeof(ConditionChecker)}.", this);
                 return;
             }
 
