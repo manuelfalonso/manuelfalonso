@@ -1,20 +1,23 @@
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Systems.Tutorial
+namespace SombraStudios.Shared.Systems.Events
 {
-    [CreateAssetMenu(fileName = "New Tutorial Action", menuName = "Sombra Studios/Tutorial/Audio Event Action", order = 4)]
-    public class AudioEventAction : RaiseEventAction
+    [CreateAssetMenu(
+        fileName = "AudioEventAction", 
+        menuName = "Sombra Studios/Systems/Events/Audio Event Action", 
+        order = 14)]
+    public class AudioEventActionSO : RaiseEventActionSO
     {
         [Header("Data")]
         [SerializeField] private bool _waitAudio = true;
         
         private AudioSource _audioSource;
 
-
-        public override IEnumerator ExecuteAction()
+        public override IEnumerator StartAction()
         {
-            if (_active == false) { yield break; }
+            if (!_active) 
+                yield break;
 
             if (_gameEvent == null)
             {
@@ -34,7 +37,6 @@ namespace SombraStudios.Shared.Systems.Tutorial
 
             IsCompleted = true;
         }
-
 
         public void SetAudioSource(AudioSource audioSource) => _audioSource = audioSource;
     }

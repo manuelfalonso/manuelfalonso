@@ -2,19 +2,20 @@ using SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects;
 using System.Collections;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Systems.Tutorial
+namespace SombraStudios.Shared.Systems.Events
 {
     [CreateAssetMenu(
-        fileName = "New Tutorial Action", 
-        menuName = "Sombra Studios/Tutorial/Raise Event Action", 
-        order = 5)]
-    public class RaiseEventAction : TutorialActionSO
+        fileName = "RaiseEventAction", 
+        menuName = "Sombra Studios/Systems/Events/Raise Event Action", 
+        order = 15)]
+    public class RaiseEventActionSO : EventActionSO
     {
         [Header("Event Data")]
         [SerializeField] protected VoidEventChannelSO _gameEvent;
 
+        public override void PauseAction(bool pause) { }
 
-        public override IEnumerator ExecuteAction()
+        public override IEnumerator StartAction()
         {
             if (!_active)
                 yield break;
