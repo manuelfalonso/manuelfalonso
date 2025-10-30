@@ -4,10 +4,11 @@ using UnityEngine;
 namespace SombraStudios.Shared.Physics.Events
 {
     /// <summary>
-    /// Handles collision events based on specified thresholds for 3D.
-    /// The Rigidody is required to send the Collision Events. The Collider can be on child objects.
+    /// Handles 3D collision events when at least one involved object has a non-kinematic Rigidbody
+    /// and both have Colliders with IsTrigger disabled.
+    /// The required Rigidbody may be on the GameObject or any of its parents.
     /// </summary>
-    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(Collider))]
     public class CollisionEventHandler : CollisionEventHandlerBase<Collision>
     {
         [Header("3D Settings")]
@@ -15,7 +16,7 @@ namespace SombraStudios.Shared.Physics.Events
         /// Type of threshold to use for triggering events. Select None to avoid checking thresholds.
         /// </summary>
         [Tooltip("Type of threshold to use for triggering events. Select None to avoid checking thresholds.")]
-        [SerializeField] private CollisionThresholdType _thresholdType = CollisionThresholdType.Impulse;
+        [SerializeField] private CollisionThresholdType _thresholdType = CollisionThresholdType.None;
         /// <summary>
         /// Impulse force threshold to breach, to fire the ThresholdMet event
         /// </summary>
@@ -39,68 +40,48 @@ namespace SombraStudios.Shared.Physics.Events
         #region Unity Messages
         private void OnCollisionEnter(Collision collision)
         {
-            if (!IsCollisionEventType(PhysicInteractionEventType.Enter)) { return; }
-            if (!CheckCollision(collision)) { return; }
-            InteractionOnEnter?.Invoke(collision);
-        }
-
-        private void OnCollisionStay(Collision collision)
-        {
-            if (!IsCollisionEventType(PhysicInteractionEventType.Stay)) { return; }
-            if (!CheckCollision(collision)) { return; }
-            InteractionOnStay?.Invoke(collision);
+            CollisionEnter(collision);
         }
 
         private void OnCollisionExit(Collision collision)
         {
-            if (!IsCollisionEventType(PhysicInteractionEventType.Exit)) { return; }
-            if (!CheckCollision(collision)) { return; }
-            InteractionOnExit?.Invoke(collision);
+            CollisionExit(collision);
         }
         #endregion
 
-
-        #region Private Methods
-        /// <summary>
-        /// Checks if the collision should be processed based on various conditions.
-        /// </summary>
-        /// <param name="collision">The collision to check.</param>
-        /// <returns>True if the collision should be processed, false otherwise.</returns>
-        private bool CheckCollision(Collision collision)
+        #region Protected Methods
+        protected override bool IsStayInteractionValid(Collision component)
         {
-            if (!_isActive) { return false; }
-            if (!IsLayerMaskValid(collision)) { return false; }
-            if (!IsTagValid(collision)) { return false; }
-            if (!CalculateCollision(collision)) { return false; }
+            if (component == null) { return false; }
+            if (!IsInteractionValid(component.gameObject)) { return false; }
             return true;
         }
 
-        /// <summary>
-        /// Checks if the layer of the collision is valid.
-        /// </summary>
-        /// <param name="collision">The collision to check.</param>
-        /// <returns>True if the layer is valid, false otherwise.</returns>
-        private bool IsLayerMaskValid(Collision collision)
+        protected bool CollisionEnter(Collision collision)
         {
-            return (_layerMask == (_layerMask | (1 << collision.gameObject.layer)));
+            if (!IsInteractionValid(collision.gameObject)) { return false; }
+            if (!CalculateCollision(collision)) { return false; }
+
+            HandleEnterInteractions(collision);
+            if (!_eventType.HasFlag(PhysicInteractionEventType.Enter)) { return false; }
+
+            InteractionOnEnter?.Invoke(collision);
+            return true;
         }
 
-        /// <summary>
-        /// Checks if the tag of the collision is valid.
-        /// </summary>
-        /// <param name="collision">The collision to check.</param>
-        /// <returns>True if the tag is valid, false otherwise.</returns>
-        private bool IsTagValid(Collision collision)
+        protected bool CollisionExit(Collision collision)
         {
-            return string.IsNullOrEmpty(_requiredTag) || collision.gameObject.CompareTag(_requiredTag);
+            if (!IsInteractionValid(collision.gameObject)) { return false; }
+            if (!CalculateCollision(collision)) { return false; }
+
+            HandleExitInteractions(collision);
+            if (!_eventType.HasFlag(PhysicInteractionEventType.Exit)) { return false; }
+
+            InteractionOnExit?.Invoke(collision);
+            return true;
         }
 
-        /// <summary>
-        /// Calculates and processes collision data.
-        /// </summary>
-        /// <param name="other">The collision data.</param>
-        /// /// <returns>True if the collision meets the thresholds, false otherwise.</returns>
-        private bool CalculateCollision(Collision other)
+        protected override bool CalculateCollision(Collision other)
         {
             // No thresholds to check
             if (_thresholdType == CollisionThresholdType.None) { return true; }
@@ -126,7 +107,9 @@ namespace SombraStudios.Shared.Physics.Events
                 return false;
             }
         }
+        #endregion
 
+        #region Private Methods
         /// <summary>
         /// Checks if the impulse threshold is set.
         /// </summary>

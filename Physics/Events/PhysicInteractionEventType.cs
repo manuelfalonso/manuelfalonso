@@ -5,13 +5,12 @@ namespace SombraStudios.Shared.Physics.Events
     /// <summary>
     /// Types of physics interaction events.
     /// </summary>
-    [Serializable]
-    [Flags]
+    [Flags, Serializable]
     public enum PhysicInteractionEventType
     {
         None = 0,
-        Enter = 1,
-        Stay = 2, 
-        Exit = 4
+        Enter = 1 << 0,
+        Stay = 1 << 1, 
+        Exit = 1 << 2,
     }
 }

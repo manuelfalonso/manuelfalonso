@@ -26,5 +26,12 @@ namespace SombraStudios.Shared.Physics.Events
         /// </summary>
         [Tooltip("Debug - Maximum recorded relative velocity during collisions.")]
         [SerializeField, ReadOnly] protected float _maxVelocity;
+
+        /// <summary>
+        /// Calculates and processes collision data.
+        /// </summary>
+        /// <param name="other">The collision data.</param>
+        /// /// <returns>True if the collision meets the thresholds, false otherwise.</returns>
+        protected abstract bool CalculateCollision(T collision);
     }
 }
