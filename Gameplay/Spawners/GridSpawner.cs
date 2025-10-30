@@ -1,4 +1,6 @@
+#if NAUGHTY_ATTRIBUTES
 using NaughtyAttributes;
+#endif
 using SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects;
 using SombraStudios.Shared.ScriptableObjects.RuntimeSets;
 using UnityEngine;
@@ -49,9 +51,11 @@ namespace SombraStudios.Shared.Gameplay.Spawners
         {
             UnsubscribeEvents();
         }
-        
+
         // Spawn a prefab to fill in a grid pattern. This skips over already occupied positions in the grid.
+#if NAUGHTY_ATTRIBUTES
         [Button]
+#endif
         public void SpawnAtNextSpace()
         {
             int nextIndex = m_RuntimeSet.Count;
