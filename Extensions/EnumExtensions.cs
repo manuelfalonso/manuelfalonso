@@ -44,7 +44,14 @@ namespace SombraStudios.Shared.Extensions
         /// <returns>True if no flags are set; otherwise, false.</returns>
         public static bool IsNone<T>(this T value) where T : Enum
         {
-            return Convert.ToUInt64(value) == 0;
+            try
+            {
+                return Convert.ToUInt64(value) == 0;
+            }
+            catch (OverflowException)
+            {
+                return false;
+            }
         }
 
         /// <summary>
