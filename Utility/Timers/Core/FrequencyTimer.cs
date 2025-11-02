@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
+namespace SombraStudios.Shared.Utility.Timers.Core
 {
     /// <summary>
     /// Timer that ticks at a specific frequency. (N times per second)

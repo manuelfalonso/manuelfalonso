@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
+namespace SombraStudios.Shared.Utility.Timers.Core
 {
     /// <summary>
     /// Countdown timer that triggers events at specified intervals until completion.

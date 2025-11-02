@@ -18,7 +18,7 @@ namespace SombraStudios.Shared.Utility.Loggers
         /// Determines whether logs should be displayed in the Unity console.
         /// </summary>
         [Tooltip("Determines whether logs should be displayed in the Unity console.")]
-        [SerializeField] private bool _showLogs = false;
+        [SerializeField] private bool _showLogs = true;
 
         /// <summary>
         /// A prefix added before each log message, useful for identifying the source of logs.
@@ -43,6 +43,15 @@ namespace SombraStudios.Shared.Utility.Loggers
         private void OnValidate()
         {
             _hexColor = "#" + ColorUtility.ToHtmlStringRGBA(_prefixColor);
+        }
+
+        /// <summary>
+        /// Logs a message to the Unity console.
+        /// </summary>
+        /// <param name="message">The message to log.</param>
+        public void Log(string message)
+        {
+            Log(message, this);
         }
 
         /// <summary>

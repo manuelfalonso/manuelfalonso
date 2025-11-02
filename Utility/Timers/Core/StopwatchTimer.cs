@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Utility.Timers.CsharpTimer
+namespace SombraStudios.Shared.Utility.Timers.Core
 {
     /// <summary>
     /// Timer that counts up from zero to infinity. Great for measuring durations.
