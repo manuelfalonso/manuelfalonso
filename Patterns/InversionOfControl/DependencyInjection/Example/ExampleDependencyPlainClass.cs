@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection.Example
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection.Example
 {
     public class ExampleDependencyPlainClass
     {

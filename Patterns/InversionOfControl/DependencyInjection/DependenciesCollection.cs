@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Collections;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection
 {
     /// <summary>
     /// Collection of dependencies used by the DependenciesProvider.

@@ -1,4 +1,4 @@
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection
 {
     /// <summary>
     /// The choice is the attribute based one, because you

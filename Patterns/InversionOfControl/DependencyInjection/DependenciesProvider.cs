@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection
 {
     /// <summary>
     /// Provides dependency injection functionality for creating and managing objects.

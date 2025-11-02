@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection
 {
     /// <summary>
     /// Acts as a container of dependencies.

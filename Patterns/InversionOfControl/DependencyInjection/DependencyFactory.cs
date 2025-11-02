@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection
 {
     /// <summary>
     /// Factory class for creating instances using dependency injection.

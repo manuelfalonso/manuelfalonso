@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection.Example
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection.Example
 {
     /// <summary>
     /// In this case scneario, the nested class is in a Prefab

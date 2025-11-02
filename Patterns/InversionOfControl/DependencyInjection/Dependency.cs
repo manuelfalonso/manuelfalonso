@@ -1,6 +1,6 @@
 using System;
 
-namespace SombraStudios.Shared.Patterns.Creational.DependencyInjection
+namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection
 {
     /// <summary>
     /// Represents a dependency to be injected into classes.
