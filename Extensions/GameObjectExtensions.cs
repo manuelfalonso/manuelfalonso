@@ -1,3 +1,4 @@
+using Codice.CM.Common.Replication;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Extensions
@@ -32,5 +33,25 @@ namespace SombraStudios.Shared.Extensions
         /// <param name="obj">The object being checked.</param>
         /// <returns>The object itself if it exists and not destroyed, null otherwise.</returns>
         public static T OrNull<T>(this T obj) where T : Object => obj ? obj : null;
+
+        /// <summary>
+        /// Retrieves a component of the specified type from the given <see cref="GameObject"/>.  If the component does
+        /// not exist, it is added to the <see cref="GameObject"/>.
+        /// </summary>
+        /// <typeparam name="T">The type of the component to retrieve or add. Must derive from <see cref="Component"/>.</typeparam>
+        /// <param name="gameObject">The <see cref="GameObject"/> to retrieve the component from or add the component to.</param>
+        /// <returns>The existing component of type <typeparamref name="T"/> if found; otherwise, a newly added component of type
+        /// <typeparamref name="T"/>.</returns>
+        public static T GetOrAdd<T>(this GameObject gameObject) where T : Component
+        {
+            if (gameObject.TryGetComponent<T>(out var existingComponent))
+            {
+                return existingComponent;
+            }
+            else
+            {
+                return gameObject.AddComponent<T>();
+            }
+        }
     }
 }

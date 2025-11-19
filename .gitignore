@@ -1,14 +1,20 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-#
+# **/ instead of / if they are in the parent folder
+
+# Unity generated folders
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
+
+# Recordings can get excessive in size
+/[Rr]ecordings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -54,9 +60,30 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+*.aab
+*.app
 
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
 # game-ci
 /artifacts
+
+# Temporary auto-generated Android Assets
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa.meta
+/[Aa]ssets/[Ss]treaming[Aa]ssets/aa/*
+
+# ETC
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Plastic SCM
+.plastic/
+
+# Unity Timeline
+TimelineDefaultSettings.asset

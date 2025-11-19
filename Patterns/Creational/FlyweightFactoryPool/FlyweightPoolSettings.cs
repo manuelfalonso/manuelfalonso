@@ -1,25 +1,29 @@
+using SombraStudios.Shared.Extensions;
 using UnityEngine;
-using UnityEngine.Pool;
 
-namespace SombraStudios.Shared.Patterns.Creational.ObjectPool
+namespace SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
 {
     /// <summary>
-    /// Base class for implementing an object pool for components.
+    /// ScriptableObject that defines the configuration settings for a Flyweight Factory Pool.
+    /// This asset can be created through the Unity menu and contains all the parameters
+    /// needed to manage object pooling behavior including pool size limits, validation settings,
+    /// and lifecycle callbacks for pooled objects.
     /// </summary>
-    /// <typeparam name="T">The type of component to pool.</typeparam>
-    public abstract class BaseObjectPool<T> : MonoBehaviour where T : Component
+    [CreateAssetMenu(fileName = "FlyweightFactoryPool", menuName = "Sombra Studios/Patterns/Creational/Flyweight Factory Pool")]
+    public class FlyweightPoolSettings : ScriptableObject
     {
         /// <summary>
         /// Prefab to pool.
         /// </summary>
         [Tooltip("Prefab to pool.")]
-        [SerializeField] protected T _prefab;
+        [SerializeField] protected GameObject _prefab;
 
         /// <summary>
-        /// If true the pool will be setup on awake with the default capacity.
+        /// Determines whether the pool should be pre-populated with instances on initialization.
+        /// When true, the pool will create initial instances up to the default capacity.
         /// </summary>
-        [Tooltip("If true the pool will be setup on awake with the default capacity.")]
-        [SerializeField] private bool _setupOnAwake = true;
+        [Tooltip("Determines whether the pool should be pre-populated with instances on initialization.")]
+        [SerializeField] private bool _prepopulatePool = true;
 
         [Header("Object Pool Settings")]
         /// <summary>
@@ -45,78 +49,42 @@ namespace SombraStudios.Shared.Patterns.Creational.ObjectPool
             "pool growing to a very large size")]
         [SerializeField] private int _maxSize = 100;
 
-        private IObjectPool<T> _pool;
-
-        /// <summary>
-        /// Gets the object pool instance.
-        /// </summary>
-        public IObjectPool<T> Pool
-        {
-            get
-            {
-                _pool ??= CreatePool();
-                return _pool;
-            }
-        }
-
-        private void Awake()
-        {
-            if (_setupOnAwake) { SetupPool(); }
-        }
-
-        private IObjectPool<T> CreatePool()
-        {
-            return new ObjectPool<T>(
-                CreateFunc,
-                ActionOnGet,
-                ActionOnRelease,
-                ActionOnDestroy,
-                _collectionCheck,
-                _defaultCapacity,
-                _maxSize);
-        }
-
-        /// <summary>
-        /// Sets up the object pool with the default capacity.
-        /// </summary>
-        private void SetupPool()
-        {
-            _pool = CreatePool();
-
-            PrepopulatePool();
-        }
-
-        private void PrepopulatePool()
-        {
-            for (int i = 0; i < _defaultCapacity; i++)
-            {
-                var t = CreateFunc();
-                ActionOnRelease(t);
-            }
-        }
+        public bool PopulatePool => _prepopulatePool;
+        public bool CollectionCheck => _collectionCheck;
+        public int DefaultCapacity => _defaultCapacity;
+        public int MaxPoolSize => _maxSize;
 
         /// <summary>
         /// Used to create a new instance when the pool is empty.
         /// </summary>
         /// <returns>A new instance of the pooled object.</returns>
-        protected abstract T CreateFunc();
+        public virtual FlyweightPooledObject CreateFunc()
+        {
+            var go = Instantiate(_prefab, FlyweightFactory.Instance.gameObject.transform);
+            go.SetActive(false);
+
+            var flyweight = go.GetOrAdd<FlyweightPooledObject>();
+            flyweight.Settings = this;
+
+            return flyweight;
+        }
 
         /// <summary>
         /// Called when the instance is taken from the pool.
         /// </summary>
         /// <param name="t">The object taken from the pool.</param>
-        protected abstract void ActionOnGet(T t);
+        public virtual void ActionOnGet(FlyweightPooledObject t) => t.gameObject.SetActive(true);
 
         /// <summary>
         /// Called when the instance is returned to the pool. This can be used to clean up or disable the instance.
         /// </summary>
         /// <param name="t">The object returned to the pool.</param>
-        protected abstract void ActionOnRelease(T t);
+        public virtual void ActionOnRelease(FlyweightPooledObject t) => t.gameObject.SetActive(false);
 
         /// <summary>
         /// Called when the element could not be returned to the pool due to the pool reaching the maximum size.
         /// </summary>
         /// <param name="t">The object to be destroyed.</param>
-        protected abstract void ActionOnDestroy(T t);
+        public virtual void ActionOnDestroy(FlyweightPooledObject t) => Destroy(t.gameObject);
     }
 }
