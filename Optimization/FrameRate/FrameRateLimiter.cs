@@ -8,13 +8,9 @@ namespace SombraStudios.Shared.Optimization.FrameRate
     /// </summary>
     public static class FrameRateLimiter
     {
-        private static bool _isActive = true;
-
         [RuntimeInitializeOnLoadMethod]
         public static void LimitFrameRate()
         {
-            if (!_isActive) { return; }
-
             Application.targetFrameRate = (int)Screen.currentResolution.refreshRateRatio.value;
         }
     }
