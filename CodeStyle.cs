@@ -82,8 +82,8 @@ namespace StyleSheet
     // - Use the 'I' prefix.
     public interface IDamageable
     {
-        string damageTypeName { get; }
-        float damageValue { get; }
+        string DamageTypeName { get; }
+        float DamageValue { get; }
 
         // METHODS:
         // - Start a methods name with a verbs or verb phrases to show an action.
@@ -107,9 +107,9 @@ namespace StyleSheet
     {
         [SerializeField] private string _name;
         [SerializeField, Multiline] private string _description;
-        [SerializeField] private float _rarety = 0f;
+        [SerializeField] private float _rarity = 0f;
 
-        public float Rarety => _rarety;
+        public float Rarity => _rarity;
         public string Name => _name;
         public string Description => _description;
     }
@@ -152,7 +152,7 @@ namespace StyleSheet
         // - Pascal case, without special characters.
         // - Use the expression-bodied properties to shorten, but choose your preferrred format.
         // - e.g. use expression-bodied for read-only properties but { get; set; } for everything else.
-        // - Use the Auto-Implementated Property for a public property without a backing field.
+        // - Use the Auto-Implemented Property for a public property without a backing field.
 
         // the private backing field
         private int _maxHealth;
