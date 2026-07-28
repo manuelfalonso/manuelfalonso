@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Gameplay.Drag
@@ -12,36 +13,97 @@ namespace SombraStudios.Shared.Gameplay.Drag
     /// </summary>
     public class Drag : MonoBehaviour
     {
+        [Header("Drag Settings")]
+        [SerializeField] private bool _useSmoothMovement = true;
+        [SerializeField] private float _smoothSpeed = 10f;
+        [SerializeField] private float _snapDistance = 0.01f;
+
         // Distance from the center of the object and the click.
         private Vector3 _offset;
-
+        private Camera _mainCamera;
+        private Transform _transform;
         private float _zCord;
+        private Vector3 _targetPosition;
+        private bool _isDragging = false;
 
+        #region Unity Messages
+        private void Awake()
+        {
+            CheckObjectCollider();
+            _mainCamera = Camera.main;
+            _transform = transform;
+        }
 
         private void OnMouseDown()
         {
-            _zCord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-
-            // Store offset = gameobject world pos - mouse world pos
-            _offset = gameObject.transform.position - GetMouseAsWorldPoint();
+            CaptureDragOffset();
+            _isDragging = true;
         }
 
         private void OnMouseDrag()
         {
-            transform.position = GetMouseAsWorldPoint() + _offset;
+            UpdateTargetPosition();
         }
 
+        private void OnMouseUp()
+        {
+            _isDragging = false;
+        }
+
+        private void Update()
+        {
+            if (_isDragging)
+            {
+                UpdateDraggedObjectPosition();
+            }
+        }
+        #endregion
+
+        #region Private Methods
+        private void CheckObjectCollider()
+        {
+            if (GetComponent<Collider>() == null && GetComponent<Collider2D>() == null)
+            {
+                throw new Exception($"The object {gameObject.name} requires a Collider or Collider2D to use Drag component.");
+            }
+        }
+
+        private void CaptureDragOffset()
+        {
+            _zCord = _mainCamera.WorldToScreenPoint(_transform.position).z;
+            _offset = _transform.position - GetMouseAsWorldPoint();
+            _targetPosition = _transform.position;
+        }
+
+        private void UpdateTargetPosition()
+        {
+            _targetPosition = GetMouseAsWorldPoint() + _offset;
+        }
+
+        private void UpdateDraggedObjectPosition()
+        {
+            if (_useSmoothMovement)
+            {
+                _transform.position = Vector3.Lerp(_transform.position, _targetPosition, _smoothSpeed * Time.deltaTime);
+                
+                // Snap to target when close enough
+                if (Vector3.Distance(_transform.position, _targetPosition) < _snapDistance)
+                {
+                    _transform.position = _targetPosition;
+                }
+            }
+            else
+            {
+                _transform.position = _targetPosition;
+            }
+        }
 
         private Vector3 GetMouseAsWorldPoint()
         {
-            // Pixel coordinates of mouse (x,y)
             Vector3 mousePoint = Input.mousePosition;
-
-            // Z coordinate of game object on screen
             mousePoint.z = _zCord;
-
-            // Convert it to world points
-            return Camera.main.ScreenToWorldPoint(mousePoint);
+            return _mainCamera.ScreenToWorldPoint(mousePoint);
         }
+        #endregion
     }
 }
