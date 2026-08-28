@@ -38,7 +38,6 @@
 // USING LINES:
 // - Keep using lines at the top of your file.
 // - Remove unused lines.
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;

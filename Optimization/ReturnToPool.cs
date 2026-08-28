@@ -8,12 +8,12 @@ namespace SombraStudios.Shared.Optimization
     /// </summary>
     public class ReturnToPool : MonoBehaviour
     {
-        public IObjectPool<Transform> pool;
+        public IObjectPool<Transform> Pool;
 
         void OnDisable()
         {
             // Return to the pool
-            pool.Release(transform);
+            Pool.Release(transform);
         }
     }
 }

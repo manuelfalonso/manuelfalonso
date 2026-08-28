@@ -29,7 +29,7 @@ namespace SombraStudios.Shared.Optimization
 
             // This is used to return the object to the pool.
             var returnToPool = go.gameObject.AddComponent<ReturnToPool>();
-            returnToPool.pool = Pool;
+            returnToPool.Pool = Pool;
 
             return go;
         }

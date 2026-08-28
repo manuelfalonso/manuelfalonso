@@ -10,7 +10,7 @@ namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection.E
     {
         public void DoSomethingSimple()
         {
-            Debug.Log($"Something simple from a nested dependency: {gameObject.GetInstanceID()}");
+            Debug.Log($"Something simple from a nested dependency: {gameObject.GetEntityId()}");
         }
     }
 }

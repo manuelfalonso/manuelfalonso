@@ -15,7 +15,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
             "Create new keys by selecting \"Assets/Create/XR/Key Lock System/Key\"")]
         [SerializeField] private List<KeySO> _keys;
 
-        private HashSet<int> _keysHashSet = new HashSet<int>();
+        private HashSet<EntityId> _keysHashSet = new();
 
 
         void Awake()
@@ -35,7 +35,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
             _keysHashSet.Clear();
             foreach (var key in _keys)
             {
-                if (key != null) { _keysHashSet.Add(key.GetInstanceID()); }
+                if (key != null) { _keysHashSet.Add(key.GetEntityId()); }
             }
         }
 
@@ -48,7 +48,7 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
             if (key == null || Contains(key)) { return; }
 
             _keys.Add(key);
-            _keysHashSet.Add(key.GetInstanceID());
+            _keysHashSet.Add(key.GetEntityId());
         }
 
         /// <summary>
@@ -59,13 +59,13 @@ namespace SombraStudios.Shared.XR.KeyLockSystem
         {
             _keys.Remove(key);
 
-            if (key != null) { _keysHashSet.Remove(key.GetInstanceID()); }
+            if (key != null) { _keysHashSet.Remove(key.GetEntityId()); }
         }
 
         /// <inheritdoc />
         public bool Contains(KeySO key)
         {
-            return key != null && _keysHashSet.Contains(key.GetInstanceID());
+            return key != null && _keysHashSet.Contains(key.GetEntityId());
         }
     }
 }

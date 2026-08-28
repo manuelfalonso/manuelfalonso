@@ -9,7 +9,7 @@ namespace SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection.E
     {
         public void DoSomethingComplex()
         {
-            Debug.Log($"Something complex just happened: {gameObject.GetInstanceID()}");
+            Debug.Log($"Something complex just happened: {gameObject.GetEntityId()}");
         }
     }
 }

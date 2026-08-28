@@ -1,146 +1,132 @@
 #if UNITY_EDITOR
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
-using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
-#if UNITY_2019_1_OR_NEWER
-using UnityEngine.UIElements;
-#else
-using UnityEngine.Experimental.UIElements;
-#endif
+using UnityEditor.Toolbars;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace SombraStudios.Shared.Scenes.Editor
 {
-    [InitializeOnLoad]
+    /// <summary>
+    /// Adds a dropdown to the Editor's main toolbar that switches between the scenes registered in
+    /// Build Settings, without having to locate them in the Project window.
+    /// </summary>
     public static class SceneChangeTool
     {
-        private static ScriptableObject _toolbar;
-        private static string[] _scenePaths;
-        private static string[] _sceneNames;
+        private const string ElementPath = "Editor Utility/Scene Switcher";
+        private const string EmptyLabel = "No Scene";
+        private const string Tooltip = "Switch to a scene registered in Build Settings";
+        private const string NoScenesLabel = "No scenes in Build Settings";
 
-        static SceneChangeTool()
+        private static MainToolbarDropdown _dropdown;
+
+        /// <summary>
+        /// Builds the toolbar element. Invoked by the Editor while the main toolbar is created.
+        /// </summary>
+        /// <returns>The scene switcher dropdown.</returns>
+        [MainToolbarElement(ElementPath,
+            defaultDockPosition = MainToolbarDockPosition.Middle,
+            defaultDockIndex = 10)]
+        private static MainToolbarElement CreateSceneDropdown()
         {
-            EditorApplication.delayCall += () =>
+            _dropdown = new MainToolbarDropdown(GetContent(), ShowSceneMenu)
             {
-                EditorApplication.update -= Update;
-                EditorApplication.update += Update;
+                enabled = !Application.isPlaying
             };
+
+            // The factory runs again after every domain reload, so drop the previous subscription first.
+            EditorSceneManager.activeSceneChangedInEditMode -= OnActiveSceneChanged;
+            EditorSceneManager.activeSceneChangedInEditMode += OnActiveSceneChanged;
+            EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
+            EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+
+            return _dropdown;
         }
 
-        private static void Update()
+        /// <summary>
+        /// Populates and shows the scene list as a dropdown menu.
+        /// </summary>
+        /// <param name="anchor">Screen rect of the dropdown button.</param>
+        private static void ShowSceneMenu(Rect anchor)
         {
-            if (_toolbar == null)
+            var menu = new GenericMenu();
+            var activePath = SceneManager.GetActiveScene().path;
+
+            foreach (var buildScene in EditorBuildSettings.scenes)
             {
-                Assembly editorAssembly = typeof(UnityEditor.Editor).Assembly;
-
-                UnityEngine.Object[] toolbars = UnityEngine.Resources.FindObjectsOfTypeAll(editorAssembly.GetType("UnityEditor.Toolbar"));
-                _toolbar = toolbars.Length > 0 ? (ScriptableObject)toolbars[0] : null;
-                if (_toolbar != null)
+                if (string.IsNullOrEmpty(buildScene.path))
                 {
-#if UNITY_2021_1_OR_NEWER
-                    var root = _toolbar.GetType().GetField("m_Root", BindingFlags.NonPublic | BindingFlags.Instance);
-                    var rawRoot = root.GetValue(_toolbar);
-                    var mRoot = rawRoot as VisualElement;
-                    RegisterCallback("ToolbarZoneRightAlign", OnGUI);
-
-                    void RegisterCallback(string root, Action cb)
-                    {
-                        var toolbarZone = mRoot.Q(root);
-
-                        var parent = new VisualElement()
-                        {
-                            style =
-                        {
-                            flexGrow = 1,
-                            flexDirection = FlexDirection.Row,
-                        }
-                        };
-                        var container = new IMGUIContainer();
-                        container.onGUIHandler += () => { cb?.Invoke(); };
-                        parent.Add(container);
-                        toolbarZone.Add(parent);
-                    }
-#else
-#if UNITY_2020_1_OR_NEWER
-          var windowBackendPropertyInfo = editorAssembly.GetType("UnityEditor.GUIView").GetProperty("windowBackend", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-          var windowBackend = windowBackendPropertyInfo.GetValue(_toolbar);
-          var visualTreePropertyInfo = windowBackend.GetType().GetProperty("visualTree", BindingFlags.Public| BindingFlags.Instance); 
-          var visualTree = (VisualElement)visualTreePropertyInfo.GetValue(windowBackend); 
-#else
-          PropertyInfo  visualTreePropertyInfo = editorAssembly.GetType("UnityEditor.GUIView").GetProperty("visualTree", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-          VisualElement visualTree = (VisualElement)visualTreePropertyInfo.GetValue(_toolbar, null);
-#endif
-
-          IMGUIContainer container = (IMGUIContainer)visualTree[0];
-
-          FieldInfo onGUIHandlerFieldInfo = typeof(IMGUIContainer).GetField("m_OnGUIHandler", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
-          Action    handler = (Action)onGUIHandlerFieldInfo.GetValue(container);
-          handler -= OnGUI;
-          handler += OnGUI;
-          onGUIHandlerFieldInfo.SetValue(container, handler);
-#endif
-                }
-            }
-
-            if (_scenePaths == null || _scenePaths.Length != EditorBuildSettings.scenes.Length)
-            {
-                List<string> scenePaths = new List<string>();
-                List<string> sceneNames = new List<string>();
-
-                foreach (EditorBuildSettingsScene scene in EditorBuildSettings.scenes)
-                {
-                    if (scene.path == null || scene.path.StartsWith("Assets") == false)
-                        continue;
-
-                    string scenePath = Application.dataPath + scene.path.Substring(6);
-
-                    scenePaths.Add(scenePath);
-                    sceneNames.Add(Path.GetFileNameWithoutExtension(scenePath));
+                    continue;
                 }
 
-                _scenePaths = scenePaths.ToArray();
-                _sceneNames = sceneNames.ToArray();
+                var scenePath = buildScene.path;
+                var label = new GUIContent(Path.GetFileNameWithoutExtension(scenePath));
+
+                menu.AddItem(label, scenePath == activePath, () => OpenScene(scenePath));
             }
+
+            if (menu.GetItemCount() == 0)
+            {
+                menu.AddDisabledItem(new GUIContent(NoScenesLabel));
+            }
+
+            menu.DropDown(anchor);
         }
 
-        private static void OnGUI()
+        /// <summary>
+        /// Opens a scene, prompting to save any modified scenes first.
+        /// </summary>
+        /// <param name="scenePath">Project relative path of the scene to open.</param>
+        private static void OpenScene(string scenePath)
         {
-            using (new EditorGUI.DisabledScope(Application.isPlaying))
+            if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
             {
-                Rect rect = new Rect(0, 0, Screen.width, Screen.height);
-                rect.xMin = EditorGUIUtility.currentViewWidth * 0.5f + 100.0f;
-                rect.xMax = EditorGUIUtility.currentViewWidth - 350.0f;
-                rect.y = 8.0f;
-
-#if UNITY_2021_1_OR_NEWER == false
-        using (new GUILayout.AreaScope(rect))
-#endif
-                {
-                    string sceneName = EditorSceneManager.GetActiveScene().name;
-                    int sceneIndex = -1;
-
-                    for (int i = 0; i < _sceneNames.Length; ++i)
-                    {
-                        if (sceneName == _sceneNames[i])
-                        {
-                            sceneIndex = i;
-                            break;
-                        }
-                    }
-
-                    int newSceneIndex = EditorGUILayout.Popup(sceneIndex, _sceneNames, GUILayout.Width(200.0f));
-                    if (newSceneIndex != sceneIndex)
-                    {
-                        if (EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
-                        {
-                            EditorSceneManager.OpenScene(_scenePaths[newSceneIndex], OpenSceneMode.Single);
-                        }
-                    }
-                }
+                return;
             }
+
+            EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
+        }
+
+        /// <summary>
+        /// Refreshes the dropdown label when the active scene changes in edit mode.
+        /// </summary>
+        /// <param name="previous">Scene that was active before the change.</param>
+        /// <param name="next">Scene that became active.</param>
+        private static void OnActiveSceneChanged(Scene previous, Scene next)
+        {
+            if (_dropdown == null)
+            {
+                return;
+            }
+
+            _dropdown.content = GetContent();
+        }
+
+        /// <summary>
+        /// Disables the dropdown while the Editor is in play mode.
+        /// </summary>
+        /// <param name="state">The play mode state that was entered.</param>
+        private static void OnPlayModeStateChanged(PlayModeStateChange state)
+        {
+            if (_dropdown == null)
+            {
+                return;
+            }
+
+            _dropdown.enabled = !EditorApplication.isPlayingOrWillChangePlaymode;
+        }
+
+        /// <summary>
+        /// Builds the dropdown content from the currently active scene.
+        /// </summary>
+        /// <returns>Content showing the active scene name.</returns>
+        private static MainToolbarContent GetContent()
+        {
+            var sceneName = SceneManager.GetActiveScene().name;
+            var label = string.IsNullOrEmpty(sceneName) ? EmptyLabel : sceneName;
+
+            return new MainToolbarContent(label, Tooltip);
         }
     }
 }

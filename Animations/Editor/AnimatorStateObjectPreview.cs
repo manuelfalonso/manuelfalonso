@@ -18,7 +18,7 @@ namespace SombraStudios.Shared.Animations.Editor
         private static FieldInfo _cachedStopTimeField;
 
         private UnityEditor.Editor _preview;
-        private int _animationClipId;
+        private EntityId _animationClipId;
 
         /// <summary>  
         /// Initializes the preview for the specified targets.  
@@ -39,7 +39,7 @@ namespace SombraStudios.Shared.Animations.Editor
                 if (clip != null)
                 {
                     _preview = UnityEditor.Editor.CreateEditor(clip);
-                    _animationClipId = clip.GetInstanceID();
+                    _animationClipId = clip.GetEntityId();
                 }
             }
         }
@@ -70,11 +70,11 @@ namespace SombraStudios.Shared.Animations.Editor
         public override void OnInteractivePreviewGUI(Rect r, GUIStyle background)
         {
             AnimationClip currentClip = GetAnimationClip(target as AnimatorState);
-            if (currentClip != null && _animationClipId != currentClip.GetInstanceID())
+            if (currentClip != null && _animationClipId != currentClip.GetEntityId())
             {
                 CleanUpPreviewEditor();
                 _preview = UnityEditor.Editor.CreateEditor(currentClip);
-                _animationClipId = currentClip.GetInstanceID();
+                _animationClipId = currentClip.GetEntityId();
             }
 
             if (_preview != null)
@@ -103,7 +103,7 @@ namespace SombraStudios.Shared.Animations.Editor
             {
                 Object.DestroyImmediate(_preview);
                 _preview = null;
-                _animationClipId = 0;
+                _animationClipId = EntityId.None;
             }
         }
 
