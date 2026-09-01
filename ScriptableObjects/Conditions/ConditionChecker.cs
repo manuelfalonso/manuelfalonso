@@ -18,7 +18,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
         [SerializeField] private bool _isActive = true;
 
         [Tooltip("Automatically check the condition on specified Unity MonoBehaviour messages.")]
-        [SerializeField] private UnityMonobehaviourMessages _autoCheckMessages = UnityMonobehaviourMessages.None;
+        [SerializeField] private UnityMonoBehaviourMessages _autoCheckMessages = UnityMonoBehaviourMessages.None;
 
         [Header("Events")]
         /// <summary>
@@ -48,7 +48,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
         #region Unity Messages
         private void Awake()
         {
-            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.Awake))
+            if (_autoCheckMessages.HasFlag(UnityMonoBehaviourMessages.Awake))
             {
                 CheckCondition();
             }
@@ -56,7 +56,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
 
         private void OnEnable()
         {
-            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.OnEnable))
+            if (_autoCheckMessages.HasFlag(UnityMonoBehaviourMessages.OnEnable))
             {
                 CheckCondition();
             }
@@ -64,7 +64,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
 
         private void Start()
         {
-            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.Start))
+            if (_autoCheckMessages.HasFlag(UnityMonoBehaviourMessages.Start))
             {
                 CheckCondition();
             }
@@ -72,7 +72,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
 
         private void OnDisable()
         {
-            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.OnDisable))
+            if (_autoCheckMessages.HasFlag(UnityMonoBehaviourMessages.OnDisable))
             {
                 CheckCondition();
             }
@@ -80,7 +80,7 @@ namespace SombraStudios.Shared.ScriptableObjects.Conditions
 
         private void OnDestroy()
         {
-            if (_autoCheckMessages.HasFlag(UnityMonobehaviourMessages.OnDestroy))
+            if (_autoCheckMessages.HasFlag(UnityMonoBehaviourMessages.OnDestroy))
             {
                 CheckCondition();
             }

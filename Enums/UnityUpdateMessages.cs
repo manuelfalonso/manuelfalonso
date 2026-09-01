@@ -2,10 +2,10 @@ using System;
 
 namespace SombraStudios.Shared.Enums
 {
-    [Flags, Serializable]
     /// <summary>
     /// Enum representing Unity update loop messages.
     /// </summary>
+    [Flags]
     public enum UnityUpdateMessages
     {
         None = 0,

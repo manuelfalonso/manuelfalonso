@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SombraStudios.Shared.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -44,7 +45,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
         /// <summary>
         /// Adds a transition between states in the state machine.
         /// </summary>
-        public void AddTransition(IState from, IState to, IPredicate condition)
+        public void AddTransition(IState from, IState to, ICondition condition)
         {
             GetOrAddNode(from).AddTransition(GetOrAddNode(to).State, condition);
         }
@@ -52,7 +53,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
         /// <summary>
         /// Adds a transition from any state to a specific state in the state machine.
         /// </summary>
-        public void AddAnyTransition(IState to, IPredicate condition)
+        public void AddAnyTransition(IState to, ICondition condition)
         {
             _anyTransitions.Add(new Transition(GetOrAddNode(to).State, condition));
         }
@@ -65,12 +66,12 @@ namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
         {
             foreach (var transition in _anyTransitions)
             {
-                if (transition.Condition.Evaluate()) { return transition; }
+                if (transition.Condition.IsValid()) { return transition; }
             }
 
             foreach (var transition in _current.Transitions)
             {
-                if (transition.Condition.Evaluate()) { return transition; }
+                if (transition.Condition.IsValid()) { return transition; }
             }
 
             return null;
@@ -141,7 +142,7 @@ namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
             /// <summary>
             /// Adds a transition with a specified condition to the set of transitions.
             /// </summary>
-            public void AddTransition(IState to, IPredicate condition)
+            public void AddTransition(IState to, ICondition condition)
             {
                 Transitions.Add(new Transition(to, condition));
             }

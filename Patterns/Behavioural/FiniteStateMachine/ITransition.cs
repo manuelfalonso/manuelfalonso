@@ -1,4 +1,6 @@
-﻿namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
+﻿using SombraStudios.Shared.Interfaces;
+
+namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
 {
     /// <summary>
     /// Interface for a transition between states in a state machine.
@@ -10,8 +12,8 @@
         /// </summary>
         IState To { get; }
         /// <summary>
-        /// The condition predicate for the transition.
+        /// The condition that must be valid for this transition to be taken.
         /// </summary>
-        IPredicate Condition { get; }
+        ICondition Condition { get; }
     }
 }

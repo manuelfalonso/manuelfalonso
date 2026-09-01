@@ -2,10 +2,10 @@ using System;
 
 namespace SombraStudios.Shared.Enums
 {
-    [Flags, Serializable]
     /// <summary>
     /// Enum representing Unity Gizmos drawing messages.
     /// </summary>
+    [Flags]
     public enum UnityGizmosMessages
     {
         None = 0,

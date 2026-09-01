@@ -2,10 +2,10 @@ using System;
 
 namespace SombraStudios.Shared.Enums
 {
-    [Flags, Serializable]
     /// <summary>
     /// Enum representing Unity physics-related messages.
     /// </summary>
+    [Flags]
     public enum UnityPhysicsMessages
     {
         None = 0,

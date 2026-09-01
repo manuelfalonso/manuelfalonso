@@ -2,10 +2,10 @@ using System;
 
 namespace SombraStudios.Shared.Enums
 {
-    [Flags, Serializable]
     /// <summary>
     /// Enum representing Unity mouse interaction messages.
     /// </summary>
+    [Flags]
     public enum UnityMouseMessages
     {
         None = 0,

@@ -1,4 +1,3 @@
-using SombraStudios.Shared.Interfaces;
 using SombraStudios.Shared.Utility.Timers.Core;
 using System;
 using UnityEngine;
@@ -6,7 +5,7 @@ using UnityEngine.Events;
 
 namespace SombraStudios.Shared.Utility.Timers.Unity
 {
-    public abstract class MonoBehaviourTimer<T> : MonoBehaviour, IInitializable where T : Timer
+    public abstract class MonoBehaviourTimer<T> : MonoBehaviour where T : Timer
     {
         [Header("Base Events")]
         public UnityEvent OnTimerStart = new();
@@ -113,20 +112,24 @@ namespace SombraStudios.Shared.Utility.Timers.Unity
         {
             if (_timer == null) { return; }
 
-            _timer.OnTimerStart += () => OnTimerStart?.Invoke();
-            _timer.OnTimerStop += () => OnTimerStop?.Invoke();
+            _timer.OnTimerStart += HandleTimerStart;
+            _timer.OnTimerStop += HandleTimerStop;
         }
 
         protected virtual void UnsubscribeListeners()
         {
             if (_timer == null) { return; }
 
-            _timer.OnTimerStart -= () => OnTimerStart?.Invoke();
-            _timer.OnTimerStop -= () => OnTimerStop?.Invoke();
+            _timer.OnTimerStart -= HandleTimerStart;
+            _timer.OnTimerStop -= HandleTimerStop;
         }
         #endregion
 
         #region Private Methods
+        private void HandleTimerStart() => OnTimerStart?.Invoke();
+
+        private void HandleTimerStop() => OnTimerStop?.Invoke();
+
         private void Initialize()
         {
             if (_isInitialized) return;

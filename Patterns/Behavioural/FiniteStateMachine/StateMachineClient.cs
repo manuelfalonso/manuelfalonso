@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using SombraStudios.Shared.Interfaces;
+using UnityEngine;
 
 namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
 {
@@ -33,12 +34,12 @@ namespace SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
         protected abstract void SetUpStateMachine();
 
         /// <summary>
-        /// Adds a transition from one state to another state based on a condition predicate.
+        /// Adds a transition from one state to another state, taken when the condition is valid.
         /// </summary>
-        protected void At(IState from, IState to, IPredicate condition) => _stateMachine.AddTransition(from, to, condition);
+        protected void At(IState from, IState to, ICondition condition) => _stateMachine.AddTransition(from, to, condition);
         /// <summary>
-        /// Adds a transition from any state to a specific state based on a condition predicate.
+        /// Adds a transition from any state to a specific state, taken when the condition is valid.
         /// </summary>
-        protected void Any(IState to, IPredicate condition) => _stateMachine.AddAnyTransition(to, condition);
+        protected void Any(IState to, ICondition condition) => _stateMachine.AddAnyTransition(to, condition);
     }
 }
