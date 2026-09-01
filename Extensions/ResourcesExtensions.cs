@@ -1,7 +1,16 @@
+#if UNITY_RENDER_PIPELINES_CORE
 using UnityEngine;
 
 namespace SombraStudios.Shared.Extensions
 {
+    /// <summary>
+    /// Extension methods for loading assets out of a 'Resources' folder.
+    /// </summary>
+    /// <remarks>
+    /// Requires the com.unity.render-pipelines.core package. The symbol UNITY_RENDER_PIPELINES_CORE is
+    /// supplied automatically by the module's asmdef versionDefines, so this file compiles out in a
+    /// project using the Built-in pipeline.
+    /// </remarks>
     public static class ResourcesExtensions
     {
         /// <summary>
@@ -27,3 +36,4 @@ namespace SombraStudios.Shared.Extensions
         }
     }
 }
+#endif

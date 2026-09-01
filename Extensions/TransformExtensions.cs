@@ -8,85 +8,57 @@ namespace SombraStudios.Shared.Extensions
     /// </summary>
     public static class TransformExtensions
     {
-        [Serializable]
         /// <summary>
-        /// Represents the directions along the axes.
+        /// Rotates the transform so that the given local direction points along a world-space vector.
         /// </summary>
-        public enum Axis
+        /// <remarks>
+        /// This assigns <see cref="Transform.up"/>, <see cref="Transform.right"/> or
+        /// <see cref="Transform.forward"/>, so it changes the transform's rotation, not its position.
+        /// Aiming a single axis leaves the roll around that axis unspecified - Unity picks one. Use
+        /// <see cref="Quaternion.LookRotation(Vector3, Vector3)"/> when the roll matters.
+        /// </remarks>
+        /// <param name="trans">The transform to rotate.</param>
+        /// <param name="direction">Which of the transform's local directions to aim.</param>
+        /// <param name="value">The world-space vector to aim that direction along.</param>
+        public static void SetDirection(this Transform trans, Direction direction, Vector3 value)
         {
-            /// <summary>
-            /// Upward direction.
-            /// </summary>
-            Up,
-
-            /// <summary>
-            /// Downward direction.
-            /// </summary>
-            Down,
-
-            /// <summary>
-            /// Left direction.
-            /// </summary>
-            Left,
-
-            /// <summary>
-            /// Right direction.
-            /// </summary>
-            Right,
-
-            /// <summary>
-            /// Forward direction.
-            /// </summary>
-            Forward,
-
-            /// <summary>
-            /// Backward direction.
-            /// </summary>
-            Backward
-        }
-
-        /// <summary>
-        /// Sets the local axis value of the transform.
-        /// </summary>
-        /// <param name="trans">The transform to set the axis value for.</param>
-        /// <param name="axis">The axis to set.</param>
-        /// <param name="value">The value to set for the axis.</param>
-        public static void SetAxisValue(this Transform trans, Axis axis, Vector3 value)
-        {
-            switch (axis)
+            switch (direction)
             {
-                case Axis.Up:
+                case Direction.Up:
                     trans.up = value;
                     break;
-                case Axis.Down:
+                case Direction.Down:
                     trans.up = -value;
                     break;
-                case Axis.Left:
+                case Direction.Left:
                     trans.right = -value;
                     break;
-                case Axis.Right:
+                case Direction.Right:
                     trans.right = value;
                     break;
-                case Axis.Forward:
+                case Direction.Forward:
                     trans.forward = value;
                     break;
-                case Axis.Backward:
+                case Direction.Backward:
                     trans.forward = -value;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(axis), axis, null);
+                    throw new ArgumentOutOfRangeException(nameof(direction), direction, null);
             }
         }
 
         /// <summary>
-        /// Resets the position, rotation and scale of the transform to default values.
+        /// Resets the transform's local position, rotation and scale to their identity values.
         /// </summary>
-        /// <param name="trans">The transform to reset its position, rotation and scale.</param>
+        /// <remarks>
+        /// Operates entirely in local space, so a child returns to its parent's origin rather than the
+        /// world origin.
+        /// </remarks>
+        /// <param name="trans">The transform to reset.</param>
         public static void ResetTransform(this Transform trans)
         {
-            trans.position = Vector3.zero;
-            trans.localRotation = Quaternion.identity;
-            trans.localScale = new Vector3(1, 1, 1);
+            trans.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+            trans.localScale = Vector3.one;
         }
     }
 }

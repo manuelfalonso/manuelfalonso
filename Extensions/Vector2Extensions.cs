@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Extensions
@@ -8,33 +9,36 @@ namespace SombraStudios.Shared.Extensions
     public static class Vector2Extensions
     {
         /// <summary>
-        /// Converts a screen position from UI Toolkit (or other screen-space coordinates) to world space.
+        /// Converts a screen position expressed in top-left-origin coordinates, as UI Toolkit reports them,
+        /// into a world-space position.
         /// </summary>
         /// <remarks>
-        /// This method accounts for the fact that UI Toolkit's (0,0) is at the top-left, whereas
-        /// Unity's world space uses a bottom-left origin.
+        /// The y coordinate is flipped unconditionally, because UI Toolkit's (0,0) is the top-left corner
+        /// while Unity's screen space starts at the bottom-left. Do not pass a value that already uses
+        /// bottom-left origin, such as <c>Input.mousePosition</c> - it would be flipped a second time.
         /// </remarks>
-        /// <param name="screenPos">The screen position to convert.</param>
-        /// <param name="camera">The camera used for conversion. If null, defaults to <see cref="Camera.main"/>.</param>
-        /// <param name="zDepth">The depth at which the world position should be projected.</param>
+        /// <param name="screenPos">The screen position to convert, with (0,0) at the top-left.</param>
+        /// <param name="camera">The camera to project through.</param>
+        /// <param name="zDepth">Distance from the camera, in world units, at which to place the result.</param>
         /// <returns>The world-space position corresponding to the given screen position.</returns>
-        public static Vector3 ScreenPosToWorldPos(this Vector2 screenPos, Camera camera = null, float zDepth = 10f)
+        /// <exception cref="ArgumentNullException">Thrown if <paramref name="camera"/> is null.</exception>
+        /// <exception cref="ArgumentException">Thrown if <paramref name="screenPos"/> contains NaN.</exception>
+        public static Vector3 ScreenPosToWorldPos(this Vector2 screenPos, Camera camera, float zDepth = 10f)
         {
             if (camera == null)
-                camera = Camera.main;
-
-            if (camera == null)
-                return Vector2.zero; // Return a default value if no camera is available.
+            {
+                throw new ArgumentNullException(nameof(camera));
+            }
 
             if (float.IsNaN(screenPos.x) || float.IsNaN(screenPos.y))
-                return Vector3.zero; // Return a default value if input is invalid.
+            {
+                throw new ArgumentException($"Screen position contains NaN: {screenPos}.", nameof(screenPos));
+            }
 
             // Flip y-coordinate; in UI Toolkit, (0,0) is top-left instead of bottom-left.
-            float yPos = camera.pixelHeight - screenPos.y;
+            var yPos = camera.pixelHeight - screenPos.y;
 
-            // Convert to world space position using Camera class.
-            Vector3 screenCoord = new Vector3(screenPos.x, yPos, zDepth);
-            return camera.ScreenToWorldPoint(screenCoord);
+            return camera.ScreenToWorldPoint(new Vector3(screenPos.x, yPos, zDepth));
         }
     }
 }
