@@ -63,7 +63,7 @@ namespace SombraStudios.Shared.Animations
         /// </summary>
         private void SafeInit()
         {
-            this.SafeInit(ref _animation);
+            this.EnsureComponent(ref _animation);
         }
 
         /// <summary>

@@ -10,7 +10,7 @@ namespace SombraStudios.Shared.Systems.GameState
     /// Listens for changes in a specific game state and invokes a UnityEvent when the target state is reached.  
     /// </summary>  
     /// <typeparam name="T">An Enum type representing the game states.</typeparam>  
-    public abstract class GameStateEvent<T> : GameStateListener<T> where T : Enum
+    public abstract class GameStateEvent<T> : GameStateListener<T> where T : struct, Enum
     {
         [Header("Settings")]
         [SerializeField]

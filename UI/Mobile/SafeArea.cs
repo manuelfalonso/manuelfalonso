@@ -21,7 +21,7 @@ namespace SombraStudios.Shared.UI.Mobile
         private void Start()
         {
             // Ensure _rectTransform is initialized before applying the safe area
-            this.SafeInit(ref _rectTransform);
+            this.EnsureComponent(ref _rectTransform);
             ApplySafeArea();
         }
 

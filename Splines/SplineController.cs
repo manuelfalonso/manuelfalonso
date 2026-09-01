@@ -47,7 +47,7 @@ namespace SombraStudios.Shared.Splines
 
         private void Start()
         {
-            this.SafeInit(ref _splineAnimation);
+            this.EnsureComponent(ref _splineAnimation);
 
             if (_splineAnimation == null) { return; }
             if (_splineAnimation.PlayOnAwake == true) { OnAnimationStarted(); }

@@ -31,7 +31,7 @@ namespace SombraStudios.Shared.Gameplay.PlayerMovement2D
         /// </summary>  
         void Start()
         {
-            this.SafeInit(ref _rigidbody2D);
+            this.EnsureComponent(ref _rigidbody2D);
         }
 
         /// <summary>  

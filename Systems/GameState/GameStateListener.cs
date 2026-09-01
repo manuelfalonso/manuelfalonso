@@ -7,7 +7,7 @@ namespace SombraStudios.Shared.Systems.GameState
     /// Abstract base class for listening to changes in a GameStateSO.  
     /// </summary>  
     /// <typeparam name="T">An Enum type representing the game states.</typeparam>  
-    public abstract class GameStateListener<T> : MonoBehaviour where T : Enum
+    public abstract class GameStateListener<T> : MonoBehaviour where T : struct, Enum
     {
         [Header("References")]
         [SerializeField] private GameStateSO<T> _gameStateSOListening;

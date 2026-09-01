@@ -56,8 +56,8 @@ namespace SombraStudios.Shared.Audio.Strategies
                 return;
 
             source.clip = _clips[Random.Range(0, _clips.Length)];
-            source.volume = _volume.RandomValue;
-            source.pitch = _pitch.RandomValue;
+            source.volume = _volume.GetRandom();
+            source.pitch = _pitch.GetRandom();
 
             source.Play();
         }

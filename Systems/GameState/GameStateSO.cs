@@ -10,7 +10,7 @@ namespace SombraStudios.Shared.Systems.GameState
     /// Abstract base class for managing game states using a ScriptableObject.  
     /// </summary>  
     /// <typeparam name="T">An Enum type representing the game states.</typeparam>  
-    public abstract class GameStateSO<T> : ScriptableObject where T : Enum
+    public abstract class GameStateSO<T> : ScriptableObject where T : struct, Enum
     {
         [Header("Properties")]
         [SerializeField] private T _gameState;
@@ -87,7 +87,7 @@ namespace SombraStudios.Shared.Systems.GameState
         /// </summary>  
         /// <param name="gameState">The game state to check.</param>  
         /// <returns>True if the current state contains the specified state; otherwise, false.</returns>  
-        public bool HasGameState(T gameState) => GameState.Has(gameState);
+        public bool HasGameState(T gameState) => GameState.HasFlag(gameState);
 
         /// <summary>  
         /// Checks if the current game state contains any of the specified states.  

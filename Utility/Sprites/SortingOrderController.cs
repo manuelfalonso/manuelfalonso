@@ -26,7 +26,7 @@ namespace SombraStudios.Shared.Utility.Sprites
 
         private void Awake()
         {
-            this.SafeInit(ref _spriteRenderer);
+            this.EnsureComponent(ref _spriteRenderer);
         }
 
         private void LateUpdate()

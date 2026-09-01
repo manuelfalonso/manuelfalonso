@@ -48,12 +48,12 @@ namespace SombraStudios.Shared.Gameplay.Spawners
         private IEnumerator SpawnCoroutine(ActiveSpawn spawn)
         {
             var spawnData = spawn.SpawnData;
-            yield return new WaitForSeconds(spawnData.TimeBetweenSpawns.RandomValue);
+            yield return new WaitForSeconds(spawnData.TimeBetweenSpawns.GetRandom());
 
             while (true)
             {
                 Spawn(spawn);
-                yield return new WaitForSeconds(spawnData.TimeBetweenSpawns.RandomValue);
+                yield return new WaitForSeconds(spawnData.TimeBetweenSpawns.GetRandom());
             }
         }
 

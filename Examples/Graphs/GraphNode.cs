@@ -25,7 +25,7 @@ namespace SombraStudios.Shared.Examples.Graphs
 
         private void Awake()
         {
-            this.SafeInit(ref _lineRenderer);
+            this.EnsureComponent(ref _lineRenderer);
         }
 
         private void Start()
