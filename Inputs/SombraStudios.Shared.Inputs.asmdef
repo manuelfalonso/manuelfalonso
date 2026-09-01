@@ -2,9 +2,8 @@
     "name": "SombraStudios.Shared.Inputs",
     "rootNamespace": "SombraStudios.Shared.Inputs",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:159a801c9b256aa4b8d8b65ce8c10a7a",
-        "GUID:36188afd4ef8a9f4a8f97daad7e50616"
+        "Unity.InputSystem",
+        "SombraStudios.Shared.Patterns"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -12,7 +11,15 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
+    "defineConstraints": [
+        "UNITY_INPUT_SYSTEM"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "",
+            "define": "UNITY_INPUT_SYSTEM"
+        }
+    ],
     "noEngineReferences": false
 }
