@@ -1,0 +1,12 @@
+# Paths hidden from ripgrep-based search (and therefore from AI assistants)
+# while still being tracked by git.
+#
+# Docs/obj holds the committed DocFX metadata that the GitHub Pages build
+# consumes: Docs/docfx.json reads "obj/temp/api" as build content, and
+# Docs/toc.yml links to it. It cannot be gitignored without deleting the API
+# section of the published site. It is 2419 generated files, so searching it
+# buries real source hits under YAML noise.
+#
+# Look things up in INDEX.tsv instead -- see the "Finding things" section of
+# CLAUDE.md.
+Docs/obj/

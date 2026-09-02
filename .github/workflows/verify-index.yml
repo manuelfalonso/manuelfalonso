@@ -1,0 +1,35 @@
+# Fails the build when INDEX.tsv no longer matches the C# sources.
+#
+# A stale index is worse than no index: whoever reads it stops searching and
+# trusts what it says. Regenerate with:
+#     python .github/scripts/generate_index.py
+
+name: Verify INDEX.tsv
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+
+jobs:
+  verify-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check the index is current
+        run: python .github/scripts/generate_index.py --check
+
+      - name: Show what changed
+        if: failure()
+        run: |
+          python .github/scripts/generate_index.py
+          git --no-pager diff -- INDEX.tsv

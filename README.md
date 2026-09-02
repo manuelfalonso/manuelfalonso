@@ -1,3 +1,15 @@
+## Manuel F. Alonso — Game Developer
+
+Game developer focused on mobile and VR/XR work.
+I build reusable, well-documented systems rather than one-off scripts.
+
+- 🔭 Currently: [Game Developer / Trick Studios] [Teaching Assistant (TA) / ORT Argentina]
+- 🛠 Unity (C#), editor tools and utilities · XR Interaction Toolkit · native iOS (Obj-C) & Android (Kotlin) plugins · Firebase · GitHub Actions CI
+- 📚 This repo doubles as my open Unity library — [API docs](https://manuelfalonso.github.io/manuelfalonso/)
+- 📫 [[LinkedIn](https://www.linkedin.com/in/manuel-f-alonso/)] · [manuelalonso89@gmail.com]
+
+---
+
 # Unity Scripts Repository
 ![Background 1280-720](https://github.com/user-attachments/assets/10a650d4-e674-4dea-9b3e-635640fcf29f)
 
@@ -5,14 +17,39 @@ Welcome to my collection of Unity scripts, a growing library designed to help Un
 
 ## Table of Contents
 
-1. [About Me](#about-me)
-2. [Technologies Used](#technologies-used)
-3. [Packages and Preprocessor Directives](#packages-and-preprocessor-directives)
-4. [Repository Structure](#repository-structure)
-5. [Getting Started](#getting-started)
-6. [Key Features](#key-features)
+0. [Bio](#manuel-f-alonso--game-developer)
+1. [Finding a script](#finding-a-script)
+2. [About Me](#about-me)
+3. [Technologies Used](#technologies-used)
+4. [Packages and Preprocessor Directives](#packages-and-preprocessor-directives)
+5. [Repository Structure](#repository-structure)
+6. [Getting Started](#getting-started)
+7. [Key Features](#key-features)
    - [1. Prefab Instantiation Management with Scriptable Objects](#1-prefab-instantiation-management-with-scriptable-objects)
-7. [Contributing](#contributing)
+8. [Contributing](#contributing)
+
+## Finding a script
+
+There are 600+ scripts across 30 modules here, so start from the generated
+index rather than browsing folders:
+
+```bash
+grep -i pool INDEX.tsv
+```
+
+[`INDEX.tsv`](INDEX.tsv) has one row per public type — `Type · Kind · Base ·
+Namespace · Path · Gate · Summary` — regenerated from the sources and verified
+in CI. The `Base` column tells you whether something is a `MonoBehaviour`, a
+`ScriptableObject`, or a plain class before you open it, and `Gate` names the
+define symbol it needs, if any.
+
+Per-module guides are in [`Docs/modules/`](Docs/modules/README.md).
+[`CONSUMERS.md`](CONSUMERS.md) covers adding the submodule to a project and
+pointing an AI assistant at the index so it stops grepping the whole tree.
+
+> The [published API site](https://manuelfalonso.github.io/manuelfalonso/) is
+> built from committed DocFX metadata and can lag behind the sources. When the
+> site and `INDEX.tsv` disagree, the index is right.
 
 ## About Me
 
