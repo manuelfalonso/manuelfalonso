@@ -4,9 +4,10 @@ Game developer focused on mobile and VR/XR work.
 I build reusable, well-documented systems rather than one-off scripts.
 
 - 🔭 Currently: [Game Developer / Trick Studios] [Teaching Assistant (TA) / ORT Argentina]
+- 💼 **Open to contract and freelance work** — Unity, mobile, VR/XR
 - 🛠 Unity (C#), editor tools and utilities · XR Interaction Toolkit · native iOS (Obj-C) & Android (Kotlin) plugins · Firebase · GitHub Actions CI
 - 📚 This repo doubles as my open Unity library — [API docs](https://manuelfalonso.github.io/manuelfalonso/)
-- 📫 [[LinkedIn](https://www.linkedin.com/in/manuel-f-alonso/)] · [manuelalonso89@gmail.com]
+- 📫 [LinkedIn](https://www.linkedin.com/in/manuel-f-alonso/) · [manuelalonso89@gmail.com](mailto:manuelalonso89@gmail.com) · [itch.io](https://manuelfalonso.itch.io/)
 
 ---
 
