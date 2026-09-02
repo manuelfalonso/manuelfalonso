@@ -21,7 +21,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ITransition
     path: ../Patterns/Behavioural/FiniteStateMachine/ITransition.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -30,6 +30,8 @@ items:
   syntax:
     content: public interface ITransition
     content.vb: Public Interface ITransition
+  derivedClasses:
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.Transition
 - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
   commentId: P:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.To
   id: To
@@ -48,7 +50,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: To
     path: ../Patterns/Behavioural/FiniteStateMachine/ITransition.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -79,18 +81,18 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Condition
     path: ../Patterns/Behavioural/FiniteStateMachine/ITransition.cs
-    startLine: 14
+    startLine: 16
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
-  summary: The condition predicate for the transition.
+  summary: The condition that must be valid for this transition to be taken.
   example: []
   syntax:
-    content: IPredicate Condition { get; }
+    content: ICondition Condition { get; }
     parameters: []
     return:
-      type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-    content.vb: ReadOnly Property Condition As IPredicate
+      type: SombraStudios.Shared.Interfaces.ICondition
+    content.vb: ReadOnly Property Condition As ICondition
   overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition*
 references:
 - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -158,10 +160,40 @@ references:
   name: Condition
   nameWithType: ITransition.Condition
   fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.ITransition.Condition
-- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
-  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html
-  name: IPredicate
-  nameWithType: IPredicate
-  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+- uid: SombraStudios.Shared.Interfaces.ICondition
+  commentId: T:SombraStudios.Shared.Interfaces.ICondition
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.ICondition.html
+  name: ICondition
+  nameWithType: ICondition
+  fullName: SombraStudios.Shared.Interfaces.ICondition
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html

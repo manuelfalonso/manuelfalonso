@@ -1,0 +1,768 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+  commentId: T:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+  id: FlyweightFactory
+  parent: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  children:
+  - SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject)
+  - SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings)
+  langs:
+  - csharp
+  - vb
+  name: FlyweightFactory
+  nameWithType: FlyweightFactory
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+  type: Class
+  source:
+    remote:
+      path: Patterns/Creational/FlyweightFactoryPool/FlyweightFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: FlyweightFactory
+    path: ../Patterns/Creational/FlyweightFactoryPool/FlyweightFactory.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  summary: >-
+    Factory singleton that manages object pools for flyweight objects.
+
+    Provides centralized pooling management with automatic preloading and efficient object reuse.
+  example: []
+  syntax:
+    content: 'public class FlyweightFactory : PersistentSingleton<FlyweightFactory>'
+    content.vb: Public Class FlyweightFactory Inherits PersistentSingleton(Of FlyweightFactory)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  inheritedMembers:
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.AutoUnpartentOnAwake
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}._instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.HasInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.TryGetInstance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Current
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Instance
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Awake
+  - SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.OnDestroy
+  extensionMethods:
+  - SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings)
+  id: Spawn(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings)
+  parent: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+  langs:
+  - csharp
+  - vb
+  name: Spawn(FlyweightPoolSettings)
+  nameWithType: FlyweightFactory.Spawn(FlyweightPoolSettings)
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/FlyweightFactoryPool/FlyweightFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Spawn
+    path: ../Patterns/Creational/FlyweightFactoryPool/FlyweightFactory.cs
+    startLine: 23
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  summary: Spawns an object from the pool associated with the specified settings.
+  example: []
+  syntax:
+    content: public static FlyweightPooledObject Spawn(FlyweightPoolSettings settings)
+    parameters:
+    - id: settings
+      type: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings
+      description: The pool settings to use.
+    return:
+      type: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject
+      description: A pooled object instance, or null if settings are invalid.
+    content.vb: Public Shared Function Spawn(settings As FlyweightPoolSettings) As FlyweightPooledObject
+  overload: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn*
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject)
+  commentId: M:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject)
+  id: ReturnToPool(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject)
+  parent: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+  langs:
+  - csharp
+  - vb
+  name: ReturnToPool(FlyweightPooledObject)
+  nameWithType: FlyweightFactory.ReturnToPool(FlyweightPooledObject)
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject)
+  type: Method
+  source:
+    remote:
+      path: Patterns/Creational/FlyweightFactoryPool/FlyweightFactory.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ReturnToPool
+    path: ../Patterns/Creational/FlyweightFactoryPool/FlyweightFactory.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  summary: Returns an object to its associated pool.
+  example: []
+  syntax:
+    content: public static void ReturnToPool(FlyweightPooledObject flyweightObject)
+    parameters:
+    - id: flyweightObject
+      type: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject
+      description: The object to return to the pool.
+    content.vb: Public Shared Sub ReturnToPool(flyweightObject As FlyweightPooledObject)
+  overload: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool*
+references:
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  commentId: N:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  nameWithType: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+    name: FlyweightFactoryPool
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+    name: FlyweightFactoryPool
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html
+  name: PersistentSingleton<FlyweightFactory>
+  nameWithType: PersistentSingleton<FlyweightFactory>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)
+  name.vb: PersistentSingleton(Of FlyweightFactory)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+    name: PersistentSingleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html
+  - name: <
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+    name: FlyweightFactory
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+    name: PersistentSingleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+    name: FlyweightFactory
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.AutoUnpartentOnAwake
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.AutoUnpartentOnAwake
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.AutoUnpartentOnAwake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_AutoUnpartentOnAwake
+  name: AutoUnpartentOnAwake
+  nameWithType: PersistentSingleton<FlyweightFactory>.AutoUnpartentOnAwake
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.AutoUnpartentOnAwake
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).AutoUnpartentOnAwake
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).AutoUnpartentOnAwake
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}._instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1__instance
+  name: _instance
+  nameWithType: PersistentSingleton<FlyweightFactory>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>._instance
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.HasInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_HasInstance
+  name: HasInstance
+  nameWithType: PersistentSingleton<FlyweightFactory>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.HasInstance
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.TryGetInstance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: PersistentSingleton<FlyweightFactory>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.TryGetInstance()
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Current
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Current
+  name: Current
+  nameWithType: PersistentSingleton<FlyweightFactory>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.Current
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Instance
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Instance
+  name: Instance
+  nameWithType: PersistentSingleton<FlyweightFactory>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.Instance
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Awake
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Awake
+  name: Awake()
+  nameWithType: PersistentSingleton<FlyweightFactory>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.Awake()
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.OnDestroy
+  parent: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}
+  definition: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: PersistentSingleton<FlyweightFactory>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>.OnDestroy()
+  nameWithType.vb: PersistentSingleton(Of FlyweightFactory).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton{SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory}.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<FlyweightFactory>(FlyweightFactory)
+  nameWithType: ObjectExtensions.OrNull<FlyweightFactory>(FlyweightFactory)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory>(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)
+  nameWithType.vb: ObjectExtensions.OrNull(Of FlyweightFactory)(FlyweightFactory)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)
+  name.vb: OrNull(Of FlyweightFactory)(FlyweightFactory)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+    name: FlyweightFactory
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+    name: FlyweightFactory
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+    name: FlyweightFactory
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory
+    name: FlyweightFactory
+    href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+  commentId: T:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html
+  name: PersistentSingleton<T>
+  nameWithType: PersistentSingleton<T>
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>
+  nameWithType.vb: PersistentSingleton(Of T)
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T)
+  name.vb: PersistentSingleton(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+    name: PersistentSingleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1
+    name: PersistentSingleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton
+  commentId: N:SombraStudios.Shared.Patterns.Creational.Singleton
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.Creational.Singleton
+  nameWithType: SombraStudios.Shared.Patterns.Creational.Singleton
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational
+    name: Creational
+    href: SombraStudios.Shared.Patterns.Creational.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton
+    name: Singleton
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.html
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.AutoUnpartentOnAwake
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.AutoUnpartentOnAwake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_AutoUnpartentOnAwake
+  name: AutoUnpartentOnAwake
+  nameWithType: PersistentSingleton<T>.AutoUnpartentOnAwake
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.AutoUnpartentOnAwake
+  nameWithType.vb: PersistentSingleton(Of T).AutoUnpartentOnAwake
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).AutoUnpartentOnAwake
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1._instance
+  commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1._instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1__instance
+  name: _instance
+  nameWithType: PersistentSingleton<T>._instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>._instance
+  nameWithType.vb: PersistentSingleton(Of T)._instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T)._instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.HasInstance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.HasInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_HasInstance
+  name: HasInstance
+  nameWithType: PersistentSingleton<T>.HasInstance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.HasInstance
+  nameWithType.vb: PersistentSingleton(Of T).HasInstance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).HasInstance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.TryGetInstance
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.TryGetInstance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_TryGetInstance
+  name: TryGetInstance()
+  nameWithType: PersistentSingleton<T>.TryGetInstance()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.TryGetInstance()
+  nameWithType.vb: PersistentSingleton(Of T).TryGetInstance()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).TryGetInstance()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_TryGetInstance
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.TryGetInstance
+    name: TryGetInstance
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_TryGetInstance
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Current
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Current
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Current
+  name: Current
+  nameWithType: PersistentSingleton<T>.Current
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.Current
+  nameWithType.vb: PersistentSingleton(Of T).Current
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).Current
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Instance
+  commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Instance
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Instance
+  name: Instance
+  nameWithType: PersistentSingleton<T>.Instance
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.Instance
+  nameWithType.vb: PersistentSingleton(Of T).Instance
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).Instance
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Awake
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Awake
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Awake
+  name: Awake()
+  nameWithType: PersistentSingleton<T>.Awake()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.Awake()
+  nameWithType.vb: PersistentSingleton(Of T).Awake()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.OnDestroy
+  commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.OnDestroy
+  href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_OnDestroy
+  name: OnDestroy()
+  nameWithType: PersistentSingleton<T>.OnDestroy()
+  fullName: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton<T>.OnDestroy()
+  nameWithType.vb: PersistentSingleton(Of T).OnDestroy()
+  fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton(Of T).OnDestroy()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_OnDestroy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton`1.OnDestroy
+    name: OnDestroy
+    href: SombraStudios.Shared.Patterns.Creational.Singleton.PersistentSingleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_PersistentSingleton_1_OnDestroy
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn
+  href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html#SombraStudios_Shared_Patterns_Creational_FlyweightFactoryPool_FlyweightFactory_Spawn_SombraStudios_Shared_Patterns_Creational_FlyweightFactoryPool_FlyweightPoolSettings_
+  name: Spawn
+  nameWithType: FlyweightFactory.Spawn
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.Spawn
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings
+  commentId: T:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings
+  parent: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings.html
+  name: FlyweightPoolSettings
+  nameWithType: FlyweightPoolSettings
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPoolSettings
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject
+  commentId: T:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject
+  parent: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool
+  href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject.html
+  name: FlyweightPooledObject
+  nameWithType: FlyweightPooledObject
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightPooledObject
+- uid: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool*
+  commentId: Overload:SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool
+  href: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.html#SombraStudios_Shared_Patterns_Creational_FlyweightFactoryPool_FlyweightFactory_ReturnToPool_SombraStudios_Shared_Patterns_Creational_FlyweightFactoryPool_FlyweightPooledObject_
+  name: ReturnToPool
+  nameWithType: FlyweightFactory.ReturnToPool
+  fullName: SombraStudios.Shared.Patterns.Creational.FlyweightFactoryPool.FlyweightFactory.ReturnToPool

@@ -89,14 +89,14 @@ items:
   assemblies:
   - SombraStudios.Shared.ScriptableObjects.Editor
   namespace: SombraStudios.Shared.ScriptableObjects.Editor
-  summary: <p>Implement this function to receive a callback before a player build starts.</p>
+  summary: <p>Implement this function to receive a callback before a Player build starts.</p>
   example: []
   syntax:
     content: public override void PrepareForBuild(BuildPlayerContext buildPlayerContext)
     parameters:
     - id: buildPlayerContext
       type: UnityEditor.Build.BuildPlayerContext
-      description: A context tied to the scheduled player build.
+      description: The context for the scheduled Player build.
     content.vb: Public Overrides Sub PrepareForBuild(buildPlayerContext As BuildPlayerContext)
   overridden: UnityEditor.Build.BuildPlayerProcessor.PrepareForBuild(UnityEditor.Build.BuildPlayerContext)
   overload: SombraStudios.Shared.ScriptableObjects.Editor.ScriptableObjectChecker.PrepareForBuild*
@@ -143,7 +143,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object

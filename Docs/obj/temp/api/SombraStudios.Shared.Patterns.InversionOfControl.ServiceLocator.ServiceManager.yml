@@ -1,0 +1,427 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  commentId: T:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  id: ServiceManager
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  children:
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get``1
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register(System.Type,System.Object)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register``1(``0)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet``1(``0@)
+  langs:
+  - csharp
+  - vb
+  name: ServiceManager
+  nameWithType: ServiceManager
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  type: Class
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ServiceManager
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: public class ServiceManager
+    content.vb: Public Class ServiceManager
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices
+  commentId: P:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices
+  id: RegisteredServices
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  langs:
+  - csharp
+  - vb
+  name: RegisteredServices
+  nameWithType: ServiceManager.RegisteredServices
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices
+  type: Property
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: RegisteredServices
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+    startLine: 11
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: public IEnumerable<object> RegisteredServices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Public ReadOnly Property RegisteredServices As IEnumerable(Of Object)
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices*
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet``1(``0@)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet``1(``0@)
+  id: TryGet``1(``0@)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  langs:
+  - csharp
+  - vb
+  name: TryGet<T>(out T)
+  nameWithType: ServiceManager.TryGet<T>(out T)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet<T>(out T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryGet
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: 'public bool TryGet<T>(out T service) where T : class'
+    parameters:
+    - id: service
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(Of T As Class)(service As T) As Boolean
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet*
+  nameWithType.vb: ServiceManager.TryGet(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet(Of T)(T)
+  name.vb: TryGet(Of T)(T)
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get``1
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get``1
+  id: Get``1
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  langs:
+  - csharp
+  - vb
+  name: Get<T>()
+  nameWithType: ServiceManager.Get<T>()
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get<T>()
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Get
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: 'public T Get<T>() where T : class'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function [Get](Of T As Class)() As T
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get*
+  nameWithType.vb: ServiceManager.Get(Of T)()
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get(Of T)()
+  name.vb: Get(Of T)()
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register``1(``0)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register``1(``0)
+  id: Register``1(``0)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(T)
+  nameWithType: ServiceManager.Register<T>(T)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Register
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+    startLine: 37
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: public ServiceManager Register<T>(T service)
+    parameters:
+    - id: service
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+    content.vb: Public Function Register(Of T)(service As T) As ServiceManager
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register*
+  nameWithType.vb: ServiceManager.Register(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register(System.Type,System.Object)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register(System.Type,System.Object)
+  id: Register(System.Type,System.Object)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  langs:
+  - csharp
+  - vb
+  name: Register(Type, object)
+  nameWithType: ServiceManager.Register(Type, object)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register(System.Type, object)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Register
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceManager.cs
+    startLine: 48
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: public ServiceManager Register(Type type, object service)
+    parameters:
+    - id: type
+      type: System.Type
+    - id: service
+      type: System.Object
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+    content.vb: Public Function Register(type As Type, service As Object) As ServiceManager
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register*
+  nameWithType.vb: ServiceManager.Register(Type, Object)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register(System.Type, Object)
+  name.vb: Register(Type, Object)
+references:
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  commentId: N:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  nameWithType: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl
+    name: InversionOfControl
+    href: SombraStudios.Shared.Patterns.InversionOfControl.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl
+    name: InversionOfControl
+    href: SombraStudios.Shared.Patterns.InversionOfControl.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceManager_RegisteredServices
+  name: RegisteredServices
+  nameWithType: ServiceManager.RegisteredServices
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.RegisteredServices
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceManager_TryGet__1___0__
+  name: TryGet
+  nameWithType: ServiceManager.TryGet
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.TryGet
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceManager_Get__1
+  name: Get
+  nameWithType: ServiceManager.Get
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Get
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceManager_Register__1___0_
+  name: Register
+  nameWithType: ServiceManager.Register
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.Register
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  commentId: T:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager.html
+  name: ServiceManager
+  nameWithType: ServiceManager
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceManager
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

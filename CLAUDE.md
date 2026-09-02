@@ -53,9 +53,12 @@ out of date. A stale index is worse than no index, because it stops the reader
 from searching further.
 
 **Do not answer "what exists" from `Docs/obj/`.** Those yml files are committed
-DocFX output and are known to be stale — they still document types deleted or
-renamed long ago. `.ignore` keeps them out of search results; `INDEX.tsv` is
-generated from the sources and is the only current answer.
+DocFX output — a snapshot from the last manual regeneration, not the current
+sources, and types gated behind a symbol `docfx.json` does not set are missing
+from them entirely. `.ignore` keeps them out of search results; `INDEX.tsv` is
+generated from the sources and verified in CI, so it is the current answer.
+The regeneration procedure is in `README.md` under "Regenerating the
+documentation".
 
 ## Read these first
 

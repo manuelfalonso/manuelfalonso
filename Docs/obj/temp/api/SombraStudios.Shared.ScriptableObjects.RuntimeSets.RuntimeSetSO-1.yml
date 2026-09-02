@@ -6,11 +6,21 @@ items:
   parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets
   children:
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.DEBUG_TITLE
-  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.LOG_CATEGORY
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.PROPERTIES_TITLE
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._allowDuplicates
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._items
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
   langs:
   - csharp
@@ -26,11 +36,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: RuntimeSetSO
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
-  summary: A generic runtime set ScriptableObject that holds a list of items of type T.
+  summary: >-
+    A generic runtime set ScriptableObject that holds a list of items of type T.
+
+    Provides methods to add, remove, and query items at runtime.
   example: []
   syntax:
     content: 'public abstract class RuntimeSetSO<T> : ScriptableObject'
@@ -45,6 +58,8 @@ items:
   derivedClasses:
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.GameObjectRuntimeSetSO
   - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+  extensionMethods:
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
   nameWithType.vb: RuntimeSetSO(Of T)
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)
   name.vb: RuntimeSetSO(Of T)
@@ -66,7 +81,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: LOG_CATEGORY
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 11
+    startLine: 13
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
@@ -95,7 +110,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: PROPERTIES_TITLE
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 12
+    startLine: 14
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
@@ -124,7 +139,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: DEBUG_TITLE
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
@@ -135,6 +150,54 @@ items:
     content.vb: Protected Const DEBUG_TITLE As String = "Debug"
   nameWithType.vb: RuntimeSetSO(Of T).DEBUG_TITLE
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._allowDuplicates
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._allowDuplicates
+  id: _allowDuplicates
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: _allowDuplicates
+  nameWithType: RuntimeSetSO<T>._allowDuplicates
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._allowDuplicates
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _allowDuplicates
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 18
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  syntax:
+    content: >-
+      [Header("Properties")]
+
+      [SerializeField]
+
+      protected bool _allowDuplicates
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Header("Properties")>
+
+      <SerializeField>
+
+      Protected _allowDuplicates As Boolean
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Properties
+  - type: UnityEngine.SerializeField
+    ctor: UnityEngine.SerializeField.#ctor
+    arguments: []
+  nameWithType.vb: RuntimeSetSO(Of T)._allowDuplicates
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._allowDuplicates
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
   commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
   id: _showLogs
@@ -153,7 +216,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: _showLogs
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 20
+    startLine: 25
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
@@ -192,39 +255,248 @@ items:
     arguments: []
   nameWithType.vb: RuntimeSetSO(Of T)._showLogs
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._showLogs
-- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
-  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
-  id: Items
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
+  id: Count
   parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
   langs:
   - csharp
   - vb
-  name: Items
-  nameWithType: RuntimeSetSO<T>.Items
-  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Items
+  name: Count
+  nameWithType: RuntimeSetSO<T>.Count
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Count
   type: Property
   source:
     remote:
       path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: Items
+    id: Count
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
     startLine: 30
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
-  summary: Get the list of items in the runtime set.
+  summary: Gets the number of items in the runtime set.
   example: []
   syntax:
-    content: public List<T> Items { get; }
+    content: public int Count { get; }
     parameters: []
     return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count*
+  nameWithType.vb: RuntimeSetSO(Of T).Count
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Count
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  id: IsEmpty
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: RuntimeSetSO<T>.IsEmpty
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.IsEmpty
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsEmpty
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 34
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Gets a value indicating whether the runtime set is empty.
+  example: []
+  syntax:
+    content: public bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmpty As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty*
+  nameWithType.vb: RuntimeSetSO(Of T).IsEmpty
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).IsEmpty
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  id: GetGenericType
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: GetGenericType
+  nameWithType: RuntimeSetSO<T>.GetGenericType
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.GetGenericType
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetGenericType
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 38
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Gets the generic type of the runtime set.
+  example: []
+  syntax:
+    content: public Type GetGenericType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public ReadOnly Property GetGenericType As Type
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType*
+  nameWithType.vb: RuntimeSetSO(Of T).GetGenericType
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).GetGenericType
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+  id: IndexOf(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(T)
+  nameWithType: RuntimeSetSO<T>.IndexOf(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.IndexOf(T)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IndexOf
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 44
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Returns the index of the specified item in the runtime set.
+  example: []
+  syntax:
+    content: public int IndexOf(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to locate.
+    return:
+      type: System.Int32
+      description: The zero-based index of the item if found; otherwise, -1.
+    content.vb: Public Function IndexOf(item As T) As Integer
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf*
+  nameWithType.vb: RuntimeSetSO(Of T).IndexOf(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).IndexOf(T)
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+  id: Contains(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: RuntimeSetSO<T>.Contains(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Contains(T)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Contains
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 50
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Determines whether the runtime set contains a specific item.
+  example: []
+  syntax:
+    content: public bool Contains(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to locate.
+    return:
+      type: System.Boolean
+      description: True if the item is found; otherwise, false.
+    content.vb: Public Function Contains(item As T) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains*
+  nameWithType.vb: RuntimeSetSO(Of T).Contains(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Contains(T)
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: RuntimeSetSO<T>.this[int]
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.this[int]
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: this[]
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 56
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Gets or sets the item at the specified index.
+  example: []
+  syntax:
+    content: public T this[int index] { get; set; }
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the item to get or set.
+    return:
+      type: '{T}'
+      description: The item at the specified index.
+    content.vb: Public Default Property this[](index As Integer) As T
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item*
+  nameWithType.vb: RuntimeSetSO(Of T).this[](Integer)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).this[](Integer)
+  name.vb: this[](Integer)
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._items
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._items
+  id: _items
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: _items
+  nameWithType: RuntimeSetSO<T>._items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._items
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: _items
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 65
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: The list of items in the runtime set.
+  example: []
+  syntax:
+    content: protected readonly List<T> _items
+    return:
       type: System.Collections.Generic.List{{T}}
-    content.vb: Public ReadOnly Property Items As List(Of T)
-  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items*
-  nameWithType.vb: RuntimeSetSO(Of T).Items
-  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Items
+    content.vb: Protected ReadOnly _items As List(Of T)
+  nameWithType.vb: RuntimeSetSO(Of T)._items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._items
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
   commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
   id: Add(`0)
@@ -243,14 +515,51 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Add
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 37
+    startLine: 72
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: >-
+    Adds an item to the runtime set.
+
+    If duplicates are not allowed, the item is only added if it does not already exist.
+  example: []
+  syntax:
+    content: public virtual void Add(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to add.
+    content.vb: Public Overridable Sub Add(item As T)
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add*
+  nameWithType.vb: RuntimeSetSO(Of T).Add(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Add(T)
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+  id: TryAdd(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: TryAdd(T)
+  nameWithType: RuntimeSetSO<T>.TryAdd(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.TryAdd(T)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryAdd
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 94
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
   summary: Adds an item to the runtime set if it is not already present.
   example: []
   syntax:
-    content: public virtual bool Add(T item)
+    content: public virtual bool TryAdd(T item)
     parameters:
     - id: item
       type: '{T}'
@@ -258,10 +567,10 @@ items:
     return:
       type: System.Boolean
       description: True if the item was added; otherwise, false.
-    content.vb: Public Overridable Function Add(item As T) As Boolean
-  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add*
-  nameWithType.vb: RuntimeSetSO(Of T).Add(T)
-  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Add(T)
+    content.vb: Public Overridable Function TryAdd(item As T) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd*
+  nameWithType.vb: RuntimeSetSO(Of T).TryAdd(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).TryAdd(T)
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
   commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove(`0)
   id: Remove(`0)
@@ -280,14 +589,48 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Remove
     path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
-    startLine: 52
+    startLine: 113
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Removes the first occurrence of a specific item from the runtime set.
+  example: []
+  syntax:
+    content: public virtual void Remove(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+      description: The item to remove.
+    content.vb: Public Overridable Sub Remove(item As T)
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove*
+  nameWithType.vb: RuntimeSetSO(Of T).Remove(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Remove(T)
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+  id: TryRemove(`0)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: TryRemove(T)
+  nameWithType: RuntimeSetSO<T>.TryRemove(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.TryRemove(T)
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryRemove
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 129
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
   summary: Removes an item from the runtime set if it is present.
   example: []
   syntax:
-    content: public virtual bool Remove(T item)
+    content: public virtual bool TryRemove(T item)
     parameters:
     - id: item
       type: '{T}'
@@ -295,10 +638,40 @@ items:
     return:
       type: System.Boolean
       description: True if the item was removed; otherwise, false.
-    content.vb: Public Overridable Function Remove(item As T) As Boolean
-  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove*
-  nameWithType.vb: RuntimeSetSO(Of T).Remove(T)
-  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Remove(T)
+    content.vb: Public Overridable Function TryRemove(item As T) As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove*
+  nameWithType.vb: RuntimeSetSO(Of T).TryRemove(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).TryRemove(T)
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  id: Clear
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: RuntimeSetSO<T>.Clear()
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Clear
+    path: ../ScriptableObjects/RuntimeSets/RuntimeSetSO.cs
+    startLine: 137
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.RuntimeSets
+  summary: Removes all items from the runtime set.
+  example: []
+  syntax:
+    content: public virtual void Clear()
+    content.vb: Public Overridable Sub Clear()
+  overload: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear*
+  nameWithType.vb: RuntimeSetSO(Of T).Clear()
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Clear()
 references:
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets
   commentId: N:SombraStudios.Shared.ScriptableObjects.RuntimeSets
@@ -342,7 +715,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -363,6 +735,63 @@ references:
   name: ScriptableObject
   nameWithType: ScriptableObject
   fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<RuntimeSetSO<T>>(RuntimeSetSO<T>)
+  nameWithType: ObjectExtensions.OrNull<RuntimeSetSO<T>>(RuntimeSetSO<T>)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>>(SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>)
+  nameWithType.vb: ObjectExtensions.OrNull(Of RuntimeSetSO(Of T))(RuntimeSetSO(Of T))
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T))(SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T))
+  name.vb: OrNull(Of RuntimeSetSO(Of T))(RuntimeSetSO(Of T))
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{`0})
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{`0})
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1
+    name: RuntimeSetSO
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -376,6 +805,74 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -398,14 +895,84 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items*
-  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
-  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Items
-  name: Items
-  nameWithType: RuntimeSetSO<T>.Items
-  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Items
-  nameWithType.vb: RuntimeSetSO(Of T).Items
-  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Items
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Count
+  name: Count
+  nameWithType: RuntimeSetSO<T>.Count
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Count
+  nameWithType.vb: RuntimeSetSO(Of T).Count
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_IsEmpty
+  name: IsEmpty
+  nameWithType: RuntimeSetSO<T>.IsEmpty
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.IsEmpty
+  nameWithType.vb: RuntimeSetSO(Of T).IsEmpty
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).IsEmpty
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_GetGenericType
+  name: GetGenericType
+  nameWithType: RuntimeSetSO<T>.GetGenericType
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.GetGenericType
+  nameWithType.vb: RuntimeSetSO(Of T).GetGenericType
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).GetGenericType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_IndexOf__0_
+  name: IndexOf
+  nameWithType: RuntimeSetSO<T>.IndexOf
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.IndexOf
+  nameWithType.vb: RuntimeSetSO(Of T).IndexOf
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).IndexOf
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Contains__0_
+  name: Contains
+  nameWithType: RuntimeSetSO<T>.Contains
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Contains
+  nameWithType.vb: RuntimeSetSO(Of T).Contains
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Contains
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Item_System_Int32_
+  name: this
+  nameWithType: RuntimeSetSO<T>.this
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.this
+  nameWithType.vb: RuntimeSetSO(Of T).this[]
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).this[]
+  name.vb: this[]
 - uid: System.Collections.Generic.List{{T}}
   commentId: T:System.Collections.Generic.List{``0}
   parent: System.Collections.Generic
@@ -508,16 +1075,14 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Add
   nameWithType.vb: RuntimeSetSO(Of T).Add
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Add
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryAdd__0_
+  name: TryAdd
+  nameWithType: RuntimeSetSO<T>.TryAdd
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.TryAdd
+  nameWithType.vb: RuntimeSetSO(Of T).TryAdd
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).TryAdd
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove*
   commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Remove
   href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Remove__0_
@@ -526,3 +1091,19 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Remove
   nameWithType.vb: RuntimeSetSO(Of T).Remove
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Remove
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryRemove__0_
+  name: TryRemove
+  nameWithType: RuntimeSetSO<T>.TryRemove
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.TryRemove
+  nameWithType.vb: RuntimeSetSO(Of T).TryRemove
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).TryRemove
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Clear
+  name: Clear
+  nameWithType: RuntimeSetSO<T>.Clear
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Clear
+  nameWithType.vb: RuntimeSetSO(Of T).Clear
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Clear

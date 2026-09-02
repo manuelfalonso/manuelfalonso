@@ -31,32 +31,32 @@ items:
   example: []
   syntax:
     content: >-
-      [Serializable]
-
       [Flags]
+
+      [Serializable]
 
       public enum PhysicInteractionEventType
     content.vb: >-
-      <Serializable>
-
       <Flags>
+
+      <Serializable>
 
       Public Enum PhysicInteractionEventType
   extensionMethods:
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.Add``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+  - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.IsNone``1
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.Remove``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
   - SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.Toggle``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
   attributes:
-  - type: System.SerializableAttribute
-    ctor: System.SerializableAttribute.#ctor
-    arguments: []
   - type: System.FlagsAttribute
     ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
     arguments: []
 - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.None
   commentId: F:SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.None
@@ -76,7 +76,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: None
     path: ../Physics/Events/PhysicInteractionEventType.cs
-    startLine: 11
+    startLine: 10
   assemblies:
   - SombraStudios.Shared.Physics
   namespace: SombraStudios.Shared.Physics.Events
@@ -102,7 +102,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Enter
     path: ../Physics/Events/PhysicInteractionEventType.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - SombraStudios.Shared.Physics
   namespace: SombraStudios.Shared.Physics.Events
@@ -128,7 +128,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Stay
     path: ../Physics/Events/PhysicInteractionEventType.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - SombraStudios.Shared.Physics
   namespace: SombraStudios.Shared.Physics.Events
@@ -154,7 +154,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Exit
     path: ../Physics/Events/PhysicInteractionEventType.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - SombraStudios.Shared.Physics
   namespace: SombraStudios.Shared.Physics.Events
@@ -303,6 +303,47 @@ references:
     name: PhysicInteractionEventType
     href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
   - name: )
+- uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  definition: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  name: CountFlags<PhysicInteractionEventType>(PhysicInteractionEventType)
+  nameWithType: EnumExtensions.CountFlags<PhysicInteractionEventType>(PhysicInteractionEventType)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags<SombraStudios.Shared.Physics.Events.PhysicInteractionEventType>(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+  nameWithType.vb: EnumExtensions.CountFlags(Of PhysicInteractionEventType)(PhysicInteractionEventType)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags(Of SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+  name.vb: CountFlags(Of PhysicInteractionEventType)(PhysicInteractionEventType)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
+    name: PhysicInteractionEventType
+    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
+    name: PhysicInteractionEventType
+    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
+    name: PhysicInteractionEventType
+    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
+    name: PhysicInteractionEventType
+    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - name: )
 - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1
   commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   parent: SombraStudios.Shared.Extensions.EnumExtensions
@@ -378,57 +419,6 @@ references:
   - uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType,SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
     name: HasAny
     href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
-  - name: )
-  - name: (
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
-  - name: ','
-  - name: " "
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
-  - name: )
-- uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  parent: SombraStudios.Shared.Extensions.EnumExtensions
-  definition: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  name: Has<PhysicInteractionEventType>(PhysicInteractionEventType, PhysicInteractionEventType)
-  nameWithType: EnumExtensions.Has<PhysicInteractionEventType>(PhysicInteractionEventType, PhysicInteractionEventType)
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has<SombraStudios.Shared.Physics.Events.PhysicInteractionEventType>(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType, SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  nameWithType.vb: EnumExtensions.Has(Of PhysicInteractionEventType)(PhysicInteractionEventType, PhysicInteractionEventType)
-  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Has(Of SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType, SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  name.vb: Has(Of PhysicInteractionEventType)(PhysicInteractionEventType, PhysicInteractionEventType)
-  spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType,SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  - name: <
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
-  - name: '>'
-  - name: (
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
-  - name: ','
-  - name: " "
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
-  - name: )
-  spec.vb:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType,SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
   - name: (
   - name: Of
   - name: " "
@@ -670,6 +660,37 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  name: CountFlags<T>(T)
+  nameWithType: EnumExtensions.CountFlags<T>(T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags<T>(T)
+  nameWithType.vb: EnumExtensions.CountFlags(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags(Of T)(T)
+  name.vb: CountFlags(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
 - uid: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_GetAllFlags__1___0_
@@ -727,43 +748,6 @@ references:
   - uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
     name: HasAny
     href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-  - name: (
-  - name: T
-  - name: ','
-  - name: " "
-  - name: T
-  - name: )
-- uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  name: Has<T>(T, T)
-  nameWithType: EnumExtensions.Has<T>(T, T)
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has<T>(T, T)
-  nameWithType.vb: EnumExtensions.Has(Of T)(T, T)
-  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Has(Of T)(T, T)
-  name.vb: Has(Of T)(T, T)
-  spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  - name: <
-  - name: T
-  - name: '>'
-  - name: (
-  - name: T
-  - name: ','
-  - name: " "
-  - name: T
-  - name: )
-  spec.vb:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
   - name: (
   - name: Of
   - name: " "

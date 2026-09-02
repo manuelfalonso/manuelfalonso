@@ -5,7 +5,7 @@ items:
   id: ReturnToPool
   parent: SombraStudios.Shared.Optimization
   children:
-  - SombraStudios.Shared.Optimization.ReturnToPool.pool
+  - SombraStudios.Shared.Optimization.ReturnToPool.Pool
   langs:
   - csharp
   - vb
@@ -36,34 +36,35 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   extensionMethods:
-  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-- uid: SombraStudios.Shared.Optimization.ReturnToPool.pool
-  commentId: F:SombraStudios.Shared.Optimization.ReturnToPool.pool
-  id: pool
+  - SombraStudios.Shared.Optimization.ReturnToPool.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+- uid: SombraStudios.Shared.Optimization.ReturnToPool.Pool
+  commentId: F:SombraStudios.Shared.Optimization.ReturnToPool.Pool
+  id: Pool
   parent: SombraStudios.Shared.Optimization.ReturnToPool
   langs:
   - csharp
   - vb
-  name: pool
-  nameWithType: ReturnToPool.pool
-  fullName: SombraStudios.Shared.Optimization.ReturnToPool.pool
+  name: Pool
+  nameWithType: ReturnToPool.Pool
+  fullName: SombraStudios.Shared.Optimization.ReturnToPool.Pool
   type: Field
   source:
     remote:
       path: Optimization/ReturnToPool.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: pool
+    id: Pool
     path: ../Optimization/ReturnToPool.cs
     startLine: 10
   assemblies:
   - SombraStudios.Shared.Optimization
   namespace: SombraStudios.Shared.Optimization
   syntax:
-    content: public IObjectPool<Transform> pool
+    content: public IObjectPool<Transform> Pool
     return:
       type: UnityEngine.Pool.IObjectPool{UnityEngine.Transform}
-    content.vb: Public pool As IObjectPool(Of Transform)
+    content.vb: Public Pool As IObjectPool(Of Transform)
 references:
 - uid: SombraStudios.Shared.Optimization
   commentId: N:SombraStudios.Shared.Optimization
@@ -99,7 +100,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -134,21 +134,62 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
-- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
-  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Optimization.ReturnToPool.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<ReturnToPool>(ReturnToPool)
+  nameWithType: ObjectExtensions.OrNull<ReturnToPool>(ReturnToPool)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Optimization.ReturnToPool>(SombraStudios.Shared.Optimization.ReturnToPool)
+  nameWithType.vb: ObjectExtensions.OrNull(Of ReturnToPool)(ReturnToPool)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Optimization.ReturnToPool)(SombraStudios.Shared.Optimization.ReturnToPool)
+  name.vb: OrNull(Of ReturnToPool)(ReturnToPool)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Optimization.ReturnToPool)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Optimization.ReturnToPool
+    name: ReturnToPool
+    href: SombraStudios.Shared.Optimization.ReturnToPool.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Optimization.ReturnToPool
+    name: ReturnToPool
+    href: SombraStudios.Shared.Optimization.ReturnToPool.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Optimization.ReturnToPool)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Optimization.ReturnToPool
+    name: ReturnToPool
+    href: SombraStudios.Shared.Optimization.ReturnToPool.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Optimization.ReturnToPool
+    name: ReturnToPool
+    href: SombraStudios.Shared.Optimization.ReturnToPool.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -163,9 +204,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "
@@ -192,20 +233,58 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  isExternal: true
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -220,9 +299,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "

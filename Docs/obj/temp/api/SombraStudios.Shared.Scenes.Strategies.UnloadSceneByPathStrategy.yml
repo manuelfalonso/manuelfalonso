@@ -58,7 +58,7 @@ items:
   - SombraStudios.Shared.Scenes.Strategies.SceneStrategy{System.String}
   implements:
   - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
-  - SombraStudios.Shared.Interfaces.IIdentifiable
+  - SombraStudios.Shared.ScriptableObjects.IIdentifiable
   - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.String}
   inheritedMembers:
   - SombraStudios.Shared.Scenes.Strategies.SceneStrategy{System.String}.LOG_CATEGORY
@@ -71,6 +71,8 @@ items:
   - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(SombraStudios.Shared.ScriptableObjects.SOWithId)
   - SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
   - SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
+  extensionMethods:
+  - SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -333,7 +335,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -458,13 +459,13 @@ references:
     name: SOWithId
     href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
   - name: )
-- uid: SombraStudios.Shared.Interfaces.IIdentifiable
-  commentId: T:SombraStudios.Shared.Interfaces.IIdentifiable
-  parent: SombraStudios.Shared.Interfaces
-  href: SombraStudios.Shared.Interfaces.IIdentifiable.html
+- uid: SombraStudios.Shared.ScriptableObjects.IIdentifiable
+  commentId: T:SombraStudios.Shared.ScriptableObjects.IIdentifiable
+  parent: SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.Shared.ScriptableObjects.IIdentifiable.html
   name: IIdentifiable
   nameWithType: IIdentifiable
-  fullName: SombraStudios.Shared.Interfaces.IIdentifiable
+  fullName: SombraStudios.Shared.ScriptableObjects.IIdentifiable
 - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.String}
   commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.String}
   parent: SombraStudios.Shared.Patterns.Behavioural.Strategy
@@ -642,7 +643,6 @@ references:
   - uid: System.Object
     name: object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
   - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Equals(System.Object)
@@ -652,7 +652,6 @@ references:
   - uid: System.Object
     name: Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
   commentId: M:SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode
@@ -672,6 +671,47 @@ references:
     name: GetHashCode
     href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_GetHashCode
   - name: (
+  - name: )
+- uid: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<UnloadSceneByPathStrategy>(UnloadSceneByPathStrategy)
+  nameWithType: ObjectExtensions.OrNull<UnloadSceneByPathStrategy>(UnloadSceneByPathStrategy)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy>(SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy)
+  nameWithType.vb: ObjectExtensions.OrNull(Of UnloadSceneByPathStrategy)(UnloadSceneByPathStrategy)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy)(SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy)
+  name.vb: OrNull(Of UnloadSceneByPathStrategy)(UnloadSceneByPathStrategy)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy
+    name: UnloadSceneByPathStrategy
+    href: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy
+    name: UnloadSceneByPathStrategy
+    href: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy
+    name: UnloadSceneByPathStrategy
+    href: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy
+    name: UnloadSceneByPathStrategy
+    href: SombraStudios.Shared.Scenes.Strategies.UnloadSceneByPathStrategy.html
   - name: )
 - uid: System
   commentId: N:System
@@ -848,36 +888,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: SombraStudios.Shared.Interfaces
-  commentId: N:SombraStudios.Shared.Interfaces
-  href: SombraStudios.html
-  name: SombraStudios.Shared.Interfaces
-  nameWithType: SombraStudios.Shared.Interfaces
-  fullName: SombraStudios.Shared.Interfaces
-  spec.csharp:
-  - uid: SombraStudios
-    name: SombraStudios
-    href: SombraStudios.html
-  - name: .
-  - uid: SombraStudios.Shared
-    name: Shared
-    href: SombraStudios.Shared.html
-  - name: .
-  - uid: SombraStudios.Shared.Interfaces
-    name: Interfaces
-    href: SombraStudios.Shared.Interfaces.html
-  spec.vb:
-  - uid: SombraStudios
-    name: SombraStudios
-    href: SombraStudios.html
-  - name: .
-  - uid: SombraStudios.Shared
-    name: Shared
-    href: SombraStudios.Shared.html
-  - name: .
-  - uid: SombraStudios.Shared.Interfaces
-    name: Interfaces
-    href: SombraStudios.Shared.Interfaces.html
 - uid: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
   commentId: T:SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy`1
   href: SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy-1.html
@@ -1025,6 +1035,74 @@ references:
   - name: (
   - name: T
   - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
 - uid: UnityEngine.SceneManagement.UnloadSceneOptions
   commentId: T:UnityEngine.SceneManagement.UnloadSceneOptions
   parent: UnityEngine.SceneManagement

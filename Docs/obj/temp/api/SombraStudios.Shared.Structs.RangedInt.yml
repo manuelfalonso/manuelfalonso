@@ -5,9 +5,15 @@ items:
   id: RangedInt
   parent: SombraStudios.Shared.Structs
   children:
+  - SombraStudios.Shared.Structs.RangedInt.#ctor(System.Int32,System.Int32)
+  - SombraStudios.Shared.Structs.RangedInt.Equals(SombraStudios.Shared.Structs.RangedInt)
+  - SombraStudios.Shared.Structs.RangedInt.Equals(System.Object)
+  - SombraStudios.Shared.Structs.RangedInt.GetHashCode
+  - SombraStudios.Shared.Structs.RangedInt.GetRandom
   - SombraStudios.Shared.Structs.RangedInt.MaxValue
   - SombraStudios.Shared.Structs.RangedInt.MinValue
-  - SombraStudios.Shared.Structs.RangedInt.RandomValue
+  - SombraStudios.Shared.Structs.RangedInt.op_Equality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  - SombraStudios.Shared.Structs.RangedInt.op_Inequality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
   langs:
   - csharp
   - vb
@@ -22,15 +28,27 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: RangedInt
     path: ../Structs/RangedInt.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
   summary: Represents a range of integer values with a minimum and maximum value.
   example: []
   syntax:
-    content: public struct RangedInt
-    content.vb: Public Structure RangedInt
+    content: >-
+      [Serializable]
+
+      public struct RangedInt : IEquatable<RangedInt>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure RangedInt Implements IEquatable(Of RangedInt)
+  implements:
+  - System.IEquatable{SombraStudios.Shared.Structs.RangedInt}
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
 - uid: SombraStudios.Shared.Structs.RangedInt.MinValue
   commentId: F:SombraStudios.Shared.Structs.RangedInt.MinValue
   id: MinValue
@@ -49,7 +67,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: MinValue
     path: ../Structs/RangedInt.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
@@ -90,7 +108,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: MaxValue
     path: ../Structs/RangedInt.cs
-    startLine: 19
+    startLine: 21
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
@@ -113,37 +131,246 @@ items:
     arguments:
     - type: System.String
       value: The maximum value of the range.
-- uid: SombraStudios.Shared.Structs.RangedInt.RandomValue
-  commentId: P:SombraStudios.Shared.Structs.RangedInt.RandomValue
-  id: RandomValue
+- uid: SombraStudios.Shared.Structs.RangedInt.#ctor(System.Int32,System.Int32)
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
   parent: SombraStudios.Shared.Structs.RangedInt
   langs:
   - csharp
   - vb
-  name: RandomValue
-  nameWithType: RangedInt.RandomValue
-  fullName: SombraStudios.Shared.Structs.RangedInt.RandomValue
-  type: Property
+  name: RangedInt(int, int)
+  nameWithType: RangedInt.RangedInt(int, int)
+  fullName: SombraStudios.Shared.Structs.RangedInt.RangedInt(int, int)
+  type: Constructor
   source:
     remote:
       path: Structs/RangedInt.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: RandomValue
+    id: .ctor
     path: ../Structs/RangedInt.cs
-    startLine: 24
+    startLine: 23
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
-  summary: Gets a random value within the range MinValue and MaxValue.
+  syntax:
+    content: public RangedInt(int minValue, int maxValue)
+    parameters:
+    - id: minValue
+      type: System.Int32
+    - id: maxValue
+      type: System.Int32
+    content.vb: Public Sub New(minValue As Integer, maxValue As Integer)
+  overload: SombraStudios.Shared.Structs.RangedInt.#ctor*
+  nameWithType.vb: RangedInt.New(Integer, Integer)
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: SombraStudios.Shared.Structs.RangedInt.GetRandom
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.GetRandom
+  id: GetRandom
+  parent: SombraStudios.Shared.Structs.RangedInt
+  langs:
+  - csharp
+  - vb
+  name: GetRandom()
+  nameWithType: RangedInt.GetRandom()
+  fullName: SombraStudios.Shared.Structs.RangedInt.GetRandom()
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedInt.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetRandom
+    path: ../Structs/RangedInt.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: Returns a random value within the inclusive range [MinValue, MaxValue].
   example: []
   syntax:
-    content: public readonly float RandomValue { get; }
-    parameters: []
+    content: public readonly int GetRandom()
     return:
-      type: System.Single
-    content.vb: Public ReadOnly Property RandomValue As Single
-  overload: SombraStudios.Shared.Structs.RangedInt.RandomValue*
+      type: System.Int32
+      description: A different value on each call.
+    content.vb: Public Function GetRandom() As Integer
+  overload: SombraStudios.Shared.Structs.RangedInt.GetRandom*
+- uid: SombraStudios.Shared.Structs.RangedInt.Equals(SombraStudios.Shared.Structs.RangedInt)
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.Equals(SombraStudios.Shared.Structs.RangedInt)
+  id: Equals(SombraStudios.Shared.Structs.RangedInt)
+  parent: SombraStudios.Shared.Structs.RangedInt
+  langs:
+  - csharp
+  - vb
+  name: Equals(RangedInt)
+  nameWithType: RangedInt.Equals(RangedInt)
+  fullName: SombraStudios.Shared.Structs.RangedInt.Equals(SombraStudios.Shared.Structs.RangedInt)
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedInt.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Equals
+    path: ../Structs/RangedInt.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: Indicates whether this range has the same bounds as another range.
+  example: []
+  syntax:
+    content: public readonly bool Equals(RangedInt other)
+    parameters:
+    - id: other
+      type: SombraStudios.Shared.Structs.RangedInt
+      description: The range to compare with.
+    return:
+      type: System.Boolean
+      description: True if both bounds are equal, false otherwise.
+    content.vb: Public Function Equals(other As RangedInt) As Boolean
+  overload: SombraStudios.Shared.Structs.RangedInt.Equals*
+  implements:
+  - System.IEquatable{SombraStudios.Shared.Structs.RangedInt}.Equals(SombraStudios.Shared.Structs.RangedInt)
+- uid: SombraStudios.Shared.Structs.RangedInt.Equals(System.Object)
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: SombraStudios.Shared.Structs.RangedInt
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: RangedInt.Equals(object)
+  fullName: SombraStudios.Shared.Structs.RangedInt.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedInt.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Equals
+    path: ../Structs/RangedInt.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: SombraStudios.Shared.Structs.RangedInt.Equals*
+  nameWithType.vb: RangedInt.Equals(Object)
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.Equals(Object)
+  name.vb: Equals(Object)
+- uid: SombraStudios.Shared.Structs.RangedInt.GetHashCode
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.GetHashCode
+  id: GetHashCode
+  parent: SombraStudios.Shared.Structs.RangedInt
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: RangedInt.GetHashCode()
+  fullName: SombraStudios.Shared.Structs.RangedInt.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedInt.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetHashCode
+    path: ../Structs/RangedInt.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: SombraStudios.Shared.Structs.RangedInt.GetHashCode*
+- uid: SombraStudios.Shared.Structs.RangedInt.op_Equality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.op_Equality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  id: op_Equality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  parent: SombraStudios.Shared.Structs.RangedInt
+  langs:
+  - csharp
+  - vb
+  name: operator ==(RangedInt, RangedInt)
+  nameWithType: RangedInt.operator ==(RangedInt, RangedInt)
+  fullName: SombraStudios.Shared.Structs.RangedInt.operator ==(SombraStudios.Shared.Structs.RangedInt, SombraStudios.Shared.Structs.RangedInt)
+  type: Operator
+  source:
+    remote:
+      path: Structs/RangedInt.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Equality
+    path: ../Structs/RangedInt.cs
+    startLine: 47
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  syntax:
+    content: public static bool operator ==(RangedInt left, RangedInt right)
+    parameters:
+    - id: left
+      type: SombraStudios.Shared.Structs.RangedInt
+    - id: right
+      type: SombraStudios.Shared.Structs.RangedInt
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As RangedInt, right As RangedInt) As Boolean
+  overload: SombraStudios.Shared.Structs.RangedInt.op_Equality*
+  nameWithType.vb: RangedInt.=(RangedInt, RangedInt)
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.=(SombraStudios.Shared.Structs.RangedInt, SombraStudios.Shared.Structs.RangedInt)
+  name.vb: =(RangedInt, RangedInt)
+- uid: SombraStudios.Shared.Structs.RangedInt.op_Inequality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  commentId: M:SombraStudios.Shared.Structs.RangedInt.op_Inequality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  id: op_Inequality(SombraStudios.Shared.Structs.RangedInt,SombraStudios.Shared.Structs.RangedInt)
+  parent: SombraStudios.Shared.Structs.RangedInt
+  langs:
+  - csharp
+  - vb
+  name: operator !=(RangedInt, RangedInt)
+  nameWithType: RangedInt.operator !=(RangedInt, RangedInt)
+  fullName: SombraStudios.Shared.Structs.RangedInt.operator !=(SombraStudios.Shared.Structs.RangedInt, SombraStudios.Shared.Structs.RangedInt)
+  type: Operator
+  source:
+    remote:
+      path: Structs/RangedInt.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Inequality
+    path: ../Structs/RangedInt.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  syntax:
+    content: public static bool operator !=(RangedInt left, RangedInt right)
+    parameters:
+    - id: left
+      type: SombraStudios.Shared.Structs.RangedInt
+    - id: right
+      type: SombraStudios.Shared.Structs.RangedInt
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As RangedInt, right As RangedInt) As Boolean
+  overload: SombraStudios.Shared.Structs.RangedInt.op_Inequality*
+  nameWithType.vb: RangedInt.<>(RangedInt, RangedInt)
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.<>(SombraStudios.Shared.Structs.RangedInt, SombraStudios.Shared.Structs.RangedInt)
+  name.vb: <>(RangedInt, RangedInt)
 references:
 - uid: SombraStudios.Shared.Structs
   commentId: N:SombraStudios.Shared.Structs
@@ -175,6 +402,74 @@ references:
   - uid: SombraStudios.Shared.Structs
     name: Structs
     href: SombraStudios.Shared.Structs.html
+- uid: System.IEquatable{SombraStudios.Shared.Structs.RangedInt}
+  commentId: T:System.IEquatable{SombraStudios.Shared.Structs.RangedInt}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RangedInt>
+  nameWithType: IEquatable<RangedInt>
+  fullName: System.IEquatable<SombraStudios.Shared.Structs.RangedInt>
+  nameWithType.vb: IEquatable(Of RangedInt)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.Structs.RangedInt)
+  name.vb: IEquatable(Of RangedInt)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SombraStudios.Shared.Structs.RangedInt
+    name: RangedInt
+    href: SombraStudios.Shared.Structs.RangedInt.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Structs.RangedInt
+    name: RangedInt
+    href: SombraStudios.Shared.Structs.RangedInt.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -186,27 +481,197 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: SombraStudios.Shared.Structs.RangedInt.RandomValue*
-  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.RandomValue
-  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_RandomValue
-  name: RandomValue
-  nameWithType: RangedInt.RandomValue
-  fullName: SombraStudios.Shared.Structs.RangedInt.RandomValue
-- uid: System.Single
-  commentId: T:System.Single
+- uid: SombraStudios.Shared.Structs.RangedInt.#ctor*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.#ctor
+  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt__ctor_System_Int32_System_Int32_
+  name: RangedInt
+  nameWithType: RangedInt.RangedInt
+  fullName: SombraStudios.Shared.Structs.RangedInt.RangedInt
+  nameWithType.vb: RangedInt.New
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.New
+  name.vb: New
+- uid: SombraStudios.Shared.Structs.RangedInt.GetRandom*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.GetRandom
+  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_GetRandom
+  name: GetRandom
+  nameWithType: RangedInt.GetRandom
+  fullName: SombraStudios.Shared.Structs.RangedInt.GetRandom
+- uid: SombraStudios.Shared.Structs.RangedInt.Equals*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.Equals
+  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_Equals_SombraStudios_Shared_Structs_RangedInt_
+  name: Equals
+  nameWithType: RangedInt.Equals
+  fullName: SombraStudios.Shared.Structs.RangedInt.Equals
+- uid: System.IEquatable{SombraStudios.Shared.Structs.RangedInt}.Equals(SombraStudios.Shared.Structs.RangedInt)
+  commentId: M:System.IEquatable{SombraStudios.Shared.Structs.RangedInt}.Equals(SombraStudios.Shared.Structs.RangedInt)
+  parent: System.IEquatable{SombraStudios.Shared.Structs.RangedInt}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(RangedInt)
+  nameWithType: IEquatable<RangedInt>.Equals(RangedInt)
+  fullName: System.IEquatable<SombraStudios.Shared.Structs.RangedInt>.Equals(SombraStudios.Shared.Structs.RangedInt)
+  nameWithType.vb: IEquatable(Of RangedInt).Equals(RangedInt)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.Structs.RangedInt).Equals(SombraStudios.Shared.Structs.RangedInt)
+  spec.csharp:
+  - uid: System.IEquatable{SombraStudios.Shared.Structs.RangedInt}.Equals(SombraStudios.Shared.Structs.RangedInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SombraStudios.Shared.Structs.RangedInt
+    name: RangedInt
+    href: SombraStudios.Shared.Structs.RangedInt.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{SombraStudios.Shared.Structs.RangedInt}.Equals(SombraStudios.Shared.Structs.RangedInt)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SombraStudios.Shared.Structs.RangedInt
+    name: RangedInt
+    href: SombraStudios.Shared.Structs.RangedInt.html
+  - name: )
+- uid: SombraStudios.Shared.Structs.RangedInt
+  commentId: T:SombraStudios.Shared.Structs.RangedInt
+  parent: SombraStudios.Shared.Structs
+  href: SombraStudios.Shared.Structs.RangedInt.html
+  name: RangedInt
+  nameWithType: RangedInt
+  fullName: SombraStudios.Shared.Structs.RangedInt
+- uid: System.Boolean
+  commentId: T:System.Boolean
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: float
-  nameWithType: float
-  fullName: float
-  nameWithType.vb: Single
-  fullName.vb: Single
-  name.vb: Single
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Structs.RangedInt.GetHashCode*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.GetHashCode
+  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_GetHashCode
+  name: GetHashCode
+  nameWithType: RangedInt.GetHashCode
+  fullName: SombraStudios.Shared.Structs.RangedInt.GetHashCode
+- uid: SombraStudios.Shared.Structs.RangedInt.op_Equality*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.op_Equality
+  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_op_Equality_SombraStudios_Shared_Structs_RangedInt_SombraStudios_Shared_Structs_RangedInt_
+  name: operator ==
+  nameWithType: RangedInt.operator ==
+  fullName: SombraStudios.Shared.Structs.RangedInt.operator ==
+  nameWithType.vb: RangedInt.=
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SombraStudios.Shared.Structs.RangedInt.op_Equality*
+    name: ==
+    href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_op_Equality_SombraStudios_Shared_Structs_RangedInt_SombraStudios_Shared_Structs_RangedInt_
+- uid: SombraStudios.Shared.Structs.RangedInt.op_Inequality*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedInt.op_Inequality
+  href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_op_Inequality_SombraStudios_Shared_Structs_RangedInt_SombraStudios_Shared_Structs_RangedInt_
+  name: operator !=
+  nameWithType: RangedInt.operator !=
+  fullName: SombraStudios.Shared.Structs.RangedInt.operator !=
+  nameWithType.vb: RangedInt.<>
+  fullName.vb: SombraStudios.Shared.Structs.RangedInt.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SombraStudios.Shared.Structs.RangedInt.op_Inequality*
+    name: '!='
+    href: SombraStudios.Shared.Structs.RangedInt.html#SombraStudios_Shared_Structs_RangedInt_op_Inequality_SombraStudios_Shared_Structs_RangedInt_SombraStudios_Shared_Structs_RangedInt_

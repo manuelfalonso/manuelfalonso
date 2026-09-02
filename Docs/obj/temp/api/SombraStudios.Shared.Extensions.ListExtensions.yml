@@ -20,11 +20,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ListExtensions
     path: ../Extensions/ListExtensions.cs
-    startLine: 7
+    startLine: 9
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
-  summary: Extension methods for IEnumerables
+  summary: >-
+    Extension methods for <xref href="System.Collections.Generic.IList%601" data-throw-if-not-resolved="false"></xref> collections. Operations that need indexed access
+
+    or in-place mutation live here; sequence-only operations live in <xref href="SombraStudios.Shared.Extensions.IEnumerableExtensions" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static class ListExtensions
@@ -50,7 +53,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Shuffle
     path: ../Extensions/ListExtensions.cs
-    startLine: 19
+    startLine: 23
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
@@ -60,6 +63,10 @@ items:
     This method modifies the input list in-place, ensuring each permutation is equally likely, and returns the list for method chaining.
 
     Reference: http://en.wikipedia.org/wiki/Fisher-Yates_shuffle
+  remarks: >-
+    Draws from <xref href="UnityEngine.Random" data-throw-if-not-resolved="false"></xref>, so a shuffle is reproducible via
+
+    <xref href="UnityEngine.Random.InitState(System.Int32)" data-throw-if-not-resolved="false"></xref> and must be called from the main thread.
   example: []
   syntax:
     content: public static IList<T> Shuffle<T>(this IList<T> list)
@@ -79,6 +86,41 @@ items:
   fullName.vb: SombraStudios.Shared.Extensions.ListExtensions.Shuffle(Of T)(System.Collections.Generic.IList(Of T))
   name.vb: Shuffle(Of T)(IList(Of T))
 references:
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions
+  commentId: T:SombraStudios.Shared.Extensions.IEnumerableExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html
+  name: IEnumerableExtensions
+  nameWithType: IEnumerableExtensions
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions
 - uid: SombraStudios.Shared.Extensions
   commentId: N:SombraStudios.Shared.Extensions
   href: SombraStudios.html
@@ -113,7 +155,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -127,6 +168,42 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: UnityEngine.Random
+  commentId: T:UnityEngine.Random
+  isExternal: true
+  name: Random
+  nameWithType: Random
+  fullName: UnityEngine.Random
+- uid: UnityEngine.Random.InitState(System.Int32)
+  commentId: M:UnityEngine.Random.InitState(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InitState(int)
+  nameWithType: Random.InitState(int)
+  fullName: UnityEngine.Random.InitState(int)
+  nameWithType.vb: Random.InitState(Integer)
+  fullName.vb: UnityEngine.Random.InitState(Integer)
+  name.vb: InitState(Integer)
+  spec.csharp:
+  - uid: UnityEngine.Random.InitState(System.Int32)
+    name: InitState
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Random.InitState(System.Int32)
+    name: InitState
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: SombraStudios.Shared.Extensions.ListExtensions.Shuffle*
   commentId: Overload:SombraStudios.Shared.Extensions.ListExtensions.Shuffle
   href: SombraStudios.Shared.Extensions.ListExtensions.html#SombraStudios_Shared_Extensions_ListExtensions_Shuffle__1_System_Collections_Generic_IList___0__
@@ -137,34 +214,6 @@ references:
   commentId: T:System.Collections.Generic.IList{``0}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.IList`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
-  name: IList<T>
-  nameWithType: IList<T>
-  fullName: System.Collections.Generic.IList<T>
-  nameWithType.vb: IList(Of T)
-  fullName.vb: System.Collections.Generic.IList(Of T)
-  name.vb: IList(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IList`1
-    name: IList
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IList`1
-    name: IList
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.Generic.IList`1
-  commentId: T:System.Collections.Generic.IList`1
-  isExternal: true
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
   name: IList<T>
   nameWithType: IList<T>

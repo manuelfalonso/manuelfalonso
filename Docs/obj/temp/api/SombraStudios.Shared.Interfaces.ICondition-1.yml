@@ -27,11 +27,24 @@ items:
   summary: Defines an interface for checking conditions based on the provided data.
   example: []
   syntax:
-    content: public interface ICondition<T>
+    content: public interface ICondition<in T>
     typeParameters:
     - id: T
       description: The type of data used by the condition.
-    content.vb: Public Interface ICondition(Of T)
+    content.vb: Public Interface ICondition(Of In T)
+  derivedClasses:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.AlwaysFalseConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.AlwaysTrueConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.AndConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO`1
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO`1
+  - SombraStudios.Shared.ScriptableObjects.Conditions.DevelopmentBuildConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.EditorModeConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.NotConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.OrConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.PlatformConditionSO
   nameWithType.vb: ICondition(Of T)
   fullName.vb: SombraStudios.Shared.Interfaces.ICondition(Of T)
   name.vb: ICondition(Of T)

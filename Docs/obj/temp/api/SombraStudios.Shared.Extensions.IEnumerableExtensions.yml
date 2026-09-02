@@ -5,6 +5,7 @@ items:
   id: IEnumerableExtensions
   parent: SombraStudios.Shared.Extensions
   children:
+  - SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Vector3)
   - SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems``1(System.Collections.Generic.IEnumerable{``0},System.Int32)
   langs:
   - csharp
@@ -20,11 +21,11 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IEnumerableExtensions
     path: ../Extensions/IEnumerableExtensions.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
-  summary: Extension methods for IEnumerables
+  summary: Provides extension methods for working with <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> collections.
   example: []
   syntax:
     content: public static class IEnumerableExtensions
@@ -50,27 +51,114 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GetUniqueRandomItems
     path: ../Extensions/IEnumerableExtensions.cs
-    startLine: 11
+    startLine: 24
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
+  summary: Retrieves a specified number of unique random items from the given collection.
+  remarks: >-
+    Draws from <xref href="UnityEngine.Random" data-throw-if-not-resolved="false"></xref>, so the selection is reproducible via
+
+    <xref href="UnityEngine.Random.InitState(System.Int32)" data-throw-if-not-resolved="false"></xref> and must be called from the main thread.
+  example: []
   syntax:
     content: public static IEnumerable<T> GetUniqueRandomItems<T>(this IEnumerable<T> items, int count)
     parameters:
     - id: items
       type: System.Collections.Generic.IEnumerable{{T}}
+      description: The source collection to retrieve items from.
     - id: count
       type: System.Int32
+      description: The number of unique random items to retrieve.
     typeParameters:
     - id: T
+      description: The type of elements in the collection.
     return:
       type: System.Collections.Generic.IEnumerable{{T}}
+      description: An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the unique random items.
     content.vb: Public Shared Function GetUniqueRandomItems(Of T)(items As IEnumerable(Of T), count As Integer) As IEnumerable(Of T)
   overload: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code class="paramref">count</code> is less than or equal to 0.
   nameWithType.vb: IEnumerableExtensions.GetUniqueRandomItems(Of T)(IEnumerable(Of T), Integer)
   fullName.vb: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems(Of T)(System.Collections.Generic.IEnumerable(Of T), Integer)
   name.vb: GetUniqueRandomItems(Of T)(IEnumerable(Of T), Integer)
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Vector3)
+  commentId: M:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Vector3)
+  id: GetClosest``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Vector3)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.IEnumerableExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetClosest<T>(IEnumerable<T>, Vector3)
+  nameWithType: IEnumerableExtensions.GetClosest<T>(IEnumerable<T>, Vector3)
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest<T>(System.Collections.Generic.IEnumerable<T>, UnityEngine.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Extensions/IEnumerableExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetClosest
+    path: ../Extensions/IEnumerableExtensions.cs
+    startLine: 70
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Finds the closest <code class="typeparamref">T</code> object to a specified position.
+  example: []
+  syntax:
+    content: 'public static T GetClosest<T>(this IEnumerable<T> items, Vector3 position) where T : MonoBehaviour'
+    parameters:
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: The source collection to search.
+    - id: position
+      type: UnityEngine.Vector3
+      description: The position to compare distances against.
+    typeParameters:
+    - id: T
+      description: The type of elements in the collection, which must inherit from <xref href="UnityEngine.MonoBehaviour" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: '{T}'
+      description: The closest <code class="typeparamref">T</code> object to the specified position, or <code>null</code> if the collection is empty.
+    content.vb: Public Shared Function GetClosest(Of T As MonoBehaviour)(items As IEnumerable(Of T), position As Vector3) As T
+  overload: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest*
+  nameWithType.vb: IEnumerableExtensions.GetClosest(Of T)(IEnumerable(Of T), Vector3)
+  fullName.vb: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest(Of T)(System.Collections.Generic.IEnumerable(Of T), UnityEngine.Vector3)
+  name.vb: GetClosest(Of T)(IEnumerable(Of T), Vector3)
 references:
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: SombraStudios.Shared.Extensions
   commentId: N:SombraStudios.Shared.Extensions
   href: SombraStudios.html
@@ -105,7 +193,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -119,6 +206,49 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: UnityEngine.Random
+  commentId: T:UnityEngine.Random
+  isExternal: true
+  name: Random
+  nameWithType: Random
+  fullName: UnityEngine.Random
+- uid: UnityEngine.Random.InitState(System.Int32)
+  commentId: M:UnityEngine.Random.InitState(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: InitState(int)
+  nameWithType: Random.InitState(int)
+  fullName: UnityEngine.Random.InitState(int)
+  nameWithType.vb: Random.InitState(Integer)
+  fullName.vb: UnityEngine.Random.InitState(Integer)
+  name.vb: InitState(Integer)
+  spec.csharp:
+  - uid: UnityEngine.Random.InitState(System.Int32)
+    name: InitState
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Random.InitState(System.Int32)
+    name: InitState
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
 - uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems*
   commentId: Overload:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetUniqueRandomItems
   href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetUniqueRandomItems__1_System_Collections_Generic_IEnumerable___0__System_Int32_
@@ -165,34 +295,6 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
@@ -230,3 +332,39 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest*
+  commentId: Overload:SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest
+  href: SombraStudios.Shared.Extensions.IEnumerableExtensions.html#SombraStudios_Shared_Extensions_IEnumerableExtensions_GetClosest__1_System_Collections_Generic_IEnumerable___0__UnityEngine_Vector3_
+  name: GetClosest
+  nameWithType: IEnumerableExtensions.GetClosest
+  fullName: SombraStudios.Shared.Extensions.IEnumerableExtensions.GetClosest
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

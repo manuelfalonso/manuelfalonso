@@ -1,0 +1,721 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  commentId: T:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  id: ServiceLocator
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  children:
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For(UnityEngine.MonoBehaviour)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf(UnityEngine.MonoBehaviour)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get``1
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get``1(``0@)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register(System.Type,System.Object)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register``1(``0)
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet``1(``0@)
+  langs:
+  - csharp
+  - vb
+  name: ServiceLocator
+  nameWithType: ServiceLocator
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  type: Class
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ServiceLocator
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 13
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: 'public class ServiceLocator : MonoBehaviour'
+    content.vb: Public Class ServiceLocator Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global
+  commentId: P:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global
+  id: Global
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Global
+  nameWithType: ServiceLocator.Global
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global
+  type: Property
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Global
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 42
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Gets the global ServiceLocator instance. Creates new if none exists.
+  example: []
+  syntax:
+    content: public static ServiceLocator Global { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    content.vb: Public Shared ReadOnly Property [Global] As ServiceLocator
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global*
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf(UnityEngine.MonoBehaviour)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf(UnityEngine.MonoBehaviour)
+  id: ForSceneOf(UnityEngine.MonoBehaviour)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: ForSceneOf(MonoBehaviour)
+  nameWithType: ServiceLocator.ForSceneOf(MonoBehaviour)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf(UnityEngine.MonoBehaviour)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForSceneOf
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 67
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Returns the <xref href="SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator" data-throw-if-not-resolved="false"></xref> configured for the scene of a MonoBehaviour. Falls back to the global instance.
+  example: []
+  syntax:
+    content: public static ServiceLocator ForSceneOf(MonoBehaviour mb)
+    parameters:
+    - id: mb
+      type: UnityEngine.MonoBehaviour
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    content.vb: Public Shared Function ForSceneOf(mb As MonoBehaviour) As ServiceLocator
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf*
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For(UnityEngine.MonoBehaviour)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For(UnityEngine.MonoBehaviour)
+  id: For(UnityEngine.MonoBehaviour)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: For(MonoBehaviour)
+  nameWithType: ServiceLocator.For(MonoBehaviour)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For(UnityEngine.MonoBehaviour)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: For
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 97
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: >-
+    Gets the closest ServiceLocator instance to the provided 
+
+    MonoBehaviour in hierarchy, the ServiceLocator for its scene, or the global ServiceLocator.
+  example: []
+  syntax:
+    content: public static ServiceLocator For(MonoBehaviour mb)
+    parameters:
+    - id: mb
+      type: UnityEngine.MonoBehaviour
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    content.vb: Public Shared Function [For](mb As MonoBehaviour) As ServiceLocator
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For*
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register``1(``0)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register``1(``0)
+  id: Register``1(``0)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(T)
+  nameWithType: ServiceLocator.Register<T>(T)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Register
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 110
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Registers a service to the ServiceLocator using the service's type.
+  example: []
+  syntax:
+    content: public ServiceLocator Register<T>(T service)
+    parameters:
+    - id: service
+      type: '{T}'
+      description: The service to register.
+    typeParameters:
+    - id: T
+      description: Class type of the service to be registered.
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+      description: The ServiceLocator instance after registering the service.
+    content.vb: Public Function Register(Of T)(service As T) As ServiceLocator
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register*
+  nameWithType.vb: ServiceLocator.Register(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register(System.Type,System.Object)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register(System.Type,System.Object)
+  id: Register(System.Type,System.Object)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Register(Type, object)
+  nameWithType: ServiceLocator.Register(Type, object)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register(System.Type, object)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Register
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 122
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Registers a service to the ServiceLocator using a specific type.
+  example: []
+  syntax:
+    content: public ServiceLocator Register(Type type, object service)
+    parameters:
+    - id: type
+      type: System.Type
+      description: The type to use for registration.
+    - id: service
+      type: System.Object
+      description: The service to register.
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+      description: The ServiceLocator instance after registering the service.
+    content.vb: Public Function Register(type As Type, service As Object) As ServiceLocator
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register*
+  nameWithType.vb: ServiceLocator.Register(Type, Object)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register(System.Type, Object)
+  name.vb: Register(Type, Object)
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get``1(``0@)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get``1(``0@)
+  id: Get``1(``0@)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(out T)
+  nameWithType: ServiceLocator.Get<T>(out T)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get<T>(out T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Get
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 134
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Gets a service of a specific type. If no service of the required type is found, an error is thrown.
+  example: []
+  syntax:
+    content: 'public ServiceLocator Get<T>(out T service) where T : class'
+    parameters:
+    - id: service
+      type: '{T}'
+      description: Service of type T to get.
+    typeParameters:
+    - id: T
+      description: Class type of the service to be retrieved.
+    return:
+      type: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+      description: The ServiceLocator instance after attempting to retrieve the service.
+    content.vb: Public Function [Get](Of T As Class)(service As T) As ServiceLocator
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get*
+  nameWithType.vb: ServiceLocator.Get(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get(Of T)(T)
+  name.vb: Get(Of T)(T)
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get``1
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get``1
+  id: Get``1
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: Get<T>()
+  nameWithType: ServiceLocator.Get<T>()
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get<T>()
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Get
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 152
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Allows retrieval of a service of a specific type. An error is thrown if the required service does not exist.
+  example: []
+  syntax:
+    content: 'public T Get<T>() where T : class'
+    typeParameters:
+    - id: T
+      description: Class type of the service to be retrieved.
+    return:
+      type: '{T}'
+      description: Instance of the service of type T.
+    content.vb: Public Function [Get](Of T As Class)() As T
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get*
+  nameWithType.vb: ServiceLocator.Get(Of T)()
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get(Of T)()
+  name.vb: Get(Of T)()
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet``1(``0@)
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet``1(``0@)
+  id: TryGet``1(``0@)
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  langs:
+  - csharp
+  - vb
+  name: TryGet<T>(out T)
+  nameWithType: ServiceLocator.TryGet<T>(out T)
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet<T>(out T)
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TryGet
+    path: ../Patterns/InversionOfControl/ServiceLocator/ServiceLocator.cs
+    startLine: 171
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  summary: Tries to get a service of a specific type. Returns whether or not the process is successful.
+  example: []
+  syntax:
+    content: 'public bool TryGet<T>(out T service) where T : class'
+    parameters:
+    - id: service
+      type: '{T}'
+      description: Service of type T to get.
+    typeParameters:
+    - id: T
+      description: Class type of the service to be retrieved.
+    return:
+      type: System.Boolean
+      description: True if the service retrieval was successful, false otherwise.
+    content.vb: Public Function TryGet(Of T As Class)(service As T) As Boolean
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet*
+  nameWithType.vb: ServiceLocator.TryGet(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet(Of T)(T)
+  name.vb: TryGet(Of T)(T)
+references:
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  commentId: N:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  nameWithType: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl
+    name: InversionOfControl
+    href: SombraStudios.Shared.Patterns.InversionOfControl.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl
+    name: InversionOfControl
+    href: SombraStudios.Shared.Patterns.InversionOfControl.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<ServiceLocator>(ServiceLocator)
+  nameWithType: ObjectExtensions.OrNull<ServiceLocator>(ServiceLocator)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator>(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator)
+  nameWithType.vb: ObjectExtensions.OrNull(Of ServiceLocator)(ServiceLocator)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator)(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator)
+  name.vb: OrNull(Of ServiceLocator)(ServiceLocator)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceLocator_Global
+  name: Global
+  nameWithType: ServiceLocator.Global
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Global
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  commentId: T:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html
+  name: ServiceLocator
+  nameWithType: ServiceLocator
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceLocator_ForSceneOf_UnityEngine_MonoBehaviour_
+  name: ForSceneOf
+  nameWithType: ServiceLocator.ForSceneOf
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.ForSceneOf
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceLocator_For_UnityEngine_MonoBehaviour_
+  name: For
+  nameWithType: ServiceLocator.For
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.For
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceLocator_Register__1___0_
+  name: Register
+  nameWithType: ServiceLocator.Register
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Register
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceLocator_Get__1___0__
+  name: Get
+  nameWithType: ServiceLocator.Get
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.Get
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_ServiceLocator_TryGet__1___0__
+  name: TryGet
+  nameWithType: ServiceLocator.TryGet
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator.TryGet
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

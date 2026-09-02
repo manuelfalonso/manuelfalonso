@@ -1,0 +1,605 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  id: ConditionChecker
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions
+  children:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnCondition
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionFalse
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionTrue
+  langs:
+  - csharp
+  - vb
+  name: ConditionChecker
+  nameWithType: ConditionChecker
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  type: Class
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ConditionChecker
+    path: ../ScriptableObjects/Conditions/ConditionChecker.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Listens to a ConditionSO and invokes UnityEvents based on its validity.
+  example: []
+  syntax:
+    content: 'public class ConditionChecker : MonoBehaviour'
+    content.vb: Public Class ConditionChecker Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnCondition
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnCondition
+  id: OnCondition
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  langs:
+  - csharp
+  - vb
+  name: OnCondition
+  nameWithType: ConditionChecker.OnCondition
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnCondition
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnCondition
+    path: ../ScriptableObjects/Conditions/ConditionChecker.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  syntax:
+    content: >-
+      [Header("Events")]
+
+      public UnityEvent<bool> OnCondition
+    return:
+      type: UnityEngine.Events.UnityEvent{System.Boolean}
+    content.vb: >-
+      <Header("Events")>
+
+      Public OnCondition As UnityEvent(Of Boolean)
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionTrue
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionTrue
+  id: OnConditionTrue
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  langs:
+  - csharp
+  - vb
+  name: OnConditionTrue
+  nameWithType: ConditionChecker.OnConditionTrue
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionTrue
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnConditionTrue
+    path: ../ScriptableObjects/Conditions/ConditionChecker.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Invoked when the condition is true.
+  example: []
+  syntax:
+    content: public UnityEvent OnConditionTrue
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public OnConditionTrue As UnityEvent
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionFalse
+  commentId: F:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionFalse
+  id: OnConditionFalse
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  langs:
+  - csharp
+  - vb
+  name: OnConditionFalse
+  nameWithType: ConditionChecker.OnConditionFalse
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.OnConditionFalse
+  type: Field
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnConditionFalse
+    path: ../ScriptableObjects/Conditions/ConditionChecker.cs
+    startLine: 36
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Invoked when the condition is false.
+  example: []
+  syntax:
+    content: public UnityEvent OnConditionFalse
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: Public OnConditionFalse As UnityEvent
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive
+  commentId: P:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive
+  id: IsActive
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: ConditionChecker.IsActive
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive
+  type: Property
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsActive
+    path: ../ScriptableObjects/Conditions/ConditionChecker.cs
+    startLine: 41
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Gets or sets whether the listener is active.
+  example: []
+  syntax:
+    content: public bool IsActive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsActive As Boolean
+  overload: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive*
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition
+  commentId: M:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition
+  id: CheckCondition
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+  langs:
+  - csharp
+  - vb
+  name: CheckCondition()
+  nameWithType: ConditionChecker.CheckCondition()
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition()
+  type: Method
+  source:
+    remote:
+      path: ScriptableObjects/Conditions/ConditionChecker.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CheckCondition
+    path: ../ScriptableObjects/Conditions/ConditionChecker.cs
+    startLine: 92
+  assemblies:
+  - SombraStudios.Shared.ScriptableObjects
+  namespace: SombraStudios.Shared.ScriptableObjects.Conditions
+  summary: Checks the assigned condition and invokes the corresponding events.
+  example: []
+  syntax:
+    content: public void CheckCondition()
+    content.vb: Public Sub CheckCondition()
+  overload: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition*
+references:
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Conditions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Conditions
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Conditions
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<ConditionChecker>(ConditionChecker)
+  nameWithType: ObjectExtensions.OrNull<ConditionChecker>(ConditionChecker)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker>(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker)
+  nameWithType.vb: ObjectExtensions.OrNull(Of ConditionChecker)(ConditionChecker)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker)(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker)
+  name.vb: OrNull(Of ConditionChecker)(ConditionChecker)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+    name: ConditionChecker
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+    name: ConditionChecker
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+    name: ConditionChecker
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker
+    name: ConditionChecker
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.Events.UnityEvent{System.Boolean}
+  commentId: T:UnityEngine.Events.UnityEvent{System.Boolean}
+  parent: UnityEngine.Events
+  definition: UnityEngine.Events.UnityEvent`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: UnityEvent<bool>
+  nameWithType: UnityEvent<bool>
+  fullName: UnityEngine.Events.UnityEvent<bool>
+  nameWithType.vb: UnityEvent(Of Boolean)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of Boolean)
+  name.vb: UnityEvent(Of Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Events.UnityEvent`1
+  commentId: T:UnityEngine.Events.UnityEvent`1
+  isExternal: true
+  name: UnityEvent<T0>
+  nameWithType: UnityEvent<T0>
+  fullName: UnityEngine.Events.UnityEvent<T0>
+  nameWithType.vb: UnityEvent(Of T0)
+  fullName.vb: UnityEngine.Events.UnityEvent(Of T0)
+  name.vb: UnityEvent(Of T0)
+  spec.csharp:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: T0
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.Events.UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T0
+  - name: )
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionChecker_IsActive
+  name: IsActive
+  nameWithType: ConditionChecker.IsActive
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition*
+  commentId: Overload:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionChecker_CheckCondition
+  name: CheckCondition
+  nameWithType: ConditionChecker.CheckCondition
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionChecker.CheckCondition

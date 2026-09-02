@@ -58,6 +58,7 @@ BoolStat	class	Stat	SombraStudios.Shared.Systems.Stats	Systems/Stats/StatTypes/B
 Bootstrapper	class	MonoBehaviour	SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator	Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs	-	-
 BreadthFirstSearch	class	MonoBehaviour	SombraStudios.Shared.Examples.Graphs	Examples/Graphs/BreadthFirstSearch.cs	-	-
 Breakable	class	MonoBehaviour	SombraStudios.Shared.Physics	Physics/Breakable.cs	-	Detects a collision with a tagged collider, replacing this object with a 'broken' version
+Breakable.BreakEvent	class	UnityEvent	SombraStudios.Shared.Physics	Physics/Breakable.cs	-	-
 CameraShakeDataSO	class	ScriptableObject	SombraStudios.Shared.VFX.CameraShake	VFX/CameraShake/CameraShakeDataSO.cs	DOTWEEN	Store Shake Data to be used with DoTween DOShakePosition method
 CameraShakeStrategy	class	StrategySO	SombraStudios.Shared.VFX.CameraShake	VFX/CameraShake/CameraShakeStrategy.cs	DOTWEEN	Scriptable object for a main camera shake effect which can be of Position and/or Rotation
 CCCanvas	class	MonoBehaviour	SombraStudios.Shared.Systems.CloseCaptions	Systems/CloseCaptions/CCCanvas.cs	-	-
@@ -414,6 +415,7 @@ OnVelocity	class	MonoBehaviour	SombraStudios.Shared.Physics	Physics/OnVelocity.c
 OptionalAttribute	class	PropertyAttribute	SombraStudios.Shared.Utility.NullReferenceChecker	Utility/NullReferenceChecker/OptionalAttribute.cs	-	A custom PropertyAttribute to bypass the above Validate check
 OrConditionSO	class	ConditionSO	SombraStudios.Shared.ScriptableObjects.Conditions	ScriptableObjects/Conditions/OrConditionSO.cs	-	Represents a condition that evaluates to if any of the specified sub-conditions are valid
 ParallaxController	class	MonoBehaviour	SombraStudios.Shared.VFX.Parallax	VFX/Parallax/ParallaxController.cs	-	Finds all of the gameObjects that have a ParallaxLayer.cs script, and moves them!
+ParallaxController.ParallaxCameraDelegate	delegate	-	SombraStudios.Shared.VFX.Parallax	VFX/Parallax/ParallaxController.cs	-	-
 ParallaxLayer	class	MonoBehaviour	SombraStudios.Shared.VFX.Parallax	VFX/Parallax/ParallaxLayer.cs	-	Allows the controller to move each layer based on the parallaxAmount!
 ParentSetter	class	MonoBehaviour	SombraStudios.Shared.Utility	Utility/ParentSetter.cs	-	Class to set the parent of a GameObject and apply position and rotation offsets
 ParticleSystemComponentSearchWindow	class	ComponentSearchWindow	SombraStudios.Shared.Tools.Search.AssetOrComponent	Tools/Search/AssetOrComponent/ParticleSystemComponentSearchWindow.cs	-	Custom Editor window to search for ParticleSystem components
@@ -512,7 +514,7 @@ SFXLevelManager	class	Singleton	SombraStudios.Shared.Audio.System	Audio/System/C
 SFXRack	class	-	SombraStudios.Shared.Audio.System	Audio/System/SFXRack.cs	-	Represents a rack containing audio data and an AudioSource instance
 SFXScriptableSO	class	ScriptableObject	SombraStudios.Shared.Audio.System	Audio/System/SFXScriptableSO.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Represents a ScriptableObject containing SFX and voice data
 SFXStringDictionary	class	SerializedDictionary	SombraStudios.Shared.Audio.System	Audio/System/SFXStringDictionary.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Represents a dictionary mapping string keys to SFXRack values
-SimpleCameraController	class	MonoBehaviour	UnityTemplateProjects	Gameplay/SimpleCameraController.cs	-	-
+SimpleCameraController	class	MonoBehaviour	SombraStudios.Shared.Gameplay.UnityTemplateProjects	Gameplay/SimpleCameraController.cs	-	-
 SimpleObjectPathing	class	MonoBehaviour	SombraStudios.Shared.Gameplay	Gameplay/SimpleObjectPathing.cs	-	Move the transform of an object through a list of waypoints
 SingleReferenceSO<T>	class	ScriptableObject	SombraStudios.Shared.ScriptableObjects.RuntimeSets	ScriptableObjects/RuntimeSets/SingleReferenceSO.cs	-	A ScriptableObject that holds a single reference of type T
 Singleton<T>	class	MonoBehaviour	SombraStudios.Shared.Patterns.Creational.Singleton	Patterns/Creational/Singleton/Singleton.cs	-	Utility class for creating Singleton classes derived from it
@@ -666,4 +668,6 @@ XRLever	class	XRBaseInteractable	SombraStudios.Shared.XR.Interactables	XR/Intera
 XRLockGridSocketInteractor	class	XRGridSocketInteractor	SombraStudios.Shared.XR.SocketInteractor	XR/SocketInteractor/XRLockGridSocketInteractor.cs	UNITY_XR_INTERACTION_TOOLKIT	Grid Socket interactor that only selects and hovers interactables with a Keychain component containing specific keys
 XRLockSocketInteractor	class	XRSocketInteractor	SombraStudios.Shared.XR.SocketInteractor	XR/SocketInteractor/XRLockSocketInteractor.cs	UNITY_XR_INTERACTION_TOOLKIT	Socket interactor that only selects and hovers interactables with a keychain component containing specific keys
 XRPushButton	class	XRBaseInteractable	SombraStudios.Shared.XR.Interactables	XR/Interactables/XRPushButton.cs	UNITY_XR_INTERACTION_TOOLKIT	An interactable that can be pushed by a direct interactor's movement
+XRPushButton.ValueChangeEvent	class	UnityEvent	SombraStudios.Shared.XR.Interactables	XR/Interactables/XRPushButton.cs	UNITY_XR_INTERACTION_TOOLKIT	-
 XRSlider	class	XRBaseInteractable	SombraStudios.Shared.XR.Interactables	XR/Interactables/XRSlider.cs	UNITY_XR_INTERACTION_TOOLKIT	An interactable that follows the position of the interactor on a single axis
+XRSlider.ValueChangeEvent	class	UnityEvent	SombraStudios.Shared.XR.Interactables	XR/Interactables/XRSlider.cs	UNITY_XR_INTERACTION_TOOLKIT	-

@@ -7,9 +7,9 @@ items:
   children:
   - SombraStudios.Shared.Extensions.EnumExtensions.Add``1(``0,``0)
   - SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags``1(``0,``0)
+  - SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
   - SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   - SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
-  - SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
   - SombraStudios.Shared.Extensions.EnumExtensions.IsNone``1(``0)
   - SombraStudios.Shared.Extensions.EnumExtensions.Remove``1(``0,``0)
   - SombraStudios.Shared.Extensions.EnumExtensions.Toggle``1(``0,``0)
@@ -27,62 +27,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: EnumExtensions
     path: ../Extensions/EnumExtensions.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Provides extension methods for working with enums, particularly those marked with the [Flags] attribute.
+  remarks: >-
+    Bit patterns are read by reinterpreting the enum rather than calling <code>Convert.ToUInt64</code>, which boxes
+
+    the value on every call. These helpers are cheap enough to use in per-frame code as a result.
   example: []
   syntax:
     content: public static class EnumExtensions
     content.vb: Public Module EnumExtensions
   inheritance:
   - System.Object
-- uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  id: Has``1(``0,``0)
-  isExtensionMethod: true
-  parent: SombraStudios.Shared.Extensions.EnumExtensions
-  langs:
-  - csharp
-  - vb
-  name: Has<T>(T, T)
-  nameWithType: EnumExtensions.Has<T>(T, T)
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has<T>(T, T)
-  type: Method
-  source:
-    remote:
-      path: Extensions/EnumExtensions.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: Has
-    path: ../Extensions/EnumExtensions.cs
-    startLine: 17
-  assemblies:
-  - SombraStudios.Shared.Extensions
-  namespace: SombraStudios.Shared.Extensions
-  summary: Checks if a specific flag is set in the enum value.
-  example: []
-  syntax:
-    content: 'public static bool Has<T>(this T value, T flag) where T : Enum'
-    parameters:
-    - id: value
-      type: '{T}'
-      description: The enum value to check.
-    - id: flag
-      type: '{T}'
-      description: The flag to check for.
-    typeParameters:
-    - id: T
-      description: The enum type.
-    return:
-      type: System.Boolean
-      description: True if the flag is set; otherwise, false.
-    content.vb: Public Shared Function Has(Of T As [Enum])(value As T, flag As T) As Boolean
-  overload: SombraStudios.Shared.Extensions.EnumExtensions.Has*
-  nameWithType.vb: EnumExtensions.Has(Of T)(T, T)
-  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Has(Of T)(T, T)
-  name.vb: Has(Of T)(T, T)
 - uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
   commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
   id: HasAny``1(``0,``0)
@@ -102,14 +61,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: HasAny
     path: ../Extensions/EnumExtensions.cs
-    startLine: 31
+    startLine: 22
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Checks if at least one flag from 'other' is present in 'value'.
   example: []
   syntax:
-    content: 'public static bool HasAny<T>(this T value, T other) where T : Enum'
+    content: 'public static bool HasAny<T>(this T value, T other) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -123,7 +82,7 @@ items:
     return:
       type: System.Boolean
       description: True if at least one flag is present; otherwise, false.
-    content.vb: Public Shared Function HasAny(Of T As [Enum])(value As T, other As T) As Boolean
+    content.vb: Public Shared Function HasAny(Of T As {Structure, [Enum]})(value As T, other As T) As Boolean
   overload: SombraStudios.Shared.Extensions.EnumExtensions.HasAny*
   nameWithType.vb: EnumExtensions.HasAny(Of T)(T, T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.HasAny(Of T)(T, T)
@@ -147,14 +106,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IsNone
     path: ../Extensions/EnumExtensions.cs
-    startLine: 44
+    startLine: 31
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Checks if the enum has no flags set (None).
   example: []
   syntax:
-    content: 'public static bool IsNone<T>(this T value) where T : Enum'
+    content: 'public static bool IsNone<T>(this T value) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -165,7 +124,7 @@ items:
     return:
       type: System.Boolean
       description: True if no flags are set; otherwise, false.
-    content.vb: Public Shared Function IsNone(Of T As [Enum])(value As T) As Boolean
+    content.vb: Public Shared Function IsNone(Of T As {Structure, [Enum]})(value As T) As Boolean
   overload: SombraStudios.Shared.Extensions.EnumExtensions.IsNone*
   nameWithType.vb: EnumExtensions.IsNone(Of T)(T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.IsNone(Of T)(T)
@@ -189,14 +148,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Add
     path: ../Extensions/EnumExtensions.cs
-    startLine: 56
+    startLine: 40
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Adds a flag to the enum value.
   example: []
   syntax:
-    content: 'public static T Add<T>(this T value, T flag) where T : Enum'
+    content: 'public static T Add<T>(this T value, T flag) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -210,7 +169,7 @@ items:
     return:
       type: '{T}'
       description: The modified enum value with the flag added.
-    content.vb: Public Shared Function Add(Of T As [Enum])(value As T, flag As T) As T
+    content.vb: Public Shared Function Add(Of T As {Structure, [Enum]})(value As T, flag As T) As T
   overload: SombraStudios.Shared.Extensions.EnumExtensions.Add*
   nameWithType.vb: EnumExtensions.Add(Of T)(T, T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Add(Of T)(T, T)
@@ -234,14 +193,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Remove
     path: ../Extensions/EnumExtensions.cs
-    startLine: 70
+    startLine: 50
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Removes a flag from the enum value.
   example: []
   syntax:
-    content: 'public static T Remove<T>(this T value, T flag) where T : Enum'
+    content: 'public static T Remove<T>(this T value, T flag) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -255,7 +214,7 @@ items:
     return:
       type: '{T}'
       description: The modified enum value with the flag removed.
-    content.vb: Public Shared Function Remove(Of T As [Enum])(value As T, flag As T) As T
+    content.vb: Public Shared Function Remove(Of T As {Structure, [Enum]})(value As T, flag As T) As T
   overload: SombraStudios.Shared.Extensions.EnumExtensions.Remove*
   nameWithType.vb: EnumExtensions.Remove(Of T)(T, T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Remove(Of T)(T, T)
@@ -279,14 +238,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Toggle
     path: ../Extensions/EnumExtensions.cs
-    startLine: 84
+    startLine: 60
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Toggles a flag in the enum value.
   example: []
   syntax:
-    content: 'public static T Toggle<T>(this T value, T flag) where T : Enum'
+    content: 'public static T Toggle<T>(this T value, T flag) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -300,7 +259,7 @@ items:
     return:
       type: '{T}'
       description: The modified enum value with the flag toggled.
-    content.vb: Public Shared Function Toggle(Of T As [Enum])(value As T, flag As T) As T
+    content.vb: Public Shared Function Toggle(Of T As {Structure, [Enum]})(value As T, flag As T) As T
   overload: SombraStudios.Shared.Extensions.EnumExtensions.Toggle*
   nameWithType.vb: EnumExtensions.Toggle(Of T)(T, T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Toggle(Of T)(T, T)
@@ -324,14 +283,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: CommonFlags
     path: ../Extensions/EnumExtensions.cs
-    startLine: 98
+    startLine: 70
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Gets the common flags between two enum values (returns only the shared flags).
   example: []
   syntax:
-    content: 'public static T CommonFlags<T>(this T value, T other) where T : Enum'
+    content: 'public static T CommonFlags<T>(this T value, T other) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -345,7 +304,7 @@ items:
     return:
       type: '{T}'
       description: The common flags between the two enum values.
-    content.vb: Public Shared Function CommonFlags(Of T As [Enum])(value As T, other As T) As T
+    content.vb: Public Shared Function CommonFlags(Of T As {Structure, [Enum]})(value As T, other As T) As T
   overload: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags*
   nameWithType.vb: EnumExtensions.CommonFlags(Of T)(T, T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags(Of T)(T, T)
@@ -369,14 +328,14 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GetAllFlags
     path: ../Extensions/EnumExtensions.cs
-    startLine: 111
+    startLine: 79
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
   summary: Gets all active flags in an enum as a list.
   example: []
   syntax:
-    content: 'public static List<T> GetAllFlags<T>(this T value) where T : Enum'
+    content: 'public static List<T> GetAllFlags<T>(this T value) where T : struct, Enum'
     parameters:
     - id: value
       type: '{T}'
@@ -386,12 +345,54 @@ items:
       description: The enum type.
     return:
       type: System.Collections.Generic.List{{T}}
-      description: A list of all active flags in the enum value.
-    content.vb: Public Shared Function GetAllFlags(Of T As [Enum])(value As T) As List(Of T)
+      description: A list of all active flags in the enum value. Never includes the zero value.
+    content.vb: Public Shared Function GetAllFlags(Of T As {Structure, [Enum]})(value As T) As List(Of T)
   overload: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags*
   nameWithType.vb: EnumExtensions.GetAllFlags(Of T)(T)
   fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags(Of T)(T)
   name.vb: GetAllFlags(Of T)(T)
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  id: CountFlags``1(``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  langs:
+  - csharp
+  - vb
+  name: CountFlags<T>(T)
+  nameWithType: EnumExtensions.CountFlags<T>(T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/EnumExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CountFlags
+    path: ../Extensions/EnumExtensions.cs
+    startLine: 105
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Counts the number of active flags in the enum value.
+  example: []
+  syntax:
+    content: 'public static int CountFlags<T>(this T value) where T : struct, Enum'
+    parameters:
+    - id: value
+      type: '{T}'
+      description: The enum value to check.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: System.Int32
+      description: The number of active flags in the enum value.
+    content.vb: Public Shared Function CountFlags(Of T As {Structure, [Enum]})(value As T) As Integer
+  overload: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags*
+  nameWithType.vb: EnumExtensions.CountFlags(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags(Of T)(T)
+  name.vb: CountFlags(Of T)(T)
 references:
 - uid: SombraStudios.Shared.Extensions
   commentId: N:SombraStudios.Shared.Extensions
@@ -427,7 +428,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -441,12 +441,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: SombraStudios.Shared.Extensions.EnumExtensions.Has*
-  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.Has
-  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  name: Has
-  nameWithType: EnumExtensions.Has
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.HasAny
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
+  name: HasAny
+  nameWithType: EnumExtensions.HasAny
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.HasAny
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -468,12 +468,6 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny*
-  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.HasAny
-  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
-  name: HasAny
-  nameWithType: EnumExtensions.HasAny
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.HasAny
 - uid: SombraStudios.Shared.Extensions.EnumExtensions.IsNone*
   commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.IsNone
   href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_IsNone__1___0_
@@ -604,3 +598,20 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags*
+  commentId: Overload:SombraStudios.Shared.Extensions.EnumExtensions.CountFlags
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  name: CountFlags
+  nameWithType: EnumExtensions.CountFlags
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

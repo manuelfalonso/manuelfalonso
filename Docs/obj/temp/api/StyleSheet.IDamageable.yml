@@ -6,8 +6,8 @@ items:
   parent: StyleSheet
   children:
   - StyleSheet.IDamageable.ApplyDamage(System.String,System.Single,System.Int32)
-  - StyleSheet.IDamageable.damageTypeName
-  - StyleSheet.IDamageable.damageValue
+  - StyleSheet.IDamageable.DamageTypeName
+  - StyleSheet.IDamageable.DamageValue
   langs:
   - csharp
   - vb
@@ -22,71 +22,71 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IDamageable
     path: ../CodeStyle.cs
-    startLine: 82
+    startLine: 81
   assemblies:
   - SombraStudios.Shared
   namespace: StyleSheet
   syntax:
     content: public interface IDamageable
     content.vb: Public Interface IDamageable
-- uid: StyleSheet.IDamageable.damageTypeName
-  commentId: P:StyleSheet.IDamageable.damageTypeName
-  id: damageTypeName
+- uid: StyleSheet.IDamageable.DamageTypeName
+  commentId: P:StyleSheet.IDamageable.DamageTypeName
+  id: DamageTypeName
   parent: StyleSheet.IDamageable
   langs:
   - csharp
   - vb
-  name: damageTypeName
-  nameWithType: IDamageable.damageTypeName
-  fullName: StyleSheet.IDamageable.damageTypeName
+  name: DamageTypeName
+  nameWithType: IDamageable.DamageTypeName
+  fullName: StyleSheet.IDamageable.DamageTypeName
   type: Property
   source:
     remote:
       path: CodeStyle.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: damageTypeName
+    id: DamageTypeName
+    path: ../CodeStyle.cs
+    startLine: 83
+  assemblies:
+  - SombraStudios.Shared
+  namespace: StyleSheet
+  syntax:
+    content: string DamageTypeName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DamageTypeName As String
+  overload: StyleSheet.IDamageable.DamageTypeName*
+- uid: StyleSheet.IDamageable.DamageValue
+  commentId: P:StyleSheet.IDamageable.DamageValue
+  id: DamageValue
+  parent: StyleSheet.IDamageable
+  langs:
+  - csharp
+  - vb
+  name: DamageValue
+  nameWithType: IDamageable.DamageValue
+  fullName: StyleSheet.IDamageable.DamageValue
+  type: Property
+  source:
+    remote:
+      path: CodeStyle.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: DamageValue
     path: ../CodeStyle.cs
     startLine: 84
   assemblies:
   - SombraStudios.Shared
   namespace: StyleSheet
   syntax:
-    content: string damageTypeName { get; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: ReadOnly Property damageTypeName As String
-  overload: StyleSheet.IDamageable.damageTypeName*
-- uid: StyleSheet.IDamageable.damageValue
-  commentId: P:StyleSheet.IDamageable.damageValue
-  id: damageValue
-  parent: StyleSheet.IDamageable
-  langs:
-  - csharp
-  - vb
-  name: damageValue
-  nameWithType: IDamageable.damageValue
-  fullName: StyleSheet.IDamageable.damageValue
-  type: Property
-  source:
-    remote:
-      path: CodeStyle.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: damageValue
-    path: ../CodeStyle.cs
-    startLine: 85
-  assemblies:
-  - SombraStudios.Shared
-  namespace: StyleSheet
-  syntax:
-    content: float damageValue { get; }
+    content: float DamageValue { get; }
     parameters: []
     return:
       type: System.Single
-    content.vb: ReadOnly Property damageValue As Single
-  overload: StyleSheet.IDamageable.damageValue*
+    content.vb: ReadOnly Property DamageValue As Single
+  overload: StyleSheet.IDamageable.DamageValue*
 - uid: StyleSheet.IDamageable.ApplyDamage(System.String,System.Single,System.Int32)
   commentId: M:StyleSheet.IDamageable.ApplyDamage(System.String,System.Single,System.Int32)
   id: ApplyDamage(System.String,System.Single,System.Int32)
@@ -105,7 +105,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ApplyDamage
     path: ../CodeStyle.cs
-    startLine: 90
+    startLine: 89
   assemblies:
   - SombraStudios.Shared
   namespace: StyleSheet
@@ -132,12 +132,12 @@ references:
   name: StyleSheet
   nameWithType: StyleSheet
   fullName: StyleSheet
-- uid: StyleSheet.IDamageable.damageTypeName*
-  commentId: Overload:StyleSheet.IDamageable.damageTypeName
-  href: StyleSheet.IDamageable.html#StyleSheet_IDamageable_damageTypeName
-  name: damageTypeName
-  nameWithType: IDamageable.damageTypeName
-  fullName: StyleSheet.IDamageable.damageTypeName
+- uid: StyleSheet.IDamageable.DamageTypeName*
+  commentId: Overload:StyleSheet.IDamageable.DamageTypeName
+  href: StyleSheet.IDamageable.html#StyleSheet_IDamageable_DamageTypeName
+  name: DamageTypeName
+  nameWithType: IDamageable.DamageTypeName
+  fullName: StyleSheet.IDamageable.DamageTypeName
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -156,12 +156,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: StyleSheet.IDamageable.damageValue*
-  commentId: Overload:StyleSheet.IDamageable.damageValue
-  href: StyleSheet.IDamageable.html#StyleSheet_IDamageable_damageValue
-  name: damageValue
-  nameWithType: IDamageable.damageValue
-  fullName: StyleSheet.IDamageable.damageValue
+- uid: StyleSheet.IDamageable.DamageValue*
+  commentId: Overload:StyleSheet.IDamageable.DamageValue
+  href: StyleSheet.IDamageable.html#StyleSheet_IDamageable_DamageValue
+  name: DamageValue
+  nameWithType: IDamageable.DamageValue
+  fullName: StyleSheet.IDamageable.DamageValue
 - uid: System.Single
   commentId: T:System.Single
   parent: System

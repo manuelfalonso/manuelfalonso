@@ -29,8 +29,8 @@ items:
   summary: Socket interactor that only selects and hovers interactables with a keychain component containing specific keys.
   example: []
   syntax:
-    content: 'public class XRLockSocketInteractor : XRSocketInteractor, IXRHoverInteractor, IXRSelectInteractor, IXRTargetPriorityInteractor, IXRGroupMember, IXRInteractionStrengthInteractor, IXRInteractor'
-    content.vb: Public Class XRLockSocketInteractor Inherits XRSocketInteractor Implements IXRHoverInteractor, IXRSelectInteractor, IXRTargetPriorityInteractor, IXRGroupMember, IXRInteractionStrengthInteractor, IXRInteractor
+    content: 'public class XRLockSocketInteractor : XRSocketInteractor, IXRHoverInteractor, IXRSelectInteractor, IXRTargetPriorityInteractor, IXRGroupMember, IXRInteractionStrengthInteractor, IXRInteractor, IXRParentInteractableLink'
+    content.vb: Public Class XRLockSocketInteractor Inherits XRSocketInteractor Implements IXRHoverInteractor, IXRSelectInteractor, IXRTargetPriorityInteractor, IXRGroupMember, IXRInteractionStrengthInteractor, IXRInteractor, IXRParentInteractableLink
   inheritance:
   - System.Object
   - UnityEngine.Object
@@ -46,6 +46,7 @@ items:
   - UnityEngine.XR.Interaction.Toolkit.Interactors.IXRGroupMember
   - UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractionStrengthInteractor
   - UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor
+  - UnityEngine.XR.Interaction.Toolkit.IXRParentInteractableLink
   inheritedMembers:
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor.OnValidate
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor.Awake
@@ -131,6 +132,8 @@ items:
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.disableVisualsWhenBlockedInGroup
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.startingSelectedInteractable
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.startingTargetFilter
+  - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.autoFindParentInteractableInHierarchy
+  - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.parentInteractable
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.hoverEntered
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.hoverExited
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.selectEntered
@@ -167,7 +170,8 @@ items:
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.registered
   - UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.unregistered
   extensionMethods:
-  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  - SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
 - uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.KeychainLock
   commentId: P:SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.KeychainLock
   id: KeychainLock
@@ -308,7 +312,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -399,6 +402,13 @@ references:
   name: IXRInteractor
   nameWithType: IXRInteractor
   fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractor
+- uid: UnityEngine.XR.Interaction.Toolkit.IXRParentInteractableLink
+  commentId: T:UnityEngine.XR.Interaction.Toolkit.IXRParentInteractableLink
+  parent: UnityEngine.XR.Interaction.Toolkit
+  isExternal: true
+  name: IXRParentInteractableLink
+  nameWithType: IXRParentInteractableLink
+  fullName: UnityEngine.XR.Interaction.Toolkit.IXRParentInteractableLink
 - uid: UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor.OnValidate
   commentId: M:UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor.OnValidate
   parent: UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
@@ -2039,6 +2049,20 @@ references:
   name: startingTargetFilter
   nameWithType: XRBaseInteractor.startingTargetFilter
   fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.startingTargetFilter
+- uid: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.autoFindParentInteractableInHierarchy
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.autoFindParentInteractableInHierarchy
+  parent: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor
+  isExternal: true
+  name: autoFindParentInteractableInHierarchy
+  nameWithType: XRBaseInteractor.autoFindParentInteractableInHierarchy
+  fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.autoFindParentInteractableInHierarchy
+- uid: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.parentInteractable
+  commentId: P:UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.parentInteractable
+  parent: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor
+  isExternal: true
+  name: parentInteractable
+  nameWithType: XRBaseInteractor.parentInteractable
+  fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.parentInteractable
 - uid: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.hoverEntered
   commentId: P:UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.hoverEntered
   parent: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor
@@ -2284,21 +2308,62 @@ references:
   name: unregistered
   nameWithType: XRBaseInteractor.unregistered
   fullName: UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor.unregistered
-- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
-  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<XRLockSocketInteractor>(XRLockSocketInteractor)
+  nameWithType: ObjectExtensions.OrNull<XRLockSocketInteractor>(XRLockSocketInteractor)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor>(SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor)
+  nameWithType.vb: ObjectExtensions.OrNull(Of XRLockSocketInteractor)(XRLockSocketInteractor)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor)(SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor)
+  name.vb: OrNull(Of XRLockSocketInteractor)(XRLockSocketInteractor)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+    name: XRLockSocketInteractor
+    href: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+    name: XRLockSocketInteractor
+    href: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+    name: XRLockSocketInteractor
+    href: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor
+    name: XRLockSocketInteractor
+    href: SombraStudios.Shared.XR.SocketInteractor.XRLockSocketInteractor.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -2313,9 +2378,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "
@@ -2388,20 +2453,96 @@ references:
   - uid: UnityEngine.XR.Interaction.Toolkit.Interactors
     name: Interactors
     isExternal: true
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+- uid: UnityEngine.XR.Interaction.Toolkit
+  commentId: N:UnityEngine.XR.Interaction.Toolkit
   isExternal: true
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+  name: UnityEngine.XR.Interaction.Toolkit
+  nameWithType: UnityEngine.XR.Interaction.Toolkit
+  fullName: UnityEngine.XR.Interaction.Toolkit
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR
+    name: XR
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction
+    name: Interaction
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.XR.Interaction.Toolkit
+    name: Toolkit
+    isExternal: true
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -2416,9 +2557,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "

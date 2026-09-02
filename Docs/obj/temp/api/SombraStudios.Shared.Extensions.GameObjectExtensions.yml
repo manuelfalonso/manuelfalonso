@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.GameObjectExtensions
+  id: GameObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  children:
+  - SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd``1(UnityEngine.GameObject)
+  - SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  - SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy(UnityEngine.GameObject)
+  langs:
+  - csharp
+  - vb
+  name: GameObjectExtensions
+  nameWithType: GameObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions
+  type: Class
+  source:
+    remote:
+      path: Extensions/GameObjectExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GameObjectExtensions
+    path: ../Extensions/GameObjectExtensions.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Extension methods for <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static class GameObjectExtensions
+    content.vb: Public Module GameObjectExtensions
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  id: HideInHierarchy(UnityEngine.GameObject)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: HideInHierarchy(GameObject)
+  nameWithType: GameObjectExtensions.HideInHierarchy(GameObject)
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Extensions/GameObjectExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HideInHierarchy
+    path: ../Extensions/GameObjectExtensions.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Hides the specified <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> from the Unity Hierarchy view.
+  remarks: >-
+    Adds <xref href="UnityEngine.HideFlags.HideInHierarchy" data-throw-if-not-resolved="false"></xref> to <xref href="UnityEngine.Object.hideFlags" data-throw-if-not-resolved="false"></xref> without disturbing
+
+    any other flag the object already carries, such as <xref href="UnityEngine.HideFlags.DontSave" data-throw-if-not-resolved="false"></xref>. The object
+
+    remains active in the scene and can still be accessed programmatically. Does nothing if
+
+    <code class="paramref">gameObject</code> is null.
+  example: []
+  syntax:
+    content: public static void HideInHierarchy(this GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: The <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> to hide.
+    content.vb: Public Shared Sub HideInHierarchy(gameObject As GameObject)
+  overload: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy*
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy(UnityEngine.GameObject)
+  id: ShowInHierarchy(UnityEngine.GameObject)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: ShowInHierarchy(GameObject)
+  nameWithType: GameObjectExtensions.ShowInHierarchy(GameObject)
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Extensions/GameObjectExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ShowInHierarchy
+    path: ../Extensions/GameObjectExtensions.cs
+    startLine: 35
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Reveals a <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> previously hidden by <xref href="SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    Clears only <xref href="UnityEngine.HideFlags.HideInHierarchy" data-throw-if-not-resolved="false"></xref> and leaves every other flag intact. Does
+
+    nothing if <code class="paramref">gameObject</code> is null.
+  example: []
+  syntax:
+    content: public static void ShowInHierarchy(this GameObject gameObject)
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: The <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> to reveal.
+    content.vb: Public Shared Sub ShowInHierarchy(gameObject As GameObject)
+  overload: SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy*
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd``1(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd``1(UnityEngine.GameObject)
+  id: GetOrAdd``1(UnityEngine.GameObject)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.GameObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetOrAdd<T>(GameObject)
+  nameWithType: GameObjectExtensions.GetOrAdd<T>(GameObject)
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd<T>(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Extensions/GameObjectExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetOrAdd
+    path: ../Extensions/GameObjectExtensions.cs
+    startLine: 51
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: >-
+    Retrieves a component of the specified type from the given <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref>.  If the component does
+
+    not exist, it is added to the <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public static T GetOrAdd<T>(this GameObject gameObject) where T : Component'
+    parameters:
+    - id: gameObject
+      type: UnityEngine.GameObject
+      description: The <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> to retrieve the component from or add the component to.
+    typeParameters:
+    - id: T
+      description: The type of the component to retrieve or add. Must derive from <xref href="UnityEngine.Component" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: '{T}'
+      description: >-
+        The existing component of type <code class="typeparamref">T</code> if found; otherwise, a newly added component of type
+            <code class="typeparamref">T</code>.
+    content.vb: Public Shared Function GetOrAdd(Of T As Component)(gameObject As GameObject) As T
+  overload: SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd*
+  nameWithType.vb: GameObjectExtensions.GetOrAdd(Of T)(GameObject)
+  fullName.vb: SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd(Of T)(UnityEngine.GameObject)
+  name.vb: GetOrAdd(Of T)(GameObject)
+references:
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.HideFlags.HideInHierarchy
+  commentId: F:UnityEngine.HideFlags.HideInHierarchy
+  isExternal: true
+  name: HideInHierarchy
+  nameWithType: HideFlags.HideInHierarchy
+  fullName: UnityEngine.HideFlags.HideInHierarchy
+- uid: UnityEngine.Object.hideFlags
+  commentId: P:UnityEngine.Object.hideFlags
+  isExternal: true
+  name: hideFlags
+  nameWithType: Object.hideFlags
+  fullName: UnityEngine.Object.hideFlags
+- uid: UnityEngine.HideFlags.DontSave
+  commentId: F:UnityEngine.HideFlags.DontSave
+  isExternal: true
+  name: DontSave
+  nameWithType: HideFlags.DontSave
+  fullName: UnityEngine.HideFlags.DontSave
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy*
+  commentId: Overload:SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy
+  href: SombraStudios.Shared.Extensions.GameObjectExtensions.html#SombraStudios_Shared_Extensions_GameObjectExtensions_HideInHierarchy_UnityEngine_GameObject_
+  name: HideInHierarchy
+  nameWithType: GameObjectExtensions.HideInHierarchy
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.GameObjectExtensions.html#SombraStudios_Shared_Extensions_GameObjectExtensions_HideInHierarchy_UnityEngine_GameObject_
+  name: HideInHierarchy(GameObject)
+  nameWithType: GameObjectExtensions.HideInHierarchy(GameObject)
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+    name: HideInHierarchy
+    href: SombraStudios.Shared.Extensions.GameObjectExtensions.html#SombraStudios_Shared_Extensions_GameObjectExtensions_HideInHierarchy_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.GameObjectExtensions.HideInHierarchy(UnityEngine.GameObject)
+    name: HideInHierarchy
+    href: SombraStudios.Shared.Extensions.GameObjectExtensions.html#SombraStudios_Shared_Extensions_GameObjectExtensions_HideInHierarchy_UnityEngine_GameObject_
+  - name: (
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy*
+  commentId: Overload:SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy
+  href: SombraStudios.Shared.Extensions.GameObjectExtensions.html#SombraStudios_Shared_Extensions_GameObjectExtensions_ShowInHierarchy_UnityEngine_GameObject_
+  name: ShowInHierarchy
+  nameWithType: GameObjectExtensions.ShowInHierarchy
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.ShowInHierarchy
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd*
+  commentId: Overload:SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd
+  href: SombraStudios.Shared.Extensions.GameObjectExtensions.html#SombraStudios_Shared_Extensions_GameObjectExtensions_GetOrAdd__1_UnityEngine_GameObject_
+  name: GetOrAdd
+  nameWithType: GameObjectExtensions.GetOrAdd
+  fullName: SombraStudios.Shared.Extensions.GameObjectExtensions.GetOrAdd
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

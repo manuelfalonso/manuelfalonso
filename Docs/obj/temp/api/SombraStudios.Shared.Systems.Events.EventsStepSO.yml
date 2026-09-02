@@ -1,0 +1,687 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO
+  commentId: T:SombraStudios.Shared.Systems.Events.EventsStepSO
+  id: EventsStepSO
+  parent: SombraStudios.Shared.Systems.Events
+  children:
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.Condition
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize
+  langs:
+  - csharp
+  - vb
+  name: EventsStepSO
+  nameWithType: EventsStepSO
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO
+  type: Class
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EventsStepSO
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: >-
+    ScriptableObject representing a step in an event sequence.
+
+    Manages a list of event actions, their execution, and step state.
+  example: []
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "EventsStepSO", menuName = "Sombra Studios/Systems/Events/Events Step", order = 0)]
+
+      public class EventsStepSO : ScriptableObject, ISerializationCallbackReceiver
+    content.vb: >-
+      <CreateAssetMenu(fileName:="EventsStepSO", menuName:="Sombra Studios/Systems/Events/Events Step", order:=0)>
+
+      Public Class EventsStepSO Inherits ScriptableObject Implements ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver
+  extensionMethods:
+  - SombraStudios.Shared.Systems.Events.EventsStepSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: EventsStepSO
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Systems/Events/Events Step
+    - name: order
+      type: System.Int32
+      value: 0
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable
+  id: IsSkippable
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: IsSkippable
+  nameWithType: EventsStepSO.IsSkippable
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsSkippable
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 77
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets whether the step can be skipped.
+  example: []
+  syntax:
+    content: public bool IsSkippable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsSkippable As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional
+  id: IsOptional
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: IsOptional
+  nameWithType: EventsStepSO.IsOptional
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsOptional
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 82
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets whether the step is optional.
+  example: []
+  syntax:
+    content: public bool IsOptional { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsOptional As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.Condition
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.Condition
+  id: Condition
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: EventsStepSO.Condition
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.Condition
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Condition
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 87
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets the condition that determines if the step should execute.
+  example: []
+  syntax:
+    content: public ConditionSO Condition { get; }
+    parameters: []
+    return:
+      type: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+    content.vb: Public ReadOnly Property Condition As ConditionSO
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.Condition*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel
+  id: CanRunInParallel
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: CanRunInParallel
+  nameWithType: EventsStepSO.CanRunInParallel
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CanRunInParallel
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 92
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets whether the step can run in parallel with other steps.
+  example: []
+  syntax:
+    content: public bool CanRunInParallel { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CanRunInParallel As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep
+  id: AutoAdvanceToNextStep
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: AutoAdvanceToNextStep
+  nameWithType: EventsStepSO.AutoAdvanceToNextStep
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AutoAdvanceToNextStep
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 97
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets whether the sequencer should automatically advance to the next step after completion.
+  example: []
+  syntax:
+    content: public bool AutoAdvanceToNextStep { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AutoAdvanceToNextStep As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused
+  id: IsPaused
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: IsPaused
+  nameWithType: EventsStepSO.IsPaused
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsPaused
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 102
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets whether the step is currently paused.
+  example: []
+  syntax:
+    content: public bool IsPaused { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsPaused As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted
+  commentId: P:SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted
+  id: IsCompleted
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: EventsStepSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsCompleted
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 107
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets whether the step has been completed.
+  example: []
+  syntax:
+    content: public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsCompleted As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted*
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize
+  id: OnAfterDeserialize
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: OnAfterDeserialize()
+  nameWithType: EventsStepSO.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnAfterDeserialize
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 355
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Called after deserialization to restore initial values.
+  example: []
+  syntax:
+    content: public virtual void OnAfterDeserialize()
+    content.vb: Public Overridable Sub OnAfterDeserialize()
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize
+  commentId: M:SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize
+  id: OnBeforeSerialize
+  parent: SombraStudios.Shared.Systems.Events.EventsStepSO
+  langs:
+  - csharp
+  - vb
+  name: OnBeforeSerialize()
+  nameWithType: EventsStepSO.OnBeforeSerialize()
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventsStepSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnBeforeSerialize
+    path: ../Systems/Events/EventsStepSO.cs
+    startLine: 363
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Called before serialization.
+  example: []
+  syntax:
+    content: public virtual void OnBeforeSerialize()
+    content.vb: Public Overridable Sub OnBeforeSerialize()
+  overload: SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize*
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+references:
+- uid: SombraStudios.Shared.Systems.Events
+  commentId: N:SombraStudios.Shared.Systems.Events
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Events
+  nameWithType: SombraStudios.Shared.Systems.Events
+  fullName: SombraStudios.Shared.Systems.Events
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Events
+    name: Events
+    href: SombraStudios.Shared.Systems.Events.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Events
+    name: Events
+    href: SombraStudios.Shared.Systems.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<EventsStepSO>(EventsStepSO)
+  nameWithType: ObjectExtensions.OrNull<EventsStepSO>(EventsStepSO)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Systems.Events.EventsStepSO>(SombraStudios.Shared.Systems.Events.EventsStepSO)
+  nameWithType.vb: ObjectExtensions.OrNull(Of EventsStepSO)(EventsStepSO)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Systems.Events.EventsStepSO)(SombraStudios.Shared.Systems.Events.EventsStepSO)
+  name.vb: OrNull(Of EventsStepSO)(EventsStepSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Events.EventsStepSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Events.EventsStepSO
+    name: EventsStepSO
+    href: SombraStudios.Shared.Systems.Events.EventsStepSO.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Events.EventsStepSO
+    name: EventsStepSO
+    href: SombraStudios.Shared.Systems.Events.EventsStepSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Events.EventsStepSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Events.EventsStepSO
+    name: EventsStepSO
+    href: SombraStudios.Shared.Systems.Events.EventsStepSO.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Events.EventsStepSO
+    name: EventsStepSO
+    href: SombraStudios.Shared.Systems.Events.EventsStepSO.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_IsSkippable
+  name: IsSkippable
+  nameWithType: EventsStepSO.IsSkippable
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsSkippable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_IsOptional
+  name: IsOptional
+  nameWithType: EventsStepSO.IsOptional
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsOptional
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.Condition*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.Condition
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_Condition
+  name: Condition
+  nameWithType: EventsStepSO.Condition
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.Condition
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+  commentId: T:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+  parent: SombraStudios.Shared.ScriptableObjects.Conditions
+  href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.html
+  name: ConditionSO
+  nameWithType: ConditionSO
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions
+  commentId: N:SombraStudios.Shared.ScriptableObjects.Conditions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.ScriptableObjects.Conditions
+  nameWithType: SombraStudios.Shared.ScriptableObjects.Conditions
+  fullName: SombraStudios.Shared.ScriptableObjects.Conditions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects
+    name: ScriptableObjects
+    href: SombraStudios.Shared.ScriptableObjects.html
+  - name: .
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions
+    name: Conditions
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.html
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_CanRunInParallel
+  name: CanRunInParallel
+  nameWithType: EventsStepSO.CanRunInParallel
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.CanRunInParallel
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_AutoAdvanceToNextStep
+  name: AutoAdvanceToNextStep
+  nameWithType: EventsStepSO.AutoAdvanceToNextStep
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.AutoAdvanceToNextStep
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_IsPaused
+  name: IsPaused
+  nameWithType: EventsStepSO.IsPaused
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsPaused
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_IsCompleted
+  name: IsCompleted
+  nameWithType: EventsStepSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.IsCompleted
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_OnAfterDeserialize
+  name: OnAfterDeserialize
+  nameWithType: EventsStepSO.OnAfterDeserialize
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.OnAfterDeserialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnAfterDeserialize()
+  nameWithType: ISerializationCallbackReceiver.OnAfterDeserialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize
+    name: OnAfterDeserialize
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize
+  href: SombraStudios.Shared.Systems.Events.EventsStepSO.html#SombraStudios_Shared_Systems_Events_EventsStepSO_OnBeforeSerialize
+  name: OnBeforeSerialize
+  nameWithType: EventsStepSO.OnBeforeSerialize
+  fullName: SombraStudios.Shared.Systems.Events.EventsStepSO.OnBeforeSerialize
+- uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  commentId: M:UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+  parent: UnityEngine.ISerializationCallbackReceiver
+  isExternal: true
+  name: OnBeforeSerialize()
+  nameWithType: ISerializationCallbackReceiver.OnBeforeSerialize()
+  fullName: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
+  spec.csharp:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize
+    name: OnBeforeSerialize
+    isExternal: true
+  - name: (
+  - name: )

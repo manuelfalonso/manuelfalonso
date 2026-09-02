@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer
+  commentId: T:SombraStudios.Shared.Systems.Events.EventSequencer
+  id: EventSequencer
+  parent: SombraStudios.Shared.Systems.Events
+  children:
+  - SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex
+  - SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted
+  - SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused
+  - SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning
+  - SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence(System.Boolean)
+  - SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence
+  - SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction
+  - SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep
+  - SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence
+  - SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence
+  langs:
+  - csharp
+  - vb
+  name: EventSequencer
+  nameWithType: EventSequencer
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer
+  type: Class
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: EventSequencer
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: >-
+    Manages the execution of a sequence of event steps, allowing for starting, stopping, pausing, resetting,
+
+    and skipping steps or actions. Integrates with the Unity lifecycle and supports editor configuration.
+  example: []
+  syntax:
+    content: 'public class EventSequencer : MonoBehaviour'
+    content.vb: Public Class EventSequencer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  extensionMethods:
+  - SombraStudios.Shared.Systems.Events.EventSequencer.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex
+  id: CurrentStepIndex
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: CurrentStepIndex()
+  nameWithType: EventSequencer.CurrentStepIndex()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CurrentStepIndex
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Gets the index of the current step.
+  example: []
+  syntax:
+    content: public int CurrentStepIndex()
+    return:
+      type: System.Int32
+    content.vb: Public Function CurrentStepIndex() As Integer
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning
+  id: IsRunning
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: IsRunning()
+  nameWithType: EventSequencer.IsRunning()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsRunning
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Returns true if the sequence is currently running.
+  example: []
+  syntax:
+    content: public bool IsRunning()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsRunning() As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused
+  id: IsPaused
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: IsPaused()
+  nameWithType: EventSequencer.IsPaused()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsPaused
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 53
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Returns true if the sequence is currently paused.
+  example: []
+  syntax:
+    content: public bool IsPaused()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsPaused() As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted
+  id: IsCompleted
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted()
+  nameWithType: EventSequencer.IsCompleted()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsCompleted
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 57
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Returns true if the sequence has completed all steps.
+  example: []
+  syntax:
+    content: public bool IsCompleted()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCompleted() As Boolean
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence
+  id: StartSequence
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: StartSequence()
+  nameWithType: EventSequencer.StartSequence()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartSequence
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 87
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Starts the event sequence if not already running.
+  example: []
+  syntax:
+    content: public void StartSequence()
+    content.vb: Public Sub StartSequence()
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence
+  id: StopSequence
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: StopSequence()
+  nameWithType: EventSequencer.StopSequence()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopSequence
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 101
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Stops the event sequence and the current step.
+  example: []
+  syntax:
+    content: public void StopSequence()
+    content.vb: Public Sub StopSequence()
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence(System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence(System.Boolean)
+  id: PauseSequence(System.Boolean)
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: PauseSequence(bool)
+  nameWithType: EventSequencer.PauseSequence(bool)
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence(bool)
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: PauseSequence
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 123
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Pauses or resumes the event sequence and the current step.
+  example: []
+  syntax:
+    content: public void PauseSequence(bool pause)
+    parameters:
+    - id: pause
+      type: System.Boolean
+      description: True to pause, false to resume.
+    content.vb: Public Sub PauseSequence(pause As Boolean)
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence*
+  nameWithType.vb: EventSequencer.PauseSequence(Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence(Boolean)
+  name.vb: PauseSequence(Boolean)
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence
+  id: ResetSequence
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: ResetSequence()
+  nameWithType: EventSequencer.ResetSequence()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ResetSequence
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 158
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Resets the sequence and all steps to their initial state.
+  example: []
+  syntax:
+    content: public void ResetSequence()
+    content.vb: Public Sub ResetSequence()
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep
+  id: SkipStep
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: SkipStep()
+  nameWithType: EventSequencer.SkipStep()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SkipStep
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 184
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Skips the current step if possible and advances to the next step.
+  example: []
+  syntax:
+    content: public void SkipStep()
+    content.vb: Public Sub SkipStep()
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep*
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction
+  commentId: M:SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction
+  id: SkipAction
+  parent: SombraStudios.Shared.Systems.Events.EventSequencer
+  langs:
+  - csharp
+  - vb
+  name: SkipAction()
+  nameWithType: EventSequencer.SkipAction()
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventSequencer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SkipAction
+    path: ../Systems/Events/EventSequencer.cs
+    startLine: 224
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Attempts to skip the current action in the current step.
+  example: []
+  syntax:
+    content: public void SkipAction()
+    content.vb: Public Sub SkipAction()
+  overload: SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction*
+references:
+- uid: SombraStudios.Shared.Systems.Events
+  commentId: N:SombraStudios.Shared.Systems.Events
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Events
+  nameWithType: SombraStudios.Shared.Systems.Events
+  fullName: SombraStudios.Shared.Systems.Events
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Events
+    name: Events
+    href: SombraStudios.Shared.Systems.Events.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Events
+    name: Events
+    href: SombraStudios.Shared.Systems.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<EventSequencer>(EventSequencer)
+  nameWithType: ObjectExtensions.OrNull<EventSequencer>(EventSequencer)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Systems.Events.EventSequencer>(SombraStudios.Shared.Systems.Events.EventSequencer)
+  nameWithType.vb: ObjectExtensions.OrNull(Of EventSequencer)(EventSequencer)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Systems.Events.EventSequencer)(SombraStudios.Shared.Systems.Events.EventSequencer)
+  name.vb: OrNull(Of EventSequencer)(EventSequencer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Events.EventSequencer)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Events.EventSequencer
+    name: EventSequencer
+    href: SombraStudios.Shared.Systems.Events.EventSequencer.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Events.EventSequencer
+    name: EventSequencer
+    href: SombraStudios.Shared.Systems.Events.EventSequencer.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Events.EventSequencer)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Events.EventSequencer
+    name: EventSequencer
+    href: SombraStudios.Shared.Systems.Events.EventSequencer.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Events.EventSequencer
+    name: EventSequencer
+    href: SombraStudios.Shared.Systems.Events.EventSequencer.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_CurrentStepIndex
+  name: CurrentStepIndex
+  nameWithType: EventSequencer.CurrentStepIndex
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.CurrentStepIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_IsRunning
+  name: IsRunning
+  nameWithType: EventSequencer.IsRunning
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.IsRunning
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_IsPaused
+  name: IsPaused
+  nameWithType: EventSequencer.IsPaused
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.IsPaused
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_IsCompleted
+  name: IsCompleted
+  nameWithType: EventSequencer.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.IsCompleted
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_StartSequence
+  name: StartSequence
+  nameWithType: EventSequencer.StartSequence
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.StartSequence
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_StopSequence
+  name: StopSequence
+  nameWithType: EventSequencer.StopSequence
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.StopSequence
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_PauseSequence_System_Boolean_
+  name: PauseSequence
+  nameWithType: EventSequencer.PauseSequence
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.PauseSequence
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_ResetSequence
+  name: ResetSequence
+  nameWithType: EventSequencer.ResetSequence
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.ResetSequence
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_SkipStep
+  name: SkipStep
+  nameWithType: EventSequencer.SkipStep
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.SkipStep
+- uid: SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction
+  href: SombraStudios.Shared.Systems.Events.EventSequencer.html#SombraStudios_Shared_Systems_Events_EventSequencer_SkipAction
+  name: SkipAction
+  nameWithType: EventSequencer.SkipAction
+  fullName: SombraStudios.Shared.Systems.Events.EventSequencer.SkipAction

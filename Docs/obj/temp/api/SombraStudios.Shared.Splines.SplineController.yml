@@ -29,7 +29,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: SplineController
     path: ../Splines/SplineController.cs
-    startLine: 15
+    startLine: 14
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
@@ -60,7 +60,8 @@ items:
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
   extensionMethods:
-  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  - SombraStudios.Shared.Splines.SplineController.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
   attributes:
   - type: UnityEngine.RequireComponent
     ctor: UnityEngine.RequireComponent.#ctor(System.Type)
@@ -85,10 +86,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IsActive
     path: ../Splines/SplineController.cs
-    startLine: 30
+    startLine: 41
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
+  summary: Gets or sets whether this controller responds to play, stop and reset requests.
+  example: []
   syntax:
     content: public bool IsActive { get; set; }
     parameters: []
@@ -114,10 +117,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AnimationStarted
     path: ../Splines/SplineController.cs
-    startLine: 33
+    startLine: 46
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
+  summary: Raised after the animation starts.
+  example: []
   syntax:
     content: public event Action AnimationStarted
     return:
@@ -141,10 +146,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AnimationUpdated
     path: ../Splines/SplineController.cs
-    startLine: 34
+    startLine: 51
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
+  summary: Raised on every animation step, carrying the current position, rotation and local scale.
+  example: []
   syntax:
     content: public event Action<Vector3, Quaternion, Vector3> AnimationUpdated
     return:
@@ -168,10 +175,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AnimationStopped
     path: ../Splines/SplineController.cs
-    startLine: 35
+    startLine: 56
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
+  summary: Raised after the animation is paused.
+  example: []
   syntax:
     content: public event Action AnimationStopped
     return:
@@ -195,10 +204,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AnimationReseted
     path: ../Splines/SplineController.cs
-    startLine: 36
+    startLine: 61
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
+  summary: Raised after the animation is restarted from the beginning.
+  example: []
   syntax:
     content: public event Action AnimationReseted
     return:
@@ -222,10 +233,12 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AnimationCompleted
     path: ../Splines/SplineController.cs
-    startLine: 37
+    startLine: 66
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
+  summary: Raised once the animation reaches the end of the spline.
+  example: []
   syntax:
     content: public event Action AnimationCompleted
     return:
@@ -249,7 +262,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: PlayAnimation
     path: ../Splines/SplineController.cs
-    startLine: 65
+    startLine: 97
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
@@ -277,7 +290,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: PlayAnimation
     path: ../Splines/SplineController.cs
-    startLine: 77
+    startLine: 109
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
@@ -288,7 +301,7 @@ items:
     parameters:
     - id: progressionValue
       type: System.Single
-      description: ''
+      description: Where to start, from 0 at the spline's beginning to 1 at its end.
     content.vb: Public Sub PlayAnimation(progressionValue As Single)
   overload: SombraStudios.Shared.Splines.SplineController.PlayAnimation*
   nameWithType.vb: SplineController.PlayAnimation(Single)
@@ -312,7 +325,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: StopAnimation
     path: ../Splines/SplineController.cs
-    startLine: 94
+    startLine: 126
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
@@ -340,7 +353,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ResetAnimation
     path: ../Splines/SplineController.cs
-    startLine: 105
+    startLine: 137
   assemblies:
   - SombraStudios.Shared.Splines
   namespace: SombraStudios.Shared.Splines
@@ -385,7 +398,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -420,21 +432,62 @@ references:
   name: MonoBehaviour
   nameWithType: MonoBehaviour
   fullName: UnityEngine.MonoBehaviour
-- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
-  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Splines.SplineController.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<SplineController>(SplineController)
+  nameWithType: ObjectExtensions.OrNull<SplineController>(SplineController)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Splines.SplineController>(SombraStudios.Shared.Splines.SplineController)
+  nameWithType.vb: ObjectExtensions.OrNull(Of SplineController)(SplineController)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Splines.SplineController)(SombraStudios.Shared.Splines.SplineController)
+  name.vb: OrNull(Of SplineController)(SplineController)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Splines.SplineController)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Splines.SplineController
+    name: SplineController
+    href: SombraStudios.Shared.Splines.SplineController.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Splines.SplineController
+    name: SplineController
+    href: SombraStudios.Shared.Splines.SplineController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Splines.SplineController)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Splines.SplineController
+    name: SplineController
+    href: SombraStudios.Shared.Splines.SplineController.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Splines.SplineController
+    name: SplineController
+    href: SombraStudios.Shared.Splines.SplineController.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -449,9 +502,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "
@@ -478,20 +531,58 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  isExternal: true
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -506,9 +597,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "

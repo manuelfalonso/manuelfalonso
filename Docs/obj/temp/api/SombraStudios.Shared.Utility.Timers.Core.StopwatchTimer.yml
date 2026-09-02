@@ -1,0 +1,565 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  commentId: T:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  id: StopwatchTimer
+  parent: SombraStudios.Shared.Utility.Timers.Core
+  children:
+  - SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.#ctor
+  - SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime
+  - SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished
+  - SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset
+  - SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset(System.Single)
+  - SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick
+  langs:
+  - csharp
+  - vb
+  name: StopwatchTimer
+  nameWithType: StopwatchTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  type: Class
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopwatchTimer
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Timer that counts up from zero to infinity. Great for measuring durations.
+  example: []
+  syntax:
+    content: 'public class StopwatchTimer : Timer'
+    content.vb: Public Class StopwatchTimer Inherits Timer
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Utility.Timers.Core.Timer
+  inheritedMembers:
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+  - SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.#ctor
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.#ctor
+  id: '#ctor'
+  parent: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  langs:
+  - csharp
+  - vb
+  name: StopwatchTimer()
+  nameWithType: StopwatchTimer.StopwatchTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.StopwatchTimer()
+  type: Constructor
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 9
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  syntax:
+    content: public StopwatchTimer()
+    content.vb: Public Sub New()
+  overload: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.#ctor*
+  nameWithType.vb: StopwatchTimer.New()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.New()
+  name.vb: New()
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick
+  id: Tick
+  parent: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: StopwatchTimer.Tick()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Tick
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: >-
+    Updates the timer by adding the delta time to the current time.
+
+    Only runs when the timer is active.
+  example: []
+  syntax:
+    content: public override void Tick()
+    content.vb: Public Overrides Sub Tick()
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+  overload: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick*
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished
+  id: IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: StopwatchTimer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsFinished
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 22
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Gets a value indicating whether the timer has finished.
+  example: []
+  syntax:
+    content: public override bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property IsFinished As Boolean
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+  overload: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished*
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime
+  id: ElapsedTime
+  parent: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  langs:
+  - csharp
+  - vb
+  name: ElapsedTime
+  nameWithType: StopwatchTimer.ElapsedTime
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ElapsedTime
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 28
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: >-
+    Gets the elapsed time since the stopwatch was started.
+
+    This is equivalent to CurrentTime for a stopwatch timer.
+  example: []
+  syntax:
+    content: public float ElapsedTime { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property ElapsedTime As Single
+  overload: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime*
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset
+  id: Reset
+  parent: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: StopwatchTimer.Reset()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reset
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Resets the stopwatch timer back to zero.
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+  overload: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset*
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset(System.Single)
+  id: Reset(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer
+  langs:
+  - csharp
+  - vb
+  name: Reset(float)
+  nameWithType: StopwatchTimer.Reset(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset(float)
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Core/StopwatchTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reset
+    path: ../Utility/Timers/Core/StopwatchTimer.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: >-
+    Resets the stopwatch timer to a specific starting value.
+
+    This can be useful for resuming from a previously saved time.
+  example: []
+  syntax:
+    content: public override void Reset(float startTime)
+    parameters:
+    - id: startTime
+      type: System.Single
+      description: The starting time value for the stopwatch in seconds.
+    content.vb: Public Overrides Sub Reset(startTime As Single)
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+  overload: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset*
+  nameWithType.vb: StopwatchTimer.Reset(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset(Single)
+  name.vb: Reset(Single)
+references:
+- uid: SombraStudios.Shared.Utility.Timers.Core
+  commentId: N:SombraStudios.Shared.Utility.Timers.Core
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Timers.Core
+  nameWithType: SombraStudios.Shared.Utility.Timers.Core
+  fullName: SombraStudios.Shared.Utility.Timers.Core
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.Core
+    name: Core
+    href: SombraStudios.Shared.Utility.Timers.Core.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.Core
+    name: Core
+    href: SombraStudios.Shared.Utility.Timers.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer
+  commentId: T:SombraStudios.Shared.Utility.Timers.Core.Timer
+  parent: SombraStudios.Shared.Utility.Timers.Core
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html
+  name: Timer
+  nameWithType: Timer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_CurrentTime
+  name: CurrentTime
+  nameWithType: Timer.CurrentTime
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_IsRunning
+  name: IsRunning
+  nameWithType: Timer.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer__initialTime
+  name: _initialTime
+  nameWithType: Timer._initialTime
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Progress
+  name: Progress
+  nameWithType: Timer.Progress
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_OnTimerStart
+  name: OnTimerStart
+  nameWithType: Timer.OnTimerStart
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_OnTimerStop
+  name: OnTimerStop
+  nameWithType: Timer.OnTimerStop
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Start
+  name: Start()
+  nameWithType: Timer.Start()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Start()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Start
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Stop
+  name: Stop()
+  nameWithType: Timer.Stop()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Stop
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Resume
+  name: Resume()
+  nameWithType: Timer.Resume()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Resume
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Pause
+  name: Pause()
+  nameWithType: Timer.Pause()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Pause
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.#ctor*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.#ctor
+  href: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.html#SombraStudios_Shared_Utility_Timers_Core_StopwatchTimer__ctor
+  name: StopwatchTimer
+  nameWithType: StopwatchTimer.StopwatchTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.StopwatchTimer
+  nameWithType.vb: StopwatchTimer.New
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.New
+  name.vb: New
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Tick
+  name: Tick()
+  nameWithType: Timer.Tick()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Tick
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Tick
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick
+  href: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.html#SombraStudios_Shared_Utility_Timers_Core_StopwatchTimer_Tick
+  name: Tick
+  nameWithType: StopwatchTimer.Tick
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Tick
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_IsFinished
+  name: IsFinished
+  nameWithType: Timer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished
+  href: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.html#SombraStudios_Shared_Utility_Timers_Core_StopwatchTimer_IsFinished
+  name: IsFinished
+  nameWithType: StopwatchTimer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime
+  href: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.html#SombraStudios_Shared_Utility_Timers_Core_StopwatchTimer_ElapsedTime
+  name: ElapsedTime
+  nameWithType: StopwatchTimer.ElapsedTime
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.ElapsedTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset
+  name: Reset()
+  nameWithType: Timer.Reset()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset
+  href: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.html#SombraStudios_Shared_Utility_Timers_Core_StopwatchTimer_Reset
+  name: Reset
+  nameWithType: StopwatchTimer.Reset
+  fullName: SombraStudios.Shared.Utility.Timers.Core.StopwatchTimer.Reset
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  isExternal: true
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset_System_Single_
+  name: Reset(float)
+  nameWithType: Timer.Reset(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(float)
+  nameWithType.vb: Timer.Reset(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(Single)
+  name.vb: Reset(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )

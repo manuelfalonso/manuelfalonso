@@ -5,9 +5,9 @@ items:
   id: LineOfSight.IsInSightData
   parent: SombraStudios.Shared.AI
   children:
+  - SombraStudios.Shared.AI.LineOfSight.IsInSightData.#ctor(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.LayerMask,UnityEngine.Vector3,UnityEngine.Vector3,System.String)
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
-  - SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
   - SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
@@ -26,17 +26,75 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: IsInSightData
     path: ../AI/IsInSightData.cs
-    startLine: 9
+    startLine: 15
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
   summary: Represents the data for a sight check.
+  remarks: >-
+    The observer, the target and the obstacle mask are constructor arguments because a check
+
+    without them cannot do anything; everything else is optional. Being a
+
+    <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/readonly">readonly</a> struct means an instance cannot be half-built or mutated after
+
+    the fact, and lets callers pass it by <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/in">in</a> without a defensive copy.
   example: []
   syntax:
-    content: public struct LineOfSight.IsInSightData
+    content: public readonly struct LineOfSight.IsInSightData
     content.vb: Public Structure LineOfSight.IsInSightData
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.#ctor(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.LayerMask,UnityEngine.Vector3,UnityEngine.Vector3,System.String)
+  commentId: M:SombraStudios.Shared.AI.LineOfSight.IsInSightData.#ctor(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.LayerMask,UnityEngine.Vector3,UnityEngine.Vector3,System.String)
+  id: '#ctor(UnityEngine.Transform,UnityEngine.Transform,UnityEngine.LayerMask,UnityEngine.Vector3,UnityEngine.Vector3,System.String)'
+  parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
+  langs:
+  - csharp
+  - vb
+  name: IsInSightData(Transform, Transform, LayerMask, Vector3, Vector3, string)
+  nameWithType: LineOfSight.IsInSightData.IsInSightData(Transform, Transform, LayerMask, Vector3, Vector3, string)
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.IsInSightData(UnityEngine.Transform, UnityEngine.Transform, UnityEngine.LayerMask, UnityEngine.Vector3, UnityEngine.Vector3, string)
+  type: Constructor
+  source:
+    remote:
+      path: AI/IsInSightData.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../AI/IsInSightData.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.AI
+  namespace: SombraStudios.Shared.AI
+  summary: Creates the data for a sight check.
+  example: []
+  syntax:
+    content: public IsInSightData(Transform startPoint, Transform endPoint, LayerMask obstaclesMask, Vector3 startPointOffset = default, Vector3 endPointOffset = default, string tagToIgnore = null)
+    parameters:
+    - id: startPoint
+      type: UnityEngine.Transform
+      description: The observer the line of sight starts from.
+    - id: endPoint
+      type: UnityEngine.Transform
+      description: The target the line of sight ends at.
+    - id: obstaclesMask
+      type: UnityEngine.LayerMask
+      description: The layers that count as obstacles.
+    - id: startPointOffset
+      type: UnityEngine.Vector3
+      description: Offset applied to the observer's position.
+    - id: endPointOffset
+      type: UnityEngine.Vector3
+      description: Offset applied to the target's position.
+    - id: tagToIgnore
+      type: System.String
+      description: A tag whose colliders do not count as obstructions.
+    content.vb: Public Sub New(startPoint As Transform, endPoint As Transform, obstaclesMask As LayerMask, startPointOffset As Vector3 = Nothing, endPointOffset As Vector3 = Nothing, tagToIgnore As String = Nothing)
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.#ctor*
+  nameWithType.vb: LineOfSight.IsInSightData.New(Transform, Transform, LayerMask, Vector3, Vector3, String)
+  fullName.vb: SombraStudios.Shared.AI.LineOfSight.IsInSightData.New(UnityEngine.Transform, UnityEngine.Transform, UnityEngine.LayerMask, UnityEngine.Vector3, UnityEngine.Vector3, String)
+  name.vb: New(Transform, Transform, LayerMask, Vector3, Vector3, String)
 - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
+  commentId: P:SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
   id: StartPoint
   parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
   langs:
@@ -45,7 +103,7 @@ items:
   name: StartPoint
   nameWithType: LineOfSight.IsInSightData.StartPoint
   fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
-  type: Field
+  type: Property
   source:
     remote:
       path: AI/IsInSightData.cs
@@ -53,19 +111,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: StartPoint
     path: ../AI/IsInSightData.cs
-    startLine: 14
+    startLine: 45
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
-  summary: The starting point of the line of sight.
+  summary: The starting point of the line of sight, that is, the observer.
   example: []
   syntax:
-    content: public Transform StartPoint
+    content: public Transform StartPoint { get; }
+    parameters: []
     return:
       type: UnityEngine.Transform
-    content.vb: Public StartPoint As Transform
+    content.vb: Public ReadOnly Property StartPoint As Transform
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint*
 - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
+  commentId: P:SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
   id: StartPointOffset
   parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
   langs:
@@ -74,7 +134,7 @@ items:
   name: StartPointOffset
   nameWithType: LineOfSight.IsInSightData.StartPointOffset
   fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
-  type: Field
+  type: Property
   source:
     remote:
       path: AI/IsInSightData.cs
@@ -82,19 +142,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: StartPointOffset
     path: ../AI/IsInSightData.cs
-    startLine: 19
+    startLine: 50
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
   summary: The offset of the starting point.
   example: []
   syntax:
-    content: public Vector3 StartPointOffset
+    content: public Vector3 StartPointOffset { get; }
+    parameters: []
     return:
       type: UnityEngine.Vector3
-    content.vb: Public StartPointOffset As Vector3
+    content.vb: Public ReadOnly Property StartPointOffset As Vector3
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset*
 - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
+  commentId: P:SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
   id: EndPoint
   parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
   langs:
@@ -103,7 +165,7 @@ items:
   name: EndPoint
   nameWithType: LineOfSight.IsInSightData.EndPoint
   fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
-  type: Field
+  type: Property
   source:
     remote:
       path: AI/IsInSightData.cs
@@ -111,19 +173,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: EndPoint
     path: ../AI/IsInSightData.cs
-    startLine: 24
+    startLine: 55
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
-  summary: The ending point of the line of sight.
+  summary: The ending point of the line of sight, that is, the target.
   example: []
   syntax:
-    content: public Transform EndPoint
+    content: public Transform EndPoint { get; }
+    parameters: []
     return:
       type: UnityEngine.Transform
-    content.vb: Public EndPoint As Transform
+    content.vb: Public ReadOnly Property EndPoint As Transform
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint*
 - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
+  commentId: P:SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
   id: EndPointOffset
   parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
   langs:
@@ -132,7 +196,7 @@ items:
   name: EndPointOffset
   nameWithType: LineOfSight.IsInSightData.EndPointOffset
   fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
-  type: Field
+  type: Property
   source:
     remote:
       path: AI/IsInSightData.cs
@@ -140,19 +204,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: EndPointOffset
     path: ../AI/IsInSightData.cs
-    startLine: 29
+    startLine: 60
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
   summary: The offset of the ending point.
   example: []
   syntax:
-    content: public Vector3 EndPointOffset
+    content: public Vector3 EndPointOffset { get; }
+    parameters: []
     return:
       type: UnityEngine.Vector3
-    content.vb: Public EndPointOffset As Vector3
+    content.vb: Public ReadOnly Property EndPointOffset As Vector3
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset*
 - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
+  commentId: P:SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
   id: ObstaclesMask
   parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
   langs:
@@ -161,7 +227,7 @@ items:
   name: ObstaclesMask
   nameWithType: LineOfSight.IsInSightData.ObstaclesMask
   fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
-  type: Field
+  type: Property
   source:
     remote:
       path: AI/IsInSightData.cs
@@ -169,19 +235,21 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ObstaclesMask
     path: ../AI/IsInSightData.cs
-    startLine: 34
+    startLine: 65
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
   summary: The layer mask representing obstacles to consider.
   example: []
   syntax:
-    content: public LayerMask ObstaclesMask
+    content: public LayerMask ObstaclesMask { get; }
+    parameters: []
     return:
       type: UnityEngine.LayerMask
-    content.vb: Public ObstaclesMask As LayerMask
+    content.vb: Public ReadOnly Property ObstaclesMask As LayerMask
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask*
 - uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore
+  commentId: P:SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore
   id: TagToIgnore
   parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
   langs:
@@ -190,7 +258,7 @@ items:
   name: TagToIgnore
   nameWithType: LineOfSight.IsInSightData.TagToIgnore
   fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore
-  type: Field
+  type: Property
   source:
     remote:
       path: AI/IsInSightData.cs
@@ -198,46 +266,19 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TagToIgnore
     path: ../AI/IsInSightData.cs
-    startLine: 39
+    startLine: 70
   assemblies:
   - SombraStudios.Shared.AI
   namespace: SombraStudios.Shared.AI
-  summary: The tag to ignore.
+  summary: A tag whose colliders do not count as obstructions.
   example: []
   syntax:
-    content: public string TagToIgnore
+    content: public string TagToIgnore { get; }
+    parameters: []
     return:
       type: System.String
-    content.vb: Public TagToIgnore As String
-- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
-  commentId: F:SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
-  id: Is2D
-  parent: SombraStudios.Shared.AI.LineOfSight.IsInSightData
-  langs:
-  - csharp
-  - vb
-  name: Is2D
-  nameWithType: LineOfSight.IsInSightData.Is2D
-  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.Is2D
-  type: Field
-  source:
-    remote:
-      path: AI/IsInSightData.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: Is2D
-    path: ../AI/IsInSightData.cs
-    startLine: 44
-  assemblies:
-  - SombraStudios.Shared.AI
-  namespace: SombraStudios.Shared.AI
-  summary: If the sight check is 2D use Vector3.right, otherwise use Vector3.forward.
-  example: []
-  syntax:
-    content: public bool Is2D
-    return:
-      type: System.Boolean
-    content.vb: Public Is2D As Boolean
+    content.vb: Public ReadOnly Property TagToIgnore As String
+  overload: SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore*
 references:
 - uid: SombraStudios.Shared.AI
   commentId: N:SombraStudios.Shared.AI
@@ -269,6 +310,15 @@ references:
   - uid: SombraStudios.Shared.AI
     name: AI
     href: SombraStudios.Shared.AI.html
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.#ctor*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.#ctor
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData__ctor_UnityEngine_Transform_UnityEngine_Transform_UnityEngine_LayerMask_UnityEngine_Vector3_UnityEngine_Vector3_System_String_
+  name: IsInSightData
+  nameWithType: LineOfSight.IsInSightData.IsInSightData
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.IsInSightData
+  nameWithType.vb: LineOfSight.IsInSightData.New
+  fullName.vb: SombraStudios.Shared.AI.LineOfSight.IsInSightData.New
+  name.vb: New
 - uid: UnityEngine.Transform
   commentId: T:UnityEngine.Transform
   parent: UnityEngine
@@ -276,19 +326,6 @@ references:
   name: Transform
   nameWithType: Transform
   fullName: UnityEngine.Transform
-- uid: UnityEngine
-  commentId: N:UnityEngine
-  isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
-- uid: UnityEngine.Vector3
-  commentId: T:UnityEngine.Vector3
-  parent: UnityEngine
-  isExternal: true
-  name: Vector3
-  nameWithType: Vector3
-  fullName: UnityEngine.Vector3
 - uid: UnityEngine.LayerMask
   commentId: T:UnityEngine.LayerMask
   parent: UnityEngine
@@ -296,6 +333,13 @@ references:
   name: LayerMask
   nameWithType: LayerMask
   fullName: UnityEngine.LayerMask
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -307,6 +351,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
 - uid: System
   commentId: N:System
   isExternal: true
@@ -314,14 +364,39 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData_StartPoint
+  name: StartPoint
+  nameWithType: LineOfSight.IsInSightData.StartPoint
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPoint
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData_StartPointOffset
+  name: StartPointOffset
+  nameWithType: LineOfSight.IsInSightData.StartPointOffset
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.StartPointOffset
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData_EndPoint
+  name: EndPoint
+  nameWithType: LineOfSight.IsInSightData.EndPoint
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPoint
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData_EndPointOffset
+  name: EndPointOffset
+  nameWithType: LineOfSight.IsInSightData.EndPointOffset
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.EndPointOffset
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData_ObstaclesMask
+  name: ObstaclesMask
+  nameWithType: LineOfSight.IsInSightData.ObstaclesMask
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.ObstaclesMask
+- uid: SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore*
+  commentId: Overload:SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore
+  href: SombraStudios.Shared.AI.LineOfSight.IsInSightData.html#SombraStudios_Shared_AI_LineOfSight_IsInSightData_TagToIgnore
+  name: TagToIgnore
+  nameWithType: LineOfSight.IsInSightData.TagToIgnore
+  fullName: SombraStudios.Shared.AI.LineOfSight.IsInSightData.TagToIgnore

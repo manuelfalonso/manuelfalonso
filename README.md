@@ -25,9 +25,10 @@ Welcome to my collection of Unity scripts, a growing library designed to help Un
 4. [Packages and Preprocessor Directives](#packages-and-preprocessor-directives)
 5. [Repository Structure](#repository-structure)
 6. [Getting Started](#getting-started)
-7. [Key Features](#key-features)
+7. [Regenerating the documentation](#regenerating-the-documentation)
+8. [Key Features](#key-features)
    - [1. Prefab Instantiation Management with Scriptable Objects](#1-prefab-instantiation-management-with-scriptable-objects)
-8. [Contributing](#contributing)
+9. [Contributing](#contributing)
 
 ## Finding a script
 
@@ -187,6 +188,99 @@ To get started with this repository:
 2. Make sure all necessary packages are installed and enabled in your Unity project.
 3. Add the required scripting define symbols (mentioned above) in your Unity Player settings.
 4. Review the [documentation](https://manuelfalonso.github.io/manuelfalonso/) for detailed usage instructions for each script.
+
+## Regenerating the documentation
+
+The published site is built from **committed** DocFX metadata: `docfx metadata`
+extracts one `.yml` file per namespace and type into `Docs/obj/temp/api/`, those
+files are committed, and the GitHub Actions workflow builds the HTML from them
+on every push to `main`.
+
+That folder cannot be gitignored. The metadata step reads the Unity-generated
+`SombraStudios.Shared.*.csproj` files at the host project root, which do not
+exist on the CI runner — so CI can only build from what is committed.
+
+Run this after any change to a public type or its `<summary>` docs.
+
+### Prerequisites
+
+- **DocFX as a .NET global tool.** The standalone `docfx.exe` download fails
+  with `No instances of MSBuild could be detected`: it is a self-contained
+  binary, so `MSBuildLocator` has no `dotnet` SDK context to query and cannot
+  fall back to a Visual Studio install.
+
+  ```bash
+  dotnet tool install -g docfx
+  ```
+
+- **The `.csproj` files must exist** at the host project root (the folder
+  containing `Assets/`). Unity generates them and they are gitignored, so open
+  the project in Unity once if they are missing.
+
+### Steps
+
+Run all of these from the repo root (the folder holding this `README.md`).
+
+**1. Purge the old metadata.** DocFX overwrites and adds, but never deletes.
+Because the folder is committed, the `.yml` of any type you deleted or renamed
+survives forever and keeps rendering on the site. Emptying the folder first is
+the only way those entries get removed:
+
+```powershell
+Remove-Item -Recurse -Force Docs\obj\temp\api
+```
+
+**2. Regenerate.** Use the `metadata` subcommand, not bare `docfx` — the latter
+also runs the site build and writes a local `Docs/_site/` you do not need:
+
+```bash
+docfx metadata Docs/docfx.json
+```
+
+**3. Check the output for errors.** This step is not optional. On a compile
+error DocFX prints `warning: No .NET API detected for .` and writes **zero**
+`.yml` files. Before step 1 existed in this procedure that failure was
+invisible — the committed folder stayed populated and the site rebuilt happily
+from stale data. A successful run reports no errors and leaves ~790 `.yml`
+files:
+
+```bash
+ls -1 Docs/obj/temp/api/*.yml | wc -l
+```
+
+**4. Review the diff.** `git status -- Docs/obj` should show deletions for
+types that no longer exist, modifications for changed docs, and additions for
+new types. Deletions are the point of step 1; a run with none of them means the
+purge did not happen.
+
+**5. Regenerate the type index** if you added, renamed, or removed a public
+type, so `INDEX.tsv` matches. CI fails the push otherwise:
+
+```bash
+python .github/scripts/generate_index.py
+```
+
+**6. Commit and push to `main`.** This triggers `deploy-docfx.yml`, which
+rebuilds and republishes the site from the metadata you just committed.
+
+### Gotcha: `DefineConstants`
+
+`Docs/docfx.json` sets `properties.DefineConstants`, and MSBuild treats it as a
+global property that **replaces** each project's own define list rather than
+adding to it. So a symbol listed there un-gates the matching `#if` blocks
+during extraction — but the assembly references still come from the `.csproj`.
+
+List a symbol whose assembly is not referenced there and every guarded file
+fails with `CS0246: The type or namespace name '…' could not be found`, which
+by step 3 means no documentation at all. This is what `NAUGHTY_ATTRIBUTES` did:
+it was listed here, but the symbol is not in the project's Scripting Define
+Symbols and NaughtyAttributes is an Asset Store import, so nothing referenced
+it.
+
+Only add a symbol here once its package is actually installed and referenced by
+the relevant asmdef. Types gated behind a symbol left out of this list are
+simply absent from the site — see the `Gate` column in
+[`INDEX.tsv`](INDEX.tsv) for which those are.
 
 ## Key Features
 

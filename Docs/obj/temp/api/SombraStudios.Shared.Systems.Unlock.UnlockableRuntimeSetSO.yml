@@ -50,10 +50,22 @@ items:
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.LOG_CATEGORY
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.PROPERTIES_TITLE
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.DEBUG_TITLE
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._allowDuplicates
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._showLogs
-  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Items
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Count
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IsEmpty
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.GetGenericType
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Item(System.Int32)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._items
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
   - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Remove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  - SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Clear
+  extensionMethods:
+  - SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
   attributes:
   - type: UnityEngine.CreateAssetMenuAttribute
     ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
@@ -411,7 +423,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -488,6 +499,15 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.DEBUG_TITLE
   nameWithType.vb: RuntimeSetSO(Of UnlockableSO).DEBUG_TITLE
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._allowDuplicates
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._allowDuplicates
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._allowDuplicates
+  name: _allowDuplicates
+  nameWithType: RuntimeSetSO<UnlockableSO>._allowDuplicates
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>._allowDuplicates
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO)._allowDuplicates
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO)._allowDuplicates
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._showLogs
   commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._showLogs
   parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
@@ -497,15 +517,122 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>._showLogs
   nameWithType.vb: RuntimeSetSO(Of UnlockableSO)._showLogs
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO)._showLogs
-- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Items
-  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Items
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Count
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Count
   parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
-  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
-  name: Items
-  nameWithType: RuntimeSetSO<UnlockableSO>.Items
-  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Items
-  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Items
-  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Items
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
+  name: Count
+  nameWithType: RuntimeSetSO<UnlockableSO>.Count
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Count
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Count
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Count
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IsEmpty
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IsEmpty
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  name: IsEmpty
+  nameWithType: RuntimeSetSO<UnlockableSO>.IsEmpty
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.IsEmpty
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).IsEmpty
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).IsEmpty
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.GetGenericType
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.GetGenericType
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  name: GetGenericType
+  nameWithType: RuntimeSetSO<UnlockableSO>.GetGenericType
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.GetGenericType
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).GetGenericType
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).GetGenericType
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: IndexOf(UnlockableSO)
+  nameWithType: RuntimeSetSO<UnlockableSO>.IndexOf(UnlockableSO)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).IndexOf(UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: IndexOf
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.IndexOf(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: IndexOf
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: Contains(UnlockableSO)
+  nameWithType: RuntimeSetSO<UnlockableSO>.Contains(UnlockableSO)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Contains(UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: Contains
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Contains(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: Contains
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Item(System.Int32)
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Item(System.Int32)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: RuntimeSetSO<UnlockableSO>.this[int]
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.this[int]
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).this[](Integer)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Item(System.Int32)
+    name: this[]
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._items
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}._items
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._items
+  name: _items
+  nameWithType: RuntimeSetSO<UnlockableSO>._items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>._items
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO)._items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO)._items
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
   commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
   parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
@@ -527,6 +654,32 @@ references:
   spec.vb:
   - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Add(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
     name: Add
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: TryAdd(UnlockableSO)
+  nameWithType: RuntimeSetSO<UnlockableSO>.TryAdd(UnlockableSO)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).TryAdd(UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: TryAdd
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryAdd(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: TryAdd
   - name: (
   - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
     name: UnlockableSO
@@ -557,6 +710,92 @@ references:
   - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
     name: UnlockableSO
     href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+  href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  name: TryRemove(UnlockableSO)
+  nameWithType: RuntimeSetSO<UnlockableSO>.TryRemove(UnlockableSO)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).TryRemove(UnlockableSO)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: TryRemove
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.TryRemove(SombraStudios.Shared.Systems.Unlock.UnlockableSO)
+    name: TryRemove
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableSO
+    name: UnlockableSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableSO.html
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Clear
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Clear
+  parent: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}
+  definition: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  name: Clear()
+  nameWithType: RuntimeSetSO<UnlockableSO>.Clear()
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<SombraStudios.Shared.Systems.Unlock.UnlockableSO>.Clear()
+  nameWithType.vb: RuntimeSetSO(Of UnlockableSO).Clear()
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of SombraStudios.Shared.Systems.Unlock.UnlockableSO).Clear()
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Clear
+    name: Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO{SombraStudios.Shared.Systems.Unlock.UnlockableSO}.Clear
+    name: Clear
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<UnlockableRuntimeSetSO>(UnlockableRuntimeSetSO)
+  nameWithType: ObjectExtensions.OrNull<UnlockableRuntimeSetSO>(UnlockableRuntimeSetSO)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO>(SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO)
+  nameWithType.vb: ObjectExtensions.OrNull(Of UnlockableRuntimeSetSO)(UnlockableRuntimeSetSO)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO)(SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO)
+  name.vb: OrNull(Of UnlockableRuntimeSetSO)(UnlockableRuntimeSetSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+    name: UnlockableRuntimeSetSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+    name: UnlockableRuntimeSetSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+    name: UnlockableRuntimeSetSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO
+    name: UnlockableRuntimeSetSO
+    href: SombraStudios.Shared.Systems.Unlock.UnlockableRuntimeSetSO.html
   - name: )
 - uid: System
   commentId: N:System
@@ -658,6 +897,14 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.DEBUG_TITLE
   nameWithType.vb: RuntimeSetSO(Of T).DEBUG_TITLE
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).DEBUG_TITLE
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._allowDuplicates
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._allowDuplicates
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1__allowDuplicates
+  name: _allowDuplicates
+  nameWithType: RuntimeSetSO<T>._allowDuplicates
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._allowDuplicates
+  nameWithType.vb: RuntimeSetSO(Of T)._allowDuplicates
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._allowDuplicates
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
   commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._showLogs
   href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1__showLogs
@@ -666,14 +913,110 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._showLogs
   nameWithType.vb: RuntimeSetSO(Of T)._showLogs
   fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._showLogs
-- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
-  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Items
-  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Items
-  name: Items
-  nameWithType: RuntimeSetSO<T>.Items
-  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Items
-  nameWithType.vb: RuntimeSetSO(Of T).Items
-  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Items
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Count
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Count
+  name: Count
+  nameWithType: RuntimeSetSO<T>.Count
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Count
+  nameWithType.vb: RuntimeSetSO(Of T).Count
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Count
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IsEmpty
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_IsEmpty
+  name: IsEmpty
+  nameWithType: RuntimeSetSO<T>.IsEmpty
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.IsEmpty
+  nameWithType.vb: RuntimeSetSO(Of T).IsEmpty
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).IsEmpty
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.GetGenericType
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_GetGenericType
+  name: GetGenericType
+  nameWithType: RuntimeSetSO<T>.GetGenericType
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.GetGenericType
+  nameWithType.vb: RuntimeSetSO(Of T).GetGenericType
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).GetGenericType
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_IndexOf__0_
+  name: IndexOf(T)
+  nameWithType: RuntimeSetSO<T>.IndexOf(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.IndexOf(T)
+  nameWithType.vb: RuntimeSetSO(Of T).IndexOf(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+    name: IndexOf
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_IndexOf__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.IndexOf(`0)
+    name: IndexOf
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_IndexOf__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Contains__0_
+  name: Contains(T)
+  nameWithType: RuntimeSetSO<T>.Contains(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Contains(T)
+  nameWithType.vb: RuntimeSetSO(Of T).Contains(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Contains(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+    name: Contains
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Contains__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Contains(`0)
+    name: Contains
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Contains__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
+  commentId: P:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: RuntimeSetSO<T>.this[int]
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.this[int]
+  nameWithType.vb: RuntimeSetSO(Of T).this[](Integer)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Item(System.Int32)
+    name: this[]
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Item_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._items
+  commentId: F:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1._items
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1__items
+  name: _items
+  nameWithType: RuntimeSetSO<T>._items
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>._items
+  nameWithType.vb: RuntimeSetSO(Of T)._items
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T)._items
 - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
   commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
   href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
@@ -693,6 +1036,28 @@ references:
   - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Add(`0)
     name: Add
     href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryAdd__0_
+  name: TryAdd(T)
+  nameWithType: RuntimeSetSO<T>.TryAdd(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.TryAdd(T)
+  nameWithType.vb: RuntimeSetSO(Of T).TryAdd(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).TryAdd(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+    name: TryAdd
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryAdd__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryAdd(`0)
+    name: TryAdd
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryAdd__0_
   - name: (
   - name: T
   - name: )
@@ -718,6 +1083,116 @@ references:
   - name: (
   - name: T
   - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryRemove__0_
+  name: TryRemove(T)
+  nameWithType: RuntimeSetSO<T>.TryRemove(T)
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.TryRemove(T)
+  nameWithType.vb: RuntimeSetSO(Of T).TryRemove(T)
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).TryRemove(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+    name: TryRemove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryRemove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.TryRemove(`0)
+    name: TryRemove
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_TryRemove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  commentId: M:SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+  href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Clear
+  name: Clear()
+  nameWithType: RuntimeSetSO<T>.Clear()
+  fullName: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO<T>.Clear()
+  nameWithType.vb: RuntimeSetSO(Of T).Clear()
+  fullName.vb: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO(Of T).Clear()
+  spec.csharp:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+    name: Clear
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO`1.Clear
+    name: Clear
+    href: SombraStudios.Shared.ScriptableObjects.RuntimeSets.RuntimeSetSO-1.html#SombraStudios_Shared_ScriptableObjects_RuntimeSets_RuntimeSetSO_1_Clear
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
 - uid: System.String
   commentId: T:System.String
   parent: System

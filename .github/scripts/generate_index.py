@@ -27,8 +27,12 @@ NAMESPACE_RE = re.compile(r"^\s*namespace\s+([\w.]+)")
 
 MODIFIERS = r"(?:public|internal|private|protected|static|sealed|abstract|partial|readonly|ref|new|unsafe)"
 
+# A declaration may share its line with its attributes, as in
+# `[Serializable] public class BreakEvent : UnityEvent<GameObject> { }`.
+ATTRIBUTE_PREFIX = r"(?:\[[^\]]*\]\s*)*"
+
 TYPE_RE = re.compile(
-    r"^\s*(?P<mods>(?:" + MODIFIERS + r"\s+)*)"
+    r"^\s*" + ATTRIBUTE_PREFIX + r"(?P<mods>(?:" + MODIFIERS + r"\s+)*)"
     r"(?P<kind>class|struct|interface|enum|record)\s+"
     r"(?P<name>[A-Za-z_]\w*)"
     # A type parameter list holds only identifiers and commas. Matching anything
@@ -38,8 +42,11 @@ TYPE_RE = re.compile(
 )
 
 DELEGATE_RE = re.compile(
-    r"^\s*(?P<mods>(?:public|internal|private|protected|static|unsafe)\s+)*"
-    r"delegate\s+[\w<>\[\],.?\s]+?\s+(?P<name>[A-Za-z_]\w*)\s*(?:<[^(]*>)?\s*\("
+    r"^\s*" + ATTRIBUTE_PREFIX
+    + r"(?P<mods>(?:(?:public|internal|private|protected|static|unsafe)\s+)*)"
+    r"delegate\s+[\w<>\[\],.?\s]+?\s+(?P<name>[A-Za-z_]\w*)"
+    # The parameter list may start on the following line.
+    r"\s*(?:<[\w\s,]*>)?\s*(?:\(|$)"
 )
 
 SUMMARY_RE = re.compile(r"<summary>(.*?)</summary>", re.DOTALL)
@@ -233,7 +240,9 @@ def scan_file(path, rel_path):
                     "Type": f"{outer}.{name}" if outer else name,
                     "Kind": match.group("kind") if kind == "type" else "delegate",
                     "Base": pick_base(match.group("rest")) if kind == "type" else "-",
-                    "Namespace": namespaces[-1][0] if namespaces else "-",
+                    # Namespaces nest: `namespace A { namespace B { … } }` means
+                    # the type lives in A.B, not B.
+                    "Namespace": ".".join(n for n, _ in namespaces) or "-",
                     "Path": rel_path,
                     "Gate": " && ".join(gate for gate in gates if gate) or "-",
                     "Summary": extract_summary(doc_lines) or "-",

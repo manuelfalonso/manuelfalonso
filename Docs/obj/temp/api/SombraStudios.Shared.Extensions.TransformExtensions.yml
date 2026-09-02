@@ -6,7 +6,7 @@ items:
   parent: SombraStudios.Shared.Extensions
   children:
   - SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
-  - SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue(UnityEngine.Transform,SombraStudios.Shared.Extensions.TransformExtensions.Axis,UnityEngine.Vector3)
+  - SombraStudios.Shared.Extensions.TransformExtensions.SetDirection(UnityEngine.Transform,SombraStudios.Shared.Extensions.Direction,UnityEngine.Vector3)
   langs:
   - csharp
   - vb
@@ -32,45 +32,53 @@ items:
     content.vb: Public Module TransformExtensions
   inheritance:
   - System.Object
-- uid: SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue(UnityEngine.Transform,SombraStudios.Shared.Extensions.TransformExtensions.Axis,UnityEngine.Vector3)
-  commentId: M:SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue(UnityEngine.Transform,SombraStudios.Shared.Extensions.TransformExtensions.Axis,UnityEngine.Vector3)
-  id: SetAxisValue(UnityEngine.Transform,SombraStudios.Shared.Extensions.TransformExtensions.Axis,UnityEngine.Vector3)
+- uid: SombraStudios.Shared.Extensions.TransformExtensions.SetDirection(UnityEngine.Transform,SombraStudios.Shared.Extensions.Direction,UnityEngine.Vector3)
+  commentId: M:SombraStudios.Shared.Extensions.TransformExtensions.SetDirection(UnityEngine.Transform,SombraStudios.Shared.Extensions.Direction,UnityEngine.Vector3)
+  id: SetDirection(UnityEngine.Transform,SombraStudios.Shared.Extensions.Direction,UnityEngine.Vector3)
   isExtensionMethod: true
   parent: SombraStudios.Shared.Extensions.TransformExtensions
   langs:
   - csharp
   - vb
-  name: SetAxisValue(Transform, Axis, Vector3)
-  nameWithType: TransformExtensions.SetAxisValue(Transform, TransformExtensions.Axis, Vector3)
-  fullName: SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue(UnityEngine.Transform, SombraStudios.Shared.Extensions.TransformExtensions.Axis, UnityEngine.Vector3)
+  name: SetDirection(Transform, Direction, Vector3)
+  nameWithType: TransformExtensions.SetDirection(Transform, Direction, Vector3)
+  fullName: SombraStudios.Shared.Extensions.TransformExtensions.SetDirection(UnityEngine.Transform, SombraStudios.Shared.Extensions.Direction, UnityEngine.Vector3)
   type: Method
   source:
     remote:
       path: Extensions/TransformExtensions.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: SetAxisValue
+    id: SetDirection
     path: ../Extensions/TransformExtensions.cs
-    startLine: 53
+    startLine: 22
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
-  summary: Sets the local axis value of the transform.
+  summary: Rotates the transform so that the given local direction points along a world-space vector.
+  remarks: >-
+    This assigns <xref href="UnityEngine.Transform.up" data-throw-if-not-resolved="false"></xref>, <xref href="UnityEngine.Transform.right" data-throw-if-not-resolved="false"></xref> or
+
+    <xref href="UnityEngine.Transform.forward" data-throw-if-not-resolved="false"></xref>, so it changes the transform's rotation, not its position.
+
+    Aiming a single axis leaves the roll around that axis unspecified - Unity picks one. Use
+
+    <xref href="UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3%2cUnityEngine.Vector3)" data-throw-if-not-resolved="false"></xref> when the roll matters.
   example: []
   syntax:
-    content: public static void SetAxisValue(this Transform trans, TransformExtensions.Axis axis, Vector3 value)
+    content: public static void SetDirection(this Transform trans, Direction direction, Vector3 value)
     parameters:
     - id: trans
       type: UnityEngine.Transform
-      description: The transform to set the axis value for.
-    - id: axis
-      type: SombraStudios.Shared.Extensions.TransformExtensions.Axis
-      description: The axis to set.
+      description: The transform to rotate.
+    - id: direction
+      type: SombraStudios.Shared.Extensions.Direction
+      description: Which of the transform's local directions to aim.
     - id: value
       type: UnityEngine.Vector3
-      description: The value to set for the axis.
-    content.vb: Public Shared Sub SetAxisValue(trans As Transform, axis As TransformExtensions.Axis, value As Vector3)
-  overload: SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue*
+      description: The world-space vector to aim that direction along.
+    content.vb: Public Shared Sub SetDirection(trans As Transform, direction As Direction, value As Vector3)
+  overload: SombraStudios.Shared.Extensions.TransformExtensions.SetDirection*
 - uid: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
   commentId: M:SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform(UnityEngine.Transform)
   id: ResetTransform(UnityEngine.Transform)
@@ -90,18 +98,22 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: ResetTransform
     path: ../Extensions/TransformExtensions.cs
-    startLine: 84
+    startLine: 57
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
-  summary: Resets the position, rotation and scale of the transform to default values.
+  summary: Resets the transform's local position, rotation and scale to their identity values.
+  remarks: >-
+    Operates entirely in local space, so a child returns to its parent's origin rather than the
+
+    world origin.
   example: []
   syntax:
     content: public static void ResetTransform(this Transform trans)
     parameters:
     - id: trans
       type: UnityEngine.Transform
-      description: The transform to reset its position, rotation and scale.
+      description: The transform to reset.
     content.vb: Public Shared Sub ResetTransform(trans As Transform)
   overload: SombraStudios.Shared.Extensions.TransformExtensions.ResetTransform*
 references:
@@ -139,7 +151,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -153,12 +164,64 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue*
-  commentId: Overload:SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue
-  href: SombraStudios.Shared.Extensions.TransformExtensions.html#SombraStudios_Shared_Extensions_TransformExtensions_SetAxisValue_UnityEngine_Transform_SombraStudios_Shared_Extensions_TransformExtensions_Axis_UnityEngine_Vector3_
-  name: SetAxisValue
-  nameWithType: TransformExtensions.SetAxisValue
-  fullName: SombraStudios.Shared.Extensions.TransformExtensions.SetAxisValue
+- uid: UnityEngine.Transform.up
+  commentId: P:UnityEngine.Transform.up
+  isExternal: true
+  name: up
+  nameWithType: Transform.up
+  fullName: UnityEngine.Transform.up
+- uid: UnityEngine.Transform.right
+  commentId: P:UnityEngine.Transform.right
+  isExternal: true
+  name: right
+  nameWithType: Transform.right
+  fullName: UnityEngine.Transform.right
+- uid: UnityEngine.Transform.forward
+  commentId: P:UnityEngine.Transform.forward
+  isExternal: true
+  name: forward
+  nameWithType: Transform.forward
+  fullName: UnityEngine.Transform.forward
+- uid: UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+  commentId: M:UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+  isExternal: true
+  name: LookRotation(Vector3, Vector3)
+  nameWithType: Quaternion.LookRotation(Vector3, Vector3)
+  fullName: UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3, UnityEngine.Vector3)
+  spec.csharp:
+  - uid: UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+    name: LookRotation
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Quaternion.LookRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+    name: LookRotation
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Extensions.TransformExtensions.SetDirection*
+  commentId: Overload:SombraStudios.Shared.Extensions.TransformExtensions.SetDirection
+  href: SombraStudios.Shared.Extensions.TransformExtensions.html#SombraStudios_Shared_Extensions_TransformExtensions_SetDirection_UnityEngine_Transform_SombraStudios_Shared_Extensions_Direction_UnityEngine_Vector3_
+  name: SetDirection
+  nameWithType: TransformExtensions.SetDirection
+  fullName: SombraStudios.Shared.Extensions.TransformExtensions.SetDirection
 - uid: UnityEngine.Transform
   commentId: T:UnityEngine.Transform
   parent: UnityEngine
@@ -166,29 +229,13 @@ references:
   name: Transform
   nameWithType: Transform
   fullName: UnityEngine.Transform
-- uid: SombraStudios.Shared.Extensions.TransformExtensions.Axis
-  commentId: T:SombraStudios.Shared.Extensions.TransformExtensions.Axis
+- uid: SombraStudios.Shared.Extensions.Direction
+  commentId: T:SombraStudios.Shared.Extensions.Direction
   parent: SombraStudios.Shared.Extensions
-  href: SombraStudios.Shared.Extensions.TransformExtensions.html
-  name: TransformExtensions.Axis
-  nameWithType: TransformExtensions.Axis
-  fullName: SombraStudios.Shared.Extensions.TransformExtensions.Axis
-  spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.TransformExtensions
-    name: TransformExtensions
-    href: SombraStudios.Shared.Extensions.TransformExtensions.html
-  - name: .
-  - uid: SombraStudios.Shared.Extensions.TransformExtensions.Axis
-    name: Axis
-    href: SombraStudios.Shared.Extensions.TransformExtensions.Axis.html
-  spec.vb:
-  - uid: SombraStudios.Shared.Extensions.TransformExtensions
-    name: TransformExtensions
-    href: SombraStudios.Shared.Extensions.TransformExtensions.html
-  - name: .
-  - uid: SombraStudios.Shared.Extensions.TransformExtensions.Axis
-    name: Axis
-    href: SombraStudios.Shared.Extensions.TransformExtensions.Axis.html
+  href: SombraStudios.Shared.Extensions.Direction.html
+  name: Direction
+  nameWithType: Direction
+  fullName: SombraStudios.Shared.Extensions.Direction
 - uid: UnityEngine.Vector3
   commentId: T:UnityEngine.Vector3
   parent: UnityEngine

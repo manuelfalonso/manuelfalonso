@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  commentId: T:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  id: IntervalTimer
+  parent: SombraStudios.Shared.Utility.Timers.Core
+  children:
+  - SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.#ctor(System.Single,System.Single)
+  - SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished
+  - SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.OnInterval
+  - SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset
+  - SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset(System.Single)
+  - SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick
+  langs:
+  - csharp
+  - vb
+  name: IntervalTimer
+  nameWithType: IntervalTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  type: Class
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IntervalTimer
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 8
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Countdown timer that triggers events at specified intervals until completion.
+  example: []
+  syntax:
+    content: 'public class IntervalTimer : Timer'
+    content.vb: Public Class IntervalTimer Inherits Timer
+  inheritance:
+  - System.Object
+  - SombraStudios.Shared.Utility.Timers.Core.Timer
+  inheritedMembers:
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+  - SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+  - SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.OnInterval
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.OnInterval
+  id: OnInterval
+  parent: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  langs:
+  - csharp
+  - vb
+  name: OnInterval
+  nameWithType: IntervalTimer.OnInterval
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.OnInterval
+  type: Field
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnInterval
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  syntax:
+    content: public Action OnInterval
+    return:
+      type: System.Action
+    content.vb: Public OnInterval As Action
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.#ctor(System.Single,System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  langs:
+  - csharp
+  - vb
+  name: IntervalTimer(float, float)
+  nameWithType: IntervalTimer.IntervalTimer(float, float)
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IntervalTimer(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: .ctor
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 25
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Initializes a new instance of the <xref href="SombraStudios.Shared.Utility.Timers.Core.IntervalTimer" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public IntervalTimer(float totalTime, float interval)
+    parameters:
+    - id: totalTime
+      type: System.Single
+      description: The total duration of the timer in seconds.
+    - id: interval
+      type: System.Single
+      description: The interval duration between events in seconds.
+    content.vb: Public Sub New(totalTime As Single, interval As Single)
+  overload: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when interval is less than or equal to 0, or greater than totalTime.
+  nameWithType.vb: IntervalTimer.New(Single, Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.New(Single, Single)
+  name.vb: New(Single, Single)
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick
+  id: Tick
+  parent: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  langs:
+  - csharp
+  - vb
+  name: Tick()
+  nameWithType: IntervalTimer.Tick()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Tick
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 39
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: >-
+    Updates the timer, triggering interval events as needed and checking for completion.
+
+    This method should be called every frame to maintain accurate timing.
+  example: []
+  syntax:
+    content: public override void Tick()
+    content.vb: Public Overrides Sub Tick()
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+  overload: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick*
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished
+  id: IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  langs:
+  - csharp
+  - vb
+  name: IsFinished
+  nameWithType: IntervalTimer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: IsFinished
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 59
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Gets a value indicating whether the timer has finished.
+  example: []
+  syntax:
+    content: public override bool IsFinished { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property IsFinished As Boolean
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+  overload: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished*
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset
+  id: Reset
+  parent: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IntervalTimer.Reset()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reset
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 61
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Resets the timer to its initial time.
+  example: []
+  syntax:
+    content: public override void Reset()
+    content.vb: Public Overrides Sub Reset()
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+  overload: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset*
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset(System.Single)
+  id: Reset(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  langs:
+  - csharp
+  - vb
+  name: Reset(float)
+  nameWithType: IntervalTimer.Reset(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset(float)
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Core/IntervalTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Reset
+    path: ../Utility/Timers/Core/IntervalTimer.cs
+    startLine: 67
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Core
+  summary: Resets the timer to a new initial time.
+  example: []
+  syntax:
+    content: public override void Reset(float newTime)
+    parameters:
+    - id: newTime
+      type: System.Single
+      description: The new initial time value for the timer.
+    content.vb: Public Overrides Sub Reset(newTime As Single)
+  overridden: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+  overload: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset*
+  nameWithType.vb: IntervalTimer.Reset(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset(Single)
+  name.vb: Reset(Single)
+references:
+- uid: SombraStudios.Shared.Utility.Timers.Core
+  commentId: N:SombraStudios.Shared.Utility.Timers.Core
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Timers.Core
+  nameWithType: SombraStudios.Shared.Utility.Timers.Core
+  fullName: SombraStudios.Shared.Utility.Timers.Core
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.Core
+    name: Core
+    href: SombraStudios.Shared.Utility.Timers.Core.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.Core
+    name: Core
+    href: SombraStudios.Shared.Utility.Timers.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer
+  commentId: T:SombraStudios.Shared.Utility.Timers.Core.Timer
+  parent: SombraStudios.Shared.Utility.Timers.Core
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html
+  name: Timer
+  nameWithType: Timer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_CurrentTime
+  name: CurrentTime
+  nameWithType: Timer.CurrentTime
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.CurrentTime
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_IsRunning
+  name: IsRunning
+  nameWithType: Timer.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.IsRunning
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer__initialTime
+  name: _initialTime
+  nameWithType: Timer._initialTime
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer._initialTime
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Progress
+  name: Progress
+  nameWithType: Timer.Progress
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Progress
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_OnTimerStart
+  name: OnTimerStart
+  nameWithType: Timer.OnTimerStart
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStart
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+  commentId: F:SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_OnTimerStop
+  name: OnTimerStop
+  nameWithType: Timer.OnTimerStop
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.OnTimerStop
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Start
+  name: Start()
+  nameWithType: Timer.Start()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Start()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Start
+    name: Start
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Start
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Stop
+  name: Stop()
+  nameWithType: Timer.Stop()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Stop
+    name: Stop
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Stop
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Resume
+  name: Resume()
+  nameWithType: Timer.Resume()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Resume
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Resume
+    name: Resume
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Resume
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Pause
+  name: Pause()
+  nameWithType: Timer.Pause()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Pause
+    name: Pause
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Pause
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  commentId: T:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+  href: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.html
+  name: IntervalTimer
+  nameWithType: IntervalTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.#ctor*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.#ctor
+  href: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.html#SombraStudios_Shared_Utility_Timers_Core_IntervalTimer__ctor_System_Single_System_Single_
+  name: IntervalTimer
+  nameWithType: IntervalTimer.IntervalTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IntervalTimer
+  nameWithType.vb: IntervalTimer.New
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.New
+  name.vb: New
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Tick
+  name: Tick()
+  nameWithType: Timer.Tick()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Tick
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Tick
+    name: Tick
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Tick
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick
+  href: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.html#SombraStudios_Shared_Utility_Timers_Core_IntervalTimer_Tick
+  name: Tick
+  nameWithType: IntervalTimer.Tick
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Tick
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_IsFinished
+  name: IsFinished
+  nameWithType: Timer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.IsFinished
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished
+  href: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.html#SombraStudios_Shared_Utility_Timers_Core_IntervalTimer_IsFinished
+  name: IsFinished
+  nameWithType: IntervalTimer.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.IsFinished
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset
+  name: Reset()
+  nameWithType: Timer.Reset()
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset
+  href: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.html#SombraStudios_Shared_Utility_Timers_Core_IntervalTimer_Reset
+  name: Reset
+  nameWithType: IntervalTimer.Reset
+  fullName: SombraStudios.Shared.Utility.Timers.Core.IntervalTimer.Reset
+- uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.Core.Timer
+  isExternal: true
+  href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset_System_Single_
+  name: Reset(float)
+  nameWithType: Timer.Reset(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(float)
+  nameWithType.vb: Timer.Reset(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(Single)
+  name.vb: Reset(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Core.Timer.Reset(System.Single)
+    name: Reset
+    href: SombraStudios.Shared.Utility.Timers.Core.Timer.html#SombraStudios_Shared_Utility_Timers_Core_Timer_Reset_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )

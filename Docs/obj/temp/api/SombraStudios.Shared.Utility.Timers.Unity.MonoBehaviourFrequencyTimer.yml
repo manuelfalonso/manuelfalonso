@@ -1,0 +1,1647 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  commentId: T:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  id: MonoBehaviourFrequencyTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity
+  children:
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.OnTick
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners
+  langs:
+  - csharp
+  - vb
+  name: MonoBehaviourFrequencyTimer
+  nameWithType: MonoBehaviourFrequencyTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  type: Class
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: MonoBehaviourFrequencyTimer
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 6
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  syntax:
+    content: 'public class MonoBehaviourFrequencyTimer : MonoBehaviourTimer<FrequencyTimer>'
+    content.vb: Public Class MonoBehaviourFrequencyTimer Inherits MonoBehaviourTimer(Of FrequencyTimer)
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  inheritedMembers:
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnTimerStart
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnTimerStop
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsInitialized
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsRunning
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsFinished
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.CurrentTime
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Progress
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimerLog
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimerLog
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimerLog
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerLog
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerWithNewTimeLog(System.Single)
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}._timer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Awake
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnEnable
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Update
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnDisable
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.WhenInitialized(System.Action)
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer(System.Single)
+  extensionMethods:
+  - SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.OnTick
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.OnTick
+  id: OnTick
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: OnTick
+  nameWithType: MonoBehaviourFrequencyTimer.OnTick
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.OnTick
+  type: Field
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnTick
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  syntax:
+    content: >-
+      [Header("Events")]
+
+      public UnityEvent OnTick
+    return:
+      type: UnityEngine.Events.UnityEvent
+    content.vb: >-
+      <Header("Events")>
+
+      Public OnTick As UnityEvent
+  attributes:
+  - type: UnityEngine.HeaderAttribute
+    ctor: UnityEngine.HeaderAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Events
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency
+  id: Frequency
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: MonoBehaviourFrequencyTimer.Frequency
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Frequency
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 14
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  syntax:
+    content: public float Frequency { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property Frequency As Single
+  overload: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency*
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval
+  id: TickInterval
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: TickInterval
+  nameWithType: MonoBehaviourFrequencyTimer.TickInterval
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: TickInterval
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  syntax:
+    content: public float TickInterval { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property TickInterval As Single
+  overload: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval*
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog
+  id: StopTimerLog
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: StopTimerLog
+  nameWithType: MonoBehaviourFrequencyTimer.StopTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog
+  type: Property
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StopTimerLog
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  example: []
+  syntax:
+    content: protected override string StopTimerLog { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected Overrides ReadOnly Property StopTimerLog As String
+  overridden: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimerLog
+  overload: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog*
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer
+  id: InitializeTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: InitializeTimer()
+  nameWithType: MonoBehaviourFrequencyTimer.InitializeTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: InitializeTimer
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 19
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  example: []
+  syntax:
+    content: protected override void InitializeTimer()
+    content.vb: Protected Overrides Sub InitializeTimer()
+  overridden: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.InitializeTimer
+  overload: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer*
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners
+  id: SubscribeListeners
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: SubscribeListeners()
+  nameWithType: MonoBehaviourFrequencyTimer.SubscribeListeners()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SubscribeListeners
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  example: []
+  syntax:
+    content: protected override void SubscribeListeners()
+    content.vb: Protected Overrides Sub SubscribeListeners()
+  overridden: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.SubscribeListeners
+  overload: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners*
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners
+  id: UnsubscribeListeners
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+  langs:
+  - csharp
+  - vb
+  name: UnsubscribeListeners()
+  nameWithType: MonoBehaviourFrequencyTimer.UnsubscribeListeners()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners()
+  type: Method
+  source:
+    remote:
+      path: Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: UnsubscribeListeners
+    path: ../Utility/Timers/Unity/MonoBehaviourFrequencyTimer.cs
+    startLine: 31
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Timers.Unity
+  example: []
+  syntax:
+    content: protected override void UnsubscribeListeners()
+    content.vb: Protected Overrides Sub UnsubscribeListeners()
+  overridden: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.UnsubscribeListeners
+  overload: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners*
+references:
+- uid: SombraStudios.Shared.Utility.Timers.Unity
+  commentId: N:SombraStudios.Shared.Utility.Timers.Unity
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Timers.Unity
+  nameWithType: SombraStudios.Shared.Utility.Timers.Unity
+  fullName: SombraStudios.Shared.Utility.Timers.Unity
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.Unity
+    name: Unity
+    href: SombraStudios.Shared.Utility.Timers.Unity.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers
+    name: Timers
+    href: SombraStudios.Shared.Utility.Timers.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Timers.Unity
+    name: Unity
+    href: SombraStudios.Shared.Utility.Timers.Unity.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  commentId: T:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  parent: SombraStudios.Shared.Utility.Timers.Unity
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html
+  name: MonoBehaviourTimer<FrequencyTimer>
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer)
+  name.vb: MonoBehaviourTimer(Of FrequencyTimer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+    name: MonoBehaviourTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html
+  - name: <
+  - uid: SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer
+    name: FrequencyTimer
+    href: SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer.html
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+    name: MonoBehaviourTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer
+    name: FrequencyTimer
+    href: SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer.html
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnTimerStart
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnTimerStart
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnTimerStart
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnTimerStart
+  name: OnTimerStart
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.OnTimerStart
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.OnTimerStart
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).OnTimerStart
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).OnTimerStart
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnTimerStop
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnTimerStop
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnTimerStop
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnTimerStop
+  name: OnTimerStop
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.OnTimerStop
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.OnTimerStop
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).OnTimerStop
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).OnTimerStop
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsInitialized
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsInitialized
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsInitialized
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_IsInitialized
+  name: IsInitialized
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.IsInitialized
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.IsInitialized
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).IsInitialized
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).IsInitialized
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsRunning
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsRunning
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsRunning
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_IsRunning
+  name: IsRunning
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.IsRunning
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).IsRunning
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).IsRunning
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.IsFinished
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsFinished
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_IsFinished
+  name: IsFinished
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.IsFinished
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).IsFinished
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).IsFinished
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.CurrentTime
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.CurrentTime
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.CurrentTime
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_CurrentTime
+  name: CurrentTime
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.CurrentTime
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.CurrentTime
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).CurrentTime
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).CurrentTime
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Progress
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Progress
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Progress
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Progress
+  name: Progress
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.Progress
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.Progress
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).Progress
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).Progress
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimerLog
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimerLog
+  name: StartTimerLog
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.StartTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.StartTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).StartTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).StartTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimerLog
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimerLog
+  name: ResumeTimerLog
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.ResumeTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.ResumeTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).ResumeTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).ResumeTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimerLog
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimerLog
+  name: PauseTimerLog
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.PauseTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.PauseTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).PauseTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).PauseTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerLog
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerLog
+  name: ResetTimerLog
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.ResetTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.ResetTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).ResetTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).ResetTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerWithNewTimeLog(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerWithNewTimeLog(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerWithNewTimeLog(System.Single)
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerWithNewTimeLog_System_Single_
+  name: ResetTimerWithNewTimeLog(float)
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.ResetTimerWithNewTimeLog(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.ResetTimerWithNewTimeLog(float)
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).ResetTimerWithNewTimeLog(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).ResetTimerWithNewTimeLog(Single)
+  name.vb: ResetTimerWithNewTimeLog(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerWithNewTimeLog(System.Single)
+    name: ResetTimerWithNewTimeLog
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerWithNewTimeLog_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimerWithNewTimeLog(System.Single)
+    name: ResetTimerWithNewTimeLog
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerWithNewTimeLog_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}._timer
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}._timer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1._timer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1__timer
+  name: _timer
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>._timer
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>._timer
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer)._timer
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer)._timer
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Awake
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Awake
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Awake
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Awake
+  name: Awake()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.Awake()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.Awake()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).Awake()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Awake
+    name: Awake
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnEnable
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnEnable
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnEnable
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnEnable
+  name: OnEnable()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.OnEnable()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.OnEnable()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).OnEnable()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).OnEnable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnEnable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Update
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Update
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Update
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Update
+  name: Update()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.Update()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.Update()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).Update()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).Update()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Update
+    name: Update
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.Update
+    name: Update
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Update
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnDisable
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnDisable
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnDisable
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnDisable
+  name: OnDisable()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.OnDisable()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.OnDisable()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).OnDisable()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).OnDisable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnDisable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnDisable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.WhenInitialized(System.Action)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.WhenInitialized(System.Action)
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.WhenInitialized(System.Action)
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_WhenInitialized_System_Action_
+  name: WhenInitialized(Action)
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.WhenInitialized(Action)
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.WhenInitialized(System.Action)
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).WhenInitialized(Action)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).WhenInitialized(System.Action)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.WhenInitialized(System.Action)
+    name: WhenInitialized
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_WhenInitialized_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.WhenInitialized(System.Action)
+    name: WhenInitialized
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_WhenInitialized_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimer
+  name: StartTimer()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.StartTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.StartTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).StartTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).StartTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimer
+    name: StartTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StartTimer
+    name: StartTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimer
+  name: StopTimer()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.StopTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.StopTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).StopTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).StopTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimer
+    name: StopTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimer
+    name: StopTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimer
+  name: ResumeTimer()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.ResumeTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.ResumeTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).ResumeTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).ResumeTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimer
+    name: ResumeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResumeTimer
+    name: ResumeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimer
+  name: PauseTimer()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.PauseTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.PauseTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).PauseTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).PauseTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimer
+    name: PauseTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.PauseTimer
+    name: PauseTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer
+  name: ResetTimer()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.ResetTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.ResetTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).ResetTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).ResetTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer(System.Single)
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer(System.Single)
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer_System_Single_
+  name: ResetTimer(float)
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.ResetTimer(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.ResetTimer(float)
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).ResetTimer(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).ResetTimer(Single)
+  name.vb: ResetTimer(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer(System.Single)
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.ResetTimer(System.Single)
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<MonoBehaviourFrequencyTimer>(MonoBehaviourFrequencyTimer)
+  nameWithType: ObjectExtensions.OrNull<MonoBehaviourFrequencyTimer>(MonoBehaviourFrequencyTimer)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer>(SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer)
+  nameWithType.vb: ObjectExtensions.OrNull(Of MonoBehaviourFrequencyTimer)(MonoBehaviourFrequencyTimer)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer)(SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer)
+  name.vb: OrNull(Of MonoBehaviourFrequencyTimer)(MonoBehaviourFrequencyTimer)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+    name: MonoBehaviourFrequencyTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+    name: MonoBehaviourFrequencyTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+    name: MonoBehaviourFrequencyTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer
+    name: MonoBehaviourFrequencyTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+  commentId: T:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html
+  name: MonoBehaviourTimer<T>
+  nameWithType: MonoBehaviourTimer<T>
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>
+  nameWithType.vb: MonoBehaviourTimer(Of T)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T)
+  name.vb: MonoBehaviourTimer(Of T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+    name: MonoBehaviourTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1
+    name: MonoBehaviourTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnTimerStart
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnTimerStart
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnTimerStart
+  name: OnTimerStart
+  nameWithType: MonoBehaviourTimer<T>.OnTimerStart
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.OnTimerStart
+  nameWithType.vb: MonoBehaviourTimer(Of T).OnTimerStart
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).OnTimerStart
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnTimerStop
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnTimerStop
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnTimerStop
+  name: OnTimerStop
+  nameWithType: MonoBehaviourTimer<T>.OnTimerStop
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.OnTimerStop
+  nameWithType.vb: MonoBehaviourTimer(Of T).OnTimerStop
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).OnTimerStop
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsInitialized
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsInitialized
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_IsInitialized
+  name: IsInitialized
+  nameWithType: MonoBehaviourTimer<T>.IsInitialized
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.IsInitialized
+  nameWithType.vb: MonoBehaviourTimer(Of T).IsInitialized
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).IsInitialized
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsRunning
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsRunning
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_IsRunning
+  name: IsRunning
+  nameWithType: MonoBehaviourTimer<T>.IsRunning
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.IsRunning
+  nameWithType.vb: MonoBehaviourTimer(Of T).IsRunning
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).IsRunning
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsFinished
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.IsFinished
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_IsFinished
+  name: IsFinished
+  nameWithType: MonoBehaviourTimer<T>.IsFinished
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.IsFinished
+  nameWithType.vb: MonoBehaviourTimer(Of T).IsFinished
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).IsFinished
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.CurrentTime
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.CurrentTime
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_CurrentTime
+  name: CurrentTime
+  nameWithType: MonoBehaviourTimer<T>.CurrentTime
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.CurrentTime
+  nameWithType.vb: MonoBehaviourTimer(Of T).CurrentTime
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).CurrentTime
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Progress
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Progress
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Progress
+  name: Progress
+  nameWithType: MonoBehaviourTimer<T>.Progress
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.Progress
+  nameWithType.vb: MonoBehaviourTimer(Of T).Progress
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).Progress
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimerLog
+  name: StartTimerLog
+  nameWithType: MonoBehaviourTimer<T>.StartTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.StartTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of T).StartTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).StartTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimerLog
+  name: ResumeTimerLog
+  nameWithType: MonoBehaviourTimer<T>.ResumeTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.ResumeTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of T).ResumeTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).ResumeTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimerLog
+  name: PauseTimerLog
+  nameWithType: MonoBehaviourTimer<T>.PauseTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.PauseTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of T).PauseTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).PauseTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerLog
+  name: ResetTimerLog
+  nameWithType: MonoBehaviourTimer<T>.ResetTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.ResetTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of T).ResetTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).ResetTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerWithNewTimeLog(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerWithNewTimeLog(System.Single)
+  isExternal: true
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerWithNewTimeLog_System_Single_
+  name: ResetTimerWithNewTimeLog(float)
+  nameWithType: MonoBehaviourTimer<T>.ResetTimerWithNewTimeLog(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.ResetTimerWithNewTimeLog(float)
+  nameWithType.vb: MonoBehaviourTimer(Of T).ResetTimerWithNewTimeLog(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).ResetTimerWithNewTimeLog(Single)
+  name.vb: ResetTimerWithNewTimeLog(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerWithNewTimeLog(System.Single)
+    name: ResetTimerWithNewTimeLog
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerWithNewTimeLog_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimerWithNewTimeLog(System.Single)
+    name: ResetTimerWithNewTimeLog
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimerWithNewTimeLog_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1._timer
+  commentId: F:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1._timer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1__timer
+  name: _timer
+  nameWithType: MonoBehaviourTimer<T>._timer
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>._timer
+  nameWithType.vb: MonoBehaviourTimer(Of T)._timer
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T)._timer
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Awake
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Awake
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Awake
+  name: Awake()
+  nameWithType: MonoBehaviourTimer<T>.Awake()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.Awake()
+  nameWithType.vb: MonoBehaviourTimer(Of T).Awake()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).Awake()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Awake
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Awake
+    name: Awake
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Awake
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnEnable
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnEnable
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnEnable
+  name: OnEnable()
+  nameWithType: MonoBehaviourTimer<T>.OnEnable()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.OnEnable()
+  nameWithType.vb: MonoBehaviourTimer(Of T).OnEnable()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).OnEnable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnEnable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnEnable
+    name: OnEnable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnEnable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Update
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Update
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Update
+  name: Update()
+  nameWithType: MonoBehaviourTimer<T>.Update()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.Update()
+  nameWithType.vb: MonoBehaviourTimer(Of T).Update()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).Update()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Update
+    name: Update
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.Update
+    name: Update
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_Update
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnDisable
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnDisable
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnDisable
+  name: OnDisable()
+  nameWithType: MonoBehaviourTimer<T>.OnDisable()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.OnDisable()
+  nameWithType.vb: MonoBehaviourTimer(Of T).OnDisable()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).OnDisable()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnDisable
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.OnDisable
+    name: OnDisable
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_OnDisable
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.WhenInitialized(System.Action)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.WhenInitialized(System.Action)
+  isExternal: true
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_WhenInitialized_System_Action_
+  name: WhenInitialized(Action)
+  nameWithType: MonoBehaviourTimer<T>.WhenInitialized(Action)
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.WhenInitialized(System.Action)
+  nameWithType.vb: MonoBehaviourTimer(Of T).WhenInitialized(Action)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).WhenInitialized(System.Action)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.WhenInitialized(System.Action)
+    name: WhenInitialized
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_WhenInitialized_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.WhenInitialized(System.Action)
+    name: WhenInitialized
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_WhenInitialized_System_Action_
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimer
+  name: StartTimer()
+  nameWithType: MonoBehaviourTimer<T>.StartTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.StartTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of T).StartTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).StartTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimer
+    name: StartTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StartTimer
+    name: StartTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StartTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimer
+  name: StopTimer()
+  nameWithType: MonoBehaviourTimer<T>.StopTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.StopTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of T).StopTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).StopTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimer
+    name: StopTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimer
+    name: StopTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimer
+  name: ResumeTimer()
+  nameWithType: MonoBehaviourTimer<T>.ResumeTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.ResumeTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of T).ResumeTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).ResumeTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimer
+    name: ResumeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResumeTimer
+    name: ResumeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResumeTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimer
+  name: PauseTimer()
+  nameWithType: MonoBehaviourTimer<T>.PauseTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.PauseTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of T).PauseTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).PauseTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimer
+    name: PauseTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.PauseTimer
+    name: PauseTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_PauseTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer
+  name: ResetTimer()
+  nameWithType: MonoBehaviourTimer<T>.ResetTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.ResetTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of T).ResetTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).ResetTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer(System.Single)
+  isExternal: true
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer_System_Single_
+  name: ResetTimer(float)
+  nameWithType: MonoBehaviourTimer<T>.ResetTimer(float)
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.ResetTimer(float)
+  nameWithType.vb: MonoBehaviourTimer(Of T).ResetTimer(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).ResetTimer(Single)
+  name.vb: ResetTimer(Single)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer(System.Single)
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.ResetTimer(System.Single)
+    name: ResetTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_ResetTimer_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: UnityEngine.Events.UnityEvent
+  commentId: T:UnityEngine.Events.UnityEvent
+  parent: UnityEngine.Events
+  isExternal: true
+  name: UnityEvent
+  nameWithType: UnityEvent
+  fullName: UnityEngine.Events.UnityEvent
+- uid: UnityEngine.Events
+  commentId: N:UnityEngine.Events
+  isExternal: true
+  name: UnityEngine.Events
+  nameWithType: UnityEngine.Events
+  fullName: UnityEngine.Events
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Events
+    name: Events
+    isExternal: true
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourFrequencyTimer_Frequency
+  name: Frequency
+  nameWithType: MonoBehaviourFrequencyTimer.Frequency
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.Frequency
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourFrequencyTimer_TickInterval
+  name: TickInterval
+  nameWithType: MonoBehaviourFrequencyTimer.TickInterval
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.TickInterval
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.StopTimerLog
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimerLog
+  name: StopTimerLog
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.StopTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.StopTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).StopTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).StopTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourFrequencyTimer_StopTimerLog
+  name: StopTimerLog
+  nameWithType: MonoBehaviourFrequencyTimer.StopTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.StopTimerLog
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimerLog
+  commentId: P:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.StopTimerLog
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_StopTimerLog
+  name: StopTimerLog
+  nameWithType: MonoBehaviourTimer<T>.StopTimerLog
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.StopTimerLog
+  nameWithType.vb: MonoBehaviourTimer(Of T).StopTimerLog
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).StopTimerLog
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.InitializeTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.InitializeTimer
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.InitializeTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_InitializeTimer
+  name: InitializeTimer()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.InitializeTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.InitializeTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).InitializeTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).InitializeTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.InitializeTimer
+    name: InitializeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_InitializeTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.InitializeTimer
+    name: InitializeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_InitializeTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourFrequencyTimer_InitializeTimer
+  name: InitializeTimer
+  nameWithType: MonoBehaviourFrequencyTimer.InitializeTimer
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.InitializeTimer
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.InitializeTimer
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.InitializeTimer
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_InitializeTimer
+  name: InitializeTimer()
+  nameWithType: MonoBehaviourTimer<T>.InitializeTimer()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.InitializeTimer()
+  nameWithType.vb: MonoBehaviourTimer(Of T).InitializeTimer()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).InitializeTimer()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.InitializeTimer
+    name: InitializeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_InitializeTimer
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.InitializeTimer
+    name: InitializeTimer
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_InitializeTimer
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.SubscribeListeners
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.SubscribeListeners
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.SubscribeListeners
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_SubscribeListeners
+  name: SubscribeListeners()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.SubscribeListeners()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.SubscribeListeners()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).SubscribeListeners()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).SubscribeListeners()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.SubscribeListeners
+    name: SubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_SubscribeListeners
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.SubscribeListeners
+    name: SubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_SubscribeListeners
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourFrequencyTimer_SubscribeListeners
+  name: SubscribeListeners
+  nameWithType: MonoBehaviourFrequencyTimer.SubscribeListeners
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.SubscribeListeners
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.SubscribeListeners
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.SubscribeListeners
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_SubscribeListeners
+  name: SubscribeListeners()
+  nameWithType: MonoBehaviourTimer<T>.SubscribeListeners()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.SubscribeListeners()
+  nameWithType.vb: MonoBehaviourTimer(Of T).SubscribeListeners()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).SubscribeListeners()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.SubscribeListeners
+    name: SubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_SubscribeListeners
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.SubscribeListeners
+    name: SubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_SubscribeListeners
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.UnsubscribeListeners
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.UnsubscribeListeners
+  parent: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}
+  definition: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.UnsubscribeListeners
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_UnsubscribeListeners
+  name: UnsubscribeListeners()
+  nameWithType: MonoBehaviourTimer<FrequencyTimer>.UnsubscribeListeners()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer>.UnsubscribeListeners()
+  nameWithType.vb: MonoBehaviourTimer(Of FrequencyTimer).UnsubscribeListeners()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer).UnsubscribeListeners()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.UnsubscribeListeners
+    name: UnsubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_UnsubscribeListeners
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer{SombraStudios.Shared.Utility.Timers.Core.FrequencyTimer}.UnsubscribeListeners
+    name: UnsubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_UnsubscribeListeners
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners*
+  commentId: Overload:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourFrequencyTimer_UnsubscribeListeners
+  name: UnsubscribeListeners
+  nameWithType: MonoBehaviourFrequencyTimer.UnsubscribeListeners
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourFrequencyTimer.UnsubscribeListeners
+- uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.UnsubscribeListeners
+  commentId: M:SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.UnsubscribeListeners
+  href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_UnsubscribeListeners
+  name: UnsubscribeListeners()
+  nameWithType: MonoBehaviourTimer<T>.UnsubscribeListeners()
+  fullName: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer<T>.UnsubscribeListeners()
+  nameWithType.vb: MonoBehaviourTimer(Of T).UnsubscribeListeners()
+  fullName.vb: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer(Of T).UnsubscribeListeners()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.UnsubscribeListeners
+    name: UnsubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_UnsubscribeListeners
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer`1.UnsubscribeListeners
+    name: UnsubscribeListeners
+    href: SombraStudios.Shared.Utility.Timers.Unity.MonoBehaviourTimer-1.html#SombraStudios_Shared_Utility_Timers_Unity_MonoBehaviourTimer_1_UnsubscribeListeners
+  - name: (
+  - name: )

@@ -42,7 +42,8 @@ items:
   - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.NoInternetController}.Awake
   - SombraStudios.Shared.Patterns.Creational.Singleton.Singleton{SombraStudios.Shared.Utility.NoInternetController}.OnDestroy
   extensionMethods:
-  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  - SombraStudios.Shared.Utility.NoInternetController.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
 references:
 - uid: SombraStudios.Shared.Utility
   commentId: N:SombraStudios.Shared.Utility
@@ -78,7 +79,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -235,21 +235,62 @@ references:
     name: OnDestroy
   - name: (
   - name: )
-- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
-  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Utility.NoInternetController.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<NoInternetController>(NoInternetController)
+  nameWithType: ObjectExtensions.OrNull<NoInternetController>(NoInternetController)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Utility.NoInternetController>(SombraStudios.Shared.Utility.NoInternetController)
+  nameWithType.vb: ObjectExtensions.OrNull(Of NoInternetController)(NoInternetController)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Utility.NoInternetController)(SombraStudios.Shared.Utility.NoInternetController)
+  name.vb: OrNull(Of NoInternetController)(NoInternetController)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Utility.NoInternetController)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Utility.NoInternetController
+    name: NoInternetController
+    href: SombraStudios.Shared.Utility.NoInternetController.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Utility.NoInternetController
+    name: NoInternetController
+    href: SombraStudios.Shared.Utility.NoInternetController.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Utility.NoInternetController)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Utility.NoInternetController
+    name: NoInternetController
+    href: SombraStudios.Shared.Utility.NoInternetController.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Utility.NoInternetController
+    name: NoInternetController
+    href: SombraStudios.Shared.Utility.NoInternetController.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -264,9 +305,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "
@@ -366,7 +407,6 @@ references:
     href: SombraStudios.Shared.Patterns.Creational.Singleton.html
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
   commentId: F:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1._instance
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1__instance
   name: _instance
   nameWithType: Singleton<T>._instance
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>._instance
@@ -374,7 +414,6 @@ references:
   fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T)._instance
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
   commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.HasInstance
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_HasInstance
   name: HasInstance
   nameWithType: Singleton<T>.HasInstance
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.HasInstance
@@ -382,7 +421,6 @@ references:
   fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).HasInstance
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
   commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
   name: TryGetInstance()
   nameWithType: Singleton<T>.TryGetInstance()
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.TryGetInstance()
@@ -391,18 +429,15 @@ references:
   spec.csharp:
   - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
     name: TryGetInstance
-    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
   - name: (
   - name: )
   spec.vb:
   - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.TryGetInstance
     name: TryGetInstance
-    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_TryGetInstance
   - name: (
   - name: )
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
   commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Current
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Current
   name: Current
   nameWithType: Singleton<T>.Current
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Current
@@ -410,7 +445,6 @@ references:
   fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Current
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
   commentId: P:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Instance
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Instance
   name: Instance
   nameWithType: Singleton<T>.Instance
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Instance
@@ -418,7 +452,6 @@ references:
   fullName.vb: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton(Of T).Instance
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
   commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
   name: Awake()
   nameWithType: Singleton<T>.Awake()
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.Awake()
@@ -427,18 +460,15 @@ references:
   spec.csharp:
   - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
     name: Awake
-    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
   - name: (
   - name: )
   spec.vb:
   - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.Awake
     name: Awake
-    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_Awake
   - name: (
   - name: )
 - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
   commentId: M:SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
-  href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
   name: OnDestroy()
   nameWithType: Singleton<T>.OnDestroy()
   fullName: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton<T>.OnDestroy()
@@ -447,29 +477,65 @@ references:
   spec.csharp:
   - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
     name: OnDestroy
-    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
   - name: (
   - name: )
   spec.vb:
   - uid: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton`1.OnDestroy
     name: OnDestroy
-    href: SombraStudios.Shared.Patterns.Creational.Singleton.Singleton-1.html#SombraStudios_Shared_Patterns_Creational_Singleton_Singleton_1_OnDestroy
   - name: (
   - name: )
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  isExternal: true
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -484,9 +550,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "

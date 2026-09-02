@@ -34,6 +34,9 @@ items:
   syntax:
     content: 'public interface IDamageStrategy : IStrategy<int>'
     content.vb: Public Interface IDamageStrategy Inherits IStrategy(Of Integer)
+  derivedClasses:
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyA
+  - SombraStudios.Shared.Examples.Patterns.Behavioural.Strategy.ConcreteDamageStrategyB
   inheritedMembers:
   - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.Execute(System.Int32)
   - SombraStudios.Shared.Patterns.Behavioural.Strategy.IStrategy{System.Int32}.CanExecute(System.Int32)

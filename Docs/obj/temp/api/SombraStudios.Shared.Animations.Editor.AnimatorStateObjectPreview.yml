@@ -1,0 +1,696 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  commentId: T:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  id: AnimatorStateObjectPreview
+  parent: SombraStudios.Shared.Animations.Editor
+  children:
+  - SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup
+  - SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI
+  - SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize(UnityEngine.Object[])
+  - SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  langs:
+  - csharp
+  - vb
+  name: AnimatorStateObjectPreview
+  nameWithType: AnimatorStateObjectPreview
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  type: Class
+  source:
+    remote:
+      path: Animations/Editor/AnimatorStateObjectPreview.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AnimatorStateObjectPreview
+    path: ../Animations/Editor/AnimatorStateObjectPreview.cs
+    startLine: 12
+  assemblies:
+  - SombraStudios.Shared.Animations.Editor
+  namespace: SombraStudios.Shared.Animations.Editor
+  summary: >-
+    Provides a custom preview for <xref href="UnityEditor.Animations.AnimatorState" data-throw-if-not-resolved="false"></xref> objects in the Unity Editor.  
+
+    Consideration: The preview lenghth of the clip will always be 30 frames.
+  example: []
+  syntax:
+    content: >-
+      [CustomPreview(typeof(AnimatorState))]
+
+      public class AnimatorStateObjectPreview : ObjectPreview
+    content.vb: >-
+      <CustomPreview(GetType(AnimatorState))>
+
+      Public Class AnimatorStateObjectPreview Inherits ObjectPreview
+  inheritance:
+  - System.Object
+  - UnityEditor.ObjectPreview
+  inheritedMembers:
+  - UnityEditor.ObjectPreview.m_Targets
+  - UnityEditor.ObjectPreview.m_ReferenceTargetIndex
+  - UnityEditor.ObjectPreview.MoveNextTarget
+  - UnityEditor.ObjectPreview.ResetTarget
+  - UnityEditor.ObjectPreview.CreatePreview(UnityEngine.UIElements.VisualElement)
+  - UnityEditor.ObjectPreview.GetPreviewTitle
+  - UnityEditor.ObjectPreview.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  - UnityEditor.ObjectPreview.OnPreviewSettings
+  - UnityEditor.ObjectPreview.GetInfoString
+  - UnityEditor.ObjectPreview.DrawPreview(UnityEngine.Rect)
+  - UnityEditor.ObjectPreview.ReloadPreviewInstances
+  - UnityEditor.ObjectPreview.target
+  attributes:
+  - type: UnityEditor.CustomPreviewAttribute
+    ctor: UnityEditor.CustomPreviewAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UnityEditor.Animations.AnimatorState
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize(UnityEngine.Object[])
+  commentId: M:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize(UnityEngine.Object[])
+  id: Initialize(UnityEngine.Object[])
+  parent: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  langs:
+  - csharp
+  - vb
+  name: Initialize(Object[])
+  nameWithType: AnimatorStateObjectPreview.Initialize(Object[])
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize(UnityEngine.Object[])
+  type: Method
+  source:
+    remote:
+      path: Animations/Editor/AnimatorStateObjectPreview.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Initialize
+    path: ../Animations/Editor/AnimatorStateObjectPreview.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Animations.Editor
+  namespace: SombraStudios.Shared.Animations.Editor
+  summary: Initializes the preview for the specified targets.
+  example: []
+  syntax:
+    content: public override void Initialize(Object[] targets)
+    parameters:
+    - id: targets
+      type: UnityEngine.Object[]
+      description: The objects to preview.
+    content.vb: Public Overrides Sub Initialize(targets As [Object]())
+  overridden: UnityEditor.ObjectPreview.Initialize(UnityEngine.Object[])
+  overload: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize*
+  nameWithType.vb: AnimatorStateObjectPreview.Initialize(Object())
+  fullName.vb: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize(UnityEngine.Object())
+  name.vb: Initialize(Object())
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup
+  commentId: M:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup
+  id: Cleanup
+  parent: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  langs:
+  - csharp
+  - vb
+  name: Cleanup()
+  nameWithType: AnimatorStateObjectPreview.Cleanup()
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup()
+  type: Method
+  source:
+    remote:
+      path: Animations/Editor/AnimatorStateObjectPreview.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Cleanup
+    path: ../Animations/Editor/AnimatorStateObjectPreview.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Animations.Editor
+  namespace: SombraStudios.Shared.Animations.Editor
+  summary: Cleans up resources used by the preview.
+  example: []
+  syntax:
+    content: public override void Cleanup()
+    content.vb: Public Overrides Sub Cleanup()
+  overridden: UnityEditor.ObjectPreview.Cleanup
+  overload: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup*
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI
+  commentId: M:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI
+  id: HasPreviewGUI
+  parent: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  langs:
+  - csharp
+  - vb
+  name: HasPreviewGUI()
+  nameWithType: AnimatorStateObjectPreview.HasPreviewGUI()
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI()
+  type: Method
+  source:
+    remote:
+      path: Animations/Editor/AnimatorStateObjectPreview.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: HasPreviewGUI
+    path: ../Animations/Editor/AnimatorStateObjectPreview.cs
+    startLine: 59
+  assemblies:
+  - SombraStudios.Shared.Animations.Editor
+  namespace: SombraStudios.Shared.Animations.Editor
+  summary: Determines whether the object has a preview GUI.
+  example: []
+  syntax:
+    content: public override bool HasPreviewGUI()
+    return:
+      type: System.Boolean
+      description: True if the object has a preview GUI; otherwise, false.
+    content.vb: Public Overrides Function HasPreviewGUI() As Boolean
+  overridden: UnityEditor.ObjectPreview.HasPreviewGUI
+  overload: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI*
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  commentId: M:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  id: OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  parent: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview
+  langs:
+  - csharp
+  - vb
+  name: OnInteractivePreviewGUI(Rect, GUIStyle)
+  nameWithType: AnimatorStateObjectPreview.OnInteractivePreviewGUI(Rect, GUIStyle)
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect, UnityEngine.GUIStyle)
+  type: Method
+  source:
+    remote:
+      path: Animations/Editor/AnimatorStateObjectPreview.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OnInteractivePreviewGUI
+    path: ../Animations/Editor/AnimatorStateObjectPreview.cs
+    startLine: 69
+  assemblies:
+  - SombraStudios.Shared.Animations.Editor
+  namespace: SombraStudios.Shared.Animations.Editor
+  summary: Renders the interactive preview GUI for the object.
+  example: []
+  syntax:
+    content: public override void OnInteractivePreviewGUI(Rect r, GUIStyle background)
+    parameters:
+    - id: r
+      type: UnityEngine.Rect
+      description: The rectangle in which to draw the preview.
+    - id: background
+      type: UnityEngine.GUIStyle
+      description: The background style for the preview.
+    content.vb: Public Overrides Sub OnInteractivePreviewGUI(r As Rect, background As GUIStyle)
+  overridden: UnityEditor.ObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  overload: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI*
+references:
+- uid: UnityEditor.Animations.AnimatorState
+  commentId: T:UnityEditor.Animations.AnimatorState
+  parent: UnityEditor.Animations
+  isExternal: true
+  name: AnimatorState
+  nameWithType: AnimatorState
+  fullName: UnityEditor.Animations.AnimatorState
+- uid: SombraStudios.Shared.Animations.Editor
+  commentId: N:SombraStudios.Shared.Animations.Editor
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Animations.Editor
+  nameWithType: SombraStudios.Shared.Animations.Editor
+  fullName: SombraStudios.Shared.Animations.Editor
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations
+    name: Animations
+    href: SombraStudios.Shared.Animations.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations.Editor
+    name: Editor
+    href: SombraStudios.Shared.Animations.Editor.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations
+    name: Animations
+    href: SombraStudios.Shared.Animations.html
+  - name: .
+  - uid: SombraStudios.Shared.Animations.Editor
+    name: Editor
+    href: SombraStudios.Shared.Animations.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEditor.ObjectPreview
+  commentId: T:UnityEditor.ObjectPreview
+  parent: UnityEditor
+  isExternal: true
+  name: ObjectPreview
+  nameWithType: ObjectPreview
+  fullName: UnityEditor.ObjectPreview
+- uid: UnityEditor.ObjectPreview.m_Targets
+  commentId: F:UnityEditor.ObjectPreview.m_Targets
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: m_Targets
+  nameWithType: ObjectPreview.m_Targets
+  fullName: UnityEditor.ObjectPreview.m_Targets
+- uid: UnityEditor.ObjectPreview.m_ReferenceTargetIndex
+  commentId: F:UnityEditor.ObjectPreview.m_ReferenceTargetIndex
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: m_ReferenceTargetIndex
+  nameWithType: ObjectPreview.m_ReferenceTargetIndex
+  fullName: UnityEditor.ObjectPreview.m_ReferenceTargetIndex
+- uid: UnityEditor.ObjectPreview.MoveNextTarget
+  commentId: M:UnityEditor.ObjectPreview.MoveNextTarget
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: MoveNextTarget()
+  nameWithType: ObjectPreview.MoveNextTarget()
+  fullName: UnityEditor.ObjectPreview.MoveNextTarget()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.MoveNextTarget
+    name: MoveNextTarget
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.MoveNextTarget
+    name: MoveNextTarget
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.ResetTarget
+  commentId: M:UnityEditor.ObjectPreview.ResetTarget
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: ResetTarget()
+  nameWithType: ObjectPreview.ResetTarget()
+  fullName: UnityEditor.ObjectPreview.ResetTarget()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.ResetTarget
+    name: ResetTarget
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.ResetTarget
+    name: ResetTarget
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.CreatePreview(UnityEngine.UIElements.VisualElement)
+  commentId: M:UnityEditor.ObjectPreview.CreatePreview(UnityEngine.UIElements.VisualElement)
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: CreatePreview(VisualElement)
+  nameWithType: ObjectPreview.CreatePreview(VisualElement)
+  fullName: UnityEditor.ObjectPreview.CreatePreview(UnityEngine.UIElements.VisualElement)
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.CreatePreview(UnityEngine.UIElements.VisualElement)
+    name: CreatePreview
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.CreatePreview(UnityEngine.UIElements.VisualElement)
+    name: CreatePreview
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.UIElements.VisualElement
+    name: VisualElement
+    isExternal: true
+  - name: )
+- uid: UnityEditor.ObjectPreview.GetPreviewTitle
+  commentId: M:UnityEditor.ObjectPreview.GetPreviewTitle
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: GetPreviewTitle()
+  nameWithType: ObjectPreview.GetPreviewTitle()
+  fullName: UnityEditor.ObjectPreview.GetPreviewTitle()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.GetPreviewTitle
+    name: GetPreviewTitle
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.GetPreviewTitle
+    name: GetPreviewTitle
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  commentId: M:UnityEditor.ObjectPreview.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: OnPreviewGUI(Rect, GUIStyle)
+  nameWithType: ObjectPreview.OnPreviewGUI(Rect, GUIStyle)
+  fullName: UnityEditor.ObjectPreview.OnPreviewGUI(UnityEngine.Rect, UnityEngine.GUIStyle)
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+    name: OnPreviewGUI
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIStyle
+    name: GUIStyle
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.OnPreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+    name: OnPreviewGUI
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIStyle
+    name: GUIStyle
+    isExternal: true
+  - name: )
+- uid: UnityEditor.ObjectPreview.OnPreviewSettings
+  commentId: M:UnityEditor.ObjectPreview.OnPreviewSettings
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: OnPreviewSettings()
+  nameWithType: ObjectPreview.OnPreviewSettings()
+  fullName: UnityEditor.ObjectPreview.OnPreviewSettings()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.OnPreviewSettings
+    name: OnPreviewSettings
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.OnPreviewSettings
+    name: OnPreviewSettings
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.GetInfoString
+  commentId: M:UnityEditor.ObjectPreview.GetInfoString
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: GetInfoString()
+  nameWithType: ObjectPreview.GetInfoString()
+  fullName: UnityEditor.ObjectPreview.GetInfoString()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.GetInfoString
+    name: GetInfoString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.GetInfoString
+    name: GetInfoString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.DrawPreview(UnityEngine.Rect)
+  commentId: M:UnityEditor.ObjectPreview.DrawPreview(UnityEngine.Rect)
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: DrawPreview(Rect)
+  nameWithType: ObjectPreview.DrawPreview(Rect)
+  fullName: UnityEditor.ObjectPreview.DrawPreview(UnityEngine.Rect)
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.DrawPreview(UnityEngine.Rect)
+    name: DrawPreview
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.DrawPreview(UnityEngine.Rect)
+    name: DrawPreview
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: )
+- uid: UnityEditor.ObjectPreview.ReloadPreviewInstances
+  commentId: M:UnityEditor.ObjectPreview.ReloadPreviewInstances
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: ReloadPreviewInstances()
+  nameWithType: ObjectPreview.ReloadPreviewInstances()
+  fullName: UnityEditor.ObjectPreview.ReloadPreviewInstances()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.ReloadPreviewInstances
+    name: ReloadPreviewInstances
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.ReloadPreviewInstances
+    name: ReloadPreviewInstances
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.target
+  commentId: P:UnityEditor.ObjectPreview.target
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: target
+  nameWithType: ObjectPreview.target
+  fullName: UnityEditor.ObjectPreview.target
+- uid: UnityEditor.Animations
+  commentId: N:UnityEditor.Animations
+  isExternal: true
+  name: UnityEditor.Animations
+  nameWithType: UnityEditor.Animations
+  fullName: UnityEditor.Animations
+  spec.csharp:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.Animations
+    name: Animations
+    isExternal: true
+  spec.vb:
+  - uid: UnityEditor
+    name: UnityEditor
+    isExternal: true
+  - name: .
+  - uid: UnityEditor.Animations
+    name: Animations
+    isExternal: true
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.ObjectPreview.Initialize(UnityEngine.Object[])
+  commentId: M:UnityEditor.ObjectPreview.Initialize(UnityEngine.Object[])
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: Initialize(Object[])
+  nameWithType: ObjectPreview.Initialize(Object[])
+  fullName: UnityEditor.ObjectPreview.Initialize(UnityEngine.Object[])
+  nameWithType.vb: ObjectPreview.Initialize(Object())
+  fullName.vb: UnityEditor.ObjectPreview.Initialize(UnityEngine.Object())
+  name.vb: Initialize(Object())
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.Initialize(UnityEngine.Object[])
+    name: Initialize
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.Initialize(UnityEngine.Object[])
+    name: Initialize
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize*
+  commentId: Overload:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize
+  href: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.html#SombraStudios_Shared_Animations_Editor_AnimatorStateObjectPreview_Initialize_UnityEngine_Object___
+  name: Initialize
+  nameWithType: AnimatorStateObjectPreview.Initialize
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Initialize
+- uid: UnityEngine.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: UnityEngine.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: UnityEngine.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEditor.ObjectPreview.Cleanup
+  commentId: M:UnityEditor.ObjectPreview.Cleanup
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: Cleanup()
+  nameWithType: ObjectPreview.Cleanup()
+  fullName: UnityEditor.ObjectPreview.Cleanup()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.Cleanup
+    name: Cleanup
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.Cleanup
+    name: Cleanup
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup*
+  commentId: Overload:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup
+  href: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.html#SombraStudios_Shared_Animations_Editor_AnimatorStateObjectPreview_Cleanup
+  name: Cleanup
+  nameWithType: AnimatorStateObjectPreview.Cleanup
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.Cleanup
+- uid: UnityEditor.ObjectPreview.HasPreviewGUI
+  commentId: M:UnityEditor.ObjectPreview.HasPreviewGUI
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: HasPreviewGUI()
+  nameWithType: ObjectPreview.HasPreviewGUI()
+  fullName: UnityEditor.ObjectPreview.HasPreviewGUI()
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.HasPreviewGUI
+    name: HasPreviewGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.HasPreviewGUI
+    name: HasPreviewGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI*
+  commentId: Overload:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI
+  href: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.html#SombraStudios_Shared_Animations_Editor_AnimatorStateObjectPreview_HasPreviewGUI
+  name: HasPreviewGUI
+  nameWithType: AnimatorStateObjectPreview.HasPreviewGUI
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.HasPreviewGUI
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEditor.ObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  commentId: M:UnityEditor.ObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+  parent: UnityEditor.ObjectPreview
+  isExternal: true
+  name: OnInteractivePreviewGUI(Rect, GUIStyle)
+  nameWithType: ObjectPreview.OnInteractivePreviewGUI(Rect, GUIStyle)
+  fullName: UnityEditor.ObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect, UnityEngine.GUIStyle)
+  spec.csharp:
+  - uid: UnityEditor.ObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+    name: OnInteractivePreviewGUI
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIStyle
+    name: GUIStyle
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.ObjectPreview.OnInteractivePreviewGUI(UnityEngine.Rect,UnityEngine.GUIStyle)
+    name: OnInteractivePreviewGUI
+    isExternal: true
+  - name: (
+  - uid: UnityEngine.Rect
+    name: Rect
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.GUIStyle
+    name: GUIStyle
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI*
+  commentId: Overload:SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI
+  href: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.html#SombraStudios_Shared_Animations_Editor_AnimatorStateObjectPreview_OnInteractivePreviewGUI_UnityEngine_Rect_UnityEngine_GUIStyle_
+  name: OnInteractivePreviewGUI
+  nameWithType: AnimatorStateObjectPreview.OnInteractivePreviewGUI
+  fullName: SombraStudios.Shared.Animations.Editor.AnimatorStateObjectPreview.OnInteractivePreviewGUI
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: UnityEngine.GUIStyle
+  commentId: T:UnityEngine.GUIStyle
+  parent: UnityEngine
+  isExternal: true
+  name: GUIStyle
+  nameWithType: GUIStyle
+  fullName: UnityEngine.GUIStyle
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

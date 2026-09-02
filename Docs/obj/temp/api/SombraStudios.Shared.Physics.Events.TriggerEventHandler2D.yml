@@ -4,7 +4,9 @@ items:
   commentId: T:SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
   id: TriggerEventHandler2D
   parent: SombraStudios.Shared.Physics.Events
-  children: []
+  children:
+  - SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  - SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
   langs:
   - csharp
   - vb
@@ -19,22 +21,26 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: TriggerEventHandler2D
     path: ../Physics/Events/TriggerEventHandler2D.cs
-    startLine: 8
+    startLine: 10
   assemblies:
   - SombraStudios.Shared.Physics
   namespace: SombraStudios.Shared.Physics.Events
   summary: >-
-    Handles trigger events for a 2D Rigidbody.
+    Handles trigger events for a 3D Rigidbody.
 
-    Inherits from TriggerEventHandlerBase and specifies Collider2D as the generic argument.
+    Requires a Collider component to be attached to the same GameObject and set as a trigger.
+
+    The trigger or the interaction also requires a Rigidbody component to be attached to the GameObject 
+
+    or any parent.
   example: []
   syntax:
     content: >-
-      [RequireComponent(typeof(Rigidbody2D))]
+      [RequireComponent(typeof(Collider2D))]
 
       public class TriggerEventHandler2D : TriggerEventHandlerBase<Collider2D>
     content.vb: >-
-      <RequireComponent(GetType(Rigidbody2D))>
+      <RequireComponent(GetType(Collider2D))>
 
       Public Class TriggerEventHandler2D Inherits TriggerEventHandlerBase(Of Collider2D)
   inheritance:
@@ -46,31 +52,114 @@ items:
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
   - SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}
   inheritedMembers:
+  - SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.IsStayInteractionValid(UnityEngine.Collider2D)
   - SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerEnter(UnityEngine.Collider2D)
-  - SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerStay(UnityEngine.Collider2D)
   - SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerExit(UnityEngine.Collider2D)
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._layerMask
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._requiredTag
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._eventType
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._stayEventFrequency
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._isActive
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnEnter
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnStay
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnExit
-  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._isActive
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnFirstEnter
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnLastExit
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._lastInteraction
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsActive
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.LastInteraction
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.CurrentInteractionsCount
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._currentInteractions
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._stayEventCounter
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.FixedUpdate
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.AddInteractionListeners(UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D})
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.RemoveInteractionListeners(UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D})
   - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.RemoveAllInteractionListeners
-  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsInteractionValid(UnityEngine.GameObject)
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleEnterInteractions(UnityEngine.Collider2D)
+  - SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleExitInteractions(UnityEngine.Collider2D)
   extensionMethods:
-  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
+  - SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
   attributes:
   - type: UnityEngine.RequireComponent
     ctor: UnityEngine.RequireComponent.#ctor(System.Type)
     arguments:
     - type: System.Type
-      value: UnityEngine.Rigidbody2D
+      value: UnityEngine.Collider2D
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  id: ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
+  langs:
+  - csharp
+  - vb
+  name: ForceTriggerEnterColliderCheck(Collider2D)
+  nameWithType: TriggerEventHandler2D.ForceTriggerEnterColliderCheck(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  type: Method
+  source:
+    remote:
+      path: Physics/Events/TriggerEventHandler2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceTriggerEnterColliderCheck
+    path: ../Physics/Events/TriggerEventHandler2D.cs
+    startLine: 26
+  assemblies:
+  - SombraStudios.Shared.Physics
+  namespace: SombraStudios.Shared.Physics.Events
+  summary: Forces a trigger event to be processed for the specified collider.
+  remarks: >-
+    This method is intended to manually invoke a trigger event for the given collider, 
+        typically in scenarios where automatic trigger detection is insufficient or bypassed.
+  example: []
+  syntax:
+    content: public override void ForceTriggerEnterColliderCheck(Collider2D collider)
+    parameters:
+    - id: collider
+      type: UnityEngine.Collider2D
+      description: The collider for which the trigger event should be processed. Cannot be null.
+    content.vb: Public Overrides Sub ForceTriggerEnterColliderCheck(collider As Collider2D)
+  overridden: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  overload: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck*
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  id: ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
+  langs:
+  - csharp
+  - vb
+  name: ForceTriggerExitColliderCheck(Collider2D)
+  nameWithType: TriggerEventHandler2D.ForceTriggerExitColliderCheck(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  type: Method
+  source:
+    remote:
+      path: Physics/Events/TriggerEventHandler2D.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ForceTriggerExitColliderCheck
+    path: ../Physics/Events/TriggerEventHandler2D.cs
+    startLine: 46
+  assemblies:
+  - SombraStudios.Shared.Physics
+  namespace: SombraStudios.Shared.Physics.Events
+  summary: Forces the system to re-evaluate whether the specified collider has exited a trigger zone.
+  remarks: >-
+    This method is typically used to manually enforce trigger exit checks in scenarios
+        where  automatic detection may not occur as expected. Ensure that the provided collider is valid  and
+        associated with the relevant trigger zone.
+  example: []
+  syntax:
+    content: public override void ForceTriggerExitColliderCheck(Collider2D collider)
+    parameters:
+    - id: collider
+      type: UnityEngine.Collider2D
+      description: The collider to check for trigger exit conditions. Cannot be null.
+    content.vb: Public Overrides Sub ForceTriggerExitColliderCheck(collider As Collider2D)
+  overridden: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  overload: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck*
 references:
 - uid: SombraStudios.Shared.Physics.Events
   commentId: N:SombraStudios.Shared.Physics.Events
@@ -114,7 +203,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -211,6 +299,34 @@ references:
     name: Collider2D
     isExternal: true
   - name: )
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.IsStayInteractionValid(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.IsStayInteractionValid(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.IsStayInteractionValid(`0)
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_IsStayInteractionValid__0_
+  name: IsStayInteractionValid(Collider2D)
+  nameWithType: TriggerEventHandlerBase<Collider2D>.IsStayInteractionValid(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<UnityEngine.Collider2D>.IsStayInteractionValid(UnityEngine.Collider2D)
+  nameWithType.vb: TriggerEventHandlerBase(Of Collider2D).IsStayInteractionValid(Collider2D)
+  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of UnityEngine.Collider2D).IsStayInteractionValid(UnityEngine.Collider2D)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.IsStayInteractionValid(UnityEngine.Collider2D)
+    name: IsStayInteractionValid
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_IsStayInteractionValid__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.IsStayInteractionValid(UnityEngine.Collider2D)
+    name: IsStayInteractionValid
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_IsStayInteractionValid__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
 - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerEnter(UnityEngine.Collider2D)
   commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerEnter(UnityEngine.Collider2D)
   parent: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}
@@ -234,34 +350,6 @@ references:
   - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerEnter(UnityEngine.Collider2D)
     name: TriggerEnter
     href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerEnter__0_
-  - name: (
-  - uid: UnityEngine.Collider2D
-    name: Collider2D
-    isExternal: true
-  - name: )
-- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerStay(UnityEngine.Collider2D)
-  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerStay(UnityEngine.Collider2D)
-  parent: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}
-  definition: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerStay(`0)
-  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerStay__0_
-  name: TriggerStay(Collider2D)
-  nameWithType: TriggerEventHandlerBase<Collider2D>.TriggerStay(Collider2D)
-  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<UnityEngine.Collider2D>.TriggerStay(UnityEngine.Collider2D)
-  nameWithType.vb: TriggerEventHandlerBase(Of Collider2D).TriggerStay(Collider2D)
-  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of UnityEngine.Collider2D).TriggerStay(UnityEngine.Collider2D)
-  spec.csharp:
-  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerStay(UnityEngine.Collider2D)
-    name: TriggerStay
-    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerStay__0_
-  - name: (
-  - uid: UnityEngine.Collider2D
-    name: Collider2D
-    isExternal: true
-  - name: )
-  spec.vb:
-  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.TriggerStay(UnityEngine.Collider2D)
-    name: TriggerStay
-    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerStay__0_
   - name: (
   - uid: UnityEngine.Collider2D
     name: Collider2D
@@ -325,6 +413,26 @@ references:
   fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>._eventType
   nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D)._eventType
   fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D)._eventType
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._stayEventFrequency
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._stayEventFrequency
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._stayEventFrequency
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__stayEventFrequency
+  name: _stayEventFrequency
+  nameWithType: PhysicsEventHandlerBase<Collider2D>._stayEventFrequency
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>._stayEventFrequency
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D)._stayEventFrequency
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D)._stayEventFrequency
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._isActive
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._isActive
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._isActive
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__isActive
+  name: _isActive
+  nameWithType: PhysicsEventHandlerBase<Collider2D>._isActive
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>._isActive
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D)._isActive
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D)._isActive
 - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnEnter
   commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnEnter
   parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
@@ -355,16 +463,26 @@ references:
   fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.InteractionOnExit
   nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).InteractionOnExit
   fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).InteractionOnExit
-- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._isActive
-  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._isActive
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnFirstEnter
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnFirstEnter
   parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
-  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._isActive
-  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__isActive
-  name: _isActive
-  nameWithType: PhysicsEventHandlerBase<Collider2D>._isActive
-  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>._isActive
-  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D)._isActive
-  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D)._isActive
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnFirstEnter
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_InteractionOnFirstEnter
+  name: InteractionOnFirstEnter
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.InteractionOnFirstEnter
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.InteractionOnFirstEnter
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).InteractionOnFirstEnter
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).InteractionOnFirstEnter
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnLastExit
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.InteractionOnLastExit
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnLastExit
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_InteractionOnLastExit
+  name: InteractionOnLastExit
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.InteractionOnLastExit
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.InteractionOnLastExit
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).InteractionOnLastExit
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).InteractionOnLastExit
 - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._lastInteraction
   commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._lastInteraction
   parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
@@ -395,6 +513,58 @@ references:
   fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.LastInteraction
   nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).LastInteraction
   fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).LastInteraction
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.CurrentInteractionsCount
+  commentId: P:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.CurrentInteractionsCount
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.CurrentInteractionsCount
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_CurrentInteractionsCount
+  name: CurrentInteractionsCount
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.CurrentInteractionsCount
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.CurrentInteractionsCount
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).CurrentInteractionsCount
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).CurrentInteractionsCount
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._currentInteractions
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._currentInteractions
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._currentInteractions
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__currentInteractions
+  name: _currentInteractions
+  nameWithType: PhysicsEventHandlerBase<Collider2D>._currentInteractions
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>._currentInteractions
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D)._currentInteractions
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D)._currentInteractions
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._stayEventCounter
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}._stayEventCounter
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._stayEventCounter
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__stayEventCounter
+  name: _stayEventCounter
+  nameWithType: PhysicsEventHandlerBase<Collider2D>._stayEventCounter
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>._stayEventCounter
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D)._stayEventCounter
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D)._stayEventCounter
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.FixedUpdate
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.FixedUpdate
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.FixedUpdate
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_FixedUpdate
+  name: FixedUpdate()
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.FixedUpdate()
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.FixedUpdate()
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).FixedUpdate()
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).FixedUpdate()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.FixedUpdate
+    name: FixedUpdate
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_FixedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.FixedUpdate
+    name: FixedUpdate
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_FixedUpdate
+  - name: (
+  - name: )
 - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.AddInteractionListeners(UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D})
   commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.AddInteractionListeners(UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D},UnityEngine.Events.UnityAction{UnityEngine.Collider2D})
   parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
@@ -587,49 +757,146 @@ references:
     href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_RemoveAllInteractionListeners
   - name: (
   - name: )
-- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsInteractionValid(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsInteractionValid(UnityEngine.GameObject)
   parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
-  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsCollisionEventType_SombraStudios_Shared_Physics_Events_PhysicInteractionEventType_
-  name: IsCollisionEventType(PhysicInteractionEventType)
-  nameWithType: PhysicsEventHandlerBase<Collider2D>.IsCollisionEventType(PhysicInteractionEventType)
-  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).IsCollisionEventType(PhysicInteractionEventType)
-  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsInteractionValid(UnityEngine.GameObject)
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsInteractionValid_UnityEngine_GameObject_
+  name: IsInteractionValid(GameObject)
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.IsInteractionValid(GameObject)
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.IsInteractionValid(UnityEngine.GameObject)
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).IsInteractionValid(GameObject)
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).IsInteractionValid(UnityEngine.GameObject)
   spec.csharp:
-  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-    name: IsCollisionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsCollisionEventType_SombraStudios_Shared_Physics_Events_PhysicInteractionEventType_
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsInteractionValid(UnityEngine.GameObject)
+    name: IsInteractionValid
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsInteractionValid_UnityEngine_GameObject_
   - name: (
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-    name: IsCollisionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsCollisionEventType_SombraStudios_Shared_Physics_Events_PhysicInteractionEventType_
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.IsInteractionValid(UnityEngine.GameObject)
+    name: IsInteractionValid
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsInteractionValid_UnityEngine_GameObject_
   - name: (
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
   - name: )
-- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1({T}@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
-  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleEnterInteractions(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleEnterInteractions(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleEnterInteractions(`0)
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleEnterInteractions__0_
+  name: HandleEnterInteractions(Collider2D)
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.HandleEnterInteractions(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.HandleEnterInteractions(UnityEngine.Collider2D)
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).HandleEnterInteractions(Collider2D)
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).HandleEnterInteractions(UnityEngine.Collider2D)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleEnterInteractions(UnityEngine.Collider2D)
+    name: HandleEnterInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleEnterInteractions__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleEnterInteractions(UnityEngine.Collider2D)
+    name: HandleEnterInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleEnterInteractions__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleExitInteractions(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleExitInteractions(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleExitInteractions(`0)
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleExitInteractions__0_
+  name: HandleExitInteractions(Collider2D)
+  nameWithType: PhysicsEventHandlerBase<Collider2D>.HandleExitInteractions(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<UnityEngine.Collider2D>.HandleExitInteractions(UnityEngine.Collider2D)
+  nameWithType.vb: PhysicsEventHandlerBase(Of Collider2D).HandleExitInteractions(Collider2D)
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of UnityEngine.Collider2D).HandleExitInteractions(UnityEngine.Collider2D)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleExitInteractions(UnityEngine.Collider2D)
+    name: HandleExitInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleExitInteractions__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase{UnityEngine.Collider2D}.HandleExitInteractions(UnityEngine.Collider2D)
+    name: HandleExitInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleExitInteractions__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<TriggerEventHandler2D>(TriggerEventHandler2D)
+  nameWithType: ObjectExtensions.OrNull<TriggerEventHandler2D>(TriggerEventHandler2D)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Physics.Events.TriggerEventHandler2D>(SombraStudios.Shared.Physics.Events.TriggerEventHandler2D)
+  nameWithType.vb: ObjectExtensions.OrNull(Of TriggerEventHandler2D)(TriggerEventHandler2D)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Physics.Events.TriggerEventHandler2D)(SombraStudios.Shared.Physics.Events.TriggerEventHandler2D)
+  name.vb: OrNull(Of TriggerEventHandler2D)(TriggerEventHandler2D)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Physics.Events.TriggerEventHandler2D)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
+    name: TriggerEventHandler2D
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
+    name: TriggerEventHandler2D
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Physics.Events.TriggerEventHandler2D)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
+    name: TriggerEventHandler2D
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D
+    name: TriggerEventHandler2D
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -644,9 +911,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "
@@ -723,6 +990,28 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.IsStayInteractionValid(`0)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.IsStayInteractionValid(`0)
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_IsStayInteractionValid__0_
+  name: IsStayInteractionValid(T)
+  nameWithType: TriggerEventHandlerBase<T>.IsStayInteractionValid(T)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<T>.IsStayInteractionValid(T)
+  nameWithType.vb: TriggerEventHandlerBase(Of T).IsStayInteractionValid(T)
+  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of T).IsStayInteractionValid(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.IsStayInteractionValid(`0)
+    name: IsStayInteractionValid
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_IsStayInteractionValid__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.IsStayInteractionValid(`0)
+    name: IsStayInteractionValid
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_IsStayInteractionValid__0_
+  - name: (
+  - name: T
+  - name: )
 - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerEnter(`0)
   commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerEnter(`0)
   href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerEnter__0_
@@ -742,28 +1031,6 @@ references:
   - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerEnter(`0)
     name: TriggerEnter
     href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerEnter__0_
-  - name: (
-  - name: T
-  - name: )
-- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerStay(`0)
-  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerStay(`0)
-  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerStay__0_
-  name: TriggerStay(T)
-  nameWithType: TriggerEventHandlerBase<T>.TriggerStay(T)
-  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<T>.TriggerStay(T)
-  nameWithType.vb: TriggerEventHandlerBase(Of T).TriggerStay(T)
-  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of T).TriggerStay(T)
-  spec.csharp:
-  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerStay(`0)
-    name: TriggerStay
-    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerStay__0_
-  - name: (
-  - name: T
-  - name: )
-  spec.vb:
-  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.TriggerStay(`0)
-    name: TriggerStay
-    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_TriggerStay__0_
   - name: (
   - name: T
   - name: )
@@ -813,6 +1080,22 @@ references:
   fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>._eventType
   nameWithType.vb: PhysicsEventHandlerBase(Of T)._eventType
   fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T)._eventType
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._stayEventFrequency
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._stayEventFrequency
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__stayEventFrequency
+  name: _stayEventFrequency
+  nameWithType: PhysicsEventHandlerBase<T>._stayEventFrequency
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>._stayEventFrequency
+  nameWithType.vb: PhysicsEventHandlerBase(Of T)._stayEventFrequency
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T)._stayEventFrequency
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._isActive
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._isActive
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__isActive
+  name: _isActive
+  nameWithType: PhysicsEventHandlerBase<T>._isActive
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>._isActive
+  nameWithType.vb: PhysicsEventHandlerBase(Of T)._isActive
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T)._isActive
 - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnEnter
   commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnEnter
   href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_InteractionOnEnter
@@ -837,14 +1120,22 @@ references:
   fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.InteractionOnExit
   nameWithType.vb: PhysicsEventHandlerBase(Of T).InteractionOnExit
   fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).InteractionOnExit
-- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._isActive
-  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._isActive
-  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__isActive
-  name: _isActive
-  nameWithType: PhysicsEventHandlerBase<T>._isActive
-  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>._isActive
-  nameWithType.vb: PhysicsEventHandlerBase(Of T)._isActive
-  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T)._isActive
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnFirstEnter
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnFirstEnter
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_InteractionOnFirstEnter
+  name: InteractionOnFirstEnter
+  nameWithType: PhysicsEventHandlerBase<T>.InteractionOnFirstEnter
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.InteractionOnFirstEnter
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).InteractionOnFirstEnter
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).InteractionOnFirstEnter
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnLastExit
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.InteractionOnLastExit
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_InteractionOnLastExit
+  name: InteractionOnLastExit
+  nameWithType: PhysicsEventHandlerBase<T>.InteractionOnLastExit
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.InteractionOnLastExit
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).InteractionOnLastExit
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).InteractionOnLastExit
 - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._lastInteraction
   commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._lastInteraction
   href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__lastInteraction
@@ -869,6 +1160,50 @@ references:
   fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.LastInteraction
   nameWithType.vb: PhysicsEventHandlerBase(Of T).LastInteraction
   fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).LastInteraction
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.CurrentInteractionsCount
+  commentId: P:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.CurrentInteractionsCount
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_CurrentInteractionsCount
+  name: CurrentInteractionsCount
+  nameWithType: PhysicsEventHandlerBase<T>.CurrentInteractionsCount
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.CurrentInteractionsCount
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).CurrentInteractionsCount
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).CurrentInteractionsCount
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._currentInteractions
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._currentInteractions
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__currentInteractions
+  name: _currentInteractions
+  nameWithType: PhysicsEventHandlerBase<T>._currentInteractions
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>._currentInteractions
+  nameWithType.vb: PhysicsEventHandlerBase(Of T)._currentInteractions
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T)._currentInteractions
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._stayEventCounter
+  commentId: F:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1._stayEventCounter
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1__stayEventCounter
+  name: _stayEventCounter
+  nameWithType: PhysicsEventHandlerBase<T>._stayEventCounter
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>._stayEventCounter
+  nameWithType.vb: PhysicsEventHandlerBase(Of T)._stayEventCounter
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T)._stayEventCounter
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.FixedUpdate
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.FixedUpdate
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_FixedUpdate
+  name: FixedUpdate()
+  nameWithType: PhysicsEventHandlerBase<T>.FixedUpdate()
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.FixedUpdate()
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).FixedUpdate()
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).FixedUpdate()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.FixedUpdate
+    name: FixedUpdate
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_FixedUpdate
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.FixedUpdate
+    name: FixedUpdate
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_FixedUpdate
+  - name: (
+  - name: )
 - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.AddInteractionListeners(UnityEngine.Events.UnityAction{`0},UnityEngine.Events.UnityAction{`0},UnityEngine.Events.UnityAction{`0})
   commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.AddInteractionListeners(UnityEngine.Events.UnityAction{`0},UnityEngine.Events.UnityAction{`0},UnityEngine.Events.UnityAction{`0})
   isExternal: true
@@ -1033,46 +1368,129 @@ references:
     href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_RemoveAllInteractionListeners
   - name: (
   - name: )
-- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsCollisionEventType_SombraStudios_Shared_Physics_Events_PhysicInteractionEventType_
-  name: IsCollisionEventType(PhysicInteractionEventType)
-  nameWithType: PhysicsEventHandlerBase<T>.IsCollisionEventType(PhysicInteractionEventType)
-  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-  nameWithType.vb: PhysicsEventHandlerBase(Of T).IsCollisionEventType(PhysicInteractionEventType)
-  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsInteractionValid(UnityEngine.GameObject)
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsInteractionValid(UnityEngine.GameObject)
+  isExternal: true
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsInteractionValid_UnityEngine_GameObject_
+  name: IsInteractionValid(GameObject)
+  nameWithType: PhysicsEventHandlerBase<T>.IsInteractionValid(GameObject)
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.IsInteractionValid(UnityEngine.GameObject)
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).IsInteractionValid(GameObject)
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).IsInteractionValid(UnityEngine.GameObject)
   spec.csharp:
-  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-    name: IsCollisionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsCollisionEventType_SombraStudios_Shared_Physics_Events_PhysicInteractionEventType_
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsInteractionValid(UnityEngine.GameObject)
+    name: IsInteractionValid
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsInteractionValid_UnityEngine_GameObject_
   - name: (
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsCollisionEventType(SombraStudios.Shared.Physics.Events.PhysicInteractionEventType)
-    name: IsCollisionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsCollisionEventType_SombraStudios_Shared_Physics_Events_PhysicInteractionEventType_
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.IsInteractionValid(UnityEngine.GameObject)
+    name: IsInteractionValid
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_IsInteractionValid_UnityEngine_GameObject_
   - name: (
-  - uid: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType
-    name: PhysicInteractionEventType
-    href: SombraStudios.Shared.Physics.Events.PhysicInteractionEventType.html
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
   - name: )
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  isExternal: true
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleEnterInteractions(`0)
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleEnterInteractions(`0)
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleEnterInteractions__0_
+  name: HandleEnterInteractions(T)
+  nameWithType: PhysicsEventHandlerBase<T>.HandleEnterInteractions(T)
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.HandleEnterInteractions(T)
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).HandleEnterInteractions(T)
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).HandleEnterInteractions(T)
   spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleEnterInteractions(`0)
+    name: HandleEnterInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleEnterInteractions__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleEnterInteractions(`0)
+    name: HandleEnterInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleEnterInteractions__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleExitInteractions(`0)
+  commentId: M:SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleExitInteractions(`0)
+  href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleExitInteractions__0_
+  name: HandleExitInteractions(T)
+  nameWithType: PhysicsEventHandlerBase<T>.HandleExitInteractions(T)
+  fullName: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase<T>.HandleExitInteractions(T)
+  nameWithType.vb: PhysicsEventHandlerBase(Of T).HandleExitInteractions(T)
+  fullName.vb: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase(Of T).HandleExitInteractions(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleExitInteractions(`0)
+    name: HandleExitInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleExitInteractions__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase`1.HandleExitInteractions(`0)
+    name: HandleExitInteractions
+    href: SombraStudios.Shared.Physics.Events.PhysicsEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_PhysicsEventHandlerBase_1_HandleExitInteractions__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: <
   - name: T
   - name: '>'
@@ -1087,9 +1505,9 @@ references:
   - name: T
   - name: )
   spec.vb:
-  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-    name: SafeInit
-    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
   - name: (
   - name: Of
   - name: " "
@@ -1140,3 +1558,122 @@ references:
   - uid: SombraStudios.Shared.Extensions
     name: Extensions
     href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerEnterColliderCheck(`0)
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerEnterColliderCheck__0_
+  name: ForceTriggerEnterColliderCheck(Collider2D)
+  nameWithType: TriggerEventHandlerBase<Collider2D>.ForceTriggerEnterColliderCheck(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<UnityEngine.Collider2D>.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  nameWithType.vb: TriggerEventHandlerBase(Of Collider2D).ForceTriggerEnterColliderCheck(Collider2D)
+  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of UnityEngine.Collider2D).ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+    name: ForceTriggerEnterColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerEnterColliderCheck__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerEnterColliderCheck(UnityEngine.Collider2D)
+    name: ForceTriggerEnterColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerEnterColliderCheck__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck*
+  commentId: Overload:SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.html#SombraStudios_Shared_Physics_Events_TriggerEventHandler2D_ForceTriggerEnterColliderCheck_UnityEngine_Collider2D_
+  name: ForceTriggerEnterColliderCheck
+  nameWithType: TriggerEventHandler2D.ForceTriggerEnterColliderCheck
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerEnterColliderCheck
+- uid: UnityEngine.Collider2D
+  commentId: T:UnityEngine.Collider2D
+  parent: UnityEngine
+  isExternal: true
+  name: Collider2D
+  nameWithType: Collider2D
+  fullName: UnityEngine.Collider2D
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerEnterColliderCheck(`0)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerEnterColliderCheck(`0)
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerEnterColliderCheck__0_
+  name: ForceTriggerEnterColliderCheck(T)
+  nameWithType: TriggerEventHandlerBase<T>.ForceTriggerEnterColliderCheck(T)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<T>.ForceTriggerEnterColliderCheck(T)
+  nameWithType.vb: TriggerEventHandlerBase(Of T).ForceTriggerEnterColliderCheck(T)
+  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of T).ForceTriggerEnterColliderCheck(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerEnterColliderCheck(`0)
+    name: ForceTriggerEnterColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerEnterColliderCheck__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerEnterColliderCheck(`0)
+    name: ForceTriggerEnterColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerEnterColliderCheck__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  parent: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}
+  definition: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerExitColliderCheck(`0)
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerExitColliderCheck__0_
+  name: ForceTriggerExitColliderCheck(Collider2D)
+  nameWithType: TriggerEventHandlerBase<Collider2D>.ForceTriggerExitColliderCheck(Collider2D)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<UnityEngine.Collider2D>.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  nameWithType.vb: TriggerEventHandlerBase(Of Collider2D).ForceTriggerExitColliderCheck(Collider2D)
+  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of UnityEngine.Collider2D).ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+    name: ForceTriggerExitColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerExitColliderCheck__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase{UnityEngine.Collider2D}.ForceTriggerExitColliderCheck(UnityEngine.Collider2D)
+    name: ForceTriggerExitColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerExitColliderCheck__0_
+  - name: (
+  - uid: UnityEngine.Collider2D
+    name: Collider2D
+    isExternal: true
+  - name: )
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck*
+  commentId: Overload:SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.html#SombraStudios_Shared_Physics_Events_TriggerEventHandler2D_ForceTriggerExitColliderCheck_UnityEngine_Collider2D_
+  name: ForceTriggerExitColliderCheck
+  nameWithType: TriggerEventHandler2D.ForceTriggerExitColliderCheck
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandler2D.ForceTriggerExitColliderCheck
+- uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerExitColliderCheck(`0)
+  commentId: M:SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerExitColliderCheck(`0)
+  href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerExitColliderCheck__0_
+  name: ForceTriggerExitColliderCheck(T)
+  nameWithType: TriggerEventHandlerBase<T>.ForceTriggerExitColliderCheck(T)
+  fullName: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase<T>.ForceTriggerExitColliderCheck(T)
+  nameWithType.vb: TriggerEventHandlerBase(Of T).ForceTriggerExitColliderCheck(T)
+  fullName.vb: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase(Of T).ForceTriggerExitColliderCheck(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerExitColliderCheck(`0)
+    name: ForceTriggerExitColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerExitColliderCheck__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase`1.ForceTriggerExitColliderCheck(`0)
+    name: ForceTriggerExitColliderCheck
+    href: SombraStudios.Shared.Physics.Events.TriggerEventHandlerBase-1.html#SombraStudios_Shared_Physics_Events_TriggerEventHandlerBase_1_ForceTriggerExitColliderCheck__0_
+  - name: (
+  - name: T
+  - name: )

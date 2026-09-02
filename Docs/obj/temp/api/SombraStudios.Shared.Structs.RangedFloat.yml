@@ -6,9 +6,14 @@ items:
   parent: SombraStudios.Shared.Structs
   children:
   - SombraStudios.Shared.Structs.RangedFloat.#ctor(System.Single,System.Single)
+  - SombraStudios.Shared.Structs.RangedFloat.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  - SombraStudios.Shared.Structs.RangedFloat.Equals(System.Object)
+  - SombraStudios.Shared.Structs.RangedFloat.GetHashCode
+  - SombraStudios.Shared.Structs.RangedFloat.GetRandom
   - SombraStudios.Shared.Structs.RangedFloat.MaxValue
   - SombraStudios.Shared.Structs.RangedFloat.MinValue
-  - SombraStudios.Shared.Structs.RangedFloat.RandomValue
+  - SombraStudios.Shared.Structs.RangedFloat.op_Equality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  - SombraStudios.Shared.Structs.RangedFloat.op_Inequality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
   langs:
   - csharp
   - vb
@@ -23,7 +28,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: RangedFloat
     path: ../Structs/RangedFloat.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
@@ -33,11 +38,13 @@ items:
     content: >-
       [Serializable]
 
-      public struct RangedFloat
+      public struct RangedFloat : IEquatable<RangedFloat>
     content.vb: >-
       <Serializable>
 
-      Public Structure RangedFloat
+      Public Structure RangedFloat Implements IEquatable(Of RangedFloat)
+  implements:
+  - System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}
   attributes:
   - type: System.SerializableAttribute
     ctor: System.SerializableAttribute.#ctor
@@ -60,17 +67,29 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: MinValue
     path: ../Structs/RangedFloat.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
   summary: The minimum value of the range.
   example: []
   syntax:
-    content: public float MinValue
+    content: >-
+      [Tooltip("The minimum value of the range.")]
+
+      public float MinValue
     return:
       type: System.Single
-    content.vb: Public MinValue As Single
+    content.vb: >-
+      <Tooltip("The minimum value of the range.")>
+
+      Public MinValue As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The minimum value of the range.
 - uid: SombraStudios.Shared.Structs.RangedFloat.MaxValue
   commentId: F:SombraStudios.Shared.Structs.RangedFloat.MaxValue
   id: MaxValue
@@ -89,48 +108,29 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: MaxValue
     path: ../Structs/RangedFloat.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
   summary: The maximum value of the range.
   example: []
   syntax:
-    content: public float MaxValue
+    content: >-
+      [Tooltip("The maximum value of the range.")]
+
+      public float MaxValue
     return:
       type: System.Single
-    content.vb: Public MaxValue As Single
-- uid: SombraStudios.Shared.Structs.RangedFloat.RandomValue
-  commentId: P:SombraStudios.Shared.Structs.RangedFloat.RandomValue
-  id: RandomValue
-  parent: SombraStudios.Shared.Structs.RangedFloat
-  langs:
-  - csharp
-  - vb
-  name: RandomValue
-  nameWithType: RangedFloat.RandomValue
-  fullName: SombraStudios.Shared.Structs.RangedFloat.RandomValue
-  type: Property
-  source:
-    remote:
-      path: Structs/RangedFloat.cs
-      branch: main
-      repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: RandomValue
-    path: ../Structs/RangedFloat.cs
-    startLine: 23
-  assemblies:
-  - SombraStudios.Shared.Structs
-  namespace: SombraStudios.Shared.Structs
-  summary: Gets a random value within the range [MinValue, MaxValue].
-  example: []
-  syntax:
-    content: public float RandomValue { get; }
-    parameters: []
-    return:
-      type: System.Single
-    content.vb: Public ReadOnly Property RandomValue As Single
-  overload: SombraStudios.Shared.Structs.RangedFloat.RandomValue*
+    content.vb: >-
+      <Tooltip("The maximum value of the range.")>
+
+      Public MaxValue As Single
+  attributes:
+  - type: UnityEngine.TooltipAttribute
+    ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The maximum value of the range.
 - uid: SombraStudios.Shared.Structs.RangedFloat.#ctor(System.Single,System.Single)
   commentId: M:SombraStudios.Shared.Structs.RangedFloat.#ctor(System.Single,System.Single)
   id: '#ctor(System.Single,System.Single)'
@@ -149,7 +149,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: .ctor
     path: ../Structs/RangedFloat.cs
-    startLine: 25
+    startLine: 23
   assemblies:
   - SombraStudios.Shared.Structs
   namespace: SombraStudios.Shared.Structs
@@ -165,6 +165,212 @@ items:
   nameWithType.vb: RangedFloat.New(Single, Single)
   fullName.vb: SombraStudios.Shared.Structs.RangedFloat.New(Single, Single)
   name.vb: New(Single, Single)
+- uid: SombraStudios.Shared.Structs.RangedFloat.GetRandom
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.GetRandom
+  id: GetRandom
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: GetRandom()
+  nameWithType: RangedFloat.GetRandom()
+  fullName: SombraStudios.Shared.Structs.RangedFloat.GetRandom()
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetRandom
+    path: ../Structs/RangedFloat.cs
+    startLine: 33
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: Returns a random value within the range [MinValue, MaxValue].
+  example: []
+  syntax:
+    content: public readonly float GetRandom()
+    return:
+      type: System.Single
+      description: A different value on each call.
+    content.vb: Public Function GetRandom() As Single
+  overload: SombraStudios.Shared.Structs.RangedFloat.GetRandom*
+- uid: SombraStudios.Shared.Structs.RangedFloat.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  id: Equals(SombraStudios.Shared.Structs.RangedFloat)
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: Equals(RangedFloat)
+  nameWithType: RangedFloat.Equals(RangedFloat)
+  fullName: SombraStudios.Shared.Structs.RangedFloat.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Equals
+    path: ../Structs/RangedFloat.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  summary: Indicates whether this range has the same bounds as another range.
+  example: []
+  syntax:
+    content: public readonly bool Equals(RangedFloat other)
+    parameters:
+    - id: other
+      type: SombraStudios.Shared.Structs.RangedFloat
+      description: The range to compare with.
+    return:
+      type: System.Boolean
+      description: True if both bounds are equal, false otherwise.
+    content.vb: Public Function Equals(other As RangedFloat) As Boolean
+  overload: SombraStudios.Shared.Structs.RangedFloat.Equals*
+  implements:
+  - System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}.Equals(SombraStudios.Shared.Structs.RangedFloat)
+- uid: SombraStudios.Shared.Structs.RangedFloat.Equals(System.Object)
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: RangedFloat.Equals(object)
+  fullName: SombraStudios.Shared.Structs.RangedFloat.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Equals
+    path: ../Structs/RangedFloat.cs
+    startLine: 43
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  example: []
+  syntax:
+    content: public override readonly bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: SombraStudios.Shared.Structs.RangedFloat.Equals*
+  nameWithType.vb: RangedFloat.Equals(Object)
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.Equals(Object)
+  name.vb: Equals(Object)
+- uid: SombraStudios.Shared.Structs.RangedFloat.GetHashCode
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.GetHashCode
+  id: GetHashCode
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: RangedFloat.GetHashCode()
+  fullName: SombraStudios.Shared.Structs.RangedFloat.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetHashCode
+    path: ../Structs/RangedFloat.cs
+    startLine: 45
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  example: []
+  syntax:
+    content: public override readonly int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: SombraStudios.Shared.Structs.RangedFloat.GetHashCode*
+- uid: SombraStudios.Shared.Structs.RangedFloat.op_Equality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.op_Equality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  id: op_Equality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: operator ==(RangedFloat, RangedFloat)
+  nameWithType: RangedFloat.operator ==(RangedFloat, RangedFloat)
+  fullName: SombraStudios.Shared.Structs.RangedFloat.operator ==(SombraStudios.Shared.Structs.RangedFloat, SombraStudios.Shared.Structs.RangedFloat)
+  type: Operator
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Equality
+    path: ../Structs/RangedFloat.cs
+    startLine: 47
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  syntax:
+    content: public static bool operator ==(RangedFloat left, RangedFloat right)
+    parameters:
+    - id: left
+      type: SombraStudios.Shared.Structs.RangedFloat
+    - id: right
+      type: SombraStudios.Shared.Structs.RangedFloat
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As RangedFloat, right As RangedFloat) As Boolean
+  overload: SombraStudios.Shared.Structs.RangedFloat.op_Equality*
+  nameWithType.vb: RangedFloat.=(RangedFloat, RangedFloat)
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.=(SombraStudios.Shared.Structs.RangedFloat, SombraStudios.Shared.Structs.RangedFloat)
+  name.vb: =(RangedFloat, RangedFloat)
+- uid: SombraStudios.Shared.Structs.RangedFloat.op_Inequality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  commentId: M:SombraStudios.Shared.Structs.RangedFloat.op_Inequality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  id: op_Inequality(SombraStudios.Shared.Structs.RangedFloat,SombraStudios.Shared.Structs.RangedFloat)
+  parent: SombraStudios.Shared.Structs.RangedFloat
+  langs:
+  - csharp
+  - vb
+  name: operator !=(RangedFloat, RangedFloat)
+  nameWithType: RangedFloat.operator !=(RangedFloat, RangedFloat)
+  fullName: SombraStudios.Shared.Structs.RangedFloat.operator !=(SombraStudios.Shared.Structs.RangedFloat, SombraStudios.Shared.Structs.RangedFloat)
+  type: Operator
+  source:
+    remote:
+      path: Structs/RangedFloat.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: op_Inequality
+    path: ../Structs/RangedFloat.cs
+    startLine: 49
+  assemblies:
+  - SombraStudios.Shared.Structs
+  namespace: SombraStudios.Shared.Structs
+  syntax:
+    content: public static bool operator !=(RangedFloat left, RangedFloat right)
+    parameters:
+    - id: left
+      type: SombraStudios.Shared.Structs.RangedFloat
+    - id: right
+      type: SombraStudios.Shared.Structs.RangedFloat
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As RangedFloat, right As RangedFloat) As Boolean
+  overload: SombraStudios.Shared.Structs.RangedFloat.op_Inequality*
+  nameWithType.vb: RangedFloat.<>(RangedFloat, RangedFloat)
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.<>(SombraStudios.Shared.Structs.RangedFloat, SombraStudios.Shared.Structs.RangedFloat)
+  name.vb: <>(RangedFloat, RangedFloat)
 references:
 - uid: SombraStudios.Shared.Structs
   commentId: N:SombraStudios.Shared.Structs
@@ -196,6 +402,74 @@ references:
   - uid: SombraStudios.Shared.Structs
     name: Structs
     href: SombraStudios.Shared.Structs.html
+- uid: System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}
+  commentId: T:System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<RangedFloat>
+  nameWithType: IEquatable<RangedFloat>
+  fullName: System.IEquatable<SombraStudios.Shared.Structs.RangedFloat>
+  nameWithType.vb: IEquatable(Of RangedFloat)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.Structs.RangedFloat)
+  name.vb: IEquatable(Of RangedFloat)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: SombraStudios.Shared.Structs.RangedFloat
+    name: RangedFloat
+    href: SombraStudios.Shared.Structs.RangedFloat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Structs.RangedFloat
+    name: RangedFloat
+    href: SombraStudios.Shared.Structs.RangedFloat.html
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -207,19 +481,6 @@ references:
   nameWithType.vb: Single
   fullName.vb: Single
   name.vb: Single
-- uid: System
-  commentId: N:System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: SombraStudios.Shared.Structs.RangedFloat.RandomValue*
-  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.RandomValue
-  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_RandomValue
-  name: RandomValue
-  nameWithType: RangedFloat.RandomValue
-  fullName: SombraStudios.Shared.Structs.RangedFloat.RandomValue
 - uid: SombraStudios.Shared.Structs.RangedFloat.#ctor*
   commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.#ctor
   href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat__ctor_System_Single_System_Single_
@@ -229,3 +490,199 @@ references:
   nameWithType.vb: RangedFloat.New
   fullName.vb: SombraStudios.Shared.Structs.RangedFloat.New
   name.vb: New
+- uid: SombraStudios.Shared.Structs.RangedFloat.GetRandom*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.GetRandom
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_GetRandom
+  name: GetRandom
+  nameWithType: RangedFloat.GetRandom
+  fullName: SombraStudios.Shared.Structs.RangedFloat.GetRandom
+- uid: SombraStudios.Shared.Structs.RangedFloat.Equals*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.Equals
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_Equals_SombraStudios_Shared_Structs_RangedFloat_
+  name: Equals
+  nameWithType: RangedFloat.Equals
+  fullName: SombraStudios.Shared.Structs.RangedFloat.Equals
+- uid: System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  commentId: M:System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  parent: System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(RangedFloat)
+  nameWithType: IEquatable<RangedFloat>.Equals(RangedFloat)
+  fullName: System.IEquatable<SombraStudios.Shared.Structs.RangedFloat>.Equals(SombraStudios.Shared.Structs.RangedFloat)
+  nameWithType.vb: IEquatable(Of RangedFloat).Equals(RangedFloat)
+  fullName.vb: System.IEquatable(Of SombraStudios.Shared.Structs.RangedFloat).Equals(SombraStudios.Shared.Structs.RangedFloat)
+  spec.csharp:
+  - uid: System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}.Equals(SombraStudios.Shared.Structs.RangedFloat)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SombraStudios.Shared.Structs.RangedFloat
+    name: RangedFloat
+    href: SombraStudios.Shared.Structs.RangedFloat.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{SombraStudios.Shared.Structs.RangedFloat}.Equals(SombraStudios.Shared.Structs.RangedFloat)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: SombraStudios.Shared.Structs.RangedFloat
+    name: RangedFloat
+    href: SombraStudios.Shared.Structs.RangedFloat.html
+  - name: )
+- uid: SombraStudios.Shared.Structs.RangedFloat
+  commentId: T:SombraStudios.Shared.Structs.RangedFloat
+  parent: SombraStudios.Shared.Structs
+  href: SombraStudios.Shared.Structs.RangedFloat.html
+  name: RangedFloat
+  nameWithType: RangedFloat
+  fullName: SombraStudios.Shared.Structs.RangedFloat
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Structs.RangedFloat.GetHashCode*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.GetHashCode
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_GetHashCode
+  name: GetHashCode
+  nameWithType: RangedFloat.GetHashCode
+  fullName: SombraStudios.Shared.Structs.RangedFloat.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SombraStudios.Shared.Structs.RangedFloat.op_Equality*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.op_Equality
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_op_Equality_SombraStudios_Shared_Structs_RangedFloat_SombraStudios_Shared_Structs_RangedFloat_
+  name: operator ==
+  nameWithType: RangedFloat.operator ==
+  fullName: SombraStudios.Shared.Structs.RangedFloat.operator ==
+  nameWithType.vb: RangedFloat.=
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SombraStudios.Shared.Structs.RangedFloat.op_Equality*
+    name: ==
+    href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_op_Equality_SombraStudios_Shared_Structs_RangedFloat_SombraStudios_Shared_Structs_RangedFloat_
+- uid: SombraStudios.Shared.Structs.RangedFloat.op_Inequality*
+  commentId: Overload:SombraStudios.Shared.Structs.RangedFloat.op_Inequality
+  href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_op_Inequality_SombraStudios_Shared_Structs_RangedFloat_SombraStudios_Shared_Structs_RangedFloat_
+  name: operator !=
+  nameWithType: RangedFloat.operator !=
+  fullName: SombraStudios.Shared.Structs.RangedFloat.operator !=
+  nameWithType.vb: RangedFloat.<>
+  fullName.vb: SombraStudios.Shared.Structs.RangedFloat.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: SombraStudios.Shared.Structs.RangedFloat.op_Inequality*
+    name: '!='
+    href: SombraStudios.Shared.Structs.RangedFloat.html#SombraStudios_Shared_Structs_RangedFloat_op_Inequality_SombraStudios_Shared_Structs_RangedFloat_SombraStudios_Shared_Structs_RangedFloat_

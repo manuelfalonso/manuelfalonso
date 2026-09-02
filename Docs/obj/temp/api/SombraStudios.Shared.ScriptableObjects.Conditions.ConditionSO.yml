@@ -39,7 +39,15 @@ items:
   - UnityEngine.ScriptableObject
   - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{SombraStudios.Shared.Structs.VoidStruct}
   derivedClasses:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.AlwaysFalseConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.AlwaysTrueConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.AndConditionSO
   - SombraStudios.Shared.ScriptableObjects.Conditions.CompositeConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.DevelopmentBuildConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.EditorModeConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.NotConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.OrConditionSO
+  - SombraStudios.Shared.ScriptableObjects.Conditions.PlatformConditionSO
   implements:
   - SombraStudios.Shared.Interfaces.ICondition{SombraStudios.Shared.Structs.VoidStruct}
   inheritedMembers:
@@ -47,6 +55,8 @@ items:
   - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{SombraStudios.Shared.Structs.VoidStruct}.DEBUG_TITLE
   - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{SombraStudios.Shared.Structs.VoidStruct}.PROPERTIES_TITLE
   - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO{SombraStudios.Shared.Structs.VoidStruct}._showLogs
+  extensionMethods:
+  - SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
 - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.IsValid
   commentId: M:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.IsValid
   id: IsValid
@@ -157,7 +167,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -213,7 +222,7 @@ references:
   commentId: T:SombraStudios.Shared.Interfaces.ICondition{SombraStudios.Shared.Structs.VoidStruct}
   parent: SombraStudios.Shared.Interfaces
   definition: SombraStudios.Shared.Interfaces.ICondition`1
-  href: SombraStudios.Shared.Structs.VoidStruct.html
+  href: SombraStudios.Shared.Interfaces.ICondition-1.html
   name: ICondition<VoidStruct>
   nameWithType: ICondition<VoidStruct>
   fullName: SombraStudios.Shared.Interfaces.ICondition<SombraStudios.Shared.Structs.VoidStruct>
@@ -223,6 +232,7 @@ references:
   spec.csharp:
   - uid: SombraStudios.Shared.Interfaces.ICondition`1
     name: ICondition
+    href: SombraStudios.Shared.Interfaces.ICondition-1.html
   - name: <
   - uid: SombraStudios.Shared.Structs.VoidStruct
     name: VoidStruct
@@ -231,6 +241,7 @@ references:
   spec.vb:
   - uid: SombraStudios.Shared.Interfaces.ICondition`1
     name: ICondition
+    href: SombraStudios.Shared.Interfaces.ICondition-1.html
   - name: (
   - name: Of
   - name: " "
@@ -278,6 +289,47 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<SombraStudios.Shared.Structs.VoidStruct>._showLogs
   nameWithType.vb: ConditionSO(Of VoidStruct)._showLogs
   fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of SombraStudios.Shared.Structs.VoidStruct)._showLogs
+- uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<ConditionSO>(ConditionSO)
+  nameWithType: ObjectExtensions.OrNull<ConditionSO>(ConditionSO)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO>(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO)
+  nameWithType.vb: ObjectExtensions.OrNull(Of ConditionSO)(ConditionSO)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO)(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO)
+  name.vb: OrNull(Of ConditionSO)(ConditionSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO
+    name: ConditionSO
+    href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.html
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -403,6 +455,74 @@ references:
   fullName: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO<T>._showLogs
   nameWithType.vb: ConditionSO(Of T)._showLogs
   fullName.vb: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO(Of T)._showLogs
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
 - uid: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.IsValid*
   commentId: Overload:SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.IsValid
   href: SombraStudios.Shared.ScriptableObjects.Conditions.ConditionSO.html#SombraStudios_Shared_ScriptableObjects_Conditions_ConditionSO_IsValid

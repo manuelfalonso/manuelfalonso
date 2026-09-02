@@ -5,8 +5,8 @@ items:
   id: StateMachine
   parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
   children:
-  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
-  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
+  - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
   - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.FixedUpdate
   - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.SetState(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState)
   - SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.Update
@@ -24,7 +24,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: StateMachine
     path: ../Patterns/Behavioural/FiniteStateMachine/StateMachine.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -53,7 +53,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Update
     path: ../Patterns/Behavioural/FiniteStateMachine/StateMachine.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -81,7 +81,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: FixedUpdate
     path: ../Patterns/Behavioural/FiniteStateMachine/StateMachine.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -109,7 +109,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: SetState
     path: ../Patterns/Behavioural/FiniteStateMachine/StateMachine.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -122,16 +122,16 @@ items:
       type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
     content.vb: Public Sub SetState(state As IState)
   overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.SetState*
-- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
-  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
-  id: AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
+  id: AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
   parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine
   langs:
   - csharp
   - vb
-  name: AddTransition(IState, IState, IPredicate)
-  nameWithType: StateMachine.AddTransition(IState, IState, IPredicate)
-  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
+  name: AddTransition(IState, IState, ICondition)
+  nameWithType: StateMachine.AddTransition(IState, IState, ICondition)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState, SombraStudios.Shared.Interfaces.ICondition)
   type: Method
   source:
     remote:
@@ -140,33 +140,33 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AddTransition
     path: ../Patterns/Behavioural/FiniteStateMachine/StateMachine.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
   summary: Adds a transition between states in the state machine.
   example: []
   syntax:
-    content: public void AddTransition(IState from, IState to, IPredicate condition)
+    content: public void AddTransition(IState from, IState to, ICondition condition)
     parameters:
     - id: from
       type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
     - id: to
       type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
     - id: condition
-      type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-    content.vb: Public Sub AddTransition(from As IState, [to] As IState, condition As IPredicate)
+      type: SombraStudios.Shared.Interfaces.ICondition
+    content.vb: Public Sub AddTransition(from As IState, [to] As IState, condition As ICondition)
   overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition*
-- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
-  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
-  id: AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
+- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
+  commentId: M:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
+  id: AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState,SombraStudios.Shared.Interfaces.ICondition)
   parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine
   langs:
   - csharp
   - vb
-  name: AddAnyTransition(IState, IPredicate)
-  nameWithType: StateMachine.AddAnyTransition(IState, IPredicate)
-  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState, SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate)
+  name: AddAnyTransition(IState, ICondition)
+  nameWithType: StateMachine.AddAnyTransition(IState, ICondition)
+  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition(SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState, SombraStudios.Shared.Interfaces.ICondition)
   type: Method
   source:
     remote:
@@ -175,20 +175,20 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: AddAnyTransition
     path: ../Patterns/Behavioural/FiniteStateMachine/StateMachine.cs
-    startLine: 54
+    startLine: 55
   assemblies:
   - SombraStudios.Shared.Patterns
   namespace: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
   summary: Adds a transition from any state to a specific state in the state machine.
   example: []
   syntax:
-    content: public void AddAnyTransition(IState to, IPredicate condition)
+    content: public void AddAnyTransition(IState to, ICondition condition)
     parameters:
     - id: to
       type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
     - id: condition
-      type: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-    content.vb: Public Sub AddAnyTransition([to] As IState, condition As IPredicate)
+      type: SombraStudios.Shared.Interfaces.ICondition
+    content.vb: Public Sub AddAnyTransition([to] As IState, condition As ICondition)
   overload: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition*
 references:
 - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
@@ -241,7 +241,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -282,20 +281,50 @@ references:
   fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IState
 - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition*
   commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition
-  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_StateMachine_AddTransition_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IPredicate_
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_StateMachine_AddTransition_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IState_SombraStudios_Shared_Interfaces_ICondition_
   name: AddTransition
   nameWithType: StateMachine.AddTransition
   fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddTransition
-- uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-  commentId: T:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
-  parent: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine
-  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate.html
-  name: IPredicate
-  nameWithType: IPredicate
-  fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.IPredicate
+- uid: SombraStudios.Shared.Interfaces.ICondition
+  commentId: T:SombraStudios.Shared.Interfaces.ICondition
+  parent: SombraStudios.Shared.Interfaces
+  href: SombraStudios.Shared.Interfaces.ICondition.html
+  name: ICondition
+  nameWithType: ICondition
+  fullName: SombraStudios.Shared.Interfaces.ICondition
+- uid: SombraStudios.Shared.Interfaces
+  commentId: N:SombraStudios.Shared.Interfaces
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Interfaces
+  nameWithType: SombraStudios.Shared.Interfaces
+  fullName: SombraStudios.Shared.Interfaces
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Interfaces
+    name: Interfaces
+    href: SombraStudios.Shared.Interfaces.html
 - uid: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition*
   commentId: Overload:SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition
-  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_StateMachine_AddAnyTransition_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IState_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IPredicate_
+  href: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.html#SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_StateMachine_AddAnyTransition_SombraStudios_Shared_Patterns_Behavioural_FiniteStateMachine_IState_SombraStudios_Shared_Interfaces_ICondition_
   name: AddAnyTransition
   nameWithType: StateMachine.AddAnyTransition
   fullName: SombraStudios.Shared.Patterns.Behavioural.FiniteStateMachine.StateMachine.AddAnyTransition

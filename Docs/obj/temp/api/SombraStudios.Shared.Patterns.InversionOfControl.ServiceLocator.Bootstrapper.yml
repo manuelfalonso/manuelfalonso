@@ -1,0 +1,454 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+  commentId: T:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+  id: Bootstrapper
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  children:
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand
+  langs:
+  - csharp
+  - vb
+  name: Bootstrapper
+  nameWithType: Bootstrapper
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+  type: Class
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Bootstrapper
+    path: ../Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+    startLine: 7
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: >-
+      [RequireComponent(typeof(ServiceLocator))]
+
+      public abstract class Bootstrapper : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(ServiceLocator))>
+
+      Public MustInherit Class Bootstrapper Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+  derivedClasses:
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocatorGlobal
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocatorScene
+  extensionMethods:
+  - SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  - UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  attributes:
+  - type: UnityEngine.RequireComponent
+    ctor: UnityEngine.RequireComponent.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.ServiceLocator
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake
+  id: Awake
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+  langs:
+  - csharp
+  - vb
+  name: Awake()
+  nameWithType: Bootstrapper.Awake()
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake()
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Awake
+    path: ../Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+    startLine: 15
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: protected virtual void Awake()
+    content.vb: Protected Overridable Sub Awake()
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake*
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand
+  id: BootstrapOnDemand
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+  langs:
+  - csharp
+  - vb
+  name: BootstrapOnDemand()
+  nameWithType: Bootstrapper.BootstrapOnDemand()
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand()
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: BootstrapOnDemand
+    path: ../Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+    startLine: 17
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: public void BootstrapOnDemand()
+    content.vb: Public Sub BootstrapOnDemand()
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand*
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap
+  commentId: M:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap
+  id: Bootstrap
+  parent: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+  langs:
+  - csharp
+  - vb
+  name: Bootstrap()
+  nameWithType: Bootstrapper.Bootstrap()
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap()
+  type: Method
+  source:
+    remote:
+      path: Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: Bootstrap
+    path: ../Patterns/InversionOfControl/ServiceLocator/Bootstrapper.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Patterns
+  namespace: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  syntax:
+    content: protected abstract void Bootstrap()
+    content.vb: Protected MustOverride Sub Bootstrap()
+  overload: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap*
+references:
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  commentId: N:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  nameWithType: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl
+    name: InversionOfControl
+    href: SombraStudios.Shared.Patterns.InversionOfControl.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns
+    name: Patterns
+    href: SombraStudios.Shared.Patterns.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl
+    name: InversionOfControl
+    href: SombraStudios.Shared.Patterns.InversionOfControl.html
+  - name: .
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator
+    name: ServiceLocator
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<Bootstrapper>(Bootstrapper)
+  nameWithType: ObjectExtensions.OrNull<Bootstrapper>(Bootstrapper)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper>(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper)
+  nameWithType.vb: ObjectExtensions.OrNull(Of Bootstrapper)(Bootstrapper)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper)(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper)
+  name.vb: OrNull(Of Bootstrapper)(Bootstrapper)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+    name: Bootstrapper
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+    name: Bootstrapper
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+    name: Bootstrapper
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper
+    name: Bootstrapper
+    href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html
+  - name: )
+- uid: UnityEngine.MonoBehaviour.SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1({T}@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  definition: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  isExternal: true
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+    name: EnsureComponent
+    href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.MonoBehaviour
+    name: MonoBehaviour
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  commentId: T:SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html
+  name: MonoBehaviourExtensions
+  nameWithType: MonoBehaviourExtensions
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_Bootstrapper_Awake
+  name: Awake
+  nameWithType: Bootstrapper.Awake
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Awake
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_Bootstrapper_BootstrapOnDemand
+  name: BootstrapOnDemand
+  nameWithType: Bootstrapper.BootstrapOnDemand
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.BootstrapOnDemand
+- uid: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap*
+  commentId: Overload:SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap
+  href: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.html#SombraStudios_Shared_Patterns_InversionOfControl_ServiceLocator_Bootstrapper_Bootstrap
+  name: Bootstrap
+  nameWithType: Bootstrapper.Bootstrap
+  fullName: SombraStudios.Shared.Patterns.InversionOfControl.ServiceLocator.Bootstrapper.Bootstrap

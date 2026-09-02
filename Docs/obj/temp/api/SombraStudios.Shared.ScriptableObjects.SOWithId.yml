@@ -25,7 +25,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: SOWithId
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
@@ -43,7 +43,9 @@ items:
   - SombraStudios.Shared.Systems.Unlock.UnlockableSO
   implements:
   - System.IEquatable{SombraStudios.Shared.ScriptableObjects.SOWithId}
-  - SombraStudios.Shared.Interfaces.IIdentifiable
+  - SombraStudios.Shared.ScriptableObjects.IIdentifiable
+  extensionMethods:
+  - SombraStudios.Shared.ScriptableObjects.SOWithId.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
 - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
   commentId: P:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
   id: Id
@@ -62,7 +64,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Id
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 17
+    startLine: 16
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
@@ -82,7 +84,7 @@ items:
       Public Property Id As String
   overload: SombraStudios.Shared.ScriptableObjects.SOWithId.Id*
   implements:
-  - SombraStudios.Shared.Interfaces.IIdentifiable.Id
+  - SombraStudios.Shared.ScriptableObjects.IIdentifiable.Id
   attributes:
   - type: UnityEngine.TooltipAttribute
     ctor: UnityEngine.TooltipAttribute.#ctor(System.String)
@@ -107,7 +109,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Equals
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 25
+    startLine: 24
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
@@ -144,7 +146,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Equals
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 32
+    startLine: 31
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
@@ -180,15 +182,17 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: GetHashCode
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 40
+    startLine: 39
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
+  summary: <p>Returns the hash code for the object.</p>
   example: []
   syntax:
     content: public override int GetHashCode()
     return:
       type: System.Int32
+      description: <p>The hash code for the object.</p>
     content.vb: Public Overrides Function GetHashCode() As Integer
   overridden: UnityEngine.Object.GetHashCode
   overload: SombraStudios.Shared.ScriptableObjects.SOWithId.GetHashCode*
@@ -210,7 +214,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: op_Equality
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 46
+    startLine: 45
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
@@ -246,7 +250,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: op_Inequality
     path: ../ScriptableObjects/SOWithId.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - SombraStudios.Shared.ScriptableObjects
   namespace: SombraStudios.Shared.ScriptableObjects
@@ -299,7 +303,6 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
@@ -353,13 +356,54 @@ references:
     name: SOWithId
     href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
   - name: )
-- uid: SombraStudios.Shared.Interfaces.IIdentifiable
-  commentId: T:SombraStudios.Shared.Interfaces.IIdentifiable
-  parent: SombraStudios.Shared.Interfaces
-  href: SombraStudios.Shared.Interfaces.IIdentifiable.html
+- uid: SombraStudios.Shared.ScriptableObjects.IIdentifiable
+  commentId: T:SombraStudios.Shared.ScriptableObjects.IIdentifiable
+  parent: SombraStudios.Shared.ScriptableObjects
+  href: SombraStudios.Shared.ScriptableObjects.IIdentifiable.html
   name: IIdentifiable
   nameWithType: IIdentifiable
-  fullName: SombraStudios.Shared.Interfaces.IIdentifiable
+  fullName: SombraStudios.Shared.ScriptableObjects.IIdentifiable
+- uid: SombraStudios.Shared.ScriptableObjects.SOWithId.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<SOWithId>(SOWithId)
+  nameWithType: ObjectExtensions.OrNull<SOWithId>(SOWithId)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.ScriptableObjects.SOWithId>(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  nameWithType.vb: ObjectExtensions.OrNull(Of SOWithId)(SOWithId)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.ScriptableObjects.SOWithId)(SombraStudios.Shared.ScriptableObjects.SOWithId)
+  name.vb: OrNull(Of SOWithId)(SOWithId)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.ScriptableObjects.SOWithId)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.ScriptableObjects.SOWithId
+    name: SOWithId
+    href: SombraStudios.Shared.ScriptableObjects.SOWithId.html
+  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -401,12 +445,50 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: SombraStudios.Shared.Interfaces
-  commentId: N:SombraStudios.Shared.Interfaces
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
   href: SombraStudios.html
-  name: SombraStudios.Shared.Interfaces
-  nameWithType: SombraStudios.Shared.Interfaces
-  fullName: SombraStudios.Shared.Interfaces
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
   spec.csharp:
   - uid: SombraStudios
     name: SombraStudios
@@ -416,9 +498,9 @@ references:
     name: Shared
     href: SombraStudios.Shared.html
   - name: .
-  - uid: SombraStudios.Shared.Interfaces
-    name: Interfaces
-    href: SombraStudios.Shared.Interfaces.html
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
   spec.vb:
   - uid: SombraStudios
     name: SombraStudios
@@ -428,21 +510,22 @@ references:
     name: Shared
     href: SombraStudios.Shared.html
   - name: .
-  - uid: SombraStudios.Shared.Interfaces
-    name: Interfaces
-    href: SombraStudios.Shared.Interfaces.html
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
 - uid: SombraStudios.Shared.ScriptableObjects.SOWithId.Id*
   commentId: Overload:SombraStudios.Shared.ScriptableObjects.SOWithId.Id
   href: SombraStudios.Shared.ScriptableObjects.SOWithId.html#SombraStudios_Shared_ScriptableObjects_SOWithId_Id
   name: Id
   nameWithType: SOWithId.Id
   fullName: SombraStudios.Shared.ScriptableObjects.SOWithId.Id
-- uid: SombraStudios.Shared.Interfaces.IIdentifiable.Id
-  commentId: P:SombraStudios.Shared.Interfaces.IIdentifiable.Id
-  parent: SombraStudios.Shared.Interfaces.IIdentifiable
+- uid: SombraStudios.Shared.ScriptableObjects.IIdentifiable.Id
+  commentId: P:SombraStudios.Shared.ScriptableObjects.IIdentifiable.Id
+  parent: SombraStudios.Shared.ScriptableObjects.IIdentifiable
+  href: SombraStudios.Shared.ScriptableObjects.IIdentifiable.html#SombraStudios_Shared_ScriptableObjects_IIdentifiable_Id
   name: Id
   nameWithType: IIdentifiable.Id
-  fullName: SombraStudios.Shared.Interfaces.IIdentifiable.Id
+  fullName: SombraStudios.Shared.ScriptableObjects.IIdentifiable.Id
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -537,7 +620,6 @@ references:
   commentId: M:UnityEngine.Object.Equals(System.Object)
   parent: UnityEngine.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: Equals(object)
   nameWithType: Object.Equals(object)
   fullName: UnityEngine.Object.Equals(object)
@@ -552,7 +634,6 @@ references:
   - uid: System.Object
     name: object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
   spec.vb:
   - uid: UnityEngine.Object.Equals(System.Object)
@@ -562,7 +643,6 @@ references:
   - uid: System.Object
     name: Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: UnityEngine.Object.GetHashCode
   commentId: M:UnityEngine.Object.GetHashCode

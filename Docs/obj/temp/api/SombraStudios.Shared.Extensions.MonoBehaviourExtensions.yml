@@ -5,7 +5,7 @@ items:
   id: MonoBehaviourExtensions
   parent: SombraStudios.Shared.Extensions
   children:
-  - SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+  - SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
   langs:
   - csharp
   - vb
@@ -24,51 +24,75 @@ items:
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
-  summary: Extension methods for MonoBehaviour classes
+  summary: Extension methods for <xref href="UnityEngine.MonoBehaviour" data-throw-if-not-resolved="false"></xref> classes.
   example: []
   syntax:
     content: public static class MonoBehaviourExtensions
     content.vb: Public Module MonoBehaviourExtensions
   inheritance:
   - System.Object
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit``1(UnityEngine.MonoBehaviour,``0@)
-  id: SafeInit``1(UnityEngine.MonoBehaviour,``0@)
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  commentId: M:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
+  id: EnsureComponent``1(UnityEngine.MonoBehaviour,``0@)
   isExtensionMethod: true
   parent: SombraStudios.Shared.Extensions.MonoBehaviourExtensions
   langs:
   - csharp
   - vb
-  name: SafeInit<T>(MonoBehaviour, ref T)
-  nameWithType: MonoBehaviourExtensions.SafeInit<T>(MonoBehaviour, ref T)
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit<T>(UnityEngine.MonoBehaviour, ref T)
+  name: EnsureComponent<T>(MonoBehaviour, ref T)
+  nameWithType: MonoBehaviourExtensions.EnsureComponent<T>(MonoBehaviour, ref T)
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent<T>(UnityEngine.MonoBehaviour, ref T)
   type: Method
   source:
     remote:
       path: Extensions/MonoBehaviourExtensions.cs
       branch: main
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
-    id: SafeInit
+    id: EnsureComponent
     path: ../Extensions/MonoBehaviourExtensions.cs
-    startLine: 9
+    startLine: 22
   assemblies:
   - SombraStudios.Shared.Extensions
   namespace: SombraStudios.Shared.Extensions
+  summary: >-
+    Ensures a component reference is assigned, falling back to a lookup on the source's own
+
+    <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> when the field is still null.
+  remarks: >-
+    An already-assigned reference is left untouched, so a value wired up in the Inspector always
+
+    wins over the lookup. Logs an error when neither source provides the component, since the
+
+    common case is a caller that cannot continue without it.
+  example: []
   syntax:
-    content: 'public static void SafeInit<T>(this MonoBehaviour source, ref T component) where T : Component'
+    content: 'public static bool EnsureComponent<T>(this MonoBehaviour source, ref T component) where T : Component'
     parameters:
     - id: source
       type: UnityEngine.MonoBehaviour
+      description: The behaviour whose <xref href="UnityEngine.GameObject" data-throw-if-not-resolved="false"></xref> is searched.
     - id: component
       type: '{T}'
+      description: The field to fill in; respected if it is already assigned.
     typeParameters:
     - id: T
-    content.vb: Public Shared Sub SafeInit(Of T As Component)(source As MonoBehaviour, component As T)
-  overload: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit*
-  nameWithType.vb: MonoBehaviourExtensions.SafeInit(Of T)(MonoBehaviour, T)
-  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit(Of T)(UnityEngine.MonoBehaviour, T)
-  name.vb: SafeInit(Of T)(MonoBehaviour, T)
+      description: The component type to resolve.
+    return:
+      type: System.Boolean
+      description: True if <code class="paramref">component</code> is assigned once the call returns; otherwise, false.
+    content.vb: Public Shared Function EnsureComponent(Of T As Component)(source As MonoBehaviour, component As T) As Boolean
+  overload: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent*
+  nameWithType.vb: MonoBehaviourExtensions.EnsureComponent(Of T)(MonoBehaviour, T)
+  fullName.vb: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent(Of T)(UnityEngine.MonoBehaviour, T)
+  name.vb: EnsureComponent(Of T)(MonoBehaviour, T)
 references:
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
 - uid: SombraStudios.Shared.Extensions
   commentId: N:SombraStudios.Shared.Extensions
   href: SombraStudios.html
@@ -103,13 +127,18 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
   name: object
   nameWithType: object
   fullName: object
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
 - uid: System
   commentId: N:System
   isExternal: true
@@ -117,31 +146,36 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit*
-  commentId: Overload:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit
-  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_SafeInit__1_UnityEngine_MonoBehaviour___0__
-  name: SafeInit
-  nameWithType: MonoBehaviourExtensions.SafeInit
-  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.SafeInit
-- uid: UnityEngine.MonoBehaviour
-  commentId: T:UnityEngine.MonoBehaviour
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
   parent: UnityEngine
   isExternal: true
-  name: MonoBehaviour
-  nameWithType: MonoBehaviour
-  fullName: UnityEngine.MonoBehaviour
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent*
+  commentId: Overload:SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent
+  href: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.html#SombraStudios_Shared_Extensions_MonoBehaviourExtensions_EnsureComponent__1_UnityEngine_MonoBehaviour___0__
+  name: EnsureComponent
+  nameWithType: MonoBehaviourExtensions.EnsureComponent
+  fullName: SombraStudios.Shared.Extensions.MonoBehaviourExtensions.EnsureComponent
 - uid: '{T}'
   commentId: '!:T'
   definition: T
   name: T
   nameWithType: T
   fullName: T
-- uid: UnityEngine
-  commentId: N:UnityEngine
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
   isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: T
   name: T
   nameWithType: T

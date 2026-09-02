@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils
+  commentId: T:SombraStudios.Shared.Utility.Coroutines.CoroutineUtils
+  id: CoroutineUtils
+  parent: SombraStudios.Shared.Utility.Coroutines
+  children:
+  - SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: CoroutineUtils
+  nameWithType: CoroutineUtils
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils
+  type: Class
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineUtils.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: CoroutineUtils
+    path: ../Utility/Coroutines/CoroutineUtils.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  syntax:
+    content: public static class CoroutineUtils
+    content.vb: Public Module CoroutineUtils
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds(System.Single)
+  commentId: M:SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds(System.Single)
+  id: GetWaitForSeconds(System.Single)
+  parent: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils
+  langs:
+  - csharp
+  - vb
+  name: GetWaitForSeconds(float)
+  nameWithType: CoroutineUtils.GetWaitForSeconds(float)
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds(float)
+  type: Method
+  source:
+    remote:
+      path: Utility/Coroutines/CoroutineUtils.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: GetWaitForSeconds
+    path: ../Utility/Coroutines/CoroutineUtils.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Utility
+  namespace: SombraStudios.Shared.Utility.Coroutines
+  summary: >-
+    Retrieves a cached <xref href="UnityEngine.WaitForSeconds" data-throw-if-not-resolved="false"></xref> instance for the specified duration, or creates a new one if
+
+    not already cached.
+  example: []
+  syntax:
+    content: public static WaitForSeconds GetWaitForSeconds(float seconds)
+    parameters:
+    - id: seconds
+      type: System.Single
+      description: The duration, in seconds, to wait. Must be a non-negative value.
+    return:
+      type: UnityEngine.WaitForSeconds
+      description: >-
+        A <xref href="UnityEngine.WaitForSeconds" data-throw-if-not-resolved="false"></xref> instance representing the specified duration. If the duration is already
+            cached, the cached instance is returned; otherwise, a new instance is created and cached.
+    content.vb: Public Shared Function GetWaitForSeconds(seconds As Single) As WaitForSeconds
+  overload: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds*
+  nameWithType.vb: CoroutineUtils.GetWaitForSeconds(Single)
+  fullName.vb: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds(Single)
+  name.vb: GetWaitForSeconds(Single)
+references:
+- uid: SombraStudios.Shared.Utility.Coroutines
+  commentId: N:SombraStudios.Shared.Utility.Coroutines
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Utility.Coroutines
+  nameWithType: SombraStudios.Shared.Utility.Coroutines
+  fullName: SombraStudios.Shared.Utility.Coroutines
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Coroutines
+    name: Coroutines
+    href: SombraStudios.Shared.Utility.Coroutines.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility
+    name: Utility
+    href: SombraStudios.Shared.Utility.html
+  - name: .
+  - uid: SombraStudios.Shared.Utility.Coroutines
+    name: Coroutines
+    href: SombraStudios.Shared.Utility.Coroutines.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.WaitForSeconds
+  commentId: T:UnityEngine.WaitForSeconds
+  parent: UnityEngine
+  isExternal: true
+  name: WaitForSeconds
+  nameWithType: WaitForSeconds
+  fullName: UnityEngine.WaitForSeconds
+- uid: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds*
+  commentId: Overload:SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds
+  href: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.html#SombraStudios_Shared_Utility_Coroutines_CoroutineUtils_GetWaitForSeconds_System_Single_
+  name: GetWaitForSeconds
+  nameWithType: CoroutineUtils.GetWaitForSeconds
+  fullName: SombraStudios.Shared.Utility.Coroutines.CoroutineUtils.GetWaitForSeconds
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

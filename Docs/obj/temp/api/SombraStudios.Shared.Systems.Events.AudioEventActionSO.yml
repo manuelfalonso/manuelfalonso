@@ -1,0 +1,657 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+  commentId: T:SombraStudios.Shared.Systems.Events.AudioEventActionSO
+  id: AudioEventActionSO
+  parent: SombraStudios.Shared.Systems.Events
+  children:
+  - SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource(UnityEngine.AudioSource)
+  - SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction
+  langs:
+  - csharp
+  - vb
+  name: AudioEventActionSO
+  nameWithType: AudioEventActionSO
+  fullName: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+  type: Class
+  source:
+    remote:
+      path: Systems/Events/EventActions/AudioEventActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: AudioEventActionSO
+    path: ../Systems/Events/EventActions/AudioEventActionSO.cs
+    startLine: 5
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AudioEventAction", menuName = "Sombra Studios/Systems/Events/Audio Event Action", order = 14)]
+
+      public class AudioEventActionSO : RaiseEventActionSO, ISerializationCallbackReceiver
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AudioEventAction", menuName:="Sombra Studios/Systems/Events/Audio Event Action", order:=14)>
+
+      Public Class AudioEventActionSO Inherits RaiseEventActionSO Implements ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - SombraStudios.Shared.Systems.Events.EventActionSO
+  - SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - SombraStudios.Shared.Systems.Events.RaiseEventActionSO._gameEvent
+  - SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(System.Boolean)
+  - SombraStudios.Shared.Systems.Events.EventActionSO._active
+  - SombraStudios.Shared.Systems.Events.EventActionSO._isSkippable
+  - SombraStudios.Shared.Systems.Events.EventActionSO._showLogs
+  - SombraStudios.Shared.Systems.Events.EventActionSO.IsCompleted
+  - SombraStudios.Shared.Systems.Events.EventActionSO.IsSkippable
+  - SombraStudios.Shared.Systems.Events.EventActionSO.IsOptional
+  - SombraStudios.Shared.Systems.Events.EventActionSO.Condition
+  - SombraStudios.Shared.Systems.Events.EventActionSO.CanRunInParallel
+  - SombraStudios.Shared.Systems.Events.EventActionSO.AutoAdvanceToNextAction
+  - SombraStudios.Shared.Systems.Events.EventActionSO.ResetAction
+  - SombraStudios.Shared.Systems.Events.EventActionSO.CompleteAction
+  - SombraStudios.Shared.Systems.Events.EventActionSO.Log(System.String)
+  - SombraStudios.Shared.Systems.Events.EventActionSO.LogError(System.String)
+  - SombraStudios.Shared.Systems.Events.EventActionSO.OnAfterDeserialize
+  - SombraStudios.Shared.Systems.Events.EventActionSO.OnBeforeSerialize
+  extensionMethods:
+  - SombraStudios.Shared.Systems.Events.AudioEventActionSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AudioEventAction
+    - name: menuName
+      type: System.String
+      value: Sombra Studios/Systems/Events/Audio Event Action
+    - name: order
+      type: System.Int32
+      value: 14
+- uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction
+  commentId: M:SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction
+  id: StartAction
+  parent: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+  langs:
+  - csharp
+  - vb
+  name: StartAction()
+  nameWithType: AudioEventActionSO.StartAction()
+  fullName: SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction()
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventActions/AudioEventActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: StartAction
+    path: ../Systems/Events/EventActions/AudioEventActionSO.cs
+    startLine: 16
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  summary: Starts the event action.
+  example: []
+  syntax:
+    content: public override IEnumerator StartAction()
+    return:
+      type: System.Collections.IEnumerator
+      description: IEnumerator for action execution.
+    content.vb: Public Overrides Function StartAction() As IEnumerator
+  overridden: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.StartAction
+  overload: SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction*
+- uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource(UnityEngine.AudioSource)
+  commentId: M:SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource(UnityEngine.AudioSource)
+  id: SetAudioSource(UnityEngine.AudioSource)
+  parent: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+  langs:
+  - csharp
+  - vb
+  name: SetAudioSource(AudioSource)
+  nameWithType: AudioEventActionSO.SetAudioSource(AudioSource)
+  fullName: SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource(UnityEngine.AudioSource)
+  type: Method
+  source:
+    remote:
+      path: Systems/Events/EventActions/AudioEventActionSO.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: SetAudioSource
+    path: ../Systems/Events/EventActions/AudioEventActionSO.cs
+    startLine: 40
+  assemblies:
+  - SombraStudios.Shared.Systems
+  namespace: SombraStudios.Shared.Systems.Events
+  syntax:
+    content: public void SetAudioSource(AudioSource audioSource)
+    parameters:
+    - id: audioSource
+      type: UnityEngine.AudioSource
+    content.vb: Public Sub SetAudioSource(audioSource As AudioSource)
+  overload: SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource*
+references:
+- uid: SombraStudios.Shared.Systems.Events
+  commentId: N:SombraStudios.Shared.Systems.Events
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Systems.Events
+  nameWithType: SombraStudios.Shared.Systems.Events
+  fullName: SombraStudios.Shared.Systems.Events
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Events
+    name: Events
+    href: SombraStudios.Shared.Systems.Events.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems
+    name: Systems
+    href: SombraStudios.Shared.Systems.html
+  - name: .
+  - uid: SombraStudios.Shared.Systems.Events
+    name: Events
+    href: SombraStudios.Shared.Systems.Events.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO
+  commentId: T:SombraStudios.Shared.Systems.Events.EventActionSO
+  parent: SombraStudios.Shared.Systems.Events
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html
+  name: EventActionSO
+  nameWithType: EventActionSO
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO
+- uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+  commentId: T:SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+  parent: SombraStudios.Shared.Systems.Events
+  href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html
+  name: RaiseEventActionSO
+  nameWithType: RaiseEventActionSO
+  fullName: SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO._gameEvent
+  commentId: F:SombraStudios.Shared.Systems.Events.RaiseEventActionSO._gameEvent
+  parent: SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+  href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO__gameEvent
+  name: _gameEvent
+  nameWithType: RaiseEventActionSO._gameEvent
+  fullName: SombraStudios.Shared.Systems.Events.RaiseEventActionSO._gameEvent
+- uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(System.Boolean)
+  commentId: M:SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(System.Boolean)
+  parent: SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO_PauseAction_System_Boolean_
+  name: PauseAction(bool)
+  nameWithType: RaiseEventActionSO.PauseAction(bool)
+  fullName: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(bool)
+  nameWithType.vb: RaiseEventActionSO.PauseAction(Boolean)
+  fullName.vb: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(Boolean)
+  name.vb: PauseAction(Boolean)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(System.Boolean)
+    name: PauseAction
+    href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO_PauseAction_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.PauseAction(System.Boolean)
+    name: PauseAction
+    href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO_PauseAction_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO._active
+  commentId: F:SombraStudios.Shared.Systems.Events.EventActionSO._active
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO__active
+  name: _active
+  nameWithType: EventActionSO._active
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO._active
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO._isSkippable
+  commentId: F:SombraStudios.Shared.Systems.Events.EventActionSO._isSkippable
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO__isSkippable
+  name: _isSkippable
+  nameWithType: EventActionSO._isSkippable
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO._isSkippable
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO._showLogs
+  commentId: F:SombraStudios.Shared.Systems.Events.EventActionSO._showLogs
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO__showLogs
+  name: _showLogs
+  nameWithType: EventActionSO._showLogs
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO._showLogs
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.IsCompleted
+  commentId: P:SombraStudios.Shared.Systems.Events.EventActionSO.IsCompleted
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_IsCompleted
+  name: IsCompleted
+  nameWithType: EventActionSO.IsCompleted
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.IsCompleted
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.IsSkippable
+  commentId: P:SombraStudios.Shared.Systems.Events.EventActionSO.IsSkippable
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_IsSkippable
+  name: IsSkippable
+  nameWithType: EventActionSO.IsSkippable
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.IsSkippable
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.IsOptional
+  commentId: P:SombraStudios.Shared.Systems.Events.EventActionSO.IsOptional
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_IsOptional
+  name: IsOptional
+  nameWithType: EventActionSO.IsOptional
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.IsOptional
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.Condition
+  commentId: P:SombraStudios.Shared.Systems.Events.EventActionSO.Condition
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_Condition
+  name: Condition
+  nameWithType: EventActionSO.Condition
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.Condition
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.CanRunInParallel
+  commentId: P:SombraStudios.Shared.Systems.Events.EventActionSO.CanRunInParallel
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_CanRunInParallel
+  name: CanRunInParallel
+  nameWithType: EventActionSO.CanRunInParallel
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.CanRunInParallel
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.AutoAdvanceToNextAction
+  commentId: P:SombraStudios.Shared.Systems.Events.EventActionSO.AutoAdvanceToNextAction
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_AutoAdvanceToNextAction
+  name: AutoAdvanceToNextAction
+  nameWithType: EventActionSO.AutoAdvanceToNextAction
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.AutoAdvanceToNextAction
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.ResetAction
+  commentId: M:SombraStudios.Shared.Systems.Events.EventActionSO.ResetAction
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_ResetAction
+  name: ResetAction()
+  nameWithType: EventActionSO.ResetAction()
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.ResetAction()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.ResetAction
+    name: ResetAction
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_ResetAction
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.ResetAction
+    name: ResetAction
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_ResetAction
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.CompleteAction
+  commentId: M:SombraStudios.Shared.Systems.Events.EventActionSO.CompleteAction
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_CompleteAction
+  name: CompleteAction()
+  nameWithType: EventActionSO.CompleteAction()
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.CompleteAction()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.CompleteAction
+    name: CompleteAction
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_CompleteAction
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.CompleteAction
+    name: CompleteAction
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_CompleteAction
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.Log(System.String)
+  commentId: M:SombraStudios.Shared.Systems.Events.EventActionSO.Log(System.String)
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_Log_System_String_
+  name: Log(string)
+  nameWithType: EventActionSO.Log(string)
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.Log(string)
+  nameWithType.vb: EventActionSO.Log(String)
+  fullName.vb: SombraStudios.Shared.Systems.Events.EventActionSO.Log(String)
+  name.vb: Log(String)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.Log(System.String)
+    name: Log
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_Log_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.Log(System.String)
+    name: Log
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_Log_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.LogError(System.String)
+  commentId: M:SombraStudios.Shared.Systems.Events.EventActionSO.LogError(System.String)
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  isExternal: true
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_LogError_System_String_
+  name: LogError(string)
+  nameWithType: EventActionSO.LogError(string)
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.LogError(string)
+  nameWithType.vb: EventActionSO.LogError(String)
+  fullName.vb: SombraStudios.Shared.Systems.Events.EventActionSO.LogError(String)
+  name.vb: LogError(String)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.LogError(System.String)
+    name: LogError
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_LogError_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.LogError(System.String)
+    name: LogError
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_LogError_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.OnAfterDeserialize
+  commentId: M:SombraStudios.Shared.Systems.Events.EventActionSO.OnAfterDeserialize
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_OnAfterDeserialize
+  name: OnAfterDeserialize()
+  nameWithType: EventActionSO.OnAfterDeserialize()
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.OnAfterDeserialize()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.OnAfterDeserialize
+    name: OnAfterDeserialize
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_OnAfterDeserialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.OnAfterDeserialize
+    name: OnAfterDeserialize
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_OnAfterDeserialize
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.EventActionSO.OnBeforeSerialize
+  commentId: M:SombraStudios.Shared.Systems.Events.EventActionSO.OnBeforeSerialize
+  parent: SombraStudios.Shared.Systems.Events.EventActionSO
+  href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_OnBeforeSerialize
+  name: OnBeforeSerialize()
+  nameWithType: EventActionSO.OnBeforeSerialize()
+  fullName: SombraStudios.Shared.Systems.Events.EventActionSO.OnBeforeSerialize()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.OnBeforeSerialize
+    name: OnBeforeSerialize
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_OnBeforeSerialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.EventActionSO.OnBeforeSerialize
+    name: OnBeforeSerialize
+    href: SombraStudios.Shared.Systems.Events.EventActionSO.html#SombraStudios_Shared_Systems_Events_EventActionSO_OnBeforeSerialize
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO.SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  definition: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<AudioEventActionSO>(AudioEventActionSO)
+  nameWithType: ObjectExtensions.OrNull<AudioEventActionSO>(AudioEventActionSO)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<SombraStudios.Shared.Systems.Events.AudioEventActionSO>(SombraStudios.Shared.Systems.Events.AudioEventActionSO)
+  nameWithType.vb: ObjectExtensions.OrNull(Of AudioEventActionSO)(AudioEventActionSO)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of SombraStudios.Shared.Systems.Events.AudioEventActionSO)(SombraStudios.Shared.Systems.Events.AudioEventActionSO)
+  name.vb: OrNull(Of AudioEventActionSO)(AudioEventActionSO)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Events.AudioEventActionSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+    name: AudioEventActionSO
+    href: SombraStudios.Shared.Systems.Events.AudioEventActionSO.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+    name: AudioEventActionSO
+    href: SombraStudios.Shared.Systems.Events.AudioEventActionSO.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(SombraStudios.Shared.Systems.Events.AudioEventActionSO)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+    name: AudioEventActionSO
+    href: SombraStudios.Shared.Systems.Events.AudioEventActionSO.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO
+    name: AudioEventActionSO
+    href: SombraStudios.Shared.Systems.Events.AudioEventActionSO.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+    name: OrNull
+    href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.StartAction
+  commentId: M:SombraStudios.Shared.Systems.Events.RaiseEventActionSO.StartAction
+  parent: SombraStudios.Shared.Systems.Events.RaiseEventActionSO
+  href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO_StartAction
+  name: StartAction()
+  nameWithType: RaiseEventActionSO.StartAction()
+  fullName: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.StartAction()
+  spec.csharp:
+  - uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.StartAction
+    name: StartAction
+    href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO_StartAction
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.StartAction
+    name: StartAction
+    href: SombraStudios.Shared.Systems.Events.RaiseEventActionSO.html#SombraStudios_Shared_Systems_Events_RaiseEventActionSO_StartAction
+  - name: (
+  - name: )
+- uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction
+  href: SombraStudios.Shared.Systems.Events.AudioEventActionSO.html#SombraStudios_Shared_Systems_Events_AudioEventActionSO_StartAction
+  name: StartAction
+  nameWithType: AudioEventActionSO.StartAction
+  fullName: SombraStudios.Shared.Systems.Events.AudioEventActionSO.StartAction
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource*
+  commentId: Overload:SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource
+  href: SombraStudios.Shared.Systems.Events.AudioEventActionSO.html#SombraStudios_Shared_Systems_Events_AudioEventActionSO_SetAudioSource_UnityEngine_AudioSource_
+  name: SetAudioSource
+  nameWithType: AudioEventActionSO.SetAudioSource
+  fullName: SombraStudios.Shared.Systems.Events.AudioEventActionSO.SetAudioSource
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource

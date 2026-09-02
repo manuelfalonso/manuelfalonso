@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions
+  commentId: T:SombraStudios.Shared.Extensions.ObjectExtensions
+  id: ObjectExtensions
+  parent: SombraStudios.Shared.Extensions
+  children:
+  - SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions
+  type: Class
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: ObjectExtensions
+    path: ../Extensions/ObjectExtensions.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: >-
+    Provides extension methods for working with objects, including handling null references and destroyed Unity
+
+    objects.
+  remarks: >-
+    This class contains utility methods designed to simplify common object-related operations,
+        particularly in Unity. It includes functionality to address Unity-specific behaviors.
+  example: []
+  syntax:
+    content: public static class ObjectExtensions
+    content.vb: Public Module ObjectExtensions
+  inheritance:
+  - System.Object
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull``1(``0)
+  id: OrNull``1(``0)
+  isExtensionMethod: true
+  parent: SombraStudios.Shared.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: OrNull<T>(T)
+  nameWithType: ObjectExtensions.OrNull<T>(T)
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: OrNull
+    path: ../Extensions/ObjectExtensions.cs
+    startLine: 24
+  assemblies:
+  - SombraStudios.Shared.Extensions
+  namespace: SombraStudios.Shared.Extensions
+  summary: Returns the object itself if it exists, null otherwise.
+  remarks: >-
+    This method helps differentiate between a null reference and a destroyed Unity object. Unity's "== null" check
+
+    can incorrectly return true for destroyed objects, leading to misleading behaviour. The OrNull method use
+
+    Unity's "null check", and if the object has been marked for destruction, it ensures an actual null reference is returned,
+
+    aiding in correctly chaining operations and preventing NullReferenceExceptions.
+  example: []
+  syntax:
+    content: 'public static T OrNull<T>(this T obj) where T : Object'
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The object being checked.
+    typeParameters:
+    - id: T
+      description: The type of the object.
+    return:
+      type: '{T}'
+      description: The object itself if it exists and not destroyed, null otherwise.
+    content.vb: Public Shared Function OrNull(Of T As [Object])(obj As T) As T
+  overload: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull*
+  nameWithType.vb: ObjectExtensions.OrNull(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull(Of T)(T)
+  name.vb: OrNull(Of T)(T)
+references:
+- uid: SombraStudios.Shared.Extensions
+  commentId: N:SombraStudios.Shared.Extensions
+  href: SombraStudios.html
+  name: SombraStudios.Shared.Extensions
+  nameWithType: SombraStudios.Shared.Extensions
+  fullName: SombraStudios.Shared.Extensions
+  spec.csharp:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+  spec.vb:
+  - uid: SombraStudios
+    name: SombraStudios
+    href: SombraStudios.html
+  - name: .
+  - uid: SombraStudios.Shared
+    name: Shared
+    href: SombraStudios.Shared.html
+  - name: .
+  - uid: SombraStudios.Shared.Extensions
+    name: Extensions
+    href: SombraStudios.Shared.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull*
+  commentId: Overload:SombraStudios.Shared.Extensions.ObjectExtensions.OrNull
+  href: SombraStudios.Shared.Extensions.ObjectExtensions.html#SombraStudios_Shared_Extensions_ObjectExtensions_OrNull__1___0_
+  name: OrNull
+  nameWithType: ObjectExtensions.OrNull
+  fullName: SombraStudios.Shared.Extensions.ObjectExtensions.OrNull
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

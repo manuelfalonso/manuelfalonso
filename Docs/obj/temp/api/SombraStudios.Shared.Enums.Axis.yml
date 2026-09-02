@@ -5,6 +5,7 @@ items:
   id: Axis
   parent: SombraStudios.Shared.Enums
   children:
+  - SombraStudios.Shared.Enums.Axis.None
   - SombraStudios.Shared.Enums.Axis.X
   - SombraStudios.Shared.Enums.Axis.Y
   - SombraStudios.Shared.Enums.Axis.Z
@@ -40,9 +41,9 @@ items:
   extensionMethods:
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.Add``1(SombraStudios.Shared.Enums.Axis)
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.CommonFlags``1(SombraStudios.Shared.Enums.Axis)
+  - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(SombraStudios.Shared.Enums.Axis)
-  - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Enums.Axis)
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.IsNone``1
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.Remove``1(SombraStudios.Shared.Enums.Axis)
   - SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.Toggle``1(SombraStudios.Shared.Enums.Axis)
@@ -50,6 +51,32 @@ items:
   - type: System.FlagsAttribute
     ctor: System.FlagsAttribute.#ctor
     arguments: []
+- uid: SombraStudios.Shared.Enums.Axis.None
+  commentId: F:SombraStudios.Shared.Enums.Axis.None
+  id: None
+  parent: SombraStudios.Shared.Enums.Axis
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Axis.None
+  fullName: SombraStudios.Shared.Enums.Axis.None
+  type: Field
+  source:
+    remote:
+      path: Enums/Axis.cs
+      branch: main
+      repo: https://github.com/manuelfalonso/Unity-Scripts.git
+    id: None
+    path: ../Enums/Axis.cs
+    startLine: 10
+  assemblies:
+  - SombraStudios.Shared.Enums
+  namespace: SombraStudios.Shared.Enums
+  syntax:
+    content: None = 0
+    return:
+      type: SombraStudios.Shared.Enums.Axis
 - uid: SombraStudios.Shared.Enums.Axis.X
   commentId: F:SombraStudios.Shared.Enums.Axis.X
   id: X
@@ -68,7 +95,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: X
     path: ../Enums/Axis.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - SombraStudios.Shared.Enums
   namespace: SombraStudios.Shared.Enums
@@ -124,7 +151,7 @@ items:
       repo: https://github.com/manuelfalonso/Unity-Scripts.git
     id: Z
     path: ../Enums/Axis.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - SombraStudios.Shared.Enums
   namespace: SombraStudios.Shared.Enums
@@ -267,6 +294,47 @@ references:
     name: Axis
     href: SombraStudios.Shared.Enums.Axis.html
   - name: )
+- uid: SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  parent: SombraStudios.Shared.Extensions.EnumExtensions
+  definition: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  name: CountFlags<Axis>(Axis)
+  nameWithType: EnumExtensions.CountFlags<Axis>(Axis)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags<SombraStudios.Shared.Enums.Axis>(SombraStudios.Shared.Enums.Axis)
+  nameWithType.vb: EnumExtensions.CountFlags(Of Axis)(Axis)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags(Of SombraStudios.Shared.Enums.Axis)(SombraStudios.Shared.Enums.Axis)
+  name.vb: CountFlags(Of Axis)(Axis)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(SombraStudios.Shared.Enums.Axis)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: <
+  - uid: SombraStudios.Shared.Enums.Axis
+    name: Axis
+    href: SombraStudios.Shared.Enums.Axis.html
+  - name: '>'
+  - name: (
+  - uid: SombraStudios.Shared.Enums.Axis
+    name: Axis
+    href: SombraStudios.Shared.Enums.Axis.html
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(SombraStudios.Shared.Enums.Axis)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SombraStudios.Shared.Enums.Axis
+    name: Axis
+    href: SombraStudios.Shared.Enums.Axis.html
+  - name: )
+  - name: (
+  - uid: SombraStudios.Shared.Enums.Axis
+    name: Axis
+    href: SombraStudios.Shared.Enums.Axis.html
+  - name: )
 - uid: SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1
   commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   parent: SombraStudios.Shared.Extensions.EnumExtensions
@@ -342,57 +410,6 @@ references:
   - uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(SombraStudios.Shared.Enums.Axis,SombraStudios.Shared.Enums.Axis)
     name: HasAny
     href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: SombraStudios.Shared.Enums.Axis
-    name: Axis
-    href: SombraStudios.Shared.Enums.Axis.html
-  - name: )
-  - name: (
-  - uid: SombraStudios.Shared.Enums.Axis
-    name: Axis
-    href: SombraStudios.Shared.Enums.Axis.html
-  - name: ','
-  - name: " "
-  - uid: SombraStudios.Shared.Enums.Axis
-    name: Axis
-    href: SombraStudios.Shared.Enums.Axis.html
-  - name: )
-- uid: SombraStudios.Shared.Enums.Axis.SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Enums.Axis)
-  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  parent: SombraStudios.Shared.Extensions.EnumExtensions
-  definition: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  name: Has<Axis>(Axis, Axis)
-  nameWithType: EnumExtensions.Has<Axis>(Axis, Axis)
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has<SombraStudios.Shared.Enums.Axis>(SombraStudios.Shared.Enums.Axis, SombraStudios.Shared.Enums.Axis)
-  nameWithType.vb: EnumExtensions.Has(Of Axis)(Axis, Axis)
-  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Has(Of SombraStudios.Shared.Enums.Axis)(SombraStudios.Shared.Enums.Axis, SombraStudios.Shared.Enums.Axis)
-  name.vb: Has(Of Axis)(Axis, Axis)
-  spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Enums.Axis,SombraStudios.Shared.Enums.Axis)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  - name: <
-  - uid: SombraStudios.Shared.Enums.Axis
-    name: Axis
-    href: SombraStudios.Shared.Enums.Axis.html
-  - name: '>'
-  - name: (
-  - uid: SombraStudios.Shared.Enums.Axis
-    name: Axis
-    href: SombraStudios.Shared.Enums.Axis.html
-  - name: ','
-  - name: " "
-  - uid: SombraStudios.Shared.Enums.Axis
-    name: Axis
-    href: SombraStudios.Shared.Enums.Axis.html
-  - name: )
-  spec.vb:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(SombraStudios.Shared.Enums.Axis,SombraStudios.Shared.Enums.Axis)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
   - name: (
   - name: Of
   - name: " "
@@ -634,6 +651,37 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  name: CountFlags<T>(T)
+  nameWithType: EnumExtensions.CountFlags<T>(T)
+  fullName: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags<T>(T)
+  nameWithType.vb: EnumExtensions.CountFlags(Of T)(T)
+  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags(Of T)(T)
+  name.vb: CountFlags(Of T)(T)
+  spec.csharp:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: SombraStudios.Shared.Extensions.EnumExtensions.CountFlags``1(``0)
+    name: CountFlags
+    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_CountFlags__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
 - uid: SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.GetAllFlags``1(``0)
   href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_GetAllFlags__1___0_
@@ -691,43 +739,6 @@ references:
   - uid: SombraStudios.Shared.Extensions.EnumExtensions.HasAny``1(``0,``0)
     name: HasAny
     href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_HasAny__1___0___0_
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-  - name: (
-  - name: T
-  - name: ','
-  - name: " "
-  - name: T
-  - name: )
-- uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  commentId: M:SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-  href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  name: Has<T>(T, T)
-  nameWithType: EnumExtensions.Has<T>(T, T)
-  fullName: SombraStudios.Shared.Extensions.EnumExtensions.Has<T>(T, T)
-  nameWithType.vb: EnumExtensions.Has(Of T)(T, T)
-  fullName.vb: SombraStudios.Shared.Extensions.EnumExtensions.Has(Of T)(T, T)
-  name.vb: Has(Of T)(T, T)
-  spec.csharp:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
-  - name: <
-  - name: T
-  - name: '>'
-  - name: (
-  - name: T
-  - name: ','
-  - name: " "
-  - name: T
-  - name: )
-  spec.vb:
-  - uid: SombraStudios.Shared.Extensions.EnumExtensions.Has``1(``0,``0)
-    name: Has
-    href: SombraStudios.Shared.Extensions.EnumExtensions.html#SombraStudios_Shared_Extensions_EnumExtensions_Has__1___0___0_
   - name: (
   - name: Of
   - name: " "
