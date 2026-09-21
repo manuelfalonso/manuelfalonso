@@ -79,7 +79,7 @@ This repository includes various Unity packages, each associated with preprocess
 | Package                       | Preprocessor Directive Symbol              | Documentation |
 |-------------------------------|--------------------------------------------|-------------------------------|
 | **Serialized Dictionary**     | `#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS` | [Serialized Dictionary](https://assetstore.unity.com/packages/tools/utilities/serialized-dictionary-243052) |
-| **DOTween (HOTween v2)**      | `#if DOTWEEN`                              | [DOTween (HOTween v2)](https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html) |
+| **DOTween (HOTween v2)**      | `#if DOTWEEN`                              | [DOTween (HOTween v2)](https://dotween.demigiant.com/documentation.php) |
 | **Firebase**                  | `#if FIREBASE_APP`                         | [Firebase](https://firebase.google.com/docs/unity/setup?hl=en) |
 | **Firebase Authentication**   | `#if FIREBASE_AUTH`                        | [Firebase Authentication](https://firebase.google.com/docs/auth/unity/start?hl=en) |
 | **Facepunch Steam Transport** | `#if FACEPUNCH_TRANSPORT`                  | [Facepunch Transport for NGO](https://github.com/Unity-Technologies/multiplayer-community-contributions/tree/main/Transports/com.community.netcode.transport.facepunch) |

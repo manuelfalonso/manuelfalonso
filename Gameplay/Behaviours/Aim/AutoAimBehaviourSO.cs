@@ -1,6 +1,3 @@
-#if DOTWEEN
-using DG.Tweening;
-#endif
 using UnityEngine;
 
 namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
@@ -45,29 +42,14 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         [Tooltip("If true, the aim will be constrained on the Z axis.")]
         public bool ZConstraint = false;
 
-#if DOTWEEN
         [Header("Noise")]
-        [Tooltip("If true, a shake will be applied to the aim.")]
+        [Tooltip("If true, procedural noise will be applied to the aim.")]
         public bool UseNoise = false;
 
-        [Tooltip("Frequency of the noise applied to the aim.")]
+        [Tooltip("Speed at which the noise evolves over time.")]
         public float NoiseFrequency = 1f;
 
-        [Tooltip("Strength of the noise applied to the aim.")]
+        [Tooltip("Maximum angular offset, in degrees, applied on each axis.")]
         public Vector3 NoiseStrength = new(0.2f, 0.2f, 0f);
-
-        [Tooltip("Vibrato of the noise applied to the aim.")]
-        public int NoiseVibrato = 1;
-
-        [Tooltip("Randomness of the noise applied to the aim.")]
-        [Range(0, 180)]
-        public float NoiseRandomness = 90;
-
-        [Tooltip("If true, the noise will fade out over time.")]
-        public bool NoiseFadeOut = true;
-
-        [Tooltip("Randomness mode of the noise applied to the aim.")]
-        public ShakeRandomnessMode NoiseRandomnessMode = ShakeRandomnessMode.Harmonic;
-#endif
     }
 }

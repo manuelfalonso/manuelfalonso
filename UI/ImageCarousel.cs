@@ -1,9 +1,7 @@
-#if REQUIRES_EXTERNAL_PACKAGE
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
-using System.Collections;
 
 namespace SombraStudios.Shared.UI
 {
@@ -13,7 +11,6 @@ namespace SombraStudios.Shared.UI
     /// and cicles between them until the end, then restarts.
     /// Require: 
     /// -Prefab with a Image component and Strech x Strech Anchors Preset.
-    /// -DOTween package installed.
     /// </summary>
     public class ImageCarousel : MonoBehaviour
     {
@@ -29,7 +26,6 @@ namespace SombraStudios.Shared.UI
         // Start is called before the first frame update
         void Start()
         {
-            DOTween.Init();
             _imageWidth = GetComponent<RectTransform>().rect.width;
             InstantiateCarouselImages();
             StartCoroutine(StartCarousel());
@@ -56,16 +52,39 @@ namespace SombraStudios.Shared.UI
                 // Cycle each image
                 for (int i = 0; i < _imageQuantity - 1; i++)
                 {
-                    Tween nextImage = _imageContainerObject.DOAnchorPosX(_imageWidth * -1, _imageTransitionDuration)
-                            .SetDelay(_delayBetweenImages)
-                            .SetRelative();
-                    yield return nextImage.WaitForCompletion();
+                    yield return new WaitForSeconds(_delayBetweenImages);
+                    yield return MoveContainerToX(_imageContainerObject.anchoredPosition.x - _imageWidth);
                 }
                 // Return to inital point
-                Tween restart = _imageContainerObject.DOAnchorPosX(0, _imageTransitionDuration).SetDelay(_delayBetweenImages);
-                yield return restart.WaitForCompletion();
+                yield return new WaitForSeconds(_delayBetweenImages);
+                yield return MoveContainerToX(0f);
             } while (true);
+        }
+
+        /// <summary>
+        /// Interpolates the container's anchored position to the given X over the transition duration.
+        /// </summary>
+        private IEnumerator MoveContainerToX(float targetX)
+        {
+            Vector2 start = _imageContainerObject.anchoredPosition;
+            Vector2 target = new Vector2(targetX, start.y);
+
+            if (_imageTransitionDuration <= 0f)
+            {
+                _imageContainerObject.anchoredPosition = target;
+                yield break;
+            }
+
+            float elapsed = 0f;
+            while (elapsed < _imageTransitionDuration)
+            {
+                elapsed += Time.deltaTime;
+                _imageContainerObject.anchoredPosition =
+                    Vector2.Lerp(start, target, elapsed / _imageTransitionDuration);
+                yield return null;
+            }
+
+            _imageContainerObject.anchoredPosition = target;
         }
     }
 }
-#endif

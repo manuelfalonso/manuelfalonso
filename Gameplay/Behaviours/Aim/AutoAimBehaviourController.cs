@@ -1,6 +1,3 @@
-#if DOTWEEN
-using DG.Tweening;
-#endif
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -253,26 +250,22 @@ namespace SombraStudios.Shared.Gameplay.Behaviours.Aim
         }
 
         /// <summary>
-        /// Applies noise to the aim using DoTween.
+        /// Applies procedural noise to the target rotation.
         /// </summary>
         private void ApplyNoise()
         {
-#if DOTWEEN
             if (!_data.UseNoise) return;
 
-            _currentNoiseTime += Time.deltaTime;
-            if (_currentNoiseTime > _data.NoiseFrequency)
-            {
-                _currentNoiseTime = 0;
-                transform.DOShakeRotation(
-                    _data.NoiseFrequency,
-                    _data.NoiseStrength,
-                    _data.NoiseVibrato,
-                    _data.NoiseRandomness,
-                    _data.NoiseFadeOut,
-                    _data.NoiseRandomnessMode);
-            }
-#endif
+            _currentNoiseTime += Time.deltaTime * _data.NoiseFrequency;
+
+            // Each axis samples a separate region of the Perlin field so they stay
+            // uncorrelated, then remaps from [0, 1] to [-1, 1].
+            Vector3 noise = new Vector3(
+                Mathf.PerlinNoise(_currentNoiseTime, 0f),
+                Mathf.PerlinNoise(0f, _currentNoiseTime),
+                Mathf.PerlinNoise(_currentNoiseTime, _currentNoiseTime)) * 2f - Vector3.one;
+
+            _targetRotation *= Quaternion.Euler(Vector3.Scale(noise, _data.NoiseStrength));
         }
 
         /// <summary>

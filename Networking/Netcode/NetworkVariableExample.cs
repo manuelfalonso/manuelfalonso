@@ -1,7 +1,6 @@
-#if NETCODE_GAMEOBJECTS && DOTWEEN
+#if NETCODE_GAMEOBJECTS
 using Unity.Netcode;
 using UnityEngine;
-using DG.Tweening;
 
 namespace SombraStudios.Shared.Networking.Netcode
 {
@@ -10,11 +9,13 @@ namespace SombraStudios.Shared.Networking.Netcode
 	/// Example Class of a Network Variable of type Vector3 where the server 
 	/// directly modify the Variable. In the case of a client it ask through 
 	/// Server Rpc to modify the Variable.
-	/// Required: DoTween package installed and setup
 	/// </summary>
 	public class NetworkVariableExample : NetworkBehaviour
 	{
 		public NetworkVariable<Vector3> Position = new NetworkVariable<Vector3>();
+
+		[Tooltip("How quickly the transform catches up to the replicated position.")]
+		[SerializeField] private float _moveSpeed = 5f;
 			
 		public override void OnNetworkSpawn()
 		{
@@ -25,10 +26,7 @@ namespace SombraStudios.Shared.Networking.Netcode
 		{
 			if (NetworkManager.Singleton.IsServer)
 			{
-				var randomPosition = GetRandomPositionOnPlane();
-			
-				transform.DOLocalMove(randomPosition, 1f);
-				Position.Value = randomPosition;
+				Position.Value = GetRandomPositionOnPlane();
 			}
 			else
 			{
@@ -49,7 +47,8 @@ namespace SombraStudios.Shared.Networking.Netcode
 
 		void Update()
 		{
-			transform.DOLocalMove(Position.Value, 1f);
+			transform.localPosition = Vector3.Lerp(
+				transform.localPosition, Position.Value, _moveSpeed * Time.deltaTime);
 		}
 	}
 }

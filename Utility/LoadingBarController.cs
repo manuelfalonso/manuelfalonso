@@ -1,5 +1,3 @@
-#if REQUIRES_EXTERNAL_PACKAGE
-using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,8 +9,6 @@ namespace SombraStudios.Shared.Utility
 {
     /// <summary>
     /// Complete the loading bar and text depending of the amount of checkpoints invoked.
-    /// Requieres:
-    ///     DoTween (DG.Tweening)
     /// </summary>
     public class LoadingBarController : MonoBehaviour
     {
@@ -42,6 +38,8 @@ namespace SombraStudios.Shared.Utility
             preWarmProgress ? checkpointsList.Count + 1 : checkpointsList.Count;
         private int checkpointsCompleted;
         private bool loadingComplete = false;
+        private Coroutine barRoutine;
+        private Coroutine textRoutine;
 
         // Internal use for checking up if the checkpoints were used
         private Dictionary<string, bool> checkpointsDictionary =
@@ -95,33 +93,64 @@ namespace SombraStudios.Shared.Utility
         private void AnimateBar()
         {
             // Bar Animation
-            if (progressBar)
-                DOTween.To(
-                    () => progressBar.value,
-                    x => progressBar.value = x,
-                    ProgressBarValue,
-                    animationDuration)
-                    .OnComplete(() =>
-                    {
-                        if (ProgressBarValue == 1 && !loadingComplete)
-                        {
-                            //Debug.Log("LOADING BAR COMPLETED");
-                            loadingComplete = true;
-                            OnLoadingComplete?.Invoke();
-                        }
-                    }
-                    );
+            if (!progressBar)
+                return;
+
+            // A new checkpoint supersedes whatever the previous one was still animating.
+            if (barRoutine != null)
+                StopCoroutine(barRoutine);
+
+            barRoutine = StartCoroutine(AnimateBarRoutine(ProgressBarValue));
+        }
+
+        private IEnumerator AnimateBarRoutine(float target)
+        {
+            float start = progressBar.value;
+            float elapsed = 0f;
+
+            while (elapsed < animationDuration)
+            {
+                elapsed += Time.deltaTime;
+                progressBar.value = Mathf.Lerp(start, target, elapsed / animationDuration);
+                yield return null;
+            }
+
+            progressBar.value = target;
+            barRoutine = null;
+
+            if (Mathf.Approximately(target, 1f) && !loadingComplete)
+            {
+                loadingComplete = true;
+                OnLoadingComplete?.Invoke();
+            }
         }
 
         private void AnimateText()
         {
             // Text Animation
-            if (progressText)
-                DOTween.To(
-                    () => progress,
-                    x => progress = x,
-                    ProgressTextValue,
-                    animationDuration);
+            if (!progressText)
+                return;
+
+            if (textRoutine != null)
+                StopCoroutine(textRoutine);
+
+            textRoutine = StartCoroutine(AnimateTextRoutine(ProgressTextValue));
+        }
+
+        private IEnumerator AnimateTextRoutine(int target)
+        {
+            float start = progress;
+            float elapsed = 0f;
+
+            while (elapsed < animationDuration)
+            {
+                elapsed += Time.deltaTime;
+                progress = Mathf.RoundToInt(Mathf.Lerp(start, target, elapsed / animationDuration));
+                yield return null;
+            }
+
+            progress = target;
+            textRoutine = null;
         }
 
         private void UpdateText()
@@ -166,4 +195,3 @@ namespace SombraStudios.Shared.Utility
         #endregion
     }
 }
-#endif
