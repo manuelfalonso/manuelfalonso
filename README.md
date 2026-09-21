@@ -78,7 +78,6 @@ This repository includes various Unity packages, each associated with preprocess
 ### External
 | Package                       | Preprocessor Directive Symbol              | Documentation |
 |-------------------------------|--------------------------------------------|-------------------------------|
-| **Naughty Attributes**        | `#if NAUGHTY_ATTRIBUTES`                   | [Naughty Attributes](https://assetstore.unity.com/packages/p/naughtyattributes-129996) |
 | **Serialized Dictionary**     | `#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS` | [Serialized Dictionary](https://assetstore.unity.com/packages/tools/utilities/serialized-dictionary-243052) |
 | **DOTween (HOTween v2)**      | `#if DOTWEEN`                              | [DOTween (HOTween v2)](https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/index.html) |
 | **Firebase**                  | `#if FIREBASE_APP`                         | [Firebase](https://firebase.google.com/docs/unity/setup?hl=en) |
@@ -277,10 +276,9 @@ during extraction — but the assembly references still come from the `.csproj`.
 
 List a symbol whose assembly is not referenced there and every guarded file
 fails with `CS0246: The type or namespace name '…' could not be found`, which
-by step 3 means no documentation at all. This is what `NAUGHTY_ATTRIBUTES` did:
-it was listed here, but the symbol is not in the project's Scripting Define
-Symbols and NaughtyAttributes is an Asset Store import, so nothing referenced
-it.
+by step 3 means no documentation at all. Asset Store imports are the usual
+trap: the symbol gets listed here, but it is not in the project's Scripting
+Define Symbols and no `.csproj` references the DLL, so nothing resolves.
 
 Only add a symbol here once its package is actually installed and referenced by
 the relevant asmdef. Types gated behind a symbol left out of this list are

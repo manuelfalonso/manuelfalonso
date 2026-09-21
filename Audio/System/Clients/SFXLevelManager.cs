@@ -1,5 +1,4 @@
-#if NAUGHTY_ATTRIBUTES
-using NaughtyAttributes;
+#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS
 using SombraStudios.Shared.Patterns.Creational.Singleton;
 using UnityEngine;
 
@@ -126,14 +125,11 @@ namespace SombraStudios.Shared.Audio.System
         #endregion
 
 
-        #region Buttons
-        [Button]
+        #region Volume Controls
         public void SetVolume() => SetSFXVolume(_volume);
 
-        [Button]
         public void MuteVolume() => SetSFXMute(true);
 
-        [Button]
         public void UnmuteVolume() => SetSFXMute(false);
         #endregion
     }
