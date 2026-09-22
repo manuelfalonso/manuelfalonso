@@ -87,10 +87,16 @@ This repository includes various Unity packages, each associated with preprocess
 Make sure the appropriate symbols are defined in the **Scripting Define Symbols** in Unity's **Player Settings** when working with these packages:
 Go to Edit > Project Settings > Player. Under **Scripting Define Symbols**, add a new symbol, for example, CINEMACHINE.
 
-`NETCODE_GAMEOBJECTS`, `FACEPUNCH_TRANSPORT`, `CINEMACHINE` and
-`MOBILE_NOTIFICATIONS` are the exception: they are declared as asmdef
-`versionDefines`, so Unity sets them automatically when the package is present
-and clears them when it is not. Do not add them by hand.
+`NETCODE_GAMEOBJECTS`, `FACEPUNCH_TRANSPORT`, `CINEMACHINE`,
+`MOBILE_NOTIFICATIONS` and `UNITY_ADVERTISEMENTS` are the exception: they are
+declared as asmdef `versionDefines`, so Unity sets them automatically when the
+package is present and clears them when it is not. Do not add them by hand.
+
+`FIREBASE_APP` and `FIREBASE_AUTH` are declared as `versionDefines` as well,
+but they only fire when Firebase is installed through UPM
+(`com.google.firebase.app` / `com.google.firebase.auth`). The `.unitypackage`
+import route registers no package, so on that route you still set both symbols
+by hand in Player Settings.
 See [Docs/manual/SteamworksSetup.md](Docs/manual/SteamworksSetup.md).
 
 ## Repository Structure
