@@ -1,5 +1,5 @@
-﻿#if CINEMACHINE
-using Cinemachine.Utility;
+#if CINEMACHINE
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Gameplay.PlayerMovement3D
@@ -27,7 +27,7 @@ namespace SombraStudios.Shared.Gameplay.PlayerMovement3D
                     transform.position += input * (speed * Time.deltaTime);
                     if (rotatePlayer)
                     {
-                        float t = Cinemachine.Utility.Damper.Damp(1, rotationDamping, Time.deltaTime);
+                        float t = Damper.Damp(1, rotationDamping, Time.deltaTime);
                         Quaternion newRotation = Quaternion.LookRotation(input.normalized, transform.up);
                         transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, t);
                     }

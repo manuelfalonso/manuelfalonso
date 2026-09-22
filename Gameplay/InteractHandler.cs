@@ -1,13 +1,11 @@
-#if REQUIRES_EXTERNAL_PACKAGE
-using System.Collections;
-using System.Collections.Generic;
-using Cinemachine;
+#if CINEMACHINE
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace SombraStudios.Shared.UI
+namespace SombraStudios.Shared.Gameplay
 {
     public class InteractHandler : MonoBehaviour
     {

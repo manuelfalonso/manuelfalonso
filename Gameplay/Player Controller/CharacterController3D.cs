@@ -4,7 +4,8 @@ namespace SombraStudios.Shared.Gameplay.PlayerController
 {
     /// <summary>
     /// Third Person Character Controller Class
-    /// Required: Cinemachine. Create a Free Look Camera with World Space orbit
+    /// Required: Cinemachine. Create a CinemachineCamera with an Orbital Follow
+    /// component set to World Space binding mode
     /// Optional: Animation Controller
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
