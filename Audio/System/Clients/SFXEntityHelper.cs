@@ -1,4 +1,3 @@
-#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -125,4 +124,3 @@ namespace SombraStudios.Shared.Audio.System
         #endregion
     }
 }
-#endif

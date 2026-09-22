@@ -101,7 +101,7 @@ non-guaranteed package **must** be wrapped in the project's define symbol and
 referenced from the module's asmdef. `README.md` holds the authoritative
 table; current symbols include `UNITY_SPLINES`, `UNITY_XR_INTERACTION_TOOLKIT`,
 `CINEMACHINE`, `UNITY_ADVERTISEMENTS`,
-`A_YELLOWPAPER_SERIALIZED_COLLECTIONS`, `DOTWEEN`,
+`DOTWEEN`,
 `FIREBASE_APP`, `FIREBASE_AUTH`.
 
 ```csharp

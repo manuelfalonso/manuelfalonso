@@ -554,12 +554,13 @@ SessionStateMachine	class	-	SombraStudios.Shared.Networking.Sessions	Networking/
 SessionStateMachineTests	class	-	SombraStudios.Shared.Tests.Networking	Tests/EditMode/Networking/SessionStateMachineTests.cs	UNITY_INCLUDE_TESTS	-
 SetActiveSceneStrategy	class	SceneStrategy	SombraStudios.Shared.Scenes.Strategies	Scenes/Strategies/SetActiveSceneStrategy.cs	-	-
 SetBlendShapeVFXSO	class	VFXPropertySO	SombraStudios.Shared.VFX.PropertySO	VFX/PropertySO/BlendShape/SetBlendShapeVFXSO.cs	-	VFX to set a blend shape weight of a SkinnedMeshRenderer
-SFXEntityHelper	class	MonoBehaviour	SombraStudios.Shared.Audio.System	Audio/System/Clients/SFXEntityHelper.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Helper class for managing SFX and voice playback for entities
-SFXInterruptableDictionary	class	SFXStringDictionary	SombraStudios.Shared.Audio.System	Audio/System/SFXInterruptableDictionary.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Represents a dictionary mapping string keys to interruptable SFXRack instances
-SFXLevelManager	class	Singleton	SombraStudios.Shared.Audio.System	Audio/System/Clients/SFXLevelManager.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Manages audio levels and playback in the game
+SFXEntityHelper	class	MonoBehaviour	SombraStudios.Shared.Audio.System	Audio/System/Clients/SFXEntityHelper.cs	-	Helper class for managing SFX and voice playback for entities
+SFXInterruptableDictionary	class	SFXStringDictionary	SombraStudios.Shared.Audio.System	Audio/System/SFXInterruptableDictionary.cs	-	Runtime dictionary mapping string keys to interruptable SFXRack instances
+SFXLevelManager	class	Singleton	SombraStudios.Shared.Audio.System	Audio/System/Clients/SFXLevelManager.cs	-	Manages audio levels and playback in the game
 SFXRack	class	-	SombraStudios.Shared.Audio.System	Audio/System/SFXRack.cs	-	Represents a rack containing audio data and an AudioSource instance
-SFXScriptableSO	class	ScriptableObject	SombraStudios.Shared.Audio.System	Audio/System/SFXScriptableSO.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Represents a ScriptableObject containing SFX and voice data
-SFXStringDictionary	class	SerializedDictionary	SombraStudios.Shared.Audio.System	Audio/System/SFXStringDictionary.cs	A_YELLOWPAPER_SERIALIZED_COLLECTIONS	Represents a dictionary mapping string keys to SFXRack values
+SFXRackEntry	class	-	SombraStudios.Shared.Audio.System	Audio/System/SFXRackEntry.cs	!UNITY_6000_6_OR_NEWER	A single key/value pair of the SFX racks serialized by SFXScriptableSO
+SFXScriptableSO	class	ScriptableObject	SombraStudios.Shared.Audio.System	Audio/System/SFXScriptableSO.cs	-	Represents a ScriptableObject containing SFX and voice data
+SFXStringDictionary	class	Dictionary	SombraStudios.Shared.Audio.System	Audio/System/SFXStringDictionary.cs	-	Runtime dictionary mapping string keys to SFXRack values
 SimpleCameraController	class	MonoBehaviour	SombraStudios.Shared.Gameplay.UnityTemplateProjects	Gameplay/SimpleCameraController.cs	-	-
 SimpleObjectPathing	class	MonoBehaviour	SombraStudios.Shared.Gameplay	Gameplay/SimpleObjectPathing.cs	-	Move the transform of an object through a list of waypoints
 SingleReferenceSO<T>	class	ScriptableObject	SombraStudios.Shared.ScriptableObjects.RuntimeSets	ScriptableObjects/RuntimeSets/SingleReferenceSO.cs	-	A ScriptableObject that holds a single reference of type T

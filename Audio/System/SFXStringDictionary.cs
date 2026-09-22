@@ -1,16 +1,18 @@
-#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS
-using AYellowpaper.SerializedCollections;
-using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SombraStudios.Shared.Audio.System
 {
     /// <summary>
-    /// Represents a dictionary mapping string keys to SFXRack values.
+    /// Runtime dictionary mapping string keys to SFXRack values.
+    /// Built from the serialized data held by <see cref="SFXScriptableSO"/>.
     /// </summary>
-    [Serializable]
-    public class SFXStringDictionary : SerializedDictionary<string, SFXRack>
+    public class SFXStringDictionary : Dictionary<string, SFXRack>
     {
+        public SFXStringDictionary() { }
+
+        public SFXStringDictionary(IDictionary<string, SFXRack> source) : base(source) { }
+
         /// <summary>
         /// Instantiates all SFXRack instances associated with this dictionary at the specified transform.
         /// </summary>
@@ -26,7 +28,7 @@ namespace SombraStudios.Shared.Audio.System
                 }
             }
         }
-        
+
         /// <summary>
         /// Plays the audio associated with the specified key.
         /// </summary>
@@ -63,4 +65,3 @@ namespace SombraStudios.Shared.Audio.System
         }
     }
 }
-#endif

@@ -1,14 +1,16 @@
-#if A_YELLOWPAPER_SERIALIZED_COLLECTIONS
-using System;
+using System.Collections.Generic;
 
 namespace SombraStudios.Shared.Audio.System
 {
     /// <summary>
-    /// Represents a dictionary mapping string keys to interruptable SFXRack instances.
+    /// Runtime dictionary mapping string keys to interruptable SFXRack instances.
     /// </summary>
-    [Serializable]
     public class SFXInterruptableDictionary : SFXStringDictionary
     {
+        public SFXInterruptableDictionary() { }
+
+        public SFXInterruptableDictionary(IDictionary<string, SFXRack> source) : base(source) { }
+
         /// <summary>
         /// Plays the audio associated with the specified key, interrupting any currently playing audio.
         /// </summary>
@@ -32,4 +34,3 @@ namespace SombraStudios.Shared.Audio.System
         }
     }
 }
-#endif
