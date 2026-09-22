@@ -1,13 +1,13 @@
 using UnityEngine;
 #if UNITY_ANDROID
 using UnityEngine.Android;
-#if REQUIRES_EXTERNAL_PACKAGE
+#if MOBILE_NOTIFICATIONS
 // Mobile Notifications package
 using Unity.Notifications.Android;
 #endif
 #endif
 #if UNITY_IOS
-#if REQUIRES_EXTERNAL_PACKAGE
+#if MOBILE_NOTIFICATIONS
 // Mobile Notifications package
 using Unity.Notifications.iOS;
 #endif
@@ -41,7 +41,7 @@ namespace SombraStudios.Shared.Services.Notifications
                 Permission.RequestUserPermission(ANDROID_NOTIFICATION_PERMISSION);
             }
 
-#if REQUIRES_EXTERNAL_PACKAGE
+#if MOBILE_NOTIFICATIONS
             var channel = new AndroidNotificationChannel()
             {
                 Id = "channel_id",
@@ -65,7 +65,7 @@ namespace SombraStudios.Shared.Services.Notifications
         /// <param name="time">Time in minutes since the method is called to send the Notification</param>
         public void SendNotification(string title, string message, float time)
         {
-#if REQUIRES_EXTERNAL_PACKAGE
+#if MOBILE_NOTIFICATIONS
 #if UNITY_ANDROID
             var AndroidNotification = new AndroidNotification()
             {

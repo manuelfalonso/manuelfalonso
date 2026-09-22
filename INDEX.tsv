@@ -272,7 +272,7 @@ INetworkSessionDriver	interface	-	SombraStudios.Shared.Networking.Sessions	Netwo
 InjectFieldAttribute	class	Attribute	SombraStudios.Shared.Patterns.InversionOfControl.DependencyInjection	Patterns/InversionOfControl/DependencyInjection/InjectFieldAttribute.cs	-	The choice is the attribute based one, because you can use it with both plain classes and MonoBehaviours
 InputfieldSlideScreen	class	MonoBehaviour	SombraStudios.Shared.UI.Mobile	UI/Mobile/InputfieldSlideScreen.cs	UNITY_IOS || UNITY_ANDROID	When the Touch Keyboard is active and the assigned input field is focused, the assigned rect transform will adjust Y position to be on to...
 InputManager	class	Singleton	SombraStudios.Shared.Inputs.Manager	Inputs/InputManager.cs	UNITY_INPUT_SYSTEM	Manages input actions and maps, enabling and disabling them as needed
-InteractHandler	class	MonoBehaviour	SombraStudios.Shared.UI	UI/InteractHandler.cs	REQUIRES_EXTERNAL_PACKAGE	-
+InteractHandler	class	MonoBehaviour	SombraStudios.Shared.Gameplay	Gameplay/InteractHandler.cs	CINEMACHINE	-
 InterstitialAdExample	class	MonoBehaviour	SombraStudios.Shared.Services.Advertisement	Services/Advertisement/InterstitialAdExample.cs	UNITY_ADVERTISEMENTS	Class for Interstitial advertisement
 IntervalTimer	class	Timer	SombraStudios.Shared.Utility.Timers.Core	Utility/Timers/Core/IntervalTimer.cs	-	Countdown timer that triggers events at specified intervals until completion
 IntEventChannelListener	class	GenericEventChannelListener	SombraStudios.Shared.Patterns.Behavioural.Observer.ScriptableObjects	Patterns/Behavioural/Observer/ScriptableObjects/Listeners/Implementations/IntEventChannelListener.cs	-	A listener class for integer event channels
@@ -406,7 +406,7 @@ NetworkCommandLine	class	MonoBehaviour	SombraStudios.Shared.Networking.Netcode	N
 NetworkVariableExample	class	NetworkBehaviour	SombraStudios.Shared.Networking.Netcode	Networking/Netcode/NetworkVariableExample.cs	NETCODE_GAMEOBJECTS	Example Class of a Network Variable of type Vector3 where the server directly modify the Variable
 NoInternetController	class	Singleton	SombraStudios.Shared.Utility	Utility/NoInternetController.cs	!UNITY_WEBGL	-
 NotConditionSO	class	ConditionSO	SombraStudios.Shared.ScriptableObjects.Conditions	ScriptableObjects/Conditions/NotConditionSO.cs	-	Represents a condition that negates the result of another condition
-NotificationManager	class	MonoBehaviour	SombraStudios.Shared.Services.Notifications	Services/Notifications/NotificationManager.cs	-	Unity Mobile Notifications documentation: https://docs.unity3d.com/Packages/com.unity.mobile.notifications@2.3/manual/index.html
+NotificationManager	class	MonoBehaviour	SombraStudios.Shared.Services.Notifications	Services/Notifications/NotificationManager.cs	MOBILE_NOTIFICATIONS	Unity Mobile Notifications documentation: https://docs.unity3d.com/Packages/com.unity.mobile.notifications@2.3/manual/index.html
 NullReferenceChecker	class	-	SombraStudios.Shared.Utility.NullReferenceChecker	Utility/NullReferenceChecker/NullReferenceChecker.cs	-	Utility class to check for unassigned required fields in MonoBehaviours and ScriptableObjects
 ObjectAdapter	class	MonoBehaviour	SombraStudios.Shared.Examples.Patterns.Structural.Adapter.Object	Examples/Patterns/Structural/Adapter/Object/ObjectAdapter.cs	-	Converts the interface of one object so that another object can understand it
 ObjectExtensions	class	-	SombraStudios.Shared.Extensions	Extensions/ObjectExtensions.cs	-	Provides extension methods for working with objects, including handling null references and destroyed Unity objects
