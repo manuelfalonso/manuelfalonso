@@ -532,6 +532,12 @@ Rotate	class	MonoBehaviour	SombraStudios.Shared.Gameplay.Movement2D	Gameplay/Mov
 RpcTest	class	NetworkBehaviour	SombraStudios.Shared.Networking.Netcode	Networking/Netcode/RpcTest.cs	NETCODE_GAMEOBJECTS	Small Class example of the RPC messaging system
 RuntimeSetSO<T>	class	ScriptableObject	SombraStudios.Shared.ScriptableObjects.RuntimeSets	ScriptableObjects/RuntimeSets/RuntimeSetSO.cs	-	A generic runtime set ScriptableObject that holds a list of items of type T
 SafeArea	class	MonoBehaviour	SombraStudios.Shared.UI.Mobile	UI/Mobile/SafeArea.cs	-	Adjusts the RectTransform based on the device's safe area
+SafeAreaCalculator	class	-	SombraStudios.Shared.UI.SafeArea	UI/SafeArea/SafeAreaCalculator.cs	-	Safe area math shared by the uGUI and UI Toolkit adapters
+SafeAreaCalculatorTests	class	-	SombraStudios.Shared.Tests.UI	Tests/EditMode/UI/SafeAreaCalculatorTests.cs	UNITY_INCLUDE_TESTS	-
+SafeAreaEdges	enum	-	SombraStudios.Shared.UI.SafeArea	UI/SafeArea/SafeAreaEdges.cs	-	Edges of a UI container that are pushed inside the device safe area
+SafeAreaElement	class	VisualElement	SombraStudios.Shared.UI.SafeArea	UI/SafeArea/SafeAreaElement.cs	-	UI Toolkit container that keeps its children inside the device safe area (notch, punch-hole camera, home indicator) by setting its own pa...
+SafeAreaInsets	struct	IEquatable	SombraStudios.Shared.UI.SafeArea	UI/SafeArea/SafeAreaInsets.cs	-	Distance each edge of a container must move inwards to sit inside the safe area
+SafeAreaUGUI	class	MonoBehaviour	SombraStudios.Shared.UI.SafeArea	UI/SafeArea/SafeAreaUGUI.cs	-	Fits a uGUI RectTransform inside the device safe area (notch, punch-hole camera, home indicator) by driving its anchors relative to its p...
 SceneAssetSO	class	ScriptableObject	SombraStudios.Shared.Scenes.SceneAsset	Scenes/SceneAsset/SceneAssetSO.cs	-	-
 SceneChangeTool	class	-	SombraStudios.Shared.Scenes.Editor	Scenes/Editor/SceneChangeTool.cs	UNITY_EDITOR	Adds a dropdown to the Editor's main toolbar that switches between the scenes registered in Build Settings, without having to locate them...
 ScenePartLoader	class	MonoBehaviour	SombraStudios.Shared.Scenes	Scenes/ScenePartLoader.cs	-	-

@@ -163,6 +163,7 @@ The repository is organized into the following main folders:
       - **InventorySystem/**: Scripts for handling inventory systems.
       - **Mobile/**: UI scripts optimized for mobile devices.
       - **PanelDragAndResize/**: Scripts for dragging and resizing UI panels.
+      - **SafeArea/**: Keeps uGUI and UI Toolkit content inside the device safe area (notch, home indicator).
    - **Utility/**: General utility scripts that provide common functionality.
       - **Cooldown/**: Scripts to manage cooldown timers.
       - **Coroutines/**: Scripts to simplify coroutine management.
