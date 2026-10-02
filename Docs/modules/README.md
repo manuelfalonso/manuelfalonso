@@ -21,7 +21,7 @@ Each is one assembly, `SombraStudios.Shared.<Module>`, most with an optional
 | `VFX/` | 47 | [VFX.md](VFX.md) | `PropertySO/` shader-property system (Material vs MaterialPropertyBlock), parallax, camera shake |
 | `Examples/` | 36 | — | Runnable demos of patterns and delegates. **Free to delete** |
 | `ScriptableObjects/` | 28 | — | SO architecture: `Conditions/`, `Patterns/`, `RuntimeSets/`, `Values/`, plus editor tooling |
-| `UI/` | 23 | — | Inventory, panel drag/resize, image drag, mobile UI |
+| `UI/` | 26 | — | Inventory, panel drag/resize, image drag, mobile UI. `SafeArea/` is its own assembly ([manual](../manual/SafeArea.md)) |
 | `XR/` | 16 | — | Interactables, socket interactors, key/lock. Almost entirely `UNITY_XR_INTERACTION_TOOLKIT` |
 | `Audio/` | 16 | — | SFX system with dictionaries and level manager; some of it gated on serialized-collections |
 | `Animations/` | 15 | — | Animator helpers and `AnimatorParameterReference/` codegen |
